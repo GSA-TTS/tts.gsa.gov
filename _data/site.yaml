@@ -1,11 +1,10 @@
-title: Agency Name
-email: contact@example.gov
+title: Technology Transformation Services
+email: tts-info@gsa.gov
 description: >- # this means to ignore newlines
-  Agency Name (EAC) Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  Aenean et sapien a leo auctor scelerisque quis nec magna. Sed dictum ante a risus vehicula facilisis.
+  Every interaction with the public is an opportunity to improve trust in the government. For over 50 years, GSA has been working to improve access to government services. Today, GSA’s Technology Transformation Services (TTS) exists to design and deliver a digital government with and for the American people. We apply modern methodologies and technologies to improve the lives of the public and public servants. We help agencies make their services more accessible, efficient, and effective with modern applications, platforms, processes, personnel, and software solutions.
 
 # Twitter handle. Only the handle, not the URL.
-twitter: 18F
+twitter: GSA_TTS
 
 #################################################################
 #
@@ -54,19 +53,23 @@ ga:
 primary_navigation:
   - name: Home
     url: /
-  - name: Blog
-    url: /blog/
-  - name: Document
-    url: /document/
-  - name: Document with sidenav
-    url: /document-with-sidenav/
-  - name: Document submenu
+  - name: Join
+    url: https://join.tts.gsa.gov
+  - name: Handbook
+    url: https://handbook.tts.gsa.gov
+  - name: Offices
     children:
-      - name: Navigation link
+      - name: Presidential Innovation Fellows
         url: "#main-content"
-      - name: Navigation link
+      - name: 18F
         url: "#main-content"
-      - name: Navigation link
+      - name: Centers of Excellence
+        url: "#main-content"
+      - name: Solutions
+        url: "#main-content"
+      - name: Regulatory and Oversight Systems
+        url: "#main-content"
+      - name: Integrated Award Environment
         url: "#main-content"
 
 secondary_navigation:
@@ -74,30 +77,27 @@ secondary_navigation:
     url: "#main-content"
   - name: Another secondary link
     url: "#main-content"
-
 # Search.gov configuration
 #
 # 1. Create an account with Search.gov https://search.usa.gov/signup
 # 2. Add a new site.
 # 3. Add your site/affiliate name here.
-searchgov:
+# searchgov:
+# Only change this if you're using a CNAME. Learn more here: https://search.gov/manual/cname.html
+# endpoint: https://search.usa.gov
 
-  # Only change this if you're using a CNAME. Learn more here: https://search.gov/manual/cname.html
-  endpoint: https://search.usa.gov
+# Replace this with your search.gov account.
+# affiliate: federalist-uswds-example
 
-  # Replace this with your search.gov account.
-  affiliate: federalist-uswds-example
+# Replace this with your access key.
+# access_key: xX1gtb2RcnLbIYkHAcB6IaTRr4ZfN-p16ofcyUebeko=
 
-  # Replace this with your access key.
-  access_key: xX1gtb2RcnLbIYkHAcB6IaTRr4ZfN-p16ofcyUebeko=
+# This renders the results within the page instead of sending to user to search.gov.
+# inline: true
 
-  # This renders the results within the page instead of sending to user to search.gov.
-  inline: true
-
-  # This allows Search.gov to present relevant type-ahead search suggestions in your website's search box.
-  # If you do not want to present search suggestions, set this value to false.
-  suggestions: true
-
+# This allows Search.gov to present relevant type-ahead search suggestions in your website's search box.
+# If you do not want to present search suggestions, set this value to false.
+# suggestions: true
 ##########################################################################################
 # The values below here are more advanced and should only be
 # changed if you know what they do
