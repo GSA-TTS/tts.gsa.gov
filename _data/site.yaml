@@ -60,11 +60,11 @@ primary_navigation:
   - name: Offices
     children:
       - name: Presidential Innovation Fellows
-        url: "#main-content"
+        url: https://pif.gov
       - name: 18F
-        url: "#main-content"
+        url: https://18f.gsa.gov
       - name: Centers of Excellence
-        url: "#main-content"
+        url: https://coe.gsa.gov
       - name: Solutions
         url: "#main-content"
       - name: Regulatory and Oversight Systems
