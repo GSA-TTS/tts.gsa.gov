@@ -57,20 +57,8 @@ primary_navigation:
     url: https://join.tts.gsa.gov
   - name: Handbook
     url: https://handbook.tts.gsa.gov
-  - name: Offices
-    children:
-      - name: Presidential Innovation Fellows
-        url: https://pif.gov
-      - name: 18F
-        url: https://18f.gsa.gov
-      - name: Centers of Excellence
-        url: https://coe.gsa.gov
-      - name: Solutions
-        url: "#main-content"
-      - name: Regulatory and Oversight Systems
-        url: "#main-content"
-      - name: Integrated Award Environment
-        url: "#main-content"
+  - name: Our Services
+    url: /services/
 
 secondary_navigation:
   - name: Secondary link
