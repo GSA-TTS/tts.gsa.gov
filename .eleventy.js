@@ -1,12 +1,46 @@
 const { DateTime } = require('luxon');
+const esbuild = require('esbuild');
 const fs = require('fs');
+const path = require('path');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const pluginNavigation = require('@11ty/eleventy-navigation');
 const markdownIt = require('markdown-it');
 const markdownItAnchor = require('markdown-it-anchor');
 const yaml = require("js-yaml");
+const { sassPlugin } = require('esbuild-sass-plugin');
 const svgSprite = require("eleventy-plugin-svg-sprite");
 const { imageShortcode, imageWithClassShortcode } = require('./config');
+
+// async function createAssetPaths() {
+//   let pathPrefix = ''
+
+//   if (process.env.BASEURL) {
+//     pathPrefix = process.env.BASEURL
+//   }
+
+//   const assetPath = path.join(__dirname, '../_site/assets');
+//   const assetDirs = await fs.readdir(assetPath);
+//   const assetsFiles = await Promise.all(
+//     assetDirs.map(async (dir) => {
+//       const files = await fs.readdir(
+//         path.join(__dirname, '../_site/assets', dir)
+//       );
+//       return files.map((file) => {
+//         const { name, ext } = path.parse(file);
+//         const hashedAt = name.lastIndexOf('-');
+//         const originalName = name.slice(0, hashedAt);
+//         const key = `${originalName}${ext}`;
+//         return {
+//           [key]: `${pathPrefix}/assets/${dir}/${file}`,
+//         };
+//       });
+//     })
+//   );
+//   const assets = Object.assign({}, ...assetsFiles.flat());
+//   const outputData = path.join(__dirname, '../_data/assetPaths.json');
+
+//   return await fs.writeFile(outputData, JSON.stringify(assets, null, 2));
+// }
 
 module.exports = function (config) {
   // Set pathPrefix for site
@@ -20,13 +54,13 @@ module.exports = function (config) {
   config.addPlugin(pluginNavigation);
   //// SVG Sprite Plugin for USWDS USWDS icons
   config.addPlugin(svgSprite, {
-    path: "./node_modules/uswds/src/img/uswds-icons",
+    path: "./node_modules/@uswds/uswds/src/img/uswds-icons",
     svgSpriteShortcode: 'uswds_icons_sprite',
     svgShortcode: 'uswds_icons'
   });
   //// SVG Sprite Plugin for USWDS USA icons
   config.addPlugin(svgSprite, {
-    path: "./node_modules/uswds/src/img/usa-icons",
+    path: "./node_modules/@uswds/uswds/src/img/usa-icons",
     svgSpriteShortcode: 'usa_icons_sprite',
     svgShortcode: 'usa_icons'
   });
@@ -128,6 +162,33 @@ module.exports = function (config) {
   if (process.env.BASEURL) {
     pathPrefix = process.env.BASEURL
   }
+
+  config.on('afterBuild', () => {
+    return esbuild.build({
+      entryPoints: ['styles/styles.scss', 'js/admin.js'],
+      entryNames: '[dir]/[name]-[hash]',
+      outdir: '_site/assets',
+      loader: {
+        '.png': 'dataurl',
+        '.svg': 'dataurl',
+        '.ttf': 'dataurl',
+        '.woff': 'dataurl',
+        '.woff2': 'dataurl',
+      },
+      minify: process.env.ELEVENTY_ENV === "production",
+      sourcemap: process.env.ELEVENTY_ENV !== "production",
+      target: ['chrome58', 'firefox57', 'safari11', 'edge18'],
+      bundle: true,
+      plugins: [
+        sassPlugin({
+          loadPaths: [
+            "./node_modules/@uswds",
+            "./node_modules/@uswds/uswds/packages",
+          ],
+        }),
+      ]
+    }).then();
+  });
 
   return {
     // Control which files Eleventy will process
