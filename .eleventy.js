@@ -49,6 +49,9 @@ module.exports = function (config) {
   // Copy the `admin` folders to the output
   config.addPassthroughCopy('admin');
 
+  // Copy USWDS init JS so we can load it in HEAD to prevent flashing
+  config.addPassthroughCopy({'./node_modules/@uswds/uswds/dist/js/uswds-init.js': 'assets/js/uswds-init.js'});
+
   // Add plugins
   config.addPlugin(pluginRss);
   config.addPlugin(pluginNavigation);
@@ -169,11 +172,11 @@ module.exports = function (config) {
       entryNames: '[dir]/[name]-[hash]',
       outdir: '_site/assets',
       loader: {
-        '.png': 'dataurl',
-        '.svg': 'dataurl',
-        '.ttf': 'dataurl',
-        '.woff': 'dataurl',
-        '.woff2': 'dataurl',
+        '.png': 'file',
+        '.svg': 'file',
+        '.ttf': 'file',
+        '.woff': 'file',
+        '.woff2': 'file',
       },
       minify: process.env.ELEVENTY_ENV === "production",
       sourcemap: process.env.ELEVENTY_ENV !== "production",
