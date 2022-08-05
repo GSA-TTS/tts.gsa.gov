@@ -165,7 +165,7 @@ module.exports = function (config) {
 
   config.on('afterBuild', () => {
     return esbuild.build({
-      entryPoints: ['styles/styles.scss', 'js/admin.js'],
+      entryPoints: ['styles/styles.scss', 'js/app.js', 'js/admin.js'],
       entryNames: '[dir]/[name]-[hash]',
       outdir: '_site/assets',
       loader: {
