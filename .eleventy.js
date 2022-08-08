@@ -27,7 +27,6 @@ async function createAssetMappingDataFile() {
 
     const assetPath = path.join(__dirname, './_site/assets');
     const assetDirs = await fs.promises.readdir(assetPath, {withFileTypes: true});
-    console.log(assetDirs);
     const assetFiles = await Promise.all(
         assetDirs.map(async (dir) => {
             if (dir.isDirectory()) {
@@ -50,7 +49,6 @@ async function createAssetMappingDataFile() {
     const assets = Object.assign({}, ...assetFiles.flat());
     const assetDataFilePath = path.join(__dirname, './_data/assetPaths.json');
     const assetData = JSON.stringify(assets, null, 2);
-    console.log(assetData);
     return await fs.promises.writeFile(assetDataFilePath, assetData);
 }
 
@@ -205,9 +203,9 @@ const svgSprite = require("eleventy-plugin-svg-sprite");
         }),
       ]
     })
-    .then(createAssetMappingDataFile())
+    .then(() => {createAssetMappingDataFile();})
     .then(() => {
-        console.log('done');
+        console.log('ESBuild Finished!');
     })
     .catch((err) => {
       console.error(err);
