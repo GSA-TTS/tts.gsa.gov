@@ -60,6 +60,7 @@ async function createAssetMappingDataFile() {
 
     const postRunAssetData = await fs.promises.readFile(path.join(__dirname, './_data/assetPaths.json'), {encoding: 'utf8'});
     console.log(`Data read from ${assetDataFilePath}: ${postRunAssetData}`);
+    console.log(process.env.ELEVENTY_ROOT);
 }
 
 module.exports = function (config) {
