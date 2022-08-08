@@ -184,7 +184,7 @@ const svgSprite = require("eleventy-plugin-svg-sprite");
     pathPrefix = process.env.BASEURL
   }
 
-  config.on('afterBuild', () => {
+  config.on('beforeBuild', () => {
     return esbuild.build({
       entryPoints: ['styles/styles.scss', 'js/app.js', 'js/admin.js'],
       entryNames: '[dir]/[name]-[hash]',
