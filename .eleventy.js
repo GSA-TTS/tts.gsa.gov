@@ -218,6 +218,9 @@ const svgSprite = require("eleventy-plugin-svg-sprite");
       ]
     })
     .then(async () => {
+        config.addGlobalData('myAssetPaths', async () => {
+            createAssetMappingDataFile();
+        });
         console.log('ESBuild Finished!');
     })
     .catch((err) => {
@@ -226,9 +229,6 @@ const svgSprite = require("eleventy-plugin-svg-sprite");
     });
   });
 
-  config.addGlobalData('myAssetPaths', async () => {
-    createAssetMappingDataFile();
-  });
 
   return {
     // Control which files Eleventy will process
