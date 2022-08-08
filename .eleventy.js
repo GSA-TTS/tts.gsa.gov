@@ -19,50 +19,50 @@ const { imageShortcode, imageWithClassShortcode } = require('./config');
  * need to update the template each time a files hash changes but we still maintain the benefit of the
  * cache busting by having the file names contain hashses that change when the assets are built
 **/
-async function createAssetMappingDataFile() {
-    let pathPrefix = '';
-    if (process.env.BASEURL) {
-        pathPrefix = process.env.BASEURL
-    }
+// async function createAssetMappingDataFile() {
+//     let pathPrefix = '';
+//     if (process.env.BASEURL) {
+//         pathPrefix = process.env.BASEURL
+//     }
 
-    const assetPath = path.join(__dirname, './_site/assets');
-    const assetDirs = await fs.promises.readdir(assetPath, {withFileTypes: true});
-    const assetFiles = await Promise.all(
-        assetDirs.map(async (dir) => {
-            if (dir.isDirectory()) {
-                const files = await fs.promises.readdir(
-                    path.join(__dirname, './_site/assets', dir.name)
-                );
+//     const assetPath = path.join(__dirname, './_site/assets');
+//     const assetDirs = await fs.promises.readdir(assetPath, {withFileTypes: true});
+//     const assetFiles = await Promise.all(
+//         assetDirs.map(async (dir) => {
+//             if (dir.isDirectory()) {
+//                 const files = await fs.promises.readdir(
+//                     path.join(__dirname, './_site/assets', dir.name)
+//                 );
 
-                return files.map((file) => {
-                    const {name, ext} = path.parse(file);
-                    const hashedAt = name.lastIndexOf('-');
-                    const originalName = name.slice(0, hashedAt);
-                    const key = `${originalName}${ext}`;
-                    return {
-                        [key]: `${pathPrefix}/assets/${dir.name}/${file}`
-                    }
-                });
-            }
-        })
-    );
-    const assets = Object.assign({}, ...assetFiles.flat());
-    // const assetDataFilePath = path.join(__dirname, './_data/assetPaths.json');
-    const assetData = JSON.stringify(assets, null, 2);
-    return assetData;
-    // console.log(`Path where assetPaths file should be written: ${assetDataFilePath}`);
-    // console.log(`Data we're going to attempt to write: ${assetData}`);
+//                 return files.map((file) => {
+//                     const {name, ext} = path.parse(file);
+//                     const hashedAt = name.lastIndexOf('-');
+//                     const originalName = name.slice(0, hashedAt);
+//                     const key = `${originalName}${ext}`;
+//                     return {
+//                         [key]: `${pathPrefix}/assets/${dir.name}/${file}`
+//                     }
+//                 });
+//             }
+//         })
+//     );
+//     const assets = Object.assign({}, ...assetFiles.flat());
+//     const assetDataFilePath = path.join(__dirname, './_includes/assetPaths.json');
+//     const assetData = JSON.stringify(assets, null, 2);
+//     return assetData;
+//     // console.log(`Path where assetPaths file should be written: ${assetDataFilePath}`);
+//     // console.log(`Data we're going to attempt to write: ${assetData}`);
 
-    // await fs.promises.writeFile(assetDataFilePath, assetData);
-    // console.log('Supposedly the data file has been written... Checking');
+//     // await fs.promises.writeFile(assetDataFilePath, assetData);
+//     // console.log('Supposedly the data file has been written... Checking');
 
-    // const dataFiles = await fs.promises.readdir(path.join(__dirname, './_data'));
-    // console.log(`Directory listing of data files: ${dataFiles}`);
+//     // const dataFiles = await fs.promises.readdir(path.join(__dirname, './_data'));
+//     // console.log(`Directory listing of data files: ${dataFiles}`);
 
-    const postRunAssetData = await fs.promises.readFile(path.join(__dirname, './_data/assetPaths.json'), {encoding: 'utf8'});
+    // const postRunAssetData = await fs.promises.readFile(path.join(__dirname, './_data/assetPaths.json'), {encoding: 'utf8'});
     // console.log(`Data read from ${assetDataFilePath}: ${postRunAssetData}`);
     // console.log(process.env.ELEVENTY_ROOT);
-}
+// }
 
 module.exports = function (config) {
   // Set pathPrefix for site
@@ -98,6 +98,10 @@ module.exports = function (config) {
       'dd LLL yyyy'
     );
   });
+
+  // config.addFilter('assetPaths', (data) => {
+  //   return require(`./_data/${data.json}`);
+  // });
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
   config.addFilter('htmlDateString', (dateObj) => {
@@ -188,9 +192,11 @@ const svgSprite = require("eleventy-plugin-svg-sprite");
   if (process.env.BASEURL) {
     pathPrefix = process.env.BASEURL
   }
-  
-  let assetPaths = '';
 
+  config.addLiquidShortcode('myAssetPaths', async () => {
+    await createAssetMappingDataFile();
+  });
+  
   config.on('beforeBuild', () => {
     return esbuild.build({
       entryPoints: ['styles/styles.scss', 'js/app.js', 'js/admin.js'],
@@ -217,10 +223,8 @@ const svgSprite = require("eleventy-plugin-svg-sprite");
         }),
       ]
     })
-    .then(async () => {
-        config.addGlobalData('myAssetPaths', async () => {
-            await createAssetMappingDataFile();
-        });
+    .then(() => {
+        // await createAssetMappingDataFile();
         console.log('ESBuild Finished!');
     })
     .catch((err) => {
