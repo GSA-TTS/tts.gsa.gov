@@ -19,11 +19,14 @@ const { imageShortcode, imageWithClassShortcode } = require('./config');
  * need to update the template each time a files hash changes but we still maintain the benefit of the
  * cache busting by having the file names contain hashses that change when the assets are built
 **/
-async function createAssetMappingDataFile() {
+async function createAssetMappingDataFile(pp) {
     let pathPrefix = '';
     if (process.env.BASEURL) {
         pathPrefix = process.env.BASEURL
     }
+
+    console.log(`pathPrefix from process: ${process.env.BASEURL}`);
+    console.log(`pathPrefix passed in: ${pp}`);
     const assetPath = path.join(__dirname, './_site/assets');
     const assetDirs = await fs.promises.readdir(assetPath, {withFileTypes: true});
     const assetFiles = await Promise.all(
@@ -152,6 +155,7 @@ module.exports = function (config) {
           // Provides the 404 content without redirect.
           res.writeHead(404, { 'Content-Type': 'text/html; charset=UTF-8' });
           res.write(content_404);
+const svgSprite = require("eleventy-plugin-svg-sprite");
           res.end();
         });
       },
@@ -201,7 +205,7 @@ module.exports = function (config) {
         }),
       ]
     })
-    .then(createAssetMappingDataFile())
+    .then(createAssetMappingDataFile(pathPrefix))
     .then(() => {
         console.log('done');
     })
