@@ -49,8 +49,14 @@ async function createAssetMappingDataFile() {
     const assets = Object.assign({}, ...assetFiles.flat());
     const assetDataFilePath = path.join(__dirname, './_data/assetPaths.json');
     const assetData = JSON.stringify(assets, null, 2);
-    console.log(assetData);
-    return await fs.promises.writeFile(assetDataFilePath, assetData);
+    console.log(`Path where assetPaths file should be written: ${assetDataFilePath}`);
+    console.log(`Data we're going to attempt to write: ${assetData}`);
+
+    await fs.promises.writeFile(assetDataFilePath, assetData);
+    console.log('Supposedly the data file has been written... Checking');
+
+    const dataFiles = await fs.promises.readdir(path.join(__dirname, './_data'));
+    console.log(`Directory listing of data files: ${dataFiles}`);
 }
 
 module.exports = function (config) {
