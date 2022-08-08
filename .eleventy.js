@@ -219,7 +219,7 @@ const svgSprite = require("eleventy-plugin-svg-sprite");
     })
     .then(async () => {
         config.addGlobalData('myAssetPaths', async () => {
-            createAssetMappingDataFile();
+            await createAssetMappingDataFile();
         });
         console.log('ESBuild Finished!');
     })
