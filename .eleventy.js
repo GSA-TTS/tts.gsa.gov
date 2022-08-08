@@ -51,6 +51,7 @@ async function createAssetMappingDataFile(pp) {
     const assets = Object.assign({}, ...assetFiles.flat());
     const assetDataFilePath = path.join(__dirname, './_data/assetPaths.json');
     const assetData = JSON.stringify(assets, null, 2);
+    console.log(assetData);
     return await fs.promises.writeFile(assetDataFilePath, assetData);
 }
 
