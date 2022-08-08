@@ -57,6 +57,8 @@ async function createAssetMappingDataFile() {
 
     const dataFiles = await fs.promises.readdir(path.join(__dirname, './_data'));
     console.log(`Directory listing of data files: ${dataFiles}`);
+    const dataFiles2 = await fs.promises.readdir(path.join(pathPrefix, './_data'));
+    console.log(`Directory listing of data files using pathPrefix: ${dataFiles2}`);
 }
 
 module.exports = function (config) {
