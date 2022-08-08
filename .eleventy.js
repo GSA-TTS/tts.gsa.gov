@@ -204,8 +204,8 @@ const svgSprite = require("eleventy-plugin-svg-sprite");
         }),
       ]
     })
-    .then(() => {createAssetMappingDataFile();})
-    .then(() => {
+    .then(async () => {
+        await createAssetMappingDataFile();
         console.log('ESBuild Finished!');
     })
     .catch((err) => {
