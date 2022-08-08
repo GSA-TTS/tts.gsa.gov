@@ -47,20 +47,21 @@ async function createAssetMappingDataFile() {
         })
     );
     const assets = Object.assign({}, ...assetFiles.flat());
-    const assetDataFilePath = path.join(__dirname, './_data/assetPaths.json');
+    // const assetDataFilePath = path.join(__dirname, './_data/assetPaths.json');
     const assetData = JSON.stringify(assets, null, 2);
-    console.log(`Path where assetPaths file should be written: ${assetDataFilePath}`);
-    console.log(`Data we're going to attempt to write: ${assetData}`);
+    return assetData;
+    // console.log(`Path where assetPaths file should be written: ${assetDataFilePath}`);
+    // console.log(`Data we're going to attempt to write: ${assetData}`);
 
-    await fs.promises.writeFile(assetDataFilePath, assetData);
-    console.log('Supposedly the data file has been written... Checking');
+    // await fs.promises.writeFile(assetDataFilePath, assetData);
+    // console.log('Supposedly the data file has been written... Checking');
 
-    const dataFiles = await fs.promises.readdir(path.join(__dirname, './_data'));
-    console.log(`Directory listing of data files: ${dataFiles}`);
+    // const dataFiles = await fs.promises.readdir(path.join(__dirname, './_data'));
+    // console.log(`Directory listing of data files: ${dataFiles}`);
 
     const postRunAssetData = await fs.promises.readFile(path.join(__dirname, './_data/assetPaths.json'), {encoding: 'utf8'});
-    console.log(`Data read from ${assetDataFilePath}: ${postRunAssetData}`);
-    console.log(process.env.ELEVENTY_ROOT);
+    // console.log(`Data read from ${assetDataFilePath}: ${postRunAssetData}`);
+    // console.log(process.env.ELEVENTY_ROOT);
 }
 
 module.exports = function (config) {
@@ -187,6 +188,8 @@ const svgSprite = require("eleventy-plugin-svg-sprite");
   if (process.env.BASEURL) {
     pathPrefix = process.env.BASEURL
   }
+  
+  let assetPaths = '';
 
   config.on('beforeBuild', () => {
     return esbuild.build({
@@ -215,7 +218,9 @@ const svgSprite = require("eleventy-plugin-svg-sprite");
       ]
     })
     .then(async () => {
-        await createAssetMappingDataFile();
+        assetPaths = await createAssetMappingDataFile();
+        console.log(assetPaths);
+
         console.log('ESBuild Finished!');
     })
     .catch((err) => {
@@ -223,6 +228,8 @@ const svgSprite = require("eleventy-plugin-svg-sprite");
       process.exit(1);
     });
   });
+
+  config.addGlobalData('assetPaths', assetPaths);
 
   return {
     // Control which files Eleventy will process
