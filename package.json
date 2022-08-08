@@ -4,7 +4,7 @@
   "description": "A 11ty UWDS template.",
   "main": "index.js",
   "scripts": {
-    "build": "npx @11ty/eleventy",
+    "build": "npm run clean && npx @11ty/eleventy",
     "assets:autoprefix": "postcss _site/assets/styles/*.css -r --use autoprefixer",
     "assets:clean": "rimraf _site/assets",
     "assets:watch": "chokidar 'js/**' 'styles/**' --polling",
