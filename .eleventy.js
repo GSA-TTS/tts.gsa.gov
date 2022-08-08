@@ -57,6 +57,9 @@ async function createAssetMappingDataFile() {
 
     const dataFiles = await fs.promises.readdir(path.join(__dirname, './_data'));
     console.log(`Directory listing of data files: ${dataFiles}`);
+
+    const postRunAssetData = await fs.promises.readFile(path.join(__dirname, './_data/assetPaths.json'), {encoding: 'utf8'});
+    console.log(`Data read from ${assetDataFilePath}: ${postRunAssetData}`);
 }
 
 module.exports = function (config) {
