@@ -11,48 +11,6 @@ const { sassPlugin } = require('esbuild-sass-plugin');
 const svgSprite = require("eleventy-plugin-svg-sprite");
 const { imageShortcode, imageWithClassShortcode } = require('./config');
 
-/**
- * assets are having hashes appened to their filenames by ESBuild build API for cache busting
- * this function runs after the ESBuild build step and updates the data inside _data/assetPaths.json
- * which is a key/value data file that tracks the name of asset files and their most recent hashed name
- * so that in templates, we can just refer to them by a static name such as app.js and don't continually
- * need to update the template each time a files hash changes but we still maintain the benefit of the
- * cache busting by having the file names contain hashses that change when the assets are built
-**/
-async function createAssetMappingDataFile() {
-    let pathPrefix = '';
-    if (process.env.BASEURL) {
-        pathPrefix = process.env.BASEURL
-    }
-
-    const assetPath = path.join(__dirname, './_site/assets');
-    const assetDirs = await fs.promises.readdir(assetPath, {withFileTypes: true});
-    const assetFiles = await Promise.all(
-        assetDirs.map(async (dir) => {
-            if (dir.isDirectory()) {
-                const files = await fs.promises.readdir(
-                    path.join(__dirname, './_site/assets', dir.name)
-                );
-
-                return files.map((file) => {
-                    const {name, ext} = path.parse(file);
-                    const hashedAt = name.lastIndexOf('-');
-                    const originalName = name.slice(0, hashedAt);
-                    const key = `${originalName}${ext}`;
-                    return {
-                        [key]: `${pathPrefix}/assets/${dir.name}/${file}`
-                    }
-                });
-            }
-        })
-    );
-    const assets = Object.assign({}, ...assetFiles.flat());
-    const assetDataFilePath = path.join(__dirname, './_includes/assetPaths.json');
-    const assetData = JSON.stringify(assets, null, 2);
-
-    await fs.promises.writeFile(assetDataFilePath, assetData);
-}
-
 module.exports = function (config) {
   // Set pathPrefix for site
   let pathPrefix = '/';
@@ -181,47 +139,6 @@ const svgSprite = require("eleventy-plugin-svg-sprite");
   if (process.env.BASEURL) {
     pathPrefix = process.env.BASEURL
   }
-
-  config.addLiquidShortcode('myAssetPaths', async () => {
-    await createAssetMappingDataFile();
-  });
-  
-  config.on('beforeBuild', () => {
-    return esbuild.build({
-      entryPoints: ['styles/styles.scss', 'js/app.js', 'js/admin.js'],
-      entryNames: '[dir]/[name]-[hash]',
-      outdir: '_site/assets',
-      format: 'iife',
-      loader: {
-        '.png': 'dataurl',
-        '.svg': 'dataurl',
-        '.ttf': 'dataurl',
-        '.woff': 'dataurl',
-        '.woff2': 'dataurl',
-      },
-      minify: process.env.ELEVENTY_ENV === "production",
-      sourcemap: process.env.ELEVENTY_ENV !== "production",
-      target: ['chrome58', 'firefox57', 'safari11', 'edge18'],
-      bundle: true,
-      plugins: [
-        sassPlugin({
-          loadPaths: [
-            "./node_modules/@uswds",
-            "./node_modules/@uswds/uswds/packages",
-          ],
-        }),
-      ]
-    })
-    .then(async () => {
-        await createAssetMappingDataFile();
-        console.log('ESBuild Finished!');
-    })
-    .catch((err) => {
-      console.error(err);
-      process.exit(1);
-    });
-  });
-
 
   return {
     // Control which files Eleventy will process
