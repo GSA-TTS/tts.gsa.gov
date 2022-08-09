@@ -1,10 +1,13 @@
 const { DateTime } = require('luxon');
+const esbuild = require('esbuild');
 const fs = require('fs');
+const path = require('path');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const pluginNavigation = require('@11ty/eleventy-navigation');
 const markdownIt = require('markdown-it');
 const markdownItAnchor = require('markdown-it-anchor');
 const yaml = require("js-yaml");
+const { sassPlugin } = require('esbuild-sass-plugin');
 const svgSprite = require("eleventy-plugin-svg-sprite");
 const { imageShortcode, imageWithClassShortcode } = require('./config');
 
@@ -15,18 +18,21 @@ module.exports = function (config) {
   // Copy the `admin` folders to the output
   config.addPassthroughCopy('admin');
 
+  // Copy USWDS init JS so we can load it in HEAD to prevent banner flashing
+  config.addPassthroughCopy({'./node_modules/@uswds/uswds/dist/js/uswds-init.js': 'assets/js/uswds-init.js'});
+
   // Add plugins
   config.addPlugin(pluginRss);
   config.addPlugin(pluginNavigation);
   //// SVG Sprite Plugin for USWDS USWDS icons
   config.addPlugin(svgSprite, {
-    path: "./node_modules/uswds/src/img/uswds-icons",
+    path: "./node_modules/@uswds/uswds/src/img/uswds-icons",
     svgSpriteShortcode: 'uswds_icons_sprite',
     svgShortcode: 'uswds_icons'
   });
   //// SVG Sprite Plugin for USWDS USA icons
   config.addPlugin(svgSprite, {
-    path: "./node_modules/uswds/src/img/usa-icons",
+    path: "./node_modules/@uswds/uswds/src/img/usa-icons",
     svgSpriteShortcode: 'usa_icons_sprite',
     svgShortcode: 'usa_icons'
   });
@@ -39,6 +45,10 @@ module.exports = function (config) {
       'dd LLL yyyy'
     );
   });
+
+  // config.addFilter('assetPaths', (data) => {
+  //   return require(`./_data/${data.json}`);
+  // });
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
   config.addFilter('htmlDateString', (dateObj) => {
@@ -106,6 +116,7 @@ module.exports = function (config) {
           // Provides the 404 content without redirect.
           res.writeHead(404, { 'Content-Type': 'text/html; charset=UTF-8' });
           res.write(content_404);
+const svgSprite = require("eleventy-plugin-svg-sprite");
           res.end();
         });
       },

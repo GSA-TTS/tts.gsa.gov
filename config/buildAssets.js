@@ -39,6 +39,7 @@ esbuild
     entryPoints: ['styles/styles.scss', 'js/app.js', 'js/admin.js'],
     entryNames: '[dir]/[name]-[hash]',
     outdir: '_site/assets',
+    format: 'iife',
     loader: {
       '.png': 'dataurl',
       '.svg': 'dataurl',
@@ -48,8 +49,17 @@ esbuild
     },
     minify: process.env.ELEVENTY_ENV === 'production',
     sourcemap: process.env.ELEVENTY_ENV !== 'production',
+    target: ['chrome58', 'firefox57', 'safari11', 'edge18'],
     plugins: [sassPlugin()],
     bundle: true,
+    plugins: [
+      sassPlugin({
+        loadPaths: [
+          "./node_modules/@uswds",
+          "./node_modules/@uswds/uswds/packages",
+        ],
+      }),
+    ]
   })
   .then(() => createAssetPaths())
   .then(() => {
