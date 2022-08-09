@@ -1,11 +1,12 @@
 {
   "name": "11ty-uswds-template",
   "version": "0.0.1",
-  "description": "A 11ty UWDS template.",
+  "description": "A 11ty UWDS 3 template.",
   "main": "index.js",
   "scripts": {
-    "build": "npx @11ty/eleventy",
+    "build": "npm run assets:build && npx @11ty/eleventy",
     "assets:autoprefix": "postcss _site/assets/styles/*.css -r --use autoprefixer",
+    "assets:build": "node ./config/buildAssets && npm run assets:autoprefix",
     "assets:clean": "rimraf _site/assets",
     "assets:watch": "chokidar 'js/**' 'styles/**' --polling",
     "clean": "rimraf _site",
