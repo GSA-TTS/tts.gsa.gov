@@ -29,10 +29,10 @@ to modify some of the meta-data for the site, this is the place to do it.
   <meta property="og:type" content="article" />
   <link rel="canonical" href="{{ page.url }}" />
   <meta property="og:url" content="{{ page.url }}" />
-  <script async="" src="{{site.url}}assets/js/uswds-init.js"></script>
+  <script async="" src="{{ assetPaths['uswds.js'] "></script>
   <!-- TEST -->
   <!-- CSS
     ================================================== -->
-    <link rel="preload" as="style" href="{{ config.baseUrl }}{{ assetPaths['styles.css'] }}" />
-    <link rel="stylesheet" href="{{ config.baseUrl }}{{ assetPaths['styles.css'] }}" type="text/css" />
+    <link rel="preload" as="style" href="{{ assetPaths['styles.css'] }}" />
+    <link rel="stylesheet" href="{{ assetPaths['styles.css'] }}" type="text/css" />
 </head>
