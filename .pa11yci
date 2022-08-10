@@ -1,0 +1,11 @@
+{
+  "defaults": {
+    "concurrency": 1,
+    "standard": "WCAG2AA",
+    "hideElements": "",
+    "runners": [
+      "htmlcs"
+    ]
+  },
+  "urls": []
+}
