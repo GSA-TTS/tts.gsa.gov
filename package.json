@@ -18,6 +18,8 @@
     "dev:serve": "npx @11ty/eleventy --serve --watch",
     "dev:cms": "npx netlify-cms-proxy-server",
     "federalist": "npm run build",
+    "pa11y-ci": "pa11y-ci",
+    "pa11y-ci:local": "pa11y-ci http://localhost:8080",
     "serve": "npx @11ty/eleventy --serve",
     "start": "npx @11ty/eleventy --serve",
     "test": "echo \"Error: no test specified\" && exit 1"
