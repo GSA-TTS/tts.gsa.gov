@@ -25,4 +25,4 @@ jobs:
         run: npm run build
 
       - name: Execute Pa11y-ci tests
-        run: npm pa11y-ci:local
+        run: npm run pa11y-ci:local
