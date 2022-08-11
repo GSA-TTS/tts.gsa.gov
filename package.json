@@ -18,7 +18,7 @@
     "dev:serve": "npx @11ty/eleventy --serve --watch",
     "dev:cms": "npx netlify-cms-proxy-server",
     "federalist": "npm run build",
-    "pa11y-ci": "pa11y-ci",
+    "pa11y-ci": "npx start-server-and-test start 8080 pa11y-ci:local",
     "pa11y-ci:local": "pa11y-ci http://localhost:8080",
     "serve": "npx @11ty/eleventy --serve",
     "start": "npx @11ty/eleventy --serve",
@@ -45,7 +45,8 @@
     "pa11y-ci": "^3.0.1",
     "postcss": "^8.4.8",
     "postcss-cli": "^9.1.0",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "start-server-and-test": "^1.14.0"
   },
   "dependencies": {
     "@uswds/uswds": "3.0.2",
