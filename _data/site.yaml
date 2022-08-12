@@ -40,7 +40,7 @@ twitter: GSA_TTS
 #
 #################################################################
 dap:
-  # agency: GSA
+  agency: GSA
 
   # Optional
   # subagency: your-subagency
@@ -54,7 +54,7 @@ primary_navigation:
   - name: Home
     url: /
   - name: Join
-    url: https://join.tts.gsa.gov
+    url: /join
   - name: Handbook
     url: https://handbook.tts.gsa.gov
   - name: Our Services
