@@ -40,15 +40,31 @@ module.exports = function (config) {
   // Allow yaml to be used in the _data dir
   config.addDataExtension("yaml", contents => yaml.load(contents));
 
+  // This is an example of creating an Eleventy collection from
+  // a data file, in this case it's _data/services.yml
+  config.addCollection('services', (collection) => {
+    const allServices = collection.getAll()[0].data.services;
+    return allServices;
+  });
+
+  function sortByProp(values, prop) {
+    let vals = [...values];
+    return vals.sort((a, b) => {
+      if (typeof a[prop] == 'string' && typeof b[prop] == 'string') {
+        return a[prop].localeCompare(b[prop]);
+      } else {
+        return Math.sign(a[prop] - b[prop]);
+      }
+    });
+  }
+
+  config.addFilter('sortByProp', sortByProp);
+
   config.addFilter('readableDate', (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat(
       'dd LLL yyyy'
     );
   });
-
-  // config.addFilter('assetPaths', (data) => {
-  //   return require(`./_data/${data.json}`);
-  // });
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
   config.addFilter('htmlDateString', (dateObj) => {
