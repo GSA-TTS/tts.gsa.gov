@@ -1,7 +1,7 @@
 ## Comment out when doing local development
 backend:
   name: github
-  repo: cloud-gov/11ty-uswds-template
+  repo: GSA-TTS/tts.gsa.gov
   base_url: https://federalistapp.18f.gov
   auth_endpoint: external/auth/github
   preview_context: federalist/build
@@ -62,3 +62,16 @@ collections:
         required: false
         }
       - {label: "Body", name: "body", widget: "markdown"}
+  - label: Services
+    name: services
+    files:
+      - label: "Services Page"
+        name: "services"
+        file: "_data/services.yml"
+        fields:
+          - {label: Name, name: name, widget: string}
+          - {label: Link, name: link, widget: string}
+          - {label: Link Alt Text, name: link_alt_text, widget: string}
+          - {label: Logo, name: logo, widget: image}
+          - {label: Logo Alt Text, name: logo_alt_text, widget: string}
+          - {label: Description, name: description, widget: text}
