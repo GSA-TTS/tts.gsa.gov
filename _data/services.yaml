@@ -1,35 +1,32 @@
-- name: USAGov
-  link: https://usa.gov
-  link_alt_text: link to USA.gov
-  logo: /_img/logo-img.png
-  logo_alt_text: Cloud.gov logo
-  description: Here is a blurb about what goes on
-
-- name: 10x
-  link: https://10x.gov
-  link_alt_text: link to 10x.gov
-  logo: /_img/logo-img.png
-  logo_alt_text: Cloud.gov logo
-  description: 10x does cool stuff
-
-- name: PIF
-  link: https://pif.gov
-  link_alt_text: link to pif.gov
-  logo: /_img/logo-img.png
-  logo_alt_text: Cloud.gov logo
-  description: PIF is neat
-
-- name: DAP
-  link: https://digital.gov
-  link_alt_text: link to digital.gov
-  logo: /_img/logo-img.png
-  logo_alt_text: Cloud.gov logo
-  description: Home of USWDS 3
-
-- name: Alpha
-  link: https://alpha.gov
-  link_alt_text: link to alpha.gov
-  logo: /_img/logo-img.png
-  logo_alt_text: Cloud.gov logo
-  description: Test for sorting
+services:
+  - name: USAGov
+    link: https://usa.gov
+    link_alt_text: link to USA.gov
+    logo: /_img/logo-img.png
+    logo_alt_text: Cloud.gov logo
+    description: Here is a blurb about what goes on
+  - name: 10x
+    link: https://10x.gov
+    link_alt_text: link to 10x.gov
+    logo: /_img/logo-img.png
+    logo_alt_text: Cloud.gov logo
+    description: 10x does cool stuff
+  - name: PIF
+    link: https://pif.gov
+    link_alt_text: link to pif.gov
+    logo: /_img/logo-img.png
+    logo_alt_text: Cloud.gov logo
+    description: PIF is neat
+  - name: DAP
+    link: https://digital.gov
+    link_alt_text: link to digital.gov
+    logo: /_img/logo-img.png
+    logo_alt_text: Cloud.gov logo
+    description: Home of USWDS 3
+  - name: Alpha
+    link: https://alpha.gov
+    link_alt_text: link to alpha.gov
+    logo: /_img/logo-img.png
+    logo_alt_text: Cloud.gov logo
+    description: Test for sorting
 

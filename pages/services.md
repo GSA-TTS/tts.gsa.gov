@@ -6,7 +6,7 @@ sidenav: false
 ---
 <h3 class="site-preview-heading">{{title}}</h3>
 <ul class="usa-card-group">
-  {%- assign sortedServices = collections.services | sortByProp: "name" -%}
+  {%- assign sortedServices = collections.services.services | sortByProp: "name" -%}
   {%- for service in sortedServices -%}
   <li class="usa-card usa-card--flag desktop:grid-col-4">
     <div class="usa-card__container">
