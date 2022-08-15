@@ -4,9 +4,11 @@ const Image = require('@11ty/eleventy-img');
 async function imageWithClassShortcode(
   src,
   cls,
-  alt
+  alt,
+  containFit
 ) {
   let pathPrefix = '';
+  let style;
 
   if (process.env.BASEURL) {
     pathPrefix = process.env.BASEURL
@@ -21,7 +23,11 @@ async function imageWithClassShortcode(
   });
 
   const data = metadata[fileType] ? metadata[fileType][0] : metadata.jpeg[0];
-  return `<img src="${pathPrefix}${data.url}" class="${cls}" alt="${alt}" loading="lazy" decoding="async">`;
+ 
+  if (containFit) {
+    style = 'style="object-fit:contain;"';
+  }
+  return `<img src="${pathPrefix}${data.url}" class="${cls}" alt="${alt}" loading="lazy" decoding="async" ${style}>`;
 };
 
 
