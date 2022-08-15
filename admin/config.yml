@@ -19,10 +19,7 @@ backend:
 #   name: git-gateway
 # local_backend: true
 
-##
-##
-
-media_folder: _img/uploads
+media_folder: _img
 public_folder: uploads
 publish_mode: editorial_workflow
 logo_url: https://federalist.18f.gov/assets/images/federalist-logo.png
