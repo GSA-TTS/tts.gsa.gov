@@ -23,12 +23,12 @@ services:
     logo: /_img/logo-img.png
     logo_alt_text: Cloud.gov logo
     description: Home of USWDS 3
-  - name: Alpha
-    link: https://alpha.gov
-    link_alt_text: link to alpha.gov
+  - name: IAE/SAM
+    link: https://www.gsa.gov/about-us/organization/federal-acquisition-service/office-of-systems-management/integrated-award-environment-iae
+    link_alt_text: integrated award environment homepage
     logo: /_img/logo-img.png
     logo_alt_text: Cloud.gov logo
-    description: Test for sorting
+    description: Managing the federal rewards lifecycle.
   - name: MAX.gov
     link: https://max.gov
     link_alt_text: link to max.gov homepage
@@ -53,3 +53,33 @@ services:
     logo: uploads/logo-img.png
     logo_alt_text: Cloud.gov logo
     description: Totally excellent and rad.
+  - name: Search.gov
+    link: https://search.gov
+    link_alt_text: Search.gov homepage
+    logo: uploads/logo-img.png
+    logo_alt_text: Cloud.gov logo
+    description: Making it easy to build search into your site.
+  - name: Login.gov
+    link: https://login.gov
+    link_alt_text: Login.gov homepage
+    logo: uploads/logo-img.png
+    logo_alt_text: Cloud.gov logo
+    description: Your one government account
+  - name: 18F
+    link: https://18f.gsa.gov
+    link_alt_text: 18F homepage
+    logo: uploads/logo-img.png
+    logo_alt_text: Cloud.gov logo
+    description: Digital service delivery.
+  - name: Made in America
+    link: https://madeinamerica.gov
+    link_alt_text: Made in America homepage
+    logo: uploads/logo-img.png
+    logo_alt_text: Cloud.gov logo
+    description: Transparency in Federal procurement.
+  - name: Citizenscience.gov
+    link: https://science.gov
+    link_alt_text: Citizen science homepage
+    logo: uploads/logo-img.png
+    logo_alt_text: Cloud.gov logo
+    description: US Federal science.
