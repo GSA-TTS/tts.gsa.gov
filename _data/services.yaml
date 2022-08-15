@@ -107,3 +107,33 @@ services:
     logo: uploads/logo-img.png
     logo_alt_text: Cloud.gov logo
     description: The home of US Government open data.
+  - name: Challenge.gov
+    link: https://challenge.gov
+    link_alt_text: Challenge.gov homepage
+    logo: uploads/logo-img.png
+    logo_alt_text: Cloud.gov logo
+    description: Where public innovators are inspired to meet challenges.
+  - name: Cloud.gov
+    link: https://cloud.gov/
+    link_alt_text: Cloud.gov homepage
+    logo: uploads/logo-img.png
+    logo_alt_text: Cloud.gov logo
+    description: FedRAMP'd PaaS for government.
+  - name: Code.gov
+    link: https://code.gov
+    link_alt_text: Code.gov homepage
+    logo: uploads/logo-img.png
+    logo_alt_text: Cloud.gov logo
+    description: Platform for sharing America's open source software.
+  - name: Digital Corps
+    link: https://digitalcorps.gsa.gov/
+    link_alt_text: Digital Corps homepage
+    logo: uploads/logo-img.png
+    logo_alt_text: Cloud.gov logo
+    description: Early career fellowship for the top tech talent.
+  - name: Federal Audit Clearinghouse
+    link: https://facweb.census.gov/uploadpdf.aspx
+    link_alt_text: FAC homepage
+    logo: uploads/logo-img.png
+    logo_alt_text: Cloud.gov logo
+    description: Public database of completed audits.
