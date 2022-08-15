@@ -5,7 +5,7 @@ backend:
   base_url: https://federalistapp.18f.gov
   auth_endpoint: external/auth/github
   preview_context: federalist/build
-  branch: caley/services
+  branch: main
   use_graphql: true
 
 ##
@@ -59,16 +59,20 @@ collections:
         required: false
         }
       - {label: "Body", name: "body", widget: "markdown"}
-  - label: Services
-    name: services
+  - label: "Services Page"
+    name: Services
+    create: true
+    format: "yaml"
     files:
-      - label: "Services Page"
-        name: "Test"
+      - label: "Services"
+        name: "services"
         file: "_data/services.yaml"
         fields:
           - label: "Services"
             name: "services"
             widget: "list"
+            label_singular: "service"
+            order: "{{fields.name}}"
             fields:
               - {label: Name, name: name, widget: string}
               - {label: Link, name: link, widget: string}
