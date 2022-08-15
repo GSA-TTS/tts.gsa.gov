@@ -13,9 +13,9 @@ sidenav: false
       <div class="usa-card__header">
         <h2 class="usa-card__heading">{{service.name}}</h2>
       </div>
-      <div class="usa-card__media">
+      <div class="usa-card__media usa-card__media--inset flex-justify-center">
         <div class="usa-card__img">
-              {% image_with_class "./_img/logo-img.png" "" "{{service.logo_alt_text}}" %}
+              {% image_with_class "./_img/logo-img.png" "height-auto maxw-full" "{{service.logo_alt_text}}" %}
         </div>
       </div>
       <div class="usa-card__body">
