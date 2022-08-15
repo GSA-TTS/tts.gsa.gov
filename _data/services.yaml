@@ -12,7 +12,7 @@ services:
     logo_alt_text: Cloud.gov logo
     description: 10x does cool stuff
   - name: PIF
-    link: https://pif.gov
+    link: https://google.com
     link_alt_text: link to pif.gov
     logo: /_img/logo-img.png
     logo_alt_text: Cloud.gov logo
@@ -29,4 +29,3 @@ services:
     logo: /_img/logo-img.png
     logo_alt_text: Cloud.gov logo
     description: Test for sorting
-
