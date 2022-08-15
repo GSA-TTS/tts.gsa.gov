@@ -83,3 +83,27 @@ services:
     logo: uploads/logo-img.png
     logo_alt_text: Cloud.gov logo
     description: US Federal science.
+  - name: Touchpoints
+    link: https://touchpoints.digital.gov/
+    link_alt_text: Touchpoints homepage
+    logo: uploads/logo-img.png
+    logo_alt_text: Cloud.gov logo
+    description: Engage with your users using PRA compliant questions!
+  - name: FedRAMP
+    link: https://www.fedramp.gov/
+    link_alt_text: FedRAMP homepage
+    logo: uploads/logo-img.png
+    logo_alt_text: Cloud.gov logo
+    description: Standardized approach to security authorizations for cloud services.
+  - name: APIData.gov
+    link: https://api.data.gov/
+    link_alt_text: API data homepage
+    logo: uploads/logo-img.png
+    logo_alt_text: Cloud.gov logo
+    description: Helping agencies release and manage APIs
+  - link: https://data.gov/
+    name: Data.gov
+    link_alt_text: Data.gov homepage
+    logo: uploads/logo-img.png
+    logo_alt_text: Cloud.gov logo
+    description: The home of US Government open data.
