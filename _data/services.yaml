@@ -149,3 +149,33 @@ services:
     logo: uploads/logo-img.png
     description: Your voice in federal decision making.
     logo_alt_text: Cloud.gov logo
+  - name: eSRS
+    link: "https://www.esrs.gov/ "
+    link_alt_text: eSRS homepage
+    logo: uploads/logo-img.png
+    logo_alt_text: Cloud.gov logo
+    description: Subcontracting
+  - name: CPARS
+    link: https://cpars.gov/
+    link_alt_text: CPARS homepage
+    logo: uploads/logo-img.png
+    logo_alt_text: Cloud.gov logo
+    description: How's my contracting?
+  - link: "https://www.fapiis.gov/fapiis/#/home "
+    name: FAPIIS
+    link_alt_text: FAPIIS homepage
+    logo: uploads/logo-img.png
+    logo_alt_text: Cloud.gov logo
+    description: Description goes here.
+  - link: https://www.fpds.gov/fpdsng_cms/index.php/en/
+    name: Federal Procurement Data System
+    link_alt_text: FPDS homepage
+    logo: uploads/logo-img.png
+    logo_alt_text: Cloud.gov logo
+    description: Procurements.
+  - name: FSRS
+    link: "https://www.fsrs.gov/ "
+    link_alt_text: FSRS homepage
+    logo: uploads/logo-img.png
+    logo_alt_text: Cloud.gov logo
+    description: Description goes here.
