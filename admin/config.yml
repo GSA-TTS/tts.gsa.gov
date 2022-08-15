@@ -20,7 +20,7 @@ backend:
 # local_backend: true
 
 media_folder: _img
-public_folder: uploads
+public_folder: _img
 publish_mode: editorial_workflow
 logo_url: https://federalist.18f.gov/assets/images/federalist-logo.png
 
