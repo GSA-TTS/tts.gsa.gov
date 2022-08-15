@@ -1,11 +1,11 @@
 ## Comment out when doing local development
 backend:
   name: github
-  repo: cloud-gov/11ty-uswds-template
+  repo: GSA-TTS/tts.gsa.gov
   base_url: https://federalistapp.18f.gov
   auth_endpoint: external/auth/github
   preview_context: federalist/build
-  branch: master
+  branch: main
   use_graphql: true
 
 ##
@@ -19,10 +19,7 @@ backend:
 #   name: git-gateway
 # local_backend: true
 
-##
-##
-
-media_folder: _img/uploads
+media_folder: _img
 public_folder: uploads
 publish_mode: editorial_workflow
 logo_url: https://federalist.18f.gov/assets/images/federalist-logo.png
@@ -62,3 +59,24 @@ collections:
         required: false
         }
       - {label: "Body", name: "body", widget: "markdown"}
+  - label: "Services Page"
+    name: Services
+    create: true
+    format: "yaml"
+    files:
+      - label: "Services"
+        name: "services"
+        file: "_data/services.yaml"
+        fields:
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            label_singular: "service"
+            order: "{{fields.name}}"
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Link, name: link, widget: string}
+              - {label: Link Alt Text, name: link_alt_text, widget: string}
+              - {label: Logo, name: logo, widget: image}
+              - {label: Logo Alt Text, name: logo_alt_text, widget: string}
+              - {label: Description, name: description, widget: text}
