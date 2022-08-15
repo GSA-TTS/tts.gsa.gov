@@ -22,7 +22,7 @@ sidenav: false
         <p>{{service.description}}</p>
       </div>
       <div class="usa-card__footer">
-        <button type="button" class="usa-button">Visit {{service.name}}</button>
+        <a href="{{service.link}}" class="usa-button">Visit {{service.name}}</a>
       </div>
     </div>
   </li>
