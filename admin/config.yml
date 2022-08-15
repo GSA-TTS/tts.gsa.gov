@@ -66,12 +66,16 @@ collections:
     name: services
     files:
       - label: "Services Page"
-        name: "services"
-        file: "_data/services.yml"
+        name: "Test"
+        file: "_data/services.yaml"
         fields:
-          - {label: Name, name: name, widget: string}
-          - {label: Link, name: link, widget: string}
-          - {label: Link Alt Text, name: link_alt_text, widget: string}
-          - {label: Logo, name: logo, widget: image}
-          - {label: Logo Alt Text, name: logo_alt_text, widget: string}
-          - {label: Description, name: description, widget: text}
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Link, name: link, widget: string}
+              - {label: Link Alt Text, name: link_alt_text, widget: string}
+              - {label: Logo, name: logo, widget: image}
+              - {label: Logo Alt Text, name: logo_alt_text, widget: string}
+              - {label: Description, name: description, widget: text}
