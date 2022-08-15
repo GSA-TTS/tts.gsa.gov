@@ -137,3 +137,15 @@ services:
     logo: uploads/logo-img.png
     logo_alt_text: Cloud.gov logo
     description: Public database of completed audits.
+  - name: USWDS
+    link: https://designsystem.digital.gov/
+    link_alt_text: USWDS homepage
+    logo: uploads/logo-img.png
+    logo_alt_text: Cloud.gov logo
+    description: A design system for the federal government.
+  - name: eRegulations
+    link: https://www.regulations.gov/
+    link_alt_text: eRegulations homepage
+    logo: uploads/logo-img.png
+    description: Your voice in federal decision making.
+    logo_alt_text: Cloud.gov logo
