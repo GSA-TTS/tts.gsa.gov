@@ -33,17 +33,17 @@ promotion_potential: '15'
 supervisory_status: 'No'
 ---
 
-{% if page.state == 'upcoming' %}
-{{ page.org }} will soon be accepting applications for GS-{{ page.gs_level }} - {{ page.role_name }} roles.
-  {% if page.opens == 'tbd' %} The target date for when these positions will be officially open to application has not yet been determined. If you'd like to be
+{%- if state == 'upcoming' -%}
+{{ org }} will soon be accepting applications for GS-{{ gs_level }} - {{ role_name }} roles.
+  {%- if opens == 'tbd' -%} The target date for when these positions will be officially open to application has not yet been determined. If you'd like to be
   notified when these positions are open, sign up to our [mailing list]({{ site.baseurl }}/newsletter).
-  {% endif %}
+  {%- endif -%}
 
-  {% unless page.opens == 'tbd' %}
-  Applications will be open for submission on {{ page.opens | date: '%A, %B %e, %Y' }}. Check out [Join TTS Hiring Process]({{site.baseurl}}/hiring-process/) to
+  {%- unless opens == 'tbd' -%}
+  Applications will be open for submission on {{ opens | date: '%A, %B %e, %Y' }}. Check out [Join TTS Hiring Process]({{site.baseurl}}/hiring-process/) to
   learn more about the application process.
-  {% endunless %}
-{% endif %}
+  {%- endunless -%}
+{%- endif -%}
 
 ## Opportunity overview
 
@@ -162,7 +162,7 @@ In addition to strong skill in experience design, we expect expertise in at leas
 ## Basic information
 
 **Location:**
-{{ page.location }}
+{{ location }}
 
 **Salary Range:**
 The salary ranges for this position are:
@@ -250,10 +250,10 @@ To qualify, you must have one (1) year of specialized experience at the next low
 
 ## How To Apply
 
-Submit a complete online application prior to {{ page.closes | date: '%l:%M%P %Z ET on %A, %B %e, %Y' }}. Please fill out all applicable fields.
+Submit a complete online application prior to {{ closes | date: '%l:%M%P %Z ET on %A, %B %e, %Y' }}. Please fill out all applicable fields.
 
 <section class="usa-grid-full">
-  <a class="usa-button usa-button-secondary" href="{{ page.apply_url }}">Click here to apply</a>
+  <a class="usa-button usa-button-secondary" href="{{ apply_url }}">Click here to apply</a>
 </section>
 
-**Need Assistance in applying or have questions regarding this job opportunity, please email {{ page.contact_name }} at** [{{ page.contact_email }}](mailto:{{ page.contact_email }}).
+**Need Assistance in applying or have questions regarding this job opportunity, please email {{ contact_name }} at** [{{ contact_email }}](mailto:{{ contact_email }}).
