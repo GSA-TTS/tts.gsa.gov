@@ -2,7 +2,7 @@
 layout: layouts/default
 ---
 {%- assign jobs = collections.job -%}
-{% assign sortedinfosessions = site.data.info_sessions | sort: 'date' %}
+{%- assign sortedinfosessions = site.data.info_sessions | sort: 'date' -%}
 <section class="usa-section">
   <div class="grid-container">
     <div class="grid-row grid-gap">
@@ -28,7 +28,7 @@ layout: layouts/default
         {%- for pg in jobs -%}
         {%- if pg.data.state == 'open' -%}
         {%- unless pg.data.path contains 'template' -%}
-        {% unless pg.data.path contains 'performance-profiles' -%}
+        {%- unless pg.data.path contains 'performance-profiles' -%}
         <li>
         <a href="{{ config.baseUrl }}{{ pg.data.permalink }}">{{ pg.data.title }}</a> (Open {% if pg.data.weeks_open %}for {% if pg.data.weeks < 52 %}{{ pg.data.weeks }}{% else %} one year or until all selections have been made{% endif %},{% endif %} through {{ pg.data.closes | date: '%A, %B %e, %Y at %l:%M%P %Z' }} Eastern)
         </li>
