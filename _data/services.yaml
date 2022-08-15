@@ -29,4 +29,27 @@ services:
     logo: /_img/logo-img.png
     logo_alt_text: Cloud.gov logo
     description: Test for sorting
-
+  - name: MAX.gov
+    link: https://max.gov
+    link_alt_text: link to max.gov homepage
+    logo: uploads/logo-img.png
+    logo_alt_text: cloud.gov logo
+    description: A smorgasbord of digital goodies
+  - name: Digital.gov
+    link: https://digital.gov
+    link_alt_text: Digital.gov homepage
+    logo: uploads/logo-img.png
+    logo_alt_text: cloud.gov logo
+    description: One stop shop for building better digital services in government.
+  - name: Vote.gov
+    link: https://vote.gov
+    link_alt_text: Vote.gov homepage
+    logo: uploads/logo-img.png
+    logo_alt_text: Cloud.gov logo
+    description: Rock the vote!
+  - name: Centers of Excellence
+    link: https://coe.gsa.gov
+    link_alt_text: centers of exellence homepage
+    logo: uploads/logo-img.png
+    logo_alt_text: Cloud.gov logo
+    description: Totally excellent and rad.
