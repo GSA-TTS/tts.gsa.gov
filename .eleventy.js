@@ -47,6 +47,8 @@ module.exports = function (config) {
     return allServices;
   });
 
+  // Template function used to sort a collection by a certain property
+  // Ex: {%- assign sortedJobs = collection.jobs | sortByProp: "title" -%}
   function sortByProp(values, prop) {
     let vals = [...values];
     return vals.sort((a, b) => {
