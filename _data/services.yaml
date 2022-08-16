@@ -4,153 +4,185 @@ services:
     link_alt_text: link to USA.gov
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
+    category: platforms
     description: Here is a blurb about what goes on
   - name: 10x
     link: https://10x.gov
     link_alt_text: link to 10x.gov
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
+    category: products
+    description: 10x does cool stuff
+  - name: Benefits Studio
+    link: https://10x.gov
+    link_alt_text: link to 10x.gov
+    logo: _img/logo-img.png
+    logo_alt_text: Cloud.gov logo
+    category: products
     description: 10x does cool stuff
   - name: PIF
     link: https://pif.gov
     link_alt_text: link to pif.gov
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
+    category: people
     description: PIF is neat
   - name: DAP
     link: https://digital.gov
     link_alt_text: link to digital.gov
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
+    category: products
     description: Home of USWDS 3
   - name: IAE/SAM
     link: https://www.gsa.gov/about-us/organization/federal-acquisition-service/office-of-systems-management/integrated-award-environment-iae
     link_alt_text: integrated award environment homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
+    category: platforms
     description: Managing the federal rewards lifecycle.
   - name: MAX.gov
     link: https://max.gov
     link_alt_text: link to max.gov homepage
     logo: _img/logo-img.png
     logo_alt_text: cloud.gov logo
+    category: products
     description: A smorgasbord of digital goodies
   - name: Digital.gov
     link: https://digital.gov
     link_alt_text: Digital.gov homepage
     logo: _img/logo-img.png
     logo_alt_text: cloud.gov logo
+    category: products
     description: One stop shop for building better digital services in government.
   - name: Vote.gov
     link: https://vote.gov
     link_alt_text: Vote.gov homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
+    category: platforms
     description: Rock the vote!
   - name: Centers of Excellence
     link: https://coe.gsa.gov
     link_alt_text: centers of exellence homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
+    category: people
     description: Totally excellent and rad.
   - name: Search.gov
     link: https://search.gov
     link_alt_text: Search.gov homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
+    category: products
     description: Making it easy to build search into your site.
   - name: Login.gov
     link: https://login.gov
     link_alt_text: Login.gov homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
+    category: products
     description: Your one government account
   - name: 18F
     link: https://18f.gsa.gov
     link_alt_text: 18F homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
+    category: people
     description: Digital service delivery.
   - name: Made in America
     link: https://madeinamerica.gov
     link_alt_text: Made in America homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
+    category: platforms
     description: Transparency in Federal procurement.
   - name: Citizenscience.gov
     link: https://science.gov
     link_alt_text: Citizen science homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
+    category: platforms
     description: US Federal science.
   - name: Touchpoints
     link: https://touchpoints.digital.gov/
     link_alt_text: Touchpoints homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
+    category: products
     description: Engage with your users using PRA compliant questions!
   - name: FedRAMP
     link: https://www.fedramp.gov/
     link_alt_text: FedRAMP homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
+    category: products
     description: Standardized approach to security authorizations for cloud services.
   - name: APIData.gov
     link: https://api.data.gov/
     link_alt_text: API data homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
+    category: products
     description: Helping agencies release and manage APIs
   - link: https://data.gov/
     name: Data.gov
     link_alt_text: Data.gov homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
+    category: platforms
     description: The home of US Government open data.
   - name: Challenge.gov
     link: https://challenge.gov
     link_alt_text: Challenge.gov homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
+    category: platforms
     description: Where public innovators are inspired to meet challenges.
   - name: Cloud.gov
     link: https://cloud.gov/
     link_alt_text: Cloud.gov homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
+    category: products
     description: FedRAMP'd PaaS for government.
   - name: Code.gov
     link: https://code.gov
     link_alt_text: Code.gov homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
+    category: products
     description: Platform for sharing America's open source software.
   - name: Digital Corps
     link: https://digitalcorps.gsa.gov/
     link_alt_text: Digital Corps homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
+    category: people
     description: Early career fellowship for the top tech talent.
   - name: Federal Audit Clearinghouse
     link: https://facweb.census.gov/uploadpdf.aspx
     link_alt_text: FAC homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
+    category: platforms
     description: Public database of completed audits.
   - name: USWDS
     link: https://designsystem.digital.gov/
     link_alt_text: USWDS homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
+    category: products
     description: A design system for the federal government.
   - name: eRegulations
     link: https://www.regulations.gov/
     link_alt_text: eRegulations homepage
     logo: _img/logo-img.png
     description: Your voice in federal decision making.
+    category: platforms
     logo_alt_text: Cloud.gov logo
   - name: eSRS
-    link: "https://www.esrs.gov/ "
+    link: https://www.esrs.gov/
     link_alt_text: eSRS homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
@@ -161,20 +193,20 @@ services:
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
     description: How's my contracting?
-  - link: "https://www.fapiis.gov/fapiis/#/home "
-    name: FAPIIS
+  - name: FAPIIS
+    link: https://www.fapiis.gov/fapiis/#/home
     link_alt_text: FAPIIS homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
     description: Description goes here.
-  - link: https://www.fpds.gov/fpdsng_cms/index.php/en/
-    name: Federal Procurement Data System
+  - name: Federal Procurement Data System
+    link: https://www.fpds.gov/fpdsng_cms/index.php/en/
     link_alt_text: FPDS homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
     description: Procurements.
   - name: FSRS
-    link: "https://www.fsrs.gov/ "
+    link: https://www.fsrs.gov/
     link_alt_text: FSRS homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
