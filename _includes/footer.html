@@ -26,5 +26,11 @@
         </div>
       </div>
     </div>
+    {%- if site.allow_page_edits -%}
+    <div class="suggest-edit">
+      <a href="https://github.com/GSA-TTS/tts.gsa.gov/blob/main/{{ page.inputPath }}">Suggest edits to this page on GitHub</a>
+    </footer>
+    </div>
+    {%- endif -%}
   </div>
 </footer>
