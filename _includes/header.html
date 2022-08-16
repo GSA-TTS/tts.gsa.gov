@@ -5,6 +5,8 @@ official government website
 
 <div class="page-landing-page layout-demo ">
   <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+    </div>
+  </section>
   <div class="usa-banner">
     <div class="usa-accordion">
       <section
@@ -13,6 +15,7 @@ official government website
         class="usa-banner__header"
       >
         <div class="usa-banner__inner">
+          <div class="banner__text-container grid-row">
           <div class="grid-col-auto">
             {% image_with_class "./node_modules/@uswds/uswds/dist/img/us_flag_small.png" "usa-banner__header-flag" "U.S. flag" %}
           </div>
@@ -31,6 +34,8 @@ official government website
           >
             <span class="usa-banner__button-text">Here's how you know</span>
           </button>
+          </div>
+          {% include "language-switcher.html" %}
         </div>
       </section>
       <div class="usa-banner__content usa-accordion__content" id="gov-banner">
