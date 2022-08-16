@@ -79,4 +79,5 @@ collections:
               - {label: Link Alt Text, name: link_alt_text, widget: string}
               - {label: Logo, name: logo, widget: image}
               - {label: Logo Alt Text, name: logo_alt_text, widget: string}
+              - {label: Category, name: category, widget: string}
               - {label: Description, name: description, widget: text}
