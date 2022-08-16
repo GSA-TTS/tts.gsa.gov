@@ -6,6 +6,9 @@ description: >- # this means to ignore newlines
 # Twitter handle. Only the handle, not the URL.
 twitter: GSA_TTS
 
+# Whether or not to render the "Suggest edits to this page on GitHub" link on pages
+allow_page_edits: true
+
 #################################################################
 #
 # Digital Analytics Program (DAP) configuration
@@ -55,8 +58,6 @@ primary_navigation:
     url: /
   - name: Join
     url: /join
-  - name: Handbook
-    url: https://handbook.tts.gsa.gov
   - name: Our Services
     url: /services/
 
