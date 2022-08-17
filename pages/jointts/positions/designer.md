@@ -2,7 +2,7 @@
 title: TTS - Designer
 permalink: /join/tts-designer/
 tags: job
-state: open
+state: upcoming
 job_post_type: usajobs
 role_name: TTS Designer
 opens: June 14, 2022 at 9:00 am EDT
