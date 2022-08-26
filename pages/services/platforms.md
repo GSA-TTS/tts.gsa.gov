@@ -14,7 +14,7 @@ sidenav: false
 When the public needs to interact with multiple agencies around the same or a similar need, we build and operate government-wide platforms to enable and centralize those interactions.
 </p>
 {%- for service in sortedServices -%}
-{%- if service.category == 'people' -%}
+{%- if service.category == 'platforms' -%}
 <div class="desktop:grid-col-2 display-flex flex-column flex-align-center">
   <div class="service-logo">
   {% image_with_class service.logo "height-3 width-3" service.logo_alt_text %}
