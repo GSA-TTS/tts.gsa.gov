@@ -5,11 +5,6 @@ permalink: "services/"
 sidenav: false
 ---
 <h2 class="site-preview-heading">Services</h2>
-<p class="padding-bottom-2">These services are doing this... infrastructure and tooling
-that help agencies deliver faster. We prodvide building blocks
-and tooling that are commonly needed in the development and delivery
-of government digital services.</p>
-
 {% include "services-picker.html" %}
 
 <div class="grid-row padding-bottom-3">
