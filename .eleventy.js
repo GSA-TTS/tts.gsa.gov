@@ -156,7 +156,7 @@ const svgSprite = require("eleventy-plugin-svg-sprite");
   // size 3 through 9
   config.addLiquidShortcode("uswds_icon_with_size", function (name, size) {
     return `
-    <svg class="usa-icon--size-${size}" aria-hidden="true" role="img">
+    <svg class="usa-icon usa-icon--size-${size}" aria-hidden="true" role="img">
       <use xlink:href="#svg-${name}"></use>
     </svg>`;
   });
