@@ -1,0 +1,9 @@
+@use "uswds-core" as *;
+
+// Add any USWDS overrides here
+// Alternatively, you could create an overrides folder and create individual override files
+
+// USWDS Hero component
+.usa-hero {
+  background-image: unset;
+}

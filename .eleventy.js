@@ -26,13 +26,13 @@ module.exports = function (config) {
   config.addPlugin(pluginNavigation);
   //// SVG Sprite Plugin for USWDS USWDS icons
   config.addPlugin(svgSprite, {
-    path: "./node_modules/@uswds/uswds/src/img/uswds-icons",
+    path: "./node_modules/@uswds/uswds/dist/img/uswds-icons",
     svgSpriteShortcode: 'uswds_icons_sprite',
     svgShortcode: 'uswds_icons'
   });
   //// SVG Sprite Plugin for USWDS USA icons
   config.addPlugin(svgSprite, {
-    path: "./node_modules/@uswds/uswds/src/img/usa-icons",
+    path: "./node_modules/@uswds/uswds/dist/img/usa-icons",
     svgSpriteShortcode: 'usa_icons_sprite',
     svgShortcode: 'usa_icons'
   });
@@ -149,6 +149,14 @@ const svgSprite = require("eleventy-plugin-svg-sprite");
   config.addLiquidShortcode("uswds_icon", function (name) {
     return `
     <svg class="usa-icon" aria-hidden="true" role="img">
+      <use xlink:href="#svg-${name}"></use>
+    </svg>`;
+  });
+
+  // size 3 through 9
+  config.addLiquidShortcode("uswds_icon_with_size", function (name, size) {
+    return `
+    <svg class="usa-icon usa-icon--size-${size}" aria-hidden="true" role="img">
       <use xlink:href="#svg-${name}"></use>
     </svg>`;
   });
