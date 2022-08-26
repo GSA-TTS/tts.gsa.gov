@@ -26,13 +26,13 @@ module.exports = function (config) {
   config.addPlugin(pluginNavigation);
   //// SVG Sprite Plugin for USWDS USWDS icons
   config.addPlugin(svgSprite, {
-    path: "./node_modules/@uswds/uswds/src/img/uswds-icons",
+    path: "./node_modules/@uswds/uswds/dist/img/uswds-icons",
     svgSpriteShortcode: 'uswds_icons_sprite',
     svgShortcode: 'uswds_icons'
   });
   //// SVG Sprite Plugin for USWDS USA icons
   config.addPlugin(svgSprite, {
-    path: "./node_modules/@uswds/uswds/src/img/usa-icons",
+    path: "./node_modules/@uswds/uswds/dist/img/usa-icons",
     svgSpriteShortcode: 'usa_icons_sprite',
     svgShortcode: 'usa_icons'
   });
