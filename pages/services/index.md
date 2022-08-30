@@ -1,6 +1,6 @@
 ---
 title: TTS Services
-layout: layouts/page
+layout: layouts/cozy-page
 permalink: "services/"
 sidenav: false
 ---
