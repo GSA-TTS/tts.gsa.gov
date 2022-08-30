@@ -7,3 +7,16 @@
 .usa-hero {
   background-image: unset;
 }
+
+// Services pages
+.service .usa-card__container {
+  border-radius: 0;
+}
+
+.usa-prose .usa-card {
+  margin-bottom: 1rem;
+}
+
+.service .usa-card__media {
+  min-height: unset;
+}
