@@ -12,7 +12,7 @@ This template is for a single page that does not have a date associated with it.
         <main{%if sidenav%} class="display-flex"{% endif %}>
         {% if sidenav %}
         <div class="usa-layout-docs__sidenav desktop:grid-col-3 padding-right-4{% if page.sticky_sidenav %} usa-sticky-sidenav{% endif %}">
-          {%- render "sidenav.html", links: sidenav, path: permalink -%}
+          {% render "sidenav.html", links: sidenav, subnav: subnav, data: page %}
         </div>
         <div class="usa-layout-docs__main desktop:grid-col-9 usa-prose">
             {{ content }}
