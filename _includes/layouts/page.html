@@ -9,9 +9,11 @@ This template is for a single page that does not have a date associated with it.
 <div id="main-content" class="usa-layout-docs usa-section">
   <div class="grid-container">
     <div class="grid-row grid-gap">
-      {% if sidenav == true %}
-      {% include "sidenav.html" %}
-      {% endif %}
+      {%- if sidenav -%}
+        <div class="usa-layout-docs__sidenav desktop:grid-col-3{% if page.sticky_sidenav %} usa-sticky-sidenav{% endif %}">
+          {%- include "sidenav.html" links=sidenav -%}
+        </div>
+      {%- endif -%}
       <main>
         <div class="usa-layout-docs__main desktop:grid-col-12 usa-prose">
             {{ content }}
