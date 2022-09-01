@@ -26,7 +26,7 @@ subnav:
     href: "#security-and-onboarding"
 ---
 
-{{ sidenav }} Don’t let the federal hiring process seem daunting. We demystify
+Don’t let the federal hiring process seem daunting. We demystify
 it below, so you know what to expect. Here's a look at the average time of each
 stage from application to your first day at TTS. Please note that these are only
 averages, and length of process stages can vary based on a number of factors
