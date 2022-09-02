@@ -5,5 +5,5 @@ permalink: "services/"
 sidenav: false
 ---
 <h2 class="site-preview-heading">Services</h2>
-{% include "services-picker.html" %}
+{% render "services-picker.html" %}
 

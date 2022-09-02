@@ -26,4 +26,4 @@ We provide building blocks and tooling that are commonly needed in the developme
 {%- endfor -%}
 </div>
 
-{% include "services-picker.html" %}
+{% render "services-picker.html" %}
