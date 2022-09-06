@@ -35,4 +35,4 @@ We provide building blocks and tooling that are commonly needed in the developme
   </ul>
 </div>
 
-{% render "services-picker.html" %}
+{% render "services-picker.html", page_data: page %}
