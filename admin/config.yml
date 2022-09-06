@@ -5,7 +5,7 @@ backend:
   base_url: https://federalistapp.18f.gov
   auth_endpoint: external/auth/github
   preview_context: federalist/build
-  branch: main
+  branch: caley/footer
   use_graphql: true
 
 ##
@@ -25,6 +25,40 @@ publish_mode: editorial_workflow
 logo_url: https://federalist.18f.gov/assets/images/federalist-logo.png
 
 collections:
+  - label: Main Pages
+    name: pages
+    folder: pages/
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'layouts/page'}
+      - {
+        label: 'Page link',
+        name: 'permalink',
+        hint: "The URL this page will be accessible at.",
+        pattern: ['^.*\/$', "Must end with a slash"],
+        widget: 'string',
+        default: '{{slug}}'}
+
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - label: Join TTS Info Pages
+    name: jointtspages
+    folder: pages/jointts/
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'layouts/page'}
+      - {
+        label: 'Page link',
+        name: 'permalink',
+        hint: "The URL this page will be accessible at.",
+        pattern: ['^.*\/$', "Must end with a slash"],
+        widget: 'string',
+        default: '{{slug}}'}
+
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
   - label: "Services Page"
     name: Services
     create: true
