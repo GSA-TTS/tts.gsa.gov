@@ -1,36 +1,53 @@
-<footer class="usa-footer site-footer" role="contentinfo">
-  <div class="footer-section-bottom bg-base-darkest">
-    <div class="grid-container">
-      <div class="grid-row padding-3">
-        <div class="tablet:grid-col">
-          <div class="logo-links">
-            <a class="footer-logo media_link" href="https://cloud.gov">
-              {% image_with_class "./_img/logo-img.png" "width-10 height-auto" "Agency logo" %}
-            </a>
-          </div>
-        </div>
-        <div class="tablet:grid-col"></div>
-        <div class="tablet:grid-col">
-          <ul class="add-list-reset text-gray-10">
-            <li>Footer link</li>
-            <li>Footer link</li>
-            <li>Footer link</li>
-          </ul>
-        </div>
-        <div class="tablet:grid-col">
-          <ul class="add-list-reset text-gray-10">
-            <li>Footer link</li>
-            <li>Footer link</li>
-            <li>Footer link</li>
-          </ul>
-        </div>
+<footer class="bg-base-dark text-no-wrap text-base-lightest padding-top-1">
+<div class="footer-identifier">
+  <div class="grid-container">
+    <section class="identifier-gsa grid-row grid-gap-2 padding-bottom-4" aria-label="">
+      <div>
+            {% image_with_class "_img/gsa-logo.svg" "width-5 height-5" "GSA logo" %}
       </div>
-    </div>
+      <div aria-label="" class="grid-col-auto">
+        tts.gsa.gov <br>
+        <strong>An official website of the <a href="https://gsa.gov">General Services Administration</a></strong>
+      </div>
+    </section>
+    <nav class="grid-row grid-gap identifier font-sans-2xs" aria-label="">
+      <div class="tablet:grid-col-3">
+        <ul class="usa-list usa-list--unstyled">
+            <li><a href="{{ '/about' | url }}">About tts.gsa.gov</a></li>
+          <li><a href="https://www.gsa.gov/website-information/accessibility-aids">Accessibility</a></li>
+        </ul>
+      </div>
+      <div class="tablet:grid-col-3">
+        <ul class="usa-list usa-list--unstyled">
+          <li><a href="https://www.gsa.gov/reference/freedom-of-information-act-foia">FOIA Requests</a></li>
+          <li><a href="https://www.gsa.gov/reference/civil-rights-programs/notification-and-federal-employee-antidiscrimination-and-retaliation-act-of-2002">No Fear Act data</a></li>
+        </ul>
+      </div>
+      <div class="tablet:grid-col-3">
+        <ul class="usa-list usa-list--unstyled">
+          <li><a href="https://www.gsaig.gov/">Office of the Inspector General</a></li>
+          <li><a href="https://www.gsa.gov/reference/reports/budget-performance">Performance Reports</a></li>
+        </ul>
+      </div>
+      <div class="tablet:grid-col-3">
+        <ul class="usa-list usa-list--unstyled">
+          <li><a href="https://www.usa.gov/policies">Privacy Policy</a></li>
+          <li><a href="{{ '/built-with' | url }}">Built With</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section aria-label="" class="identifier-gov-info margin-top-4 padding-top-1 border-top-1px">Looking for U.S. government information and services? <a href="https://www.usa.gov/">Visit USA.gov</a></section>
+  </div>
     {%- if site.allow_page_edits -%}
-    <div class="suggest-edit">
+    <div class="suggest-edit margin-top-2 font-sans-3xs">
       <a href="https://github.com/GSA-TTS/tts.gsa.gov/blob/main/{{ page.inputPath }}">Suggest edits to this page on GitHub</a>
     </footer>
     </div>
     {%- endif -%}
-  </div>
+</div>
+    {% comment %}
+  <button id="touchpoints-form-embed" class="usa-button">How can we improve tts.gsa.gov?
+  </button>
+<script src="https://touchpoints.app.cloud.gov/touchpoints/9c4b7fd7.js" async></script>
+{% endcomment%}
 </footer>

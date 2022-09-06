@@ -20,3 +20,18 @@
 .service .usa-card__media {
   min-height: unset;
 }
+
+.usa-prose p {
+    max-width: unset;
+}
+
+footer {
+    a {
+      color: color('base-lightest');
+      text-decoration: none;
+
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+}

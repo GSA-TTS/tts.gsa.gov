@@ -1,0 +1,5 @@
+{% for link in links %}
+  <li>
+      <a href="{% if link.external %}{{ link.href }}{% else %}{{ link.href }}{% endif %}" {% if link.class %} class="{{ link.class }}" {% endif %}>{{ link.text }}</a>
+  </li>
+{% endfor %}
