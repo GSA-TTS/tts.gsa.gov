@@ -9,6 +9,9 @@ twitter: GSA_TTS
 # Whether or not to render the "Suggest edits to this page on GitHub" link on pages
 allow_page_edits: true
 
+# Whether or not to render the alert in the hero
+show_site_alert: true
+
 #################################################################
 #
 # Digital Analytics Program (DAP) configuration

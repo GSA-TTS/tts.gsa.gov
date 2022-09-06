@@ -2,6 +2,9 @@
 This will be displayed on the homepage. Ideally, you want to highlight key goals of the website
 {% endcomment %}
 
+{% if site.show_site_alert %}
+  {% render "hero-alert.html" %}
+{% endif %}
 <section class="usa-hero bg-indigo opacity-90">
   <div class="display-flex grid-container" id="hero-wrapper">
     <div class="grid-col-4 padding-right-2" id="hero-left">
