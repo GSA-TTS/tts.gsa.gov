@@ -60,7 +60,19 @@ primary_navigation:
   - name: Home
     url: /
   - name: Join
-    url: /join
+    children:
+      - name: Jobs
+        url: "/join/"
+      - name: Hiring process
+        url: "/join/hiring-process/"
+      - name: Reading a federal job resume
+        url: "/join/federal-job-posting/"
+      - name: Preparing your resume
+        url: "/join/resume/"
+      - name: Compensation and benefits
+        url: "/join/compensation-and-benefits/"
+      - name: About the Direct Hire Authority
+        url: "/join/about-the-dha/"
   - name: Our Services
     url: /services/
 
