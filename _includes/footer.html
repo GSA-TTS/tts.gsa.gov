@@ -1,17 +1,19 @@
-<footer class="bg-base-darkest">
+<footer class="bg-base-dark text-no-wrap text-base-lightest padding-top-1">
 <div class="footer-identifier">
   <div class="grid-container">
-    <section class="identifier-gsa grid-row grid-gap-2" aria-label="">
-      <div><img src="" alt="GSA logo" width="40" height="40"></div>
-      <div aria-label="" class="text-base-lighest grid-col-auto">
+    <section class="identifier-gsa grid-row grid-gap-2 padding-bottom-4" aria-label="">
+      <div>
+            {% image_with_class "_img/gsa-logo.svg" "width-5 height-5" "GSA logo" %}
+      </div>
+      <div aria-label="" class="grid-col-auto">
         tts.gsa.gov <br>
         <strong>An official website of the <a href="https://gsa.gov">General Services Administration</a></strong>
       </div>
     </section>
-    <nav class="grid-row grid-gap identifier" aria-label="">
+    <nav class="grid-row grid-gap identifier font-sans-2xs" aria-label="">
       <div class="tablet:grid-col-3">
         <ul class="usa-list usa-list--unstyled">
-          <li><a href="">About tts.gsa.gov</a></li>
+            <li><a href="{{ '/about' | url }}">About tts.gsa.gov</a></li>
           <li><a href="https://www.gsa.gov/website-information/accessibility-aids">Accessibility</a></li>
         </ul>
       </div>
@@ -30,13 +32,14 @@
       <div class="tablet:grid-col-3">
         <ul class="usa-list usa-list--unstyled">
           <li><a href="https://www.usa.gov/policies">Privacy Policy</a></li>
+          <li><a href="{{ '/built-with' | url }}">Built With</a></li>
         </ul>
       </div>
     </nav>
-    <section aria-label="" class="identifier-gov-info">Looking for U.S. government information and services? <a href="https://www.usa.gov/">Visit USA.gov</a></section>
+    <section aria-label="" class="identifier-gov-info margin-top-4 padding-top-1 border-top-1px">Looking for U.S. government information and services? <a href="https://www.usa.gov/">Visit USA.gov</a></section>
   </div>
     {%- if site.allow_page_edits -%}
-    <div class="suggest-edit">
+    <div class="suggest-edit margin-top-2 font-sans-3xs">
       <a href="https://github.com/GSA-TTS/tts.gsa.gov/blob/main/{{ page.inputPath }}">Suggest edits to this page on GitHub</a>
     </footer>
     </div>

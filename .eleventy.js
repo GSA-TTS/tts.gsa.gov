@@ -24,12 +24,14 @@ module.exports = function (config) {
   // Add plugins
   config.addPlugin(pluginRss);
   config.addPlugin(pluginNavigation);
+
   //// SVG Sprite Plugin for USWDS USWDS icons
   config.addPlugin(svgSprite, {
     path: "./node_modules/@uswds/uswds/dist/img/uswds-icons",
     svgSpriteShortcode: 'uswds_icons_sprite',
     svgShortcode: 'uswds_icons'
   });
+
   //// SVG Sprite Plugin for USWDS USA icons
   config.addPlugin(svgSprite, {
     path: "./node_modules/@uswds/uswds/dist/img/usa-icons",
@@ -48,7 +50,7 @@ module.exports = function (config) {
   });
 
   // Template function used to sort a collection by a certain property
-  // Ex: {%- assign sortedJobs = collection.jobs | sortByProp: "title" -%}
+  // Ex: {% assign sortedJobs = collection.jobs | sortByProp: "title" %}
   function sortByProp(values, prop) {
     let vals = [...values];
     return vals.sort((a, b) => {
@@ -117,7 +119,7 @@ module.exports = function (config) {
     permalink: markdownItAnchor.permalink.ariaHidden({
       placement: 'after',
       class: 'direct-link',
-      symbol: '#',
+      symbol: '',
       level: [1, 2, 3, 4],
     }),
     slugify: config.getFilter('slug'),
