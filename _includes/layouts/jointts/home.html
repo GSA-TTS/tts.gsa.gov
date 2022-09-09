@@ -30,13 +30,13 @@ layout: layouts/default
         {%- unless pg.data.path contains 'template' -%}
         {%- unless pg.data.path contains 'performance-profiles' -%}
         <li>
-        <a href="{{ config.baseUrl }}{{ pg.data.permalink }}">{{ pg.data.title }}</a> (Open {% if pg.data.weeks_open %}for {% if pg.data.weeks < 52 %}{{ pg.data.weeks }}{% else %} one year or until all selections have been made{% endif %},{% endif %} through {{ pg.data.closes | date: '%A, %B %e, %Y at %l:%M%P %Z' }} Eastern)
+        <a href="{{ pg.data.permalink | url}}">{{ pg.data.title }}</a> (Open {% if pg.data.weeks_open %}for {% if pg.data.weeks < 52 %}{{ pg.data.weeks }}{% else %} one year or until all selections have been made{% endif %},{% endif %} through {{ pg.data.closes | date: '%A, %B %e, %Y at %l:%M%P %Z' }} Eastern)
         </li>
         {%- endunless -%}
         {%- elsif pg.data.state == 'usajobs' -%}
         {%- unless pg.data.path contains 'template'  -%}
         <li>
-        <a href="{{ site.baseurl }}{{ pg.data.permalink }}">{{ pg.data.title }}</a> (Open {% if pg.data.weeks_open %}for {% if pg.data.weeks < 52 %}{{ pg.data.weeks }}{% else %} one year or until all selections have been made{% endif %},{% endif %} through {{ pg.data.closes | date: '%A, %B %e, %Y at %l:%M%P %Z' }} Eastern)
+        <a href="{{ pg.data.permalink | url}}">{{ pg.data.title }}</a> (Open {% if pg.data.weeks_open %}for {% if pg.data.weeks < 52 %}{{ pg.data.weeks }}{% else %} one year or until all selections have been made{% endif %},{% endif %} through {{ pg.data.closes | date: '%A, %B %e, %Y at %l:%M%P %Z' }} Eastern)
         </li>
         {%- endunless -%}
         {%- endunless -%}
@@ -52,7 +52,7 @@ layout: layouts/default
         {% unless pg.path contains 'template' %}
         {% unless pg.path contains 'performance-profiles' %}
         <li>
-          <a href="{{ site.baseurl }}{{ pg.permalink }}">{{ pg.title }}</a>
+          <a href="{{ pg.permalink | url}}">{{ pg.title }}</a>
         </li>
         {% endunless %}
         {% endunless %}
