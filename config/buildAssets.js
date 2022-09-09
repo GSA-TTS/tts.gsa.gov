@@ -50,7 +50,6 @@ esbuild
     minify: process.env.ELEVENTY_ENV === 'production',
     sourcemap: process.env.ELEVENTY_ENV !== 'production',
     target: ['chrome58', 'firefox57', 'safari11', 'edge18'],
-    plugins: [sassPlugin()],
     bundle: true,
     plugins: [
       sassPlugin({
