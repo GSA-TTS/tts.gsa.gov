@@ -42,6 +42,16 @@ collections:
 
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
+  - label: Site Alert
+    name: hero-alert
+    create: false
+    format: "json"
+    files:
+      - label: "Hero Alert"
+        name: "hero-alert"
+        file: "_data/heroAlert.json"
+        fields:
+          - {label: 'Message', name: 'message', widget: 'string'}
   - label: Join TTS Info Pages
     name: jointtspages
     folder: pages/jointts/
