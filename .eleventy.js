@@ -169,6 +169,8 @@ const svgSprite = require("eleventy-plugin-svg-sprite");
   }
 
   return {
+    dataTemplateEngine: "liquid",
+
     // Control which files Eleventy will process
     // e.g.: *.md, *.njk, *.html, *.liquid
     templateFormats: ['md', 'njk', 'html', 'liquid'],
