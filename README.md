@@ -111,7 +111,18 @@ USWDS has sprite icons available for use. Here is the [list of icons](https://de
 
 ### Expanding SCSS Styles
 
-CSS and SASS can be added or imported into the `styles/styles.scss`. You can also use [USWDS Design Tokens](https://designsystem.digital.gov/design-tokens/) in the `styles/themes` files to update colors, fonts, and layout to fit your site's branding. This template uses [esbuild](https://esbuild.github.io/)and [autoprefixer](https://github.com/postcss/autoprefixer) to bundle your SASS/CSS and fingerprint the files in the site build.
+CSS and SASS can be added or imported into the `styles/styles.scss`. This template uses [esbuild](https://esbuild.github.io/) and [autoprefixer](https://github.com/postcss/autoprefixer) to bundle your SASS/CSS and fingerprint the files in the site build.
+
+### Asset pipeline / build process
+
+`config/buildAssets.js` is initiated first when executing `npm run dev`. This file initiates the esbuild build step which processes the SCSS and JS files into the `outdir` which is currently `_site/assets`. Since the esbuild `entryNames` config option template is set to `'[dir]/[name]-[hash]'
+`, the asset files will have fingerprint IDs placed on the end of the file names to assist with browser caching. Once the esbuild build step is done, there's a call to a function whose job is to look at any CSS or JavaScript file inside `_site/assets`, read its hash ID, and write out key/value data to `_data/assetPaths.json`. This key in this data is the filename of the asset and the value is the full asset filename as it exists in `_site/assets`. An example of this would be:
+
+The function finds a file `_site/assets/styles/styles-C4XNB42.css` and it ends up adding a key/value entry to `_data/assetPaths.json` that reads: `"styles.css": "styles-C4XNB42.css"`.
+
+We make use of this `_data/assetPaths.json` file in our templates, namely `meta.html` to load scripts and assets using a constant known name (such as `styles.css` and don't have to worry about updating those linkages each time the content inside the assets causes the hash ID to change. 
+
+Once this function inside `config/buildAssets` is complete it returns control to the esbuild build step when then concludes. The next step is Eleventy begins its build step, looking at `.eleventy.js` for its configuration. Once Eleventy has completed its build process, browsersync begins serving the local repo and a plugin named `chokidar` along with Eleventy's own watch targets begin watching for CSS/JS file changes or changes to pages inside Eleventy, ready to hot reload when changes are detected.
 
 ### Adding custom Javascript
 
