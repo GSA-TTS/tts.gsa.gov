@@ -120,7 +120,7 @@ CSS and SASS can be added or imported into the `styles/styles.scss`. This templa
 
 The function finds a file `_site/assets/styles/styles-C4XNB42.css` and it ends up adding a key/value entry to `_data/assetPaths.json` that reads: `"styles.css": "styles-C4XNB42.css"`.
 
-We make use of this `_data/assetPaths.json` file in our templates, namely `_includes/meta.html` and `_includes/scripts.html` to load scripts and assets using a constant known name (such as `styles.css` and don't have to worry about updating those linkages each time the content inside the assets causes the hash ID to change. 
+We make use of this `_data/assetPaths.json` file in our templates, namely `_includes/meta.html` and `_includes/scripts.html` to load scripts and assets using a constant known name (such as `styles.css`) and don't have to worry about updating those linkages each time the content inside the assets causes the hash ID to change. 
 
 Once this function inside `config/buildAssets` is complete it returns control to the esbuild build step when then concludes. The next step is Eleventy begins its build step, looking at `.eleventy.js` for its configuration. Once Eleventy has completed its build process, browsersync begins serving the local repo and a plugin named `chokidar` along with Eleventy's own watch targets begin watching for CSS/JS file changes or changes to pages inside Eleventy, ready to hot reload when changes are detected.
 
