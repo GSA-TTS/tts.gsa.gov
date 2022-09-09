@@ -5,7 +5,7 @@ layout: layouts/default
 <div class="grid-container">
   <div class="grid-row grid-gap">
     <div class="desktop:grid-col-12 margin-top-4">
-        <a href="{{config.baseUrl}}/join" class="back-breadcrumb">Back to all jobs</a>
+        <a href="{{'/join' | url}}" class="back-breadcrumb">Back to all jobs</a>
     </div>
   </div>
 </div>
@@ -19,7 +19,7 @@ layout: layouts/default
         <div class="usa-alert-body">
           <h3 class="usa-alert-heading">This job posting has closed.</h3>
           <p class="usa-alert-text">Please see
-          <a href="/{{config.baseUrl}}/join">our other open positions</a>.</p>
+          <a href="{{ '/join' | url }}">our other open positions</a>.</p>
         </div>
       </div>
       {% elsif state == 'upcoming' %}
