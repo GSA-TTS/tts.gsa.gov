@@ -3,11 +3,10 @@ layout: layouts/page
 permalink: built-with/
 title: Built With
 ---
-### This site is built with
+### This site is built with TTS products:
 
-* [Eleventy](https://www.11ty.dev/)
 * [USWDS 3](https://designsystem.digital.gov/whats-new/updates/2022/04/28/introducing-uswds-3-0/)
 * [Federalist](https://federalist.18f.gov/)
-* [Pa11y](https://pa11y.org/)
 * [Digital Analytics Platform](https://digital.gov/guides/dap/)
-* [T﻿esting NetlifyCMS](https://google.com)
+
+Learn more about the products used at our [GitHub repo](https://github.com/GSA-TTS/tts.gsa.gov/tree/main/docs/architecture/decisions).
