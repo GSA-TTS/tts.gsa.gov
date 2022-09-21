@@ -3,27 +3,30 @@ services:
     link: https://usa.gov
     link_alt_text: link to USA.gov
     logo: _img/usagov.png
-    logo_alt_text: Cloud.gov logo
+    logo_alt_text: USA.gov logo
     category: platforms
-    description: Making it easier for the public to find and understand the
-      government services and information they need— anytime, anywhere.
+    description: "Making it easier for the public to find and understand the
+      government services and information they need— anytime, anywhere. The
+      program includes the Spanish-language site, USAGov en Español. "
   - name: 10x
     link: https://10x.gov
     link_alt_text: link to 10x.gov
-    logo: _img/logo-img.png
-    logo_alt_text: Cloud.gov logo
+    logo: _img/10x.png
+    logo_alt_text: 10x.gov logo
     category: products
     description: Incrementally investing in crowdsourced technology ideas from
       federal employees to improve the public's experience with the federal
       government.
   - name: Benefits Studio
-    link: https://10x.gov
-    link_alt_text: link to 10x.gov
-    logo: _img/logo-img.png
-    logo_alt_text: Cloud.gov logo
+    link: https://github.com/GSA/public-benefits-studio
+    link_alt_text: link to Benefits Studio GitHub repo
+    logo: _img/generic.png
+    logo_alt_text: logo not yet available
     category: products
-    description: Offering the public open access to datasets from across the federal
-      government.
+    description: Collaborating with benefits agencies to build shared technology
+      tools and spread best practices that work across programs to support a
+      simpler, less burdensome experience for low-income individuals and
+      families.
   - name: PIF
     link: https://pif.gov
     link_alt_text: link to pif.gov
