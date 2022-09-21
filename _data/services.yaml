@@ -12,7 +12,7 @@ services:
     link: https://10x.gov
     link_alt_text: link to 10x.gov
     logo: _img/10x.png
-    logo_alt_text: 10x.gov logo
+    logo_alt_text: 10x logo
     category: products
     description: Incrementally investing in crowdsourced technology ideas from
       federal employees to improve the public's experience with the federal
@@ -30,18 +30,16 @@ services:
   - name: PIF
     link: https://pif.gov
     link_alt_text: link to pif.gov
-    logo: _img/logo-img.png
-    logo_alt_text: Cloud.gov logo
+    logo: _img/pif.png
+    logo_alt_text: PIF logo
     category: people
-    description: This highly-competitive program pairs talented, diverse
-      technologists and innovators with top civil-servants and change-makers
-      working at the highest levels of the federal government to tackle some our
-      nation’s biggest challenges.
+    description: A program that pairs top technologists with civil-servants to spend
+      12 months tackling some of our nation’s biggest challenges.
   - name: DAP
-    link: https://digital.gov
-    link_alt_text: link to digital.gov
-    logo: _img/logo-img.png
-    logo_alt_text: Cloud.gov logo
+    link: https://digital.gov/guides/dap/
+    link_alt_text: link to DAP website
+    logo: _img/generic.png
+    logo_alt_text: logo not yet available
     category: products
     description: Offering advanced, easy web analytics tools, training, and support
       to help the government make data-driven decisions to improve the digital
