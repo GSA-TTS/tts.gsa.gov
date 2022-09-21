@@ -2,212 +2,247 @@ services:
   - name: USAGov
     link: https://usa.gov
     link_alt_text: link to USA.gov
-    logo: _img/logo-img.png
+    logo: _img/usagov.png
     logo_alt_text: Cloud.gov logo
     category: platforms
-    description: Making it easier for the public to find and understand the government services and information they need— anytime, anywhere.
+    description: Making it easier for the public to find and understand the
+      government services and information they need— anytime, anywhere.
   - name: 10x
     link: https://10x.gov
     link_alt_text: link to 10x.gov
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
     category: products
-    description: Incrementally investing in crowdsourced technology ideas from federal employees to improve the public's experience with the federal government.
+    description: Incrementally investing in crowdsourced technology ideas from
+      federal employees to improve the public's experience with the federal
+      government.
   - name: Benefits Studio
     link: https://10x.gov
     link_alt_text: link to 10x.gov
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
     category: products
-    description: Offering the public open access to datasets from across the federal government.
+    description: Offering the public open access to datasets from across the federal
+      government.
   - name: PIF
     link: https://pif.gov
     link_alt_text: link to pif.gov
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
     category: people
-    description: This highly-competitive program pairs talented, diverse technologists and innovators with top civil-servants and change-makers working at the highest levels of the federal government to tackle some our nation’s biggest challenges.
+    description: This highly-competitive program pairs talented, diverse
+      technologists and innovators with top civil-servants and change-makers
+      working at the highest levels of the federal government to tackle some our
+      nation’s biggest challenges.
   - name: DAP
     link: https://digital.gov
     link_alt_text: link to digital.gov
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
     category: products
-    description: Offering advanced, easy web analytics tools, training, and support to help the government make data-driven decisions to improve the digital public experience.
+    description: Offering advanced, easy web analytics tools, training, and support
+      to help the government make data-driven decisions to improve the digital
+      public experience.
   - name: IAE/SAM
     link: https://www.gsa.gov/about-us/organization/federal-acquisition-service/office-of-systems-management/integrated-award-environment-iae
     link_alt_text: integrated award environment homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
     category: platforms
-    description:
+    description: TBD
   - name: MAX.gov (Transitioning from OMB)
     link: https://max.gov
     link_alt_text: link to max.gov homepage
     logo: _img/logo-img.png
     logo_alt_text: cloud.gov logo
     category: products
-    description: TTS is working with OMB to develop and implement the next generation of interagency collaboration tools and shared services.
+    description: TTS is working with OMB to develop and implement the next
+      generation of interagency collaboration tools and shared services.
   - name: Digital.gov
     link: https://digital.gov
     link_alt_text: Digital.gov homepage
     logo: _img/logo-img.png
     logo_alt_text: cloud.gov logo
     category: products
-    description: Creating community connections and providing guidance on building digital services to transform how the government interacts with the public.
+    description: Creating community connections and providing guidance on building
+      digital services to transform how the government interacts with the
+      public.
   - name: Vote.gov
     link: https://vote.gov
     link_alt_text: Vote.gov homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
     category: platforms
-    description:
+    description: TBD
   - name: Centers of Excellence
     link: https://coe.gsa.gov
     link_alt_text: centers of exellence homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
     category: people
-    description:
+    description: TBD
   - name: Search.gov
     link: https://search.gov
     link_alt_text: Search.gov homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
     category: products
-    description: Creating a standard search experience across government websites, providing the public with quick, easy access to the government information and services they need.
+    description: Creating a standard search experience across government websites,
+      providing the public with quick, easy access to the government information
+      and services they need.
   - name: Login.gov
     link: https://login.gov
     link_alt_text: Login.gov homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
     category: products
-    description: Providing the public one account to access participating government services online.
+    description: Providing the public one account to access participating government
+      services online.
   - name: 18F
     link: https://18f.gsa.gov
     link_alt_text: 18F homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
     category: people
-    description:
+    description: TBD
   - name: Made in America
     link: https://madeinamerica.gov
     link_alt_text: Made in America homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
     category: platforms
-    description:
+    description: TBD
   - name: Citizenscience.gov
     link: https://science.gov
     link_alt_text: Citizen science homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
     category: platforms
-    description: Supporting public engagement in scientific discovery and participatory research across the federal government.
+    description: Supporting public engagement in scientific discovery and
+      participatory research across the federal government.
   - name: Touchpoints
     link: https://touchpoints.digital.gov/
     link_alt_text: Touchpoints homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
     category: products
-    description: Offers a simple, flexible, and convenient way to start collecting customer feedback so you can focus on serving customers rather than managing surveys.
+    description: Offers a simple, flexible, and convenient way to start collecting
+      customer feedback so you can focus on serving customers rather than
+      managing surveys.
   - name: FedRAMP
     link: https://www.fedramp.gov/
     link_alt_text: FedRAMP homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
     category: products
-    description: Helping agencies avoid spending duplicative funds for security-related costs and saves valuable time by establishing an authorize once, reuse many times IT security program for cloud service offerings.
+    description: Helping agencies avoid spending duplicative funds for
+      security-related costs and saves valuable time by establishing an
+      authorize once, reuse many times IT security program for cloud service
+      offerings.
   - name: APIData.gov
     link: https://api.data.gov/
     link_alt_text: API data homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
     category: products
-    description: Saving money and speeding development of federal APIs by offering a hosted shared service for API management. Enables greater developer adoption and cross-agency metrics through the use of government-wide API keys.
+    description: Saving money and speeding development of federal APIs by offering a
+      hosted shared service for API management. Enables greater developer
+      adoption and cross-agency metrics through the use of government-wide API
+      keys.
   - link: https://data.gov/
     name: Data.gov
     link_alt_text: Data.gov homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
     category: platforms
-    description: Offering the public open access to datasets from across the federal government.
+    description: Offering the public open access to datasets from across the federal
+      government.
   - name: Challenge.gov
     link: https://challenge.gov
     link_alt_text: Challenge.gov homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
     category: platforms
-    description: Catalyzing public engagement and participation in innovation and problem solving through crowdsourcing and prize competitions.
+    description: Catalyzing public engagement and participation in innovation and
+      problem solving through crowdsourcing and prize competitions.
   - name: Cloud.gov
     link: https://cloud.gov/
     link_alt_text: Cloud.gov homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
     category: products
-    description: Providing federal agencies with an easy, secure way to create websites and deploy applications to the cloud.
+    description: Providing federal agencies with an easy, secure way to create
+      websites and deploy applications to the cloud.
   - name: Code.gov
     link: https://code.gov
     link_alt_text: Code.gov homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
     category: products
-    description: Helping agencies meet the requirements of the Federal Source Code Policy and providing a platform to make federal code publicly available.
+    description: Helping agencies meet the requirements of the Federal Source Code
+      Policy and providing a platform to make federal code publicly available.
   - name: Digital Corps
     link: https://digitalcorps.gsa.gov/
     link_alt_text: Digital Corps homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
     category: people
-    description:
+    description: TBD
   - name: Federal Audit Clearinghouse
     link: https://facweb.census.gov/uploadpdf.aspx
     link_alt_text: FAC homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
     category: platforms
-    description:
+    description: TBD
   - name: USWDS
     link: https://designsystem.digital.gov/
     link_alt_text: USWDS homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
     category: products
-    description: Providing guidance and code to transform how the government delivers a seamless, trustworthy and optimal digital experience to the public.
+    description: Providing guidance and code to transform how the government
+      delivers a seamless, trustworthy and optimal digital experience to the
+      public.
   - name: eRegulations
     link: https://www.regulations.gov/
     link_alt_text: eRegulations homepage
     logo: _img/logo-img.png
     category: platforms
     logo_alt_text: Cloud.gov logo
-    description:
+    description: TBD
   - name: eSRS
     link: https://www.esrs.gov/
     link_alt_text: eSRS homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
-    description:
+    description: TBD
+    category: platforms
   - name: CPARS
     link: https://cpars.gov/
     link_alt_text: CPARS homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
-    description:
+    description: TBD
+    category: platforms
   - name: FAPIIS
     link: https://www.fapiis.gov/fapiis/#/home
     link_alt_text: FAPIIS homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
-    description:
+    description: TBD
+    category: platforms
   - name: Federal Procurement Data System
     link: https://www.fpds.gov/fpdsng_cms/index.php/en/
     link_alt_text: FPDS homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
-    description:
+    description: TBD
+    category: products
   - name: FSRS
     link: https://www.fsrs.gov/
     link_alt_text: FSRS homepage
     logo: _img/logo-img.png
     logo_alt_text: Cloud.gov logo
-    description:
+    description: TBD
+    category: platforms
