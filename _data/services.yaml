@@ -44,97 +44,101 @@ services:
     description: Offering advanced, easy web analytics tools, training, and support
       to help the government make data-driven decisions to improve the digital
       public experience.
-  - name: IAE/SAM
-    link: https://www.gsa.gov/about-us/organization/federal-acquisition-service/office-of-systems-management/integrated-award-environment-iae
-    link_alt_text: integrated award environment homepage
-    logo: _img/logo-img.png
-    logo_alt_text: Cloud.gov logo
+  - name: SAM.gov
+    link: https://www.gsa.gov/about-us/organization/federal-acquisition-service/office-of-systems-management/integrated-award-environment-iae/about-samgov
+    link_alt_text: link to About SAM.gov webpage
+    logo: _img/generic.png
+    logo_alt_text: TBD logo
     category: platforms
-    description: TBD
+    description: Providing entities the ability to do business with the U.S.
+      government. This includes updating or renewing, checking the status, and
+      searching for entity registration and exclusion records.
   - name: MAX.gov (Transitioning from OMB)
     link: https://max.gov
     link_alt_text: link to max.gov homepage
-    logo: _img/logo-img.png
-    logo_alt_text: cloud.gov logo
+    logo: _img/generic.png
+    logo_alt_text: logo not yet available
     category: products
     description: TTS is working with OMB to develop and implement the next
       generation of interagency collaboration tools and shared services.
   - name: Digital.gov
     link: https://digital.gov
-    link_alt_text: Digital.gov homepage
-    logo: _img/logo-img.png
-    logo_alt_text: cloud.gov logo
+    link_alt_text: link to Digital.gov homepage
+    logo: _img/digital.png
+    logo_alt_text: digital.gov logo
     category: products
     description: Creating community connections and providing guidance on building
       digital services to transform how the government interacts with the
       public.
   - name: Vote.gov
     link: https://vote.gov
-    link_alt_text: Vote.gov homepage
-    logo: _img/logo-img.png
-    logo_alt_text: Cloud.gov logo
+    link_alt_text: link to Vote.gov homepage
+    logo: _img/generic.png
+    logo_alt_text: TBD logo
     category: platforms
-    description: TBD
+    description: The digital authoritative, trusted source for voting information.
   - name: Centers of Excellence
     link: https://coe.gsa.gov
-    link_alt_text: centers of exellence homepage
-    logo: _img/logo-img.png
-    logo_alt_text: Cloud.gov logo
+    link_alt_text: Link to COE homepage
+    logo: _img/coe.png
+    logo_alt_text: COE logo
     category: people
-    description: TBD
+    description: A centralized team of technical experts that accelerate agency-wide
+      IT modernization.
   - name: Search.gov
     link: https://search.gov
-    link_alt_text: Search.gov homepage
-    logo: _img/logo-img.png
-    logo_alt_text: Cloud.gov logo
+    link_alt_text: link to Search.gov homepage
+    logo: _img/search.png
+    logo_alt_text: Search.gov logo
     category: products
     description: Creating a standard search experience across government websites,
       providing the public with quick, easy access to the government information
       and services they need.
   - name: Login.gov
     link: https://login.gov
-    link_alt_text: Login.gov homepage
-    logo: _img/logo-img.png
-    logo_alt_text: Cloud.gov logo
+    link_alt_text: link to Login.gov homepage
+    logo: _img/login.png
+    logo_alt_text: Login.gov logo
     category: products
     description: Providing the public one account to access participating government
       services online.
   - name: 18F
     link: https://18f.gsa.gov
-    link_alt_text: 18F homepage
-    logo: _img/logo-img.png
-    logo_alt_text: Cloud.gov logo
+    link_alt_text: link to 18F homepage
+    logo: _img/18f.png
+    logo_alt_text: 18F logo
     category: people
-    description: TBD
+    description: A digital consulting office that partners with agencies to help
+      them build or buy digital services.
   - name: Made in America
     link: https://madeinamerica.gov
-    link_alt_text: Made in America homepage
-    logo: _img/logo-img.png
-    logo_alt_text: Cloud.gov logo
+    link_alt_text: link to Made in America homepage
+    logo: _img/generic.png
+    logo_alt_text: Logo not yet available
     category: platforms
     description: TBD
   - name: Citizenscience.gov
     link: https://science.gov
     link_alt_text: Citizen science homepage
-    logo: _img/logo-img.png
-    logo_alt_text: Cloud.gov logo
+    logo: _img/generic.png
+    logo_alt_text: Logo not yet available
     category: platforms
     description: Supporting public engagement in scientific discovery and
       participatory research across the federal government.
   - name: Touchpoints
     link: https://touchpoints.digital.gov/
-    link_alt_text: Touchpoints homepage
-    logo: _img/logo-img.png
-    logo_alt_text: Cloud.gov logo
+    link_alt_text: link to Touchpoints homepage
+    logo: _img/generic.png
+    logo_alt_text: Logo not yet available
     category: products
     description: Offers a simple, flexible, and convenient way to start collecting
       customer feedback so you can focus on serving customers rather than
       managing surveys.
   - name: FedRAMP
     link: https://www.fedramp.gov/
-    link_alt_text: FedRAMP homepage
-    logo: _img/logo-img.png
-    logo_alt_text: Cloud.gov logo
+    link_alt_text: link to FedRAMP homepage
+    logo: _img/fedramp.png
+    logo_alt_text: FedRamp logo
     category: products
     description: Helping agencies avoid spending duplicative funds for
       security-related costs and saves valuable time by establishing an
@@ -142,9 +146,9 @@ services:
       offerings.
   - name: APIData.gov
     link: https://api.data.gov/
-    link_alt_text: API data homepage
-    logo: _img/logo-img.png
-    logo_alt_text: Cloud.gov logo
+    link_alt_text: link to API data homepage
+    logo: _img/generic.png
+    logo_alt_text: Logo not yet available
     category: products
     description: Saving money and speeding development of federal APIs by offering a
       hosted shared service for API management. Enables greater developer
@@ -152,98 +156,114 @@ services:
       keys.
   - link: https://data.gov/
     name: Data.gov
-    link_alt_text: Data.gov homepage
-    logo: _img/logo-img.png
-    logo_alt_text: Cloud.gov logo
+    link_alt_text: link to Data.gov homepage
+    logo: _img/generic.png
+    logo_alt_text: Logo not yet available
     category: platforms
     description: Offering the public open access to datasets from across the federal
       government.
   - name: Challenge.gov
     link: https://challenge.gov
-    link_alt_text: Challenge.gov homepage
-    logo: _img/logo-img.png
-    logo_alt_text: Cloud.gov logo
+    link_alt_text: link to Challenge.gov homepage
+    logo: _img/generic.png
+    logo_alt_text: Logo not yet available
     category: platforms
     description: Catalyzing public engagement and participation in innovation and
       problem solving through crowdsourcing and prize competitions.
   - name: Cloud.gov
     link: https://cloud.gov/
-    link_alt_text: Cloud.gov homepage
-    logo: _img/logo-img.png
+    link_alt_text: link to Cloud.gov homepage
+    logo: _img/cloud.png
     logo_alt_text: Cloud.gov logo
     category: products
     description: Providing federal agencies with an easy, secure way to create
       websites and deploy applications to the cloud.
   - name: Code.gov
     link: https://code.gov
-    link_alt_text: Code.gov homepage
-    logo: _img/logo-img.png
-    logo_alt_text: Cloud.gov logo
+    link_alt_text: link to Code.gov homepage
+    logo: _img/code.png
+    logo_alt_text: Code.gov logo
     category: products
     description: Helping agencies meet the requirements of the Federal Source Code
       Policy and providing a platform to make federal code publicly available.
   - name: Digital Corps
     link: https://digitalcorps.gsa.gov/
-    link_alt_text: Digital Corps homepage
-    logo: _img/logo-img.png
-    logo_alt_text: Cloud.gov logo
+    link_alt_text: link to Digital Corps homepage
+    logo: _img/generic.png
+    logo_alt_text: Logo not yet available
     category: people
-    description: TBD
+    description: Fellowship program for early-career technologists to launch
+      impactful careers in public service and create a more effective, equitable
+      government.
   - name: Federal Audit Clearinghouse
     link: https://facweb.census.gov/uploadpdf.aspx
-    link_alt_text: FAC homepage
-    logo: _img/logo-img.png
-    logo_alt_text: Cloud.gov logo
+    link_alt_text: link to FAC homepage
+    logo: _img/fac-logo-512.png
+    logo_alt_text: FAC logo
     category: platforms
-    description: TBD
-  - name: USWDS
+    description: Supporting the collection, distribution, and oversight of audits as
+      guided by the Single Audit Act.
+  - name: US Web Design System (USWDS)
     link: https://designsystem.digital.gov/
-    link_alt_text: USWDS homepage
-    logo: _img/logo-img.png
-    logo_alt_text: Cloud.gov logo
+    link_alt_text: link to USWDS homepage
+    logo: _img/uswds.png
+    logo_alt_text: USWDS logo
     category: products
     description: Providing guidance and code to transform how the government
       delivers a seamless, trustworthy and optimal digital experience to the
       public.
   - name: eRegulations
     link: https://www.regulations.gov/
-    link_alt_text: eRegulations homepage
-    logo: _img/logo-img.png
+    link_alt_text: link to eRegulations homepage
+    logo: _img/erulemaking.png
     category: platforms
-    logo_alt_text: Cloud.gov logo
-    description: TBD
+    logo_alt_text: eRulemaking logo
+    description: Increasing access to and participation in developing regulations
+      and other related documents that impact you and promoting more efficient
+      and effective rulemaking through public involvement.
   - name: eSRS
     link: https://www.esrs.gov/
-    link_alt_text: eSRS homepage
-    logo: _img/logo-img.png
-    logo_alt_text: Cloud.gov logo
-    description: TBD
+    link_alt_text: link to eSRS homepage
+    logo: _img/generic.png
+    logo_alt_text: Logo not yet available
+    description: "A web-based reporting tool to collect subcontracting
+      accomplishments and share the information with the awarding official. "
     category: platforms
   - name: CPARS
     link: https://cpars.gov/
-    link_alt_text: CPARS homepage
-    logo: _img/logo-img.png
-    logo_alt_text: Cloud.gov logo
-    description: TBD
+    link_alt_text: link to CPARS homepage
+    logo: _img/generic.png
+    logo_alt_text: Logo not yet available
+    description: The official U.S. government website for people who make, receive,
+      and manage federal awards. It contains data on federal contractors,
+      including both past performance information and integrity records.
     category: platforms
   - name: FAPIIS
     link: https://www.fapiis.gov/fapiis/#/home
-    link_alt_text: FAPIIS homepage
-    logo: _img/logo-img.png
-    logo_alt_text: Cloud.gov logo
-    description: TBD
+    link_alt_text: link to FAPIIS homepage
+    logo: _img/generic.png
+    logo_alt_text: Logo not yet avaiable
+    description: "Entity integrity data and records, entered by government
+      personnel.  FAPIIS records that include things, such as exclusions and
+      proceedings information, are used by Contracting Officers as part of the
+      decision process prior to making awards.  "
     category: platforms
   - name: Federal Procurement Data System
     link: https://www.fpds.gov/fpdsng_cms/index.php/en/
     link_alt_text: FPDS homepage
-    logo: _img/logo-img.png
-    logo_alt_text: Cloud.gov logo
-    description: TBD
+    logo: _img/generic.png
+    logo_alt_text: Logo not yet available
+    description: "Being integrated into Sam.gov, a database containing publicly
+      available information about all unclassified contract actions exceeding
+      the micro-purchase threshold and any modifications to those actions that
+      change previously reported data, regardless of dollar value. "
     category: products
   - name: FSRS
     link: https://www.fsrs.gov/
-    link_alt_text: FSRS homepage
-    logo: _img/logo-img.png
-    logo_alt_text: Cloud.gov logo
-    description: TBD
+    link_alt_text: link to FSRS homepage
+    logo: _img/generic.png
+    logo_alt_text: Logo not yet available
+    description: "The reporting tool federal prime awardees use to capture and
+      report subaward and executive compensation data regarding their first-tier
+      subawards to meet FFATA reporting requirements. "
     category: platforms
