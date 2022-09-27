@@ -21,7 +21,7 @@ We provide building blocks and tooling that are commonly needed in the developme
           <h2 class="usa-card__heading"><a href="{{ service.link}}">{{ service.name }}</a></h2>
         </div>
         <div class="usa-card__media usa-card__media--inset flex-align-self-center">
-          <div class="usa-card__img square-4">
+          <div class="usa-card__img square-8">
             {% image_with_class service.logo "" service.logo_alt_text %}
           </div>
         </div>
