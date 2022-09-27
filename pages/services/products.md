@@ -16,7 +16,7 @@ We provide building blocks and tooling that are commonly needed in the developme
 {%- for service in sortedServices -%}
 {%- if service.category == 'products' -%}
     <li class="service usa-card tablet:grid-col-4">
-      <div class="usa-card__container overflow-y-hidden text-center maxh-card-lg display-flex">
+      <div class="usa-card__container overflow-y-hidden text-center maxh-card-lg  display-flex">
         <div class="usa-card__header">
           <h2 class="usa-card__heading"><a href="{{ service.link}}">{{ service.name }}</a></h2>
         </div>
