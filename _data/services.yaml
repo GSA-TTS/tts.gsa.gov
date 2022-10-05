@@ -20,7 +20,7 @@ services:
   - name: Benefits Studio
     link: https://github.com/GSA/public-benefits-studio
     link_alt_text: link to Benefits Studio GitHub repo
-    logo: _img/generic.png
+    logo: _img/nologo.png
     logo_alt_text: logo not yet available
     category: products
     description: Collaborating with benefits agencies to build shared technology
