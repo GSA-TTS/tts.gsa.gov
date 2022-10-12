@@ -40,6 +40,10 @@ $tts-tagline-bg: #1F303E;
   border-radius: 0;
 }
 
+.service .usa-card__img {
+  background-color: unset;
+}
+
 .usa-prose .usa-card {
   margin-bottom: 1rem;
 }
