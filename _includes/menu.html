@@ -52,7 +52,7 @@ manage your navigation system {% endcomment %}
         {% endunless %} {% endfor %}
       </ul>
       <div class="usa-nav__secondary">
-        <ul class="usa-nav__secondary-links">
+        <!-- <ul class="usa-nav__secondary-links">
           {% for nav_item in secondary_navigation %}
           <li class="usa-nav__secondary-item">
             <a href="{{ nav_item.url | url }}"
@@ -60,8 +60,8 @@ manage your navigation system {% endcomment %}
             >
           </li>
           {% endfor %}
-        </ul>
-        {% include "searchgov/form.html" searchgov: site.searchgov %}
+        </ul> -->
+        {% include "search-gov.html" searchgov: site.searchgov %}
       </div>
     </div>
   </nav>
