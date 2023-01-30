@@ -38,7 +38,7 @@ services:
   - name: DAP
     link: https://digital.gov/guides/dap/
     link_alt_text: link to DAP website
-    logo: _img/generic.png
+    logo: _img/digitalgov-logo.svg
     logo_alt_text: logo not yet available
     category: products
     description: Offering advanced, easy web analytics tools, training, and support
@@ -224,7 +224,7 @@ services:
   - name: eSRS
     link: https://www.esrs.gov/
     link_alt_text: link to eSRS homepage
-    logo: _img/generic.png
+    logo: _img/esrs.png
     logo_alt_text: Logo not yet available
     description: "A web-based reporting tool to collect subcontracting
       accomplishments and share the information with the awarding official. "
@@ -261,7 +261,7 @@ services:
   - name: FSRS
     link: https://www.fsrs.gov/
     link_alt_text: link to FSRS homepage
-    logo: _img/generic.png
+    logo: _img/fsrs.png
     logo_alt_text: Logo not yet available
     description: "The reporting tool federal prime awardees use to capture and
       report subaward and executive compensation data regarding their first-tier
