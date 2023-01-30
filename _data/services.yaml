@@ -20,7 +20,7 @@ services:
   - name: Public Benefits Studio
     link: https://github.com/GSA/public-benefits-studio
     link_alt_text: link to Benefits Studio GitHub repo
-    logo: _img/public-benefit-studio.png
+    logo: _img/public-benefits.png
     logo_alt_text: logo not yet available
     category: products
     description: Collaborating with benefits agencies to build shared technology
@@ -30,7 +30,7 @@ services:
   - name: PIF
     link: https://pif.gov
     link_alt_text: link to pif.gov
-    logo: _img/pif-logo.png
+    logo: _img/People_PIF.png
     logo_alt_text: PIF
     category: people
     description: A program that pairs top technologists with civil-servants to spend
@@ -113,14 +113,14 @@ services:
   - name: Made in America
     link: https://madeinamerica.gov
     link_alt_text: link to Made in America homepage
-    logo: _img/generic.png
-    logo_alt_text: Logo not yet available
+    logo: _img/made-in-america.svg
+    logo_alt_text: Made in America
     category: platforms
-    description: TBD
+    description: “Made in America” policies are designed to increase reliance on domestic supply chains and ultimately reduce the need to spend taxpayer dollars on foreign-made goods.
   - name: Citizenscience.gov
     link: https://science.gov
     link_alt_text: Citizen science homepage
-    logo: _img/science-gov.png
+    logo: _img/Platform_Citizenscience.gov.png
     logo_alt_text: Citizen Science
     category: platforms
     description: Supporting public engagement in scientific discovery and
