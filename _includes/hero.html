@@ -6,20 +6,20 @@ This will be displayed on the homepage. Ideally, you want to highlight key goals
   {% render "hero-alert.html", alert: heroAlert['message'] %}
 {% endif %}
 <section class="position-relative tts-hero-wrap">
-  <div class="usa-hero usa-hero--tts opacity-90"></div>
+  <div class="usa-hero--tts opacity-90"></div>
 
   <div class="grid-container">
     <div class="grid-row flex-row">
-      <div class="mobile-lg:grid-col-5 display-flex flex-align-center mobile-lg:padding-x-3 padding-y-4 mobile-lg:padding-y-7 mobile-lg:padding-left-0 tts-tagline">
+      <div class="tablet:grid-col-5 display-flex flex-align-center mobile-lg:padding-x-3 padding-y-4 mobile-lg:padding-y-7 mobile-lg:padding-left-0 tts-tagline">
         <div>
           <h1 class="usa-hero__heading text-base-lightest">Every interaction with the public is an opportunity to improve trust in the government</h1>
+          <p class="text-base-lightest">GSA's Technology Transformation Services (TTS) exists to design and deliver a digital government with and for the American public.</p>
         </div>
       </div>
 
-      <div class="grid-col display-flex margin-bottom-2 mobile-lg:margin-bottom-0">
-        <div class="flex-align-self-end width-full padding-2" style="background-color:rgba(0,0,0,0.5);">
-          <p class="text-base-lightest">GSA's Technology Transformation Services (TTS) exists to design and deliver a digital government with and for the American public.</p>
-        </div>
+      <div class="grid-col display-flex margin-2 padding-4 mobile-lg:margin-bottom-0 tts-hero-people">
+        {% image_with_class "_img/TTS_Home_Hero_Foreground.png" " " %}
+
       </div>
     </div>
   </div>

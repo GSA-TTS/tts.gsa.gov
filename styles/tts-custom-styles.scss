@@ -24,11 +24,20 @@ $tts-tagline-bg: #1F303E;
 }
 
 .tts-hero-wrap {
+  background: url('../_img/TTS_Header_Dev.png');
+  background-size: cover;
+
+}
+
+.tts-hero-people img {
+  object-fit: contain;
+}
+
+.tts-hero-wrap {
   background-color: $tts-tagline-bg;
 }
 
 .tts-tagline {
-  background-color: $tts-tagline-bg;
   @include at-media('mobile-lg') {
     // Setting a min height so that the hero height doesn't need to rely on tagline length
     min-height: 350px;
@@ -100,4 +109,8 @@ h2, h3, h4, h5 {
 .usa-identifier__logos img {
   width: 2.5rem;
   height: 2.5rem;
+}
+
+.usa-prose .usa-card:last-child {
+  margin-bottom: 1rem;
 }

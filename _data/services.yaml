@@ -17,10 +17,10 @@ services:
     description: Incrementally investing in crowdsourced technology ideas from
       federal employees to improve the public's experience with the federal
       government.
-  - name: Benefits Studio
+  - name: Public Benefits Studio
     link: https://github.com/GSA/public-benefits-studio
     link_alt_text: link to Benefits Studio GitHub repo
-    logo: _img/benefits-studio.png
+    logo: _img/public-benefit-studio.png
     logo_alt_text: logo not yet available
     category: products
     description: Collaborating with benefits agencies to build shared technology
@@ -38,7 +38,7 @@ services:
   - name: DAP
     link: https://digital.gov/guides/dap/
     link_alt_text: link to DAP website
-    logo: _img/digitalgov-logo.svg
+    logo: _img/Product_DAP.png
     logo_alt_text: logo not yet available
     category: products
     description: Offering advanced, easy web analytics tools, training, and support
@@ -113,10 +113,10 @@ services:
   - name: Made in America
     link: https://madeinamerica.gov
     link_alt_text: link to Made in America homepage
-    logo: _img/generic.png
+    logo: _img/made-in-america.svg
     logo_alt_text: Logo not yet available
     category: platforms
-    description: TBD
+    description: “Made in America” policies are designed to increase reliance on domestic supply chains and ultimately reduce the need to spend taxpayer dollars on foreign-made goods.
   - name: Citizenscience.gov
     link: https://science.gov
     link_alt_text: Citizen science homepage
@@ -137,7 +137,7 @@ services:
   - name: FedRAMP
     link: https://www.fedramp.gov/
     link_alt_text: link to FedRAMP homepage
-    logo: _img/fedramp-logo-vert.svg
+    logo: _img/fedramp-logo.png
     logo_alt_text: FedRamp
     category: products
     description: Helping agencies avoid spending duplicative funds for

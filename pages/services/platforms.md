@@ -7,10 +7,9 @@ sidenav: false
 
 {%- assign sortedServices = collections.services.services | sortByProp: "name" -%}
 <div class="grid-row padding-bottom-4">
-  <h2 class="margin-bottom-0">Products</h2>
   <p>
-    <span class="text-bold">Shared infrastructure and tooling that helps agencies deliver faster.</span>
-We provide building blocks and tooling that are commonly needed in the development and delivery of government digital services.
+    <span class="text-bold">Interagency experiences that create cohesion and economies of scale.</span>
+When the public needs to interact with multiple agencies around the same or a similar need, we build and operate government-wide platforms to enable and centralize those interactions.
   </p>
   <ul class="usa-card-group">
 {%- for service in sortedServices -%}

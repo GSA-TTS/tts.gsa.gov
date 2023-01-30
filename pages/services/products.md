@@ -7,7 +7,6 @@ sidenav: false
 
 {%- assign sortedServices = collections.services.services | sortByProp: "name" -%}
 <div class="grid-row padding-bottom-4">
-  <h2 class="margin-bottom-0">Products</h2>
   <p>
     <span class="text-bold">Shared infrastructure and tooling that helps agencies deliver faster.</span>
 We provide building blocks and tooling that are commonly needed in the development and delivery of government digital services.
