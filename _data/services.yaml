@@ -2,17 +2,17 @@ services:
   - name: USAGov
     link: https://usa.gov
     link_alt_text: link to USA.gov
-    logo: _img/usagov.png
-    logo_alt_text: USA.gov logo
+    logo: _img/Logo_USAGov.png
+    logo_alt_text: USA.gov
     category: platforms
     description: "Making it easier for the public to find and understand the
       government services and information they need— anytime, anywhere. The
       program includes the Spanish-language site, USAGov en Español. "
   - name: 10x
-    link: https://10x.gov
+    link: https://10x.gsa.gov/
     link_alt_text: link to 10x.gov
-    logo: _img/10x.png
-    logo_alt_text: 10x logo
+    logo: _img/logo1.1d2ef675.svg
+    logo_alt_text: 10x
     category: products
     description: Incrementally investing in crowdsourced technology ideas from
       federal employees to improve the public's experience with the federal
@@ -30,8 +30,8 @@ services:
   - name: PIF
     link: https://pif.gov
     link_alt_text: link to pif.gov
-    logo: _img/pif.png
-    logo_alt_text: PIF logo
+    logo: _img/pif-logo.png
+    logo_alt_text: PIF
     category: people
     description: A program that pairs top technologists with civil-servants to spend
       12 months tackling some of our nation’s biggest challenges.
@@ -47,8 +47,8 @@ services:
   - name: SAM.gov
     link: https://www.gsa.gov/about-us/organization/federal-acquisition-service/office-of-systems-management/integrated-award-environment-iae/about-samgov
     link_alt_text: link to About SAM.gov webpage
-    logo: _img/generic.png
-    logo_alt_text: TBD logo
+    logo: _img/logo-sam.svg
+    logo_alt_text: SAM.gov
     category: platforms
     description: Providing entities the ability to do business with the U.S.
       government. This includes updating or renewing, checking the status, and
@@ -56,16 +56,16 @@ services:
   - name: MAX.gov (Transitioning from OMB)
     link: https://max.gov
     link_alt_text: link to max.gov homepage
-    logo: _img/generic.png
-    logo_alt_text: logo not yet available
+    logo: _img/max-gov.png
+    logo_alt_text: Max.gov
     category: products
     description: TTS is working with OMB to develop and implement the next
       generation of interagency collaboration tools and shared services.
   - name: Digital.gov
     link: https://digital.gov
     link_alt_text: link to Digital.gov homepage
-    logo: _img/digital.png
-    logo_alt_text: digital.gov logo
+    logo: _img/digitalgov-logo.svg
+    logo_alt_text: digital.gov
     category: products
     description: Creating community connections and providing guidance on building
       digital services to transform how the government interacts with the
@@ -73,23 +73,23 @@ services:
   - name: Vote.gov
     link: https://vote.gov
     link_alt_text: link to Vote.gov homepage
-    logo: _img/generic.png
-    logo_alt_text: TBD logo
+    logo: _img/vote-gov.jpg
+    logo_alt_text: Vote
     category: platforms
     description: The digital authoritative, trusted source for voting information.
   - name: Centers of Excellence
     link: https://coe.gsa.gov
     link_alt_text: Link to COE homepage
-    logo: _img/coe.png
-    logo_alt_text: COE logo
+    logo: _img/coe-logo.svg
+    logo_alt_text: Centers of Excellence
     category: people
     description: A centralized team of technical experts that accelerate agency-wide
       IT modernization.
   - name: Search.gov
     link: https://search.gov
     link_alt_text: link to Search.gov homepage
-    logo: _img/search.png
-    logo_alt_text: Search.gov logo
+    logo: _img/search-gov.png
+    logo_alt_text: Search.gov
     category: products
     description: Creating a standard search experience across government websites,
       providing the public with quick, easy access to the government information
@@ -97,16 +97,16 @@ services:
   - name: Login.gov
     link: https://login.gov
     link_alt_text: link to Login.gov homepage
-    logo: _img/login.png
-    logo_alt_text: Login.gov logo
+    logo: _img/logo.svg
+    logo_alt_text: Login.gov
     category: products
     description: Providing the public one account to access participating government
       services online.
   - name: 18F
     link: https://18f.gsa.gov
     link_alt_text: link to 18F homepage
-    logo: _img/18f.png
-    logo_alt_text: 18F logo
+    logo: _img/18f-logo.svg
+    logo_alt_text: 18F 
     category: people
     description: A digital consulting office that partners with agencies to help
       them build or buy digital services.
@@ -120,16 +120,16 @@ services:
   - name: Citizenscience.gov
     link: https://science.gov
     link_alt_text: Citizen science homepage
-    logo: _img/generic.png
-    logo_alt_text: Logo not yet available
+    logo: _img/science-gov.png
+    logo_alt_text: Citizen Science
     category: platforms
     description: Supporting public engagement in scientific discovery and
       participatory research across the federal government.
   - name: Touchpoints
     link: https://touchpoints.digital.gov/
     link_alt_text: link to Touchpoints homepage
-    logo: _img/generic.png
-    logo_alt_text: Logo not yet available
+    logo: _img/touchpoints-logotype.png
+    logo_alt_text: Touchpoints
     category: products
     description: Offers a simple, flexible, and convenient way to start collecting
       customer feedback so you can focus on serving customers rather than
@@ -137,8 +137,8 @@ services:
   - name: FedRAMP
     link: https://www.fedramp.gov/
     link_alt_text: link to FedRAMP homepage
-    logo: _img/fedramp.png
-    logo_alt_text: FedRamp logo
+    logo: _img/fedramp-logo-vert.svg
+    logo_alt_text: FedRamp
     category: products
     description: Helping agencies avoid spending duplicative funds for
       security-related costs and saves valuable time by establishing an
@@ -147,8 +147,8 @@ services:
   - name: APIData.gov
     link: https://api.data.gov/
     link_alt_text: link to API data homepage
-    logo: _img/generic.png
-    logo_alt_text: Logo not yet available
+    logo: _img/data-gov.png
+    logo_alt_text: APIData.gov
     category: products
     description: Saving money and speeding development of federal APIs by offering a
       hosted shared service for API management. Enables greater developer
@@ -157,40 +157,40 @@ services:
   - link: https://data.gov/
     name: Data.gov
     link_alt_text: link to Data.gov homepage
-    logo: _img/generic.png
-    logo_alt_text: Logo not yet available
+    logo: _img/data-gov.png
+    logo_alt_text: Data.gov
     category: platforms
     description: Offering the public open access to datasets from across the federal
       government.
   - name: Challenge.gov
     link: https://challenge.gov
     link_alt_text: link to Challenge.gov homepage
-    logo: _img/generic.png
-    logo_alt_text: Logo not yet available
+    logo: _img/challenge-logo.svg
+    logo_alt_text: Challenge.gov
     category: platforms
     description: Catalyzing public engagement and participation in innovation and
       problem solving through crowdsourcing and prize competitions.
   - name: Cloud.gov
     link: https://cloud.gov/
     link_alt_text: link to Cloud.gov homepage
-    logo: _img/cloud.png
-    logo_alt_text: Cloud.gov logo
+    logo: _img/cloud-gov-logo.svg
+    logo_alt_text: Cloud.gov
     category: products
     description: Providing federal agencies with an easy, secure way to create
       websites and deploy applications to the cloud.
   - name: Code.gov
     link: https://code.gov
     link_alt_text: link to Code.gov homepage
-    logo: _img/code.png
-    logo_alt_text: Code.gov logo
+    logo: _img/code-gov-dark.svg
+    logo_alt_text: Code.gov
     category: products
     description: Helping agencies meet the requirements of the Federal Source Code
       Policy and providing a platform to make federal code publicly available.
   - name: Digital Corps
     link: https://digitalcorps.gsa.gov/
     link_alt_text: link to Digital Corps homepage
-    logo: _img/generic.png
-    logo_alt_text: Logo not yet available
+    logo: _img/digitalcorps_logo-alt.svg
+    logo_alt_text: Digital Corps
     category: people
     description: Fellowship program for early-career technologists to launch
       impactful careers in public service and create a more effective, equitable
@@ -198,16 +198,16 @@ services:
   - name: Federal Audit Clearinghouse
     link: https://facweb.census.gov/uploadpdf.aspx
     link_alt_text: link to FAC homepage
-    logo: _img/fac-logo-512.png
-    logo_alt_text: FAC logo
+    logo: _img/FAC1.png
+    logo_alt_text: FAC
     category: platforms
     description: Supporting the collection, distribution, and oversight of audits as
       guided by the Single Audit Act.
   - name: US Web Design System (USWDS)
     link: https://designsystem.digital.gov/
     link_alt_text: link to USWDS homepage
-    logo: _img/uswds.png
-    logo_alt_text: USWDS logo
+    logo: _img/uswds-lg-on-white.svg
+    logo_alt_text: USWDS
     category: products
     description: Providing guidance and code to transform how the government
       delivers a seamless, trustworthy and optimal digital experience to the
@@ -215,7 +215,7 @@ services:
   - name: eRegulations
     link: https://www.regulations.gov/
     link_alt_text: link to eRegulations homepage
-    logo: _img/erulemaking.png
+    logo: _img/Logo_Regulations.gov.png
     category: platforms
     logo_alt_text: eRulemaking logo
     description: Increasing access to and participation in developing regulations
@@ -232,8 +232,8 @@ services:
   - name: CPARS
     link: https://cpars.gov/
     link_alt_text: link to CPARS homepage
-    logo: _img/generic.png
-    logo_alt_text: Logo not yet available
+    logo: _img/cpars.png
+    logo_alt_text: CPARS
     description: The official U.S. government website for people who make, receive,
       and manage federal awards. It contains data on federal contractors,
       including both past performance information and integrity records.
@@ -241,8 +241,8 @@ services:
   - name: FAPIIS
     link: https://www.fapiis.gov/fapiis/#/home
     link_alt_text: link to FAPIIS homepage
-    logo: _img/generic.png
-    logo_alt_text: Logo not yet avaiable
+    logo: _img/FAPIIS_logo_grayscale.png
+    logo_alt_text: FAPIIS
     description: "Entity integrity data and records, entered by government
       personnel.  FAPIIS records that include things, such as exclusions and
       proceedings information, are used by Contracting Officers as part of the
@@ -251,7 +251,7 @@ services:
   - name: Federal Procurement Data System
     link: https://www.fpds.gov/fpdsng_cms/index.php/en/
     link_alt_text: FPDS homepage
-    logo: _img/generic.png
+    logo: _img/fpds_logo.png
     logo_alt_text: Logo not yet available
     description: "Being integrated into Sam.gov, a database containing publicly
       available information about all unclassified contract actions exceeding
