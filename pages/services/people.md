@@ -8,10 +8,8 @@ sidenav: false
 {%- assign sortedServices = collections.services.services | sortByProp: "name" -%}
 <div class="grid-row padding-bottom-4">
   <p>
-    <span class="text-bold">Discovery, implementation, and consulting to catalyze agency progress.</span>
- When agencies need expertise to help to define, plan, and execute a vision for digital services that deliver good, human-centered customer experiences, we partner with the agency while also building capacity.
-
-
+    <span class="text-bold">Discovery, implementation, and consulting to catalyze agency progress. </span>
+When agencies need expertise to help to define, plan, and execute a vision for digital services that deliver good, human-centered customer experiences, we partner with the agency while also building capacity.
   </p>
   <ul class="usa-card-group">
 {%- for service in sortedServices -%}

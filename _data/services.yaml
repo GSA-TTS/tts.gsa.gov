@@ -113,10 +113,10 @@ services:
   - name: Made in America
     link: https://madeinamerica.gov
     link_alt_text: link to Made in America homepage
-    logo: _img/made-in-america.svg
+    logo: _img/generic.png
     logo_alt_text: Logo not yet available
     category: platforms
-    description: “Made in America” policies are designed to increase reliance on domestic supply chains and ultimately reduce the need to spend taxpayer dollars on foreign-made goods.
+    description: TBD
   - name: Citizenscience.gov
     link: https://science.gov
     link_alt_text: Citizen science homepage
