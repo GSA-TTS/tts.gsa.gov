@@ -99,3 +99,7 @@ background: linear-gradient(54deg, rgba(127,215,233,1) 24%, rgba(167,165,205,1) 
     margin: 0;
   }
 }
+
+h2, h3, h4, h5 {
+  font-family: $theme-font-type-sans !important;
+}
