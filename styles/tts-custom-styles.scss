@@ -71,12 +71,6 @@ footer {
   width: 100%;
 }
 
-.tts-title-banner {
-  h1 {
-    text-align: center;
-  }
-}
-
 .tts-service-logo {
   height: 50px;
     img {
@@ -86,8 +80,8 @@ footer {
 }
 
 .tts-title-banner {
-  background: rgb(127,215,233);
-background: linear-gradient(54deg, rgba(127,215,233,1) 24%, rgba(167,165,205,1) 100%);
+  background: rgb(169,202,209);
+background: linear-gradient(54deg, rgba(169,202,209,1) 24%, rgba(204,203,228,1) 100%);
 }
 
 
@@ -97,6 +91,7 @@ background: linear-gradient(54deg, rgba(127,215,233,1) 24%, rgba(167,165,205,1) 
   color: #162e51;
   padding: 2.75rem 0;
   margin: 0;
+  text-align: center;
 }
 
 h2, h3, h4, h5 {
