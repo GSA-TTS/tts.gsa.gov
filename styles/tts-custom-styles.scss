@@ -86,18 +86,17 @@ footer {
 }
 
 .tts-title-banner {
-  // background-image: url("#{$theme-hero-image}");
   background: rgb(127,215,233);
 background: linear-gradient(54deg, rgba(127,215,233,1) 24%, rgba(167,165,205,1) 100%);
+}
 
 
-  h1 {
-    text-transform: uppercase;
-    font-size: 2.75rem;
-    color: #162e51;
-    padding: 2.75rem 0;
-    margin: 0;
-  }
+.tts-title-banner  h1 {
+  text-transform: uppercase;
+  font-size: 2.75rem;
+  color: #162e51;
+  padding: 2.75rem 0;
+  margin: 0;
 }
 
 h2, h3, h4, h5 {
