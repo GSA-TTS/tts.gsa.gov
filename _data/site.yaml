@@ -76,17 +76,17 @@ primary_navigation:
   - name: Our Services
     url: /services/
 
-secondary_navigation:
-  - name: Secondary link
-    url: "#main-content"
-  - name: Another secondary link
-    url: "#main-content"
+# secondary_navigation:
+#   - name: Secondary link
+#     url: "#main-content"
+#   - name: Another secondary link
+#     url: "#main-content"
 # Search.gov configuration
 #
 # 1. Create an account with Search.gov https://search.usa.gov/signup
 # 2. Add a new site.
 # 3. Add your site/affiliate name here.
-# searchgov:
+searchgov: "foobar"
 # Only change this if you're using a CNAME. Learn more here: https://search.gov/manual/cname.html
 # endpoint: https://search.usa.gov
 
