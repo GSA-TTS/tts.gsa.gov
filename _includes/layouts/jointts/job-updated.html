@@ -1,6 +1,9 @@
 ---
 layout: layouts/default
 ---
+
+<h1> {{ title }}</h1>
+
 {%- assign sortedinfosessions = collections.info_sessions | where: "role", page.role_name | sort: 'date' -%}
 <div class="grid-container">
   <div class="grid-row grid-gap">

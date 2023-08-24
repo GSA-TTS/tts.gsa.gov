@@ -74,7 +74,13 @@ primary_navigation:
       - name: About the Direct Hire Authority
         url: "/join/about-the-dha/"
   - name: Our Services
-    url: /services/
+    children:
+      - name: Products
+        url: "/services/products/"
+      - name: Platforms
+        url: "/services/platforms/"
+      - name: People
+        url: "/services/people/"
 
 # secondary_navigation:
 #   - name: Secondary link

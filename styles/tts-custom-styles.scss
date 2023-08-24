@@ -24,11 +24,20 @@ $tts-tagline-bg: #1F303E;
 }
 
 .tts-hero-wrap {
+  background: url('../_img/TTS_Header_Dev.png');
+  background-size: cover;
+
+}
+
+.tts-hero-people img {
+  object-fit: contain;
+}
+
+.tts-hero-wrap {
   background-color: $tts-tagline-bg;
 }
 
 .tts-tagline {
-  background-color: $tts-tagline-bg;
   @include at-media('mobile-lg') {
     // Setting a min height so that the hero height doesn't need to rely on tagline length
     min-height: 350px;
@@ -65,4 +74,43 @@ footer {
     a:hover {
       text-decoration: underline;
     }
+}
+
+.usa-social-link img {
+  width: 100%;
+}
+
+.tts-service-logo {
+  height: 50px;
+    img {
+      object-fit: contain;
+      max-width: 180px;
+    }
+}
+
+.tts-title-banner {
+  background: url(../_img/Services_Background.png) center no-repeat #000000;
+}
+
+
+.tts-title-banner  h1 {
+  text-transform: uppercase;
+  font-size: 3.25rem;
+  color: #ffffff;
+  padding: 4.75rem 0;
+  margin: 0;
+  text-align: center;
+}
+
+h2, h3, h4, h5 {
+  font-family: $theme-font-type-sans !important; 
+}
+
+.usa-identifier__logos img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.usa-prose .usa-card:last-child {
+  margin-bottom: 1rem;
 }

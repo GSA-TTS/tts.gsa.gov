@@ -8,16 +8,16 @@ backend:
   branch: main
   use_graphql: true
 
-##
-## Uncomment when doing local development on Netlify CMS
-## Run `npx netlify-cms-proxy-server` to start working locally
-## In another terminal, start the app with `npm start`
-## See https://www.netlifycms.org/docs/beta-features/#working-with-a-local-git-repository
-##
+# #
+# # Uncomment when doing local development on Netlify CMS
+# # Run `npx netlify-cms-proxy-server` to start working locally
+# # In another terminal, start the app with `npm start`
+# # See https://www.netlifycms.org/docs/beta-features/#working-with-a-local-git-repository
+# #
 
-# backend:
-#   name: git-gateway
-# local_backend: true
+backend:
+  name: git-gateway
+local_backend: true
 
 media_folder: _img
 public_folder: _img
