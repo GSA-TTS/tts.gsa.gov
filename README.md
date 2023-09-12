@@ -1,8 +1,6 @@
-# tts.gsa.gov
+# Technology Transformation Services website
 
-## What is this?
-
-This is the code for https://tts.gsa.gov and eventually https://join.tts.gsa.gov. Our tech stack in short is:
+This is the code for https://tts.gsa.gov. Our tech stack in short is:
 
 - [11ty](https://www.11ty.dev/)
 - [U.S. Web Design System v 3.0 (USWDS)](https://designsystem.digital.gov/)
@@ -14,7 +12,7 @@ This site strives to be compliant with requirements set by [21st Century IDEA Ac
 - does not duplicate any legacy websites (the legislation also requires agencies to ensure that legacy websites are regularly reviewed, removed, and consolidated);
 - has a search function;
 - uses an industry standard secure connection;
-- “is designed around user needs with data-driven analysis influencing management and development decisions, using qualitative and quantitative data to determine user goals, needs, and behaviors, and continually test the website, web-based form, web-based application, or digital service to ensure that user needs are addressed;”
+- is designed around user needs with data-driven analysis influencing management and development decisions, using qualitative and quantitative data to determine user goals, needs, and behaviors, and continually test the website, web-based form, web-based application, or digital service to ensure that user needs are addressed;
 - allows for user customization; and
 - is mobile-friendly.
 
@@ -67,13 +65,6 @@ serve as a development authentication server.
 
 ## How To
 
-### Adding Collections
-
-TODO
-
-### Adding Static Data
-
-TODO
 
 ### Creating links
 
@@ -127,10 +118,6 @@ Once this function inside `config/buildAssets` is complete it returns control to
 ### Adding custom Javascript
 
 Javascript can be added to the admin UI or site UI by adding or importing code into the `js/admin.js` or `js/app.js` files respectively. This template uses [esbuild](https://esbuild.github.io/) to bundle your javascript and fingerprint the files in the site build.
-
-### Customizing 11ty
-
-TODO
 
 ## Contributing
 
