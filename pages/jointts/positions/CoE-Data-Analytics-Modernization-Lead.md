@@ -5,13 +5,13 @@ title: "Centers of Excellence: Data & Analytics Modernization Lead GS15"
 title-header: CoE - Data & Analytics Modernization Lead
 permalink: /join/coe-data-analytics-modernization-lead/
 tags: job
-state: upcoming
+state: open
 job_post_type: usajobs
 
 # INSTRUCTIONS UPCOMING: These fields are required for upcoming
 role_name: Data & Analytics Modernization Lead
-opens: '2023-11-21 09:00'
-closes: '2023-11-22 23:59'
+opens: '2023-09-21 09:00'
+closes: '2023-10-05 23:59'
 weeks_open: 52
 location: 'Anywhere in the U.S. (remote)'
 gs_level: '15'
@@ -21,7 +21,10 @@ org: 'CoE'
 contact_name: 'TTS Talent Team'
 contact_email: 'jointts@gsa.gov'
 
-info_sessions: ''
+info_sessions: 
+  - link: https://gsa.zoomgov.com/meeting/register/vJIsfuqsqTosGMqmWiv8cnyoK-xYW35veLk
+    date: 2023-09-19
+    time: 12:00-1:00pm ET (9:00am -10:00am PT)
 
 # INSTRUCTIONS OPEN: These fields are required for open
 
@@ -29,7 +32,7 @@ job_announcement_number: ''
 pd_job_title: 'Information Technology Specialist (SYSANALYSIS)'
 num_vacancies: '100'
 series: '2210'
-apply_url: 'https://usajobs.gov/job/apply/whatever'
+apply_url: 'https://www.usajobs.gov/job/750396900'                    # link/url to apply
 ohrm_contact_email: 'tts-hrstaffers@gsa.gov'
 ohrm_contact_name: 'Loyola Ukpokodu'
 bargaining_unit: 'Non Bargaining Unit'

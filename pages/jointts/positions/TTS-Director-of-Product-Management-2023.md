@@ -8,7 +8,7 @@ title: "TTS: Director of Product Management"     # title of the page/position
 title-header: Director of Product Management
 permalink: /join/tts-director-product-management/             # should be unique /join/<unique-value>
 tags: job                                        # tag used to sort into job collection
-state: upcoming                                  # upcoming, open, closed | template = excluded
+state: closed                                  # upcoming, open, closed | template = excluded
 job_post_type: usajobs                           # not sure if this is used anymore?
 
 # INSTRUCTIONS UPCOMING: 
@@ -16,7 +16,7 @@ job_post_type: usajobs                           # not sure if this is used anym
 
 role_name: TTS - Director of Product Management  # name of role
 opens: '2023-09-11 09:00'                        # Will not appear on /join until
-closes: '2023-09-15 23:59'                       # Will disappear from /join 
+closes: '2023-09-12 23:59'                       # Will disappear from /join 
 weeks_open: 52
 location: 'Virtual (100% Remote)'
 gs_level: '15'

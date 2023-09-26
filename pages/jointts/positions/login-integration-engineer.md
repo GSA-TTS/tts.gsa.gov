@@ -11,15 +11,15 @@ title: "Login.gov: Integration Engineer/Solution Architect GS15"
 title-header: Integration Engineer/Solution Architect
 permalink: /join/login-integration-engineer/             # should be unique /join/<unique-value>
 tags: job                                        # tag used to sort into job collection
-state: upcoming                                  # upcoming, open, closed | template = excluded
+state: closed                                  # upcoming, open, closed | template = excluded
 job_post_type: usajobs                           # not sure if this is used anymore?
 
 # INSTRUCTIONS UPCOMING: 
 # - These fields are required for `state: upcoming`
 
 role_name: Login.gov - login-integration-engineer                         # name of role
-opens: '2023-10-01 09:00'                        # Will not appear on /join until
-closes: '2023-10-02 23:59'                       # Will disappear from /join 
+opens: '2023-9-11 09:00'                        # Will not appear on /join until
+closes: '2023-09-17 23:59'                       # Will disappear from /join 
 weeks_open: 52
 location: 'Anywhere in the U.S. (remote)'
 gs_level: '15'

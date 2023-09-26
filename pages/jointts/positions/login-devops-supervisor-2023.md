@@ -11,15 +11,15 @@ title: "Login.gov: DevOps/Site Reliability Supervisory Engineer GS15"
 title-header: DevOps/Site Reliability Supervisory Engineer
 permalink: /join/login-devops-supervisor-2023/             # should be unique /join/<unique-value>
 tags: job                                        # tag used to sort into job collection
-state: upcoming                                  # upcoming, open, closed | template = excluded
+state: open                                  # upcoming, open, closed | template = excluded
 job_post_type: usajobs                           # not sure if this is used anymore?
 
 # INSTRUCTIONS UPCOMING: 
 # - These fields are required for `state: upcoming`
 
 role_name: Login.gov - DevOps/Site Reliability Supervisory Engineer                          # name of role
-opens: '2023-09-15 09:00'                        # Will not appear on /join until
-closes: '2023-09-22 23:59'                       # Will disappear from /join 
+opens: '2023-09-25 09:00'                        # Will not appear on /join until
+closes: '2023-10-02 23:59'                       # Will disappear from /join 
 weeks_open: 52
 location: 'Anywhere in the U.S. (remote)'
 gs_level: '15'
@@ -43,7 +43,7 @@ job_announcement_number: ''
 pd_job_title: ''
 num_vacancies: '100'
 series: '2210'
-apply_url: 'https://usajobs.gov/job/apply/whatever'
+apply_url: 'https://www.usajobs.gov/job/751014700'
 ohrm_contact_email: 'tts-hrstaffers@gsa.gov'
 ohrm_contact_name: 'Loyola Ukpokodu'
 bargaining_unit: 'Non Bargaining Unit'
