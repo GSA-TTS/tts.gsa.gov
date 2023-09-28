@@ -150,7 +150,7 @@ To qualify, you must have one (1) year of specialized experience at the next low
   Get [notified]({{ site.baseurl }}/newsletter) when this position is open for applications.
 {% else %}
 
-  Submit a complete online application prior to {{ closes | date: '%l:%M%P %Z ET on %A, %B %e, %Y' }}. Please fill out all applicable fields.
+  Submit a complete online application prior to Monday, October 2nd, 2023, at 11:59 pm ET. Please fill out all applicable fields.
 
   <section class="usa-grid-full">
     <a class="usa-button usa-button-secondary" href="{{ apply_url }}">Click here to apply</a>

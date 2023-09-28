@@ -56,13 +56,13 @@ supervisory_status: 'No'
 
 Open to U.S. citizens or nationals (residents of American Samoa and Swains Island). Subject to background check. Full information will be available on USAJOBS.
 
-**Supervisory status:** Supervisory
+**Supervisory status:** Nonsupervisory
 
 **Job title:** {{ title }}
 
 **Official title in USAJOBS:** Information Technology Specialist (SYSANALYSIS)
 
-**Number of vacancies:** 4
+**Number of vacancies:** 3
 
 **Location:** {{ location }}
 
@@ -79,6 +79,9 @@ Occasional travel may be required up to 10%-20% per year.
 Full time.
 
 Learn more about the benefits of working at [GSA](https://www.gsa.gov/portal/category/26702) and [TTS]({{ site.baseurl }}/join/compensation-and-benefits/).
+
+**Appointment type:**
+This is a term appointment. Initial appointments are made lasting longer than 1 year, but not to exceed 4 years. GSA, may extend an appointment up to 4 additional years. No individual hired under this DHA can serve in excess of 8 years with GSA, and cannot be transferred to positions that are not IT positions.
 
 ## Role summary
 
@@ -145,7 +148,7 @@ To qualify, you must have one (1) year of specialized experience at the next low
   Get [notified]({{ site.baseurl }}/newsletter) when this position is open for applications.
 {% else %}
 
-  Submit a complete online application prior to {{ closes | date: '%l:%M%P %Z ET on %A, %B %e, %Y' }}. Please fill out all applicable fields.
+  Submit a complete online application prior to Thursday, October 5th, 2023, at 11:59 pm ET. Please fill out all applicable fields.
 
   <section class="usa-grid-full">
     <a class="usa-button usa-button-secondary" href="{{ apply_url }}">Click here to apply</a>
