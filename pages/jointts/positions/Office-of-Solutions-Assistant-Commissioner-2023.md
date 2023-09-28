@@ -64,6 +64,7 @@ info_sessions:
 job_announcement_number: ''
 pd_job_title: 'Senior Executive Service (SES)'
 num_vacancies: '100'
+max_applications: 0
 series: '2210'
 apply_url: 'https://www.usajobs.gov/job/744285900'
 ohrm_contact_email: 'tts-hrstaffers@gsa.gov'

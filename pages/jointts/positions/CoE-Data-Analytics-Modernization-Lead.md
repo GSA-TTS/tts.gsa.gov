@@ -31,6 +31,7 @@ info_sessions:
 job_announcement_number: ''
 pd_job_title: 'Information Technology Specialist (SYSANALYSIS)'
 num_vacancies: '100'
+max_applications: 300
 series: '2210'
 apply_url: 'https://www.usajobs.gov/job/750396900'                    # link/url to apply
 ohrm_contact_email: 'tts-hrstaffers@gsa.gov'

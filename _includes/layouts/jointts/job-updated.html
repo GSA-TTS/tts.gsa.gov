@@ -38,7 +38,7 @@ layout: layouts/default
       <div class="usa-alert usa-alert-info job-info">
         <div class="usa-alert-body">
           <h3 class="usa-alert-heading">Apply now!</h3>
-          <p class="usa-alert-text">This role is open for applications until {{ closes }}.</p>
+          <p class="usa-alert-text">This role is open for applications until {{ closes }}{% if max_applications != 0 and max_applicaitons != "0" %}  or {{max_applications}} applications have been received{% endif %}.</p>
         </div>
       </div>
       {% endif %}

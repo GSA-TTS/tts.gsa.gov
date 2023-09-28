@@ -42,6 +42,7 @@ info_sessions:
 job_announcement_number: ''
 pd_job_title: 'Information Technology Specialist (APPSW) GS15'
 num_vacancies: '100'
+max_applications: 0
 series: '2210'
 apply_url: 'https://usajobs.gov/job/apply/whatever'
 ohrm_contact_email: 'tts-hrstaffers@gsa.gov'

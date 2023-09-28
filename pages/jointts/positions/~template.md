@@ -67,6 +67,7 @@ info_sessions:
 job_announcement_number: ''
 pd_job_title: 'IT Specialist (SYSANALYSIS)'
 num_vacancies: '100'
+max_applications: 0                                 # set to 0 if there is no application limit
 series: '2210'
 apply_url: ''
 ohrm_contact_email: 'tts-hrstaffers@gsa.gov'

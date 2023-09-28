@@ -39,6 +39,7 @@ info_sessions:
 job_announcement_number: ''
 pd_job_title: ''
 num_vacancies: '100'
+max_applications: 0
 series: '2210'
 apply_url: 'https://www.usajobs.gov/GetJob/ViewDetails/745198800'
 ohrm_contact_email: 'tts-hrstaffers@gsa.gov'

@@ -50,7 +50,7 @@ layout: layouts/default
                 <li>
                   <a href="{{ pg.data.permalink | url}}">{{ pg.data.title }}</a> (Open {% if pg.data.weeks_open %}for {% if
                 pg.data.weeks < 52 %}{{ pg.data.weeks }}{% else %} one year or until all selections have been made{% endif
-                  %},{% endif %} through {{ pg.data.closes | date: '%A, %B %e, %Y at %l:%M%P' }} Eastern) 
+                  %},{% endif %} through {{ pg.data.closes | date: '%A, %B %e, %Y at %l:%M%P' }} Eastern{% if pg.data.max_applications != 0 and pg.data.max_applicaitons != "0" %}  or {{pg.data.max_applications}} applications have been received{% endif %}) 
                 </li>
                 
                 {% unless pg.data.info_sessions == empty or pg.data.info_sessions == nil %}
