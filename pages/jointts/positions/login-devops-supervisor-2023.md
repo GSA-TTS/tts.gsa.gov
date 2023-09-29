@@ -61,7 +61,7 @@ supervisory_status: 'No'
 
 
 ## Basic information
-Open to U.S. citizens or nationals (residents of American Samoa and Swains Island). Subject to background check. Full information will be available on USAJOBS.
+Open to U.S. citizens or nationals (residents of American Samoa and Swains Island). Subject to background check. Full information is available on [USAJOBS]({{apply_url}}).
 
 **Supervisory status:** Supervisory
 

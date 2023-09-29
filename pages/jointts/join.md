@@ -6,12 +6,12 @@ description: TTS is hiring. We’re looking for candidates who are passionate ab
 permalink: "join/"
 sidenav: false
 find_out_more:
-- link: https://gsa.zoomgov.com/meeting/register/vJIscuytrzwiH6GJC4pCJ5alhmA-J4Rgg-U 
-  date: '2023-09-21 12:30'
-  time: 12:30-1:30pm ET (9:30-10:30am PT) 
 - link: https://gsa.zoomgov.com/meeting/register/vJIsf-qrqTktGScTIA5IvgvgmgERiP5MW3E 
   date: '2023-10-19 12:30'
   time: 12:30-1:30pm ET (9:30-10:30am PT)   
+- link: https://gsa.zoomgov.com/meeting/register/vJIsf-qrqTktGScTIA5IvgvgmgERiP5MW3E 
+  date: '2023-10-19 16:00'
+  time: 4:00-5:00pm ET (1:00-2:00am PT)  
 - link: https://gsa.zoomgov.com/meeting/register/vJItde-tqjsiH_sZoTJ_hVp3ZuhgarqPl0c 
   date: '2023-11-16 12:30'
   time: 12:30-1:30pm ET (9:30-10:30am PT) 

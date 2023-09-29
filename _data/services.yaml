@@ -1,4 +1,11 @@
 services:
+  - name: Notify.gov
+    link: https://beta.notify.gov/
+    link_alt_text: link to Notify.gov
+    logo: _img/Logo_Notify.png
+    logo_alt_text: Notify.gov
+    category: products
+    description: "Collaborating with benefits agencies to build digital building blocks and spread best practices that simplify the experience of navigating public benefits, starting with piloting a text messaging service, Notify.gov."
   - name: USAGov
     link: https://usa.gov
     link_alt_text: link to USA.gov

@@ -55,7 +55,7 @@ supervisory_status: 'No'
 
 ## Basic information
 
-Open to U.S. citizens or nationals (residents of American Samoa and Swains Island). Subject to background check. Full information will be available on USAJOBS.
+Open to U.S. citizens or nationals (residents of American Samoa and Swains Island). Subject to background check. Full information is available on [USAJOBS]({{apply_url}}).
 
 **Supervisory status:** Nonsupervisory
 
@@ -79,10 +79,10 @@ Occasional travel may be required up to 10%-20% per year.
 **Work schedule:**
 Full time.
 
-Learn more about the benefits of working at [GSA](https://www.gsa.gov/portal/category/26702) and [TTS]({{ site.baseurl }}/join/compensation-and-benefits/).
-
 **Appointment type:**
 This is a term appointment. Initial appointments are made lasting longer than 1 year, but not to exceed 4 years. GSA, may extend an appointment up to 4 additional years. No individual hired under this DHA can serve in excess of 8 years with GSA, and cannot be transferred to positions that are not IT positions.
+
+Learn more about the benefits of working at [GSA](https://www.gsa.gov/portal/category/26702) and [TTS]({{ site.baseurl }}/join/compensation-and-benefits/).
 
 ## Role summary
 

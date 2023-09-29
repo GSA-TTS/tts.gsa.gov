@@ -41,7 +41,7 @@ job_post_type: usajobs                           # not sure if this is used anym
 
 role_name: Product Manager                          # name of role
 opens: '2023-09-17 09:00'                        # Will not appear on /join until
-closes: '2023-10-30 23:59'                       # Will disappear from /join 
+closes: '2023-10-06 23:59'                       # Will disappear from /join 
 weeks_open: 52
 location: 'Anywhere in the U.S. (remote)'
 gs_level: '15'
@@ -94,10 +94,52 @@ supervisory_status: 'No'
   {%- endif -%}
 
   {%- unless opens == 'tbd' -%}
-  Applications will be open for submission on {{ opens | date: '%A, %B %e, %Y' }}. Check out [Join TTS Hiring Process]({{site.baseurl}}/hiring-process/) to
-  learn more about the application process.
+  Applications will be open for submission on {{ opens | date: '%A, %B %e, %Y' }}. Check out [Join TTS Hiring Process]({{site.baseurl}}/hiring-process/) to learn more about the application process.
   {%- endunless -%}
 {%- endif -%}
+
+## Basic information
+Open to U.S. citizens or nationals (residents of American Samoa and Swains Island). Subject to background check. Full information is available on [USAJOBS](https://www.usajobs.gov/job/750109600).
+
+**Supervisory status:** Nonsupervisory
+
+**Job title:** {{ title }}
+
+**Official title in USAJOBS:** IT Specialist - DATAMGT-INET
+
+**Number of vacancies:** 2
+
+**Location:**
+{{ location }}
+
+**Salary Range:**
+The salary ranges for this position are:
+- ${{salary_min}} to ${{salary_max}}
+
+Your salary, including base and locality, will be determined upon selection, dependent on your actual duty location.
+
+You can find more information about this in the [compensation and benefits section on our site](https://join.tts.gsa.gov/compensation-and-benefits/).
+
+For specific details on locality pay, please visit [OPM's Salaries & Wages page](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/) or for a
+salary calculator [OPM's 2022 General Schedule (GS) Salary Calculator](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/2022/general-schedule-gs-salary-calculator/).
+
+Please note the maximum salary available for the GS pay system is **${{salary_max}}**
+
+Note: You may not be eligible for the maximum salary as it is locality dependent. Please refer to the maximum pay for your locality.
+
+**Who May Apply:**
+All United States citizens and nationals (residents of American Samoa and Swains Islands).
+
+**Travel requirement:**
+Occasional travel may be required up to 10%-20% per year.
+
+**Work schedule:**
+Full time.
+
+**Appointment type:**
+This is a term appointment. Initial appointments are made lasting longer than 1 year, but not to exceed 4 years. GSA, may extend an appointment up to 4 additional years. No individual hired under this DHA can serve in excess of 8 years with GSA, and cannot be transferred to positions that are not IT positions.
+
+Learn more about the benefits of working at [GSA](https://www.gsa.gov/portal/category/26702) and [TTS](https://join.tts.gsa.gov/compensation-and-benefits/).
 
 ## Opportunity overview
 
@@ -178,41 +220,6 @@ While the entire team will have and continually enhance core expertise in techno
 
 {% comment %}🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺{% endcomment %}
 
-
-## Basic information
-
-**Location:**
-{{ location }}
-
-**Salary Range:**
-The salary ranges for this position are:
-- ${{salary_min}} to ${{salary_max}}
-
-Your salary, including base and locality, will be determined upon selection, dependent on your actual duty location.
-
-You can find more information about this in the [compensation and benefits section on our site](https://join.tts.gsa.gov/compensation-and-benefits/).
-
-For specific details on locality pay, please visit [OPM's Salaries & Wages page](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/) or for a
-salary calculator [OPM's 2022 General Schedule (GS) Salary Calculator](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/2022/general-schedule-gs-salary-calculator/).
-
-Please note the maximum salary available for the GS pay system is **${{salary_max}}**
-
-Note: You may not be eligible for the maximum salary as it is locality dependent. Please refer to the maximum pay for your locality.
-
-**Who May Apply:**
-All United States citizens and nationals (residents of American Samoa and Swains Islands).
-
-**Travel requirement:**
-Occasional travel may be required up to 10%-20% per year.
-
-**Security clearance:**
-Public trust. Background investigation required.
-
-**Work schedule:**
-Full time.
-
-**Appointment type:**
-This is a term limited appointment with the ability to extend for a total of eight years.
 
 **Employee benefits:**
 [Learn more about the benefits we offer.](https://join.tts.gsa.gov/compensation-and-benefits/)

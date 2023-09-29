@@ -28,9 +28,9 @@
 # - These are some of the main mandatory variables needed for functionality.
 
 layout: layouts/jointts/job-updated              # layout used to render job information
-title: "Digital Analytics Program (DAP): Program Manager GS15"                            # title of the page/position
-title-header: Program Manager
-permalink: /join/DAP-Program-Manager-2023/             # should be unique /join/<unique-value>
+title: "Login.gov: Engineer GS15"                            # title of the page/position
+title-header: Engineer
+permalink: /join/login-engineer-2023/             # should be unique /join/<unique-value>
 tags: job                                        # tag used to sort into job collection
 state: upcoming                                  # upcoming, open, closed | template = excluded
 job_post_type: usajobs                           # not sure if this is used anymore?
@@ -39,9 +39,9 @@ job_post_type: usajobs                           # not sure if this is used anym
 # INSTRUCTIONS UPCOMING: 
 # - These fields are required for `state: upcoming`
 
-role_name: DAP Program Manager                          # name of role
-opens: '2023-10-23 09:00'                        # Will not appear on /join until
-closes: '2023-10-30 23:59'                       # Will disappear from /join 
+role_name: Engineer                          # name of role
+opens: '2023-11-10 09:00'                        # Will not appear on /join until
+closes: '2023-11-12 23:59'                       # Will disappear from /join 
 weeks_open: 52
 location: 'Anywhere in the U.S. (remote)'
 gs_level: '15'
@@ -64,7 +64,7 @@ info_sessions:
 job_announcement_number: ''
 pd_job_title: 'IT Specialist (SYSANALYSIS)'
 num_vacancies: '100'
-max_applications: 0
+max_applications: 400                                 # set to 0 if there is no application limit
 series: '2210'
 apply_url: ''
 ohrm_contact_email: 'tts-hrstaffers@gsa.gov'
@@ -91,7 +91,8 @@ supervisory_status: 'No'
   {%- endif -%}
 
   {%- unless opens == 'tbd' -%}
-  Applications will be open for submission on {{ opens | date: '%A, %B %e, %Y' }}. Check out [Join TTS Hiring Process]({{site.baseurl}}/hiring-process/) to learn more about the application process.
+  Applications will be open for submission on {{ opens | date: '%A, %B %e, %Y' }}. Check out [Join TTS Hiring Process]({{site.baseurl}}/hiring-process/) to
+  learn more about the application process.
   {%- endunless -%}
 {%- endif -%}
 
@@ -139,62 +140,47 @@ We will be interviewing and hiring for this role on an ongoing basis and to help
 {% comment %}🔻🔻🔻🔻🔻🔻🔻🔻🔻🔻🔻🔻🔻🔻🔻{% endcomment %}
 ## Role summary
 
-Designers at TTS work across design contexts. They drive research activities, derive insights, generate concepts, communicate those concepts clearly, and work with cross functional teams to build and test them. They model best practices in user-centered design within TTS and across the federal government through advocacy and coaching.
+This opportunity is located in the Technology Transformation Services (TTS) Solutions Division’s Login.gov team. The Login.gov team is remote-first and is composed of experts across product development, software engineering, cybersecurity, and platform engineering. 
 
-Our Designers have deep experience in user research (generative, foundational and evaluative). In addition to research, we look for strong craft skills, confidence, and sophistication in at least one of the following areas: interaction design, product design, service design, content design and/or information architecture.
+Login.gov is a FedRAMP authorized secure sign-in service created for the public to access participating government agency sites, products, and services. At its core, Login.gov is both an authentication and identity verification service and is now available to all levels of government: federal, state, and local.
 
-As a Designer, you’ll work in cross-functional teams made up of experts in design, product strategy, technical architecture, software engineering, data science, and procurement. In addition to building useful and usable digital services, you will be helping teams improve their user-centered design practice, and helping teams without those practices get started.
+Login.gov is looking for talented Engineers to help us deliver better digital services to the public. At Login.gov, you will be a builder, contributor, and a catalyst. With the support of the team, you will solve large complex problems while spreading user-centered, open, and transparent culture. You can be writing code one day, going to meet with members from partner agencies another day, and launching a new product that will impact the lives of Americans across the country the next week. Login.gov is an open source team, so most of what you work on will be open source.
 
-If you are committed to improving government services for all who need them this is the position for you.
+This role is perfect for you if you care deeply about building great public-facing digital products and services. You should be excited to apply your skills, share them with your colleagues, and learn from them in turn.
 
-Types of designers we are currently hiring for:
-- UX Design
-- Service Design
-- Content Strategy
-- Product Design
-
-Some of the teams we are currently hiring for (not a complete list):
-Please note, while a candidate's preference on teams may be taken into consideration, a final hiring decision on which team a candidate will join depends on the candidate's skillsets as well as current needs of each team. 
-- [18F](https://18f.gsa.gov/): Cross-discipline teams that work on projects supporting agencies across the federal government.
-- [USAGov](https://www.usa.gov/): A team supporting a large web presence, including the government’s “front door” that routes the public to government agency resources.
-- [Centers of Excellence](https://coe.gsa.gov/): Cross-discipline teams work with agency partners and industry to accelerate enterprise-wide IT & data modernization with emphasis on improving the customer and employee experience.
-- [Login.gov](https://login.gov/): Teams supporting a product that manages identity for interactions with the federal government.
+Login.gov’s core languages are Ruby, Python, JavaScript, and Go. You should have experience with at least one of those languages, and should be proficient in web development, relational databases, and using Unix-like operating systems. You should understand engineering best practices such as source control, automated testing, continuous integration and deployment, and peer review. The best candidates will have a background working on cross-functional, multidisciplinary teams that deliver digital products and services in an incremental, user-focused environment.
 
 {% comment %}🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺{% endcomment %}
 
 {% comment %}🔻🔻🔻🔻🔻🔻🔻🔻🔻🔻🔻🔻🔻🔻🔻{% endcomment %}
 
 ## Key objectives
-### 1. Lead the migration from Google Analytics 360 “Universal Analytics” to “GA4”, which is already in process.
-   - Support the deployment of DAP GA4 code and QA, troubleshoot, customize as needed
-   - Develop a product strategy to enhance effectiveness of DAP in meeting user needs
-   - Develop a strategy to migrate off of “Universal Analytics” by the EOL date of June 2024
-   - Communicate with users as the roadmap progresses
-### 2. Implement and integrate data from DAP GA4 into BigQuery or comparable technology
-   - Stand up BigQuery account and link it to the DAP GA4 instance
-   - Configure the account and explore uses of the data
-   - Develop a plan for agency access to the BigQuery instance to ingest data themselves
-### 3. Lead the redesign and rebuild of analytics.usa.gov
-  - Assess user needs for data present on analytics.usa.gov
-  - Work with a team to re-imagine a better analytics.usa.gov
-  - Collaboratively build and launch the new site
-  - Update security compliance paperwork as necessary
-### 4. Lead the government in advocating for web analytics data to improve public experiences on the web
-  - Design a training program to continue to educate federal employees and contractors on analysis of web data for better experiences
-  - As necessary, speak to government teams, councils, or at external events and conferences to promote the use of web analytics
-  - Highlight the case studies or successes of usage of data from DAP in blog posts, speaking engagements, or otherwise
-### 5. Provide excellent support, data, and guidance to DAP users
-  - Oversee the DAP helpdesk for over 3,000 individual users
-  - Assist with access requests, reporting issues, troubleshooting implementations, and more
-  - Continually assess configuration of DAP web analytics tool to make adjustments for collection or presentation
-### 6. Explore opportunities for expanded use of analytics
-  - Do user research on optimal usage of analytics data
-  - Assess other tools or processes to present, collect, or analyze data
-  - Implement new tools or processes as necessary
+### 1. You will contribute high-quality, well-tested, maintainable code across an entire project lifecycle, using modern software development best practices. 
+- Practice and enthusiastically share engineering methodologies and tools throughout all stages of the project lifecycle.
+- Use usability research, analytics, and other metrics to influence project planning and design.
+- Participate in code review, architecture discussions, and feature prioritization.
+- Contribute to documentation, tests, style fixes, accessibility, performance, security, etc.
+- Deliver code that is easy to deploy, update, and monitor by ensuring the tooling for this is present early in the project development cycle or by introducing tooling into an existing project as needed.
+
+### 2. You will participate as part of the engineering team, practicing and enthusiastically share agile methodologies throughout all stages of the project lifecycle. 
+- Work within a distributed multidisciplinary agile team(s) by participating in constructive discussions, sharing knowledge openly, and demonstrating value for technical and non-technical contributions. 
+- Support a safe and inclusive workplace as well as a positive team culture where diversity and individual differences are valued and leveraged.
+- Provide visibility into progress, communicate blockers and challenges, and ask for help when necessary.
+- Understand elements of agile methodology (scrum, kanban, etc).
+- Practice human centered design, user testing, feature prioritization, DevOps, and other relevant concepts.
+
+### 3. You will meet personal and organizational goals and customer expectations. You’ll produce high-quality results by applying technical knowledge, analyzing problems, and calculating risk.
+- Hold yourself and your team accountable for measurable high-quality, timely, and cost-effective results.
+- Be a credible technician in your area of expertise, deliver high-quality work, and accept responsibility for mistakes.
+- Identify and analyze problems in a constructive manner.
+- Meet the needs of internal and external customers.
+
+### 4. You’ll lead change, within and outside the organization, to meet organizational goals. You’ll help establish an organizational vision and implement it in a continuously changing environment.  
+- Develop new insights into situations and question conventional approaches.
+- Keep up-to-date on policies and trends that affect the organization and shape stakeholders’ views.
+- Formulate and execute consistently against objectives and priorities.
 
 {% comment %}🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺{% endcomment %}
-
-
 
 **Employee benefits:**
 [Learn more about the benefits we offer.](https://join.tts.gsa.gov/compensation-and-benefits/)
@@ -212,21 +198,15 @@ Please note, while a candidate's preference on teams may be taken into considera
 
 ## Qualifications
 
-Provide as much detail as possible on your resume so that we can evaluate your
-previous experience. Follow our
-[guidance on creating a federal style resume.](https://join.tts.gsa.gov/resume/)
+Provide as much detail as possible on your resume so that we can evaluate your previous experience. Follow our [guidance on creating a federal style resume.](https://join.tts.gsa.gov/resume/)
 
-Failure to provide required information may result in disqualification.
+Qualification determinations can’t be made when resumes don’t include the required information. Failure to provide required information may result in disqualification.
 
 For each job on your resume, provide:
-
 - The exact dates you held each job (from month/year to month/year or “present”)
 - Number of hours per week you worked (if part time)
 
-**SPECIALIZED EXPERIENCE REQUIREMENTS:**
-
-To qualify, you must have one (1) year of specialized experience at the next
-lower GS-grade (or equivalent). Specialized experience for this role will be updated once finalized. 
+All applications will be reviewed by a panel of subject matter experts against a scoring rubric created for this role. In order to properly be able to evaluate your previous experience, we recommend being as detailed as possible in your resume and following our general guidance on creating federal style resume.
 
 
 ## How To Apply

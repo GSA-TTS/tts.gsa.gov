@@ -94,10 +94,44 @@ supervisory_status: 'No'
   {%- endif -%}
 
   {%- unless opens == 'tbd' -%}
-  Applications will be open for submission on {{ opens | date: '%A, %B %e, %Y' }}. Check out [Join TTS Hiring Process]({{site.baseurl}}/hiring-process/) to
-  learn more about the application process.
+  Applications will be open for submission on {{ opens | date: '%A, %B %e, %Y' }}. Check out [Join TTS Hiring Process]({{site.baseurl}}/hiring-process/) to learn more about the application process.
   {%- endunless -%}
 {%- endif -%}
+
+## Basic information
+
+**Location:**
+{{ location }}
+
+**Salary Range:**
+The salary ranges for this position are:
+- ${{salary_min}} to ${{salary_max}}
+
+Your salary, including base and locality, will be determined upon selection, dependent on your actual duty location.
+
+You can find more information about this in the [compensation and benefits section on our site](https://join.tts.gsa.gov/compensation-and-benefits/).
+
+For specific details on locality pay, please visit [OPM's Salaries & Wages page](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/) or for a
+salary calculator [OPM's 2022 General Schedule (GS) Salary Calculator](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/2022/general-schedule-gs-salary-calculator/).
+
+Please note the maximum salary available for the GS pay system is **${{salary_max}}**
+
+Note: You may not be eligible for the maximum salary as it is locality dependent. Please refer to the maximum pay for your locality.
+
+**Who May Apply:**
+All United States citizens and nationals (residents of American Samoa and Swains Islands).
+
+**Travel requirement:**
+Occasional travel may be required up to 10%-20% per year.
+
+**Security clearance:**
+Public trust. Background investigation required.
+
+**Work schedule:**
+Full time.
+
+**Appointment type:**
+This is a term limited appointment with the ability to extend for a total of eight years.
 
 ## Opportunity overview
 
@@ -156,41 +190,6 @@ In addition to strong skill in experience design, we expect expertise in at leas
 
 {% comment %}🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺{% endcomment %}
 
-
-## Basic information
-
-**Location:**
-{{ location }}
-
-**Salary Range:**
-The salary ranges for this position are:
-- ${{salary_min}} to ${{salary_max}}
-
-Your salary, including base and locality, will be determined upon selection, dependent on your actual duty location.
-
-You can find more information about this in the [compensation and benefits section on our site](https://join.tts.gsa.gov/compensation-and-benefits/).
-
-For specific details on locality pay, please visit [OPM's Salaries & Wages page](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/) or for a
-salary calculator [OPM's 2022 General Schedule (GS) Salary Calculator](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/2022/general-schedule-gs-salary-calculator/).
-
-Please note the maximum salary available for the GS pay system is **${{salary_max}}**
-
-Note: You may not be eligible for the maximum salary as it is locality dependent. Please refer to the maximum pay for your locality.
-
-**Who May Apply:**
-All United States citizens and nationals (residents of American Samoa and Swains Islands).
-
-**Travel requirement:**
-Occasional travel may be required up to 10%-20% per year.
-
-**Security clearance:**
-Public trust. Background investigation required.
-
-**Work schedule:**
-Full time.
-
-**Appointment type:**
-This is a term limited appointment with the ability to extend for a total of eight years.
 
 **Employee benefits:**
 [Learn more about the benefits we offer.](https://join.tts.gsa.gov/compensation-and-benefits/)
