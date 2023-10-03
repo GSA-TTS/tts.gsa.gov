@@ -87,27 +87,17 @@ supervisory_status: 'No'
 
 ---
 
-{%- if state == 'upcoming' -%}
-  {{ org }} will soon be accepting applications for GS-{{ gs_level }} - {{ role_name }} roles.
-  {%- if opens == 'tbd' -%} The target date for when these positions will be officially open to application has not yet been determined. If you'd like to be
-  notified when these positions are open, sign up to our [mailing list]({{ site.baseurl }}/newsletter).
-  {%- endif -%}
-
-  {%- unless opens == 'tbd' -%}
-  Applications will be open for submission on {{ opens | date: '%A, %B %e, %Y' }}. Check out [Join TTS Hiring Process]({{site.baseurl}}/hiring-process/) to learn more about the application process.
-  {%- endunless -%}
-{%- endif -%}
 
 ## Basic information
 Open to U.S. citizens or nationals (residents of American Samoa and Swains Island). Subject to background check. Full information is available on [USAJOBS](https://www.usajobs.gov/job/750109600).
 
-**Supervisory status:** Nonsupervisory
+**Supervisory status:** Non-Supervisory
 
 **Job title:** {{ title }}
 
-**Official title in USAJOBS:** IT Specialist - DATAMGT-INET
+**Official title in USAJOBS:** IT Program Manager (INET/DATAMGT) GS-15
 
-**Number of vacancies:** 2
+**Number of vacancies:** 1
 
 **Location:**
 {{ location }}
@@ -116,19 +106,7 @@ Open to U.S. citizens or nationals (residents of American Samoa and Swains Islan
 The salary ranges for this position are:
 - ${{salary_min}} to ${{salary_max}}
 
-Your salary, including base and locality, will be determined upon selection, dependent on your actual duty location.
-
-You can find more information about this in the [compensation and benefits section on our site](https://join.tts.gsa.gov/compensation-and-benefits/).
-
-For specific details on locality pay, please visit [OPM's Salaries & Wages page](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/) or for a
-salary calculator [OPM's 2022 General Schedule (GS) Salary Calculator](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/2022/general-schedule-gs-salary-calculator/).
-
-Please note the maximum salary available for the GS pay system is **${{salary_max}}**
-
-Note: You may not be eligible for the maximum salary as it is locality dependent. Please refer to the maximum pay for your locality.
-
-**Who May Apply:**
-All United States citizens and nationals (residents of American Samoa and Swains Islands).
+Your salary, including base and locality, will be determined upon selection, dependent on your actual duty location. Please note the maximum salary available for the GS pay system is $183,500. For specific details on locality pay, please visit [OPM’s Salaries & Wages page](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/) or for a salary calculator [OPM’s 2023 General Schedule (GS) Salary Calculator](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/2023/general-schedule-gs-salary-calculator/). You can find more information in our [compensation and benefits section](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/2023/general-schedule-gs-salary-calculator/).
 
 **Travel requirement:**
 Occasional travel may be required up to 10%-20% per year.
@@ -141,38 +119,17 @@ This is a term appointment. Initial appointments are made lasting longer than 1 
 
 Learn more about the benefits of working at [GSA](https://www.gsa.gov/portal/category/26702) and [TTS](https://join.tts.gsa.gov/compensation-and-benefits/).
 
-## Opportunity overview
 
-These opportunities are located in the General Services Administration (GSA), Federal Acquisition Service (FAS), Technology Transformation Services (TTS). TTS applies modern methodologies and technologies to improve the lives of the public and public servants. We help agencies make their services more accessible, efficient, and effective with modern applications, platforms, processes, personnel, and software solutions.
-
-We will be interviewing and hiring for this role on an ongoing basis and to help navigate the process, we’ve created a [guide](https://join.tts.gsa.gov/rolling-hiring/) to help explain what to expect after submitting your resume.
-
-{% comment %}🔻🔻🔻🔻🔻🔻🔻🔻🔻🔻🔻🔻🔻🔻🔻{% endcomment %}
 ## Role summary
 
-TTS is hiring for the role of GS-15 Product Managers to support our Data & Analytics Portfolio. Several business units within TTS are hiring for this role. Product Managers are crucial to TTS significantly improving our products, platforms, and services. This is an opportunity to make a huge difference in the lives of the public and other federal agencies. This page contains a high-level summary of the roles we are trying to fill.
+The Digital Analytics Program (DAP) is the Federal Government’s aggregated web-analytics shared-service. The DAP currently collects and maintains web analytics data on over 6,000 public-facing US federal government websites. Since 2012, the program has been used to analyze data at both micro and macro levels to improve User Experience. Additionally, the DAP team provides a public window into this data by maintaining analytics.usa.gov, the dashboard for portions of DAP data.
 
-These opportunities are located in the General Services Administration (GSA), Federal Acquisition Service (FAS), Technology Transformation Services (TTS). TTS applies modern methodologies and technologies to improve the lives of the public and public servants. We help agencies make their services more accessible, efficient, and effective with modern applications, platforms, processes, personnel, and software solutions.
+A unified, aggregated datastore of web analytics helps site owners, content strategists, designers, communications professionals, and more analyze website visit data to improve delivery of government content and services. Public-facing government Executive Branch website participation in the program is mandated by OMB M-17-06.
 
-TTS is looking for talented product managers who will help our partner agencies deliver better digital services to the public. You’ll lead cross-functional teams to solve large, complex problems and deliver user-centered products using agile methodologies and modern software development practices.
-
-TTS is looking for product managers in both client services and product development roles, including:
-  - Leading cross-functional development teams to own and grow existing, in-market products
-  - Joining cross-functional teams to partner with other government agencies and help them deliver mission-critical software
-  - Partnering with government agencies evolve their culture and establish sustainable best practices for product development
-
-These roles will be a great fit for you if you are a:
-  - Strategic thinker who is comfortable defining a compelling vision and designing a measurable strategy to achieve that vision
-  - Decisive leader who knows how to motivate cross-functional teams to build the right thing
-  - Strong executor that is able to deliver results to agencies and the public
+This position is to serve as Program Manager (PM) for the Digital Analytics Program (DAP), part of the Data and Analytics Portfolio, Office of Solutions, Technology Transformation Services, Federal Acquisition Service, in the U.S. General Services Administration. The PM will lead efforts to implement GA4 for all participating sites, move DAP data into BigQuery, and redesign analytics.usa.gov, all while providing prompt and professional customer service to DAP’s existing and future users and stakeholders.
 
 Our ideal candidates will be equally excited about sticky technical issues and intricate human ones. The strongest candidates will have a background working on cross-functional, multidisciplinary teams that deliver digital products and services in an incremental, user-focused environment.
 
-If you are interested in any or all of these roles, you should apply. You may be matched with multiple teams across TTS during the interview process based on your skills, experience, and interests.
-
-{% comment %}🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺{% endcomment %}
-
-{% comment %}🔻🔻🔻🔻🔻🔻🔻🔻🔻🔻🔻🔻🔻🔻🔻{% endcomment %}
 
 ## Key objectives
 **1. Build or steward the product vision and lead end-to-end product development.**
@@ -261,10 +218,4 @@ lower GS-grade (or equivalent). Specialized experience for this role is defined 
 
 ## How To Apply
 
-Submit a complete online application prior to {{ closes | date: '%l:%M%P %Z ET on %A, %B %e, %Y' }}. Please fill out all applicable fields.
-
-<section class="usa-grid-full">
-  <a class="usa-button usa-button-secondary" href="{{ apply_url }}">Click here to apply</a>
-</section>
-
-**Need Assistance in applying or have questions regarding this job opportunity, please email {{ contact_name }} at** [{{ contact_email }}](mailto:{{ contact_email }}).
+Get [notified]({{ site.baseurl }}/join/newsletter") when this position is open for applications.

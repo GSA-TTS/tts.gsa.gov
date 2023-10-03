@@ -11,7 +11,7 @@ job_post_type: usajobs
 # INSTRUCTIONS UPCOMING: These fields are required for upcoming
 role_name: Data & Analytics Modernization Lead
 opens: '2023-09-21 09:00'
-closes: '2023-10-05 23:59'
+closes: '2023-10-02 23:59'
 weeks_open: 52
 location: 'Anywhere in the U.S. (remote)'
 gs_level: '15'

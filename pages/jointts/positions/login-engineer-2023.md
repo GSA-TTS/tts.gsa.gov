@@ -84,60 +84,43 @@ supervisory_status: 'No'
 
 ---
 
-{%- if state == 'upcoming' -%}
-  {{ org }} will soon be accepting applications for GS-{{ gs_level }} - {{ role_name }} roles.
-  {%- if opens == 'tbd' -%} The target date for when these positions will be officially open to application has not yet been determined. If you'd like to be
-  notified when these positions are open, sign up to our [mailing list]({{ site.baseurl }}/newsletter).
-  {%- endif -%}
 
-  {%- unless opens == 'tbd' -%}
-  Applications will be open for submission on {{ opens | date: '%A, %B %e, %Y' }}. Check out [Join TTS Hiring Process]({{site.baseurl}}/hiring-process/) to
-  learn more about the application process.
-  {%- endunless -%}
-{%- endif -%}
+
 
 ## Basic information
 
-**Location:**
-{{ location }}
+Open to U.S. citizens or nationals (residents of American Samoa and Swains Island). Subject to background check. Full information will be available on USAJOBS.
 
-**Salary Range:**
-The salary ranges for this position are:
-- ${{salary_min}} to ${{salary_max}}
+**Supervisory status:** Non-Supervisory
 
-Your salary, including base and locality, will be determined upon selection, dependent on your actual duty location.
+**Job title:** {{ title }}
 
-You can find more information about this in the [compensation and benefits section on our site](https://join.tts.gsa.gov/compensation-and-benefits/).
+**Official title in USAJOBS:** {{ offical_title }}
 
-For specific details on locality pay, please visit [OPM's Salaries & Wages page](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/) or for a
-salary calculator [OPM's 2022 General Schedule (GS) Salary Calculator](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/2022/general-schedule-gs-salary-calculator/).
+**Number of vacancies**: 4
 
-Please note the maximum salary available for the GS pay system is **${{salary_max}}**
+**Location:** {{ location }}
 
-Note: You may not be eligible for the maximum salary as it is locality dependent. Please refer to the maximum pay for your locality.
+**Salary Range:** The salary ranges for this position are:
+- GS-14 (${{salary_min}} to ${{salary_max}})
+
+Your salary, including base and locality, will be determined upon selection, dependent on your actual duty location. Please note the maximum salary available for the GS pay system is $183,500. For specific details on locality pay, please visit [OPM’s Salaries & Wages page](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/) or for a salary calculator [OPM’s 2023 General Schedule (GS) Salary Calculator](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/2023/general-schedule-gs-salary-calculator/). You can find more information in our [compensation and benefits section](https://join.tts.gsa.gov/compensation-and-benefits/).
+
 
 **Who May Apply:**
 All United States citizens and nationals (residents of American Samoa and Swains Islands).
 
 **Travel requirement:**
-Occasional travel may be required up to 10%-20% per year.
+Occasional travel may be required up to 10% per year.
 
-**Security clearance:**
-Public trust. Background investigation required.
 
 **Work schedule:**
 Full time.
 
 **Appointment type:**
-This is a term limited appointment with the ability to extend for a total of eight years.
+This is a permanent position.
 
-## Opportunity overview
 
-These opportunities are located in the General Services Administration (GSA), Federal Acquisition Service (FAS), Technology Transformation Services (TTS). TTS applies modern methodologies and technologies to improve the lives of the public and public servants. We help agencies make their services more accessible, efficient, and effective with modern applications, platforms, processes, personnel, and software solutions.
-
-We will be interviewing and hiring for this role on an ongoing basis and to help navigate the process, we’ve created a [guide](https://join.tts.gsa.gov/rolling-hiring/) to help explain what to expect after submitting your resume.
-
-{% comment %}🔻🔻🔻🔻🔻🔻🔻🔻🔻🔻🔻🔻🔻🔻🔻{% endcomment %}
 ## Role summary
 
 This opportunity is located in the Technology Transformation Services (TTS) Solutions Division’s Login.gov team. The Login.gov team is remote-first and is composed of experts across product development, software engineering, cybersecurity, and platform engineering. 
@@ -206,15 +189,7 @@ For each job on your resume, provide:
 - The exact dates you held each job (from month/year to month/year or “present”)
 - Number of hours per week you worked (if part time)
 
-All applications will be reviewed by a panel of subject matter experts against a scoring rubric created for this role. In order to properly be able to evaluate your previous experience, we recommend being as detailed as possible in your resume and following our general guidance on creating federal style resume.
-
 
 ## How To Apply
 
-Submit a complete online application prior to {{ closes | date: '%l:%M%P %Z ET on %A, %B %e, %Y' }}. Please fill out all applicable fields.
-
-<section class="usa-grid-full">
-  <a class="usa-button usa-button-secondary" href="{{ apply_url }}">Click here to apply</a>
-</section>
-
-**Need Assistance in applying or have questions regarding this job opportunity, please email {{ contact_name }} at** [{{ contact_email }}](mailto:{{ contact_email }}).
+Get [notified]({{ site.baseurl }}/join/newsletter") when this position is open for applications.
