@@ -88,19 +88,19 @@ Learn more about the benefits of working at [GSA](https://www.gsa.gov/portal/cat
 
 Login.gov is the public’s one account for government, simplifying access to government benefits and services for members of the public by enabling them to reuse one secure account across government agencies, and improving the security of government systems by enabling agencies to leverage a shared technology service to provide strong authentication and identity verification services to their customers. We focus on the complexities of digital identity authentication for the public, so agencies can focus on their mission.
 
-This opportunity is located in the Technology Transformation Services (TTS) Solutions Division’s Login.gov team. The Login.gov team is a remote organization and is composed of experts across product development, software engineering, cybersecurity, and platform engineering.
+This opportunity is located in the Technology Transformation Services (TTS) Solutions Division’s Log<span>in.</span>gov team. The Log<span>in.</span>gov team is a remote organization and is composed of experts across product development, software engineering, cybersecurity, and platform engineering.
 
-As an Integration Engineer at Login.gov, you will provide technical support to our government partners as they evaluate our services for use at their agencies and as they integrate Login.gov into their applications. You will work closely with the Login.gov Account Managers and with other members of the Login.gov Partnerships team, and product teams and programs. In addition, you will develop and maintain partner-facing and internal tools and applications to improve the overall partner experience.
+As an Integration Engineer at Log<span>in.</span>gov, you will provide technical support to our government partners as they evaluate our services for use at their agencies and as they integrate Log<span>in.</span>gov into their applications. You will work closely with the Log<span>in.</span>gov Account Managers and with other members of the Log<span>in.</span>gov Partnerships team, and product teams and programs. In addition, you will develop and maintain partner-facing and internal tools and applications to improve the overall partner experience.
 
 
 ## Key objectives
 
-### 1. Improve the partnership experience for Login.gov partners
+### 1. Improve the partnership experience for Log<span>in.</span>gov partners
 - Maintain existing systems and tools used by the Partnerships team to manage the integration process.
 - Develop new partner-facing features to work towards more automated onboarding and integration processes.
-### 2.  Support partners integrating with Login.gov
-- Provide technical support to partners integrating Login.gov into their applications, help troubleshoot and resolve issues.
-- Answer technical questions about the Login.gov product and guide partners through technical decisions, e.g selecting an authentication protocol.
+### 2.  Support partners integrating with Log<span>in.</span>gov
+- Provide technical support to partners integrating Log<span>in.</span>gov into their applications, help troubleshoot and resolve issues.
+- Answer technical questions about the Log<span>in.</span>gov product and guide partners through technical decisions, e.g selecting an authentication protocol.
 - Assist partners in debugging SAML and OIDC requests between their applications and ours. 
 - Serve as an escalation point for technical support tickets and facilitate technical consultations with partners.
 - Facilitate the integration launch and configuration management processes.

@@ -84,21 +84,17 @@ supervisory_status: 'No'
 
 ---
 
-{%- if state == 'upcoming' -%}
-  {{ org }} will soon be accepting applications for GS-{{ gs_level }} - {{ role_name }} roles.
-  {%- if opens == 'tbd' -%} The target date for when these positions will be officially open to application has not yet been determined. If you'd like to be
-  notified when these positions are open, sign up to our [mailing list]({{ site.baseurl }}/newsletter).
-  {%- endif -%}
-
-  {%- unless opens == 'tbd' -%}
-  Applications will be open for submission on {{ opens | date: '%A, %B %e, %Y' }}. Check out [Join TTS Hiring Process]({{site.baseurl}}/hiring-process/) to learn more about the application process.
-  {%- endunless -%}
-{%- endif -%}
-
 ## Basic information
 
-**Location:**
-{{ location }}
+**Supervisory status:** Non-Supervisory
+
+**Job title:** {{ title }}
+
+**Official title in USAJOBS:** {{ offical_title }}
+
+**Number of vacancies**: 1
+
+**Location:** {{ location }}
 
 **Salary Range:**
 The salary ranges for this position are:
@@ -121,38 +117,21 @@ All United States citizens and nationals (residents of American Samoa and Swains
 **Travel requirement:**
 Occasional travel may be required up to 10%-20% per year.
 
-**Security clearance:**
-Public trust. Background investigation required.
-
 **Work schedule:**
 Full time.
 
 **Appointment type:**
-This is a term limited appointment with the ability to extend for a total of eight years.
+ This is a term appointment. Initial appointments are made lasting longer than 1 year, but not to exceed 4 years. GSA, may extend an appointment up to 4 additional years. No individual hired under this DHA can serve in excess of 8 years with GSA, and cannot be transferred to positions that are not IT positions.
+Learn more about the benefits of working at [GSA](https://www.gsa.gov/portal/category/26702) and [TTS](https://join.tts.gsa.gov/compensation-and-benefits/).
 
 
 ## Role summary
 
-Designers at TTS work across design contexts. They drive research activities, derive insights, generate concepts, communicate those concepts clearly, and work with cross functional teams to build and test them. They model best practices in user-centered design within TTS and across the federal government through advocacy and coaching.
+The Digital Analytics Program (DAP) is the Federal Government’s aggregated web-analytics shared-service. The DAP currently collects and maintains web analytics data on over 6,000 public-facing US federal government websites. Since 2012, the program has been used to analyze data at both micro and macro levels to improve User Experience. Additionally, the DAP team provides a public window into this data by maintaining analytics.usa.gov, the dashboard for portions of DAP data.
+A unified, aggregated datastore of web analytics helps site owners, content strategists, designers, communications professionals, and more analyze website visit data to improve delivery of government content and services. Public-facing government Executive Branch website participation in the program is mandated by OMB M-17-06.
+This position is to serve as Program Manager (PM) for the Digital Analytics Program (DAP), part of the Data and Analytics Portfolio, Office of Solutions, Technology Transformation Services, Federal Acquisition Service, in the U.S. General Services Administration. The PM will lead efforts to implement GA4 for all participating sites, move DAP data into BigQuery, and redesign analytics.usa.gov, all while providing prompt and professional customer service to DAP’s existing and future users and stakeholders.
+Our ideal candidates will be equally excited about sticky technical issues and intricate human ones. The strongest candidates will have a background working on cross-functional, multidisciplinary teams that deliver digital products and services in an incremental, user-focused environment.
 
-Our Designers have deep experience in user research (generative, foundational and evaluative). In addition to research, we look for strong craft skills, confidence, and sophistication in at least one of the following areas: interaction design, product design, service design, content design and/or information architecture.
-
-As a Designer, you’ll work in cross-functional teams made up of experts in design, product strategy, technical architecture, software engineering, data science, and procurement. In addition to building useful and usable digital services, you will be helping teams improve their user-centered design practice, and helping teams without those practices get started.
-
-If you are committed to improving government services for all who need them this is the position for you.
-
-Types of designers we are currently hiring for:
-- UX Design
-- Service Design
-- Content Strategy
-- Product Design
-
-Some of the teams we are currently hiring for (not a complete list):
-Please note, while a candidate's preference on teams may be taken into consideration, a final hiring decision on which team a candidate will join depends on the candidate's skillsets as well as current needs of each team. 
-- [18F](https://18f.gsa.gov/): Cross-discipline teams that work on projects supporting agencies across the federal government.
-- [USAGov](https://www.usa.gov/): A team supporting a large web presence, including the government’s “front door” that routes the public to government agency resources.
-- [Centers of Excellence](https://coe.gsa.gov/): Cross-discipline teams work with agency partners and industry to accelerate enterprise-wide IT & data modernization with emphasis on improving the customer and employee experience.
-- [Login.gov](https://login.gov/): Teams supporting a product that manages identity for interactions with the federal government.
 
 {% comment %}🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺{% endcomment %}
 
@@ -225,10 +204,18 @@ lower GS-grade (or equivalent). Specialized experience for this role will be upd
 
 ## How To Apply
 
+{% if state == 'open' %}
+
 Submit a complete online application prior to {{ closes | date: '%l:%M%P %Z ET on %A, %B %e, %Y' }}. Please fill out all applicable fields.
 
 <section class="usa-grid-full">
   <a class="usa-button usa-button-secondary" href="{{ apply_url }}">Click here to apply</a>
 </section>
+
+{% elsif state == 'upcoming' %}
+
+Get [notified](https://join.tts.gsa.gov/newsletter/) when this position is open for applications.
+
+{% endif %}
 
 **Need Assistance in applying or have questions regarding this job opportunity, please email {{ contact_name }} at** [{{ contact_email }}](mailto:{{ contact_email }}).

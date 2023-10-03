@@ -85,15 +85,13 @@ supervisory_status: 'No'
 ---
 
 
-
-
 ## Basic information
 
 Open to U.S. citizens or nationals (residents of American Samoa and Swains Island). Subject to background check. Full information will be available on USAJOBS.
 
 **Supervisory status:** Non-Supervisory
 
-**Job title:** {{ title }}
+**Job title:** Log<span>in.</span>gov\: Engineer GS15
 
 **Official title in USAJOBS:** {{ offical_title }}
 
@@ -102,7 +100,7 @@ Open to U.S. citizens or nationals (residents of American Samoa and Swains Islan
 **Location:** {{ location }}
 
 **Salary Range:** The salary ranges for this position are:
-- GS-14 (${{salary_min}} to ${{salary_max}})
+- GS-{{gs_level}} (${{salary_min}} to ${{salary_max}})
 
 Your salary, including base and locality, will be determined upon selection, dependent on your actual duty location. Please note the maximum salary available for the GS pay system is $183,500. For specific details on locality pay, please visit [OPM’s Salaries & Wages page](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/) or for a salary calculator [OPM’s 2023 General Schedule (GS) Salary Calculator](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/2023/general-schedule-gs-salary-calculator/). You can find more information in our [compensation and benefits section](https://join.tts.gsa.gov/compensation-and-benefits/).
 
@@ -123,15 +121,15 @@ This is a permanent position.
 
 ## Role summary
 
-This opportunity is located in the Technology Transformation Services (TTS) Solutions Division’s Login.gov team. The Login.gov team is remote-first and is composed of experts across product development, software engineering, cybersecurity, and platform engineering. 
+This opportunity is located in the Technology Transformation Services (TTS) Solutions Division’s Login.gov team. The Log<span>in.</span>gov team is remote-first and is composed of experts across product development, software engineering, cybersecurity, and platform engineering. 
 
-Login.gov is a FedRAMP authorized secure sign-in service created for the public to access participating government agency sites, products, and services. At its core, Login.gov is both an authentication and identity verification service and is now available to all levels of government: federal, state, and local.
+Log<span>in.</span>gov is a FedRAMP authorized secure sign-in service created for the public to access participating government agency sites, products, and services. At its core, Log<span>in.</span>gov is both an authentication and identity verification service and is now available to all levels of government: federal, state, and local.
 
-Login.gov is looking for talented Engineers to help us deliver better digital services to the public. At Login.gov, you will be a builder, contributor, and a catalyst. With the support of the team, you will solve large complex problems while spreading user-centered, open, and transparent culture. You can be writing code one day, going to meet with members from partner agencies another day, and launching a new product that will impact the lives of Americans across the country the next week. Login.gov is an open source team, so most of what you work on will be open source.
+Log<span>in.</span>gov is looking for talented Engineers to help us deliver better digital services to the public. At Log<span>in.</span>gov, you will be a builder, contributor, and a catalyst. With the support of the team, you will solve large complex problems while spreading user-centered, open, and transparent culture. You can be writing code one day, going to meet with members from partner agencies another day, and launching a new product that will impact the lives of Americans across the country the next week. Log<span>in.</span>gov is an open source team, so most of what you work on will be open source.
 
 This role is perfect for you if you care deeply about building great public-facing digital products and services. You should be excited to apply your skills, share them with your colleagues, and learn from them in turn.
 
-Login.gov’s core languages are Ruby, Python, JavaScript, and Go. You should have experience with at least one of those languages, and should be proficient in web development, relational databases, and using Unix-like operating systems. You should understand engineering best practices such as source control, automated testing, continuous integration and deployment, and peer review. The best candidates will have a background working on cross-functional, multidisciplinary teams that deliver digital products and services in an incremental, user-focused environment.
+Log<span>in.</span>gov’s core languages are Ruby, Python, JavaScript, and Go. You should have experience with at least one of those languages, and should be proficient in web development, relational databases, and using Unix-like operating systems. You should understand engineering best practices such as source control, automated testing, continuous integration and deployment, and peer review. The best candidates will have a background working on cross-functional, multidisciplinary teams that deliver digital products and services in an incremental, user-focused environment.
 
 {% comment %}🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺{% endcomment %}
 
