@@ -5,7 +5,7 @@ services:
     logo: _img/Logo_Notify.png
     logo_alt_text: Notify.gov
     category: products
-    description: "Collaborating with benefits agencies to build digital building blocks and spread best practices that simplify the experience of navigating public benefits, starting with piloting a text messaging service, Notify.gov."
+    description: "The Public Benefits Studio is piloting Notify.gov, a text messaging service built by and for government. Benefits program staff can set up custom text messages in as little as 10 minutes — without a technical integration required — and at minimal cost."
   - name: USAGov
     link: https://usa.gov
     link_alt_text: link to USA.gov
