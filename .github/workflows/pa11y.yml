@@ -39,7 +39,17 @@ jobs:
             else
               echo "echo-summer20203/"
             fi
+
+            echo -n "DELAY_SECONDS="
+            if [ -n "${{ vars.DELAY_SECONDS }}" ] ; then
+              echo "${{ vars.DELAY_SECONDS }}"
+            else
+              echo "120"
+            fi
           ) >> "$GITHUB_OUTPUT"
+
+      - name: Delay while the preview URL is built
+        run: "sleep ${{ steps.customvars.outputs.DELAY_SECONDS }}"
 
       - name: Execute Pa11y-ci tests
         run: npm run pa11y "${{ steps.customvars.outputs.BASE_URL }}/${{ steps.customvars.outputs.URL_PATH }}" 2>&1 | tee pa11y_output.txt
