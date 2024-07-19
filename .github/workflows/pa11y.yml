@@ -16,6 +16,9 @@ jobs:
       - name: Install Chrome
         uses: browser-actions/setup-chrome@latest
 
+        # We're no longer building the site, so we don't need
+        # to use the site's version of Node -- just something
+        # that's supposed by Cloud.gov Pages (currently 18.19.0)
       - name: Use Node
         uses: actions/setup-node@v3
         with:
