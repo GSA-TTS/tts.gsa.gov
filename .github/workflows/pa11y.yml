@@ -7,19 +7,22 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  pa11y:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v3
+
+      - name: Install Chrome
+        uses: browser-actions/setup-chrome@latest
 
       - name: Use Node
         uses: actions/setup-node@v3
         with:
           node-version: '18'
 
-      - name: Install NPM dependencies
-        run: npm install
+      - name: Install Pa11y
+        run: npm install pa11y
 
       - name: Setup custom variables
         id: customvars
@@ -44,7 +47,7 @@ jobs:
             if [ -n "${{ vars.DELAY_SECONDS }}" ] ; then
               echo "${{ vars.DELAY_SECONDS }}"
             else
-              echo "120"
+              echo "60"
             fi
           ) >> "$GITHUB_OUTPUT"
 
