@@ -22,7 +22,7 @@ jobs:
           node-version: '18'
 
       - name: Install Pa11y
-        run: npm install pa11y
+        run: npm install -g pa11y
 
       - name: Setup custom variables
         id: customvars
@@ -54,8 +54,8 @@ jobs:
       - name: Delay while the preview URL is built
         run: "sleep ${{ steps.customvars.outputs.DELAY_SECONDS }}"
 
-      - name: Execute Pa11y-ci tests
-        run: npm run pa11y "${{ steps.customvars.outputs.BASE_URL }}/${{ steps.customvars.outputs.URL_PATH }}" 2>&1 | tee pa11y_output.txt
+      - name: Execute Pa11y tests
+        run: node node_modules/pa11y/bin/pa11y.js "${{ steps.customvars.outputs.BASE_URL }}/${{ steps.customvars.outputs.URL_PATH }}" 2>&1 | tee pa11y_output.txt
 
       - name: Read pa11y_output file.
         id: pa11y_output
