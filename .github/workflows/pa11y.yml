@@ -1,21 +1,73 @@
+---
 name: Pa11y Testing
 
-on: [pull_request]
+# yamllint disable-line rule:truthy
+on:
+  pull_request:
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
       - uses: actions/checkout@v3
-      
+
       - name: Use Node
         uses: actions/setup-node@v3
         with:
-          node-version: '17.x'
+          node-version: '18'
 
       - name: Install NPM dependencies
         run: npm install
 
+      - name: Setup custom variables
+        id: customvars
+        run: |
+          ( echo -n "BASE_URL="
+            if [ -n "${{ vars.BASE_URL }}" ] ; then
+              echo "${{ vars.BASE_URL }}"
+            else
+              echo "https://federalist-a2423046-fe43-4e75-a2ef-2651e5e123ca.sites.pages.cloud.gov/preview/gsa-tts/tts.gsa.gov/"
+            fi
+
+            echo -n "URL_PATH="
+            if [ -n "${{ vars.URL_PATH }}" ] ; then
+              echo "${{ vars.URL_PATH }}/"
+            elif [ -n "${GITHUB_HEAD_REF:-}" ] ; then
+              echo "${GITHUB_HEAD_REF}/"
+            else
+              echo "echo-summer20203/"
+            fi
+          ) >> "$GITHUB_OUTPUT"
+
       - name: Execute Pa11y-ci tests
-        run: npm run pa11y-ci
+        run: npm run pa11y "${{ steps.customvars.outputs.BASE_URL }}/${{ steps.customvars.outputs.URL_PATH }}" 2>&1 | tee pa11y_output.txt
+
+      - name: Read pa11y_output file.
+        id: pa11y_output
+        uses: juliangruber/read-file-action@v1
+        with:
+          path: ./pa11y_output.txt
+
+      - name: verify that pa11y successfully scanned the site
+        if: contains(steps.pa11y_output.outputs.content, 'ailed to run')
+        run: |
+          echo "::error::Pa11y failed to run."
+          exit 1
+
+      - name: Comment on pull request.
+        uses: thollander/actions-comment-pull-request@v2
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          message: "<details><summary>Pa11y testing results</summary>
+            ```${{ steps.pa11y_output.outputs.content }}```
+            </details>"
+
+      - name: Check for pa11y failures.
+        if: contains(steps.pa11y_output.outputs.content, 'errno 2')
+        run: |
+          echo "::error::The site is failing accessibility tests."
+          echo "Please review the comment in the pull request for details."
+          exit 1
+
