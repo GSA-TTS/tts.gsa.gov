@@ -6,21 +6,30 @@ on:
   pull_request:
   workflow_dispatch:
 
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+concurrency:
+  group: ${{ github.ref }}-${{ github.workflow }}
+  cancel-in-progress: true
+
 jobs:
   pa11y:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # pin@v4.1.7
 
       - name: Install Chrome
-        uses: browser-actions/setup-chrome@latest
-
+        uses: browser-actions/setup-chrome@facf10a55b9caf92e0cc749b4f82bf8220989148 # pin@v1.7.2
         # We're no longer building the site, so we don't need
         # to use the site's version of Node -- just something
         # that's supposed by Cloud.gov Pages (currently 18.19.0)
       - name: Use Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@1a4442cacd436585916779262731d5b162bc6ec7 # pin@v3
         with:
           node-version: '18'
 
@@ -62,7 +71,7 @@ jobs:
 
       - name: Read pa11y_output file.
         id: pa11y_output
-        uses: juliangruber/read-file-action@v1
+        uses: juliangruber/read-file-action@b549046febe0fe86f8cb4f93c24e284433f9ab58 # pin@v1.1.7
         with:
           path: ./pa11y_output.txt
 
@@ -73,12 +82,10 @@ jobs:
           exit 1
 
       - name: Comment on pull request.
-        uses: thollander/actions-comment-pull-request@v2
+        uses: thollander/actions-comment-pull-request@fabd468d3a1a0b97feee5f6b9e499eab0dd903f6 # pin@v2.5.0
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          message: "<details><summary>Pa11y testing results</summary>
-            ```${{ steps.pa11y_output.outputs.content }}```
-            </details>"
+          message: "<details><summary>Pa11y testing results</summary> ```${{ steps.pa11y_output.outputs.content }}``` </details>"
 
       - name: Check for pa11y failures.
         if: contains(steps.pa11y_output.outputs.content, 'errno 2')
@@ -86,4 +93,3 @@ jobs:
           echo "::error::The site is failing accessibility tests."
           echo "Please review the comment in the pull request for details."
           exit 1
-
