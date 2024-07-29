@@ -4,7 +4,7 @@
   "aliveStatusCodes": [200, 203],
   "ignorePatterns": [
     {
-      "pattern": "^https?://github.com/ccsq-cqp/"
+      "pattern": "^https?://github.com/"
     }
   ]
 }

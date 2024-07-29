@@ -9,6 +9,7 @@ on:
       - main
   workflow_dispatch:
 
+
 permissions:
   contents: write
   issues: write
@@ -41,7 +42,7 @@ jobs:
       # MegaLinter
       - name: MegaLinter
         id: ml
-        uses: oxsecurity/megalinter/flavors/javascript@v7.13.0
+        uses: oxsecurity/megalinter/flavors/javascript@bacb5f8674e3730b904ca4d20c8bd477bc51b1a7 # pin@v7.13.0
         env:
           VALIDATE_ALL_CODEBASE: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -49,7 +50,7 @@ jobs:
       # Upload MegaLinter artifacts
       - name: Archive production artifacts
         if: always()
-        uses: actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808 # pin@v3
+        uses: actions/upload-artifact@a8a3f3ad30e3422c9c7b888a15615d19a852ae32 # pin@v3
         with:
           name: MegaLinter reports
           path: |
@@ -60,7 +61,7 @@ jobs:
       - name: Create Pull Request with applied fixes
         id: cpr
         if: steps.ml.outputs.has_updated_sources == 1 && (env.APPLY_FIXES_EVENT == 'all' || env.APPLY_FIXES_EVENT == github.event_name) && env.APPLY_FIXES_MODE == 'pull_request' && (github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository)
-        uses: peter-evans/create-pull-request@6d6857d36972b65feb161a90e484f2984215f83e # pin@v5
+        uses: peter-evans/create-pull-request@4e1beaa7521e8b457b572c090b25bd3db56bf1c5 # pin@v5
         with:
           token: ${{ secrets.PAT || secrets.GITHUB_TOKEN }}
           commit-message: "[MegaLinter] Apply linters automatic fixes"
@@ -87,12 +88,12 @@ jobs:
 
       - name: Check to see if the SARIF a was generated
         id: sarif_file_exists
-        uses: andstor/file-existence-action@076e0072799f4942c8bc574a82233e1e4d13e9d6 # pin@v2
+        uses: andstor/file-existence-action@20b4d2e596410855db8f9ca21e96fbe18e12930b # pin@v2
         with:
           files: "megalinter-reports/megalinter-report.sarif"
 
       - name: Upload MegaLinter scan results to GitHub Security tab
         if: steps.sarif_file_exists.outputs.files_exists == 'true'
-        uses: github/codeql-action/upload-sarif@23acc5c183826b7a8a97bce3cecc52db901f8251 # pin@v2
+        uses: github/codeql-action/upload-sarif@3e0e84636c6f5df46a2cb232ae1dd1384713150d # pin@v2
         with:
           sarif_file: "megalinter-reports/megalinter-report.sarif"
