@@ -13,33 +13,13 @@ const { imageShortcode, imageWithClassShortcode } = require('./config');
 
 module.exports = function (config) {
   // Set pathPrefix for site
-  let pathPrefix = '/';22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-
-
+  let pathPrefix = '/';
   // Copy the `admin` folders to the output
   config.addPassthroughCopy('admin');
 
   // for #80 (update site favicon)
   // copy files from `_img/favicon/` to `_site/`
-  eleventyConfig.addPassthroughCopy({ "_img/favicon": "/" });
+  config.addPassthroughCopy({ "_img/favicon": "/" });
 
   // Copy USWDS init JS so we can load it in HEAD to prevent banner flashing
   config.addPassthroughCopy({'./node_modules/@uswds/uswds/dist/js/uswds-init.js': 'assets/js/uswds-init.js'});
