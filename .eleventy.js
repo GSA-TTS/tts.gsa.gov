@@ -14,9 +14,12 @@ const { imageShortcode, imageWithClassShortcode } = require('./config');
 module.exports = function (config) {
   // Set pathPrefix for site
   let pathPrefix = '/';
-
   // Copy the `admin` folders to the output
   config.addPassthroughCopy('admin');
+
+  // for #80 (update site favicon)
+  // copy files from `_img/favicon/` to `_site/`
+  config.addPassthroughCopy({ "_img/favicon/favicon.ico": "/assets/favicon.ico" });
 
   // Copy USWDS init JS so we can load it in HEAD to prevent banner flashing
   config.addPassthroughCopy({'./node_modules/@uswds/uswds/dist/js/uswds-init.js': 'assets/js/uswds-init.js'});
