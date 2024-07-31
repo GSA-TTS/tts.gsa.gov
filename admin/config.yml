@@ -1,3 +1,4 @@
+---
 ## Comment out when doing local development
 backend:
   name: github
@@ -15,9 +16,9 @@ backend:
 # # See https://www.netlifycms.org/docs/beta-features/#working-with-a-local-git-repository
 # #
 
-backend:
-  name: git-gateway
-local_backend: true
+# backend:
+#   name: git-gateway
+# local_backend: true
 
 media_folder: _img
 public_folder: _img

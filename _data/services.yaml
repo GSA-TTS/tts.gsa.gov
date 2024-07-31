@@ -1,3 +1,4 @@
+---
 services:
   - name: USAGov
     link: https://usa.gov
@@ -106,7 +107,7 @@ services:
     link: https://18f.gsa.gov
     link_alt_text: link to 18F homepage
     logo: _img/18f-logo.svg
-    logo_alt_text: 18F 
+    logo_alt_text: 18F
     category: people
     description: A digital consulting office that partners with agencies to help
       them build or buy digital services.
