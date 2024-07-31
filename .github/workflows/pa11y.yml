@@ -2,15 +2,13 @@
 name: Pa11y Testing
 
 # yamllint disable-line rule:truthy
+
 on:
   pull_request:
   workflow_dispatch:
 
-
 permissions:
-  contents: write
-  issues: write
-  pull-requests: write
+  - read-all
 
 concurrency:
   group: ${{ github.ref }}-${{ github.workflow }}
@@ -19,8 +17,13 @@ concurrency:
 jobs:
   pa11y:
     runs-on: ubuntu-latest
+    
+    permissions:      
+      issues: write
+      pull-requests: write
 
     steps:
+
       - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # pin@v4.1.7
 
       - name: Install Chrome
@@ -28,6 +31,10 @@ jobs:
         # We're no longer building the site, so we don't need
         # to use the site's version of Node -- just something
         # that's supposed by Cloud.gov Pages (currently 18.19.0)
+
+      - name: Checkout repository
+        uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # pin@v3
+
       - name: Use Node
         uses: actions/setup-node@1a4442cacd436585916779262731d5b162bc6ec7 # pin@v3
         with:
