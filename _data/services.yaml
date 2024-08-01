@@ -34,7 +34,8 @@ services:
     logo: _img/People_PIF.png
     logo_alt_text: PIF
     category: people
-    description: A program that pairs top technologists with civil-servants to spend
+    description:
+      A program that pairs top technologists with civil-servants to spend
       12 months tackling some of our nation’s biggest challenges.
   - name: DAP
     link: https://digital.gov/guides/dap/
@@ -42,7 +43,8 @@ services:
     logo: _img/Product_DAP.png
     logo_alt_text: logo not yet available
     category: products
-    description: Offering advanced, easy web analytics tools, training, and support
+    description:
+      Offering advanced, easy web analytics tools, training, and support
       to help the government make data-driven decisions to improve the digital
       public experience.
   - name: SAM.gov
@@ -68,7 +70,8 @@ services:
     logo: _img/digitalgov-logo.svg
     logo_alt_text: digital.gov
     category: products
-    description: Creating community connections and providing guidance on building
+    description:
+      Creating community connections and providing guidance on building
       digital services to transform how the government interacts with the
       public.
   - name: Vote.gov
@@ -84,7 +87,8 @@ services:
     logo: _img/coe-logo.svg
     logo_alt_text: Centers of Excellence
     category: people
-    description: A centralized team of technical experts that accelerate agency-wide
+    description:
+      A centralized team of technical experts that accelerate agency-wide
       IT modernization.
   - name: Search.gov
     link: https://search.gov
@@ -92,7 +96,8 @@ services:
     logo: _img/search-gov.png
     logo_alt_text: Search.gov
     category: products
-    description: Creating a standard search experience across government websites,
+    description:
+      Creating a standard search experience across government websites,
       providing the public with quick, easy access to the government information
       and services they need.
   - name: Login.gov
@@ -101,7 +106,8 @@ services:
     logo: _img/logo.svg
     logo_alt_text: Login.gov
     category: products
-    description: Providing the public one account to access participating government
+    description:
+      Providing the public one account to access participating government
       services online.
   - name: 18F
     link: https://18f.gsa.gov
@@ -132,7 +138,8 @@ services:
     logo: _img/touchpoints-logotype.png
     logo_alt_text: Touchpoints
     category: products
-    description: Offers a simple, flexible, and convenient way to start collecting
+    description:
+      Offers a simple, flexible, and convenient way to start collecting
       customer feedback so you can focus on serving customers rather than
       managing surveys.
   - name: FedRAMP
@@ -151,7 +158,8 @@ services:
     logo: _img/data-gov.png
     logo_alt_text: APIData.gov
     category: products
-    description: Saving money and speeding development of federal APIs by offering a
+    description:
+      Saving money and speeding development of federal APIs by offering a
       hosted shared service for API management. Enables greater developer
       adoption and cross-agency metrics through the use of government-wide API
       keys.
@@ -161,7 +169,8 @@ services:
     logo: _img/data-gov.png
     logo_alt_text: Data.gov
     category: platforms
-    description: Offering the public open access to datasets from across the federal
+    description:
+      Offering the public open access to datasets from across the federal
       government.
   - name: Challenge.gov
     link: https://challenge.gov
@@ -169,7 +178,8 @@ services:
     logo: _img/challenge-logo.svg
     logo_alt_text: Challenge.gov
     category: platforms
-    description: Catalyzing public engagement and participation in innovation and
+    description:
+      Catalyzing public engagement and participation in innovation and
       problem solving through crowdsourcing and prize competitions.
   - name: Cloud.gov
     link: https://cloud.gov/
@@ -185,7 +195,8 @@ services:
     logo: _img/code-gov-dark.svg
     logo_alt_text: Code.gov
     category: products
-    description: Helping agencies meet the requirements of the Federal Source Code
+    description:
+      Helping agencies meet the requirements of the Federal Source Code
       Policy and providing a platform to make federal code publicly available.
   - name: Digital Corps
     link: https://digitalcorps.gsa.gov/
@@ -202,7 +213,8 @@ services:
     logo: _img/FAC1.png
     logo_alt_text: FAC
     category: platforms
-    description: Supporting the collection, distribution, and oversight of audits as
+    description:
+      Supporting the collection, distribution, and oversight of audits as
       guided by the Single Audit Act.
   - name: US Web Design System (USWDS)
     link: https://designsystem.digital.gov/
@@ -219,7 +231,8 @@ services:
     logo: _img/Logo_Regulations.gov.png
     category: platforms
     logo_alt_text: eRulemaking logo
-    description: Increasing access to and participation in developing regulations
+    description:
+      Increasing access to and participation in developing regulations
       and other related documents that impact you and promoting more efficient
       and effective rulemaking through public involvement.
   - name: eSRS
@@ -235,7 +248,8 @@ services:
     link_alt_text: link to CPARS homepage
     logo: _img/cpars.png
     logo_alt_text: CPARS
-    description: The official U.S. government website for people who make, receive,
+    description:
+      The official U.S. government website for people who make, receive,
       and manage federal awards. It contains data on federal contractors,
       including both past performance information and integrity records.
     category: platforms

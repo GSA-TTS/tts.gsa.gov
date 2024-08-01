@@ -13,7 +13,7 @@ on:
 
   # https://github.com/ossf/scorecard/blob/main/docs/checks.md#maintained
   schedule:
-    - cron: '43 7 * * 3'
+    - cron: "43 7 * * 3"
   push:
     branches:
       - "main"
