@@ -32,23 +32,25 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - {
-          label: "Layout",
-          name: "layout",
-          widget: "hidden",
-          default: "layouts/page",
-        }
-      - {
-          label: "Page link",
-          name: "permalink",
-          hint: "The URL this page will be accessible at.",
-          pattern: ['^.*\/$', "Must end with a slash"],
-          widget: "string",
-          default: "{{slug}}",
-        }
+      - name: "layout"
+        label: "Layout"
+        widget: "hidden"
+        default: "layouts/page"
 
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - name: "permalink"
+        label: "Page link"
+        hint: "The URL this page will be accessible at."
+        pattern: ['^.*\/$', "Must end with a slash"]
+        widget: "string"
+        default: "{{slug}}"
+
+      - name: "title"
+        label: "Title"
+        widget: "string"
+
+      - name: "body"
+        label: "Body"
+        widget: "markdown"
   - label: Site Alert
     name: hero-alert
     create: false
@@ -58,32 +60,37 @@ collections:
         name: "hero-alert"
         file: "_data/heroAlert.json"
         fields:
-          - { label: "Message", name: "message", widget: "string" }
+          - name: "message"
+            label: "Message"
+            widget: "string"
   - label: Join TTS Info Pages
     name: jointtspages
     folder: pages/jointts/
     create: true
     slug: "{{slug}}"
     fields:
-      - {
-          label: "Layout",
-          name: "layout",
-          widget: "hidden",
-          default: "layouts/page",
-        }
-      - {
-          label: "Page link",
-          name: "permalink",
-          hint: "The URL this page will be accessible at.",
-          pattern: ['^.*\/$', "Must end with a slash"],
-          widget: "string",
-          default: "{{slug}}",
-        }
+      - name: "layout"
+        label: "Layout"
+        widget: "hidden"
+        default: "layouts/page"
 
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
-  - label: "Services Page"
-    name: Services
+      - name: "permalink"
+        label: "Page link"
+        hint: "The URL this page will be accessible at."
+        pattern: ['^.*\/$', "Must end with a slash"]
+        widget: "string"
+        default: "{{slug}}"
+
+      - name: "title"
+        label: "Title"
+        widget: "string"
+
+      - name: "body"
+        label: "Body"
+        widget: "markdown"
+
+  - name: Services
+    label: "Services Page"
     create: true
     format: "yaml"
     files:
@@ -97,53 +104,146 @@ collections:
             label_singular: "service"
             order: "{{fields.name}}"
             fields:
-              - { label: Name, name: name, widget: string }
-              - { label: Link, name: link, widget: string }
-              - { label: Link Alt Text, name: link_alt_text, widget: string }
-              - { label: Logo, name: logo, widget: image }
-              - { label: Logo Alt Text, name: logo_alt_text, widget: string }
-              - { label: Category, name: category, widget: string }
-              - { label: Description, name: description, widget: text }
-  - label: "Jobs Page"
-    name: Jobs
+              - name: "name"
+                label: "Name"
+                widget: "string"
+
+              - name: "link"
+                label: "Link"
+                widget: "string"
+
+              - name: "link_alt_text"
+                label: "Link Alt Text"
+                widget: "string"
+
+              - name: "logo"
+                label: "Logo"
+                widget: "image"
+
+              - name: "logo_alt_text"
+                label: "Logo Alt Text"
+                widget: "string"
+
+              - name: "category"
+                label: "Category"
+                widget: "string"
+
+              - name: "description"
+                label: "Description"
+                widget: "text"
+
+  - name: "Jobs"
+    label: "Jobs Page"
     create: true
-    folder: pages/jointts/positions
+    folder: "pages/jointts/positions"
     slug: "{{slug}}"
     extension: "md"
     format: "yaml-frontmatter"
     fields:
-      - { label: Title, name: title, widget: string }
-      - { label: Page Link, name: permalink, widget: string }
-      - { label: Tags, name: tags, widget: string }
-      - { label: Job State, name: state, widget: string }
-      - { label: Job Post Type, name: job_post_type, widget: string }
-      - { label: Role Name, name: role_name, widget: string }
-      - { label: Open Date, name: opens, widget: string }
-      - { label: Close Date, name: closes, widget: string }
-      - { label: Weeks Open, name: weeks_open, widget: number }
-      - { label: Location, name: location, widget: string }
-      - { label: GS Level, name: gs_level, widget: string }
-      - { label: Mininum Salary, name: salary_min, widget: string }
-      - { label: Maximum Salary, name: salary_max, widget: string }
-      - { label: Organization, name: org, widget: string }
-      - { label: Contact Name, name: contact_name, widget: string }
-      - { label: Contact EMail, name: contact_email, widget: string }
-      - {
-          label: Job Announcement Number,
-          name: job_announcement_number,
-          widget: string,
-        }
-      - { label: PD Job Title, name: pd_job_title, widget: string }
-      - { label: Number of Vacancies, name: num_vacancies, widget: number }
-      - { label: series, name: series, widget: string }
-      - { label: Application URL, name: apply_url, widget: string }
-      - { label: OHRM Contact Email, name: ohrm_contact_email, widget: string }
-      - { label: OHRM Contact Name, name: ohrm_contact_name, widget: string }
-      - { label: Bargaining Unit, name: bargaining_unit, widget: string }
-      - {
-          label: Promotion Potential,
-          name: promotion_potential,
-          widget: number,
-        }
-      - { label: Supervisory Status, name: supervisory_status, widget: string }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - name: "title"
+        label: "Title"
+        widget: "string"
+
+      - name: "permalink"
+        label: "Page Link"
+        widget: "string"
+
+      - name: "tags"
+        label: "Tags"
+        widget: "string"
+
+      - name: "state"
+        label: "Job State"
+        widget: "string"
+
+      - name: "job_post_type"
+        label: "Job Post Type"
+        widget: "string"
+
+      - name: "role_name"
+        label: "Role Name"
+        widget: "string"
+
+      - name: "opens"
+        label: "Open Date"
+        widget: "string"
+
+      - name: "closes"
+        label: "Close Date"
+        widget: "string"
+
+      - name: "weeks_open"
+        label: "Weeks Open"
+        widget: "number"
+
+      - name: "location"
+        label: "Location"
+        widget: "string"
+
+      - name: "gs_level"
+        label: "GS Level"
+        widget: "string"
+
+      - name: "salary_min"
+        label: "Mininum Salary"
+        widget: "string"
+
+      - name: "salary_max"
+        label: "Maximum Salary"
+        widget: "string"
+
+      - name: "org"
+        label: "Organization"
+        widget: "string"
+
+      - name: "contact_name"
+        label: "Contact Name"
+        widget: "string"
+
+      - name: "contact_email"
+        label: "Contact EMail"
+        widget: "string"
+
+      - name: "job_announcement_number"
+        label: "Job Announcement Number"
+        widget: "string"
+
+      - name: "pd_job_title"
+        label: "PD Job Title"
+        widget: "string"
+
+      - name: "num_vacancies"
+        label: "Number of Vacancies"
+        widget: "number"
+
+      - name: "series"
+        label: "series"
+        widget: "string"
+
+      - name: "apply_url"
+        label: "Application URL"
+        widget: "string"
+
+      - name: "ohrm_contact_email"
+        label: "OHRM Contact Email"
+        widget: "string"
+
+      - name: "ohrm_contact_name"
+        label: "OHRM Contact Name"
+        widget: "string"
+
+      - name: "bargaining_unit"
+        label: "Bargaining Unit"
+        widget: "string"
+
+      - name: "promotion_potential"
+        label: "Promotion Potential"
+        widget: "number"
+
+      - name: "supervisory_status"
+        label: "Supervisory Status"
+        widget: "string"
+
+      - name: "body"
+        label: "Body"
+        widget: "markdown"
