@@ -11,7 +11,9 @@ async function createAssetPaths() {
   }
 
   const assetPath = path.join(__dirname, '../_site/assets');
-  const assetDirs = await fs.readdir(assetPath);
+  let assetDirs = await fs.readdir(assetPath, {withFileTypes: true})
+  assetDirs = assetDirs.filter(item => item.isDirectory())
+    .map(item => item.name);
   const assetsFiles = await Promise.all(
     assetDirs.map(async (dir) => {
       const files = await fs.readdir(
@@ -42,10 +44,12 @@ esbuild
     format: 'iife',
     loader: {
       '.png': 'dataurl',
+      '.jpg': 'file',
+      '.jpeg': 'file',
       '.svg': 'dataurl',
       '.ttf': 'dataurl',
       '.woff': 'dataurl',
-      '.woff2': 'dataurl',
+      '.woff2': 'dataurl',      
     },
     minify: process.env.ELEVENTY_ENV === 'production',
     sourcemap: process.env.ELEVENTY_ENV !== 'production',
