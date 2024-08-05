@@ -55,3 +55,7 @@ REPOSITORY_DEVSKIM_ARGUMENTS: "--skip-git-ignored-files"
 BASH_SHFMT_ARGUMENTS: -i 2 -bn -ci -sr -kp
 
 REPOSITORY_TRUFFLEHOG_ARGUMENTS: "--exclude-paths=.trufflehogignore"
+
+# Don't let stylelint at the SCSS files -- it breaks 'em
+CSS_STYLELINT_FILE_NAMES_REGEX:
+  - ".css"
