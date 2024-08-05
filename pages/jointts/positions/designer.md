@@ -75,7 +75,7 @@ Please note, while a candidate's preference on teams may be taken into considera
 - [Login.gov](https://login.gov/): Teams supporting a product that manages identity for interactions with the federal government.
 
 ## Key objectives
-### 1. Demonstrate excellence in design, while grasping the core questions and responsibilities of at least one design discipline.
+### 1. Demonstrate excellence in design, while grasping the core questions and responsibilities of at least one design discipline
 
 In addition to strong skill in experience design, we expect expertise in at least one of the following disciplines:
 
@@ -198,17 +198,17 @@ This is a term limited appointment with the ability to extend for a total of eig
 
 **Employee benefits:**
 [Learn more about the benefits we offer.](https://join.tts.gsa.gov/compensation-and-benefits/)
-  - Health insurance (choose from a wide range of plans)
-  - Life insurance coverage with several options
-  - Sick leave and vacation time, including 10 paid holidays per year
-  - Thrift Savings Plan (similar to a 401(k) plan)
-  - Flexible work schedules and telework
-  - Transit and child care subsidies
-  - Training and development
-  - Flexible spending accounts
-  - Long-term care insurance
-  - Training and development
-  - Direct Deposit of salary check to financial organization required.
+- Health insurance (choose from a wide range of plans)
+- Life insurance coverage with several options
+- Sick leave and vacation time, including 10 paid holidays per year
+- Thrift Savings Plan (similar to a 401(k) plan)
+- Flexible work schedules and telework
+- Transit and child care subsidies
+- Training and development
+- Flexible spending accounts
+- Long-term care insurance
+- Training and development
+- Direct Deposit of salary check to financial organization required.
 
 ## Qualifications
 

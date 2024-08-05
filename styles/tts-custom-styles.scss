@@ -7,7 +7,7 @@
 
 // custom tts color
 
-$tts-tagline-bg: #1F303E;
+$tts-tagline-bg: #1F303E;AddanyUSWDSoverrideshereAlternatively,youcouldcreateanoverridesfolderandcreateindividualoverridefilescustomttscolor$tts-tagline-bg
 
 // USWDS Hero component
 
@@ -18,8 +18,8 @@ $tts-tagline-bg: #1F303E;
   background-position-x: right;
   background-size:  cover;
   padding:  0;
-  @include at-media('mobile-lg') {
 
+  @include at-media('mobile-lg') {
     // This shifts the hero over to the right so that
     // most of the background image isn't covered by
     // the tagline. The left side of the hero image
@@ -55,7 +55,7 @@ $tts-tagline-bg: #1F303E;
 
     // Setting a min height so that the hero height doesn't need to rely on tagline length
 
-    min-height: 350px;
+    min-height: 350px;Thisshiftstheheroovertotherightsothatmostofthebackgroundimageisn../_img/TTS_Header_Dev.pngmobile-lgtneedtorelyontaglinelengthmin-height
   }
 }
 
@@ -87,6 +87,7 @@ footer {
       text-decoration: none;
 
     }
+
     a:hover {
       text-decoration: underline;
     }
@@ -98,6 +99,7 @@ footer {
 
 .tts-service-logo {
   height: 50px;
+
     img {
       object-fit: contain;
       max-width: 180px;
@@ -105,14 +107,14 @@ footer {
 }
 
 .tts-title-banner {
-  background: url(../_img/Services_Background.png) center no-repeat #000000;
+  background: url("../_img/Services_Background.png") center no-repeat #000;
 }
 
 
 .tts-title-banner  h1 {
   text-transform: uppercase;
   font-size: 3.25rem;
-  color: #ffffff;
+  color: #fff;
   padding: 4.75rem 0;
   margin: 0;
   text-align: center;

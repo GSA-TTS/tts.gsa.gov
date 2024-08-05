@@ -86,7 +86,7 @@ Note: If you are coming over from another agency where you received award leave,
 ## More about working at TTS
 The Technology Transformation Service (TTS) exists under the domain of the General Services Administration (GSA). TTS is home to the following offices: 18F, Centers of Excellence, Office of Acquisition, Office of Solutions, and Presidential Innovation Fellows. You can read more info about each office on our [Join page](https://join.tts.gsa.gov/tts-offices/).
 You can also read more about each of these groups at their TTS Handbook Pages:
- [Acquisition](https://handbook.18f.gov/acqstack/) | [cloud.gov](https://cloud.gov/) | [Design](https://handbook.18f.gov/design/) | [Engineering](https://handbook.18f.gov/engineering/) | [login.gov](https://login.gov/) | [Product](https://handbook.18f.gov/product/) | [Strategy ](https://handbook.18f.gov/strategy/)
+ [Acquisition](https://handbook.18f.gov/acqstack/) | [cloud.gov](https://cloud.gov/) | [Design](https://handbook.18f.gov/design/) | [Engineering](https://handbook.18f.gov/engineering/) | [login.gov](https://login.gov/) | [Product](https://handbook.18f.gov/product/) | [Strategy](https://handbook.18f.gov/strategy/)
 
 Thank you for taking the time to talk to our team
 and for your interest in public service!

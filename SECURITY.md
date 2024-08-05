@@ -19,7 +19,7 @@ Please consult our policy for:
 Please note that only certain branches are supported with security updates.
 
 | Version (Branch) | Supported          |
-| ---------------- | ------------------ |
+|------------------|--------------------|
 | main             | :white_check_mark: |
 | other            | :x:                |
 
