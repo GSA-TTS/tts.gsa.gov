@@ -50,3 +50,5 @@ REPOSITORY_DEVSKIM_ARGUMENTS: "--skip-git-ignored-files"
 BASH_SHFMT_ARGUMENTS: -i 2 -bn -ci -sr -kp
 
 REPOSITORY_TRUFFLEHOG_ARGUMENTS: "--exclude-paths=.trufflehogignore"
+
+YAML_V8R_FILTER_REGEX_EXCLUDE: ".*_data.*"
