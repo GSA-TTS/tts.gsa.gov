@@ -15,7 +15,6 @@ $tts-tagline-bg: #1F303E;
   background-size:  cover;
   padding:  0;
   @include at-media('mobile-lg') {
-    // This shifts the hero over to the right so that most of the background image isn't covered by the tagline. The left side of the hero image will not line up perfectly with the right side of the tagline, since the widths of both elements will vary depending on screen width. A bit of overlap on this edge will prevent empty space between the two.
     position:  absolute;
     left:40%;
     height:100%;
@@ -38,8 +37,7 @@ $tts-tagline-bg: #1F303E;
 }
 
 .tts-tagline {
-  @include at-media('mobile-lg') {
-    // Setting a min height so that the hero height doesn't need to rely on tagline length
+  @include at-media('mobile-lg') {    
     min-height: 350px;
   }
 }
