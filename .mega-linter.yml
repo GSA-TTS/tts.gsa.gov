@@ -26,7 +26,7 @@ DISABLE_LINTERS:
   ]
 
 # only scan new / updated files, not everything
-VALIDATE_ALL_CODEBASE: true
+VALIDATE_ALL_CODEBASE: false
 
 # don't print the alpaca -- it's cute, but we don't need it in the logs
 PRINT_ALPACA: false
