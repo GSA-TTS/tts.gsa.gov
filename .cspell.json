@@ -1,10 +1,7 @@
 {
   "version": "0.2",
   "language": "en_US",
-  "ignorePaths": [
-    "node_modules/**",
-    "styles.**"
-  ],
+  "ignorePaths": ["node_modules/**", "styles.**"],
   "words": [
     "Allstar",
     "sidenav",

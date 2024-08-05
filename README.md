@@ -82,7 +82,7 @@ you run `npm run dev:cms` to serve as a development authentication server.
 ### Creating links
 
 For preview links generated on the platform, we automatically set the
-`pathPrefix` in the [`.eleventy.js`](/.eleventy.js) file base on the
+`pathPrefix` in the [`.eleventy.js`](./.eleventy.js) file base on the
 `BASEURL` environment variable. We use the built-in 11ty filter for
 `url` to properly append the prefix path for the linked page.
 When adding new links, use the following syntax:

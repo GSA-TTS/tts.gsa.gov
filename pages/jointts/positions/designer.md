@@ -33,6 +33,7 @@ promotion_potential: '15'
 supervisory_status: 'No'
 ---
 
+<!-- markdown-link-check-disable -->
 {%- if state == 'upcoming' -%}
 {{ org }} will soon be accepting applications for GS-{{ gs_level }} - {{ role_name }} roles.
   {%- if opens == 'tbd' -%} The target date for when these positions will be officially open to application has not yet been determined. If you'd like to be
@@ -44,6 +45,7 @@ supervisory_status: 'No'
   learn more about the application process.
   {%- endunless -%}
 {%- endif -%}
+<!-- markdown-link-check-enable -->
 
 ## Opportunity overview
 
@@ -379,9 +381,11 @@ lower GS-grade (or equivalent).  Specialized experience is defined as follows:
 Submit a complete online application prior to {{ closes | date: '%l:%M%P %Z ET on %A, %B %e, %Y' }}. Please fill out all applicable fields.
 
 <!-- markdownlint-disable MD033 -->
+<!-- markdown-link-check-disable -->
 <section class="usa-grid-full">
   <a class="usa-button usa-button-secondary" href="{{ apply_url }}">Click here to apply</a>
 </section>
+<!-- markdown-link-check-enable -->
 <!-- markdownlint-enable MD033 -->
 
 **Need Assistance in applying or have questions regarding this job opportunity, please email {{ contact_name }} at** [{{ contact_email }}](mailto:{{ contact_email }}).

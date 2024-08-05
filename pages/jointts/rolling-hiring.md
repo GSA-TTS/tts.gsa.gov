@@ -153,7 +153,7 @@ conferences, training, and other industry events.
 The [TTS Handbook](https://handbook.18f.gov/) includes:
 - [Benefits](https://handbook.18f.gov/benefits/)
 - [Leave](https://handbook.18f.gov/benefits/#leave)
-- [Telework and virtual worker policy](https://handbook.18f.gov/telework/)
+<!-- this doesn't exist any more - [Telework and virtual worker policy](https://handbook.18f.gov/telework/) -->
 - [Professional development and training processes](https://handbook.18f.gov/attending-conferences/)
 
 Note: If you are coming over from another agency where you received award
@@ -175,7 +175,7 @@ You can also read more about each of these groups at their TTS Handbook Pages:
  [Engineering](https://handbook.18f.gov/engineering/) |
  [login.gov](https://login.gov/) |
  [Product](https://handbook.18f.gov/product/) |
- [Strategy](https://handbook.18f.gov/strategy/)
+<!-- this doesn't exist any more  [Strategy](https://handbook.18f.gov/strategy/) -->
 
 Thank you for taking the time to talk to our team
 and for your interest in public service!

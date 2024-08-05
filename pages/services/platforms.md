@@ -17,7 +17,9 @@ When the public needs to interact with multiple agencies around the same or a si
     <li class="service usa-card tablet:grid-col-4">
       <div class="usa-card__container text-center display-flex">
         <div class="usa-card__header">
+          <!-- markdown-link-check-disable -->
           <h2 class="usa-card__heading"><a href="{{ service.link}}">{{ service.name }}</a></h2>
+          <!-- markdown-link-check-enable -->
         </div>
         <div class="usa-card__media usa-card__media--inset flex-align-self-center">
           <div class="usa-card__img tts-service-logo">

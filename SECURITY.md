@@ -5,7 +5,7 @@ seriously our responsibility to protect the public's information, including
 financial and personal information, from unwarranted disclosure.
 
 Software developed by the U.S. General Services Administration (GSA)
-is subject to the [GSA Vulnerability Disclosure Policy <gsa.gov/vulnerability-disclosure-policy>](gsa.gov/vulnerability-disclosure-policy).
+is subject to the [GSA Vulnerability Disclosure Policy](https://www.gsa.gov/vulnerability-disclosure-policy).
 
 Please consult our policy for:
 * How to submit a report if you believe you have discovered a vulnerability.

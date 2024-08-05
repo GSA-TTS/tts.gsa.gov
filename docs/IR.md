@@ -17,7 +17,7 @@ site:
 
 - [ ] Initiate
 - [ ] Assess
-- [ ] Activate the [Contingency Plan](../CP.md) if needed.
+- [ ] Activate the Contingency Plan if needed.
 - [ ] Remediate
 - [ ] Retrospective
 
