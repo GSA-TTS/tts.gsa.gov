@@ -19,7 +19,7 @@ site:
         - NetlifyCMS
     testing-suites:
         - Codeql
-        - Synk
+        - Snyk
         - Dependabot
 
 ---
