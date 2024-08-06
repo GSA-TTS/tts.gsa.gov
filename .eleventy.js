@@ -19,9 +19,7 @@ module.exports = function (config) {
 
   // for #80 (update site favicon)
   // copy files from `_img/favicon/` to `_site/`
-  config.addPassthroughCopy({
-    "_img/favicon/favicon.ico": "/assets/favicon.ico",
-  });
+  config.addPassthroughCopy({ "_img/favicon/": "/assets/" });
 
   // Copy USWDS init JS so we can load it in HEAD to prevent banner flashing
   config.addPassthroughCopy({
