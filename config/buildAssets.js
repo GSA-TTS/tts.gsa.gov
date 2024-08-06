@@ -10,10 +10,11 @@ async function createAssetPaths() {
     pathPrefix = process.env.BASEURL;
   }
 
-  const assetPath = path.join(__dirname, '../_site/assets');
-  let assetDirs = await fs.readdir(assetPath, {withFileTypes: true})
-  assetDirs = assetDirs.filter(item => item.isDirectory())
-    .map(item => item.name);
+  const assetPath = path.join(__dirname, "../_site/assets");
+  let assetDirs = await fs.readdir(assetPath, { withFileTypes: true });
+  assetDirs = assetDirs
+    .filter((item) => item.isDirectory())
+    .map((item) => item.name);
 
   const assetsFiles = await Promise.all(
     assetDirs.map(async (dir) => {
@@ -44,13 +45,13 @@ esbuild
     outdir: "_site/assets",
     format: "iife",
     loader: {
-      '.png': 'file',
-      '.jpg': 'file',
-      '.jpeg': 'file',
-      '.svg': 'file',
-      '.ttf': 'file',
-      '.woff': 'file',
-      '.woff2': 'file',
+      ".png": "file",
+      ".jpg": "file",
+      ".jpeg": "file",
+      ".svg": "file",
+      ".ttf": "file",
+      ".woff": "file",
+      ".woff2": "file",
     },
     minify: process.env.ELEVENTY_ENV === "production",
     sourcemap: process.env.ELEVENTY_ENV !== "production",
