@@ -1,7 +1,6 @@
 ---
 name: Pa11y Testing
 
-
 # yamllint disable-line rule:truthy
 on:
   pull_request:
@@ -22,7 +21,6 @@ jobs:
       pull-requests: write
 
     steps:
-
       - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # pin@v4.1.7
 
       - name: Install Chrome
@@ -37,7 +35,7 @@ jobs:
       - name: Use Node
         uses: actions/setup-node@1a4442cacd436585916779262731d5b162bc6ec7 # pin@v3
         with:
-          node-version: '18'
+          node-version: "18"
 
       - name: Install Pa11y
         run: npm install pa11y

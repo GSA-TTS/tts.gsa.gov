@@ -35,7 +35,7 @@ averages, and length of process stages can vary based on a number of factors
 such as the number of applications received.
 
 | Process Stage                                  | Average Duration/Days |
-| :--------------------------------------------- | :-------------------: |
+|:-----------------------------------------------|:---------------------:|
 | [Application](#application) collection         |       12 to 14        |
 | TTS application review                         |          10           |
 | [Interviews](#interviews)                      |          30           |

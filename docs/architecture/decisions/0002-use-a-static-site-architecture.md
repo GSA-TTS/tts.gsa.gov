@@ -8,7 +8,7 @@ Accepted
 
 ## Context
 
-This decision was proposed in the context of Technoloy Transformation Services wanting a platform to host both current and future webpages at a single domain. We see the benefits of a static site architecture as:
+This decision was proposed in the context of Technology Transformation Services wanting a platform to host both current and future webpages at a single domain. We see the benefits of a static site architecture as:
 
 * Reduced infrastructure costs
 * Opportunities to add enhancements in the future
@@ -23,7 +23,7 @@ We propose using a static site architecture for tts.gsa.gov.
 We predict that using a static site architecture will:
 
 * Allow TTS to easily meet any high traffic needs
-* Reduce the cost, pain, and delays of maintaining infrastructure in comparison with a more complicated CMS (Wordpress, Drupal, Joomla) architecure
+* Reduce the cost, pain, and delays of maintaining infrastructure in comparison with a more complicated CMS (Wordpress, Drupal, Joomla) architecture
 * Improved security by presenting a reduced attack surface
 
 ## Alternatives
@@ -38,7 +38,7 @@ However, using one of these CMS tools would require us to run a server, which wo
 
 As of Jan 2022, Federalist supports a variety of static site solutions such as Jekyll, Gatsby, and Hugo.
 
-We chose Eleventy because of its flexability and for the large amount of JavaScript knowledge across TTS. Although Eleventy is newer, it's gaining adoption quickly and as this project matures there will be more and more examples and plugins to make use of.
+We chose Eleventy because of its flexibility and for the large amount of JavaScript knowledge across TTS. Although Eleventy is newer, it's gaining adoption quickly and as this project matures there will be more and more examples and plugins to make use of.
 
 ### Federalist
 
