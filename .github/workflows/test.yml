@@ -5,6 +5,7 @@ name: Build and Test
 on:
   pull_request:
 
+permissions: read-all
 
 jobs:
   build:
@@ -28,6 +29,5 @@ jobs:
 
       - name: Build site
         run: npm run build
-
 #      - name: Run tests
 #        run: npm run test

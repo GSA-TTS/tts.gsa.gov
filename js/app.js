@@ -1,4 +1,4 @@
-require('@uswds/uswds');
+require("@uswds/uswds");
 
 const applyMessage = () => {
   // This looks chaotic but every '\' needs escaped
@@ -15,8 +15,7 @@ const applyMessage = () => {
                                 \\::/  /   
                                  \\/__/
 `;
-console.log(message);
+  console.log(message);
 };
-
 
 applyMessage();

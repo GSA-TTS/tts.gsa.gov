@@ -17,7 +17,7 @@ site:
 
 - [ ] Initiate
 - [ ] Assess
-- [ ] Activate the [Contingency Plan](../CP.md) if needed.
+- [ ] Activate the Contingency Plan if needed.
 - [ ] Remediate
 - [ ] Retrospective
 
@@ -27,11 +27,11 @@ site:
 Whoever acts on an alert/email/etc would follow this process. You are now the Incident Commander (IC).
 
 1. `Acknowledge` the alert if available e.g. New Relic, Email, Github, etc.
-1. Open an Issue/Ticket/Card/etc in the team's project manangement tool with incident information. Copy the link to it and use it to document the `Incident` in real-time.
+1. Open an Issue/Ticket/Card/etc in the team's project management tool with incident information. Copy the link to it and use it to document the `Incident` in real-time.
   - This team uses: `{{ site.project-management-tool }}`
 3. Notify the team - use the team's Google Group email or Slack `@channel` with a link to the `Incident` in the project management tool.
     - Acknowledge your role as the `Incident Commander` e.g. "Looking into this". Use a Slack thread to communicate updates within the team.
-1. Request assistance from specfic teammates to pair with if needed. Others teammates should acknowledge, verify, and offer support in the Slack thread. 
+1. Request assistance from specific teammates to pair with if needed. Others teammates should acknowledge, verify, and offer support in the Slack thread. 
 6. If the site is down, email the team ([ {{ site.google-group-email }}](mailto:{{ site.google-group-email }})).
 7. If this is a **Security Incident** , follow the [TTS Incident Response guide](https://handbook.18f.gov/security-incidents/#reporting-other-incidents), CCing [{{ site.google-group-email }}](mailto:{{ site.google-group-email }}) in the loop.
 1. Assign and delegate tasks to person(s) most technically capable to resolve `Incident`.
