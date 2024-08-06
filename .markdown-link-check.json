@@ -2,6 +2,7 @@
   "retryOn429": true,
   "retryCount": 5,
   "aliveStatusCodes": [200, 203],
+  "projectBaseUrl": "https://github.com/GSA-TTS/tts-website/",
   "ignorePatterns": [
     {
       "pattern": "^https?://github.com/"

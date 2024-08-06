@@ -1,12 +1,7 @@
 ---
 # don't test the reports Mega-Linter created, docs, or test files
-ADDITIONAL_EXCLUDED_DIRECTORIES: [
-  report,
-  megalinter-reports,
-  docs,
-  node_modules,
-  _site,
-]
+ADDITIONAL_EXCLUDED_DIRECTORIES:
+  [report, megalinter-reports, docs, node_modules, _site]
 
 # don't lint test files or documentation
 FILTER_REGEX_EXCLUDE: (.venv/|/test/|\.test\.|_test\.|/docs/|/index.html|.github/.*\.html)
@@ -19,8 +14,8 @@ DISABLE_LINTERS:
   [
     REPOSITORY_DEVSKIM,
     SPELL_MISSPELL,
-    SPELL_CSPELL,
     SPELL_PROSELINT,
+    SPELL_LYCHEE,
     COPYPASTE_JSCPD,
     BASH_EXEC,
   ]
@@ -59,3 +54,16 @@ REPOSITORY_TRUFFLEHOG_ARGUMENTS: "--exclude-paths=.trufflehogignore"
 # Don't let stylelint at the SCSS files -- it breaks 'em
 CSS_STYLELINT_FILE_EXTENSIONS:
   - ".css"
+
+# There aren't any validators for this custom schema
+YAML_V8R_FILTER_REGEX_EXCLUDE: ".*_data.*"
+
+# Please don't spell check the filenames
+SPELL_CSPELL_ANALYZE_FILE_NAMES: false
+
+# Only spell check the content, not the data
+SPELL_CSPELL_FILE_EXTENSIONS:
+  - ".md"
+
+# So SARIF files for resolved issues aren't re-sent
+CLEAR_REPORT_FOLDER: true
