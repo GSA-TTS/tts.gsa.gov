@@ -1,0 +1,57 @@
+---
+# don't test the reports Mega-Linter created, docs, or test files
+ADDITIONAL_EXCLUDED_DIRECTORIES: [
+  report,
+  megalinter-reports,
+  docs,
+  node_modules,
+  _site,
+]
+
+# don't lint test files or documentation
+FILTER_REGEX_EXCLUDE: (.venv/|/test/|\.test\.|_test\.|/docs/|/index.html|.github/.*\.html)
+
+# don't scan files listed in .gitignore (e.g., node_modules)
+IGNORE_GITIGNORED_FILES: true
+
+# Disable devskim as it's reporting an error with no log message
+DISABLE_LINTERS:
+  [
+    REPOSITORY_DEVSKIM,
+    SPELL_MISSPELL,
+    SPELL_CSPELL,
+    SPELL_PROSELINT,
+    COPYPASTE_JSCPD,
+    BASH_EXEC,
+  ]
+
+# only scan new / updated files, not everything
+VALIDATE_ALL_CODEBASE: true
+
+# don't print the alpaca -- it's cute, but we don't need it in the logs
+PRINT_ALPACA: false
+
+# write a SARIF file
+SARIF_REPORTER: true
+
+# don't fail on finding (yet)
+DISABLE_ERRORS: true
+
+# use prettier for JavaScript code formatting
+JAVASCRIPT_DEFAULT_STYLE: prettier
+
+# only scan the files in This commit, not the entire history of the repo
+REPOSITORY_GITLEAKS_ARGUMENTS: --no-git
+
+# don't lint the generated code in the docs/ directory
+REPOSITORY_DEVSKIM_ARGUMENTS: "--skip-git-ignored-files"
+
+# shfmt will..
+#   - use multiples of 2 spaces for indenting
+#   - alllow binary operations to start new lines
+#   - indent switch case statements
+#   - place spaces around redirections
+#   - keep column alignment padding
+BASH_SHFMT_ARGUMENTS: -i 2 -bn -ci -sr -kp
+
+REPOSITORY_TRUFFLEHOG_ARGUMENTS: "--exclude-paths=.trufflehogignore"

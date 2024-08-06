@@ -1,21 +1,101 @@
+---
 name: Pa11y Testing
 
-on: [pull_request]
+
+# yamllint disable-line rule:truthy
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions: read-all
+
+concurrency:
+  group: ${{ github.ref }}-${{ github.workflow }}
+  cancel-in-progress: true
 
 jobs:
-  build:
+  pa11y:
     runs-on: ubuntu-latest
-    
+
+    permissions:
+      issues: write
+      pull-requests: write
+
     steps:
-      - uses: actions/checkout@v3
-      
+
+      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # pin@v4.1.7
+
+      - name: Install Chrome
+        uses: browser-actions/setup-chrome@facf10a55b9caf92e0cc749b4f82bf8220989148 # pin@v1.7.2
+        # We're no longer building the site, so we don't need
+        # to use the site's version of Node -- just something
+        # that's supposed by Cloud.gov Pages (currently 18.19.0)
+
+      - name: Checkout repository
+        uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # pin@v3
+
       - name: Use Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@1a4442cacd436585916779262731d5b162bc6ec7 # pin@v3
         with:
-          node-version: '17.x'
+          node-version: '18'
 
-      - name: Install NPM dependencies
-        run: npm install
+      - name: Install Pa11y
+        run: npm install pa11y
 
-      - name: Execute Pa11y-ci tests
-        run: npm run pa11y-ci
+      - name: Setup custom variables
+        id: customvars
+        run: |
+          ( echo -n "BASE_URL="
+            if [ -n "${{ vars.BASE_URL }}" ] ; then
+              echo "${{ vars.BASE_URL }}"
+            else
+              echo "https://federalist-a2423046-fe43-4e75-a2ef-2651e5e123ca.sites.pages.cloud.gov/preview/gsa-tts/tts.gsa.gov/"
+            fi
+
+            echo -n "URL_PATH="
+            if [ -n "${{ vars.URL_PATH }}" ] ; then
+              echo "${{ vars.URL_PATH }}/"
+            elif [ -n "${GITHUB_HEAD_REF:-}" ] ; then
+              echo "${GITHUB_HEAD_REF}/"
+            else
+              echo "echo-summer20203/"
+            fi
+
+            echo -n "DELAY_SECONDS="
+            if [ -n "${{ vars.DELAY_SECONDS }}" ] ; then
+              echo "${{ vars.DELAY_SECONDS }}"
+            else
+              echo "60"
+            fi
+          ) >> "$GITHUB_OUTPUT"
+
+      - name: Delay while the preview URL is built
+        run: "sleep ${{ steps.customvars.outputs.DELAY_SECONDS }}"
+
+      - name: Execute Pa11y tests
+        run: npx pa11y "${{ steps.customvars.outputs.BASE_URL }}/${{ steps.customvars.outputs.URL_PATH }}" 2>&1 | tee pa11y_output.txt
+
+      - name: Read pa11y_output file.
+        id: pa11y_output
+        uses: juliangruber/read-file-action@b549046febe0fe86f8cb4f93c24e284433f9ab58 # pin@v1.1.7
+        with:
+          path: ./pa11y_output.txt
+
+      - name: verify that pa11y successfully scanned the site
+        if: contains(steps.pa11y_output.outputs.content, 'ailed to run')
+        run: |
+          echo "::error::Pa11y failed to run."
+          exit 1
+
+      - name: Comment on pull request.
+        uses: thollander/actions-comment-pull-request@fabd468d3a1a0b97feee5f6b9e499eab0dd903f6 # pin@v2.5.0
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          message: "<details><summary>Pa11y testing results</summary> ```${{ steps.pa11y_output.outputs.content }}``` </details>"
+
+      - name: Check for pa11y failures.
+        if: contains(steps.pa11y_output.outputs.content, 'errno 2')
+        run: |
+          echo "::error::The site is failing accessibility tests."
+          echo "Please review the comment in the pull request for details."
+          exit 1
