@@ -21,7 +21,7 @@ DISABLE_LINTERS:
   ]
 
 # only scan new / updated files, not everything
-VALIDATE_ALL_CODEBASE: true
+VALIDATE_ALL_CODEBASE: false
 
 # don't print the alpaca -- it's cute, but we don't need it in the logs
 PRINT_ALPACA: false
@@ -51,10 +51,19 @@ BASH_SHFMT_ARGUMENTS: -i 2 -bn -ci -sr -kp
 
 REPOSITORY_TRUFFLEHOG_ARGUMENTS: "--exclude-paths=.trufflehogignore"
 
+# Don't let stylelint at the SCSS files -- it breaks 'em
+CSS_STYLELINT_FILE_EXTENSIONS:
+  - ".css"
+
+# There aren't any validators for this custom schema
 YAML_V8R_FILTER_REGEX_EXCLUDE: ".*_data.*"
 
+# Please don't spell check the filenames
 SPELL_CSPELL_ANALYZE_FILE_NAMES: false
+
+# Only spell check the content, not the data
 SPELL_CSPELL_FILE_EXTENSIONS:
   - ".md"
 
+# So SARIF files for resolved issues aren't re-sent
 CLEAR_REPORT_FOLDER: true

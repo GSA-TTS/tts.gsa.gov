@@ -1,30 +1,28 @@
 @use "uswds-core" as *;
 
-// Add any USWDS overrides here
-// Alternatively, you could create an overrides folder and create individual override files
+$tts-tagline-bg: #1f303e;
+$tts-title-banner-background-color: #000;
+$tts-title-banner-h1-foreground-color: #fff;
 
-// custom tts color
-$tts-tagline-bg: #1F303E;
-
-// USWDS Hero component
 .usa-hero--tts {
-  height: 10rem;
-  width: 100%;
-  background-repeat: no-repeat;
   background-position-x: right;
-  background-size:  cover;
-  padding:  0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 10rem;
+  padding: 0;
+  width: 100%;
+
   @include at-media('mobile-lg') {
-    // This shifts the hero over to the right so that most of the background image isn't covered by the tagline. The left side of the hero image will not line up perfectly with the right side of the tagline, since the widths of both elements will vary depending on screen width. A bit of overlap on this edge will prevent empty space between the two.
-    position:  absolute;
-    left:40%;
-    height:100%;
+    height: 100%;
+    left: 40%;
+    position: absolute;
     width: 60%;
   }
 }
 
 .tts-hero-wrap {
   background: url('../_img/TTS_Header_Dev.png');
+  background-color: $tts-tagline-bg;
   background-size: cover;
 
 }
@@ -33,18 +31,12 @@ $tts-tagline-bg: #1F303E;
   object-fit: contain;
 }
 
-.tts-hero-wrap {
-  background-color: $tts-tagline-bg;
-}
-
 .tts-tagline {
   @include at-media('mobile-lg') {
-    // Setting a min height so that the hero height doesn't need to rely on tagline length
     min-height: 350px;
   }
 }
 
-// Services pages
 .service .usa-card__container {
   border-radius: 0;
 }
@@ -62,18 +54,18 @@ $tts-tagline-bg: #1F303E;
 }
 
 .usa-prose p {
-    max-width: unset;
+  max-width: unset;
 }
 
 footer {
-    a {
-      color: color('base-lightest');
-      text-decoration: none;
+  a {
+    color: color('base-lightest');
+    text-decoration: none;
+  }
 
-    }
-    a:hover {
-      text-decoration: underline;
-    }
+  a:hover {
+    text-decoration: underline;
+  }
 }
 
 .usa-social-link img {
@@ -82,33 +74,36 @@ footer {
 
 .tts-service-logo {
   height: 50px;
-    img {
-      object-fit: contain;
-      max-width: 180px;
-    }
+
+  img {
+    max-width: 180px;
+    object-fit: contain;
+  }
 }
 
 .tts-title-banner {
-  background: url(../_img/Services_Background.png) center no-repeat #000000;
+  background: url('../_img/Services_Background.png') center no-repeat $tts-title-banner-background-color;
+
+  h1 {
+    color: $tts-title-banner-h1-foreground-color;
+    font-size: 3.25rem;
+    margin: 0;
+    padding: 4.75rem 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
 }
 
-
-.tts-title-banner  h1 {
-  text-transform: uppercase;
-  font-size: 3.25rem;
-  color: #ffffff;
-  padding: 4.75rem 0;
-  margin: 0;
-  text-align: center;
-}
-
-h2, h3, h4, h5 {
-  font-family: $theme-font-type-sans !important; 
+h2,
+h3,
+h4,
+h5 {
+  font-family: $theme-font-type-sans !important;
 }
 
 .usa-identifier__logos img {
-  width: 2.5rem;
   height: 2.5rem;
+  width: 2.5rem;
 }
 
 .usa-prose .usa-card:last-child {
