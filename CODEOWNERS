@@ -1,0 +1,26 @@
+# This CODEOWNERS file is used to direct Pull Request (PR) review
+# requests to folks most likely able to provide good reviews of the
+# updates for a given PR.
+#
+# The order of the file is significant -- the last matching
+# pattern takes precedence.  Therefore, we go from widest
+# to most specific.
+
+* @GSA-TTS/tts-website
+
+*.js @GSA-TTS/tts-website-developers
+*.ts @GSA-TTS/tts-website-developers
+*.scss @GSA-TTS/tts-website-developers
+*.css @GSA-TTS/tts-website-developers
+*.html @GSA-TTS/tts-website-developers
+*.htm @GSA-TTS/tts-website-developers
+*.json @GSA-TTS/tts-website-developers
+*.yaml @GSA-TTS/tts-website-developers
+*.yml @GSA-TTS/tts-website-developers
+*.njk @GSA-TTS/tts-website-developers
+
+*.md @GSA-TTS/tts-website-content
+*.png @GSA-TTS/tts-website-content
+*.jpg @GSA-TTS/tts-website-content
+
+.github @GSA-TTS/tts-website-admins
