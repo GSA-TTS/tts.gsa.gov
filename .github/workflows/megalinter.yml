@@ -9,6 +9,7 @@ on:
       - main
   workflow_dispatch:
 
+
 permissions:
   contents: write
   issues: write
@@ -49,7 +50,7 @@ jobs:
       # Upload MegaLinter artifacts
       - name: Archive production artifacts
         if: always()
-        uses: actions/upload-artifact@a8a3f3ad30e3422c9c7b888a15615d19a852ae32 # pin@v3
+        uses: actions/upload-artifact@834a144ee995460fba8ed112a2fc961b36a5ec5a # pin@v4.3.6
         with:
           name: MegaLinter reports
           path: |
@@ -87,12 +88,12 @@ jobs:
 
       - name: Check to see if the SARIF a was generated
         id: sarif_file_exists
-        uses: andstor/file-existence-action@20b4d2e596410855db8f9ca21e96fbe18e12930b # pin@v2
+        uses: andstor/file-existence-action@076e0072799f4942c8bc574a82233e1e4d13e9d6 # pin@v3.0.0
         with:
           files: "megalinter-reports/megalinter-report.sarif"
 
       - name: Upload MegaLinter scan results to GitHub Security tab
         if: steps.sarif_file_exists.outputs.files_exists == 'true'
-        uses: github/codeql-action/upload-sarif@3e0e84636c6f5df46a2cb232ae1dd1384713150d # pin@v2
+        uses: github/codeql-action/upload-sarif@afb54ba388a7dca6ecae48f608c4ff05ff4cc77a # pin@v3.25.15
         with:
           sarif_file: "megalinter-reports/megalinter-report.sarif"
