@@ -10,9 +10,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
-  issues: write
-  pull-requests: write
+  contents: read
 
 env:
   # Comment env block if you do not want to apply fixes
