@@ -37,8 +37,8 @@ jobs:
         with:
           node-version: "18"
 
-      - name: Install Pa11y
-        run: npm install pa11y
+      - name: Install dependencies
+        run: npm install --production=false
 
       - name: Setup custom variables
         id: customvars
