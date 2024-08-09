@@ -101,7 +101,7 @@ images in your templates you can use the `shortcodes` built into the template.
 For referencing an image without a style class, you will pass the template
 shortcode the image's source path and the alternative image name in that order, i.e.,
 
-```NJK
+```liquid
 {% image "_img/my-image.png" "My PNG Image Alternative Name" %}
 ```
 
@@ -109,7 +109,7 @@ For referencing an image with a style class, you will pass the template
 shortcode the image's source path, class names, and the alternative image name in
 that order, i.e.,
 
-```NJK
+```liquid
 {% image_with_class "_img/my-image.png" "img-class another-class" "My PNG Image Alternative Name" %}
 ```
 
@@ -120,7 +120,7 @@ USWDS has sprite icons available for use. Here is the
 available when using the sprite shortcode `uswds_icon` in the template.
 The following example is how you can reference the icon in a template.
 
-```NJK
+```liquid
 {% uswds_icon "<USWDS sprite name>" %}
 ```
 
