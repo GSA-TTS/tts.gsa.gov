@@ -1,7 +1,7 @@
 ---
 layout: 'layouts/jointts/job-updated'
 title: 'TTS Office of Solutions: FedRAMP Security Director'
-permalink: '/join/positions/fedramp-security-director.md'
+permalink: '/join/positions/fedramp-security-director.html'
 tags: 'job'
 state: 'upcoming'
 
@@ -75,7 +75,12 @@ who_may_apply: 'All United States citizens and nationals (residents of American 
 
 <!-- markdown-link-check-disable -->
 {%- if state == 'upcoming' -%}
-{{ org }} will soon be accepting applications for GS-{{ salary | join(", ", "level" }} - {{ role_name }} roles.
+  {{ org }} will soon be accepting applications for 
+  {% for item in salary %}
+    GS-{{ item.level }}
+    {% unless forloop.last %}, {% endunless %}
+  {% endfor %} - {{ role_name }} roles.
+
   {%- if opens == 'tbd' -%} The target date for when these positions will be officially open to application has not yet been determined. If you'd like to be
   notified when these positions are open, sign up to our [mailing list]({{ site.baseurl }}/newsletter).
   {%- endif -%}
@@ -179,7 +184,7 @@ brand.
 - Build FedRAMP’s overall technical capacity and information security
   expertise, through recruitment, training, and ongoing staff development.
 
-- Publicly represent FedRAMP and its security strategy to the public and to 
+- Publicly represent FedRAMP and its security strategy to the public and to
   other external audiences.
 
 - Act as FedRAMP’s liaison on security strategy with key government partners,
@@ -195,8 +200,8 @@ brand.
 **Salary Range:**
 The salary range for this position is:
 {% for item in salary %}
-- GS-{{ item.level }} ({{ item.salary_min}} - {{ item.salary_max }}
-{ % endfor %}
+- GS-{{ item.level }} (${{ item.salary_min}} - ${{ item.salary_max }})
+{% endfor %}
 
 Your salary, including base and locality, will be determined upon selection,
 dependent on your actual duty location.
@@ -211,7 +216,7 @@ or for a salary calculator
 
 Your salary, including base and locality, will be determined upon selection,
 dependent on your actual duty location. Please note the maximum salary
-available for the GS pay system is 
+available for the GS pay system is
 {% for item in salary | last %}{{ item.salary_max }}{% endfor %}
 . For specific details on locality pay, please visit
 [OPM’s Salaries & Wages](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/)

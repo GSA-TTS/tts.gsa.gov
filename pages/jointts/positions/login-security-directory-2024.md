@@ -1,7 +1,7 @@
 ---
 layout: 'layouts/jointts/job-updated'
 title: 'Login.gov: Platform and Product Security Director'
-permalink: '/join/positions/login-security-directory-2024.md'
+permalink: '/join/positions/login-security-directory-2024.html'
 tags: 'job'
 state: 'upcoming'
 
@@ -75,7 +75,12 @@ who_may_apply: 'All United States citizens and nationals (residents of American 
 
 <!-- markdown-link-check-disable -->
 {%- if state == 'upcoming' -%}
-{{ org }} will soon be accepting applications for GS-{{ salary | join(", ", "level" }} - {{ role_name }} roles.
+  {{ org }} will soon be accepting applications for
+  {% for item in salary %}
+    GS-{{ item.level }}
+    {% unless forloop.last %}, {% endunless %}
+  {% endfor %} - {{ role_name }} roles.
+
   {%- if opens == 'tbd' -%} The target date for when these positions will be officially open to application has not yet been determined. If you'd like to be
   notified when these positions are open, sign up to our [mailing list]({{ site.baseurl }}/newsletter).
   {%- endif -%}
@@ -243,8 +248,8 @@ verification services to their customers.
 **Salary Range:**
 The salary range for this position is:
 {% for item in salary %}
-- GS-{{ item.level }} ({{ item.salary_min}} - {{ item.salary_max }}
-{ % endfor %}
+- GS-{{ item.level }} (${{ item.salary_min}} - ${{ item.salary_max }})
+{% endfor %}
 
 Your salary, including base and locality, will be determined upon selection,
 dependent on your actual duty location.
