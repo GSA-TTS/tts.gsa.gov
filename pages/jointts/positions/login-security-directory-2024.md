@@ -16,7 +16,10 @@ opens: 'June 14, 2022 at 9:00 am EDT'
 
 # need closes date
 closes: 'June 13, 2023 at 11:59 pm EDT'
+
+# can this be calculated from closes date?  or the other way around?
 weeks_open: 52
+
 location: 'Anywhere in the U.S. (remote)'
 
 salary:
@@ -36,7 +39,7 @@ contact_email: 'jointts@gsa.gov'
 
 # need job announcement number
 job_announcement_number: '22FASC350LUOTR'
-pd_job_title: 'Anywhere in the U.S. (remote)'
+pd_job_title: 'Supervisory IT Specialist (INFOSEC)'
 num_vacancies: '1'
 
 # need series
@@ -59,6 +62,7 @@ supervisory_status: 'yes'
 
 # need trust level
 clearance: 'Public trust. Background investigation required.'
+
 schedule: 'Full time.'
 
 appointment_type: 'This is a term limited appointment with the ability to extend for a total of eight years.'
@@ -239,8 +243,8 @@ verification services to their customers.
 **Salary Range:**
 The salary range for this position is:
 {% for item in salary %}
-- {{ item.level }} ({{ item.salary_min}} - {{ item.salary_max }}
-{ %endfor %}
+- GS-{{ item.level }} ({{ item.salary_min}} - {{ item.salary_max }}
+{ % endfor %}
 
 Your salary, including base and locality, will be determined upon selection,
 dependent on your actual duty location.
