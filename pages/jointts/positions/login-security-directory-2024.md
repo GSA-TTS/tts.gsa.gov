@@ -1,15 +1,15 @@
 ---
-layout: layouts/jointts/job-updated
-title: Login.gov: Platform and Product Security Director
-permalink: /join/positions/login-security-directory-2024.md
-tags: job
-state: upcoming
+layout: 'layouts/jointts/job-updated'
+title: 'Login.gov: Platform and Product Security Director'
+permalink: '/join/positions/login-security-directory-2024.md'
+tags: 'job'
+state: 'upcoming'
 
 # need job post type
-job_post_type: usajobs
+job_post_type: 'usajobs'
 
 # INSTRUCTIONS UPCOMING: These fields are required for upcoming
-role_name: Login.gov: Platform and Product Security Director
+role_name: 'Login.gov: Platform and Product Security Director'
 
 # need opens date
 opens: 'June 14, 2022 at 9:00 am EDT'
@@ -20,7 +20,7 @@ weeks_open: 52
 location: 'Anywhere in the U.S. (remote)'
 
 salary:
-  - level: 15
+  - level: '15'
     salary_min: 141,736
     salary_max: 191,900
 
