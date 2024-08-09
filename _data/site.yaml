@@ -61,8 +61,7 @@ dap:
   # subagency: your-subagency
 
 # Configuration for Google Analytics
-ga:
-# ua: your-ua
+ga: G-4K89W87795
 
 # Site Navigation
 primary_navigation:
