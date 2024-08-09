@@ -1,7 +1,7 @@
 ---
 layout: 'layouts/jointts/job-updated'
-title: 'Login.gov: Platform and Product Security Director'
-permalink: '/join/positions/login-security-directory-2024.md'
+title: 'TTS Office of Solutions: FedRAMP Security Director'
+permalink: '/join/positions/fedramp-security-director.md'
 tags: 'job'
 state: 'upcoming'
 
@@ -9,7 +9,7 @@ state: 'upcoming'
 job_post_type: 'usajobs'
 
 # INSTRUCTIONS UPCOMING: These fields are required for upcoming
-role_name: 'Login.gov: Platform and Product Security Director'
+role_name: 'TTS Office of Solutions: FedRAMP Security Director'
 
 # need opens date
 opens: 'June 14, 2022 at 9:00 am EDT'
@@ -24,7 +24,7 @@ location: 'Anywhere in the U.S. (remote)'
 
 salary:
   - level: '15'
-    salary_min: 141,736
+    salary_min: 143,736
     salary_max: 191,900
 
 org: 'TTS'
@@ -98,142 +98,94 @@ processes, personnel, and software solutions.
 
 ## Role summary
 
-This opportunity is located in the Technology Transformation Services (TTS)
-Solutions Division’s Login.gov team. The Login.gov team is remote-first
-and is composed of experts across product development, software
-engineering, cybersecurity, and platform engineering.
+The Security Director leads FedRAMP’s information security program,
+establishing FedRAMP’s overall security priorities and vision. The role
+oversees the development and implementation of FedRAMP information security
+policies, creating a consistent, defensible and security-first approach
+across FedRAMP’s authorization process and its ongoing oversight over
+authorized cloud services. The Security Director, through their own work
+and their management of a team of federal employees and contractors, is
+responsible for maintaining and growing the trust placed in the FedRAMP
+marketplace.
 
-Login.gov is the public’s one account for government, simplifying access
-to government benefits and services for members of the public by enabling
-them to reuse one secure account across government agencies, and improving
-the security of government systems by enabling agencies to leverage a
-shared technology service to provide strong authentication and identity
-verification services to their customers.
+The position serves as one of the primary leaders working with the White
+House, FedRAMP’s board, the Cybersecurity and Infrastructure Security
+Agency (CISA), and the National Institute of Standards and Technology
+(NIST) to position the program as a leader in cloud security.
+
+FedRAMP was created in 2011 to accelerate the government’s use of commercial
+cloud services, by creating a standardized process for security review and
+authorization and making security information easily available to agencies.
+More generally, FedRAMP operates as a bridge between the public and private
+sectors, to help companies that offer innovative services to ensure these
+services meet core federal security expectations and to bring the best of
+the private sector into government.
+
+Since its creation, the cloud sector has changed substantially and agency
+needs have focused more on software-as-a-service products. In recent years,
+Congress and the White House have updated the program’s mission and
+authorities, with a mandate to scale and modernize the program, while
+continuing to ensure the high bar of security that the public expects
+around government data and operations.
+
+To meet these goals, the Security Director will work across the government
+to strengthen federal cybersecurity policies and team up with federal
+partners on strategic initiatives that help agencies and cloud providers
+to stay focused on defending against contemporary threats.
+
+The position is a dynamic role that will drive FedRAMP’s overall approach
+to security and risk management, and will represent FedRAMP in
+government-wide security policy and priority deliberations. The role will
+require senior expertise in information security and related technology
+concepts, a strong ability to communicate and collaborate with different
+agencies and stakeholder groups, and strategic leadership to position
+the program as a cybersecurity leader and maintain trust in the FedRAMP
+brand.
 
 ## Key objectives
 
-### 1. Lead Login.gov’s Cybersecurity and Compliance Practice
+### 1. You will set and implement FedRAMP’s security vision and priorities
+- Set the policies and processes that define and enforce clear security
+  expectations across FedRAMP authorizations, and a threat-based approach
+  to continually updating them.
 
-- Serves as the lead security expert within the Login.gov organization,
-  collaborating with cross-functional teams in other Login.gov branches
-  to provide technical and security advice, including for partner
-  integrations, application development and other areas as determined
-  necessary by Login.gov leadership.
+- Protect and build on the FedRAMP brand as a meaningful and rigorous
+  security and risk management process, whose authorizations can
+  consistently be presumed adequate for use by any federal agency.
 
-- Lead Login.gov’s product roadmap with respect to cybersecurity impacts.
+- Manage a team that is responsible for applying these security policies,
+  and help adjudicate novel or challenging situations as they arise within
+  the authorization and continuous monitoring process.
 
-- Develop a cybersecurity and compliance roadmap for the Login.gov
-  system in collaboration with Login.gov’s fraud operations team,
-  platform engineering team, and product teams.
+### 2. You will keep FedRAMP operating as a security-first program, and incentivize effective security processes in cloud providers
 
-- Develop and design organizational structures and practices to enable
-  security engineering and FedRAMP compliance following industry best
-  practices.
+- Design and operate the FedRAMP authorization and continuous monitoring
+  processes to consistently incentivize positive security outcomes.
 
-- Provide technical leadership to address security gaps associated
-  with cloud-based Software as a Service (SaaS) digital identity products.
+- Orient FedRAMP around agile delivery principles, by enabling cloud
+  providers to operate using secure agile software development practices
+  and rapid delivery of security updates and features.
 
-- Develop and execute policies, processes, plans, and initiatives to ensure
-  effective growth, continual development, and sustainment of the Login.gov
-  security and compliance program.
+- Identify and track security-oriented program metrics in order to
+  effectively calibrate FedRAMP’s security priorities, and to ensure
+  FedRAMP remains accountable to its trust and security mission.
 
-- Provide general acquisition support for the procurement of security
-  engineering and compliance services and identity products.
+- Grow FedRAMP’s ability to conduct, internally and through external
+  partners, expert security reviews and “red team” style assessments of
+  novel technical implementations and other security-critical components.
 
-- Provide acquisition oversight for cybersecurity products and services.
+### 3. You will represent FedRAMP’s security vision, and build FedRAMP’s reputation and expertise
 
-- Help the Login.gov security and compliance teams align on and adhere
-  to shared processes, deliver results, maintain high standards, and
-  resolve conflicts. Connect teams to resources, amplify team successes,
-  and help teams to pivot or adapt as needed.
+- Build FedRAMP’s overall technical capacity and information security
+  expertise, through recruitment, training, and ongoing staff development.
 
-- Help identify opportunities for professional growth and learning for
-  Login.gov individual contributors.
+- Publicly represent FedRAMP and its security strategy to the public and to 
+  other external audiences.
 
-### 2. Provide Security and Fraud Technical Program Management
-
-- Advise the Login.gov Director on security, fraud and compliance
-  activities, including but not limited to risks and potential
-  mitigations. This includes both internal security leadership and
-  external leadership, describing Login.gov security to both colleagues
-  and partner agencies.
-
-- Apply expertise in security industry standards (e.g., NIST SP 800 series)
-  and best practices.
-
-- Prepare recommendations to technical and policy officials to address
-  conceptual, technical, and investigative integration and similar issues
-  as the primary point of contact for all operations pertaining to security
-  and identity fraud for Login.gov.
-
-- Develop standard operating procedures for securing Login.gov, improving
-  the security posture of cloud-based services, and identity fraud
-  investigations and analysis.
-
-- Oversee secure software product delivery in a cloud-based environment
-  oriented around DevOps and infrastructure-as-code.
-
-- Communicates with internal and external partners to share Login.gov’s
-  security and fraud operations posture, risk, and operational processes.
-
-- Lead security program goal setting and roadmapping activities.
-
-### 3. Ensure Login.gov maintains its FedRAMP authorization
-
-- Maintain Login.gov’s compliance status with relevant federal
-  cybersecurity requirements and processes.
-
-- Ensure that cybersecurity assessments are supported by accurate and
-  authoritative artifacts.
-
-- Lead technical interviews for cybersecurity assessments.
-
-- Prepare application developers, site reliability engineers, or platform
-  engineers for technical assessment interviews.
-
-- Collaborate across Login.gov to implement changes to development and site
-  reliability engineering practices to better support automated compliance.
-
-### 4. Lead a team of Cybersecurit and Fraud Professionals
-
-- Help the Login.gov Platform and Product Security organization align on
-  and adhere to shared processes, deliver results, maintain high standards,
-  and resolve conflicts. Connect teams to resources, amplify team successes,
-  and help teams to pivot or adapt as needed.
-
-- Help Login.gov teams understand what success looks like. Work with
-  Login.gov teams to regularly demonstrate our expertise and impact.
-
-- Help identify opportunities for professional growth and learning for the
-  Login.gov Platform and Product Security team.
-
-- Apply performance management techniques to bring out the best in people;
-  hold section chiefs accountable for their results.
-
-- Lead regular retrospectives and provide feedback to help improve the way
-  the team works.
-
-- Maintain a work environment of respect, diversity, equity, inclusion,
-  accessibility, mutual support, flexibility, collaboration, continuous
-  learning, and commitment to customer / partner needs. Ensure all
-  perspectives are valued and included. Uphold TTS values of inclusion,
-  integrity, and impact.
-
-### 5. Opreate Login.gov with high standards of performance and reliability
-
-- Define key success metrics for Login.gov infrastructure and drive
-  improvement toward those measures.
-
-- Balance priorities between Login.gov Security and Site Reliability teams.
-
-- Balance agile development with mandatory government security compliance
-  policies.
-
-- Drive long-term improvement in Login.gov system availability.
-
-- Direct complex and innovative cybersecurity infrastructure projects and
-  initiatives to improve platform resiliency, reliability, uptime, and
-  information security.
+- Act as FedRAMP’s liaison on security strategy with key government partners,
+  including the FedRAMP Board, the Executive Office of the President, the
+  Cybersecurity and Infrastructure Security Agency, the National Institute
+  of Standards and Technology, and others.
 
 ## Basic information
 
@@ -259,8 +211,8 @@ or for a salary calculator
 
 Your salary, including base and locality, will be determined upon selection,
 dependent on your actual duty location. Please note the maximum salary
-available for the GS pay system is
-${% for item in salary | last %}{{ item.salary_max }}{% endfor %}
+available for the GS pay system is 
+{% for item in salary | last %}{{ item.salary_max }}{% endfor %}
 . For specific details on locality pay, please visit
 [OPM’s Salaries & Wages](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/)
 page or for a salary calculator
