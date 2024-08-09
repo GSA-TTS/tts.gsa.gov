@@ -2,8 +2,8 @@
 title: Understanding compensation and benefits
 layout: layouts/page
 permalink: join/compensation-and-benefits/
-description: TTS uses the Direct Hiring Authority for streamlined hiring for technical positions. Learn more about eligibility and application tips.
-summary: TTS uses the Direct Hiring Authority for streamlined hiring for technical positions. Learn more about eligibility and application tips.
+description: Explore TTS employee compensation, including pay grades, raises, bonuses, benefits, and professional growth opportunities.
+summary: Explore TTS employee compensation, including pay grades, raises, bonuses, benefits, and professional growth opportunities.
 
 sidenav:
   - text: Hiring process
