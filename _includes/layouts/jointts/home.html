@@ -87,7 +87,7 @@ layout: layouts/default
               <p>We hold periodic info sessions to offer potential candidates an opportunity to learn more about working at TTS, available positions, and our application process. Register for a session below.</p>
               <ul>
                 {% for session in sortedinfosessions %}
-                    <li><p><a target="_blank" href="{{ session.link }}">{{session.role}} Hiring Info Session</a><br />{{session.date | date: "%A, %B %d,"}} at {{ session.time }}</p></li>
+                    <li><p><a target="_blank" href="{{ session.link }}" rel="noopener">{{session.role}} Hiring Info Session</a><br />{{session.date | date: "%A, %B %d,"}} at {{ session.time }}</p></li>
                 {% endfor %}
               </ul>
             </div>
