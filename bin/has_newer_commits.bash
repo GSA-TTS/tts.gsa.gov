@@ -20,9 +20,9 @@ compare_dates() {
     fetch_data "$(build_url "$a")"
     fetch_data "$(build_url "$b")"
   } | jq \
-  --raw-output \
-  --slurp \
-  'if .[0].commit.commit.author.date < .[1].commit.commit.author.date then true else false end'
+    --raw-output \
+    --slurp \
+    'if .[0].commit.commit.author.date < .[1].commit.commit.author.date then true else false end'
 }
 
 build_url() {
@@ -31,7 +31,7 @@ build_url() {
   repo="${item%%@*}"
   branch="${item##*@}"
 
-  if [ "$branch" == "$repo" ] ; then
+  if [ "$branch" == "$repo" ]; then
     repo="$item"
     branch="main"
   fi
@@ -42,7 +42,7 @@ build_url() {
 a="${1?Error: two owner/repo@branch values must be provided (0 were)}"
 b="${2?Error: two owner/repo@branch values must be provided (1 was)}"
 
-if [ "$(compare_dates "$a" "$b")" == "true" ] ; then
+if [ "$(compare_dates "$a" "$b")" == "true" ]; then
   exit 0
 else
   exit 1
