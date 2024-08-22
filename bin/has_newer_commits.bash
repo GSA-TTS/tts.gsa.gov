@@ -152,7 +152,6 @@ compare_dates() {
     'if .[0].commit.commit.author.date < .[1].commit.commit.author.date then true else false end'
 }
 
-
 ## @fn build_url()
 ## @brief given the name of a repo, construct a GitHub API URL
 ## @details
@@ -223,6 +222,10 @@ filter_branch_string() {
 ## @fn main()
 ## @brief the main function
 main() {
+if [ -z "$PAT" ]; then
+  echo "Error: no Personal Access Token passed via PAT}"
+  exit 1
+fi
 
   trap die ERR
 
