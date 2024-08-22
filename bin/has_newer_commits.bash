@@ -20,9 +20,9 @@ compare_dates() {
     fetch_data "$(build_url "$a")"
     fetch_data "$(build_url "$b")"
   } | jq \
-  --raw-output \
-  --slurp \
-  'if .[0].commit.commit.author.date < .[1].commit.commit.author.date then true else false end'
+    --raw-output \
+    --slurp \
+    'if .[0].commit.commit.author.date < .[1].commit.commit.author.date then true else false end'
 }
 
 build_url() {
@@ -31,7 +31,7 @@ build_url() {
   repo="${item%%@*}"
   branch="${item##*@}"
 
-  if [ "$branch" == "$repo" ] ; then
+  if [ "$branch" == "$repo" ]; then
     repo="$item"
     branch="main"
   fi
@@ -42,6 +42,7 @@ build_url() {
 filter_branch_string() {
   string="${1:-}"
 
+<<<<<<< HEAD
   echo "$string" | tr -cd '[:alnum:]\/\-\_\.\@'
 }
 
