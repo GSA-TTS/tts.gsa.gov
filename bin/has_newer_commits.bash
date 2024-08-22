@@ -90,7 +90,6 @@ die() {
   exit 1
 }
 
-
 ## @fn fetch_data()
 ## @brief given a GitHub URL, query it and return the result
 ## @details
@@ -116,7 +115,6 @@ fetch_data() {
     -H "Authorization: Bearer ${PAT}" \
     "$url"
 }
-
 
 ## @fn compare_dates()
 ## @brief given 2 branches, determine if the first is newer than the second
@@ -189,7 +187,6 @@ build_url() {
   echo "${GITHUB_API_BASE}/repos/${repo}/branches/${branch}"
 }
 
-
 ## @fn filter_branch_string()
 ## @brief remove potentially unsafe or invalid characters from branch names
 ## @details
@@ -218,21 +215,20 @@ filter_branch_string() {
   echo "$string" | tr -cd '[:alnum:]\/\-\_\.\@'
 }
 
-
 ## @fn main()
 ## @brief the main function
 main() {
-if [ -z "$PAT" ]; then
-  echo "Error: no Personal Access Token passed via PAT}"
-  exit 1
-fi
+  if [ -z "$PAT" ]; then
+    echo "Error: no Personal Access Token passed via PAT}"
+    exit 1
+  fi
 
   trap die ERR
 
   local raw_a="${1?Error: two owner/repo@branch values must be provided (0 were)}"
   local raw_b="${2?Error: two owner/repo@branch values must be provided (1 was)}"
 
-  if [ -z "$PAT" ] ; then
+  if [ -z "$PAT" ]; then
     echo "Error: no Personal Access Token passed via PAT}"
     exit 1
   fi
