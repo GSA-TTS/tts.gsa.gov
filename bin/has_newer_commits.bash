@@ -39,11 +39,16 @@ build_url() {
   echo "https://api.github.com/repos/${repo}/branches/${branch}"
 }
 
-a="${1?Error: two owner/repo@branch values must be provided (0 were)}"
-b="${2?Error: two owner/repo@branch values must be provided (1 was)}"
+filter_branch_string() {
+  string="${1:-}"
 
-if [ "$(compare_dates "$a" "$b")" == "true" ] ; then
-  exit 0
-else
-  exit 1
-fi
+  echo "$string" | tr -cd '[:alnum:]\/\-\_\.\@'
+}
+
+raw_a="${1?Error: two owner/repo@branch values must be provided (0 were)}"
+raw_b="${2?Error: two owner/repo@branch values must be provided (1 was)}"
+
+a="$(filter_branch_string "$raw_a")"
+b="$(filter_branch_string "$raw_b")"
+
+[ "$(compare_dates "$a" "$b")" == "true" ]
