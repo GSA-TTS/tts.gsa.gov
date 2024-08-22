@@ -63,6 +63,34 @@
 
 set -euo pipefail
 
+## @fn die
+## @brief receive a trapped error and display helpful debugging details
+## @details
+## When called -- presumably by a trap -- die() will provide details
+## about what happened, including the filename, the line in the source
+## where it happened, and a stack dump showing how we got there.  It
+## will then exit with a result code of 1 (failure)
+## @retval 1 always returns failure
+## @par Example
+## @code
+## trap die ERR
+## @endcode
+die() {
+  printf "ERROR %s in %s AT LINE %s\n" "$?" "${BASH_SOURCE[0]}" "${BASH_LINENO[0]}" 1>&2
+
+  local i=0
+  local FRAMES=${#BASH_LINENO[@]}
+
+  # FRAMES-2 skips main, the last one in arrays
+  for ((i = FRAMES - 2; i >= 0; i--)); do
+    printf "  File \"%s\", line %s, in %s\n" "${BASH_SOURCE[i + 1]}" "${BASH_LINENO[i]}" "${FUNCNAME[i + 1]}"
+    # Grab the source code of the line
+    sed -n "${BASH_LINENO[i]}{s/^/    /;p}" "${BASH_SOURCE[i + 1]}"
+  done
+  exit 1
+}
+
+
 ## @fn fetch_data()
 ## @brief given a GitHub URL, query it and return the result
 ## @details
@@ -87,8 +115,8 @@ fetch_data() {
     -H "X-GitHub-Api-Version: 2022-11-28" \
     -H "Authorization: Bearer ${PAT}" \
     "$url"
-
 }
+
 
 ## @fn compare_dates()
 ## @brief given 2 branches, determine if the first is newer than the second
@@ -149,7 +177,7 @@ compare_dates() {
 build_url() {
   item="${1?Error: no owner/repo@branch passed}"
 
-  local GITHUB_API_BASE="${GITHUB_API_BASE:-https://api.github.com/}"
+  local GITHUB_API_BASE="${GITHUB_API_BASE:-https://api.github.com}"
 
   repo="${item%%@*}"
   branch="${item##*@}"
@@ -162,21 +190,55 @@ build_url() {
   echo "${GITHUB_API_BASE}/repos/${repo}/branches/${branch}"
 }
 
+
+## @fn filter_branch_string()
+## @brief remove potentially unsafe or invalid characters from branch names
+## @details
+## The names of the branches we're comparing come from outside,
+## including potentially via workflow, so we want to be very safe and
+## remove anything that could possibly lead to problematic strings
+## being passed to `curl` or other CLI tools.  This uses `tr` to
+## remove anything that's not alphanumeric, dash, underscore, slash,
+## period, or at symbol.  The at symbol is used to separate the
+## owner/repo from the branch name -- it's not actually a valid character
+## for use in representing a git repository.  Characters that are filtered
+## out are deleted, thereby reducing the length of the resulting
+## string.  They are not replaced with another character (i.e., they're
+## not "slugified").  The resulting string is returned via STDOUT.
+## @param string the string to filter
+## @retval 0 (True) if the filter was successful
+## @retval 1 (False) if the filter failed for any reason
+## @returns the filtered string via STDOUT
+## @par Examples
+## @code
+## string="$(filter_branch_string "${1:-}")"
+## @endcide
 filter_branch_string() {
   string="${1:-}"
 
   echo "$string" | tr -cd '[:alnum:]\/\-\_\.\@'
 }
 
-raw_a="${1?Error: two owner/repo@branch values must be provided (0 were)}"
-raw_b="${2?Error: two owner/repo@branch values must be provided (1 was)}"
 
-if [ -z "$PAT" ] ; then
-  echo "Error: no Personal Access Token passed via PAT}"
-  exit 1
-fi
+## @fn main()
+## @brief the main function
+main() {
 
-a="$(filter_branch_string "$raw_a")"
-b="$(filter_branch_string "$raw_b")"
+  trap die ERR
 
-[ "$(compare_dates "$a" "$b")" == "true" ] || exit 2
+  local raw_a="${1?Error: two owner/repo@branch values must be provided (0 were)}"
+  local raw_b="${2?Error: two owner/repo@branch values must be provided (1 was)}"
+
+  if [ -z "$PAT" ] ; then
+    echo "Error: no Personal Access Token passed via PAT}"
+    exit 1
+  fi
+
+  a="$(filter_branch_string "$raw_a")"
+  b="$(filter_branch_string "$raw_b")"
+
+  [ "$(compare_dates "$a" "$b")" == "true" ] || return 2
+}
+
+# if we're not being sourced and there's a function named `main`, run it
+[[ "$0" == "${BASH_SOURCE[0]}" ]] && [ "$(type -t "main")" == "function" ] && main "$@"
