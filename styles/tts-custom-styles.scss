@@ -206,3 +206,13 @@ h5 {
 
   }
 }
+
+@media only screen and ( max-width: 768px ) {
+  .usa-layout-docs__main {
+    padding: 1rem;
+  }
+
+  .usa-layout-docs__sidenav {
+    padding: 0rem 1rem 2rem;
+  }
+}
