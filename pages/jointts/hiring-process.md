@@ -84,22 +84,12 @@ Some examples:
 
 If TTS identifies you as a strong candidate after we complete the interviews, a TTS recruiter will reach out to you with next steps. The hiring process continues in partnership with GSA’s (our parent agency) Human Resources team. They’re responsible for extending tentative and official final offers. The process is as follows:
 
-- A GSA HR specialist will call you with a tentative offer. “Tentative” means
-  the offer is contingent on a security clearance. This offer will include
-  salary for your consideration.
-  - **Please note:** This is only a tentative offer. At this point you should
-    not give notice or resign from your current employer. You should delay these
-    steps until you receive the final offer with a confirmed start date from HR.
-- Once you have accepted the tentative offer, you will receive an email from the
-  HR onboarding system. You will need to login and accept your tentative offer.
-- Once you accept your tentative offer, you will complete a series of forms and
-  receive a USAccess email requesting you to schedule a time to provide your
-  fingerprints for your security clearance and complete an electronic
-  questionnaire for investigation processing (e-QIP).
-- Once your e-QIP has been initially cleared, you will receive an interim
-  security clearance, and a GSA HR specialist will call you with a final offer.
-- At this stage, GSA HR and the TTS Talent team will work with you to identify
-  and set a start date.
+- A GSA HR specialist will call you with a tentative offer. “Tentative” means the offer is contingent on a security clearance. This offer will include salary for your consideration.
+  - **Please note:** This is only a tentative offer. At this point you should not give notice or resign from your current employer. You should delay these steps until you receive the final offer with a confirmed start date from HR.
+- Once you have accepted the tentative offer, you will receive an email from the HR onboarding system. You will need to login and accept your tentative offer.
+- Once you accept your tentative offer, you will complete a series of forms and receive a USAccess email requesting you to schedule a time to provide your fingerprints for your security clearance and complete an electronic questionnaire for investigation processing (e-QIP).
+- Once your e-QIP has been initially cleared, you will receive an interim security clearance, and a GSA HR specialist will call you with a final offer.
+- At this stage, GSA HR and the TTS Talent team will work with you to identify and set a start date.
 
 ### Security Clearance Documents
 
