@@ -32,19 +32,15 @@ subnav:
 
 ## Government Pay Grades
 
-TTS team members are hired for specific position descriptions at a specific grade level from the federal General Schedule (GS) (excluding [Senior Executive Service](https://www.opm.gov/policy-data-oversight/senior-executive-service/) positions). The GS system is a pay system for civilian employees in the federal government; evaluation and compensation varies by grade level. The qualification requirements for each position at a specific GS level are based on education, background, accomplishments, and
-experience. The specific requirements will always be listed in the job posting. Salaries of federal employees are public information, and your salary may become publicly available on sites such as <!-- markdown-link-check-disable -->[FederalPay.org](https://www.federalpay.org/employees). Find <!-- markdown-link-check-enable -->
-out more about the GS system from the [Office of Personnel Management](https://www.opm.gov/policy-data-oversight/pay-leave/pay-systems/general-schedule/).
+TTS team members are hired for specific position descriptions at a specific grade level from the federal General Schedule (GS) (excluding [Senior Executive Service](https://www.opm.gov/policy-data-oversight/senior-executive-service/) positions). The GS system is a pay system for civilian employees in the federal government; evaluation and compensation varies by grade level. The qualification requirements for each position at a specific GS level are based on education, background, accomplishments, and experience. The specific requirements will always be listed in the job posting. Salaries of federal employees are public information, and your salary may become publicly available on sites such as <!-- markdown-link-check-disable -->[FederalPay.org](https://www.federalpay.org/employees). Find <!-- markdown-link-check-enable -->out more about the GS system from the [Office of Personnel Management](https://www.opm.gov/policy-data-oversight/pay-leave/pay-systems/general-schedule/).
 
 ## Understanding Grade Levels
 
-Federal employees on the general schedule range from GS-1 to GS-15. GS grade levels specify a fixed compensation range for a particular position, in particular geographic localities, within the federal government. Understanding the relationship between GS grade level, location, and compensation is important to understanding how salaries
-work at TTS.
+Federal employees on the general schedule range from GS-1 to GS-15. GS grade levels specify a fixed compensation range for a particular position, in particular geographic localities, within the federal government. Understanding the relationship between GS grade level, location, and compensation is important to understanding how salaries work at TTS.
 
 Each GS grade level contains a series of 10 steps. New employees are usually hired at Step 1 of a GS grade. However, in special circumstances, agencies may authorize a higher step rate for a newly-appointed federal employee based on a [special need of the agency or superior qualifications of the prospective employee](https://www.opm.gov/policy-data-oversight/pay-leave/pay-administration/fact-sheets/superior-qualifications-and-special-needs-pay-setting-authority/).
 
-Use this [OPM General Schedule (GS) Salary Calculator](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/2022/general-schedule-gs-salary-calculator/)
-to help you understand how GS level, step and locality affect compensation. The 2024 salary cap for all GS employees is $191,900 per year. You cannot be offered more than this under any circumstance.
+Use this [OPM General Schedule (GS) Salary Calculator](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/2022/general-schedule-gs-salary-calculator/) to help you understand how GS level, step and locality affect compensation. The 2024 salary cap for all GS employees is $191,900 per year. You cannot be offered more than this under any circumstance.
 
 ## Raises and Bonuses
 
