@@ -3,7 +3,17 @@ This will be displayed on the homepage. Ideally, you want to highlight key goals
 {% endcomment %}
 
 {% if site.show_site_alert %}
-  {% render "hero-alert.html", alert: heroAlert['message'] %}
+
+<section class="usa-site-alert usa-site-alert--info usa-site-alert--slim" aria-label="Site alert,">
+  <div class="usa-alert">
+    <div class="usa-alert__body">
+      <p class="usa-alert__text">
+      TTS is hiring, <a href="{{ '/join' | url }}" class="usa-link">Join us!</a>
+      </p>
+    </div>
+  </div>
+</section>
+
 {% endif %}
 <section class="position-relative tts-hero-wrap">
   <div class="usa-hero--tts opacity-90"></div>
