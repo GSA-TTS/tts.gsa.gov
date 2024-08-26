@@ -93,8 +93,9 @@ TTS also supports employees’ ongoing professional development by providing tra
 The [TTS Handbook](https://handbook.18f.gov/) includes:
 - [Benefits](https://handbook.18f.gov/benefits/)
 - [Leave](https://handbook.18f.gov/benefits/#leave)
-<!-- this doesn't exist any more - [Telework and virtual worker policy](https://handbook.18f.gov/telework/) -->
 - [Professional development and training processes](https://handbook.18f.gov/attending-conferences/)
+<!-- this doesn't exist any more - [Telework and virtual worker policy](https://handbook.18f.gov/telework/) -->
+
 
 Note: If you are coming over from another agency where you received award leave, unfortunately it will not carry over to GSA. Sick leave and annual leave do transfer, however.
 
@@ -103,12 +104,12 @@ Note: If you are coming over from another agency where you received award leave,
 The Technology Transformation Service (TTS) exists under the domain of the General Services Administration (GSA). TTS is home to the following offices: 18F, Centers of Excellence, Office of Acquisition, Office of Solutions, and Presidential Innovation Fellows. You can read more info about each office on our [Join page](https://join.tts.gsa.gov/tts-offices/).
 
 You can also read more about each of these groups at their TTS Handbook Pages:
- [Acquisition](https://handbook.18f.gov/acqstack/) |
- [cloud.gov](https://cloud.gov/) |
- [Design](https://handbook.18f.gov/design/) |
- [Engineering](https://handbook.18f.gov/engineering/) |
- [login.gov](https://login.gov/) |
- [Product](https://handbook.18f.gov/product/) |
+ - [Acquisition](https://handbook.18f.gov/acqstack/) 
+ - [cloud.gov](https://cloud.gov/) 
+ - [Design](https://handbook.18f.gov/design/) 
+ - [Engineering](https://handbook.18f.gov/engineering/) 
+ - [login.gov](https://login.gov/) 
+ - [Product](https://handbook.18f.gov/product/) 
 <!-- this doesn't exist any more  [Strategy](https://handbook.18f.gov/strategy/) -->
 
 Thank you for taking the time to talk to our team and for your interest in public service!
