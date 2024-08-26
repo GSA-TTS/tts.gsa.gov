@@ -19,6 +19,8 @@ and training.
 A tool will synchronize job posting content in the Talent team repository
 to the TTS website repository.
 
+The 
+
 ## Consequences
 
 Job content will need to be edited in one place that the TTS Talent
