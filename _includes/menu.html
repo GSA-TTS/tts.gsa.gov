@@ -61,7 +61,6 @@ manage your navigation system {% endcomment %}
           </li>
           {% endfor %}
         </ul> -->
-        <!-- {% include "searchgov/form.html" searchgov: site.searchgov %} -->
 
         {% comment %}
   This will redirect the results to /search template which will handle the js loading
@@ -87,6 +86,7 @@ manage your navigation system {% endcomment %}
   </form>
 {% endif %}
 
+{% comment %}
         <section aria-label="Small search component">
           <form class="usa-search usa-search--small" role="search">
             <label class="usa-sr-only" for="search-field-en-small">Search</label>
@@ -101,7 +101,7 @@ manage your navigation system {% endcomment %}
             </button>
           </form>
         </section>
-        
+        {% endcomment %}        
         {% include "searchgov/form.html" searchgov: site.searchgov %}
       </div>
     </div>
