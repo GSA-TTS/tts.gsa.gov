@@ -160,4 +160,4 @@ Thank you for your interest in a position with TTS! Below you will find some of 
 - If you have additional questions once you’re onboard, please reach out to your assigned [benefits specialist](https://docs.google.com/document/d/15glvq9UakKUN8XTRTa6gRkhBHm2whhQyAGmf8ibTtBs/edit).
 
 ### I’m having trouble logging into my Electronic Official Personnel Folder (eOPF); what should I do?
-- You can login to your eOPF via [https://eopf.opm.gov/](https://eopf.opm.gov/). You need to be on VPN. If you are having trouble logging in, please email [eopfhelpdesk@opm.gov](mailto:eopfhelpdesk@opm.gov) or give them a call at 1-866-275-8518.
+- You can login to your eOPF via [https://eopf.opm.gov/opm/](https://eopf.opm.gov/opm/). You need to be on VPN. If you are having trouble logging in, please email [eopfhelpdesk@opm.gov](mailto:eopfhelpdesk@opm.gov) or give them a call at 1-866-275-8518.
