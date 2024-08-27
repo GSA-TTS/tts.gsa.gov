@@ -9,17 +9,15 @@ Accepted
 ## Context
 
 Job postings from the
-[Talent team repository](https://github.com/18F/join.tts.gsa.gov) need to
-be posted on the new TTS website.  The best case outcome would minimize
-redundancy (i.e., duplicate postings, duplicate files, etc.), rework,
-and training.
+[Talent team repository](https://github.com/18F/join.tts.gsa.gov)
+need to be posted on the new TTS website.  The best case outcome would
+minimize redundancy (i.e., duplicate postings, duplicate files, etc.),
+rework, and training.
 
 ## Decision
 
 A tool will synchronize job posting content in the Talent team repository
 to the TTS website repository.
-
-The 
 
 ## Consequences
 
