@@ -12,7 +12,7 @@ const svgSprite = require("eleventy-plugin-svg-sprite");
 const { imageShortcode, imageWithClassShortcode } = require("./config");
 
 module.exports = function (config) {
-config.setFreezeReservedData(false);
+  config.setFreezeReservedData(false);
   // Set pathPrefix for site
   let pathPrefix = "/";
   // Copy the `admin` folders to the output
