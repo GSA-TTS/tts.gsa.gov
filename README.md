@@ -31,51 +31,17 @@ The standards require that a website or digital service:
 
 `npm install`
 
+### Building the Assets
+
+`npm run build`
+
 ### Running a Dev Instance
 
-`npm run dev`
+`npm run serve`
 
-## Netlify CMS
+#### Accessing the Dev Instances
 
-
-### Config
-
-The Netlify CMS can be configured in [`/admin/config.yml`](./admin/config.yml) and you will update the
-`repo` key to be your Github organization and repository name.
-
-```YAML
-backend:
-  name: github
-  repo: <your-github-org>/<your-repository-name>
-  base_url: https://federalistapp.18f.gov
-  auth_endpoint: external/auth/github
-  preview_context: federalist/build
-  branch: main
-  use_graphql: true
-```
-
-### Running Locally
-
-You can run the Netlify CMS locally to more easily customize and troubleshoot
-the CMS to you content.
-
-We provide comments in the [/admin/config.yml](./admin/config.yml)
-instructing you how to change the `backend` values from your production site
-to the local development.
-
-> *Note:* Make sure to not commit and push the config with the `backend`
-set for local develop to Github or else you will break your production site's
-Netlify CMS.
-
-```YAML
-# Local development backend
-backend:
-  name: git-gateway
-local_backend: true
-```
-
-Once your [/admin/config.yml](./admin/config.yml) is set to local development,
-you run `npm run dev:cms` to serve as a development authentication server.
+Point your browser to [http://localhost:3000/](http://localhost:3000/)
 
 ## How To
 
