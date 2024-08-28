@@ -30,21 +30,22 @@ subnav:
     href: "#security-and-onboarding"
 ---
 
-Don’t let the federal hiring process seem daunting. We demystify it below, so you know what to expect. Here's a look at the average time of each stage from application to your first day at TTS. Please note that these are only averages, and length of process stages can vary based on a number of factors such as the number of applications received.
+TTS is proud to be an equal opportunity employer and to build a workforce that reflects the diversity of the citizens that we serve. We invite all eligible United States citizens and nationals (residents of American Samoa and Swains Islands) to apply to work at TTS. 
 
-| Process Stage                                  | Average Duration/Days |
-|:-----------------------------------------------|:---------------------:|
-| [Application](#application) collection         |       12 to 14        |
-| TTS application review                         |          10           |
-| [Interviews](#interviews)                      |          30           |
-| [Offer and security](#security-and-onboarding) |       50 to 80        |
-| **Total from application to start**            |    **102 to 134**     |
+The federal hiring process differs from industry and private-sector hiring. Federal hiring often takes longer than industry and requires specific actions. Here is an expected timeline of the hiring process at TTS:
+
+- Application collection - 5 business days or until an application cap is met
+- Resume qualification - 2 to 3 weeks
+- Interviews - 1 month
+- Offer and security - 2 to 3 months
+- Total from application to start - 3 to 5 months
 
 ## Info Sessions
 
-Before you apply for a position, we would strongly encourage you to attend an info session. TTS hosts monthly general hiring info sessions as well as role-specific info sessions for upcoming or newly-opened roles. At our general info sessions, candidates can learn about working at TTS, what kinds of roles we hire for, and what our application process is like. At role-specific info sessions, candidates will hear some of the same information but will also have a chance to hear directly from the hiring team about what their vision for the role is and what a day-in-the-life might actually look like. Candidates can also ask us questions about the application process, the work, and the team culture. In order to ensure equity in our hiring processes, TTS Talent will not conduct one-on-one conversations with candidates about roles, but instead will welcome folks to attend one of our info sessions.
+TTS hosts monthly general hiring information sessions and role-specific sessions for upcoming or newly-opened roles. At our general sessions, candidates learn about working at TTS, what types of roles we hire for, and more about the application process. Our role-specific info sessions briefly cover some of the same information and offer a chance to hear directly from the hiring team about the vision for the role and what a day-in-the-life might actually look like. Candidates have an opportunity  to ask us questions about the application process, the work, and the team culture. 
+TTS does not conduct one-on-one conversations with candidates about roles to ensure an equitable hiring process. Please attend one of our public information sessions for these details.
 
-Registration information about info sessions can be found on the [JoinTTS homepage]({{ site.baseurl }}).
+A list of upcoming information sessions can be found on the [JoinTTS homepage]({{ site.baseurl }}).
 
 ## Application
 
