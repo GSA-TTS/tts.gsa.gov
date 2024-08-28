@@ -28,7 +28,7 @@ subnav:
     href: "#security-and-onboarding"
 ---
 
-{{ sidenav }} TTS is proud to be an equal opportunity employer and to build a workforce that reflects the diversity of the citizens that we serve. We invite all eligible United States citizens and nationals (residents of American Samoa and Swains Islands) to apply to work at TTS. 
+TTS is proud to be an equal opportunity employer and to build a workforce that reflects the diversity of the citizens that we serve. We invite all eligible United States citizens and nationals (residents of American Samoa and Swains Islands) to apply to work at TTS. 
 
 The federal hiring process differs from industry and private-sector hiring. Federal hiring often takes longer than industry and requires specific actions. Here is an expected timeline of the hiring process at TTS:
 
