@@ -20,6 +20,24 @@ sidenav:
     href: /join/rolling-hiring/
   - text: Frequenty Asked Questions
     href: /join/faq/
+
+subnav:
+  - text: Job Title
+    href: "#job-title"
+  - text: Role Summary
+    href: "#role-summary"
+  - text: Basic Information
+    href: "#basic-information"
+  - text: Job Summary
+    href: "#job-summary"
+  - text: Key Requirements and Employment Requirements
+    href: "#key-requirements-and-employment-requirements"
+  - text: Duties
+    href: "#duties"
+  - text: Qualifications
+    href: "#qualifications"
+  - text: How To Apply
+    href: "#how-to-apply"
 ---
 
 Understanding every section of a federal job posting can help you prepare the strongest possible application. Below, we’ll explain each section of a TTS job posting and what information to look for when crafting your application.
@@ -91,7 +109,7 @@ This section addresses the eligibility criteria for the position. For most TTS j
 
 ### Security clearance
 
-All government positions require some level of background check. Most roles at TTS require a public trust position clearance. Learn more in the [Security and Onboarding section]({{'join/hiring-process.md#security-and-onboarding' | url }}).
+All government positions require some level of background check. Most roles at TTS require a public trust position clearance. Learn more in the <a href="{{ '/join/hiring-process/#security-and-onboarding' | url }}" class="usa-link">Security and Onboarding section</a>.
 
 ### Work Schedule
 
