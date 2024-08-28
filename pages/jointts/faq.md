@@ -42,7 +42,7 @@ Thank you for your interest in a position with TTS! Below you will find some of 
 - You can also find info on [Working at TTS](https://handbook.tts.gsa.gov/about-us/tts-history/) and a [description of our offices](https://handbook.tts.gsa.gov/#tts-offices).
 
 ### Where can I find your open positions?   
-- All of our open and upcoming roles are posted on the <a href="{{ '/join' | url }}" class="usa-link">Join TTS</a>.. You can also [subscribe to our mailing list](https://join.tts.gsa.gov/newsletter/) if you would like to be notified when new roles open.
+- All of our open and upcoming roles are posted on the <a href="{{ '/join' | url }}" class="usa-link">Join TTS</a>. You can also [subscribe to our mailing list](https://join.tts.gsa.gov/newsletter/) if you would like to be notified when new roles open.
 
 ### What if I don’t see any roles posted that I’m eligible for?
 - We recommend you sign up for [job alerts](https://join.tts.gsa.gov/newsletter/) to stay in the loop for any future openings that may align with your experience and interests. 
