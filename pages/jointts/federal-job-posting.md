@@ -18,6 +18,8 @@ sidenav:
     href: /join/about-the-dha/
   - text: Rolling hiring
     href: /join/rolling-hiring/
+  - text: Frequenty Asked Questions
+    href: /join/faq/
 ---
 
 Understanding every section of a federal job posting can help you prepare the strongest possible application. Below, we’ll explain each section of a TTS job posting and what information to look for when crafting your application.

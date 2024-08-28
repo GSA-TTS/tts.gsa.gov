@@ -18,6 +18,8 @@ sidenav:
     href: /join/about-the-dha/
   - text: Rolling hiring
     href: /join/rolling-hiring/
+  - text: Frequenty Asked Questions
+    href: /join/faq/
 subnav:
   - text: General recommendations
     href: "#general-recommendations"
