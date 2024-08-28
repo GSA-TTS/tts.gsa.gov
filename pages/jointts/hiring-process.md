@@ -42,34 +42,34 @@ The federal hiring process differs from industry and private-sector hiring. Fede
 
 ## Info Sessions
 
-TTS hosts monthly general hiring information sessions and role-specific sessions for upcoming or newly-opened roles. At our general sessions, candidates learn about working at TTS, what types of roles we hire for, and more about the application process. Our role-specific info sessions briefly cover some of the same information and offer a chance to hear directly from the hiring team about the vision for the role and what a day-in-the-life might actually look like. Candidates have an opportunity  to ask us questions about the application process, the work, and the team culture. 
-TTS does not conduct one-on-one conversations with candidates about roles to ensure an equitable hiring process. Please attend one of our public information sessions for these details.
+TTS hosts monthly general hiring information sessions and role-specific sessions for upcoming or newly-opened roles. At our general sessions, candidates learn about working at TTS, what types of roles we hire for, and more about the application process. Our role-specific info sessions briefly cover some of the same information and offer a chance to hear directly from the hiring team about the vision for the role and what a day-in-the-life might actually look like. Candidates have an opportunity  to ask us questions about the application process, the work, and the team culture. TTS does not conduct one-on-one conversations with candidates about roles to ensure an equitable hiring process. Please attend one of our public information sessions for these details.
 
 A list of upcoming information sessions can be found on the [JoinTTS homepage]({{ site.baseurl }}).
 
 ## Application
 
-When you apply for a role at TTS, you’ll need to submit a [government-style resume](https://join.tts.gsa.gov/resume/). We collect applications during the period specified in the [Basic Information section](https://join.tts.gsa.gov/federal-job-posting/#basic-information/) of the job posting, generally 10 business days. After the period has closed, we review and evaluate all applications at the same time.
+Applications are collected during the period specified in the [Basic Information section](https://join.tts.gsa.gov/federal-job-posting/#basic-information/) of the job posting, generally about a week or until an application cap is reached. After the period has closed, all applications are reviewed and evaluated  at the same time.
 
-TTS usually posts roles using a Direct Hire Authority, which does not apply [Veterans’ Preference](https://www.fedshirevets.gov/job-seekers/veterans-preference/). In some instances, we may post roles using other hiring authorities that do apply this preference. In those cases Veterans’ Preference is applied for candidates who have claimed their veteran status.
+TTS does not use automated screening tools. Your application will be evaluated by a HR Specialist or a panel of subject matter experts. 
 
-TTS does not use automated screening tools, and your application will be evaluated by people who have varying levels of familiarity with your professional experience. It’s better to be explicit in your resume and not assume the reader has expert domain knowledge or context. Because applications are reviewed by real people, the application review process typically takes a couple of weeks and the length of time varies by the number of applications received.
+When you apply for a role at TTS, you are required to submit a [government-style resume](https://join.tts.gsa.gov/resume/). Be explicit in your resume and include all relevant work experiences and details. Do not assume the reader has expert knowledge or context of your job history. Because applications are reviewed by real people, the application review process typically takes several weeks, depending on the number of applications received.
 
 ## Interviews
 
-The interview process with TTS typically takes 3-4 weeks total, and we typically interview in 2-3 rounds total. The first round is a 30-60 minute preliminary screen by phone or video. During this call, plan to talk briefly about your skills, experience, and professional passion. We’ll share more about the role, the teams, and the work we do on a daily basis.
+The interview process typically takes about a month, with approximately 3-4 interview rounds. The first round is a 30-60 minute preliminary screen by phone or video. During this call, plan to talk briefly about your skills, experience, and professional passion. We’ll share more information about the role, the team, and the opportunity.
 
-If we both think, based on the initial call, that you’re still interested in the opportunity and that you could be a good fit for the role, we’ll invite you to a series of formal video interviews with different TTS team members. It’s during these longer conversations that we’ll discuss your past work experience in addition to the skills and knowledge that you bring with you to TTS. Some positions will have a technical interview (such as a coding exercise interview) as a second round before moving candidates forward to the final round of interviews. Our final round of interviews will always include a TTS Core Values interview, and if you are interviewing for a supervisory position, you will also be invited to a TTS Supervisor interview.
+If you advance past the preliminary screen, we’ll invite you to a series of formal video interviews with various TTS team members. During these longer conversations, we will discuss your past work experience and how your skills and knowledge apply to TTS. Some positions may require a technical interview such as a coding exercise or leadership and collaboration interview before moving forward to the final round of interviews. 
 
-We share copies of all of our interview guides with candidates in advance of your interviews. Sharing questions in advance helps our team provide you a better and more informed interview experience. As a candidate, you can better understand what we’re looking for. By sharing the same prep information with every candidate, you get a taste of our values in action and we ensure a fair, equitable hiring process. Everyone comes to the table better prepared. Federal hiring can be very different from industry or private-sector hiring, and we want to make this experience as transparent - and enjoyable - as possible!
+The final round of interviews always include a TTS Core Values interview which is intended to evaluate candidate alignment with [the organization’s values](https://handbook.tts.gsa.gov/about-us/tts-history/#our-values).
+
+We share copies of the interview guide, which includes the questions and interviewer names, in advance of your interviews. Sharing questions in advance provides you a more informed interview experience so you can better understand what we’re looking for. 
 
 ### Interview Format
 
-We typically use Google Meet for all of our screens - if you are not comfortable or familiar with using Google Meet let your recruiter know and they will be happy to set up a test chat with you prior to your interviews! You can also test your sound and video prior to your interview using [these instructions](https://support.google.com/meet/answer/10409699?hl=en).
+We typically use Google Meet for our interviews. If you are not comfortable or familiar with using Google Meet, let your recruiter know and they will be happy to set up a test chat with you prior to your interviews! You can also test your sound and video prior to your interview using [these instructions](https://support.google.com/meet/answer/10409699?hl=en).
 
-In case there are technical issues with a video call, you will also be provided with a dial-in number you can call by phone.
-
-We realize video chats aren’t an option for everyone, so we are also happy to work with a candidate’s individual needs to ensure they have a good interviewing experience and can use their preferred method of communication.
+In case there are technical issues with your video call, you will also be provided with a dial-in number so you can call-in by phone.
+We are happy to work with your individual needs to ensure you have a good interviewing experience and can use your preferred method of communication.
 
 ### Accommodations
 
