@@ -50,5 +50,10 @@
   },
   "dependencies": {
     "@uswds/uswds": "3.8.1"
+  },
+  "overrides": {
+    "eleventy-plugin-svg-sprite": {
+      "svg-sprite": ">=2.0.4"
+    }
   }
 }
