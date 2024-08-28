@@ -68,16 +68,13 @@ We share copies of the interview guide, which includes the questions and intervi
 
 We typically use Google Meet for our interviews. If you are not comfortable or familiar with using Google Meet, let your recruiter know and they will be happy to set up a test chat with you prior to your interviews! You can also test your sound and video prior to your interview using [these instructions](https://support.google.com/meet/answer/10409699?hl=en).
 
-In case there are technical issues with your video call, you will also be provided with a dial-in number so you can call-in by phone.
-We are happy to work with your individual needs to ensure you have a good interviewing experience and can use your preferred method of communication.
+In case there are technical issues with your video call, you will also be provided with a dial-in number so you can call-in by phone. We are happy to work with your individual needs to ensure you have a good interviewing experience and can use your preferred method of communication.
 
 ### Accommodations
 
-We want to interview you at your best, and we’re more than happy to provide reasonable accommodations to support that! Let us know if there are accommodations that we can provide that will help you show your best self.
+We want to interview you at your best. Let us know if you require  any accommodations. Some examples:
 
-Some examples:
-
-- Giving you extra time to answer questions
+- Allowing you extra time to answer questions
 - Sharing questions in written form as well as verbally
 - Bringing an emotional support or service animal to your interview
 - Using a medium other than video chat
@@ -85,35 +82,13 @@ Some examples:
 
 ## Security and Onboarding
 
-If TTS identifies you as a strong candidate after we complete the interviews, a TTS recruiter will reach out to you with next steps. The hiring process continues in partnership with GSA’s (our parent agency) Human Resources team. They’re responsible for extending tentative and official final offers. The process is as follows:
-
-- A GSA HR specialist will call you with a tentative offer. “Tentative” means the offer is contingent on a security clearance. This offer will include salary for your consideration.
-  - **Please note:** This is only a tentative offer. At this point you should not give notice or resign from your current employer. You should delay these steps until you receive the final offer with a confirmed start date from HR.
-- Once you have accepted the tentative offer, you will receive an email from the HR onboarding system. You will need to login and accept your tentative offer.
-- Once you accept your tentative offer, you will complete a series of forms and receive a USAccess email requesting you to schedule a time to provide your fingerprints for your security clearance and complete an electronic questionnaire for investigation processing (e-QIP).
-- Once your e-QIP has been initially cleared, you will receive an interim security clearance, and a GSA HR specialist will call you with a final offer.
-- At this stage, GSA HR and the TTS Talent team will work with you to identify and set a start date.
+If you are identified as a strong candidate after the interviews, the hiring process continues in partnership with GSA’s (our parent agency) Human Resources team. They’re responsible for extending tentative and official final offers. The process is as follows:
+1. A GSA HR specialist will contact you with a tentative offer. “Tentative” means the offer is contingent on a security clearance. This offer will include salary for your consideration. At this point, you should not give notice or resign from your current employer. You should delay these steps until you receive the final offer with a confirmed start date from HR.
+2. You will receive an email from the HR onboarding system. You must login to the system and accept your tentative offer.
+3. You must complete some required forms and will receive an email from USAccess with instructions on how to schedule a fingerprinting appointment for your security clearance.
+4. Once your paperwork has cleared, you will receive an interim security clearance, and a GSA HR specialist will call you with a final offer.
+5. At this stage, GSA HR and the TTS Talent team will work with you to identify and set a start date.
 
 ### Security Clearance Documents
 
-All government positions require some level of background check. Most roles at TTS require a public trust position clearance, which is more thorough than most private-sector background checks but not as intensive as a higher government security clearance. The clearance process adds some time and forms to the hiring process, but the GSA Human Resources team will guide you through it.
-
-## More about how we hire
-
-### TTS is an Equal Opportunity Employer
-
-We’re building a team that reflects our country. We don’t discriminate based on race, color, culture, religion, sex, gender identity or expression, national origin, political affiliation, sexual orientation, marital status, disability, neurodiversity, genetic information, age, socio-economics, membership in an employee organization, retaliation, parental status, military service, or other non-merit factors.
-
-### Hiring Authorities
-
-There are three primary types of [hiring authorities](https://www.usajobs.gov/Help/working-in-government/service/) used by TTS: Direct Hire Authority, Competitive Service, and Excepted Service. The application and hiring process will vary slightly based on the type of role for which you are applying.
-
-**Direct Hire Authority:** DHA is a special appointing authority and we use this authority to fill the majority of roles at TTS. Applications for these roles are completed on [USAJOBS.gov](https://usajobs.gov). DHA positions can be either term-limited or full-time career positions. See [About the Direct Hire Authority]({{ site.baseurl }}/about-the-dha/) for more details.
-
-**Competitive Service:** Applicants for all competitive service roles must complete the application process at USAJOBS.gov. Individuals go through a competitive hiring process before being selected and appointed. This hiring process may consist of a written test, an evaluation of the individual’s education and experience, or an evaluation of other attributes necessary for successful performance in the position to be filled. Competitive Service roles can be either term-limited or full-time career opportunities.
-
-**Excepted Service:** These roles are “not to exceed” (NTE) positions, which means they are two-year terms and can be extended once for a total of four years of service. These roles are not always posted on USAJOBS.gov. Instead, candidates can apply via our online application.
-
-### Eligibility
-
-All United States citizens and nationals (residents of American Samoa and Swains Islands) are eligible to apply.
+All government positions require background checks. Most roles at TTS require a public trust position clearance, which may be more thorough than most private-sector background checks. GSA HR will guide you through the process.
