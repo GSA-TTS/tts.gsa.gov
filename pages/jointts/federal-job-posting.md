@@ -67,7 +67,7 @@ This is the highest possible GS grade you can be promoted to in this position. T
 
 ### Salary Range
 
-This illustrates the base pay range for this position. The actual salary will be the base pay plus a locality pay determined by where you live. You can learn more about pay and the GS scale in the [Compensation and Benefits section](https://join.tts.gsa.gov/compensation-and-benefits/).
+This illustrates the base pay range for this position. The actual salary will be the base pay plus a locality pay determined by where you live. You can learn more about pay and the GS scale in the <a href="{{ '/join/compensation-and-benefits' | url }}" class="usa-link">Compensation and Benefits section</a>.
 
 ### Location
 
