@@ -38,7 +38,7 @@ Thank you for your interest in a position with TTS! Below you will find some of 
 ## Hiring and Application FAQ
 
 ### Can I set up a call with a TTS recruiter to learn more about working at TTS?
-- Although we cannot set up 1:1 calls with prospective candidates, we do host monthly information sessions that include plenty of time to answer questions. You can find a list of our upcoming sessions on the [JoinTTS homepage](https://join.tts.gsa.gov/). 
+- Although we cannot set up 1:1 calls with prospective candidates, we do host monthly information sessions that include plenty of time to answer questions. You can find a list of our upcoming sessions on the <a href="{{ '/join' | url }}" class="usa-link">Join TTS</a>.
 - You can also find info on [Working at TTS](https://join.tts.gsa.gov/working-at-tts/) and a [description of our offices](https://join.tts.gsa.gov/tts-offices/).
 
 ### Where can I find your open positions?   
