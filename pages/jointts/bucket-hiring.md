@@ -18,6 +18,8 @@ sidenav:
     href: /join/about-the-dha/
   - text: Rolling hiring
     href: /join/rolling-hiring/
+  - text: Frequenty Asked Questions
+    href: /join/faq/
 
 subnav:
   - text: How the DHA works
@@ -35,14 +37,14 @@ DHA positions do **not** have a Time in Grade[^1] requirement. Anyone can qualif
 We are using the DHA authority to do ‘bucket hiring,’ which will allow us to publicly advertise one generalized opportunity that multiple teams within TTS can use to fill specific needs. 
 
 We will use bucket hiring for supervisors and the following 4 position categories: 
-* Engineering, 
-* Product management (PM), 
-* Design/customer experience (CX), and 
-* Account management. 
+- Engineering, 
+- Product management (PM), 
+- Design/customer experience (CX), and 
+- Account management. 
 
 We are hiring at the GS15 level for first-line supervisors[^2], and the GS 14 and GS 15 levels for engineering and product management, to allow for career progression planning and career path growth. Final decision on GS level will be based on resume review.
 
-There will be one interview process where candidates will have the opportunity to be considered for many roles and will be matched with the right TTS program based on their skills, experience, and interests. 
+There will be one interview process where candidates will have the opportunity to be considered for many roles and will be matched with the right TTS program based on their skills, experience, and interests.
 
 ## How the DHA works
 ### Is this similar to a Merit Promotion?

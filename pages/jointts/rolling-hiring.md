@@ -16,6 +16,8 @@ sidenav:
     href: /join/about-the-dha/
   - text: Rolling hiring
     href: /join/rolling-hiring/
+  - text: Frequenty Asked Questions
+    href: /join/faq/
 
 subnav:
   - text: What to expect after submitting your resume
@@ -34,6 +36,8 @@ subnav:
     href: "#more-about-working-at-tts"
 ---
 
+{{ sidenav }}
+
 We’re excited to be moving forward with your interviews! Below is more information to help you understand the interview and hiring process, along with additional resources covering our benefits and organization.
 
 ## What to expect after submitting your resume
@@ -42,13 +46,14 @@ We’re excited to be moving forward with your interviews! Below is more informa
 - For those who are reviewed and there appears to be a potential match, we’ll move on to the “Interview process and timeline” section below
 
 ## Interview process and timeline
-
-The interview process is up to 3 rounds and is as follows. The total process will be up to 3 hours in duration (spread across multiple dates). This process can take place over several weeks.
-
-1. *Phone Screen Interview (60 minutes)* — Phone Interview with a member of the interviewing team to discuss your background *Note: For Bilingual roles there will be a language proficiency assessment*
-2. *Technical Interview (60 minutes)* - This is a behavioral style interview which will deeper dive into your technical expertise
-3. *Core Values Interview (60 minutes)* - This is a behavioral style interview to evaluate alignment with [TTS core values](https://handbook.tts.gsa.gov/about-us/tts-history/) of inclusion, integrity, and impact
-4. A final call with the proposed destination team and candidate may occur at the end of the interview process. It is an open ended conversation and a chance for the candidate and proposed destination team to get to know each other to see if there is mutual interest and skillset fit
+The interview process is up to 4 rounds and is as follows. The total process will be up to 4+ hours in duration (spread across multiple dates). This process can take place over several weeks.
+1. *Phone Screen Interview (60 minutes)* — Phone Interview with a member of the interviewing team to discuss your background
+ *Note: For Spanish/English Bilingual roles the phone screen and interviews will be partly in Spanish
+2. For Bilingual roles, there will be a written assessment in Spanish (Candidates will skip this step for non-bilingual opportunities)
+3. *Technical Interview (60 minutes)* - This is a behavioral style interview which will deeper dive into your technical expertise. For Service Design, Product Design, or UX Design interviews, part of this interview will include going over a work sample provided by the candidate, and will also discuss the candidate's approach. Note: For Bilingual roles, there will be a written assessment in place of the work sample (see step 2 above)
+4. *Collboration Interview (60 minutes)* - This is a behavioral style interview which will deeper dive into a candidate's experience with teamwork and collaboration
+5. *Core Values Interview (60 minutes)* - This is a behavioral style interview to evaluate alignment with [TTS core values](https://handbook.tts.gsa.gov/about-us/tts-history/) of inclusion, integrity, and impact
+6. A final call with the proposed destination team and candidate may occur at the end of the interview process. It is an open ended conversation and a chance for the candidate and proposed destination team to get to know each other to see if there is mutual interest and skillset fit
 
 We typically use Google Meet for our video interviews — if you are not comfortable or familiar with using Google Meet let your recruiter know and they will be happy to set up a test chat with you prior to your interviews! If you have specific scheduling accommodation needs (such as closed captioning requirements, time of day availability, etc.) please let us know.
 
@@ -78,7 +83,7 @@ Understanding the relationship between GS grade level, location, and compensatio
 
 Each GS grade level contains a series of 10 steps. New employees are usually hired at Step 1 of a GS grade. However, in special circumstances, agencies may authorize a higher step rate for a newly-appointed federal employee based on a [special need of the agency or superior qualifications of the prospective employee](https://www.opm.gov/policy-data-oversight/pay-leave/pay-administration/fact-sheets/superior-qualifications-and-special-needs-pay-setting-authority/).
 
-This job posting includes roles at the GS13, GS14, and GS15 level. Your approved GS level will depend on qualification from an HR specialist if you are selected at the end of the interview process.
+Hiring needs throughout the year may include roles at the GS13, GS14, and GS15 level. Your approved GS level will depend on qualification from an HR specialist if you are selected at the end of the interview process.
 
 If you have questions or concerns about the salary for this role, please let your recruiter know so you can have a more in-depth conversation.
 
@@ -94,8 +99,6 @@ The [TTS Handbook](https://handbook.18f.gov/) includes:
 - [Benefits](https://handbook.18f.gov/benefits/)
 - [Leave](https://handbook.18f.gov/benefits/#leave)
 - [Professional development and training processes](https://handbook.18f.gov/attending-conferences/)
-<!-- this doesn't exist any more - [Telework and virtual worker policy](https://handbook.18f.gov/telework/) -->
-
 
 Note: If you are coming over from another agency where you received award leave, unfortunately it will not carry over to GSA. Sick leave and annual leave do transfer, however.
 
