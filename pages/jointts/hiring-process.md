@@ -48,11 +48,11 @@ A list of upcoming information sessions can be found on the [JoinTTS homepage]({
 
 ## Application
 
-Applications are collected during the period specified in the [Basic Information section](https://join.tts.gsa.gov/federal-job-posting/#basic-information/) of the job posting, generally about a week or until an application cap is reached. After the period has closed, all applications are reviewed and evaluated  at the same time.
+Applications are collected during the period specified in the <a href="{{ '/join/federal-job-posting/#basic-information/' | url }}" class="usa-link">Basic Information section</a> of the job posting, generally about a week or until an application cap is reached. After the period has closed, all applications are reviewed and evaluated  at the same time.
 
 TTS does not use automated screening tools. Your application will be evaluated by a HR Specialist or a panel of subject matter experts. 
 
-When you apply for a role at TTS, you are required to submit a [government-style resume](https://join.tts.gsa.gov/resume/). Be explicit in your resume and include all relevant work experiences and details. Do not assume the reader has expert knowledge or context of your job history. Because applications are reviewed by real people, the application review process typically takes several weeks, depending on the number of applications received.
+When you apply for a role at TTS, you are required to submit a <a href="{{ '/join/resume' | url }}" class="usa-link">overnment-style resume</a>. Be explicit in your resume and include all relevant work experiences and details. Do not assume the reader has expert knowledge or context of your job history. Because applications are reviewed by real people, the application review process typically takes several weeks, depending on the number of applications received.
 
 ## Interviews
 

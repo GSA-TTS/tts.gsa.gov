@@ -104,7 +104,7 @@ Note: If you are coming over from another agency where you received award leave,
 
 ## More about working at TTS
 
-The Technology Transformation Service (TTS) exists under the domain of the General Services Administration (GSA). TTS is home to the following offices: 18F, Centers of Excellence, Office of Acquisition, Office of Solutions, and Presidential Innovation Fellows. You can read more info about each office on our [Join page](https://join.tts.gsa.gov/tts-offices/).
+The Technology Transformation Service (TTS) exists under the domain of the General Services Administration (GSA). TTS is home to the following offices: 18F, Centers of Excellence, Office of Acquisition, Office of Solutions, and Presidential Innovation Fellows. You can read more info about [each office](https://handbook.tts.gsa.gov/#tts-offices).
 
 You can also read more about each of these groups at their TTS Handbook Pages:
 - [Acquisition](https://handbook.18f.gov/acqstack/) 
