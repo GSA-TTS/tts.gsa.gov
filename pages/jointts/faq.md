@@ -136,7 +136,7 @@ Thank you for your interest in a position with TTS! Below you will find some of 
 - If you would like to compare health plans in advance, you can view [available plans](https://www.opm.gov/healthcare-insurance/healthcare/plan-information/compare-plans/) at any time. There are many different options and plans available, so you may find it helpful to compare plans prior to your start date.
 
 ### How do I sign up for health benefits?
-- Once you are officially onboard, you will be able to sign up for health benefits via [HR Links](https://hrlinks.gsa.gov/). You will automatically be granted access to this system approximately *one week* after your start date. 
+- Once you are officially onboard, you will be able to sign up for health benefits via [HR Links](https://hrlinks.gsa.gov/) (*Please note*: This ink is only assessible by employees.). You will automatically be granted access to this system approximately *one week* after your start date. 
 - Once you have access to HR Links, you can sign up for benefits. You have until the 2nd Friday after you start to sign up if you want them to become effective at the start of your second pay period (the soonest possible).
 - As a new hire, you do have a full 60 days to sign-up for benefits. Once it passes 60 days, then you will need to wait until Open Season (mid-November through mid-December) to change, update, or enroll.
 - Please note, you will receive additional information regarding all benefits that GSA employees are eligible for during your New Employee Orientation (NEO) session on your first day.
