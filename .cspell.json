@@ -48,6 +48,7 @@
     "Grype",
     "dependencies",
     "hotfixes",
-    "Nygard"
+    "Nygard",
+    "HSPD"
   ]
 }

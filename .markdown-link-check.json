@@ -5,7 +5,13 @@
   "projectBaseUrl": "https://github.com/GSA-TTS/tts-website/",
   "ignorePatterns": [
     {
-      "pattern": "^https?://github.com/"
+      "pattern": "^https?://github.com/",
+    },
+    {
+      pattern: "^http://localhost/"
+    },
+    {
+      pattern: "\{\{[^]*\|[[:space:]]*url[["space:]]* \}]}"]
     }
   ]
 }
