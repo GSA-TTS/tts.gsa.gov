@@ -1,6 +1,7 @@
 ---
 title: Get job alerts
 layout: layouts/page
+permalink: join/newsletter/
 ---
 <section class="usa-section">
   <div class="grid-container">
