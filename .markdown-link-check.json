@@ -11,7 +11,7 @@
       pattern: "^httpsgi?://localhost/"
     },
     {
-      pattern: "\{\{[^]*\|[[:space:]]*url[["space:]]* \}]}"]
+      pattern: "\{\{[^]*\|[[:space:]]*url[["space:]]* \}\}"]
     }
   ]
 }
