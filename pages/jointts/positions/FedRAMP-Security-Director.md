@@ -1,4 +1,8 @@
 ---
+layout: layouts/jointts/job-updated
+permalink: /join/{{ title | slugify }}.html
+state: open
+
 ################################################################################
 #                                                                              #
 # INSTRUCTIONS: TTS JOB TEMPLATE                                               #
@@ -210,12 +214,14 @@ says {% include job/status_alert.html %}
 🔻🔻🔻🔻🔻
 {% endcomment --------------------------------------------------------------- %}
 
-{% include job/status_alert.html %}
+{% comment %}{% include job/status_alert.html %}{% endcomment %}
 
 ## Basic information
 
 Open to U.S. citizens or nationals (residents of American Samoa and Swains
-Island). Subject to background check. {% include job/full_info_on_usajobs.html %}
+Island). Subject to background check. 
+
+{% comment %}{% include job/full_info_on_usajobs.html %}{% endcomment %}
 
 **Supervisory status:** Supervisory
 
@@ -260,7 +266,7 @@ To use the autoomatic salary ranges, leave the lines as-is.
 
 🔻🔻🔻🔻🔻
 {% endcomment --------------------------------------------------------------- %}
-{% include job/salary_range.html min="" max="" %}
+{%comment %}{% include job/salary_range.html min="" max="" %}{% endcomment %}
 
 Your salary, including base and locality, will be determined upon selection,
 dependent on your actual duty location. Please note the maximum salary available
@@ -269,7 +275,7 @@ visit [OPM's Salaries & Wages page](https://www.opm.gov/policy-data-oversight/pa
 or for a salary calculator
 [OPM's 2024 General Schedule (GS) Salary Calculator](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/2024/general-schedule-gs-salary-calculator/). You can find more
 information in our
-[compensation and benefits section]({% link pages/compensation-and-benefits.md %}).
+[compensation and benefits section]({{ '/join/compensation-and-benefits.md' | url }}).
 
 {% comment %}🔻🔻🔻🔻🔻{% endcomment %}
 **Travel requirement:**
@@ -285,11 +291,11 @@ appointment type for this job. If you need to use different text, delete that
 line and write your custom text in its place.
 🔻🔻🔻🔻🔻
 {% endcomment --------------------------------------------------------------- %}
-{% include job/appointment_type.html %}
+{% comment %}{% include job/appointment_type.html %}{% endcomment %}
 
 Learn more about the benefits of working at
 [GSA](https://www.gsa.gov/portal/category/26702) and
-[TTS]({% link pages/compensation-and-benefits.md %}).
+[TTS]({{ '/join/compensation-and-benefits.md' | url }}).
 
 ## Role summary
 
@@ -317,7 +323,7 @@ line below that says {% include job/key_objectives.html %} and add your custom
 content in its place.
 {% endcomment --------------------------------------------------------------- %}
 
-{% include job/key_objectives.html %}
+{% comment %}{% include job/key_objectives.html %}{% endcomment %}
 
 ## Qualifications
 
@@ -346,5 +352,6 @@ lower GS-grade (or equivalent). Specialized experience for this role is defined 
 
 ## How to Apply
 
-{% include job/apply_button.html %} Choose Cybersecurity for this role. This position will open on USAJobs on Wednesday, August 28. 
+{% comment %}{% include job/apply_button.html %}{% endcomment %}
+Choose Cybersecurity for this role. This position will open on USAJobs on Wednesday, August 28. 
 

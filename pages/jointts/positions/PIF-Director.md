@@ -1,4 +1,8 @@
 ---
+layout: layouts/jointts/job-updated
+permalink: /join/{{ title | slugify }}.html
+state: upcoming
+
 ################################################################################
 #                                                                              #
 # INSTRUCTIONS: TTS JOB TEMPLATE                                               #
@@ -212,7 +216,8 @@ says {% include job/status_alert.html %}
 🔻🔻🔻🔻🔻
 {% endcomment --------------------------------------------------------------- %}
 
-{% include job/status_alert.html %} Please choose the following role to be alerted about this opportunity: **Executive Management**
+{% comment %}{% include job/status_alert.html %}{% comment %}
+Please choose the following role to be alerted about this opportunity: **Executive Management**
 
 ## Basic information
 
@@ -262,7 +267,8 @@ To use the autoomatic salary ranges, leave the lines as-is.
 
 🔻🔻🔻🔻🔻
 {% endcomment --------------------------------------------------------------- %}
-{% include job/salary_range.html min="$162,964" max="$191,900" %}
+
+{%comment %}{% include job/salary_range.html min="$162,964" max="$191,900" %}{% comment %}
 
 Your salary, including base and locality, will be determined upon selection,
 dependent on your actual duty location. Please note the maximum salary available
@@ -271,7 +277,7 @@ visit [OPM's Salaries & Wages page](https://www.opm.gov/policy-data-oversight/pa
 or for a salary calculator
 [OPM's 2024 General Schedule (GS) Salary Calculator](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/2024/general-schedule-gs-salary-calculator/). You can find more
 information in our
-[compensation and benefits section]({% link pages/compensation-and-benefits.md %}).
+[compensation and benefits section]({{ '/join/compensation-and-benefits.md' | url }}).
 
 {% comment %}🔻🔻🔻🔻🔻{% endcomment %}
 **Travel requirement:**
@@ -287,11 +293,12 @@ appointment type for this job. If you need to use different text, delete that
 line and write your custom text in its place.
 🔻🔻🔻🔻🔻
 {% endcomment --------------------------------------------------------------- %}
-{% include job/appointment_type.html %}
+
+{% comment %}{% include job/appointment_type.html %}{% endcomment %}
 
 Learn more about the benefits of working at
 [GSA](https://www.gsa.gov/portal/category/26702) and
-[TTS]({% link pages/compensation-and-benefits.md %}).
+[TTS]({{ '/join/compensation-and-benefits.md' | url }}).
 
 ## Role summary
 
@@ -311,7 +318,7 @@ line below that says {% include job/key_objectives.html %} and add your custom
 content in its place.
 {% endcomment --------------------------------------------------------------- %}
 
-{% include job/key_objectives.html %}
+{% comment %}{% include job/key_objectives.html %}{% comment %}
 
 ## Qualifications
 
@@ -337,11 +344,7 @@ lower GS-grade (or equivalent). Specialized experience is:
 - Supervising, managing or leading multiple direct reports within an organization and navigating ambiguous, uncertain, or sensitive personnel matters
 - Serving as the voice of an organization/brand, including public speaking engagements 
 
-
-
-
-
-
 ## How to Apply
 
-{% include job/apply_button.html %} This position will open for applications on Tuesday, August 27. 
+{% comment %}{% include job/apply_button.html %}{% endcomment %}
+This position will open for applications on Tuesday, August 27. 
