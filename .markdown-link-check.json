@@ -1,20 +1,20 @@
 {
   "retryOn429": true,
   "retryCount": 5,
-  "aliveStatusCodes": [200, 203, 401, 403],
+  "aliveStatusCodes": [200, 203, 301, 302, 400, 401, 403],
   "projectBaseUrl": "https://github.com/GSA-TTS/tts-website/",
   "ignorePatterns": [
     {
-      "pattern": "^https?://github.com/"
+      "pattern": "^https?://github.com"
     },
     {
-      "pattern": "^https?://localhost/"
+      "pattern": "^https?://localhost"
     },
     {
       "pattern": "\\{"
     },
     {
-      "pattern": "https?://hrlinks.gsa.gov/"
+      "pattern": "https?://hrlinks.gsa.gov"
     }
   ]
 }
