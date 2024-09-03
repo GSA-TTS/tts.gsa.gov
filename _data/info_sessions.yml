@@ -1,0 +1,41 @@
+################################################################################
+# How to use this file
+#
+# NOTE: This file is ONLY for GENERAL info sessions. Info sessions for a
+#       specific job are located in that job's page.
+#
+# For each general info session, you will need to create an entry that looks
+# like this:
+#
+# - link: https://www.eventbrite.com/...
+#   date: 2023-02-02
+#   time: 12:30-1:30pm ET (9:30-10:30am PT)
+#
+# But without the hash at the front. (The dash on the first line should be the
+# very first thing on the first line. The other two lines should be indented
+# two spaces. This is so the computer will understand how the lines relate to
+# each other. You're basically programming!)
+#
+# The date must be in YYYY-MM-DD format. This is used by the site builder to
+# figure out what order to show the sessions in, and will be turned into a
+# human-friendly block of text that includes the day of the week and month name.
+#
+# The time does not have to be in a particular format to work. However, the
+# format that Team Talent has adopted is
+#
+#   start-end ET (start-end PT)
+#
+# Info sessions in the past will not be displayed. It is still a good idea to
+# delete them from this file, though, to keep it tidy, but there's no rush.
+################################################################################
+  
+# delete them from this file, though, to keep it tidy, but there's no rush.
+################################################################################
+
+- link: https://gsa.zoomgov.com/meeting/register/vJIsc-qhqj0jHl6nkKV8IA7TyuNDlxlHeV8
+  date: 2024-09-19
+  time: 12:30-1:30pm ET (9:30-10:30am PT)
+
+- link: https://gsa.zoomgov.com/meeting/register/vJIsc-qhqj0jHl6nkKV8IA7TyuNDlxlHeV8
+  date: 2024-10-17
+  time: 12:30-1:30pm ET (9:30-10:30am PT)
