@@ -49,6 +49,8 @@
     "dependencies",
     "hotfixes",
     "Nygard",
-    "HSPD"
+    "HSPD",
+    "signup",
+    "USGSATTS"
   ]
 }
