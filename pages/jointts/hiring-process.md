@@ -144,6 +144,7 @@ If you are identified as a strong candidate after the interviews, the
 hiring process continues in partnership with GSA’s (our parent agency)
 Human Resources team. They’re responsible for extending tentative and
 official final offers. The process is as follows:
+
 1. A GSA HR specialist will contact you with a tentative offer.
   "Tentative" means the offer is contingent on a security clearance.
   This offer will include salary for your consideration. At this point,
