@@ -20,7 +20,7 @@ layout: layouts/default
           The Technology Transformation Services (TTS) mission is to design and deliver a digital government with and for the American public. TTS is part of the General Services Administration (GSA).
           </p>
           <p>
-          We are accepting applications for the positions listed below. We also post upcoming positions. <a href="{{ site.baseurl }}/newsletter">Join our mailing list</a> to be notified when we post new jobs.
+          We are accepting applications for the positions listed below. We also post upcoming positions. <a href="{{ '/join/newsletter/' | url }}" class="usa-link">Join our mailing list</a> to be notified when we post new jobs.
           </p>
         </div>
       </div>
@@ -50,7 +50,7 @@ layout: layouts/default
          </ul>
 
         <h2> Upcoming positions</h2>
-        {% comment %} <p>No upcoming positions at this time. Check out our open roles or <a href="{{ site.baseurl }}/newsletter">sign up for job alerts</a> for future upcoming roles!</p> {% endcomment %}
+        {% comment %} <p>No upcoming positions at this time. Check out our open roles or <a href="{{ '/join/newsletter/' | url }}" class="usa-link">sign up for job alerts</a> for future upcoming roles!</p> {% endcomment %}
          <ul>
         {% for pg in sortedpages %}
         {% if pg.state == 'upcoming' %}

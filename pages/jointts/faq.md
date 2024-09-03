@@ -42,10 +42,10 @@ Thank you for your interest in a position with TTS! Below you will find some of 
 - You can also find info on [Working at TTS](https://handbook.tts.gsa.gov/about-us/tts-history/) and a [description of our offices](https://handbook.tts.gsa.gov/#tts-offices).
 
 ### Where can I find your open positions?   
-- All of our open and upcoming roles are posted on the <a href="{{ '/join' | url }}" class="usa-link">Join TTS</a>. You can also [subscribe to our mailing list](https://join.tts.gsa.gov/newsletter/) if you would like to be notified when new roles open.
+- All of our open and upcoming roles are posted on the <a href="{{ '/join' | url }}" class="usa-link">Join TTS</a>. You can also <a href="{{ '/join/newsletter/' | url }}" class="usa-link">subscribe to our mailing list</a> if you would like to be notified when new roles open.
 
 ### What if I don’t see any roles posted that I’m eligible for?
-- We recommend you sign up for [job alerts](https://join.tts.gsa.gov/newsletter/) to stay in the loop for any future openings that may align with your experience and interests. 
+- We recommend you sign up for <a href="{{ '/join/newsletter/' | url }}" class="usa-link">Job alerts</a> to stay in the loop for any future openings that may align with your experience and interests. 
 
 ### Do you have any entry-level opportunities?
 - Due to the nature of the work we do, many of our opportunities require previous work experience. We do, however, have an early‑career technology opportunity for recent graduates with the U.S. Digital Corps (USDC) Program. You can learn more about this 2-year fellowship opportunity on the [USDC website](https://digitalcorps.gsa.gov/opportunity/). 
