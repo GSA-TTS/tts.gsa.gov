@@ -2,8 +2,8 @@
 title: Frequently Asked Questions
 layout: layouts/page
 permalink: join/faq/
-description: 
-summary: 
+description:
+summary:
 
 sidenav:
   - text: Hiring process
@@ -275,10 +275,10 @@ You can find a list of our upcoming sessions on the
 - No. If you are a new federal employee, you will not have health insurance
   benefits upon starting at TTS.
 - The quickest you can receive benefits is two weeks from your start date
-  (the second Sunday after you start at TTS).  
+  (the second Sunday after you start at TTS).
 - You will sign up for health benefits using GSA’s HR Links portal.
-  You will receive information and step-by-step guides during onboarding. 
-- If you would like to compare health plans in advance, you can view 
+  You will receive information and step-by-step guides during onboarding.
+- If you would like to compare health plans in advance, you can view
   [available plans](https://www.opm.gov/healthcare-insurance/healthcare/plan-information/compare-plans/)
   at any time. There are many different options and plans available, so
   you may find it helpful to compare plans prior to your start date.
@@ -289,7 +289,7 @@ You can find a list of our upcoming sessions on the
   benefits via
   [HR Links](https://hrlinks.gsa.gov/)
   You need to be on VPN. You will automatically be granted access to this
-  system approximately *one week* after your start date. 
+  system approximately *one week* after your start date.
 - Once you have access to HR Links, you can sign up for benefits. You have
   until the 2nd Friday after you start to sign up if you want them to
   become effective at the start of your second pay period (the soonest
@@ -326,10 +326,10 @@ You can find a list of our upcoming sessions on the
 
 - Yes. However, annual leave and sick leave balances can take a significant
   amount of time to transfer to GSA, depending on the speed of your previous
-  payroll provider. 
+  payroll provider.
 - To expedite the process, please send your most recent earnings and leave
   statement (this needs to be your last ELS, which you probably won’t
-  receive until after you’ve already started with TTS) to 
+  receive until after you’ve already started with TTS) to
   [kc-payroll.finance@gsa.gov](mailto:kc-payroll.finance@gsa.gov)
   . This will enable GSA’s payroll department to transfer your leave quicker.
 
