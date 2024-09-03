@@ -2,8 +2,8 @@
 title: Frequently Asked Questions
 layout: layouts/page
 permalink: join/faq/
-description: 
-summary: 
+description: Discover essential information on health benefits, enrollment procedures, and resources for new GSA employees to navigate their options effectively.
+summary: Discover essential information on health benefits, enrollment procedures, and resources for new GSA employees to navigate their options effectively.
 
 sidenav:
   - text: Hiring process
