@@ -2,6 +2,7 @@
 layout: layouts/jointts/job-updated
 permalink: /join/{{ title | slugify }}.html
 state: open
+tags: jobs
 
 ################################################################################
 #                                                                              #
@@ -74,7 +75,7 @@ state: open
 # a full name rather than an acronym. For example:
 #   - U.S. Digital Corps, not USDC
 #   - Presidential Innovation Fellows, not PIF
-# The exception to this is a TTS role, for which you can just say TTS. 
+# The exception to this is a TTS role, for which you can just say TTS.
 #
 # NOTE: Be sure to leave the "title: " part at the beginning! These line
 # headings are how the site builder knows what the data is. For the rest of the
@@ -215,7 +216,7 @@ Alerts for this role may be associated with the following keywords/categories: *
 ## Basic information
 
 Open to U.S. citizens or nationals (residents of American Samoa and Swains
-Island). Subject to background check. 
+Island). Subject to background check.
 
 {% comment %}{% include job/full_info_on_usajobs.html %}{% endcomment %}
 
