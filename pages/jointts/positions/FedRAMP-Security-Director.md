@@ -1,7 +1,6 @@
 ---
 layout: layouts/jointts/job-updated
 permalink: /join/{{ title | slugify }}.html
-state: open
 
 ################################################################################
 #                                                                              #
@@ -74,7 +73,7 @@ state: open
 # a full name rather than an acronym. For example:
 #   - U.S. Digital Corps, not USDC
 #   - Presidential Innovation Fellows, not PIF
-# The exception to this is a TTS role, for which you can just say TTS. 
+# The exception to this is a TTS role, for which you can just say TTS.
 #
 # NOTE: Be sure to leave the "title: " part at the beginning! These line
 # headings are how the site builder knows what the data is. For the rest of the
@@ -164,7 +163,7 @@ key objectives:
     - Protect and build on the FedRAMP brand as a meaningful and rigorous security and risk management process, whose authorizations can consistently be presumed adequate for use by any federal agency.
     - Manage a team that is responsible for applying these security policies, and help adjudicate novel or challenging situations as they arise within the authorization and continuous monitoring process.
   - You will keep FedRAMP operating as a security-first program, and incentivize effective security processes in cloud providers.
-    - Design and operate the FedRAMP authorization and continuous monitoring processes to consistently incentivize positive security outcomes. 
+    - Design and operate the FedRAMP authorization and continuous monitoring processes to consistently incentivize positive security outcomes.
     - Orient FedRAMP around agile delivery principles, by enabling cloud providers to operate using secure agile software development practices and rapid delivery of security updates and features.
     - Identify and track security-oriented program metrics in order to effectively calibrate FedRAMP’s security priorities, and to ensure FedRAMP remains accountable to its trust and security mission.
     - Grow FedRAMP’s ability to conduct, internally and through external partners, expert security reviews and “red team” style assessments of novel technical implementations and other security-critical components.
@@ -219,7 +218,7 @@ says {% include job/status_alert.html %}
 ## Basic information
 
 Open to U.S. citizens or nationals (residents of American Samoa and Swains
-Island). Subject to background check. 
+Island). Subject to background check.
 
 {% comment %}{% include job/full_info_on_usajobs.html %}{% endcomment %}
 
@@ -300,15 +299,15 @@ Learn more about the benefits of working at
 ## Role summary
 
 {% comment %}🔻🔻🔻🔻🔻{% endcomment %}
-The Security Director leads FedRAMP’s information security program, establishing FedRAMP’s overall security priorities and vision. The role oversees the development and implementation of FedRAMP information security policies, creating a consistent, defensible and security-first approach across FedRAMP’s authorization process and its ongoing oversight over authorized cloud services. The Security Director, through their own work and their management of a team of federal employees and contractors, is responsible for maintaining and growing the trust placed in the FedRAMP marketplace.  
+The Security Director leads FedRAMP’s information security program, establishing FedRAMP’s overall security priorities and vision. The role oversees the development and implementation of FedRAMP information security policies, creating a consistent, defensible and security-first approach across FedRAMP’s authorization process and its ongoing oversight over authorized cloud services. The Security Director, through their own work and their management of a team of federal employees and contractors, is responsible for maintaining and growing the trust placed in the FedRAMP marketplace.
 
 The position serves as one of the primary leaders working with the White House, FedRAMP’s board, the Cybersecurity and Infrastructure Security Agency (CISA), and the National Institute of Standards and Technology (NIST) to position the program as a leader in cloud security.
 
-FedRAMP was created in 2011 to accelerate the government’s use of commercial cloud services, by creating a standardized process for security review and authorization and making security information easily available to agencies. More generally, FedRAMP operates as a bridge between the public and private sectors, to help companies that offer innovative services to ensure these services meet core federal security expectations and to bring the best of the private sector into government. 
+FedRAMP was created in 2011 to accelerate the government’s use of commercial cloud services, by creating a standardized process for security review and authorization and making security information easily available to agencies. More generally, FedRAMP operates as a bridge between the public and private sectors, to help companies that offer innovative services to ensure these services meet core federal security expectations and to bring the best of the private sector into government.
 
 Since its creation, the cloud sector has changed substantially and agency needs have focused more on software-as-a-service products. In recent years, Congress and the White House have updated the program’s mission and authorities, with a mandate to scale and modernize the program, while continuing to ensure the high bar of security that the public expects around government data and operations.
 
-To meet these goals, the Security Director will work across the government to strengthen federal cybersecurity policies and team up with federal partners on strategic initiatives that help agencies and cloud providers to stay focused on defending against contemporary threats. 
+To meet these goals, the Security Director will work across the government to strengthen federal cybersecurity policies and team up with federal partners on strategic initiatives that help agencies and cloud providers to stay focused on defending against contemporary threats.
 
 The position is a dynamic role that will drive FedRAMP’s overall approach to security and risk management, and will represent FedRAMP in government-wide security policy and priority deliberations. The role will require senior expertise in information security and related technology concepts, a strong ability to communicate and collaborate with different agencies and stakeholder groups, and strategic leadership to position the program as a cybersecurity leader and maintain trust in the FedRAMP brand.
 
@@ -341,17 +340,13 @@ For each job on your resume, provide:
 **SPECIALIZED EXPERIENCE REQUIREMENTS:**
 
 To qualify, you must have one (1) year of specialized experience at the next
-lower GS-grade (or equivalent). Specialized experience for this role is defined as and must include: 
+lower GS-grade (or equivalent). Specialized experience for this role is defined as and must include:
 
 - Developing and deploying cloud-based infrastructure and software, and implementing information security design and architecture principles in commercial or government cloud environments.
 - Implementing software engineering and secure software architecture and operational practices, such as continuous integration and delivery.
 - Applying information security compliance frameworks, such as FedRAMP (The Federal Risk and Authorization Management Program), FISMA (Federal Information Security Modernization Act), SOC2 (System and Organization Controls 2), PCI (Payment Card Industry), ISO 27001 (International Organization for Standardization), or other relevant frameworks used in the public or private sector.
 
-
-
-
 ## How to Apply
 
 {% comment %}{% include job/apply_button.html %}{% endcomment %}
-Choose Cybersecurity for this role. This position will open on USAJobs on Wednesday, August 28. 
-
+Choose Cybersecurity for this role. This position will open on USAJobs on Wednesday, August 28.
