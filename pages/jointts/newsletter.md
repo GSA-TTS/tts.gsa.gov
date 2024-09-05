@@ -3,7 +3,7 @@ title: Get job alerts
 layout: layouts/page
 permalink: join/newsletter/
 ---
-<section class="usa-section">
+<section class="usa-section newsletter">
   <div class="grid-container">
     <div class="grid-row">
       <div class="desktop:grid-col-12 usa-prose">
