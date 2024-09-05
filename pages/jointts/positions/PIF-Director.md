@@ -222,8 +222,7 @@ Please choose the following role to be alerted about this opportunity: **Executi
 
 ## Basic information
 
-Open to U.S. citizens or nationals (residents of American Samoa and Swains
-Island). Subject to background check. {% include job/full_info_on_usajobs.html %}
+Open to U.S. citizens or nationals (residents of American Samoa and Swains Island). Subject to background check. {% include job/full_info_on_usajobs.html %}
 
 **Supervisory status:** Supervisory
 
@@ -245,40 +244,27 @@ on USAJOBS here.
 
 {% comment ------------------------------------------------------------------ %}
 💰💰💰
-The salary range for the job can be populated automatically based on the GS
-grade this posting is advertised at, based on the lowest and highest locality
-rates.
+The salary range for the job can be populated automatically based on the GS grade this posting is advertised at, based on the lowest and highest locality rates.
 
 💰💰💰
-If this position is not remote and has geographic restrictions, you can instead
-specify the salary min and max. For example, if the position is advertised at
-GS-15 and the position location is only Washington, DC, then (using 2023 pay
+If this position is not remote and has geographic restrictions, you can instead specify the salary min and max. For example, if the position is advertised at GS-15 and the position location is only Washington, DC, then (using 2023 pay
 rates):
 
-Minimum:
-  GS-15 Step 1: $172,075
-Maximum:
-  GS-15 Step 10: $183,500
+Minimum:  GS-15 Step 1: $172,075
+Maximum:  GS-15 Step 10: $183,500
 
 So you would update the line below to look like this:
 
     {% include job/salary_range.html min="$172,075" max="$183,500" %}
 
-To use the autoomatic salary ranges, leave the lines as-is.
+To use the automatic salary ranges, leave the lines as-is.
 
 🔻🔻🔻🔻🔻
 {% endcomment --------------------------------------------------------------- %}
 
 {%comment %}{% include job/salary_range.html min="$162,964" max="$191,900" %}{% comment %}
 
-Your salary, including base and locality, will be determined upon selection,
-dependent on your actual duty location. Please note the maximum salary available
-for the GS pay system is $191,900. For specific details on locality pay, please
-visit [OPM's Salaries & Wages page](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/)
-or for a salary calculator
-[OPM's 2024 General Schedule (GS) Salary Calculator](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/2024/general-schedule-gs-salary-calculator/). You can find more
-information in our
-[compensation and benefits section]({{ '/join/compensation-and-benefits.md' | url }}).
+Your salary, including base and locality, will be determined upon selection, dependent on your actual duty location. Please note the maximum salary available for the GS pay system is $191,900. For specific details on locality pay, please visit [OPM's Salaries & Wages page](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/) or for a salary calculator [OPM's 2024 General Schedule (GS) Salary Calculator](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/2024/general-schedule-gs-salary-calculator/). You can find more information in our [compensation and benefits section]({{ '/join/compensation-and-benefits.md' | url }}).
 
 {% comment %}🔻🔻🔻🔻🔻{% endcomment %}
 **Travel requirement:**
@@ -297,9 +283,7 @@ line and write your custom text in its place.
 
 {% comment %}{% include job/appointment_type.html %}{% endcomment %}
 
-Learn more about the benefits of working at
-[GSA](https://www.gsa.gov/portal/category/26702) and
-[TTS]({{ '/join/compensation-and-benefits.md' | url }}).
+Learn more about the benefits of working at [GSA](https://www.gsa.gov/portal/category/26702) and [TTS]({{ '/join/compensation-and-benefits.md' | url }}).
 
 ## Role summary
 
