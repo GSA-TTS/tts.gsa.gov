@@ -1,7 +1,6 @@
 ---
 layout: layouts/jointts/job-updated
 permalink: /join/{{ title | slugify }}.html
-state: upcoming
 tags: jobs
 
 ################################################################################

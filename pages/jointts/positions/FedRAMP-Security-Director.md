@@ -1,7 +1,6 @@
 ---
 layout: layouts/jointts/job-updated
 permalink: /join/{{ title | slugify }}.html
-state: open
 tags: jobs
 
 ################################################################################
@@ -301,7 +300,7 @@ Learn more about the benefits of working at
 ## Role summary
 
 {% comment %}🔻🔻🔻🔻🔻{% endcomment %}
-The Security Director leads FedRAMP’s information security program, establishing FedRAMP’s overall security priorities and vision. The role oversees the development and implementation of FedRAMP information security policies, creating a consistent, defensible and security-first approach across FedRAMP’s authorization process and its ongoing oversight over authorized cloud services. The Security Director, through their own work and their management of a team of federal employees and contractors, is responsible for maintaining and growing the trust placed in the FedRAMP marketplace.  
+The Security Director leads FedRAMP’s information security program, establishing FedRAMP’s overall security priorities and vision. The role oversees the development and implementation of FedRAMP information security policies, creating a consistent, defensible and security-first approach across FedRAMP’s authorization process and its ongoing oversight over authorized cloud services. The Security Director, through their own work and their management of a team of federal employees and contractors, is responsible for maintaining and growing the trust placed in the FedRAMP marketplace.
 
 The position serves as one of the primary leaders working with the White House, FedRAMP’s board, the Cybersecurity and Infrastructure Security Agency (CISA), and the National Institute of Standards and Technology (NIST) to position the program as a leader in cloud security.
 
@@ -347,9 +346,6 @@ lower GS-grade (or equivalent). Specialized experience for this role is defined 
 - Developing and deploying cloud-based infrastructure and software, and implementing information security design and architecture principles in commercial or government cloud environments.
 - Implementing software engineering and secure software architecture and operational practices, such as continuous integration and delivery.
 - Applying information security compliance frameworks, such as FedRAMP (The Federal Risk and Authorization Management Program), FISMA (Federal Information Security Modernization Act), SOC2 (System and Organization Controls 2), PCI (Payment Card Industry), ISO 27001 (International Organization for Standardization), or other relevant frameworks used in the public or private sector.
-
-
-
 
 ## How to Apply
 
