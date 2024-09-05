@@ -34,8 +34,7 @@ services:
     logo: _img/People_PIF.png
     logo_alt_text: PIF
     category: people
-    description:
-      Fellowship program that unites top technologists with federal leaders to tackle some of our nation's biggest challenges.
+    description: Fellowship program that unites top technologists with federal leaders to tackle some of our nation's biggest challenges.
   - name: DAP
     link: https://digital.gov/guides/dap/
     link_alt_text: link to DAP website
@@ -238,8 +237,7 @@ services:
     link_alt_text: link to CPARS homepage
     logo: _img/cpars.png
     logo_alt_text: CPARS
-    description:
-      CPARS contains data on federal contractors, including both past performance information and integrity records.
+    description: CPARS contains data on federal contractors, including both past performance information and integrity records.
     category: platforms
   - name: FAPIIS
     link: https://www.fapiis.gov/fapiis/#/home
