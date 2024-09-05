@@ -248,10 +248,8 @@ The salary range for the job can be populated automatically based on the GS grad
 💰💰💰
 If this position is not remote and has geographic restrictions, you can instead specify the salary min and max. For example, if the position is advertised at GS-15 and the position location is only Washington, DC, then (using 2023 pay rates):
 
-Minimum:
-  GS-15 Step 1: $172,075
-Maximum:
-  GS-15 Step 10: $183,500
+Minimum:  GS-15 Step 1: $172,075
+Maximum:  GS-15 Step 10: $183,500
 
 So you would update the line below to look like this:
 
