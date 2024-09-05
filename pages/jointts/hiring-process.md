@@ -90,12 +90,11 @@ the number of applications received.
 
 ## Interviews
 
-Candidates who are invited to interview will receive more information on what to expect in the interview process. Please feel free to ask any questions at this time. 
+Candidates who are invited to interview will receive more information on what to expect in the interview process. Please feel free to ask any questions at this time.
 
 Our interview process will vary, and your recruiter will keep you informed. During the interview process, we’ll ask you about competencies that align with the role as well as TTS Core Values which is intended to evaluate candidate alignment with the organization’s values.
 
 We share copies of the interview guide, which includes the questions and interviewer names, in advance of your interviews. Sharing questions in advance provides you a more informed interview experience so you can better understand what we’re looking for.
-
 
 ### Interview Format
 
