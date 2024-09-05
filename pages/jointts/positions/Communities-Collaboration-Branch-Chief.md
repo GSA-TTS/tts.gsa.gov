@@ -211,7 +211,7 @@ says {% include job/status_alert.html %}
 
 {% comment %}{% include job/status_alert.html %}{% endcomment %}
 
-Alerts for this role may be associated with the following keywords/categories: **Product Management**; **Strategy/Consulting**; **Customer Experience (CX)**; and **Marketing**
+Get <a href="{{ '/join/newsletter/' | url }}" class="usa-link">notified</a> when this position is open for applications. Alerts for this role may be associated with the following keywords/categories: **Product Management**; **Strategy/Consulting**; **Customer Experience (CX)**; and **Marketing**
 
 ## Basic information
 
