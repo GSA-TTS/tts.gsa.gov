@@ -29,20 +29,41 @@ layout: layouts/default
       <div class="desktop:grid-col-8 usa-prose">
         <h2 id="open-positions">Open positions</h2>
         <p>We are hiring and will be sharing upcoming jobs and open positions as they are available.</p>
+
         <ul>
-          <li>
-            <a href="{{ '/join/tts-fellowships-office-presidential-innovation-fellows-director.html' | url }}">TTS Fellowships Office: Presidential Innovation Fellows Director</a> (Open until 9/3/2024 at 11:59pm Eastern or until all selections have been made)
-          </li> 
-         </ul>
+          {% for pg in collections.jobs %}
+            {% if pg.data.state == 'open' %}
+              {% unless pg.data.path contains 'template' %}
+                {% unless pg.data.path contains 'performance-profiles' %}
+
+                  <li>
+                    <a href='{{ pg.url | url }}'>{{ pg.data.title }}</a>
+                   (Open {% if pg.data.weeks_open %}for {% if pg.data.weeks < 52 %}{{ pg.data.weeks }}{% else %} one year or until all selections have been made{% endif %},{% endif %} through {{ pg.data.closes | date: '%A, %B %e, %Y at %l:%M%P %Z' }} Eastern)
+                  </li>
+                {% endunless %}
+              {% endunless %}
+            {% endif %}
+          {%- endfor -%}
+        </ul>
 
         <h2> Upcoming positions</h2>
+
         {% comment %} <p>No upcoming positions at this time. Check out our open roles or <a href="{{ '/join/newsletter/' | url }}" class="usa-link">sign up for job alerts</a> for future upcoming roles!</p> {% endcomment %}
-         <ul>
-          <li>
-            <a href="{{ '/join/tts-platforms-and-services-communities-and-collaboration-branch-chief.html' | url}}">TTS Platforms &amp; Services: Communities &amp; Collaboration Branch Chief</a>
-          </li>
+        <ul>
+          {% for pg in collections.jobs %}
+            {% if pg.data.state == 'upcoming' %}
+              {% unless pg.data.path contains 'template' %}
+                {% unless pg.data.path contains 'performance-profiles' %}
+                  <li>
+                    <a href="{{ pg.url | url}}">{{ pg.data.title }}</a>
+                  </li>
+                {% endunless %}
+              {% endunless %}
+            {% endif %}
+          {% endfor %}
         </ul>
-        <h2> Other GSA Opportunities </h2>
+
+       <h2> Other GSA Opportunities </h2>
        <p> Check out <a href="https://www.gsa.gov/about-us/find-apply-for-and-land-a-job-at-gsa">careers at GSA</a> and more <a href="https://www.usajobs.gov/Search/Results?j=2210&d=GS&p=1">Information Technology opportunities.</a></p>
         <h2>Application process</h2>
         <p>

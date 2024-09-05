@@ -2,6 +2,7 @@
 layout: layouts/jointts/job-updated
 permalink: /join/{{ title | slugify }}.html
 state: upcoming
+tags: jobs
 
 ################################################################################
 #                                                                              #
@@ -74,7 +75,7 @@ state: upcoming
 # a full name rather than an acronym. For example:
 #   - U.S. Digital Corps, not USDC
 #   - Presidential Innovation Fellows, not PIF
-# The exception to this is a TTS role, for which you can just say TTS. 
+# The exception to this is a TTS role, for which you can just say TTS.
 #
 # NOTE: Be sure to leave the "title: " part at the beginning! These line
 # headings are how the site builder knows what the data is. For the rest of the
@@ -166,13 +167,13 @@ key objectives:
     - Develop innovative approaches and alternative solutions to sticky, strategic problems involving policy, process, and technology within the federal government.
     - Establish individual performance goals and outline staffing needs.
     - Lead and oversee program needs and resources.
-  - Build and maintain relationships with other federal agencies, top agency management, municipal and state agencies, and subject matter experts spanning public and private sectors. 
+  - Build and maintain relationships with other federal agencies, top agency management, municipal and state agencies, and subject matter experts spanning public and private sectors.
     - Regularly collaborate with federal agencies on projects, policies, and initiatives.
     - Navigate complex bureaucracy, build coalitions, and lead stakeholders with disparate views through change.
     - Brief GSA officials, top agency management, and other senior government officials regarding PIF strategies and initiatives with government-wide impact.
-    - Build program reputation through consistent voice and vision; Attend and speak at conferences and events. Contribute to articles, newsletters, and other 
+    - Build program reputation through consistent voice and vision; Attend and speak at conferences and events. Contribute to articles, newsletters, and other
       publications to highlight PIF initiatives.
-    - Provide thought leadership and expertise on innovative approaches to government modernization to federal agency officials, public and private industry 
+    - Provide thought leadership and expertise on innovative approaches to government modernization to federal agency officials, public and private industry
       executives, Congressional representatives, and public media outlets.
   - Lead, manage, and mentor PIF personnel with a focus on sustaining and developing a healthy workplace culture.
     - Encourage teamwork and a collaborative approach to problem solving.
@@ -181,7 +182,7 @@ key objectives:
     - Drive recruitment efforts for PIF cohorts and further diversity by ensuring equal opportunity in recruitment, selection, training, awards, and assignments.
     - Demonstrate a personal commitment to diversity, equity, and inclusion (DE&I) objectives and efforts.
     - Strengthen and develop commitment from PIF staff and organizational leadership for culture-driven efforts.
-      
+
 # If there are any info sessions associated with this position, list them here.
 # Each info session needs three pieces of information: the link, the date, and
 # the time. See the placeholder below for an example of how to add an info
@@ -336,15 +337,15 @@ For each job on your resume, provide:
 **SPECIALIZED EXPERIENCE REQUIREMENTS:**
 
 To qualify, you must have one (1) year of specialized experience at the next
-lower GS-grade (or equivalent). Specialized experience is: 
+lower GS-grade (or equivalent). Specialized experience is:
 
 - Developing and maintaining relationships with stakeholders within a digital services or digital consulting organization
 - Developing, executing, and measuring short- and long-term program success strategies including developing budget forecasting, leading cost recoverability efforts, and overseeing a budget lifecycle for a program with profit and loss statements
 - Setting vision and leading recruitment efforts for an IT modernization and innovation program within a highly-regulated environment that engages multiple enterprise-level customers as well as external industry partners
 - Supervising, managing or leading multiple direct reports within an organization and navigating ambiguous, uncertain, or sensitive personnel matters
-- Serving as the voice of an organization/brand, including public speaking engagements 
+- Serving as the voice of an organization/brand, including public speaking engagements
 
 ## How to Apply
 
 {% comment %}{% include job/apply_button.html %}{% endcomment %}
-This position will open for applications on Tuesday, August 27. 
+This position will open for applications on Tuesday, August 27.
