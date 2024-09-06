@@ -90,28 +90,11 @@ the number of applications received.
 
 ## Interviews
 
-The interview process typically takes about a month, with approximately
-3-4 interview rounds. The first round is a 30-60 minute preliminary screen
-by phone or video. During this call, plan to talk briefly about your skills,
-experience, and professional passion. We’ll share more information about the
-role, the team, and the opportunity.
+Candidates who are invited to interview will receive more information on what to expect in the interview process. Please feel free to ask any questions at this time.
 
-If you advance past the preliminary screen, we’ll invite you to a series
-of formal video interviews with various TTS team members. During these longer
-conversations, we will discuss your past work experience and how your
-skills and knowledge apply to TTS. Some positions may require a technical
-interview such as a coding exercise or leadership and collaboration interview
-before moving forward to the final round of interviews.
+Our interview process will vary, and your recruiter will keep you informed. During the interview process, we’ll ask you about competencies that align with the role as well as TTS Core Values which is intended to evaluate candidate alignment with the organization’s values.
 
-The final round of interviews always include a TTS Core Values interview
-which is intended to evaluate candidate alignment with the
-[organization’s values](https://handbook.tts.gsa.gov/about-us/tts-history/#our-values)
-.
-
-We share copies of the interview guide, which includes the questions and
-interviewer names, in advance of your interviews. Sharing questions in
-advance provides you a more informed interview experience so you can better
-understand what we’re looking for.
+We share copies of the interview guide, which includes the questions and interviewer names, in advance of your interviews. Sharing questions in advance provides you a more informed interview experience so you can better understand what we’re looking for.
 
 ### Interview Format
 

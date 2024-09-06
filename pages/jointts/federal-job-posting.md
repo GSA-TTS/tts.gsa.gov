@@ -20,24 +20,6 @@ sidenav:
     href: /join/rolling-hiring/
   - text: Frequently Asked Questions
     href: /join/faq/
-
-subnav:
-  - text: Job Title
-    href: "#job-title"
-  - text: Role Summary
-    href: "#role-summary"
-  - text: Basic Information
-    href: "#basic-information"
-  - text: Job Summary
-    href: "#job-summary"
-  - text: Key Requirements and Employment Requirements
-    href: "#key-requirements-and-employment-requirements"
-  - text: Duties
-    href: "#duties"
-  - text: Qualifications
-    href: "#qualifications"
-  - text: How To Apply
-    href: "#how-to-apply"
 ---
 
 Understanding every section of a federal job posting can help you prepare
@@ -50,7 +32,7 @@ application.
   <div class="usa-alert-body">
     <h2 class="usa-alert-heading">Looking for information to customize your resume?</h2>
     <p class="usa-alert-text" markdown="1">
-      Be sure to carefully read the [Role Summary](#role-summary) and [Qualifications](#qualifications) sections.
+    Be sure to carefully read the <a href="{{ '/join/federal-job-posting/#role-summary' | url }}" class="usa-link">Role Summary</a> and <a href="{{ '/join/federal-job-posting/#qualifications' | url }}" class="usa-link">Qualifications</a> sections.
     </p>
   </div>
 </aside>

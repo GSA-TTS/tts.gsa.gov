@@ -69,6 +69,31 @@ module.exports = function (config) {
     });
   }
 
+  config.addLiquidShortcode("getStateFromDates", getStateFromDates);
+
+  function getStateFromDates(opens, closes) {
+    let now_string = DateTime.now()
+      .setZone("America/New_York")
+      .toFormat("yyyy-MM-dd");
+    let opens_string = DateTime.fromJSDate(opens)
+      .setZone("America/New_York")
+      .toFormat("yyyy-MM-dd");
+    let closes_string = DateTime.fromJSDate(closes)
+      .setZone("America/New_York")
+      .toFormat("yyyy-MM-dd");
+
+    if (opens_string == "" || opens_string >= now_string) {
+      return "upcoming";
+    } else if (closes_string <= now_string) {
+      return "closed";
+    } else if (opens_string <= now_string || closes_string >= now_string) {
+      return "open";
+    } else {
+      return "unknown";
+    }
+  }
+
+  config.addFilter("stateFromDates", getStateFromDates);
   config.addFilter("sortByProp", sortByProp);
 
   config.addFilter("readableDate", (dateObj) => {
@@ -120,7 +145,7 @@ module.exports = function (config) {
   // Customize Markdown library and settings:
   let markdownLibrary = markdownIt({
     html: true,
-    breaks: true,
+    breaks: false,
     linkify: true,
   }).use(markdownItAnchor, {
     permalink: markdownItAnchor.permalink.ariaHidden({

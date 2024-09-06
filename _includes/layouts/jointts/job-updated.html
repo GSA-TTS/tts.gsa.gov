@@ -2,9 +2,10 @@
 layout: layouts/default
 ---
 
-<h1> {{ title }}</h1>
+<h1>{{ title }}</h1>
 
 {%- assign sortedinfosessions = collections.info_sessions | where: "role", page.role_name | sort: 'date' -%}
+
 <div class="grid-container">
   <div class="grid-row grid-gap">
     <div class="desktop:grid-col-12 margin-top-4">
@@ -17,31 +18,32 @@ layout: layouts/default
     <div class="grid-row grid-gap">
       <div class="desktop:grid-col-12 usa-prose margin-bottom-3">
         <h1>{{ title }}</h1>
-      {% if state == "closed" %}
-      <div class="usa-alert usa-alert-warning">
-        <div class="usa-alert-body">
-          <h3 class="usa-alert-heading">This job posting has closed.</h3>
-          <p class="usa-alert-text">Please see
-          <a href="{{ '/join' | url }}">our other open positions</a>.</p>
+        {% capture state %}{% getStateFromDates opens closes %}{% endcapture %}
+
+        {% if state == 'closed' %}
+          <div class="usa-alert usa-alert-warning">
+            <div class="usa-alert-body">
+              <h3 class="usa-alert-heading">This job posting has closed.</h3>
+              <p class="usa-alert-text">Please see
+              <a href="{{ '/join' | url }}">our other open positions</a>.</p>
+            </div>
+          </div>
+        {% elsif state == 'upcoming' %}
+          <div class="usa-alert usa-alert-info">
+            <div class="usa-alert-body">
+              <h3 class="usa-alert-heading">Upcoming role</h3>
+              <p class="usa-alert-text">This role is not yet open for application.  It will open on {{ opens | date: "%A, %B %d, %Y" }}.{%comment %}{% include upcoming_statement.html %}{% endcomment %}</p>
+            </div>
+          </div>
+        {% elsif state == 'open' %}
+          <div class="usa-alert usa-alert-info">
+            <div class="usa-alert-body">
+            <h3 class="usa-alert-heading">Apply now!</h3>
+            <p class="usa-alert-text">This role is open for applications until {{ closes | date: "%A, %B %d, %Y" }}.</p>
+          </div>
         </div>
-      </div>
-      {% elsif state == 'upcoming' %}
-      <div class="usa-alert usa-alert-info">
-        <div class="usa-alert-body">
-          <h3 class="usa-alert-heading">Upcoming role</h3>
-          <p class="usa-alert-text">This role is not yet open for application. {%comment %}{% include upcoming_statement.html %}{% endcomment %}</p>
-        </div>
-      </div>
-      {% elsif state == 'open' %}
-      <div class="usa-alert usa-alert-info">
-        <div class="usa-alert-body">
-          <h3 class="usa-alert-heading">Apply now!</h3>
-          <p class="usa-alert-text">This role is open for applications until {{ closes }}.</p>
-        </div>
-      </div>
       {% endif %}
       <div class="grid-row grid-gap padding-top-4">
-
         <div class="desktop:grid-col-4 desktop:margin-top-0" style="order:1">
         {% if sortedinfosessions.size > 0 %}
           <div class="usa-summary-box">
