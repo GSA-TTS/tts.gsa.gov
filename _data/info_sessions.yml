@@ -14,7 +14,7 @@
 # But without the hash at the front. (The dash on the first line should be the
 # very first thing on the first line. The other two lines should be indented
 # two spaces. This is so the computer will understand how the lines relate to
-# each other. You're basically programming!)
+# each other. You're basically programming!!)
 #
 # The date must be in YYYY-MM-DD format. This is used by the site builder to
 # figure out what order to show the sessions in, and will be turned into a
