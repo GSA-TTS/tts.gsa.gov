@@ -34,9 +34,7 @@ services:
     logo: _img/People_PIF.png
     logo_alt_text: PIF
     category: people
-    description:
-      A program that pairs top technologists with civil-servants to spend
-      12 months tackling some of our nation’s biggest challenges.
+    description: Fellowship program that unites top technologists with federal leaders to tackle some of our nation's biggest challenges.
   - name: DAP
     link: https://digital.gov/guides/dap/
     link_alt_text: link to DAP website
@@ -53,9 +51,7 @@ services:
     logo: _img/logo-sam.svg
     logo_alt_text: SAM.gov
     category: platforms
-    description: Providing entities the ability to do business with the U.S.
-      government. This includes updating or renewing, checking the status, and
-      searching for entity registration and exclusion records.
+    description: The official U.S. government website for people who make, receive, and manage federal awards. This includes updating or renewing, checking the status, and searching for entity registration and exclusion records.
   - name: MAX.gov (Transitioning from OMB)
     link: https://max.gov
     link_alt_text: link to max.gov homepage
@@ -117,13 +113,6 @@ services:
     category: people
     description: A digital consulting office that partners with agencies to help
       them build or buy digital services.
-  - name: Made in America
-    link: https://madeinamerica.gov
-    link_alt_text: link to Made in America homepage
-    logo: _img/made-in-america.svg
-    logo_alt_text: Made in America
-    category: platforms
-    description: “Made in America” policies are designed to increase reliance on domestic supply chains and ultimately reduce the need to spend taxpayer dollars on foreign-made goods.
   - name: Citizenscience.gov
     link: https://science.gov
     link_alt_text: Citizen science homepage
@@ -236,10 +225,7 @@ services:
     link_alt_text: link to CPARS homepage
     logo: _img/cpars.png
     logo_alt_text: CPARS
-    description:
-      The official U.S. government website for people who make, receive,
-      and manage federal awards. It contains data on federal contractors,
-      including both past performance information and integrity records.
+    description: CPARS contains data on federal contractors, including both past performance information and integrity records.
     category: platforms
   - name: FAPIIS
     link: https://www.fapiis.gov/fapiis/#/home
@@ -250,7 +236,7 @@ services:
       personnel.  FAPIIS records that include things, such as exclusions and
       proceedings information, are used by Contracting Officers as part of the
       decision process prior to making awards.  "
-    category: platforms
+    category: products
   - name: Federal Procurement Data System
     link: https://www.fpds.gov/fpdsng_cms/index.php/en/
     link_alt_text: FPDS homepage
@@ -260,7 +246,7 @@ services:
       available information about all unclassified contract actions exceeding
       the micro-purchase threshold and any modifications to those actions that
       change previously reported data, regardless of dollar value. "
-    category: products
+    category: platforms
   - name: FSRS
     link: https://www.fsrs.gov/
     link_alt_text: link to FSRS homepage
