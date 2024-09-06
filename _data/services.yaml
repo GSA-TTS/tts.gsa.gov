@@ -236,7 +236,7 @@ services:
       personnel.  FAPIIS records that include things, such as exclusions and
       proceedings information, are used by Contracting Officers as part of the
       decision process prior to making awards.  "
-    category: platforms
+    category: products
   - name: Federal Procurement Data System
     link: https://www.fpds.gov/fpdsng_cms/index.php/en/
     link_alt_text: FPDS homepage
