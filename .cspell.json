@@ -51,6 +51,13 @@
     "Nygard",
     "HSPD",
     "signup",
-    "USGSATTS"
+    "USGSATTS",
+    "endcomment",
+    "frontmatter",
+    "roadmaps",
+    "FISMA",
+    "CISA",
+    "INFOSEC",
+    "transformative"
   ]
 }
