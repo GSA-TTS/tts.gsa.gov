@@ -137,10 +137,7 @@ services:
     logo: _img/fedramp-logo.png
     logo_alt_text: FedRamp
     category: products
-    description: Helping agencies avoid spending duplicative funds for
-      security-related costs and saves valuable time by establishing an
-      authorize once, reuse many times IT security program for cloud service
-      offerings.
+    description: Certifying the security of cloud services so that federal agencies can safely adopt and easily use authorized cloud services to meet their missions.
   - name: APIData.gov
     link: https://api.data.gov/
     link_alt_text: link to API data homepage
@@ -178,15 +175,6 @@ services:
     category: products
     description: Providing federal agencies with an easy, secure way to create
       websites and deploy applications to the cloud.
-  - name: Code.gov
-    link: https://code.gov
-    link_alt_text: link to Code.gov homepage
-    logo: _img/code-gov-dark.svg
-    logo_alt_text: Code.gov
-    category: products
-    description:
-      Helping agencies meet the requirements of the Federal Source Code
-      Policy and providing a platform to make federal code publicly available.
   - name: Digital Corps
     link: https://digitalcorps.gsa.gov/
     link_alt_text: link to Digital Corps homepage

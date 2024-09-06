@@ -222,3 +222,12 @@ section.newsletter {
   width: calc(100vw);
   max-width: 1024px;
 }
+
+/* SVG Fixes */
+img.account-balance,
+img.forum,
+img.info-outline,
+img.trending-up {
+  height: 62px;
+  width: 62px;
+}

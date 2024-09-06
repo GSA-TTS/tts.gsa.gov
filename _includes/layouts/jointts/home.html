@@ -32,10 +32,10 @@ layout: layouts/default
 
         <ul>
           {% for pg in collections.jobs %}
-            {% if pg.data.state == 'open' %}
+          {% capture state %}{% getStateFromDates pg.data.opens pg.data.closes %}{% endcapture %}
+            {% if state == "open" %}
               {% unless pg.data.path contains 'template' %}
                 {% unless pg.data.path contains 'performance-profiles' %}
-
                   <li>
                     <a href='{{ pg.url | url }}'>{{ pg.data.title }}</a>
                    (Open {% if pg.data.weeks_open %}for {% if pg.data.weeks < 52 %}{{ pg.data.weeks }}{% else %} one year or until all selections have been made{% endif %},{% endif %} through {{ pg.data.closes | date: '%A, %B %e, %Y at %l:%M%P %Z' }} Eastern)
@@ -43,7 +43,7 @@ layout: layouts/default
                 {% endunless %}
               {% endunless %}
             {% endif %}
-          {%- endfor -%}
+          {% endfor %}
         </ul>
 
         <h2> Upcoming positions</h2>
@@ -51,7 +51,8 @@ layout: layouts/default
         {% comment %} <p>No upcoming positions at this time. Check out our open roles or <a href="{{ '/join/newsletter/' | url }}" class="usa-link">sign up for job alerts</a> for future upcoming roles!</p> {% endcomment %}
         <ul>
           {% for pg in collections.jobs %}
-            {% if pg.data.state == 'upcoming' %}
+          {% capture state %}{% getStateFromDates pg.data.opens pg.data.closes %}{% endcapture %}
+            {% if state == "upcoming" %}
               {% unless pg.data.path contains 'template' %}
                 {% unless pg.data.path contains 'performance-profiles' %}
                   <li>
