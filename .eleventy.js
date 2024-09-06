@@ -47,7 +47,7 @@ module.exports = function (config) {
   });
 
   // Allow yaml to be used in the _data dir
-  config.addDataExtension("yaml", (contents) => yaml.load(contents));
+  config.addDataExtension("yaml, yml", (contents) => yaml.load(contents));
 
   // This is an example of creating an Eleventy collection from
   // a data file, in this case it's _data/services.yml

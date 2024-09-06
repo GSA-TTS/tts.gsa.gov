@@ -7,7 +7,7 @@ layout: layouts/default
 </div>
 
 {%- assign jobs = collections.job -%}
-{%- assign sortedinfosessions = site.data.info_sessions | sort: 'date' -%}
+{%- assign sorted_info_sessions = info_sessions | sort: 'date' -%}
 <section class="usa-section">
   <div class="grid-container">
     <div class="grid-row grid-gap">
@@ -84,8 +84,9 @@ layout: layouts/default
             </h3>
             <div class="usa-summary-box__text">
               <p>We hold periodic info sessions to offer potential candidates an opportunity to learn more about working at TTS, available positions, and our application process. Register for a session below.</p>
+
               <ul>
-                {% for session in sortedinfosessions %}
+                {% for session in sorted_info_sessions %}
                     <li><p><a target="_blank" href="{{ session.link }}" rel="noopener">{{session.role}} Hiring Info Session</a><br />{{session.date | date: "%A, %B %d,"}} at {{ session.time }}</p></li>
                 {% endfor %}
               </ul>
