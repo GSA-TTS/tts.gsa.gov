@@ -4,7 +4,13 @@ layout: layouts/default
 
 <h1>{{ title }}</h1>
 
-{%- assign sortedinfosessions = collections.info_sessions | where: "role", page.role_name | sort: 'date' -%}
+{{ specific_info_sessions | log }}
+
+{% if info_sessions.size > 0 %}
+  {%- assign sorted_info_sessions = info_sessions | sort: 'date' -%}
+{% else %}
+  {%- assign sorted_info_sessions = global_info_sessions | sort: 'data' -%}
+{% endif %}
 
 <div class="grid-container">
   <div class="grid-row grid-gap">
@@ -45,24 +51,24 @@ layout: layouts/default
       {% endif %}
       <div class="grid-row grid-gap padding-top-4">
         <div class="desktop:grid-col-4 desktop:margin-top-0" style="order:1">
-        {% if sortedinfosessions.size > 0 %}
+        {% if sorted_info_sessions.size > 0 %}
           <div class="usa-summary-box">
             <div class="usa-summary-box__body">
               <h3 class="usa-summary-box__heading">
-                Attend an information session
+                Attend an informationmation session
               </h3>
               <div class="usa-summary-box__text" markdown="1">
                 Attend an information session to learn more about these roles, working at TTS, and our application process. Register for a session using the Eventbrite links below.
                 <ul>
-                {% for session in sortedinfosessions %}
+                {% for session in sorted_info_sessions %}
                 <li><a href="{{session.link}}">{{role_name}} Info Session</a>, {{session.date | date: "%A, %B %d,"}} at {{session.time}}</li>
                 {% endfor %}
                 </ul>
               </div>
             </div>
           </div>
-        {% endif %}
-        </div>
+       {% endif %}
+         </div>
 
         <div class="desktop:grid-col-8 usa-prose" markdown="1">
             {{ content }}

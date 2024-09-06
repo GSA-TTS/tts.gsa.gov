@@ -193,7 +193,7 @@ key objectives:
 # The date is used to sort the info sessions on the page so they are shown
 # nearest to furthest. Only info sessions schedule for the future will be shown.
 #🔻🔻🔻🔻🔻
-info sessions:
+info_sessions:
   - link: https://gsa.zoomgov.com/j/1605125183?pwd=TTtKbeOpRaqKFa1Yf8RAXoWu2DWa3Y.1
     date: 2024-08-23
     time: 2:00-3:00pm ET (11:00am -12:00am PT)
@@ -289,7 +289,7 @@ Learn more about the benefits of working at [GSA](https://www.gsa.gov/portal/cat
 {% comment %}🔻🔻🔻🔻🔻{% endcomment %}
 As the [Director of Presidential Innovation Fellows or PIF](https://presidentialinnovationfellows.gov/), you'll be at the forefront of a transformative movement within the federal government. PIF was launched by the White House in 2012, codified into law in 2017 through the [TALENT Act](https://www.congress.gov/bill/115th-congress/house-bill/39), and remains a cornerstone of GSA's Technology Transformation Services. Our fellows, embedded within government agencies as year-long senior advisors, leverage their expertise in fields like AI, data science, design, engineering, product, and systems thinking to co-create stronger public services. You will help to unite and drive the nation's most innovative minds with federal leaders to tackle complex challenges in government.
 
-You will manage and develop the PIF program’s vision, strategic direction, objectives, and goals.  You will establish new opportunities for the PIF program with federal agency partners and in the process expand digital transformation and IT modernization across the federal government by supporting the efforts of senior-level Fellows.  You will also leverage leadership, marketing, and communication skills to establish new, collaborative partnerships with both federal and private industry partners.  This work involves not only advocating for an interactive, human-centered approach to IT modernization, but also running the cost-recoverable organization as a business.  
+You will manage and develop the PIF program’s vision, strategic direction, objectives, and goals.  You will establish new opportunities for the PIF program with federal agency partners and in the process expand digital transformation and IT modernization across the federal government by supporting the efforts of senior-level Fellows.  You will also leverage leadership, marketing, and communication skills to establish new, collaborative partnerships with both federal and private industry partners.  This work involves not only advocating for an interactive, human-centered approach to IT modernization, but also running the cost-recoverable organization as a business.
 
 
 ## Key objectives
