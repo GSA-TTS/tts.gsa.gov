@@ -7,7 +7,7 @@ layout: layouts/default
 </div>
 
 {%- assign jobs = collections.job -%}
-{%- assign sorted_info_sessions = info_sessions | sort: 'date' -%}
+{%- assign sorted_info_sessions = global_info_sessions | sort: 'date' -%}
 <section class="usa-section">
   <div class="grid-container">
     <div class="grid-row grid-gap">

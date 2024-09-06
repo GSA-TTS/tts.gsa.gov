@@ -193,7 +193,7 @@ key objectives:
 # The date is used to sort the info sessions on the page so they are shown
 # nearest to furthest. Only info sessions schedule for the future will be shown.
 #🔻🔻🔻🔻🔻
-specific_info_sessions:
+info_sessions:
   - link: https://gsa.zoomgov.com/j/1605125183?pwd=TTtKbeOpRaqKFa1Yf8RAXoWu2DWa3Y.1
     date: 2024-08-23
     time: 2:00-3:00pm ET (11:00am -12:00am PT)

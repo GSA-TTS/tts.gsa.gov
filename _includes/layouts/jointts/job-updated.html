@@ -6,10 +6,10 @@ layout: layouts/default
 
 {{ specific_info_sessions | log }}
 
-{% if specific_info_sessions.size > 0 %}
-  {%- assign sorted_info_sessions = specific_info_sessions | sort: 'date' -%}
+{% if info_sessions.size > 0 %}
+  {%- assign sorted_info_sessions = info_sessions | sort: 'date' -%}
 {% else %}
-  {%- assign sorted_info_sessions = info_sessions | sort: 'data' -%}
+  {%- assign sorted_info_sessions = global_info_sessions | sort: 'data' -%}
 {% endif %}
 
 <div class="grid-container">
