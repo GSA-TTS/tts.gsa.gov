@@ -90,7 +90,7 @@ footer {
     margin: 0;
     padding: 4.75rem 0;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: capitalize;
   }
 }
 
@@ -230,4 +230,17 @@ img.info-outline,
 img.trending-up {
   height: 62px;
   width: 62px;
+}
+
+/* Info Box */
+.usa-alert-info {
+  padding: 1rem;
+
+  h2 {
+    margin-top: 0;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
 }
