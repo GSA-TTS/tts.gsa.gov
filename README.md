@@ -3,7 +3,7 @@
 This is the code for [tts.gsa.gov](https://tts.gsa.gov/).
 Our tech stack in short is:
 
-- [11ty](https://www.11ty.dev/)
+- [Eleventy (11ty)](https://www.11ty.dev/)
 - [U.S. Web Design System v 3.0 (USWDS)](https://designsystem.digital.gov/)
 
 This site strives to be compliant with requirements set by
