@@ -28,7 +28,7 @@ services:
       tools and spread best practices that work across programs to support a
       simpler, less burdensome experience for low-income individuals and
       families.
-  - name: PIF
+  - name: Presidential Innovation Fellows
     link: https://pif.gov
     link_alt_text: link to pif.gov
     logo: _img/People_PIF.png
@@ -52,14 +52,6 @@ services:
     logo_alt_text: SAM.gov
     category: platforms
     description: The official U.S. government website for people who make, receive, and manage federal awards. This includes updating or renewing, checking the status, and searching for entity registration and exclusion records.
-  - name: MAX.gov (Transitioning from OMB)
-    link: https://max.gov
-    link_alt_text: link to max.gov homepage
-    logo: _img/max-gov.png
-    logo_alt_text: Max.gov
-    category: products
-    description: TTS is working with OMB to develop and implement the next
-      generation of interagency collaboration tools and shared services.
   - name: Digital.gov
     link: https://digital.gov
     link_alt_text: link to Digital.gov homepage
@@ -113,7 +105,7 @@ services:
     category: people
     description: A digital consulting office that partners with agencies to help
       them build or buy digital services.
-  - name: Citizenscience.gov
+  - name: CitizenScience.gov
     link: https://science.gov
     link_alt_text: Citizen science homepage
     logo: _img/Platform_Citizenscience.gov.png
@@ -131,18 +123,18 @@ services:
       Offers a simple, flexible, and convenient way to start collecting
       customer feedback so you can focus on serving customers rather than
       managing surveys.
-  - name: FedRAMP
+  - name: Federal Risk and Authorization Management Program (FedRAMP)
     link: https://www.fedramp.gov/
     link_alt_text: link to FedRAMP homepage
     logo: _img/fedramp-logo.png
     logo_alt_text: FedRamp
     category: products
     description: Certifying the security of cloud services so that federal agencies can safely adopt and easily use authorized cloud services to meet their missions.
-  - name: APIData.gov
+  - name: API.data.gov
     link: https://api.data.gov/
     link_alt_text: link to API data homepage
     logo: _img/data-gov.png
-    logo_alt_text: APIData.gov
+    logo_alt_text: API.data.gov
     category: products
     description:
       Saving money and speeding development of federal APIs by offering a
@@ -175,7 +167,7 @@ services:
     category: products
     description: Providing federal agencies with an easy, secure way to create
       websites and deploy applications to the cloud.
-  - name: Digital Corps
+  - name: U.S. Digital Corps
     link: https://digitalcorps.gsa.gov/
     link_alt_text: link to Digital Corps homepage
     logo: _img/digitalcorps_logo-alt.svg
@@ -187,13 +179,13 @@ services:
   - name: Federal Audit Clearinghouse
     link: https://facweb.census.gov/uploadpdf.aspx
     link_alt_text: link to FAC homepage
-    logo: _img/FAC1.png
+    logo: _img/FAC-logo.png
     logo_alt_text: FAC
     category: platforms
     description:
       Supporting the collection, distribution, and oversight of audits as
       guided by the Single Audit Act.
-  - name: US Web Design System (USWDS)
+  - name: U.S. Web Design System (USWDS)
     link: https://designsystem.digital.gov/
     link_alt_text: link to USWDS homepage
     logo: _img/uswds-lg-on-white.svg
@@ -202,7 +194,7 @@ services:
     description: Providing guidance and code to transform how the government
       delivers a seamless, trustworthy and optimal digital experience to the
       public.
-  - name: eRegulations
+  - name: Regulations.gov
     link: https://www.regulations.gov/
     link_alt_text: link to eRegulations homepage
     logo: _img/Logo_Regulations.gov.png
@@ -212,7 +204,7 @@ services:
       Increasing access to and participation in developing regulations
       and other related documents that impact you and promoting more efficient
       and effective rulemaking through public involvement.
-  - name: eSRS
+  - name: Electronic Subcontracting Reporting System (eSRS)
     link: https://www.esrs.gov/
     link_alt_text: link to eSRS homepage
     logo: _img/esrs.png
@@ -220,23 +212,13 @@ services:
     description: "A web-based reporting tool to collect subcontracting
       accomplishments and share the information with the awarding official. "
     category: platforms
-  - name: CPARS
+  - name: Contractor Performance Assessment Reporting System (CPARS)
     link: https://cpars.gov/
     link_alt_text: link to CPARS homepage
     logo: _img/cpars.png
     logo_alt_text: CPARS
     description: CPARS contains data on federal contractors, including both past performance information and integrity records.
     category: platforms
-  - name: FAPIIS
-    link: https://www.fapiis.gov/fapiis/#/home
-    link_alt_text: link to FAPIIS homepage
-    logo: _img/FAPIIS_logo_grayscale.png
-    logo_alt_text: FAPIIS
-    description: "Entity integrity data and records, entered by government
-      personnel.  FAPIIS records that include things, such as exclusions and
-      proceedings information, are used by Contracting Officers as part of the
-      decision process prior to making awards.  "
-    category: products
   - name: Federal Procurement Data System
     link: https://www.fpds.gov/fpdsng_cms/index.php/en/
     link_alt_text: FPDS homepage
@@ -247,7 +229,7 @@ services:
       the micro-purchase threshold and any modifications to those actions that
       change previously reported data, regardless of dollar value. "
     category: platforms
-  - name: FSRS
+  - name: Federal Subaward Reporting System (FSRS)
     link: https://www.fsrs.gov/
     link_alt_text: link to FSRS homepage
     logo: _img/fsrs.png
@@ -256,3 +238,10 @@ services:
       report subaward and executive compensation data regarding their first-tier
       subawards to meet FFATA reporting requirements. "
     category: platforms
+  - name: Notify.gov
+    link: https://beta.notify.gov/
+    link_alt_text: link to the beta of Notify.gov's homepage
+    logo: _img/uswds-lg-on-white.svg
+    logo_alt_text: Notify.gov
+    category: products
+    description: The Public Benefits Studio is piloting Notify.gov, a text messaging service built by and for government. Benefits program staff can set up custom text messages in as little as 10 minutes — without a technical integration required — and at minimal cost.
