@@ -8,6 +8,7 @@ Our tech stack in short is:
 
 This site strives to be compliant with requirements set by
 [21st Century IDEA Act](https://www.meritalk.com/articles/senate-passes-idea-act/).
+
 The standards require that a website or digital service:
 
 - is accessible to individuals with disabilities;
