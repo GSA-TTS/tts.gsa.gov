@@ -37,8 +37,12 @@ layout: layouts/default
               {% unless pg.data.path contains 'template' %}
                 {% unless pg.data.path contains 'performance-profiles' %}
                   <li>
-                    <a href='{{ pg.url | url }}'>{{ pg.data.title }}</a>
-                   (Open {% if pg.data.weeks_open %}for {% if pg.data.weeks < 52 %}{{ pg.data.weeks }}{% else %} one year or until all selections have been made{% endif %},{% endif %} through {{ pg.data.closes | date: '%A, %B %e, %Y at %l:%M%P %Z' }} Eastern)
+                    {% if pg.data.external_url %}
+                    <a href="{{ pg.data.external_url }}" target="_blank">{{ pg.data.title }}</a>
+                      {% else %}
+                      <a href="{{ pg.url | url }}">{{ pg.data.title }}</a>
+                    {% endif %}
+                   (Open {% if pg.data.weeks_open %}for {% if pg.data.weeks < 52 %}{{ pg.data.weeks }}{% else %} one year or until all selections have been made{% endif %},{% endif %} through {{ pg.data.closes | date: '%A, %B %e, %Y at %l:%M%P' }} EST)
                   </li>
                 {% endunless %}
               {% endunless %}
@@ -59,7 +63,11 @@ layout: layouts/default
                 {% unless pg.data.path contains 'template' %}
                   {% unless pg.data.path contains 'performance-profiles' %}
                     <li>
-                      <a href="{{ pg.url | url }}">{{ pg.data.title }}</a>
+                      {% if pg.data.external_url %}
+                      <a href="{{ pg.data.external_url }}">{{ pg.data.title }}</a>
+                        {% else %}
+                        <a href="{{ pg.url | url }}">{{ pg.data.title }}</a>
+                      {% endif %}
                       {% if pg.data.info_sessions and pg.data.info_sessions.size > 0 %}
                         <aside class="usa-alert usa-alert-info">
                           <div class="usa-alert-body">

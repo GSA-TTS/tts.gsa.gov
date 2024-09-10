@@ -84,6 +84,11 @@ tags: jobs
 title: "TTS Fellowships Office: Presidential Innovation Fellows"
 role: "Presidential Innovation Fellows"
 
+# If the role is listed on a different site and we just want to link to it,
+# put that link here
+# 🔻🔻🔻🔻🔻
+external_url: https://presidentialinnovationfellows.gov/apply/
+
 # Put the opening and closing dates of your posting here, if you have them. The
 # values you set here will be turned into user-friendly text in other parts of
 # this post. Setting it here means you won't have to copy it over and over.
@@ -95,7 +100,7 @@ role: "Presidential Innovation Fellows"
 # as a date.
 #🔻🔻🔻🔻🔻
 opens: 2024-09-10
-closes: 2024-09-30 00:00:00 -0500
+closes: 2024-09-30 23:59:59 -4:00
 # These dates are also used to determine whether a position is upcoming, open,
 # or closed. Here's how we decide:
 #
