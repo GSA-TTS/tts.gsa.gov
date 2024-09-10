@@ -6,7 +6,7 @@ on:
   # Triggers mega-linter when a pull_request event's activity type is opened, synchronize, or reopened by default.
   pull_request:
     branches:
-      - main
+      - staging
   workflow_dispatch:
 
 permissions:
