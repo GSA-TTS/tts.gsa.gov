@@ -236,7 +236,12 @@ img.trending-up {
 .usa-alert-info {
   padding: 1rem;
 
-  h2 {
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .usa-alert-body > p {
     margin-top: 0;
   }
 
@@ -247,9 +252,10 @@ img.trending-up {
 
 /* Info Session */
 li.info-session {
+  margin-bottom: 18px;
+
   a,
-  p,
-  ol {
-    margin-bottom: 0;
+  p {
+    margin: 0;
   }
 }

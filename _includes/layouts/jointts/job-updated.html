@@ -2,8 +2,6 @@
 layout: layouts/default
 ---
 
-<h1>{{ title }}</h1>
-
 {{ specific_info_sessions | log }}
 
 {% if info_sessions.size > 0 %}
@@ -55,13 +53,13 @@ layout: layouts/default
           <div class="usa-summary-box">
             <div class="usa-summary-box__body">
               <h3 class="usa-summary-box__heading">
-                Attend an informationmation session
+                Attend an information session
               </h3>
               <div class="usa-summary-box__text" markdown="1">
                 Attend an information session to learn more about these roles, working at TTS, and our application process. Register for a session using the Eventbrite links below.
                 <ul>
                 {% for session in sorted_info_sessions %}
-                <li><a href="{{session.link}}">{{role_name}} Info Session</a>, {{session.date | date: "%A, %B %d,"}} at {{session.time}}</li>
+                <li class="info-session"><a href="{{session.link}}">{{session.headline}}</a><p>{{session.time}}</p></li>
                 {% endfor %}
                 </ul>
               </div>
