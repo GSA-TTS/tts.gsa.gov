@@ -37,8 +37,12 @@ layout: layouts/default
               {% unless pg.data.path contains 'template' %}
                 {% unless pg.data.path contains 'performance-profiles' %}
                   <li>
-                    <a href='{{ pg.url | url }}'>{{ pg.data.title }}</a>
-                   (Open {% if pg.data.weeks_open %}for {% if pg.data.weeks < 52 %}{{ pg.data.weeks }}{% else %} one year or until all selections have been made{% endif %},{% endif %} through {{ pg.data.closes | date: '%A, %B %e, %Y at %l:%M%P %Z' }} Eastern)
+                    {% if pg.data.external_url %}
+                    <a href="{{ pg.data.external_url }}" target="_blank">{{ pg.data.title }}</a>
+                      {% else %}
+                      <a href="{{ pg.url | url }}">{{ pg.data.title }}</a>
+                    {% endif %}
+                   (Open {% if pg.data.weeks_open %}for {% if pg.data.weeks < 52 %}{{ pg.data.weeks }}{% else %} one year or until all selections have been made{% endif %},{% endif %} through {{ pg.data.closes | date: '%A, %B %e, %Y at %l:%M%P' }} EST)
                   </li>
                 {% endunless %}
               {% endunless %}
@@ -46,24 +50,44 @@ layout: layouts/default
           {% endfor %}
         </ul>
 
-        <h2> Upcoming positions</h2>
+        <h2>Upcoming positions</h2>
 
-        {% comment %} <p>No upcoming positions at this time. Check out our open roles or <a href="{{ '/join/newsletter/' | url }}" class="usa-link">sign up for job alerts</a> for future upcoming roles!</p> {% endcomment %}
-        <ul>
-          {% for pg in collections.jobs %}
-          {% capture state %}{% getStateFromDates pg.data.opens pg.data.closes %}{% endcapture %}
-            {% if state == "upcoming" %}
-              {% unless pg.data.path contains 'template' %}
-                {% unless pg.data.path contains 'performance-profiles' %}
-                  <li>
-                    <a href="{{ pg.url | url}}">{{ pg.data.title }}</a>
-                  </li>
+          {% comment %} 
+          <p>No upcoming positions at this time. Check out our open roles or <a href="{{ '/join/newsletter/' | url }}" class="usa-link">sign up for job alerts</a> for future upcoming roles!</p> 
+          {% endcomment %}
+
+          <ul>
+            {% for pg in collections.jobs %}
+              {% capture state %}{% getStateFromDates pg.data.opens pg.data.closes %}{% endcapture %}
+              {% if state == "upcoming" %}
+                {% unless pg.data.path contains 'template' %}
+                  {% unless pg.data.path contains 'performance-profiles' %}
+                    <li>
+                      {% if pg.data.external_url %}
+                      <a href="{{ pg.data.external_url }}">{{ pg.data.title }}</a>
+                        {% else %}
+                        <a href="{{ pg.url | url }}">{{ pg.data.title }}</a>
+                      {% endif %}
+                      {% if pg.data.info_sessions and pg.data.info_sessions.size > 0 %}
+                        <aside class="usa-alert usa-alert-info">
+                          <div class="usa-alert-body">
+                            <p>Upcoming info sessions for {{ pg.data.title }}</p>
+                            <ul>
+                              {% for session in pg.data.info_sessions %}
+                                <li>
+                                  <p><a href="{{session.link}}" target="_blank">{{ session.headline }}</a> at {{session.time}}</p>
+                                </li>
+                              {% endfor %}
+                            </ul>
+                          </div>
+                        </aside>
+                      {% endif %}
+                    </li>
+                  {% endunless %}
                 {% endunless %}
-              {% endunless %}
-            {% endif %}
-          {% endfor %}
-        </ul>
-
+              {% endif %}
+            {% endfor %}
+          </ul>
        <h2> Other GSA Opportunities </h2>
        <p> Check out <a href="https://www.gsa.gov/about-us/find-apply-for-and-land-a-job-at-gsa">careers at GSA</a> and more <a href="https://www.usajobs.gov/Search/Results?j=2210&d=GS&p=1">Information Technology opportunities.</a></p>
         <h2>Application process</h2>
@@ -80,14 +104,17 @@ layout: layouts/default
         <div class="usa-summary-box">
           <div class="usa-summary-box__body">
             <h3 class="usa-summary-box__heading">
-              Register for a hiring information session
+              Find out more
             </h3>
             <div class="usa-summary-box__text">
-              <p>We hold periodic info sessions to offer potential candidates an opportunity to learn more about working at TTS, available positions, and our application process. Register for a session below.</p>
-
+              <p>Join us at one of our monthly online information sessions. Come learn more about working at TTS, available positions, and our application process. Register for a session below.</p>
               <ul>
                 {% for session in sorted_info_sessions %}
-                    <li><p><a target="_blank" href="{{ session.link }}" rel="noopener">{{session.role}} Hiring Info Session</a><br />{{session.date | date: "%A, %B %d,"}} at {{ session.time }}</p></li>
+                    <li class="info-session">
+                      <a target="_blank" href="{{ session.link }}" rel="noopener">{{session.date}}</a>
+                      <p>{{ session.time-et }}</p>
+                      <p>({{ session.time-pt }})</p>
+                    </li>
                 {% endfor %}
               </ul>
             </div>
@@ -97,18 +124,3 @@ layout: layouts/default
     </div>
   </div>
   </section>
-  <section class="usa-section usa-section--dark margin-top-6">
-    <div class="grid-container">
-      <div class="grid-row grid-gap">
-        <div class="desktop:grid-col-8 usa-prose">
-          <h3>About Technology Transformation Services</h3>
-          <p>
-            Technology Transformation Services (TTS) applies modern methodologies and technologies to improve the public’s experience with government. We help agencies make their services more accessible, efficient, and effective with modern applications, platforms, processes, personnel, and software solutions.
-          </p>
-          <p>
-            TTS is comprised of four business units and front office, operations, and acquisition teams. Learn more about the <a href="{{ site.baseurl }}/tts-offices">offices that make up TTS</a>.
-          </p>
-        </div>
-      </div>
-  </div>
-</section>

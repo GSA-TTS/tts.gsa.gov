@@ -43,13 +43,7 @@ qualification requirements for each position at a specific GS level are
 based on education, background, accomplishments, and experience. The
 specific requirements will always be listed in the job posting. Salaries
 of federal employees are public information, and your salary may become
-publicly available on sites such as
-<!-- markdown-link-check-disable -->
-[FederalPay.org](https://www.federalpay.org/employees)
-<!-- markdown-link-check-enable -->
-. Find out more about the GS system from the
-[Office of Personnel Management](https://www.opm.gov/policy-data-oversight/pay-leave/pay-systems/general-schedule/)
-.
+publicly available on sites such as [FederalPay.org](https://www.federalpay.org/employees). Find out more about the GS system from the [Office of Personnel Management](https://www.opm.gov/policy-data-oversight/pay-leave/pay-systems/general-schedule/).
 
 ## Understanding Grade Levels
 
