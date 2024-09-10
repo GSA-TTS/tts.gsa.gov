@@ -80,14 +80,17 @@ layout: layouts/default
         <div class="usa-summary-box">
           <div class="usa-summary-box__body">
             <h3 class="usa-summary-box__heading">
-              Register for a hiring information session
+              Find out more
             </h3>
             <div class="usa-summary-box__text">
-              <p>We hold periodic info sessions to offer potential candidates an opportunity to learn more about working at TTS, available positions, and our application process. Register for a session below.</p>
-
+              <p>Join us at one of our monthly online information sessions. Come learn more about working at TTS, available positions, and our application process. Register for a session below.</p>
               <ul>
                 {% for session in sorted_info_sessions %}
-                    <li><p><a target="_blank" href="{{ session.link }}" rel="noopener">{{session.role}} Hiring Info Session</a><br />{{session.date | date: "%A, %B %d,"}} at {{ session.time }}</p></li>
+                    <li class="info-session">
+                      <a target="_blank" href="{{ session.link }}" rel="noopener">{{session.date}}</a>
+                      <p>{{ session.time-et }}</p>
+                      <p>({{ session.time-pt }})</p>
+                    </li>
                 {% endfor %}
               </ul>
             </div>
