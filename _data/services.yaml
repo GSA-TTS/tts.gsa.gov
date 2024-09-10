@@ -241,7 +241,7 @@ services:
   - name: Notify.gov
     link: https://beta.notify.gov/
     link_alt_text: link to the beta of Notify.gov's homepage
-    logo: _img/uswds-lg-on-white.svg
+    logo: _img/notify-logo.png
     logo_alt_text: Notify.gov
     category: products
     description: The Public Benefits Studio is piloting Notify.gov, a text messaging service built by and for government. Benefits program staff can set up custom text messages in as little as 10 minutes — without a technical integration required — and at minimal cost.
