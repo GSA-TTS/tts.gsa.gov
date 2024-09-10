@@ -223,7 +223,7 @@ Open to U.S. citizens or nationals (residents of American Samoa and Swains Islan
 
 **Supervisory status:** Supervisory
 
-**Job title:** {{ role }}
+**Job title:** {{ title }}
 
 {% comment ------------------------------------------------------------------ %}
 The job title on USAJOBS is not always the same as the job title as we list it.
@@ -261,6 +261,8 @@ To use the automatic salary ranges, leave the lines as-is.
 
 {% comment %}{% include job/salary_range.html min="" max="" %}{% endcomment %}
 
+**Salary range:** GS-15 ($143,736 to $191,900)
+
 Your salary, including base and locality, will be determined upon selection, dependent on your actual duty location. Please note the maximum salary available for the GS pay system is $191,900. For specific details on locality pay, please visit [OPM's Salaries & Wages page](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/) or for a salary calculator [OPM's 2024 General Schedule (GS) Salary Calculator](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/2024/general-schedule-gs-salary-calculator/). You can find more information in our [compensation and benefits section]({{ '/join/compensation-and-benefits.md' | url }}).
 
 {% comment %}🔻🔻🔻🔻🔻{% endcomment %}
@@ -292,6 +294,58 @@ This role (a.k.a. Program Manager - Product & Community Engagement) is part of t
 The Communities and Collaboration Branch supports federal agencies and TTS teams in creating cross-agency development through communities of practice (CoP). Our goal is to empower government employees to lead, support each other, and adopt innovative approaches that benefit the public.
 
 ## Key objectives
+<!-- markdownlint-disable MD033 -->
+<ol type="1" class="key-objectives-list">
+  <li>
+    Lead Product Delivery
+    <ul>
+      <li>
+        Set the vision, strategy, and goals for the Communities and Collaboration Branch.
+      </li>
+      <li>
+        Ensure projects align with TTS priorities and serve the public effectively.
+      </li>
+      <li>
+        Manage multiple complex products and IT projects, anticipating risks and opportunities.
+      </li>
+      <li>
+        Collaborate across TTS and ensure resources are used effectively.
+      </li>
+    </ul>
+  </li>
+  <li>
+    Build and Lead Teams
+    <ul>
+      <li>
+        Supervise and mentor team members, guiding them on technical and administrative matters.
+      </li>
+      <li>
+        Build teams, assign work, and ensure alignment with branch goals.
+      </li>
+      <li>
+        Foster professional growth and incorporate equity and inclusion in team development.
+      </li>
+    </ul>
+  </li>
+  <li>
+    Enhance Product Delivery Expertise
+    <ul>
+      <li>
+        Develop and maintain product strategies that align with agency objectives.
+      </li>
+      <li>
+        Collaborate with cross-functional teams to prioritize product requirements.
+      </li>
+      <li>
+        Lead the development process, ensuring timely delivery of features and compliance with standards like the 21st Century IDEA, the M-23-22 “Delivering a Digital-First Public Experience” and other relevant policies.
+      </li>
+      <li>
+        Share best practices and lessons learned to contribute to TTS’s culture of product management.
+      </li>
+    </ul>
+  </li>
+</ol>
+<!-- markdownlint-enable MD033 -->
 
 {% comment ------------------------------------------------------------------ %}
 Key objectives are automatically converted from the information provided at the
@@ -332,4 +386,4 @@ lower GS-grade (or equivalent). Specialized experience is defined as follows:
 
 {% comment %}{% include job/apply_button.html %}{% endcomment %}
 
-Alerts for this role may be associated with the following keywords/categories: **Product Management**; **Strategy/Consulting**; **Customer Experience (CX)**; and **Marketing**
+Get [notified](/join/newsletter) when this position is open for applications. Alerts for this role may be associated with the following keywords/categories: **Product Management**; **Strategy/Consulting**; **Customer Experience (CX)**; and **Marketing**

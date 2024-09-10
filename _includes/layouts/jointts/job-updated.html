@@ -35,8 +35,8 @@ layout: layouts/default
         {% elsif state == 'upcoming' %}
           <div class="usa-alert usa-alert-info">
             <div class="usa-alert-body">
-              <h3 class="usa-alert-heading">Upcoming role</h3>
-              <p class="usa-alert-text">This role is not yet open for application.  It will open on {{ opens | date: "%A, %B %d, %Y" }}.{%comment %}{% include upcoming_statement.html %}{% endcomment %}</p>
+              <h3 class="usa-alert-heading">Coming soon</h3>
+              <p class="usa-alert-text"><p class="usa-alert-text"><a href="/join/newsletter">Get notified</a> when this position opens.</p>{%comment %}{% include upcoming_statement.html %}{% endcomment %}</p>
             </div>
           </div>
         {% elsif state == 'open' %}
@@ -53,13 +53,13 @@ layout: layouts/default
           <div class="usa-summary-box">
             <div class="usa-summary-box__body">
               <h3 class="usa-summary-box__heading">
-                Attend an information session
+                Attend an information session for this position
               </h3>
               <div class="usa-summary-box__text" markdown="1">
                 Attend an information session to learn more about these roles, working at TTS, and our application process. Register for a session using the Eventbrite links below.
                 <ul>
                 {% for session in sorted_info_sessions %}
-                <li class="info-session"><a href="{{session.link}}">{{session.headline}}</a><p>{{session.time}}</p></li>
+                <li class="info-session"><a href="{{session.link}}">{{session.headline}}</a> at {{session.time}}</li>
                 {% endfor %}
                 </ul>
               </div>

@@ -263,3 +263,12 @@ li.info-session {
     margin: 0;
   }
 }
+
+/* Key Objectives Ordered List */
+.key-objectives-list > li {
+  font-weight: bold;
+}
+
+.key-objectives-list > li li {
+  font-weight: 400;
+}
