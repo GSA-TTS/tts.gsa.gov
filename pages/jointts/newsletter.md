@@ -18,6 +18,8 @@ sidenav:
     href: /join/about-the-dha/
   - text: Rolling hiring
     href: /join/rolling-hiring/
+  - text: Sign up for job alerts
+    href: /join/newsletter/
   - text: Frequently Asked Questions
     href: /join/faq/
 
