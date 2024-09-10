@@ -42,7 +42,21 @@ layout: layouts/default
                       {% else %}
                       <a href="{{ pg.url | url }}">{{ pg.data.title }}</a>
                     {% endif %}
-                   (Open {% if pg.data.weeks_open %}for {% if pg.data.weeks < 52 %}{{ pg.data.weeks }}{% else %} one year or until all selections have been made{% endif %},{% endif %} through {{ pg.data.closes | date: '%A, %B %e, %Y at %l:%M%P' }} EST)
+                   (Open now {% if pg.data.weeks_open %}for {% if pg.data.weeks < 52 %}{{ pg.data.weeks }}{% else %} one year or until all selections have been made{% endif %},{% endif %} through {{ pg.data.closes | date: '%A, %B %e, %Y at %l:%M%P' }} EST)
+                   {% if pg.data.info_sessions and pg.data.info_sessions.size > 0 %}
+                        <aside class="usa-alert usa-alert-info">
+                          <div class="usa-alert-body">
+                            <p>Upcoming info sessions for {{ pg.data.title }}</p>
+                            <ul>
+                              {% for session in pg.data.info_sessions %}
+                                <li>
+                                  <p><a href="{{session.link}}" target="_blank">{{ session.headline }}</a> at {{session.time}}</p>
+                                </li>
+                              {% endfor %}
+                            </ul>
+                          </div>
+                        </aside>
+                      {% endif %}
                   </li>
                 {% endunless %}
               {% endunless %}

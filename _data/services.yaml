@@ -176,7 +176,7 @@ services:
     description: Fellowship program for early-career technologists to launch
       impactful careers in public service and create a more effective, equitable
       government.
-  - name: Federal Audit Clearinghouse
+  - name: Federal Audit Clearinghouse (FAC)
     link: https://facweb.census.gov/uploadpdf.aspx
     link_alt_text: link to FAC homepage
     logo: _img/FAC-logo.png
