@@ -100,7 +100,7 @@ external_url: https://presidentialinnovationfellows.gov/apply/
 # as a date.
 #🔻🔻🔻🔻🔻
 opens: 2024-09-10
-closes: 2024-09-30 23:59:59 -4:00
+closes: 2024-09-30
 # These dates are also used to determine whether a position is upcoming, open,
 # or closed. Here's how we decide:
 #
