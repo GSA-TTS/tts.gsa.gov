@@ -83,7 +83,7 @@ primary_navigation:
         url: "/join/about-the-dha/"
       - name: Frequently Asked Questions
         url: "/join/faq/"
-  - name: Our Services
+  - name: Our services
     children:
       - name: Products
         url: "/services/products/"

@@ -16,8 +16,6 @@ sidenav:
     href: /join/compensation-and-benefits/
   - text: About the Direct Hire Authority
     href: /join/about-the-dha/
-  - text: Rolling hiring
-    href: /join/rolling-hiring/
   - text: Frequently Asked Questions
     href: /join/faq/
 ---
@@ -46,10 +44,13 @@ role’s Position Description. For example, many staff members are officially
 "IT Specialists" though they fill roles from content design to front-end
 developer to account manager.
 
-> **Take away:** Pay attention to the job title at the top and don’t get confused
-> if there’s a different one on
-> [https://usajobs.gov/](USAJOBS.gov)
-> .
+<!-- markdownlint-disable MD033 -->
+<aside class="usa-alert usa-alert-info">
+  <div class="usa-alert-body">
+    <p><strong>Take away:</strong> Pay attention to the job title at the top and don’t get confused if there’s a different one on <a href="https://usajobs.gov/" target="_blank">USAJOBS.gov</a></p>
+  </div>
+</aside>
+<!-- markdownlint-enable MD033 -->
 
 ## Role Summary
 
@@ -59,8 +60,13 @@ doing, and specific required technologies or programming languages. There
 will also be a list of three-five key objectives with bullet points
 describing the core responsibilities of the position.
 
-> **Take away:** Look for a match to your skills and experience in this section
-> and determine if you could fulfill the key objectives.
+<!-- markdownlint-disable MD033 -->
+<aside class="usa-alert usa-alert-info">
+  <div class="usa-alert-body">
+    <p><strong>Take away:</strong> Look for a match to your skills and experience in this section and determine if you could fulfill the key objectives.</p>
+  </div>
+</aside>
+<!-- markdownlint-enable MD033 -->
 
 ## Basic Information
 
@@ -99,11 +105,7 @@ position. The GS scale goes from one to 15.
 
 This illustrates the base pay range for this position. The actual salary
 will be the base pay plus a locality pay determined by where you live.
-You can learn more about pay and the GS scale in the
-<!-- markdownlint-disable MD033 -->
-<a href="{{ '/join/compensation-and-benefits' | url }}" class="usa-link">Compensation and Benefits section</a>
-<!-- markdownlint-enable MD033 -->
-.
+You can learn more about pay and the GS scale in the [Compensation and Benefits section](/join/compensation-and-benefits).
 
 ### Location
 
@@ -136,11 +138,7 @@ For most TTS jobs, only United States citizens and nationals
 
 All government positions require some level of background check.
 Most roles at TTS require a public trust position clearance. Learn
-more in the
-<!-- markdownlint-disable MD033 -->
-<a href="{{ '/join/hiring-process/#security-and-onboarding' | url }}" class="usa-link">Security and Onboarding section</a>
-<!-- markdownlint-enable MD033 -->
-.
+more in the [Security and Onboarding section](/join/hiring-process/#security-and-onboarding).
 
 ### Work Schedule
 
@@ -161,8 +159,13 @@ standard across all job titles. This section includes a list of GSA
 employment benefits and will likely contain fewer details about the
 position than the Role Summary section.
 
-> **Take away:** This section is helpful, but it’s best to use information 
-> from other sections to determine what to include in your application.
+<!-- markdownlint-disable MD033 -->
+<aside class="usa-alert usa-alert-info">
+  <div class="usa-alert-body">
+    <p><strong>Take away:</strong> This section is helpful, but it’s best to use information from other sections to determine what to include in your application.</p>
+  </div>
+</aside>
+<!-- markdownlint-enable MD033 -->
 
 ## Key Requirements and Employment Requirements
 
@@ -202,9 +205,13 @@ qualifications. It is imperative that you include the months and
 years for the positions you have held so that your experience can
 be qualified.
 
-> **Take away:** Use this section to carefully write your resume for
-> consideration for a TTS position. Make sure to include relevant
-> language, so it is obvious how you meet the qualification criteria.
+<!-- markdownlint-disable MD033 -->
+<aside class="usa-alert usa-alert-info">
+  <div class="usa-alert-body">
+    <p><strong>Take away:</strong> Use this section to carefully write your resume for consideration for a TTS position. Make sure to include relevant language, so it is obvious how you meet the qualification criteria.</p>
+  </div>
+</aside>
+<!-- markdownlint-enable MD033 -->
 
 ## How To Apply
 
