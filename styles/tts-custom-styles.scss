@@ -57,7 +57,7 @@ $tts-title-banner-h1-foreground-color: #fff;
   max-width: unset;
 }
 
-.usa-prose a {
+.usa-prose a:not(.usa-button) {
   color: #005ea2
 }
 
