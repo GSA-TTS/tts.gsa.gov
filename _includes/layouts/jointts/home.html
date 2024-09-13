@@ -3,7 +3,7 @@ layout: layouts/default
 ---
 
 <div class="tts-title-banner">
-  <h1> {{ title }}</h1>
+  <h1>{{ title }}</h1>
 </div>
 
 {%- assign jobs = collections.job -%}
@@ -49,9 +49,13 @@ layout: layouts/default
                             <p>Upcoming info sessions for {{ pg.data.title }}</p>
                             <ul>
                               {% for session in pg.data.info_sessions %}
-                                <li>
-                                  <p><a href="{{session.link}}" target="_blank">{{ session.headline }}</a> at {{session.time}}</p>
-                                </li>
+                                {% assign session_date = session.date | date: "%s" %}
+                                {% assign now = 'now' | date: "%s" %}
+                                {% if session_date > now %}
+                                  <li>
+                                    <p><a href="{{ session.link }}" target="_blank">{{ session.headline }}</a> at {{ session.time }}</p>
+                                  </li>
+                                {% endif %}
                               {% endfor %}
                             </ul>
                           </div>
@@ -66,48 +70,50 @@ layout: layouts/default
 
         <h2>Upcoming positions</h2>
 
-          {% comment %} 
-          <p>No upcoming positions at this time. Check out our open roles or <a href="{{ '/join/newsletter/' | url }}" class="usa-link">sign up for job alerts</a> for future upcoming roles!</p> 
-          {% endcomment %}
-
-          <ul>
-            {% for pg in collections.jobs %}
-              {% capture state %}{% getStateFromDates pg.data.opens pg.data.closes %}{% endcapture %}
-              {% if state == "upcoming" %}
-                {% unless pg.data.path contains 'template' %}
-                  {% unless pg.data.path contains 'performance-profiles' %}
-                    <li>
-                      {% if pg.data.external_url %}
-                      <a href="{{ pg.data.external_url }}">{{ pg.data.title }}</a>
-                        {% else %}
-                        <a href="{{ pg.url | url }}">{{ pg.data.title }}</a>
-                      {% endif %}
-                      {% if pg.data.info_sessions and pg.data.info_sessions.size > 0 %}
-                        <aside class="usa-alert usa-alert-info">
-                          <div class="usa-alert-body">
-                            <p>Upcoming info sessions for {{ pg.data.title }}</p>
-                            <ul>
-                              {% for session in pg.data.info_sessions %}
+        <ul>
+          {% for pg in collections.jobs %}
+            {% capture state %}{% getStateFromDates pg.data.opens pg.data.closes %}{% endcapture %}
+            {% if state == "upcoming" %}
+              {% unless pg.data.path contains 'template' %}
+                {% unless pg.data.path contains 'performance-profiles' %}
+                  <li>
+                    {% if pg.data.external_url %}
+                    <a href="{{ pg.data.external_url }}">{{ pg.data.title }}</a>
+                      {% else %}
+                      <a href="{{ pg.url | url }}">{{ pg.data.title }}</a>
+                    {% endif %}
+                    {% if pg.data.info_sessions and pg.data.info_sessions.size > 0 %}
+                      <aside class="usa-alert usa-alert-info">
+                        <div class="usa-alert-body">
+                          <p>Upcoming info sessions for {{ pg.data.title }}</p>
+                          <ul>
+                            {% for session in pg.data.info_sessions %}
+                              {% assign session_date = session.date | date: "%s" %}
+                              {% assign now = 'now' | date: "%s" %}
+                              {% if session_date > now %}
                                 <li>
-                                  <p><a href="{{session.link}}" target="_blank">{{ session.headline }}</a> at {{session.time}}</p>
+                                  <p><a href="{{ session.link }}" target="_blank">{{ session.headline }}</a> at {{ session.time }}</p>
                                 </li>
-                              {% endfor %}
-                            </ul>
-                          </div>
-                        </aside>
-                      {% endif %}
-                    </li>
-                  {% endunless %}
+                              {% endif %}
+                            {% endfor %}
+                          </ul>
+                        </div>
+                      </aside>
+                    {% endif %}
+                  </li>
                 {% endunless %}
-              {% endif %}
-            {% endfor %}
-          </ul>
-       <h2> Other GSA Opportunities </h2>
-       <p> Check out <a href="https://www.gsa.gov/about-us/find-apply-for-and-land-a-job-at-gsa">careers at GSA</a> and more <a href="https://www.usajobs.gov/Search/Results?j=2210&d=GS&p=1">Information Technology opportunities.</a></p>
+              {% endunless %}
+            {% endif %}
+          {% endfor %}
+        </ul>
+
+        <h2>Other GSA Opportunities</h2>
+        <p>Check out <a href="https://www.gsa.gov/about-us/find-apply-for-and-land-a-job-at-gsa">careers at GSA</a> and more <a href="https://www.usajobs.gov/Search/Results?j=2210&d=GS&p=1">Information Technology opportunities.</a></p>
+
         <h2>Application process</h2>
         <p>
-        We have an amazing recruitment team who will usher you from application to interview to onboarding with TTS.
-        You’ll have guidance every step of the way! Learn more about our <a href="{{site.baseurl}}/hiring-process">hiring process</a>.
+          We have an amazing recruitment team who will usher you from application to interview to onboarding with TTS.
+          You’ll have guidance every step of the way! Learn more about our <a href="{{site.baseurl}}/hiring-process">hiring process</a>.
         </p>
         <p>
           If you have any questions about the process or positions, please contact
@@ -117,18 +123,18 @@ layout: layouts/default
       <div class="desktop:grid-col-4 margin-top-4 desktop:margin-top-0">
         <div class="usa-summary-box">
           <div class="usa-summary-box__body">
-            <h3 class="usa-summary-box__heading">
-              Find out more
-            </h3>
+            <h3 class="usa-summary-box__heading">Find out more</h3>
             <div class="usa-summary-box__text">
               <p>Join us at one of our monthly online information sessions. Come learn more about working at TTS, available positions, and our application process. Register for a session below.</p>
               <ul>
                 {% for session in sorted_info_sessions %}
+                  {% if session.date > "now" | date: "%Y-%m-%d" %}
                     <li class="info-session">
-                      <a target="_blank" href="{{ session.link }}" rel="noopener">{{session.date}}</a>
+                      <a target="_blank" href="{{ session.link }}" rel="noopener">{{ session.date }}</a>
                       <p>{{ session.time-et }}</p>
                       <p>({{ session.time-pt }})</p>
                     </li>
+                  {% endif %}
                 {% endfor %}
               </ul>
             </div>
@@ -137,4 +143,4 @@ layout: layouts/default
       </div>
     </div>
   </div>
-  </section>
+</section>
