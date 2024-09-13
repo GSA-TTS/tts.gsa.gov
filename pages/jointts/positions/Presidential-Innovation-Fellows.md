@@ -81,8 +81,13 @@ tags: jobs
 # headings are how the site builder knows what the data is. For the rest of the
 # frontmatter, please be careful not to delete the headings!
 #🔻🔻🔻🔻🔻
-title: "TTS Platforms & Services: Communities & Collaboration Branch Chief"
-role: "Communities & Collaboration Branch Chief"
+title: "TTS Fellowships Office: Presidential Innovation Fellows"
+role: "Presidential Innovation Fellows"
+
+# If the role is listed on a different site and we just want to link to it,
+# put that link here
+# 🔻🔻🔻🔻🔻
+external_url: https://presidentialinnovationfellows.gov/apply/
 
 # Put the opening and closing dates of your posting here, if you have them. The
 # values you set here will be turned into user-friendly text in other parts of
@@ -94,8 +99,8 @@ role: "Communities & Collaboration Branch Chief"
 # site builder automatically understands. Anything else will not be understood
 # as a date.
 #🔻🔻🔻🔻🔻
-opens: 2025-02-01
-closes: 2025-02-22
+opens: 2024-09-10
+closes: 2024-09-30
 # These dates are also used to determine whether a position is upcoming, open,
 # or closed. Here's how we decide:
 #
@@ -117,7 +122,7 @@ closes: 2025-02-22
 # received, include the maximum number of applications here. Remove this line
 # or set the value to 0 if the job does not have an application cap.
 #🔻🔻🔻🔻🔻
-max applications: 250
+max applications: 0
 
 # Is this a permanent or term appointment? Use either "perm" or "term". This
 # will be used to fill in the appointment type on the page with consistent
@@ -161,20 +166,6 @@ gs: 15
 # objectives. This example indents sub-bullets with two spaces:
 #🔻🔻🔻🔻🔻
 key objectives:
-  - Lead Product Delivery
-    - Set the vision, strategy, and goals for the Communities and Collaboration Branch.
-    - Ensure projects align with TTS priorities and serve the public effectively.
-    - Manage multiple complex products and IT projects, anticipating risks and opportunities.
-    - Collaborate across TTS and ensure resources are used effectively.
-  - Build and Lead Teams
-    - Supervise and mentor team members, guiding them on technical and administrative matters.
-    - Build teams, assign work, and ensure alignment with branch goals.
-    - Foster professional growth and incorporate equity and inclusion in team development.
-  - Enhance Product Delivery Expertise
-    - Develop and maintain product strategies that align with agency objectives.
-    - Collaborate with cross-functional teams to prioritize product requirements.
-    - Lead the development process, ensuring timely delivery of features and compliance with standards like the 21st Century IDEA, the M-23-22 "Delivering a Digital-First Public Experience" and other relevant policies.
-    - Share best practices and lessons learned to contribute to TTS’s culture of product management.
 
 # If there are any info sessions associated with this position, list them here.
 # Each info session needs three pieces of information: the link, the date, and
@@ -188,16 +179,28 @@ key objectives:
 # nearest to furthest. Only info sessions schedule for the future will be shown.
 #🔻🔻🔻🔻🔻
 info_sessions:
-  - link: https://gsa.zoomgov.com/meeting/register/vJItcOirqDMjGb3OT--z16iSZK_zxHHV85Y#/registration
-    date: 2024-09-19
-    headline: Thursday, September 19th, 2024
-    time: 1:30-2:30pm ET (10:30am -11:30am PT)
+  - link: https://gsa.zoomgov.com/webinar/register/WN_rh8OrGbTQGmEpmP4oz5ztg#/registration
+    date: 2024-09-12
+    headline: Thursday, September 12th, 2024
+    time: 4:00-5:00pm ET (1:00pm-2:00pm PT)
+  - link: https://gsa.zoomgov.com/webinar/register/WN_DQKvAibMQAeSDbsvD-s-RQ#/registration
+    date: 2024-09-17
+    headline: Tuesday, September 17th, 2024
+    time: 1:00-2:00pm ET (10:00am-11:00am PT)
+  - link: https://gsa.zoomgov.com/webinar/register/WN_f0vt2OvKRQ6ExmnDZ5YeJQ#/registration
+    date: 2024-09-23
+    headline: Monday, September 23rd, 2024
+    time: 4:00-5:00pm ET (1:00pm-2:00pm PT)
+  - link: https://gsa.zoomgov.com/webinar/register/WN_pEhDPgcHRGKxOOlQr4S-Cw#/registration
+    date: 2024-09-25
+    headline: Wednesday, September 25th, 2024
+    time: 1:00-2:00pm ET (10:00am-11:00am PT)
 
 # Put the link applicants need to use to apply for this position here. This link
 # will be used for the "Click here to apply" button at the bottom of the
 # position page.
 #🔻🔻🔻🔻🔻
-application link: https://usajobs.gov/job/apply/whatever
+application link: https://www.usajobs.gov/job/808657100
 # This is the end of the frontmatter. After this line is Markdown.
 ---
 
@@ -212,18 +215,20 @@ says {% include job/status_alert.html %}
 {% endcomment --------------------------------------------------------------- %}
 
 {% comment %}{% include job/status_alert.html %}{% endcomment %}
-<!-- markdownlint-disable MD033 -->
-Get <a href="{{ '/join/newsletter/' | url }}" class="usa-link">notified</a> when this position is open for applications. Alerts for this role may be associated with the following keywords/categories: **Product Management**; **Strategy/Consulting**; **Customer Experience (CX)**; and **Marketing**
-<!-- markdownlint-enable MD033 -->
-## Basic information
 
-Open to U.S. citizens or nationals (residents of American Samoa and Swains Island). Subject to background check.
+## About the Fellowship
+
+Presidential Innovation Fellows are mid-to-senior career technologists, designers, and strategists.
+
+Each fellow is paired with a federal agency to complete a one year project as a senior advisor. Fellows may be eligible to be renewed for up to one additional year. Learn more about [projects that have been completed by past fellows](https://presidentialinnovationfellows.gov/projects/) and the [values that guide our work](https://handbook.tts.gsa.gov/about-us/tts-history/).
+
+As a fellow, you’ll gain senior-level exposure in a federal agency. Behind the walls of government, you’ll tackle some of our nation’s biggest challenges.
+
+Making government work better for the people we serve is our top priority. And you have the experience we need to drive that mission home. Together, we can have an incredible impact on how the government delivers to the public at every interaction, each and every time.
+
+After you complete your fellowship, you’ll join our alumni community of more than 250 technologists and innovators in advancing mission-driven solutions at local, national, and international levels.
 
 {% comment %}{% include job/full_info_on_usajobs.html %}{% endcomment %}
-
-**Supervisory status:** Supervisory
-
-**Job title:** {{ title }}
 
 {% comment ------------------------------------------------------------------ %}
 The job title on USAJOBS is not always the same as the job title as we list it.
@@ -231,14 +236,78 @@ To help applicants find the right jobs on USAJOBS, put the title as it appears
 on USAJOBS here.
 🔻🔻🔻🔻🔻
 {% endcomment --------------------------------------------------------------- %}
-**Official title in USAJOBS:** Supervisory IT Specialist - DATAMGT/INET
+**Official title in USAJOBS:** IT Specialist - Presidential Innovation Fellow
 
 {% comment %}🔻🔻🔻🔻🔻{% endcomment %}
-**Number of vacancies:** 1
+**Location:** Washington, D.C.
 
 {% comment %}🔻🔻🔻🔻🔻{% endcomment %}
-**Location:** Anywhere in the U.S. (remote)
+**Work schedule:**
+Full time.
 
+## Requirements
+
+To be eligible for the Presidential Innovation Fellows program, you must be a United States citizen or a resident of American Samoa or Swains Island.
+
+Additionally, all fellows must be based in the Washington, D.C. area for the duration of the fellowship.
+
+There are no education requirements. 
+
+All fellows will be required to complete a [Public Trust background investigation](https://help.usajobs.gov/faq/job-announcement/security-clearances), and may be required to complete additional higher-level background investigations depending on the agency and project where they are matched.
+
+## Expertise
+
+<!-- markdownlint-disable MD033 -->
+<strong>Basic Requirements:</strong> You must also have IT-related experience demonstrating EACH of the four competencies listed below:
+
+IT Competencies:
+<ul>
+  <li>
+    Attention to Detail - Is thorough when performing work and conscientious about attending to detail.
+  </li>
+  <li>
+    Customer Service - Works with clients and customers (that is, any individuals who use or receive the services or products that your work unit produces, including the general public, individuals who work in the agency, other agencies, or organizations outside the Government) to assess their needs, provide information or assistance, resolve their problems, or satisfy their expectations; knows about available products and services; is committed to providing quality products and services.
+  </li>
+  <li>
+    Oral Communication - Expresses information (for example, ideas or facts) to individuals or groups effectively, taking into account the audience and nature of the information (for example, technical, sensitive, controversial); makes clear and convincing oral presentations; listens to others, attends to nonverbal cues, and responds appropriately.
+  </li>
+  <li>
+    Problem Solving - Identifies problems; determines accuracy and relevance of information; uses sound judgment to generate and evaluate alternatives, and to make recommendations.
+  </li>
+</ul>
+
+<strong>Specialized Experience:</strong> In addition to the basic requirements listed above, you must have one year of specialized experience equivalent to the GS-14 in the Federal Service. Specialized experience for this role is defined as experience: 
+<ul>
+  <li>
+    Leading or advising executive leadership on the launch of new technology initiatives, providing recommendations that influence policies, projects, or programs, and/or securing leadership buy-in or stakeholder consensus; <strong>AND</strong>
+  </li>
+  <li>
+    Deploying user-centered and iterative development methodologies; <strong>AND</strong>
+  </li>
+  <li>
+    Applying advanced technical knowledge to products or service delivery in one or more of the following: artificial intelligence, machine learning, data strategy, design (service, human-centered, user experience), product, software engineering, cloud infrastructure, digital transformation or digital strategy <strong>AND</strong>
+  </li>
+  <li>
+  Experience in at least one of the following areas:
+    <ol>
+      <li>
+        Leading data science, engineering, product, or design initiatives focused on technical products, platforms, or solutions; OR 
+      </li>
+      <li>
+        Leading cross functional teams, which may include designers, product managers, data scientists, or software engineers, to meet program or project goals, objectives, and priorities OR
+      </li>
+      <li>
+        Leading the development or implementation of digital strategy and policy
+      </li>
+    </ol>
+  </li>
+</ul>
+
+Please refer to the [USAJOBS job announcement](https://www.usajobs.gov/job/808657100#requirements) for more detailed information regarding Qualifications. 
+
+In addition to the criteria indicated in the Qualifications section, you will be scored on multiple hurdles which will measure your possession of the competencies or knowledge, skills and abilities required for the position. The assessment hurdles for this position will include resume review, written assessment and structured interview. You can find more information about these hurdles in the [Selection Timeline](https://presidentialinnovationfellows.gov/apply/#timeline).
+
+<!-- markdownlint-enable MD033 -->
 {% comment ------------------------------------------------------------------ %}
 💰💰💰
 The salary range for the job can be populated automatically based on the GS grade this posting is advertised at, based on the lowest and highest locality rates.
@@ -261,17 +330,18 @@ To use the automatic salary ranges, leave the lines as-is.
 
 {% comment %}{% include job/salary_range.html min="" max="" %}{% endcomment %}
 
-**Salary range:** GS-15 ($143,736 to $191,900)
+## Benefits
 
-Your salary, including base and locality, will be determined upon selection, dependent on your actual duty location. Please note the maximum salary available for the GS pay system is $191,900. For specific details on locality pay, please visit [OPM's Salaries & Wages page](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/) or for a salary calculator [OPM's 2024 General Schedule (GS) Salary Calculator](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/2024/general-schedule-gs-salary-calculator/). You can find more information in our [compensation and benefits section]({{ '/join/compensation-and-benefits.md' | url }}).
+All Presidential Innovation Fellows are hired at the GS-15 Step 1 pay grade. Learn more about the [GS system that defines federal salaries](https://join.tts.gsa.gov/compensation-and-benefits/).
 
-{% comment %}🔻🔻🔻🔻🔻{% endcomment %}
-**Travel requirement:**
-Occasional travel may be required up to 10%-20% per year.
+As of January 2024, the GS-15 Step 1 salary for the Washington, D.C. locality is $163,964. 
 
-{% comment %}🔻🔻🔻🔻🔻{% endcomment %}
-**Work schedule:**
-Full time.
+All fellows receive [federal employee benefits](https://handbook.tts.gsa.gov/getting-started/classes/benefits/). This includes medical, vision, and dental insurance, FSA accounts, life insurance, paid leave, and the Thrift Savings Plan (the government version of a 401K) with up to five percent matching. 
+
+PIFs also receive a $5,000 individual professional development budget administered by TTS.
+
+For more on leave policy, (including paid parental leave, applicable after 12 months) visit [the TTS Handbook](https://handbook.tts.gsa.gov/travel-and-leave/leave/#types-of-leave).
+
 
 {% comment ------------------------------------------------------------------ %}
 The next {% include ... %} line will pull in the appropriate text based on the
@@ -283,107 +353,12 @@ line and write your custom text in its place.
 
 {% comment %}{% include job/appointment_type.html %}{% endcomment %}
 
-Learn more about the benefits of working at
-[GSA](https://www.gsa.gov/portal/category/26702) and [TTS]({{ '/join/compensation-and-benefits.md' | url }}).
-
-## Role summary
-
-{% comment %}🔻🔻🔻🔻🔻{% endcomment %}
-This role (a.k.a. Program Manager - Product & Community Engagement) is part of the General Services Administration (GSA), Technology Transformation Services (TTS), within the Platforms and Services Division. Our mission is to enhance the public’s experience with the government by helping federal agencies build, buy, and share technology that is accessible, efficient, secure, and effective.
-
-The Communities and Collaboration Branch supports federal agencies and TTS teams in creating cross-agency development through communities of practice (CoP). Our goal is to empower government employees to lead, support each other, and adopt innovative approaches that benefit the public.
-
-## Key objectives
-<!-- markdownlint-disable MD033 -->
-<ol type="1" class="key-objectives-list">
-  <li>
-    Lead Product Delivery
-    <ul>
-      <li>
-        Set the vision, strategy, and goals for the Communities and Collaboration Branch.
-      </li>
-      <li>
-        Ensure projects align with TTS priorities and serve the public effectively.
-      </li>
-      <li>
-        Manage multiple complex products and IT projects, anticipating risks and opportunities.
-      </li>
-      <li>
-        Collaborate across TTS and ensure resources are used effectively.
-      </li>
-    </ul>
-  </li>
-  <li>
-    Build and Lead Teams
-    <ul>
-      <li>
-        Supervise and mentor team members, guiding them on technical and administrative matters.
-      </li>
-      <li>
-        Build teams, assign work, and ensure alignment with branch goals.
-      </li>
-      <li>
-        Foster professional growth and incorporate equity and inclusion in team development.
-      </li>
-    </ul>
-  </li>
-  <li>
-    Enhance Product Delivery Expertise
-    <ul>
-      <li>
-        Develop and maintain product strategies that align with agency objectives.
-      </li>
-      <li>
-        Collaborate with cross-functional teams to prioritize product requirements.
-      </li>
-      <li>
-        Lead the development process, ensuring timely delivery of features and compliance with standards like the 21st Century IDEA, the M-23-22 “Delivering a Digital-First Public Experience” and other relevant policies.
-      </li>
-      <li>
-        Share best practices and lessons learned to contribute to TTS’s culture of product management.
-      </li>
-    </ul>
-  </li>
-</ol>
-<!-- markdownlint-enable MD033 -->
-
-{% comment ------------------------------------------------------------------ %}
-Key objectives are automatically converted from the information provided at the
-top of the page. The automatic conversion helps ensure that all of our postings
-are consistent. If you do not want to use the automatic template, delete the
-line below that says {% include job/key_objectives.html %} and add your custom
-content in its place.
-{% endcomment --------------------------------------------------------------- %}
-
-{% comment %}{% include job/key_objectives.html %}{% endcomment %}
-
-## Qualifications
-
-Provide as much detail as possible on your resume so that we can evaluate your
-previous experience. Follow our
-[guidance on creating a federal style resume.](https://join.tts.gsa.gov/resume/)
-
-Failure to provide required information may result in disqualification.
-
-For each job on your resume, provide:
-
-- The exact dates you held each job (from month/year to month/year or “present”)
-- Number of hours per week you worked (if part time)
-
-**SPECIALIZED EXPERIENCE REQUIREMENTS:**
-
-To qualify, you must have one (1) year of specialized experience at the next
-lower GS-grade (or equivalent). Specialized experience is defined as follows:
-
-- Leading the end-to-end delivery of digital products or services, including creating comprehensive product roadmaps, defining product requirements, and managing cross-functional teams (e.g., software engineers, data analysts, UX/UI designers).
-- Managing and collaborating with senior-level stakeholders across complex technical environments, including securing buy-in for the development and implementation of digital products or technology solutions that align with digital transformation goals.
-- Building and leading cross-functional technical teams to deliver digital products or services, providing hands-on technical and supervisory guidance, and mentoring or coaching staff to enhance technical competencies and achieve organizational goals.
-- Ensuring product compliance with applicable federal regulations, standards, and guidelines, such as the 21st Century Integrated Digital Experience Act (IDEA), “Delivering a Digital-First Public Experience” (M-23-22), Federal Information Security Management Act (FISMA), and Americans with Disabilities Act (ADA).
-- Leading and coordinating initiatives with external stakeholders to promote the adoption of industry-wide or government-wide digital experience standards, including planning, development, and implementation.
-
-
 ## How to Apply
 
 {% comment %}{% include job/apply_button.html %}{% endcomment %}
 
-Get [notified](/join/newsletter) when this position is open for applications. Alerts for this role may be associated with the following keywords/categories: **Product Management**; **Strategy/Consulting**; **Customer Experience (CX)**; and **Marketing**
+As part of your application, you’ll need to submit a federal-style resume. If you don’t already have one, it can take some time to put together. You'll want to make sure that your resume clearly reflects your experience related to the qualifications listed in the job announcement. We strongly suggest reviewing these [tips on writing a federal resume](https://join.tts.gsa.gov/resume/) and an [example of what a federal resume might look like](https://handbook.tts.gsa.gov/hiring-staying-or-changing-jobs/resume/).
+
+In addition to the resume resources, we strongly encourage people to register for an upcoming virtual info session. 
+
+Once your resume is ready for submission, apply to the job announcement on [USAJOBS](https://www.usajobs.gov/job/808657100). All applications must be received by 11:59 pm ET on September 30, 2024.
