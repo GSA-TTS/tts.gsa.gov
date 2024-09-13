@@ -57,6 +57,10 @@ $tts-title-banner-h1-foreground-color: #fff;
   max-width: unset;
 }
 
+.usa-prose a:not(.usa-button) {
+  color: #005ea2
+}
+
 footer {
   a {
     color: color('base-lightest');
@@ -90,7 +94,7 @@ footer {
     margin: 0;
     padding: 4.75rem 0;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: capitalize;
   }
 }
 
@@ -230,4 +234,41 @@ img.info-outline,
 img.trending-up {
   height: 62px;
   width: 62px;
+}
+
+/* Info Box */
+.usa-alert-info {
+  padding: 1rem;
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .usa-alert-body > p {
+    margin-top: 0;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+/* Info Session */
+li.info-session {
+  margin-bottom: 18px;
+
+  a,
+  p {
+    margin: 0;
+  }
+}
+
+/* Key Objectives Ordered List */
+.key-objectives-list > li {
+  font-weight: bold;
+}
+
+.key-objectives-list > li li {
+  font-weight: 400;
 }

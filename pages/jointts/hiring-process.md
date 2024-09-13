@@ -16,8 +16,6 @@ sidenav:
     href: /join/compensation-and-benefits/
   - text: About the Direct Hire Authority
     href: /join/about-the-dha/
-  - text: Rolling hiring
-    href: /join/rolling-hiring/
   - text: Frequently Asked Questions
     href: /join/faq/
 
@@ -45,7 +43,7 @@ actions. Here is an expected timeline of the hiring process at TTS:
 - Offer and security - 2 to 3 months
 - Total from application to start - 3 to 5 months
 
-## Info Sessions
+## Information Sessions
 
 TTS hosts monthly general hiring information sessions and role-specific
 sessions for upcoming or newly-opened roles. At our general sessions,
@@ -59,30 +57,17 @@ culture. TTS does not conduct one-on-one conversations with candidates about
 roles to ensure an equitable hiring process. Please attend one of our public
 information sessions for these details.
 
-A list of upcoming information sessions can be found on the
-<!-- markdownlint-disable MD033 -->
-<a href="{{ '/join/' | url }}" class="usa-link">JoinTTS Homepage</a>
-<!-- markdownlint-enable MD033 -->
-.
+A list of upcoming information sessions can be found on the [Jobs](/join) page.
 
 ## Application
 
-Applications are collected during the period specified in the
-<!-- markdownlint-disable MD033 -->
-<a href="{{ '/join/federal-job-posting/#basic-information/' | url }}" class="usa-link">Basic Information section</a>
-<!--markdownlint-enable MD033 -->
-of the job posting, generally about a week or until an application cap is
-reached. After the period has closed, all applications are reviewed and
+Applications are collected during the period specified in the [Basic Information section](federal-job-posting/#basic-information/) of the job posting, generally about a week or until an application cap is reached. After the period has closed, all applications are reviewed and
 evaluated  at the same time.
 
 TTS does not use automated screening tools. Your application will be
 evaluated by a HR Specialist or a panel of subject matter experts.
 
-When you apply for a role at TTS, you are required to submit a
-<!-- markdownlint-disable MD033 -->
-<a href="{{ '/join/resume' | url }}" class="usa-link">government-style resume</a>
-<!-- markdownlint-enable -->
-. Be explicit in your resume and include all relevant work experiences and
+When you apply for a role at TTS, you are required to submit a [government-style resume](/join/resume). Be explicit in your resume and include all relevant work experiences and
 details. Do not assume the reader has expert knowledge or context of your
 job history. Because applications are reviewed by real people, the
 application review process typically takes several weeks, depending on
@@ -90,9 +75,11 @@ the number of applications received.
 
 ## Interviews
 
-Candidates who are invited to interview will receive more information on what to expect in the interview process. Please feel free to ask any questions at this time.
+The interview process typically takes about a month, with approximately 3-4 interview rounds. The first round is a 30-60 minute preliminary screen by phone or video. During this call, plan to talk briefly about your skills, experience, and professional passion. We’ll share more information about the role, the team, and the opportunity.
 
-Our interview process will vary, and your recruiter will keep you informed. During the interview process, we’ll ask you about competencies that align with the role as well as TTS Core Values which is intended to evaluate candidate alignment with the organization’s values.
+If you advance past the preliminary screen, we’ll invite you to a series of formal video interviews with various TTS team members. During these longer conversations, we will discuss your past work experience and how your skills and knowledge apply to TTS. Some positions may require a technical interview such as a coding exercise or leadership and collaboration interview before moving forward to the final round of interviews.
+
+The final round of interviews always include a TTS Core Values interview which is intended to evaluate candidate alignment with [the organization’s values](https://handbook.tts.gsa.gov/about-us/tts-history/#our-values).
 
 We share copies of the interview guide, which includes the questions and interviewer names, in advance of your interviews. Sharing questions in advance provides you a more informed interview experience so you can better understand what we’re looking for.
 
