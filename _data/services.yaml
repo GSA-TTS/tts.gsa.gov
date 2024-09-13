@@ -46,7 +46,7 @@ services:
       to help the government make data-driven decisions to improve the digital
       public experience.
   - name: SAM.gov
-    link: https://www.gsa.gov/about-us/organization/federal-acquisition-service/office-of-systems-management/integrated-award-environment-iae/about-samgov
+    link: https://sam.gov/content/home
     link_alt_text: link to About SAM.gov webpage
     logo: _img/logo-sam.svg
     logo_alt_text: SAM.gov
