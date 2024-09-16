@@ -133,7 +133,7 @@ services:
   - name: API.data.gov
     link: https://api.data.gov/
     link_alt_text: link to API data homepage
-    logo: _img/data-gov.png
+    logo: _img/api-data.png
     logo_alt_text: API.data.gov
     category: products
     description:
