@@ -106,10 +106,9 @@ primary_navigation:
 # endpoint: https://search.usa.gov
 
 # Replace this with your search.gov account.
-# affiliate: federalist-uswds-example
+affiliate: tts-gsa-gov
 
-# access_key: replace_this_with_your_access_key
-
+access_key: M2SsxpWBgRu9LVxp0oD1UwKvqfZ2QeBMDpf68b6jhno=
 # This renders the results within the page instead of sending to user to search.gov.
 # inline: true
 

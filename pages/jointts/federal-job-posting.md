@@ -176,7 +176,7 @@ application, and employment requirements.
 ## Duties
 
 This section is found on the
-[https://usajobs.gov/](USAJOBS.gov)
+[usajobs.gov](https://usajobs.gov)
 application page. This is another required section that expands on
 the official summary for the official job title of the position.
 The duties in this section will likely be broad and apply to a number
