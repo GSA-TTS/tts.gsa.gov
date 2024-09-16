@@ -87,13 +87,14 @@ manage your navigation system {% endcomment %}
       {% endif %}
 
       <section aria-label="Small search component">
-        <form class="usa-search usa-search--small" role="search">
+        <form class="usa-search usa-search--small" role="search" action="https://search.usa.gov/search" accept-charset="UTF-8" method="get">
+          <input name="affiliate" type="hidden" value="tts">
           <label class="usa-sr-only" for="search-field-en-small">Search</label>
           <input
             class="usa-input"
             id="search-field-en-small"
             type="search"
-            name="search"
+            name="query"
           />
           <button class="usa-button" type="submit">
             {% image_with_class "_img/search--white.svg" "usa-search__submit-icon" "Search" %}
