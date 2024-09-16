@@ -10,18 +10,20 @@
 
 # for variables named 'foo bar' in the front matter of the document,
 # update them to 'foo_bar'
-2,198s/^([[:alpha:]]{1,})[[:space:]]([[:alpha:]]{1,}):/\1_\2:/g
+2,210s/^([[:alpha:]]{1,})[[:space:]]([[:alpha:]]{1,}):/\1_\2:/g
 
 # if the 'layout', 'permalink', or 'tags' variables are set, remove them
-/^layout:[[:space:]]*[^[:space:]]{1,}$/d
-/^permalink:[[:space:]]*[^[:space:]]{1,}$/d
-/^tags:[[:space:]]*[^[:space:]]{1,}$/d
+/^(layout|permalink|tags):/d
 
 # insert at the top new values for 'layout', 'permalink', and 'tags'
-2 i layout: layouts\/jointts\/job-updated
-2 i permalink: \/join/\/{\{ title \| slugify \}\}\.html
-2 i tags: jobs
+1a layout: layouts\/jointts\/job-updated
+1a permalink: \/join\/{\{ title \| slugify \}\}\.html
+1a tags: jobs
 
 # make sure instances of '{% include path/to/file.html %} are quoted
 # properly (e.g. '{% include "path/to/file.html" %}')
 s/(\{\%[[:space:]]*include[[:space:]]{1,})([^"']{1,})([[:space:]]{1,}\%\})/\1"\2"\3/g
+
+# make sure instances of '{% link pages/path/to/file %}' are rewritten as
+# '{{ "/join/path/to/file" | url }}'
+s/\{\%[[:space:]]*link[[:space:]]{1,}(\/?pages|join)?([^"']{1,})[[:space:]]{1,}\%\}/\{\{ "\/join\2" | url \}\}/g

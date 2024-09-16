@@ -1,7 +1,8 @@
 ---
 layout: layouts/jointts/job-updated
-permalink: /join//{{ title | slugify }}.html
+permalink: /join/{{ title | slugify }}.html
 tags: jobs
+
 ################################################################################
 #                                                                              #
 # INSTRUCTIONS: TTS JOB TEMPLATE                                               #
@@ -22,6 +23,9 @@ tags: jobs
 # people make sure they're on the right page, but most users will probably not #
 # notice the URL. Instead, try to make it meaningful to you and others on the  #
 # Talent Team so you can find it easily in the future if you need to edit it.  #
+#
+# When possible, please refrain from using spaces in the filenames; instead,   #
+# use underscores (`_`).  Instead of `web designer.md`, use `web_designer.md`  #
 #                                                                              #
 # For example, if you are posting a job for a content designer, you might      #
 # choose names like:                                                           #
@@ -93,6 +97,7 @@ title: "Hiring Org: Position title"
 #🔻🔻🔻🔻🔻
 opens: 2023-02-01
 closes: 2023-02-22
+
 # These dates are also used to determine whether a position is upcoming, open,
 # or closed. Here's how we decide:
 #
@@ -126,6 +131,7 @@ appointment_type: term
 # the level to 20.
 #🔻🔻🔻🔻🔻
 gs: 15
+
 # The information you put here will be used to automatically pull salary range
 # information.
 #
@@ -203,12 +209,12 @@ says {% include "job/status_alert.html" %}
 🔻🔻🔻🔻🔻
 {% endcomment --------------------------------------------------------------- %}
 
-{% include "job/status_alert.html" %}
+{%comment %}{% include "job/status_alert.html" %}{% endcomment %}
 
 ## Basic information
 
 Open to U.S. citizens or nationals (residents of American Samoa and Swains
-Island). Subject to background check. {% include "job/full_info_on_usajobs.html" %}
+Island). Subject to background check. {% comment %}{% include "job/full_info_on_usajobs.html" %}{% endcomment %}
 
 **Supervisory status:** Supervisory
 
@@ -253,7 +259,7 @@ To use the autoomatic salary ranges, leave the lines as-is.
 
 🔻🔻🔻🔻🔻
 {% endcomment --------------------------------------------------------------- %}
-{% include job/salary_range.html min="" max="" %}
+{% comment %}{% include job/salary_range.html min="" max="" %}{% endcomment %}
 
 Your salary, including base and locality, will be determined upon selection,
 dependent on your actual duty location. Please note the maximum salary available
@@ -262,7 +268,7 @@ visit [OPM's Salaries & Wages page](https://www.opm.gov/policy-data-oversight/pa
 or for a salary calculator
 [OPM's 2024 General Schedule (GS) Salary Calculator](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/2024/general-schedule-gs-salary-calculator/). You can find more
 information in our
-[compensation and benefits section]({% link pages/compensation-and-benefits.md %}).
+[compensation and benefits section]({{ "/join/compensation-and-benefits.md" | url }}).
 
 {% comment %}🔻🔻🔻🔻🔻{% endcomment %}
 **Travel requirement:**
@@ -278,11 +284,11 @@ appointment type for this job. If you need to use different text, delete that
 line and write your custom text in its place.
 🔻🔻🔻🔻🔻
 {% endcomment --------------------------------------------------------------- %}
-{% include "job/appointment_type.html" %}
+{% comment %}{% include "job/appointment_type.html" %}{% endcomment %}
 
 Learn more about the benefits of working at
 [GSA](https://www.gsa.gov/portal/category/26702) and
-[TTS]({% link pages/compensation-and-benefits.md %}).
+[TTS]({{ "/join/compensation-and-benefits.md" | url }}).
 
 ## Role summary
 
@@ -299,7 +305,7 @@ line below that says {% include "job/key_objectives.html" %} and add your custom
 content in its place.
 {% endcomment --------------------------------------------------------------- %}
 
-{% include "job/key_objectives.html" %}
+{% comment %}{% include "job/key_objectives.html" %}{% endcomment %}
 
 ## Qualifications
 
@@ -331,4 +337,4 @@ lower GS-grade (or equivalent). Specialized experience is defined as follows:
 
 ## How to Apply
 
-{% include "job/apply_button.html" %}
+{%comment %}{% include "job/apply_button.html" %}{% endcomment %}
