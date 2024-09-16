@@ -62,30 +62,6 @@ manage your navigation system {% endcomment %}
           {% endfor %}
         </ul> -->
 
-        {% comment %}
-          This will redirect the results to /search template which will handle the js loading
-        {% endcomment %}
-
-        {% if searchgov %}
-          {% if searchgov.inline == true %}
-            <form id="search_form" class="usa-search usa-search--small" action="{{ '/search/' | url }}" accept-charset="UTF-8" method="get">
-          {% else %}
-            <form id="search_form" class="usa-search usa-search--small" action="{{searchgov.endpoint}}/search" accept-charset="UTF-8" method="get">
-          {% endif %}
-
-          <input name="utf8" type="hidden" value="&#x2713;" />
-          <input name="affiliate" type="hidden" value="{{searchgov.affiliate}}" />
-
-          <div role="search">
-            <label class="usa-sr-only" for="extended-search-field-small">Search small</label>
-            <input class="usa-input usagov-search-autocomplete" id="extended-search-field-small" type="search" name="query" autocomplete="off">
-            <button class="usa-button" type="submit">
-              {% image_with_class "./node_modules/@uswds/uswds/src/img/usa-icons-bg/search--white.svg" "usa-search__submit-icon" "Search" %}
-            </button>
-          </div>
-        </form>
-      {% endif %}
-
       <section aria-label="Small search component">
         <form class="usa-search usa-search--small" role="search" action="https://search.usa.gov/search" accept-charset="UTF-8" method="get">
           <input name="affiliate" type="hidden" value="tts">
@@ -102,7 +78,6 @@ manage your navigation system {% endcomment %}
         </form>
       </section>
         
-      {% include "searchgov/form.html" searchgov: site.searchgov %}
     </div>
   </div>
 </nav>
