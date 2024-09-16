@@ -263,7 +263,7 @@ To use the automatic salary ranges, leave the lines as-is.
 
 **Salary range:** GS-15 ($143,736 to $191,900)
 
-Your salary, including base and locality, will be determined upon selection, dependent on your actual duty location. Please note the maximum salary available for the GS pay system is $191,900. For specific details on locality pay, please visit [OPM's Salaries & Wages page](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/) or for a salary calculator [OPM's 2024 General Schedule (GS) Salary Calculator](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/2024/general-schedule-gs-salary-calculator/). You can find more information in our [compensation and benefits section]({{ '/join/compensation-and-benefits.md' | url }}).
+Your salary, including base and locality, will be determined upon selection, dependent on your actual duty location. Please note the maximum salary available for the GS pay system is $191,900. For specific details on locality pay, please visit [OPM's Salaries & Wages page](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/) or for a salary calculator [OPM's 2024 General Schedule (GS) Salary Calculator](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/2024/general-schedule-gs-salary-calculator/). You can find more information in our [compensation and benefits section]({{ '/join/compensation-and-benefits/' | url }}).
 
 {% comment %}🔻🔻🔻🔻🔻{% endcomment %}
 **Travel requirement:**
@@ -284,7 +284,7 @@ line and write your custom text in its place.
 {% comment %}{% include job/appointment_type.html %}{% endcomment %}
 
 Learn more about the benefits of working at
-[GSA](https://www.gsa.gov/portal/category/26702) and [TTS]({{ '/join/compensation-and-benefits.md' | url }}).
+[GSA](https://www.gsa.gov/portal/category/26702) and [TTS]({{ '/join/compensation-and-benefits/' | url }}).
 
 ## Role summary
 
