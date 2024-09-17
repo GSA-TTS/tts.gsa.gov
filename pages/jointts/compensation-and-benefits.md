@@ -15,9 +15,7 @@ sidenav:
   - text: Compensation and benefits
     href: /join/compensation-and-benefits/
   - text: About the Direct Hire Authority
-    href: /join/about-the-dha/
-  - text: Rolling hiring
-    href: /join/rolling-hiring/
+    href: /join/about-the-dha/  
   - text: Sign up for job alerts
     href: /join/newsletter/
   - text: Frequently Asked Questions
