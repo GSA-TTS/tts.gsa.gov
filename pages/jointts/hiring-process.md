@@ -65,7 +65,7 @@ A list of upcoming information sessions can be found on the [Jobs](/join) page.
 
 ## Application
 
-Applications are collected during the period specified in the [Basic Information section](federal-job-posting/#basic-information/) of the job posting, generally about a week or until an application cap is reached. After the period has closed, all applications are reviewed and
+Applications are collected during the period specified in the [Basic Information section](/join/federal-job-posting/#basic-information) of the job posting, generally about a week or until an application cap is reached. After the period has closed, all applications are reviewed and
 evaluated  at the same time.
 
 TTS does not use automated screening tools. Your application will be

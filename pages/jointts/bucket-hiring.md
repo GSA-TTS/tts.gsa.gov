@@ -88,8 +88,8 @@ the future, to a role that is permanent.
 HR must qualify all candidate resumes, even current TTS employees' resumes,
 so if you apply, you will need an updated federal-style resume. To be
 considered qualified by HR, your resume will need to reflect the specialized
-experience that is listed for the role. See
-[Join TTS’ Resume Prep page]({{ site.baseurl }}/resume/)
+experience that is listed for the role. See the
+[resume prep page]({{ site.baseurl }}/join/resume/)
 for tips.
 
 

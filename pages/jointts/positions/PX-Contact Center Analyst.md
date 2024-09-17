@@ -81,8 +81,8 @@ tags: jobs
 # headings are how the site builder knows what the data is. For the rest of the
 # frontmatter, please be careful not to delete the headings!
 #🔻🔻🔻🔻🔻
-title: "TTS Platforms & Services: Communities & Collaboration Branch Chief"
-role: "Communities & Collaboration Branch Chief"
+title: "Public Experience: Contact Center Analyst"
+role: "Contact Center Analyst"
 
 # Put the opening and closing dates of your posting here, if you have them. The
 # values you set here will be turned into user-friendly text in other parts of
@@ -94,8 +94,8 @@ role: "Communities & Collaboration Branch Chief"
 # site builder automatically understands. Anything else will not be understood
 # as a date.
 #🔻🔻🔻🔻🔻
-opens: 2025-02-01
-closes: 2025-02-22
+opens: 2024-09-13
+closes: 2024-09-24
 # These dates are also used to determine whether a position is upcoming, open,
 # or closed. Here's how we decide:
 #
@@ -117,18 +117,18 @@ closes: 2025-02-22
 # received, include the maximum number of applications here. Remove this line
 # or set the value to 0 if the job does not have an application cap.
 #🔻🔻🔻🔻🔻
-max applications: 250
+max applications: 0
 
 # Is this a permanent or term appointment? Use either "perm" or "term". This
 # will be used to fill in the appointment type on the page with consistent
 # language.
 #🔻🔻🔻🔻🔻
-appointment type: term
+appointment type: perm
 
 # Put the GS grade this position is being advertised at. For SES positions, set
 # the level to 20.
 #🔻🔻🔻🔻🔻
-gs: 15
+gs: 12
 # The information you put here will be used to automatically pull salary range
 # information.
 #
@@ -188,16 +188,12 @@ key objectives:
 # nearest to furthest. Only info sessions schedule for the future will be shown.
 #🔻🔻🔻🔻🔻
 info_sessions:
-  - link: https://gsa.zoomgov.com/meeting/register/vJItcOirqDMjGb3OT--z16iSZK_zxHHV85Y#/registration
-    date: 2024-09-19
-    headline: Thursday, September 19th, 2024
-    time: 1:30-2:30pm ET (10:30am -11:30am PT)
 
 # Put the link applicants need to use to apply for this position here. This link
 # will be used for the "Click here to apply" button at the bottom of the
 # position page.
 #🔻🔻🔻🔻🔻
-application link: https://usajobs.gov/job/apply/whatever
+application link: https://www.usajobs.gov/job/808940800
 # This is the end of the frontmatter. After this line is Markdown.
 ---
 
@@ -212,16 +208,16 @@ says {% include job/status_alert.html %}
 {% endcomment --------------------------------------------------------------- %}
 
 {% comment %}{% include job/status_alert.html %}{% endcomment %}
-<!-- markdownlint-disable MD033 -->
-Get <a href="{{ '/join/newsletter/' | url }}" class="usa-link">notified</a> when this position is open for applications. Alerts for this role may be associated with the following keywords/categories: **Product Management**; **Strategy/Consulting**; **Customer Experience (CX)**; and **Marketing**
-<!-- markdownlint-enable MD033 -->
+
 ## Basic information
 
-Open to U.S. citizens or nationals (residents of American Samoa and Swains Island). Subject to background check.
+<!-- markdownlint-disable MD033 -->
+Open to U.S. citizens or nationals (residents of American Samoa and Swains Island). Subject to background check. Full information is available on <a href="{{ 'https://www.usajobs.gov/job/808940800' | url }}" class="usa-link">USAJOBS.</a>
+<!-- markdownlint-enable MD033 -->
 
 {% comment %}{% include job/full_info_on_usajobs.html %}{% endcomment %}
 
-**Supervisory status:** Supervisory
+**Supervisory status:** Non-Supervisory
 
 **Job title:** {{ title }}
 
@@ -231,7 +227,7 @@ To help applicants find the right jobs on USAJOBS, put the title as it appears
 on USAJOBS here.
 🔻🔻🔻🔻🔻
 {% endcomment --------------------------------------------------------------- %}
-**Official title in USAJOBS:** Supervisory IT Specialist - DATAMGT/INET
+**Official title in USAJOBS:** Program Analyst
 
 {% comment %}🔻🔻🔻🔻🔻{% endcomment %}
 **Number of vacancies:** 1
@@ -261,7 +257,7 @@ To use the automatic salary ranges, leave the lines as-is.
 
 {% comment %}{% include job/salary_range.html min="" max="" %}{% endcomment %}
 
-**Salary range:** GS-15 ($143,736 to $191,900)
+**Salary range:** GS-12 ($86,962 to $140,713)
 
 Your salary, including base and locality, will be determined upon selection, dependent on your actual duty location. Please note the maximum salary available for the GS pay system is $191,900. For specific details on locality pay, please visit [OPM's Salaries & Wages page](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/) or for a salary calculator [OPM's 2024 General Schedule (GS) Salary Calculator](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/2024/general-schedule-gs-salary-calculator/). You can find more information in our [compensation and benefits section]({{ '/join/compensation-and-benefits/' | url }}).
 
@@ -272,6 +268,9 @@ Occasional travel may be required up to 10%-20% per year.
 {% comment %}🔻🔻🔻🔻🔻{% endcomment %}
 **Work schedule:**
 Full time.
+
+**Appointment Type:**
+This is a permanent position.
 
 {% comment ------------------------------------------------------------------ %}
 The next {% include ... %} line will pull in the appropriate text based on the
@@ -289,58 +288,56 @@ Learn more about the benefits of working at
 ## Role summary
 
 {% comment %}🔻🔻🔻🔻🔻{% endcomment %}
-This role (a.k.a. Program Manager - Product & Community Engagement) is part of the General Services Administration (GSA), Technology Transformation Services (TTS), within the Platforms and Services Division. Our mission is to enhance the public’s experience with the government by helping federal agencies build, buy, and share technology that is accessible, efficient, secure, and effective.
-
-The Communities and Collaboration Branch supports federal agencies and TTS teams in creating cross-agency development through communities of practice (CoP). Our goal is to empower government employees to lead, support each other, and adopt innovative approaches that benefit the public.
+As a Contact Center Program Analyst in TTS, you’ll assist the contact center in analyzing call metrics and other data provided by systems or contractors. TTS has a wide range of programs that further the organization’s mission, many of which operate on a reimbursable basis, including the USAGov Contact Center. You’ll assist the contact center team in reconciling the contract budget for the program after reviewing invoices. To meet these goals, you’ll iterate on current processes and participate in establishing new and more efficient ways to operate at the contact center. Success in this role requires analytical skills, organizational & policy knowledge, an aptitude for relationship building - especially with our internal partners, and a love of spreadsheets!
 
 ## Key objectives
 <!-- markdownlint-disable MD033 -->
 <ol type="1" class="key-objectives-list">
   <li>
-    Lead Product Delivery
+    Identify improvements in operational problems
     <ul>
       <li>
-        Set the vision, strategy, and goals for the Communities and Collaboration Branch.
+        Plan or direct, special projects to identify operational problems, evaluate solutions, and recommend actions within the contact center.
       </li>
       <li>
-        Ensure projects align with TTS priorities and serve the public effectively.
+        Independently or collaboratively conduct analytical studies of functional activities or programs.
       </li>
       <li>
-        Manage multiple complex products and IT projects, anticipating risks and opportunities.
-      </li>
-      <li>
-        Collaborate across TTS and ensure resources are used effectively.
+        Work with the team to set and meet quality standards for any product you build.
       </li>
     </ul>
   </li>
   <li>
-    Build and Lead Teams
+    Track and monitor Contact Center initiatives
     <ul>
       <li>
-        Supervise and mentor team members, guiding them on technical and administrative matters.
+        Monitor the sequence and timing of the program or organizational milestones on contact center initiatives.
       </li>
       <li>
-        Build teams, assign work, and ensure alignment with branch goals.
-      </li>
-      <li>
-        Foster professional growth and incorporate equity and inclusion in team development.
+        Prepare or conduct briefings for higher-level management, including analysis, recommendations or action plans, and guidance for implementation.
       </li>
     </ul>
   </li>
   <li>
-    Enhance Product Delivery Expertise
+    Track and monitor Contact Center initiatives
     <ul>
       <li>
-        Develop and maintain product strategies that align with agency objectives.
+        Review information, reconcile conflicting data, and devise new or modified methods to analyze findings.
       </li>
       <li>
-        Collaborate with cross-functional teams to prioritize product requirements.
+        Develop recommendations and proposals.
       </li>
       <li>
-        Lead the development process, ensuring timely delivery of features and compliance with standards like the 21st Century IDEA, the M-23-22 “Delivering a Digital-First Public Experience” and other relevant policies.
+        Analyze and develop statistical data to improve the efficiency and effectiveness of programs or internal support operations for contact center quality management.
       </li>
       <li>
-        Share best practices and lessons learned to contribute to TTS’s culture of product management.
+        Prepare or conduct briefings for higher-level management, including analysis, recommendations or action plans, and guidance for implementation.
+      </li>
+      <li>
+        Identify and develop data for use in managing contact center programs.
+      </li>
+      <li>
+        Thoroughly review contact center invoices to ensure accuracy.
       </li>
     </ul>
   </li>
@@ -375,15 +372,16 @@ For each job on your resume, provide:
 To qualify, you must have one (1) year of specialized experience at the next
 lower GS-grade (or equivalent). Specialized experience is defined as follows:
 
-- Leading the end-to-end delivery of digital products or services, including creating comprehensive product roadmaps, defining product requirements, and managing cross-functional teams (e.g., software engineers, data analysts, UX/UI designers).
-- Managing and collaborating with senior-level stakeholders across complex technical environments, including securing buy-in for the development and implementation of digital products or technology solutions that align with digital transformation goals.
-- Building and leading cross-functional technical teams to deliver digital products or services, providing hands-on technical and supervisory guidance, and mentoring or coaching staff to enhance technical competencies and achieve organizational goals.
-- Ensuring product compliance with applicable federal regulations, standards, and guidelines, such as the 21st Century Integrated Digital Experience Act (IDEA), “Delivering a Digital-First Public Experience” (M-23-22), Federal Information Security Management Act (FISMA), and Americans with Disabilities Act (ADA).
-- Leading and coordinating initiatives with external stakeholders to promote the adoption of industry-wide or government-wide digital experience standards, including planning, development, and implementation.
+- Demonstrate use of evaluative and analytical methods to identify and measure progress;
+- Revise methods and develop new approaches to information gathering;
+- Plan, schedule, and lead complex projects using project management techniques;
+- Identify opportunities for improvement based on an organization’s mission, practices, and procedures.
 
 
 ## How to Apply
 
 {% comment %}{% include job/apply_button.html %}{% endcomment %}
 
-Get [notified](/join/newsletter) when this position is open for applications. Alerts for this role may be associated with the following keywords/categories: **Product Management**; **Strategy/Consulting**; **Customer Experience (CX)**; and **Marketing**
+Submit a complete online application prior to Tuesday, September 24th, 2024, at 11:59 pm ET. Please fill out all applicable fields. [Click here to apply.](https://www.usajobs.gov/job/808940800).
+
+**Need Assistance in applying or have questions regarding this job opportunity, please email the TTS Talent Team at [jointts@gsa.gov](mailto:jointts@gsa.gov).**
