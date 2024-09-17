@@ -3,6 +3,36 @@ You shouldn't have to edit this page very often. But if you want
 to modify some of the meta-data for the site, this is the place to do it.
 {% endcomment %}
 
+{%- if page.title -%}
+  {% assign effective_title = page.title -%}
+{%- elsif title -%}
+  {% assign effective_title = title -%}
+{%- elsif site.title -%}
+  {%- assign effective_title = site.title -%}
+{%- else -%}
+  {%- assign effective_title = "No title" -%}
+{%- endif -%}
+
+{%- if page.description -%}
+  {%- assign effective_description = page.description -%}
+{%- elsif description -%}
+  {%- assign effective_description = description -%}
+{%- elsif site.description -%}
+  {%- assign effective_description = site.description -%}
+{%- else -%}
+  {%- assign effective_description = "No description" -%}
+{%- endif -%}
+
+{%- if page.twitter -%}
+  {%- assign effective_twitter = page.twitter -%}
+{%- elsif twitter -%}
+  {%- assign effective_twitter = twitter -%}
+{%- elsif site.twitter -%}
+  {%- assign effective_twitter = site.twitter -%}
+{%- else -%}
+  {%- assign effective_twitter = "" -%}
+{%- endif -%}
+
 <head>
   <!-- Basic Page Needs
     ================================================== -->
@@ -14,30 +44,28 @@ to modify some of the meta-data for the site, this is the place to do it.
   <meta name="HandheldFriendly" content="True" />
   <meta name="MobileOptimized" content="320" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <!-- Title and meta description
     ================================================== -->
-  {% if title %}
-  <title>{{title}}</title>
-  {% else %}
-  <title>{{site.title}}</title>
-  {% endif %}
+
+  <title>{{ effective_title }}</title>
 
   <!-- tell robots to follow links in the content and index all the things -->
   <meta name="robots" content="index, follow" />
-  
-  <meta property="og:title" content="{{page.title}}" />
-  <meta name="description" content="{{page.description}}" />
-  <meta property="og:description" content="{{page.description}}" />
+
+  <meta property="og:title" content="{{ effective_title }}" />
+  <meta name="description" content="{{ effective_description }}" />
+  <meta property="og:description" content="{{ effective_description }}" />
 
   <!-- use GSA's og:image as the social media preview image -->
   <meta property="og:image" content="https://www.gsa.gov/sites/gsa.gov/themes/custom/gsa/custom_assets/images/open_graph_image.jpeg" />
   <meta property="og:image:width" content="1500" />
   <meta property="og:image:height" content="1000" />
-  
+
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@{{site.twitter}}" />
-  <meta name="twitter:title" content="{{page.title}}" />
-  <meta name="twitter:description" content="{{page.description}}" />
+  <meta name="twitter:site" content="@{{ effective_twitter }}" />
+  <meta name="twitter:title" content="{{ effective_title }}" />
+  <meta name="twitter:description" content="{{ effective_description }}" />
 
   <meta property="og:type" content="article" />
   <link rel="canonical" href="{{ page.url }}" />
