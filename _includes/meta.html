@@ -4,13 +4,17 @@ to modify some of the meta-data for the site, this is the place to do it.
 {% endcomment %}
 
 {%- if page.title -%}
-  {% assign effective_title = page.title -%}
+  {% assign effective_page_title = page.title -%}
 {%- elsif title -%}
-  {% assign effective_title = title -%}
-{%- elsif site.title -%}
-  {%- assign effective_title = site.title -%}
+  {% assign effective_page_title = title -%}
 {%- else -%}
-  {%- assign effective_title = "No title" -%}
+  {%- assign effective_page_title = "No title" -%}
+{%- endif -%}
+
+{%- if site.title -%}
+  {%- assign effective_title = effective_page_title | append: " | " | append: site.title -%}
+{%- else -%}
+  {%- assign effective_title = effective_page_title -%}
 {%- endif -%}
 
 {%- if page.description -%}
