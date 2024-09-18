@@ -94,8 +94,8 @@ role: "Communities & Collaboration Branch Chief"
 # site builder automatically understands. Anything else will not be understood
 # as a date.
 #🔻🔻🔻🔻🔻
-opens: 2025-02-01
-closes: 2025-02-22
+opens: 2024-09-23
+closes: 2024-09-27
 # These dates are also used to determine whether a position is upcoming, open,
 # or closed. Here's how we decide:
 #
@@ -117,7 +117,7 @@ closes: 2025-02-22
 # received, include the maximum number of applications here. Remove this line
 # or set the value to 0 if the job does not have an application cap.
 #🔻🔻🔻🔻🔻
-max applications: 250
+max applications: 300
 
 # Is this a permanent or term appointment? Use either "perm" or "term". This
 # will be used to fill in the appointment type on the page with consistent
