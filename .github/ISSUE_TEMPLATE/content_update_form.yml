@@ -1,0 +1,50 @@
+---
+name: Content Update
+description: Use this form to request content updates
+projects:
+  - GSA-TTS/54
+labels:
+  - "Content Update"
+assignees:
+  - "GSA-TTS/tts-website-content"
+
+body:
+  - type: "markdown"
+    attributes:
+      value: >
+        This form is used to request content updates.  We'll need
+        to know the URL / address of the page that the content is
+        on (or should be on), what the content currently says,
+        and what the content should say.
+
+  - type: "input"
+    id: "url"
+    attributes:
+      label: "URL"
+      description: "The URL of the page to be updated"
+      placeholder: "URL"
+    validations:
+      required: true
+
+  - type: "textarea"
+    id: "current"
+    attributes:
+      label: "Current Content"
+      description: "This is what the page currently says"
+      placeholder: "what the page says now"
+
+  - type: "textarea"
+    id: "desired"
+    attributes:
+      label: "Desired Content"
+      description: "This is what you want the page to say"
+      placeholder: "what the page should say"
+    validations:
+      required: true
+
+  - type: "textarea"
+    id: "comments"
+    attributes:
+      label: "Comments"
+      description: "Another other comments, formatting notes, not before / due by dates, etc."
+      placeholder: "comments"
