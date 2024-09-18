@@ -16,7 +16,7 @@ body:
         to know the URL / address of the page that the content is
         on (or should be on), what the content currently says,
         and what the content should say.
-    
+
   - type: "input"
     id: "url"
     attributes:
@@ -29,7 +29,7 @@ body:
   - type: "textarea"
     id: "current"
     attributes:
-      label: "Current Content"      
+      label: "Current Content"
       description: "This is what the page currently says"
       placeholder: "what the page says now"
 
@@ -45,11 +45,6 @@ body:
   - type: "textarea"
     id: "comments"
     attributes:
-      label: "Comments"      
+      label: "Comments"
       description: "Another other comments, formatting notes, not before / due by dates, etc."
       placeholder: "comments"
-
-    
-    
-    
-    
