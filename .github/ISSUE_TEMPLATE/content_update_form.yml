@@ -5,7 +5,7 @@ projects:
   - GSA-TTS/54
 labels:
   - "Content Update"
-title: "Content Update"
+
 body:
   - type: markdown
     attributes:
