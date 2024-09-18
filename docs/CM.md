@@ -15,8 +15,6 @@ site:
         - GovDelivery
         - Search.gov
         - DAP
-    plugins:
-        - NetlifyCMS
     testing-suites:
         - Codeql
         - Snyk
