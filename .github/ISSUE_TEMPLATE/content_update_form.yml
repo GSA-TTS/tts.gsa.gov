@@ -15,12 +15,12 @@ body:
         on (or should be on), what the content currently says,
         and what the content should say.
     
-  - id: url
-    type: input
+  - type: input
+    id: url
     attributes:
       label: URL    
-      description: The URL of the page to be updated
-      placeholder: URL
+      description: "The URL of the page to be updated"
+      placeholder: "URL"
     validations:
       required: true
 
