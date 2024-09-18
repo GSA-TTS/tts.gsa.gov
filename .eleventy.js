@@ -15,8 +15,6 @@ module.exports = function (config) {
   config.setFreezeReservedData(false);
   // Set pathPrefix for site
   let pathPrefix = "/";
-  // Copy the `admin` folders to the output
-  config.addPassthroughCopy("admin");
 
   // for #80 (update site favicon)
   // copy files from `_img/favicon/` to `_site/`
