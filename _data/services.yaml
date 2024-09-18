@@ -65,7 +65,7 @@ services:
   - name: Vote.gov
     link: https://vote.gov
     link_alt_text: link to Vote.gov homepage
-    logo: _img/vote-gov.jpg
+    logo: LOGO_votegov_2024.png
     logo_alt_text: Vote
     category: platforms
     description: The digital authoritative, trusted source for voting information.
@@ -177,7 +177,7 @@ services:
       impactful careers in public service and create a more effective, equitable
       government.
   - name: Federal Audit Clearinghouse (FAC)
-    link: https://facweb.census.gov/uploadpdf.aspx
+    link: https://www.fac.gov/
     link_alt_text: link to FAC homepage
     logo: _img/FAC-logo.png
     logo_alt_text: FAC
@@ -239,9 +239,9 @@ services:
       subawards to meet FFATA reporting requirements. "
     category: platforms
   - name: Notify.gov
-    link: https://beta.notify.gov/
+    link: https://digital.gov/2023/02/07/collaborate-with-the-tts-public-benefits-studio/
     link_alt_text: link to the beta of Notify.gov's homepage
-    logo: _img/notify-logo.png
+    logo: notify-logo.png
     logo_alt_text: Notify.gov
     category: products
     description: The Public Benefits Studio is piloting Notify.gov, a text messaging service built by and for government. Benefits program staff can set up custom text messages in as little as 10 minutes — without a technical integration required — and at minimal cost.
