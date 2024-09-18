@@ -7,47 +7,45 @@ labels:
   - "Content Update"
 
 body:
-  - type: markdown
+  - type: "markdown"
     attributes:
-      value: |
+      value: >
         This form is used to request content updates.  We'll need
         to know the URL / address of the page that the content is
         on (or should be on), what the content currently says,
         and what the content should say.
     
-  - type: input
-    id: url
+  - type: "input"
+    id: "url"
     attributes:
-      label: URL    
+      label: "URL"
       description: "The URL of the page to be updated"
       placeholder: "URL"
     validations:
       required: true
 
-  - id: current
-    type: textarea
+  - type: "textarea"
+    id: "current"
     attributes:
-      label: Current Content
-      type: textarea
-      description: This is what the page currently says
-      placeholder: what the page says now
+      label: "Current Content"      
+      description: "This is what the page currently says"
+      placeholder: "what the page says now"
 
-  - id: desired
-    type: textarea
+  - type: "textarea"
+    id: "desired"
     attributes:
-      label: Desired Contetn
-      description: This is what you want the page to say
-      placeholder: what the page should say
+      label: "Desired Content"
+      description: "This is what you want the page to say"
+      placeholder: "what the page should say"
     validations:
       required: true
 
-  - id: comments
-    type: textarea
+  - type: "textarea"
+    id: "comments"
     attributes:
-      label: Comments
-      type: textarea
-      description: Another other comments, formatting notes, not before / due by dates, etc.
-      placeholder: comments
+      label: "Comments"      
+      description: "Another other comments, formatting notes, not before / due by dates, etc."
+      placeholder: "comments"
 
     
     
