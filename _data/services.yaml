@@ -65,7 +65,7 @@ services:
   - name: Vote.gov
     link: https://vote.gov
     link_alt_text: link to Vote.gov homepage
-    logo: LOGO_votegov_2024.png
+    logo: _img/LOGO_votegov_2024.png
     logo_alt_text: Vote
     category: platforms
     description: The digital authoritative, trusted source for voting information.
@@ -241,7 +241,7 @@ services:
   - name: Notify.gov
     link: https://digital.gov/2023/02/07/collaborate-with-the-tts-public-benefits-studio/
     link_alt_text: link to the beta of Notify.gov's homepage
-    logo: notify-logo.png
+    logo: _img/notify-logo.png
     logo_alt_text: Notify.gov
     category: products
     description: The Public Benefits Studio is piloting Notify.gov, a text messaging service built by and for government. Benefits program staff can set up custom text messages in as little as 10 minutes — without a technical integration required — and at minimal cost.
