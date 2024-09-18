@@ -94,8 +94,8 @@ role: "Communities & Collaboration Branch Chief"
 # site builder automatically understands. Anything else will not be understood
 # as a date.
 #🔻🔻🔻🔻🔻
-opens: 2025-02-01
-closes: 2025-02-22
+opens: 2024-09-23
+closes: 2024-09-27
 # These dates are also used to determine whether a position is upcoming, open,
 # or closed. Here's how we decide:
 #
@@ -117,7 +117,7 @@ closes: 2025-02-22
 # received, include the maximum number of applications here. Remove this line
 # or set the value to 0 if the job does not have an application cap.
 #🔻🔻🔻🔻🔻
-max applications: 250
+max applications: 300
 
 # Is this a permanent or term appointment? Use either "perm" or "term". This
 # will be used to fill in the appointment type on the page with consistent
@@ -371,14 +371,14 @@ For each job on your resume, provide:
 - Number of hours per week you worked (if part time)
 
 **SPECIALIZED EXPERIENCE REQUIREMENTS:**
-
+***Updated on 9/18/24***
 To qualify, you must have one (1) year of specialized experience at the next
 lower GS-grade (or equivalent). Specialized experience is defined as follows:
 
 - Leading the end-to-end delivery of digital products or services, including creating comprehensive product roadmaps, defining product requirements, and managing cross-functional teams (e.g., software engineers, data analysts, UX/UI designers).
 - Managing and collaborating with senior-level stakeholders across complex technical environments, including securing buy-in for the development and implementation of digital products or technology solutions that align with digital transformation goals.
 - Building and leading cross-functional technical teams to deliver digital products or services, providing hands-on technical and supervisory guidance, and mentoring or coaching staff to enhance technical competencies and achieve organizational goals.
-- Ensuring product compliance with applicable federal regulations, standards, and guidelines, such as the 21st Century Integrated Digital Experience Act (IDEA), “Delivering a Digital-First Public Experience” (M-23-22), Federal Information Security Management Act (FISMA), and Americans with Disabilities Act (ADA).
+- Ensuring product compliance with applicable federal regulations, standards, and guidelines
 - Leading and coordinating initiatives with external stakeholders to promote the adoption of industry-wide or government-wide digital experience standards, including planning, development, and implementation.
 
 
