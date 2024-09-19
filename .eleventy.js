@@ -11,8 +11,7 @@ const { sassPlugin } = require("esbuild-sass-plugin");
 const svgSprite = require("eleventy-plugin-svg-sprite");
 const { imageShortcode, imageWithClassShortcode } = require("./config");
 
-require('dotenv').config();
-
+require("dotenv").config();
 
 module.exports = function (config) {
   config.setFreezeReservedData(false);
@@ -62,22 +61,22 @@ module.exports = function (config) {
   // .env file, which we can use to convert relative URLs to
   // absolute URLs
 
-  const { hosts } = yaml.load(fs.readFileSync('./_data/site.yaml', 'utf8'));
+  const { hosts } = yaml.load(fs.readFileSync("./_data/site.yaml", "utf8"));
 
   if (process.env.BRANCH) {
-    switch(process.env.BRANCH) {
+    switch (process.env.BRANCH) {
       case "main":
-        baseUrl = new URL(hosts.live).href.replace(/\/$/, '');
+        baseUrl = new URL(hosts.live).href.replace(/\/$/, "");
         break;
       default:
-        baseUrl = new URL(hosts.preview).href.replace(/\/$/, '');
+        baseUrl = new URL(hosts.preview).href.replace(/\/$/, "");
         break;
-      }
-  } else{
-    baseUrl = new URL(hosts.undefined).href.replace(/\/$/, '');
+    }
+  } else {
+    baseUrl = new URL(hosts.undefined).href.replace(/\/$/, "");
   }
 
-  config.addGlobalData('baseUrl', baseUrl);
+  config.addGlobalData("baseUrl", baseUrl);
 
   // Template function used to sort a collection by a certain property
   // Ex: {% assign sortedJobs = collection.jobs | sortByProp: "title" %}
