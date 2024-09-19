@@ -12,7 +12,7 @@ services:
   - name: 10x
     link: https://10x.gsa.gov/
     link_alt_text: link to 10x.gov
-    logo: _img/logo1.1d2ef675.svg
+    logo: _img/10x-logo-alt.png
     logo_alt_text: 10x
     category: products
     description: Incrementally investing in crowdsourced technology ideas from
