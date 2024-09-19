@@ -64,8 +64,6 @@ module.exports = function (config) {
 
   const { hosts } = yaml.load(fs.readFileSync('./_data/site.yaml', 'utf8'));
 
-  console.log("hosts.preview = '" + hosts.preview + "'");
-
   if (process.env.BRANCH) {
     switch(process.env.BRANCH) {
       case "main":
@@ -84,8 +82,6 @@ module.exports = function (config) {
   } else{
     baseUrl = new URL(hosts.undefined).href.replace(/\/$/, '');
   }
-
-  console.log("baseUrl = '" + baseUrl + '"');
 
   config.addGlobalData('baseUrl', baseUrl);
 
