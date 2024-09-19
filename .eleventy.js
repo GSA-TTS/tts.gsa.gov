@@ -67,7 +67,7 @@ module.exports = function (config) {
   if (process.env.BRANCH) {
     switch(process.env.BRANCH) {
       case "main":
-        baseUrl = new URL(hosts.prod).href.replace(/\/$/, '');
+        baseUrl = new URL(hosts.live).href.replace(/\/$/, '');
         break;
       case "demo":
         baseUrl = new URL(hosts.demo).href.replace(/\/$/, '');
