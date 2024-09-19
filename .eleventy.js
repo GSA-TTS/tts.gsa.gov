@@ -77,6 +77,31 @@ module.exports = function (config) {
   }
 
   config.addGlobalData("baseUrl", baseUrl);
+  config.addGlobalData("site.baseUrl", baseUrl);
+
+  if (process.env.TWITTER) {
+    config.addGlobalData("site.twitter", process.env.TWITTER);
+  }
+
+  if (process.env.DAP_AGENCY) {
+    config.addGlobalData("site.dap.agency", process.env.DAP_AGENCY);
+  }
+
+  if (process.env.DAP_SUBAGENCY) {
+    config.addGlobalData("site.dap.subagency", process.env.DAP_SUBAGENCY);
+  }
+
+  if (process.env.GA) {
+    config.addGlobalData("site.ga", process.env.GA);
+  }
+
+  if (process.env.SEARCH_ACCESS_KEY) {
+    config.addGlobalData("site.access_key", process.env.SEARCH_ACCESS_KEY);
+  }
+
+  if (process.env.SEARCH_AFFILIATE) {
+    config.addGlobalData("site.affiliate", process.env.SEARCH_AFFILIATE);
+  }
 
   // Template function used to sort a collection by a certain property
   // Ex: {% assign sortedJobs = collection.jobs | sortByProp: "title" %}
