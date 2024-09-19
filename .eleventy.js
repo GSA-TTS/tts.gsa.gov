@@ -61,15 +61,35 @@ module.exports = function (config) {
   // either the environment (thanks to Cloud.gov Pages) or a
   // .env file, which we can use to convert relative URLs to
   // absolute URLs
-  const SITE_PREFIX = process.env.SITE_PREFIX || 'http://localhost:8080/';
-  const BASEURL = process.env.BASEURL ? process.env.BASEURL : '/';
 
-  const ABSOLUTE_URL_PREFIX = SITE_PREFIX + BASEURL;
+  const { hosts } = yaml.load(fs.readFileSync('./_data/site.yaml', 'utf8'));
 
-  console.log('ABSOLUTE_URL_PREFIX = "' + ABSOLUTE_URL_PREFIX + "'");
+  if (process.env.BRANCH) {
+    switch(process.env.BRANCH) {
+      case "main":
+        baseUrl = new URL(hosts.prod).href.replace(/\/$/, '');
+        break;
+      case "demo":
+        baseUrl = new URL(hosts.demo).href.replace(/\/$/, '');
+        break;
+      case "staging":
+        baseUrl = new URL(hosts.staging).href.replace(/\/$/, '');
+        break;
+      default:
+        baseUrl = new URL(hosts.preview).href.replace(/\/$/, '');
+        break;
+      }
+  } else{
+    baseUrl = new URL(hosts.undefined).href.replace(/\/$/, '');
+  }
+
+  console.log("baseUrl = '" + baseUrl + '"');
+
+
+    config.addGlobalData('baseUrl', baseUrl);
 
   const toAbsoluteUrl = (url) => {
-    return new URL(url, ABSOLUTE_URL_PREFIX).href;
+    return new URL(url, baseUrl).href;
   }
 
   config.addFilter('toAbsoluteUrl', toAbsoluteUrl);
