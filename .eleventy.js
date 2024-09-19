@@ -61,11 +61,15 @@ module.exports = function (config) {
   // either the environment (thanks to Cloud.gov Pages) or a
   // .env file, which we can use to convert relative URLs to
   // absolute URLs
-  const BASEURL = process.env.BASEURL ? process.env.BASEURL : 'http://localhost:8080/';
-  console.log('BASEURL = "' + BASEURL + "'");
+  const SITE_PREFIX = process.env.SITE_PREFIX || 'http://localhost:8080/';
+  const BASEURL = process.env.BASEURL ? process.env.BASEURL : '/';
+
+  const ABSOLUTE_URL_PREFIX = SITE_PREFIX + BASEURL;
+
+  console.log('ABSOLUTE_URL_PREFIX = "' + ABSOLUTE_URL_PREFIX + "'");
 
   const toAbsoluteUrl = (url) => {
-    return new URL(url, BASEURL).href;
+    return new URL(url, ABSOLUTE_URL_PREFIX).href;
   }
 
   config.addFilter('toAbsoluteUrl', toAbsoluteUrl);
