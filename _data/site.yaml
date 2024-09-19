@@ -12,56 +12,11 @@ description: >- # this means to ignore newlines
   modern applications, platforms, processes, personnel, and software
   solutions.
 
-# Twitter handle. Only the handle, not the URL.
-twitter: GSA_TTS
-
 # Whether or not to render the "Suggest edits to this page on GitHub" link on pages
 allow_page_edits: true
 
 # Whether or not to render the alert in the hero
 show_site_alert: true
-
-#################################################################
-#
-# Digital Analytics Program (DAP) configuration
-#
-# USAID   - Agency for International Development
-# USDA    - Department of Agriculture
-# DOC     - Department of Commerce
-# DOD     - Department of Defense
-# ED      - Department of Education
-# DOE     - Department of Energy
-# HHS     - Department of Health and Human Services
-# DHS     - Department of Homeland Security
-# HUD     - Department of Housing and Urban Development
-# DOJ     - Department of Justice
-# DOL     - Department of Labor
-# DOS     - Department of State
-# DOI     - Department of the Interior
-# TREAS   - Department of the Treasury
-# DOT     - Department of Transportation
-# VA      - Department of Veterans Affairs
-# EPA     - Environmental Protection Agency
-# EOP     - Executive Office of the President
-# GSA     - General Services Administration
-# NASA    - National Aeronautics and Space Administration
-# NARA    - National Archives and Records Administration
-# NSF     - National Science Foundation
-# NRC     - Nuclear Regulatory Commission
-# OPM     - Office of Personnel Management
-# USPS    - Postal Service
-# SBA     - Small Business Administration
-# SSA     - Social Security Administration
-#
-#################################################################
-dap:
-  agency: GSA
-
-  # Optional
-  # subagency: your-subagency
-
-# Configuration for Google Analytics
-ga: G-4K89W87795
 
 # Site Navigation
 primary_navigation:
@@ -96,29 +51,15 @@ primary_navigation:
 #     url: "#main-content"
 #   - name: Another secondary link
 #     url: "#main-content"
-# Search.gov configuration
-#
-# 1. Create an account with Search.gov https://search.usa.gov/signup
-# 2. Add a new site.
-# 3. Add your site/affiliate name here.
-# searchgov: "foobar"
-# Only change this if you're using a CNAME. Learn more here: https://search.gov/manual/cname.html
-# endpoint: https://search.usa.gov
 
-# Replace this with your search.gov account.
-affiliate: tts-gsa-gov
+dap:
+  agency: GSA
 
-access_key: M2SsxpWBgRu9LVxp0oD1UwKvqfZ2QeBMDpf68b6jhno=
-# This renders the results within the page instead of sending to user to search.gov.
-# inline: true
-
+suggestions: true
 hosts:
   live: https://tts.gsa.gov/
   preview: https://federalist-a2423046-fe43-4e75-a2ef-2651e5e123ca.sites.pages.cloud.gov/
   undefined: http://localhost:8080/
-# This allows Search.gov to present relevant type-ahead search suggestions in your website's search box.
-# If you do not want to present search suggestions, set this value to false.
-# suggestions: true
 ##########################################################################################
 # The values below here are more advanced and should only be
 # changed if you know what they do
