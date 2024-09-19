@@ -69,12 +69,6 @@ module.exports = function (config) {
       case "main":
         baseUrl = new URL(hosts.live).href.replace(/\/$/, '');
         break;
-      case "demo":
-        baseUrl = new URL(hosts.demo).href.replace(/\/$/, '');
-        break;
-      case "staging":
-        baseUrl = new URL(hosts.staging).href.replace(/\/$/, '');
-        break;
       default:
         baseUrl = new URL(hosts.preview).href.replace(/\/$/, '');
         break;
