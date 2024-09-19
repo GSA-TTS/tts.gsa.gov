@@ -85,14 +85,7 @@ module.exports = function (config) {
 
   console.log("baseUrl = '" + baseUrl + '"');
 
-
-    config.addGlobalData('baseUrl', baseUrl);
-
-  const toAbsoluteUrl = (url) => {
-    return new URL(url, baseUrl).href;
-  }
-
-  config.addFilter('toAbsoluteUrl', toAbsoluteUrl);
+  config.addGlobalData('baseUrl', baseUrl);
 
   // Template function used to sort a collection by a certain property
   // Ex: {% assign sortedJobs = collection.jobs | sortByProp: "title" %}
