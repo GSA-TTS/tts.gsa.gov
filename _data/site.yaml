@@ -112,6 +112,10 @@ access_key: M2SsxpWBgRu9LVxp0oD1UwKvqfZ2QeBMDpf68b6jhno=
 # This renders the results within the page instead of sending to user to search.gov.
 # inline: true
 
+hosts:
+  live: https://tts.gsa.gov/
+  preview: https://federalist-a2423046-fe43-4e75-a2ef-2651e5e123ca.sites.pages.cloud.gov/
+  undefined: http://localhost:8080/
 # This allows Search.gov to present relevant type-ahead search suggestions in your website's search box.
 # If you do not want to present search suggestions, set this value to false.
 # suggestions: true
