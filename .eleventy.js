@@ -62,6 +62,7 @@ module.exports = function (config) {
   // .env file, which we can use to convert relative URLs to
   // absolute URLs
   const BASEURL = process.env.BASEURL ? process.env.BASEURL : 'http://localhost:8080/';
+  console.log('BASEURL = "' + BASEURL + "'");
 
   const toAbsoluteUrl = (url) => {
     return new URL(url, BASEURL).href;
