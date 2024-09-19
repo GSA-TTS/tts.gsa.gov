@@ -53,6 +53,10 @@ primary_navigation:
 #   - name: Another secondary link
 #     url: "#main-content"
 
+dap:
+  agency: GSA
+
+
 suggestions: true
 hosts:
   live: https://tts.gsa.gov/
