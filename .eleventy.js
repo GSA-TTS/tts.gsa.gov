@@ -71,7 +71,7 @@ module.exports = function (config) {
   function isValidTwitterHandle(handle) {
     const validTwitterHandle = /^\w{1,15}$/;
     return validTwitterHandle.test(handle);
-}
+  }
 
   function isValidDapAgency(agency) {
     const validDapAgency = /^\w{1,15}$/;
@@ -92,7 +92,6 @@ module.exports = function (config) {
     const validSearchAffiliate = /^[0-9a-z-]{1,}$/;
     return validSearchAffiliate.test(affiliate);
   }
-
 
   if (process.env.BRANCH && isValidGitBranch(process.env.BRANCH)) {
     switch (process.env.BRANCH) {
@@ -118,7 +117,10 @@ module.exports = function (config) {
     config.addGlobalData("site.dap.agency", process.env.DAP_AGENCY);
   }
 
-  if (process.env.DAP_SUBAGENCY && isValidDapAgency(process.env.DAP_SUBAGENCY)) {
+  if (
+    process.env.DAP_SUBAGENCY &&
+    isValidDapAgency(process.env.DAP_SUBAGENCY)
+  ) {
     config.addGlobalData("site.dap.subagency", process.env.DAP_SUBAGENCY);
   }
 
@@ -126,11 +128,17 @@ module.exports = function (config) {
     config.addGlobalData("site.ga", process.env.GA);
   }
 
-  if (process.env.SEARCH_ACCESS_KEY && isValidSearchKey(process.env.SEARCH_ACCESS_KEY)) {
+  if (
+    process.env.SEARCH_ACCESS_KEY &&
+    isValidSearchKey(process.env.SEARCH_ACCESS_KEY)
+  ) {
     config.addGlobalData("site.access_key", process.env.SEARCH_ACCESS_KEY);
   }
 
-  if (process.env.SEARCH_AFFILIATE && isValidSearchAffiliate(process.env.SEARCH_AFFILIATE)) {
+  if (
+    process.env.SEARCH_AFFILIATE &&
+    isValidSearchAffiliate(process.env.SEARCH_AFFILIATE)
+  ) {
     config.addGlobalData("site.affiliate", process.env.SEARCH_AFFILIATE);
   }
 
