@@ -11,6 +11,9 @@ const { sassPlugin } = require("esbuild-sass-plugin");
 const svgSprite = require("eleventy-plugin-svg-sprite");
 const { imageShortcode, imageWithClassShortcode } = require("./config");
 
+require('dotenv').config();
+
+
 module.exports = function (config) {
   config.setFreezeReservedData(false);
   // Set pathPrefix for site
@@ -53,6 +56,18 @@ module.exports = function (config) {
     const allServices = collection.getAll()[0].data.services;
     return allServices;
   });
+
+  // This gives us a filter, based on BASEURL which we get from
+  // either the environment (thanks to Cloud.gov Pages) or a
+  // .env file, which we can use to convert relative URLs to
+  // absolute URLs
+  const BASEURL = process.env.BASEURL ? process.env.BASEURL : 'http://localhost:8080/';
+
+  const toAbsoluteUrl = (url) => {
+    return new URL(url, BASEURL).href;
+  }
+
+  config.addFilter('toAbsoluteUrl', toAbsoluteUrl);
 
   // Template function used to sort a collection by a certain property
   // Ex: {% assign sortedJobs = collection.jobs | sortByProp: "title" %}
