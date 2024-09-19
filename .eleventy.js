@@ -89,7 +89,7 @@ module.exports = function (config) {
   }
 
   function isValidSearchAffiliate(affiliate) {
-    const validSearchAffiliate = /^[0-9a-z]{1,}$/;
+    const validSearchAffiliate = /^[0-9a-z-]{1,}$/;
     return validSearchAffiliate.test(affiliate);
   }
 
