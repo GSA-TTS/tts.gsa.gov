@@ -117,7 +117,7 @@ hosts:
   live: https://tts.gsa.gov/
   demo: https://federalist-a2423046-fe43-4e75-a2ef-2651e5e123ca.sites.pages.cloud.gov/
   staging: https://federalist-a2423046-fe43-4e75-a2ef-2651e5e123ca.sites.pages.cloud.gov/
-  default: https://federalist-a2423046-fe43-4e75-a2ef-2651e5e123ca.sites.pages.cloud.gov/
+  preview: https://federalist-a2423046-fe43-4e75-a2ef-2651e5e123ca.sites.pages.cloud.gov/
   undefined: http://localhost:8080/
 
 # This allows Search.gov to present relevant type-ahead search suggestions in your website's search box.

@@ -64,6 +64,8 @@ module.exports = function (config) {
 
   const { hosts } = yaml.load(fs.readFileSync('./_data/site.yaml', 'utf8'));
 
+  console.log("hosts.preview = '" + hosts.preview + "'");
+
   if (process.env.BRANCH) {
     switch(process.env.BRANCH) {
       case "main":
