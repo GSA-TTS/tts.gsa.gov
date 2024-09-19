@@ -18,7 +18,6 @@ allow_page_edits: true
 # Whether or not to render the alert in the hero
 show_site_alert: true
 
-
 # Site Navigation
 primary_navigation:
   - name: Home
@@ -55,7 +54,6 @@ primary_navigation:
 
 dap:
   agency: GSA
-
 
 suggestions: true
 hosts:
