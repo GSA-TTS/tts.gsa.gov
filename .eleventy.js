@@ -252,7 +252,6 @@ module.exports = function (config) {
     return markdownLib.render(content);
   });
 
-
   // Override Browsersync defaults (used only with --serve)
   config.setBrowserSyncConfig({
     callbacks: {
