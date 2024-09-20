@@ -156,6 +156,15 @@ module.exports = function (config) {
   });
   config.setLibrary("md", markdownLibrary);
 
+  // Create a Markdown parser instance
+  const markdownLib = markdownIt({ html: true });
+
+  // Add the markdown filter
+  config.addFilter("markdown", (content) => {
+    return markdownLib.render(content);
+  });
+
+
   // Override Browsersync defaults (used only with --serve)
   config.setBrowserSyncConfig({
     callbacks: {
