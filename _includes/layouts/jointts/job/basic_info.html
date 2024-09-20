@@ -1,0 +1,50 @@
+<h2 id="basic-information" tabindex="-1">Basic Information<a class="direct-link" href="#basic-information" aria-hidden="true"></a></h2>
+<!-- Intro -->
+{% if info_intro.size > 0 %}
+  <p>{{ info_intro | markdown }}</p>
+{% endif %}
+
+<!-- Supervisory Status -->
+{% if supervisory_status.size > 0 %}
+  <p><strong>Supervisory Status:</strong> {{ supervisory_status }}</p>
+{% endif %}
+
+<!-- Job Title -->
+{% if title.size > 0 %}
+  <p><strong>Job Title:</strong> {{ title }}</p>
+{% endif %}
+
+<!-- USA Official Title -->
+{% if usajobs_official_title.size > 0 %}
+  <p><strong>Official title in USAJOBS:</strong> {{ usajobs_official_title }}</p>
+{% endif %}
+
+<!-- Vacancies -->
+{% if vacancies.size > 0 %}
+  <p><strong>Number of vacancies:</strong> {{ vacancies }}</p>
+{% endif %}
+
+<!-- Location -->
+{% if location.size > 0 %}
+  <p><strong>Location:</strong> {{ location }}</p>
+{% endif %}
+
+<!-- Salary -->
+{% include "layouts/jointts/job/salary.html" %}
+
+<!-- Travel Requirement -->
+{% if travel_requirement.size > 0 %}
+  <p><strong>Travel Requirement:</strong> {{ travel_requirement }}</p>
+{% endif %}
+
+<!-- Work Schedule -->
+{% if work_schedule.size > 0 %}
+  <p><strong>Work Schedule:</strong> {{ work_schedule }}</p>
+{% endif %}
+
+<!-- Appointment Type -->
+{% if appointment_type %}
+  <p><strong>Appointment Type:</strong> This is a {{ appointment_type }} position.</p>
+{% endif %}
+
+<p>Learn more about the benefits of working at <a href="https://www.gsa.gov/portal/category/26702">GSA</a> and <a href="/join/compensation-and-benefits/">TTS</a>.</p>

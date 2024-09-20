@@ -1,0 +1,27 @@
+{% if state == 'closed' %}
+  <div class="usa-alert usa-alert-warning">
+    <div class="usa-alert-body">
+      <h3 class="usa-alert-heading">This job posting has closed.</h3>
+      <p class="usa-alert-text">Please see <a href="{{ '/join' | url }}">our other open positions</a>.</p>
+    </div>
+  </div>
+{% elsif state == 'upcoming' %}
+  <div class="usa-alert usa-alert-info">
+    <div class="usa-alert-body">
+      <h3 class="usa-alert-heading">Coming soon</h3>
+      <p class="usa-alert-text">
+        <a href="/join/newsletter">Get notified</a> when this position is open for applications.
+        {% if alert_keywords %}
+          Alerts for this role may be associated with the following keywords/categories: <strong>{{alert_keywords}}</strong>.
+        {% endif %}
+      </p>
+    </div>
+  </div>
+{% elsif state == 'open' %}
+  <div class="usa-alert usa-alert-info">
+    <div class="usa-alert-body">
+      <h3 class="usa-alert-heading">Apply now!</h3>
+      <p class="usa-alert-text">This role is open for applications until {{ closes | date: "%A, %B %d, %Y" }}.</p>
+    </div>
+  </div>
+{% endif %}

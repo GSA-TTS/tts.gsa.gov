@@ -1,0 +1,5 @@
+<h2 id="qualifications" tabindex="-1">Qualifications<a class="direct-link" href="#qualifications" aria-hidden="true"></a></h2>
+<p>{{ qualifications | newline_to_br | markdown }}</p>
+{% if specialized_requirements %}
+    <h4 id="specialized-requirements" tabindex="-1">SPECIALIZED EXPERIENCE REQUIREMENTS:</h4>{{ specialized_requirements | markdown }}
+{% endif %}

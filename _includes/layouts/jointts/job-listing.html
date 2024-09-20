@@ -10,6 +10,8 @@ layout: layouts/default
   {%- assign sorted_info_sessions = global_info_sessions | sort: 'data' -%}
 {% endif %}
 
+{% capture state %}{% getStateFromDates opens closes %}{% endcapture %}
+
 <div class="grid-container">
   <div class="grid-row grid-gap">
     <div class="desktop:grid-col-12 margin-top-4">
@@ -22,31 +24,10 @@ layout: layouts/default
     <div class="grid-row grid-gap">
       <div class="desktop:grid-col-12 usa-prose margin-bottom-3">
         <h1>{{ title }}</h1>
-        {% capture state %}{% getStateFromDates opens closes %}{% endcapture %}
+        {% if status_alert %}
+          {% include "layouts/jointts/job/status_alert.html" %}
+        {% endif %}
 
-        {% if state == 'closed' %}
-          <div class="usa-alert usa-alert-warning">
-            <div class="usa-alert-body">
-              <h3 class="usa-alert-heading">This job posting has closed.</h3>
-              <p class="usa-alert-text">Please see
-              <a href="{{ '/join' | url }}">our other open positions</a>.</p>
-            </div>
-          </div>
-        {% elsif state == 'upcoming' %}
-          <div class="usa-alert usa-alert-info">
-            <div class="usa-alert-body">
-              <h3 class="usa-alert-heading">Coming soon</h3>
-              <p class="usa-alert-text"><p class="usa-alert-text"><a href="/join/newsletter">Get notified</a> when this position opens.</p>{%comment %}{% include upcoming_statement.html %}{% endcomment %}</p>
-            </div>
-          </div>
-        {% elsif state == 'open' %}
-          <div class="usa-alert usa-alert-info">
-            <div class="usa-alert-body">
-            <h3 class="usa-alert-heading">Apply now!</h3>
-            <p class="usa-alert-text">This role is open for applications until {{ closes | date: "%A, %B %d, %Y" }}.</p>
-          </div>
-        </div>
-      {% endif %}
       <div class="grid-row grid-gap padding-top-4">
         <div class="desktop:grid-col-4 desktop:margin-top-0" style="order:1">
         {% if info_sessions.size > 0 %}
@@ -69,7 +50,21 @@ layout: layouts/default
          </div>
 
         <div class="desktop:grid-col-8 usa-prose" markdown="1">
-            {{ content }}
+          {% if updated %}
+            {% assign updated_date = updated | date: "%B %d, %Y" %}
+            <p><em><strong>Updated on: {{ updated_date }}</strong></em></p>
+          {% endif %}
+          {% include "layouts/jointts/job/basic_info.html" %}
+          {% if role_summary %}
+            {% include "layouts/jointts/job/role_summary.html" %}
+          {% endif %}
+          {% if key_objectives.size > 0 %}
+            {% include "layouts/jointts/job/key_objectives.html" %}
+          {% endif %}
+          {% if qualifications %}
+            {% include "layouts/jointts/job/qualifications.html" %}
+          {% endif %}
+          {% include "layouts/jointts/job/how_to_apply.html" %}
         </div>
       </div>
       </div>
