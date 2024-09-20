@@ -11,6 +11,8 @@ const { sassPlugin } = require("esbuild-sass-plugin");
 const svgSprite = require("eleventy-plugin-svg-sprite");
 const { imageShortcode, imageWithClassShortcode } = require("./config");
 
+require("dotenv").config();
+
 module.exports = function (config) {
   config.setFreezeReservedData(false);
   // Set pathPrefix for site
@@ -53,6 +55,92 @@ module.exports = function (config) {
     const allServices = collection.getAll()[0].data.services;
     return allServices;
   });
+
+  // This gives us a filter, based on BASEURL which we get from
+  // either the environment (thanks to Cloud.gov Pages) or a
+  // .env file, which we can use to convert relative URLs to
+  // absolute URLs
+
+  const { hosts } = yaml.load(fs.readFileSync("./_data/site.yaml", "utf8"));
+
+  function isValidGitBranch(branch) {
+    const validGitBranch = /^[a-zA-Z0-9_\-\.\/]+$/;
+    return validGitBranch.test(branch);
+  }
+
+  function isValidTwitterHandle(handle) {
+    const validTwitterHandle = /^\w{1,15}$/;
+    return validTwitterHandle.test(handle);
+  }
+
+  function isValidDapAgency(agency) {
+    const validDapAgency = /^\w{1,15}$/;
+    return validDapAgency.test(agency);
+  }
+
+  function isValidAnalyticsId(ga) {
+    const validAnalyticsId = /^(G|UA|YT|MO)-[a-zA-Z0-9-]+$/;
+    return validAnalyticsId.test(ga);
+  }
+
+  function isValidSearchKey(accessKey) {
+    const validSearchKey = /^[0-9a-zA-Z]{1,}=*$/;
+    return validSearchKey.test(accessKey);
+  }
+
+  function isValidSearchAffiliate(affiliate) {
+    const validSearchAffiliate = /^[0-9a-z-]{1,}$/;
+    return validSearchAffiliate.test(affiliate);
+  }
+
+  if (process.env.BRANCH && isValidGitBranch(process.env.BRANCH)) {
+    switch (process.env.BRANCH) {
+      case "main":
+        baseUrl = new URL(hosts.live).href.replace(/\/$/, "");
+        break;
+      default:
+        baseUrl = new URL(hosts.preview).href.replace(/\/$/, "");
+        break;
+    }
+  } else {
+    baseUrl = new URL(hosts.undefined).href.replace(/\/$/, "");
+  }
+
+  config.addGlobalData("baseUrl", baseUrl);
+  config.addGlobalData("site.baseUrl", baseUrl);
+
+  if (process.env.TWITTER && isValidTwitterHandle(process.env.TWITTER)) {
+    config.addGlobalData("site.twitter", process.env.TWITTER);
+  }
+
+  if (process.env.DAP_AGENCY && isValidDapAgency(process.env.DAP_AGENCY)) {
+    config.addGlobalData("site.dap.agency", process.env.DAP_AGENCY);
+  }
+
+  if (
+    process.env.DAP_SUBAGENCY &&
+    isValidDapAgency(process.env.DAP_SUBAGENCY)
+  ) {
+    config.addGlobalData("site.dap.subagency", process.env.DAP_SUBAGENCY);
+  }
+
+  if (process.env.GA && isValidAnalyticsId(process.env.GA)) {
+    config.addGlobalData("site.ga", process.env.GA);
+  }
+
+  if (
+    process.env.SEARCH_ACCESS_KEY &&
+    isValidSearchKey(process.env.SEARCH_ACCESS_KEY)
+  ) {
+    config.addGlobalData("site.access_key", process.env.SEARCH_ACCESS_KEY);
+  }
+
+  if (
+    process.env.SEARCH_AFFILIATE &&
+    isValidSearchAffiliate(process.env.SEARCH_AFFILIATE)
+  ) {
+    config.addGlobalData("site.affiliate", process.env.SEARCH_AFFILIATE);
+  }
 
   // Template function used to sort a collection by a certain property
   // Ex: {% assign sortedJobs = collection.jobs | sortByProp: "title" %}
