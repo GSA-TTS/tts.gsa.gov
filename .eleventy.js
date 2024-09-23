@@ -158,6 +158,11 @@ module.exports = function (config) {
   config.addLiquidShortcode("getStateFromDates", getStateFromDates);
 
   function getStateFromDates(opens, closes) {
+    
+    if (!opens && !closes) {
+      return "unknown";
+    }
+
     let now_string = DateTime.now()
       .setZone("America/New_York")
       .toFormat("yyyy-MM-dd");
@@ -168,7 +173,7 @@ module.exports = function (config) {
       .setZone("America/New_York")
       .toFormat("yyyy-MM-dd");
 
-    if (opens_string == "" || opens_string >= now_string) {
+    if ( opens_string == "" && opens_string >= now_string) {
       return "upcoming";
     } else if (closes_string <= now_string) {
       return "closed";

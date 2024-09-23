@@ -79,24 +79,34 @@ layout: layouts/default
         </ul>
 
         <h2>Upcoming positions</h2>
-
         <ul>
           {% for pg in collections.jobs %}
             {% capture state %}{% getStateFromDates pg.data.opens pg.data.closes %}{% endcapture %}
-            {% if state == "upcoming" %}
+            
+            {% assign show_job = false %}
+
+            {% if pg.data.title != "" %}
+              {% if state == "upcoming" %}
+                {% assign show_job = true %}
+              {% elsif state == "unknown" %}
+                {% assign show_job = true %}
+              {% endif %}
+            {% endif %}
+        
+            {% if show_job %}
               {% unless pg.data.path contains 'template' %}
                 {% unless pg.data.path contains 'performance-profiles' %}
                   <li>
                     {% if pg.data.external_url %}
-                    <a href="{{ pg.data.external_url }}">{{ pg.data.title }}</a>
-                      {% else %}
+                      <a href="{{ pg.data.external_url }}">{{ pg.data.title }}</a>
+                    {% else %}
                       <a href="{{ pg.url | url }}">{{ pg.data.title }}</a>
                     {% endif %}
-
+        
                     <!-- Info Sessions -->
                     {% assign now = 'now' | date: "%s" %}
                     {% assign future_sessions = false %}
-
+        
                     {% for session in pg.data.info_sessions %}
                       {% assign session_date = session.date | date: "%s" %}
                       {% if session_date > now %}
@@ -126,7 +136,7 @@ layout: layouts/default
               {% endunless %}
             {% endif %}
           {% endfor %}
-        </ul>
+        </ul>              
 
         <h2>Other GSA Opportunities</h2>
         <p>Check out <a href="https://www.gsa.gov/about-us/find-apply-for-and-land-a-job-at-gsa">careers at GSA</a> and more <a href="https://www.usajobs.gov/Search/Results?j=2210&d=GS&p=1">Information Technology opportunities.</a></p>
