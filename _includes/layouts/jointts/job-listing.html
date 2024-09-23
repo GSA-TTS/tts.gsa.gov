@@ -2,8 +2,6 @@
 layout: layouts/default
 ---
 
-{{ specific_info_sessions | log }}
-
 {% if info_sessions.size > 0 %}
   {%- assign sorted_info_sessions = info_sessions | sort: 'date' -%}
 {% else %}
@@ -30,23 +28,38 @@ layout: layouts/default
 
       <div class="grid-row grid-gap padding-top-4">
         <div class="desktop:grid-col-4 desktop:margin-top-0" style="order:1">
-        {% if info_sessions.size > 0 %}
-          <div class="usa-summary-box">
-            <div class="usa-summary-box__body">
-              <h3 class="usa-summary-box__heading">
-                Attend an information session for this position
-              </h3>
-              <div class="usa-summary-box__text" markdown="1">
-                Attend an information session to learn more about these roles, working at TTS, and our application process. Register for a session using the Eventbrite links below.
-                <ul>
-                {% for session in sorted_info_sessions %}
-                <li class="info-session"><a href="{{session.link}}">{{session.headline}}</a> at {{session.time}}</li>
-                {% endfor %}
-                </ul>
+          {% assign now = 'now' | date: "%s" %}
+          {% assign future_sessions = false %}
+
+          {% for session in sorted_info_sessions %}
+            {% assign session_date = session.date | date: "%s" %}
+            {% if session_date > now %}
+              {% assign future_sessions = true %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+          {% if future_sessions %}
+            <div class="usa-summary-box">
+              <div class="usa-summary-box__body">
+                <h3 class="usa-summary-box__heading">
+                  Attend an information session for this position
+                </h3>
+                <div class="usa-summary-box__text" markdown="1">
+                  Attend an information session to learn more about these roles, working at TTS, and our application process. Register for a session using the Eventbrite links below.
+                  <ul>
+                  {% for session in sorted_info_sessions %}
+                    {% assign session_date = session.date | date: "%s" %}
+                    {% if session_date > now %}
+                      <li class="info-session">
+                        <p><a href="{{session.link}}">{{session.headline}}</a> at {{session.time}}</p>
+                      </li>
+                    {% endif %}
+                  {% endfor %}
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-       {% endif %}
+          {% endif %}
          </div>
 
         <div class="desktop:grid-col-8 usa-prose" markdown="1">
