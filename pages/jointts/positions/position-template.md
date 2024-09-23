@@ -67,8 +67,7 @@ vacancies: "" # Put the number in quotes.
 
 location: Anywhere in the U.S. (remote)
 
-# Put the GS grade this position is being advertised at. For SES positions, set
-# the level to 20
+# Put the GS grade and pay range this position is being advertised at. For SES positions, set the value of gs to SES.
 gs: 
 min_payrange: $
 max_payrange: $
