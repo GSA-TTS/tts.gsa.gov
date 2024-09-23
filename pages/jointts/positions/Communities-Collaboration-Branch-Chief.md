@@ -129,11 +129,13 @@ info_sessions:
     headline: Thursday, September 19th, 2024
     time: 1:30-2:30pm ET (10:30am -11:30am PT)
 
+
 # Make sure to leave the | on the first line.
 role_summary: |
   This role (a.k.a. Program Manager - Product & Community Engagement) is part of the General Services Administration (GSA), Technology Transformation Services (TTS), within the Platforms and Services Division. Our mission is to enhance the public’s experience with the government by helping federal agencies build, buy, and share technology that is accessible, efficient, secure, and effective.  
 
   The Communities and Collaboration Branch supports federal agencies and TTS teams in creating cross-agency development through communities of practice (CoP). Our goal is to empower government employees to lead, support each other, and adopt innovative approaches that benefit the public.
+
 
 # Make sure to leave the | on the first line.
 qualifications: |
