@@ -34,12 +34,12 @@ tags: jobs
 #   - U.S. Digital Corps, not USDC
 #   - Presidential Innovation Fellows, not PIF
 # The exception to this is a TTS role, for which you can just say TTS
-title: "TTS Fellowships Office: Presidential Innovation Fellows"
+title: ""
 
 # If the role is listed on a different site and you just want to link to it,
 # put that link here. You can leave the rest of the template as-is, unless you 
 # need to add info sessions.
-external_url: https://presidentialinnovationfellows.gov/apply/
+external_url:
 
 # Put the opening and closing dates of your posting here, if you have them
 # These dates MUST be formatted as YYYY-MM-DD, where month and day are 2-digits
@@ -67,8 +67,7 @@ vacancies: "" # Put the number in quotes.
 
 location: Anywhere in the U.S. (remote)
 
-# Put the GS grade this position is being advertised at. For SES positions, set
-# the level to 20
+# Put the GS grade and pay range this position is being advertised at. For SES positions, set the value of gs to SES.
 gs: 
 min_payrange: $
 max_payrange: $
@@ -116,22 +115,14 @@ key_objectives:
 # IMPORTANT: The date MUST be formatted as YYYY-MM-DD, where the month and day
 # are TWO digits 
 info_sessions:
-  - link: https://gsa.zoomgov.com/webinar/register/WN_rh8OrGbTQGmEpmP4oz5ztg#/registration
-    date: 2024-09-12
-    headline: Thursday, September 12th, 2024
-    time: 4:00-5:00pm ET (1:00pm-2:00pm PT)
-  - link: https://gsa.zoomgov.com/webinar/register/WN_DQKvAibMQAeSDbsvD-s-RQ#/registration
-    date: 2024-09-17
-    headline: Tuesday, September 17th, 2024
-    time: 1:00-2:00pm ET (10:00am-11:00am PT)
-  - link: https://gsa.zoomgov.com/webinar/register/WN_f0vt2OvKRQ6ExmnDZ5YeJQ#/registration
-    date: 2024-09-23
-    headline: Monday, September 23rd, 2024
-    time: 4:00-5:00pm ET (1:00pm-2:00pm PT)
-  - link: https://gsa.zoomgov.com/webinar/register/WN_pEhDPgcHRGKxOOlQr4S-Cw#/registration
-    date: 2024-09-25
-    headline: Wednesday, September 25th, 2024
-    time: 1:00-2:00pm ET (10:00am-11:00am PT)
+  - link: 
+    date: 
+    headline: 
+    time: 
+  - link: 
+    date: 
+    headline: 
+    time:
 
 # Make sure to leave the | on the first line.
 role_summary: |

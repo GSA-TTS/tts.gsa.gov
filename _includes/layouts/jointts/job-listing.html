@@ -1,0 +1,86 @@
+---
+layout: layouts/default
+---
+
+{% if info_sessions.size > 0 %}
+  {%- assign sorted_info_sessions = info_sessions | sort: 'date' -%}
+{% else %}
+  {%- assign sorted_info_sessions = global_info_sessions | sort: 'data' -%}
+{% endif %}
+
+{% capture state %}{% getStateFromDates opens closes %}{% endcapture %}
+
+<div class="grid-container">
+  <div class="grid-row grid-gap">
+    <div class="desktop:grid-col-12 margin-top-4">
+        <a href="{{'/join' | url}}" class="back-breadcrumb">Back to all jobs</a>
+    </div>
+  </div>
+</div>
+<section class="usa-section job-posting padding-top-4">
+  <div class="grid-container">
+    <div class="grid-row grid-gap">
+      <div class="desktop:grid-col-12 usa-prose margin-bottom-3">
+        <h1>{{ title }}</h1>
+        {% if status_alert %}
+          {% include "layouts/jointts/job/status_alert.html" %}
+        {% endif %}
+
+      <div class="grid-row grid-gap padding-top-4">
+        <div class="desktop:grid-col-4 desktop:margin-top-0" style="order:1">
+          {% assign now = 'now' | date: "%s" %}
+          {% assign future_sessions = false %}
+
+          {% for session in sorted_info_sessions %}
+            {% assign session_date = session.date | date: "%s" %}
+            {% if session_date > now %}
+              {% assign future_sessions = true %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+          {% if future_sessions %}
+            <div class="usa-summary-box">
+              <div class="usa-summary-box__body">
+                <h3 class="usa-summary-box__heading">
+                  Attend an information session for this position
+                </h3>
+                <div class="usa-summary-box__text" markdown="1">
+                  Attend an information session to learn more about these roles, working at TTS, and our application process. Register for a session using the Eventbrite links below.
+                  <ul>
+                  {% for session in sorted_info_sessions %}
+                    {% assign session_date = session.date | date: "%s" %}
+                    {% if session_date > now %}
+                      <li class="info-session">
+                        <p><a href="{{session.link}}">{{session.headline}}</a> at {{session.time}}</p>
+                      </li>
+                    {% endif %}
+                  {% endfor %}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          {% endif %}
+         </div>
+
+        <div class="desktop:grid-col-8 usa-prose" markdown="1">
+          {% if updated %}
+            {% assign updated_date = updated | date: "%B %d, %Y" %}
+            <p><em><strong>Updated on: {{ updated_date }}</strong></em></p>
+          {% endif %}
+          {% include "layouts/jointts/job/basic_info.html" %}
+          {% if role_summary %}
+            {% include "layouts/jointts/job/role_summary.html" %}
+          {% endif %}
+          {% if key_objectives.size > 0 %}
+            {% include "layouts/jointts/job/key_objectives.html" %}
+          {% endif %}
+          {% if qualifications %}
+            {% include "layouts/jointts/job/qualifications.html" %}
+          {% endif %}
+          {% include "layouts/jointts/job/how_to_apply.html" %}
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,23 @@
+<h2 id="how-to-apply" tabindex="-1">How to apply<a class="direct-link" href="#how-to-apply" aria-hidden="true"></a></h2>
+
+{% if state == 'closed' %}
+  <div class="usa-alert usa-alert-warning">
+    <div class="usa-alert-body">
+      <h3 class="usa-alert-heading">This job posting has closed.</h3>
+      <p class="usa-alert-text">Please see <a href="{{ '/join' | url }}">our other open positions</a>.</p>
+    </div>
+  </div>
+{% elsif state == 'upcoming' %}
+  <p>
+    <a href="/join/newsletter">Get notified</a> when this position is open for applications.
+    {% if alert_keywords %}
+      Alerts for this role may be associated with the following keywords/categories: <strong>{{alert_keywords}}</strong>.
+    {% endif %}
+  </p>
+{% elsif state == 'open' %}
+  <p class="usa-alert-text">This role is open for applications until {{ closes | date: "%A, %B %d, %Y" }} at 11:59PM ET. 
+    Please fill out all applicable fields. <a href="{{ application_link }}" target="_blank">Click here to apply</a>.
+  </p>
+  <p><strong>Need Assistance in applying or have questions regarding this job opportunity, please email the 
+    TTS Talent Team at <a href="mailto:jointts@gsa.gov">jointts@gsa.gov</a>.</strong></p>
+{% endif %}
