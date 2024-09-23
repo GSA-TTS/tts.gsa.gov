@@ -128,6 +128,7 @@ info_sessions:
     date: 2024-09-19
     headline: Thursday, September 19th, 2024
     time: 1:30-2:30pm ET (10:30am -11:30am PT)
+    
 
 
 # Make sure to leave the | on the first line.
@@ -160,6 +161,6 @@ specialized_requirements: |
 
 # This can be filled prior to the job posting going live or left blank #
 # The application button will only show after the open date            #
-application_link:
+application_link: https://www.usajobs.gov/job/808940800
 
 ---
