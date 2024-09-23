@@ -5,8 +5,6 @@ projects:
   - GSA-TTS/54
 labels:
   - "Content Update"
-assignees:
-  - "GSA-TTS/tts-website-content"
 
 body:
   - type: "markdown"
