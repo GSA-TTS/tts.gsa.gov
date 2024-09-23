@@ -1,0 +1,13 @@
+<h2 id="key-objectives" tabindex="-1">Key objectives<a class="direct-link" href="#key-objectives" aria-hidden="true"></a></h2>
+<ol class="key-objectives-list">
+  {% for objective in key_objectives %}
+    <li>
+      <strong>{{ objective.title }}</strong>
+      <ul>
+        {% for item in objective.items %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </li>
+  {% endfor %}
+</ol>
