@@ -30,7 +30,6 @@ set -euo pipefail
 ## location="_site/assets" bin/minimize.bash
 ## @endcode
 
-
 ## @var location
 ## @brief where to look for files to minimize (default: _site)
 location="${location:-_site}"
@@ -75,7 +74,6 @@ modified_filename() {
   echo "$new_filename"
 }
 
-
 ## @fn minimize()
 ## @brief given 0 or more filenames, attempt to minimize them
 ## @details
@@ -101,7 +99,7 @@ modified_filename() {
 ## minimize "_site/assets/style/stylesheet.css"
 ## @endcode
 minimize() {
-  for old_filename in "$@" ; do
+  for old_filename in "$@"; do
 
     echo "Processing '$old_filename'"
     new_filename="$(modified_filename "$old_filename" "$filename_modifier")"
@@ -117,7 +115,7 @@ minimize() {
         mv -f "$old_filename" "$new_filename" || return 2
         terser --compress -o "$old_filename" "$new_filename" || return 1
         ;;
-      htm|html)
+      htm | html)
         echo "  HTML"
         mv -f "$old_filename" "$new_filename" || return 2
         html-minifier-terser -o "$old_filename" --collapse-whitespace --remove-comments --minify-css true --minify-js true "$new_filename" || return 1
@@ -137,7 +135,7 @@ export location filename_modifier
 ## @brief the main function
 main() {
 
-  for filetype in css js htm html ; do
+  for filetype in css js htm html; do
     find "$location" \
       -type f \
       -name "*.$filetype" \
