@@ -19,7 +19,7 @@ services:
       federal employees to improve the public's experience with the federal
       government.
   - name: Public Benefits Studio
-    link: https://github.com/GSA/public-benefits-studio
+    link: https://digital.gov/2023/02/07/collaborate-with-the-tts-public-benefits-studio/
     link_alt_text: link to Benefits Studio GitHub repo
     logo: _img/public-benefits.png
     logo_alt_text: logo not yet available
@@ -239,7 +239,7 @@ services:
       subawards to meet FFATA reporting requirements. "
     category: platforms
   - name: Notify.gov
-    link: https://digital.gov/2023/02/07/collaborate-with-the-tts-public-benefits-studio/
+    link: https://beta.notify.gov/
     link_alt_text: link to the beta of Notify.gov's homepage
     logo: _img/notify-logo.png
     logo_alt_text: Notify.gov
