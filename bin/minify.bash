@@ -120,7 +120,7 @@ minimize() {
       htm|html)
         echo "  HTML"
         mv -f "$old_filename" "$new_filename" || return 2
-        html-minifier-terser  --collapse-whitespace --remove-comments "$new_filename" > "$old_filename" || return 1
+        html-minifier-terser -o "$old_filename" --collapse-whitespace --remove-comments --minify-css true --minify-js true "$new_filename" || return 1
         ;;
       *)
         echo "Don't know how to handle '$file_type' files"
