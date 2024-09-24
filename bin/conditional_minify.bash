@@ -2,6 +2,6 @@
 
 set -euo pipefail
 
-#if [[ "$BRANCH" =~ (main|staging) ]] ; then
+if [[ "$BRANCH" =~ (main|staging) ]] ; then
   bin/minify.bash
-#fi
+fi
