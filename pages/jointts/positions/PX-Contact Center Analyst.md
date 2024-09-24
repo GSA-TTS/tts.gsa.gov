@@ -44,7 +44,7 @@ external_url:
 # Put the opening and closing dates of your posting here, if you have them
 # These dates MUST be formatted as YYYY-MM-DD, where month and day are 2-digits
 opens: 2024-09-13 00:00:00 -0400
-closes: 2024-09-24 19:59:59 -0400
+closes: 2024-09-24 19:59:59 -0000
 
 # To show the status alert for this job, leave this set to true. To hide it, change to false
 # To show the alert keyword association message, add the keywords separated by a semi-colon
