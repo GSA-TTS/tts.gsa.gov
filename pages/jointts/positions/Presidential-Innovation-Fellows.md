@@ -129,7 +129,7 @@ info_sessions:
     headline: Monday, September 23rd, 2024
     time: 4:00-5:00pm ET (1:00pm-2:00pm PT)
   - link: https://gsa.zoomgov.com/webinar/register/WN_pEhDPgcHRGKxOOlQr4S-Cw#/registration
-    date: 2024-09-25
+    date: 2024-09-26
     headline: Wednesday, September 25th, 2024
     time: 1:00-2:00pm ET (10:00am-11:00am PT)
   - link: https://gsa.zoomgov.com/webinar/register/WN_UFTZZb0VRyyTDlvPcR-gWw

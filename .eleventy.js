@@ -177,11 +177,13 @@ module.exports = function (config) {
     }
 
     // Format the datetime string for timestamp conversion
-    const formattedDatetime = `${date} ${String(hours).padStart(2, '0')}:${minutes}`;
+    const formattedDatetime = `${date} ${String(hours).padStart(2, '0')}:${minutes} EST`;
 
     // Convert to timestamp (in seconds)
     const timestamp = Math.floor(new Date(formattedDatetime).getTime() / 1000);
 
+    console.log(timestamp);
+    
     return timestamp;
   }
 
