@@ -9,8 +9,8 @@ tags: jobs
 #                                                                              #
 # -----------------------------------------------------------------------------#
 # If you are editing this file on GitHub, first make sure you are creating a   #
-# new file, and are not editing the template file! To create a new file, go to #
-# <https://github.com/18F/join.tts.gsa.gov/new/main/positions> in your browser #
+# new file, and are not editing the template file! To create a new file, copy  #
+# and paste this file in your code editor and rename it.                       #
 #                                                                              #
 # Your file name should reflect the URL you would like                         #
 # For example, if you are posting a job for a content designer, you might      #
