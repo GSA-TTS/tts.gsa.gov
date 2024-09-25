@@ -46,8 +46,6 @@
 
           <!-- Show if session is still ongoing or upcoming -->
           {% if sessionEndTimestamp > now %}
-          {{ sessionEndTimestamp }}
-          {{ now }}
             <li>
               <p><a href="{{ session.link }}" target="_blank">{{ session.headline }}</a> at {{ session.time }}</p>
             </li>
