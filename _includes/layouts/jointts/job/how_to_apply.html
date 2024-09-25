@@ -1,5 +1,4 @@
 <h2 id="how-to-apply" tabindex="-1">How to apply<a class="direct-link" href="#how-to-apply" aria-hidden="true"></a></h2>
-
 {% if state == 'closed' %}
   <div class="usa-alert usa-alert-warning">
     <div class="usa-alert-body">
@@ -7,7 +6,7 @@
       <p class="usa-alert-text">Please see <a href="{{ '/join' | url }}">our other open positions</a>.</p>
     </div>
   </div>
-{% elsif state == 'upcoming' %}
+{% elsif state == 'upcoming' or state == 'unknown' %}
   <p>
     <a href="/join/newsletter">Get notified</a> when this position is open for applications.
     {% if alert_keywords %}
