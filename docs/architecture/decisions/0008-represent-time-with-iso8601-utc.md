@@ -16,7 +16,7 @@ time zones.
 
 ISO-8601 is a date / time standard for representing a time (or interval
 of times) in a structured manner.  Generally speaking, the most significant
-and least specfic component (the year) is in the left-most position and
+and least specific component (the year) is in the left-most position and
 each subsequent is less significant / more specific component follows to
 the right.  A `T` (capital letter T) is used to separate the date from the
 time.
@@ -67,7 +67,7 @@ day on September 25th, one would use a `closing` value of
 
 ### UTC
 
-Universal Coordinated Time (UTC) is a stanard for representing
+Universal Coordinated Time (UTC) is a standard for representing
 date time values relative to a single time zone, namely GMT
 (Greenwich Mean Time).  Each time zone is annotated by the
 offset in time for that time zone relative to UTC.
