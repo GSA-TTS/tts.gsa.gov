@@ -2,13 +2,13 @@ name: Daily PR from Main to Main
 
 on:
   schedule:
-    - cron: '0 5 * * *'  # Runs daily at midnight
+    - cron: "0 5 * * *" # Runs daily at midnight
 
 permissions:
-  pull-requests: write  # Needed to create and approve PRs
-  contents: write       # Needed to push commits
-  actions: read         # Needed for interacting with GitHub Actions
-  issues: write         # Needed to approve PRs
+  pull-requests: write # Needed to create and approve PRs
+  contents: write # Needed to push commits
+  actions: read # Needed for interacting with GitHub Actions
+  issues: write # Needed to approve PRs
 
 jobs:
   create-pr:
@@ -35,7 +35,7 @@ jobs:
         run: |
           # Find the PR number of the "Daily sync PR"
           pr_number=$(gh pr list --search "Daily sync PR" --json number --jq '.[0].number')
-          
+
           # Approve the PR
           gh pr review $pr_number --approve
 
