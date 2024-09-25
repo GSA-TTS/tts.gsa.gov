@@ -19,6 +19,7 @@
 
   {{ session_end_str }}
   {{ sessionEndTimestamp }}
+  {{ now }}
   
   <!-- Check if session is still upcoming or ongoing -->
   {% if sessionEndTimestamp > now %}
