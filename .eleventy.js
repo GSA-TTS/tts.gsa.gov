@@ -155,8 +155,39 @@ module.exports = function (config) {
     });
   }
 
-  config.addLiquidShortcode("getStateFromDates", getStateFromDates);
+  // Get Date and Time as Seconds
+  // Datetime format: YYYY-MM-DD HH:
+  config.addLiquidShortcode("getDateTimeinSeconds", getDateTimeinSeconds);
+  function getDateTimeinSeconds(datetime) {
+    // Split the datetime string into date and time parts
+    const dateParts = datetime.split(" ");
+    const date = dateParts[0];
+    const time = dateParts[1];
 
+    // Extract hours, minutes, and AM/PM
+    let hours = parseInt(time.slice(0, time.length - 2).split(":")[0], 10); // Adjusted to capture full hour
+    const minutes = time.length === 6 ? time.slice(2, 4) : time.slice(3, 5);
+    const amPm = time.slice(-2).toLowerCase(); // Handle AM/PM case
+
+    // Convert hours to 24-hour format
+    if (amPm === "pm" && hours !== 12) {
+        hours += 12;
+    } else if (amPm === "am" && hours === 12) {
+        hours = 0;
+    }
+
+    // Format the datetime string for timestamp conversion
+    const formattedDatetime = `${date} ${String(hours).padStart(2, '0')}:${minutes}`;
+
+    // Convert to timestamp (in seconds)
+    const timestamp = Math.floor(new Date(formattedDatetime).getTime() / 1000);
+
+    return timestamp;
+  }
+
+
+  // Get State From Dates
+  config.addLiquidShortcode("getStateFromDates", getStateFromDates);
   function getStateFromDates(opens, closes) {
     if (!opens && !closes) {
       return "unknown";
