@@ -43,9 +43,7 @@
           {% assign session_end_str = session_date | append: " " | append: session_end_time %}
 
           {% capture sessionEndTimestamp %}{% getDateTimeinSeconds session_end_str %}{% endcapture %}
-
-          {{ sessionEndTimestamp }}
-          {{ now }}
+          
           <!-- Show if session is still ongoing or upcoming -->
           {% if sessionEndTimestamp > now %}
             <li>
