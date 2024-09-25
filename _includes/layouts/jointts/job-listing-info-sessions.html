@@ -1,0 +1,65 @@
+<!-- Info Sessions -->
+{% assign now = 'now' | date: "%s" %}
+{% assign future_sessions = false %}
+
+{% for session in pg.data.info_sessions %}
+  <!-- Extract ET time range from session.time (e.g., "1:00-2:00pm ET") -->
+  {% assign time_et = session.time | split: " ET" | first %}
+  
+  <!-- Extract start time and end time (e.g., "1:00pm" and "2:00pm") -->
+  {% assign session_start_time = time_et | split: "-" | first | strip %}
+  {% assign session_end_time = time_et | split: "-" | last | strip %}
+  
+  <!-- Combine the date with the start and end times -->
+  {% assign session_start_str = session.date | append: " " | append: session_start_time %}
+  {% assign session_end_str = session.date | append: " " | append: session_end_time %}
+  
+  <!-- Convert to timestamps for comparison -->
+  {% assign session_start = session_start_str | date: "%Y-%m-%d %I:%M%p" | date: "%s" %}
+  {% assign session_end = session_end_str | date: "%Y-%m-%d %I:%M%p" | date: "%s" %}
+  
+  <!-- Check if session is still upcoming or ongoing -->
+  {% if session_end > now %}
+    {% assign future_sessions = true %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% if future_sessions %}
+  <aside class="usa-alert usa-alert-info">
+    <div class="usa-alert-body">
+      <p>Upcoming or ongoing info sessions for {{ pg.data.title }}</p>
+      <ul>
+        {% for session in pg.data.info_sessions %}
+          <!-- Format the date for comparison -->
+          {% assign session_date = session.date | date: "%Y-%m-%d" %}
+
+          <!-- Extract ET time range from session.time (e.g., "1:00-2:00pm ET") -->
+          {% assign time_et = session.time | split: " ET" | first %}
+          
+          <!-- Extract start time and end time (e.g., "1:00pm" and "2:00pm") -->
+          {% assign session_start_time = time_et | split: "-" | first | strip %}
+          {% assign session_end_time = time_et | split: "-" | last | strip %}
+          
+          <!-- Combine the date with the start and end times -->
+          {% assign session_start_str = session_date | append: " " | append: session_start_time %}
+          {% assign session_end_str = session_date | append: " " | append: session_end_time %}
+          
+          <!-- Convert to timestamps for comparison -->
+          {% assign session_start = session_start_str | date: "%Y-%m-%d %I:%M%p" | date: "%s" %}
+          {% assign session_end = session_end_str | date: "%Y-%m-%d %I:%M%p" | date: "%s" %}
+
+          <!-- Get the time right now formatted correctly for comparison -->
+          {% assign timeNow = 'now' | date: "%Y-%m-%d %I:%M%p" %}
+
+          <!-- Show if session is still ongoing or upcoming -->
+          {% if session_end > timeNow %}
+            <li>
+              <p><a href="{{ session.link }}" target="_blank">{{ session.headline }}</a> at {{ session.time }}</p>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </aside>
+{% endif %}

@@ -1,0 +1,29 @@
+<ul>
+    {% assign open_job_count = 0 %}
+    {% for pg in collections.jobs %}
+    {% capture state %}{% getStateFromDates pg.data.opens pg.data.closes %}{% endcapture %}
+      {% if state == "open" %}
+        {% unless pg.data.path contains 'template' %}
+          {% unless pg.data.path contains 'performance-profiles' %}
+            {% assign open_job_count = open_job_count | plus: 1 %}
+            <li>
+              {% if pg.data.external_url %}
+              <a href="{{ pg.data.external_url }}" target="_blank">{{ pg.data.title }}</a>
+                {% else %}
+                <a href="{{ pg.url | url }}">{{ pg.data.title }}</a>
+              {% endif %}
+             (Open now {% if pg.data.weeks_open %}for {% if pg.data.weeks < 52 %}{{ pg.data.weeks }}{% else %} one year or until all selections have been made{% endif %},{% endif %} through {{ pg.data.closes | date: '%A, %B %e, %Y at 11:59pm' }} ET)
+             
+             <!-- Info Sessions -->
+             {% include "layouts/jointts/job-listing-info-sessions.html" %}
+             
+            </li>
+          {% endunless %}
+        {% endunless %}
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  {% if open_job_count == 0 %}
+    <p>No open positions at this time. Sign up for <a href="/join/newsletter/">job alerts!</a></p>
+  {% endif %} 
