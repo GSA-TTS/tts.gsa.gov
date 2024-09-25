@@ -37,14 +37,14 @@ tags: jobs
 title: "Public Experience: Contact Center Analyst"
 
 # If the role is listed on a different site and you just want to link to it,
-# put that link here. You can leave the rest of the template as-is, unless you 
+# put that link here. You can leave the rest of the template as-is, unless you
 # need to add info sessions.
 external_url:
 
 # Put the opening and closing dates of your posting here, if you have them
 # These dates MUST be formatted as YYYY-MM-DD, where month and day are 2-digits
-opens: 2024-09-13
-closes: 2024-09-24
+opens: 2024-09-13 00:00:00 -0400
+closes: 2024-09-24 
 
 # To show the status alert for this job, leave this set to true. To hide it, change to false
 # To show the alert keyword association message, add the keywords separated by a semi-colon
@@ -78,7 +78,7 @@ travel_requirement: Occasional travel may be required up to 10%-20% per year.
 work_schedule: Full time.
 
 # Set to 0 if there is no limit
-max_applications: 300 
+max_applications: 300
 
 # Use either permanent or temporary.
 appointment_type: permanent
@@ -89,7 +89,7 @@ appointment_type: permanent
 # except "info_sessions:"
 
 # IMPORTANT: The date MUST be formatted as YYYY-MM-DD, where the month and day
-# are TWO digits 
+# are TWO digits
 info_sessions:
 
 # Make sure to leave the | on the first line.
@@ -101,9 +101,9 @@ role_summary: |
 # numbers. They will be added automatically
 #
 # FORMAT EXAMPLE
-# 
+#
 # - title: Key Objective 1
-#   items 
+#   items
 #   - Objective 1 Sub-Bullet
 #   - Objective 1 Sub-Bullet
 # - title: Key Objective 2
@@ -111,21 +111,21 @@ role_summary: |
 # The placeholder information below shows an example of how to format the key
 # objectives
 key_objectives:
-  - title: Identify improvements in operational problems 
+  - title: Identify improvements in operational problems
     items:
-    - Plan or direct, special projects to identify operational problems, evaluate solutions, and recommend actions within the contact center. 
+    - Plan or direct, special projects to identify operational problems, evaluate solutions, and recommend actions within the contact center.
     - Independently or collaboratively conduct analytical studies of functional activities or programs.
     - Work with the team to set and meet quality standards for any product you build.
   - title: Track and monitor Contact Center initiatives
     items:
     - Monitor the sequence and timing of the program or organizational milestones on contact center initiatives.
-    - Prepare or conduct briefings for higher-level management, including analysis, recommendations or action plans, and guidance for implementation. 
+    - Prepare or conduct briefings for higher-level management, including analysis, recommendations or action plans, and guidance for implementation.
   - title: Track and monitor Contact Center initiatives
     items:
     - Review information, reconcile conflicting data, and devise new or modified methods to analyze findings.
     - Develop recommendations and proposals.
     - Analyze and develop statistical data to improve the efficiency and effectiveness of programs or internal support operations for contact center quality management.
-    - Prepare or conduct briefings for higher-level management, including analysis, recommendations or action plans, and guidance for implementation. 
+    - Prepare or conduct briefings for higher-level management, including analysis, recommendations or action plans, and guidance for implementation.
     - Identify and develop data for use in managing contact center programs.
     - Thoroughly review contact center invoices to ensure accuracy.
 
