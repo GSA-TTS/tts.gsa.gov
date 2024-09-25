@@ -13,7 +13,9 @@ body:
         This form is used to request content updates.  We'll need
         to know the URL / address of the page that the content is
         on (or should be on), what the content currently says,
-        and what the content should say.
+        and what the content should say.  Bugs -- when something
+        isn't working properly -- should be reported using the bug
+        reporting form.
 
   - type: "input"
     id: "url"
