@@ -1,0 +1,46 @@
+name: Daily PR from Main to Main
+
+on:
+  schedule:
+    - cron: '0 5 * * *'  # Runs daily at midnight
+
+permissions:
+  pull-requests: write  # Needed to create and approve PRs
+  contents: write       # Needed to push commits
+  actions: read         # Needed for interacting with GitHub Actions
+  issues: write         # Needed to approve PRs
+
+jobs:
+  create-pr:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up GitHub CLI
+        uses: actions/setup-gh@v2
+
+      - name: Create Pull Request
+        run: |
+          # Check if there's an existing PR from 'main' to 'main'
+          existing_pr=$(gh pr list --base main --head main --json number --jq '.[0].number')
+
+          # If no existing PR, create one
+          if [ -z "$existing_pr" ]; then
+            gh pr create --base main --head main --title "Daily sync PR" --body "Automated PR from main to main."
+          fi
+
+      - name: Approve Pull Request
+        run: |
+          # Find the PR number of the "Daily sync PR"
+          pr_number=$(gh pr list --search "Daily sync PR" --json number --jq '.[0].number')
+          
+          # Approve the PR
+          gh pr review $pr_number --approve
+
+      - name: Merge Pull Request
+        run: |
+          # Merge the PR
+          pr_number=$(gh pr list --search "Daily sync PR" --json number --jq '.[0].number')
+          gh pr merge $pr_number --squash --delete-branch --auto
