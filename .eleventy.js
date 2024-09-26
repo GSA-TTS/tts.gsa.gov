@@ -181,12 +181,9 @@ module.exports = function (config) {
 
     // Convert to timestamp (in seconds)
     const timestamp = Math.floor(new Date(formattedDatetime).getTime() / 1000);
-
-    console.log(timestamp);
     
     return timestamp;
   }
-
 
   // Get State From Dates
   config.addLiquidShortcode("getStateFromDates", getStateFromDates);

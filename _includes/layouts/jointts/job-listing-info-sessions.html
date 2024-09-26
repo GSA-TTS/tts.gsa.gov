@@ -28,7 +28,7 @@
   <aside class="usa-alert usa-alert-info">
     <div class="usa-alert-body">
       <p>Upcoming or ongoing info sessions for {{ pg.data.title }}</p>
-      <ul>
+      <ul class="info-sessions-list">
         {% for session in pg.data.info_sessions %}
           <!-- Format the date for comparison -->
           {% assign session_date = session.date | date: "%Y-%m-%d" %}
@@ -43,10 +43,10 @@
           {% assign session_end_str = session_date | append: " " | append: session_end_time %}
 
           {% capture sessionEndTimestamp %}{% getDateTimeinSeconds session_end_str %}{% endcapture %}
-          
+
           <!-- Show if session is still ongoing or upcoming -->
           {% if sessionEndTimestamp > now %}
-            <li>
+            <li data-session-end-timestamp="{{ sessionEndTimestamp }}">
               <p><a href="{{ session.link }}" target="_blank">{{ session.headline }}</a> at {{ session.time }}</p>
             </li>
           {% endif %}

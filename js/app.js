@@ -19,3 +19,16 @@ const applyMessage = () => {
 };
 
 applyMessage();
+
+// Hide an info session if it's in the past.
+function hidePastInfoSessions() {
+  const now = new Date().getTime();
+  const infoSessions = document.querySelectorAll(".info-sessions-list li");
+  infoSessions.forEach(session => {
+    const session_timestamp = session.getAttribute('data-session-end-timestamp');
+    if ( session_timestamp > now ) {
+      session.style.display = 'none';
+    }
+  });
+}
+hidePastInfoSessions();
