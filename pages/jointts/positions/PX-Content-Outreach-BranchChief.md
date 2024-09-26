@@ -9,7 +9,7 @@ tags: jobs
 #   - U.S. Digital Corps, not USDC
 #   - Presidential Innovation Fellows, not PIF
 # The exception to this is a TTS role, for which you can just say TTS
-title: "Public Experience Content & Outreach Branch Chief"
+title: "Public Experience: Content & Outreach Branch Chief"
 
 # If the role is listed on a different site and you just want to link to it,
 # put that link here. You can leave the rest of the template as-is, unless you 
