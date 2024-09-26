@@ -120,7 +120,6 @@ key_objectives:
 # See the placeholder below for an example of how to add an info session.
 # If the position does not have any info sessions, you can delete everything
 # except "info_sessions:"
-
 # IMPORTANT: The date MUST be formatted as YYYY-MM-DD, where the month and day
 # are TWO digits 
 info_sessions:
@@ -150,4 +149,3 @@ specialized_requirements: |
 application_link:
 
 ---
-
