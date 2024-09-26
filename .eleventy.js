@@ -171,17 +171,17 @@ module.exports = function (config) {
 
     // Convert hours to 24-hour format
     if (amPm === "pm" && hours !== 12) {
-        hours += 12;
+      hours += 12;
     } else if (amPm === "am" && hours === 12) {
-        hours = 0;
+      hours = 0;
     }
 
     // Format the datetime string for timestamp conversion
-    const formattedDatetime = `${date} ${String(hours).padStart(2, '0')}:${minutes} EST`;
+    const formattedDatetime = `${date} ${String(hours).padStart(2, "0")}:${minutes} EST`;
 
     // Convert to timestamp (in seconds)
     const timestamp = Math.floor(new Date(formattedDatetime).getTime() / 1000);
-    
+
     return timestamp;
   }
 
@@ -224,7 +224,9 @@ module.exports = function (config) {
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
   config.addFilter("htmlDateString", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: "America/New_York" }).toFormat("yyyy-LL-dd");
+    return DateTime.fromJSDate(dateObj, { zone: "America/New_York" }).toFormat(
+      "yyyy-LL-dd",
+    );
   });
 
   // Get the first `n` elements of a collection.
