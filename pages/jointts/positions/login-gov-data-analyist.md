@@ -122,18 +122,13 @@ key_objectives:
 # See the placeholder below for an example of how to add an info
 # session. If the position does not have any info sessions, you can delete everything
 # except "info_sessions:"
-
 # IMPORTANT: The date MUST be formatted as YYYY-MM-DD, where the month and day
 # are TWO digits 
 info_sessions:
   - link: https://gsa.zoomgov.com/meeting/register/vJItdOqgqD4vHGCXn9G1ijf1wVX1fXFCZW4
     date: 2024-10-01
-    headline: Upcoming Information Sesssion for the Login.gov Data Analyst Role
+    headline: Tuesday, October 1, 2024
     time: 3:00pm-4:00pm EST (12:00pm - 1:00pm PT)
-  - link: 
-    date: 
-    headline: 
-    time:
 
 # Make sure to leave the | on the first line. Start your content on the following line.
 role_summary: | 
