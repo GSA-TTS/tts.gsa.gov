@@ -100,21 +100,21 @@ appointment_type:
 key_objectives:
   - title: Lead Product Delivery
     items:
-    - Set the vision, strategy, and goals for the Communities and Collaboration Branch.
-    - Ensure projects align with TTS priorities and serve the public effectively.
-    - Manage multiple complex products and IT projects, anticipating risks and opportunities.
-    - Collaborate across TTS and ensure resources are used effectively.
+      - Set the vision, strategy, and goals for the Communities and Collaboration Branch.
+      - Ensure projects align with TTS priorities and serve the public effectively.
+      - Manage multiple complex products and IT projects, anticipating risks and opportunities.
+      - Collaborate across TTS and ensure resources are used effectively.
   - title: Build and Lead Teams
     items:
-    - Supervise and mentor team members, guiding them on technical and administrative matters.
-    - Build teams, assign work, and ensure alignment with branch goals.
-    - Foster professional growth and incorporate equity and inclusion in team development.
+      - Supervise and mentor team members, guiding them on technical and administrative matters.
+      - Build teams, assign work, and ensure alignment with branch goals.
+      - Foster professional growth and incorporate equity and inclusion in team development.
   - title: Enhance Product Delivery Expertise
     items:
-    - Develop and maintain product strategies that align with agency objectives.
-    - Collaborate with cross-functional teams to prioritize product requirements.
-    - Lead the development process, ensuring timely delivery of features and compliance with standards like the 21st Century IDEA, the M-23-22 "Delivering a Digital-First Public Experience" and other relevant policies.
-    - Share best practices and lessons learned to contribute to TTS’s culture of product management.
+      - Develop and maintain product strategies that align with agency objectives.
+      - Collaborate with cross-functional teams to prioritize product requirements.
+      - Lead the development process, ensuring timely delivery of features and compliance with standards like the 21st Century IDEA, the M-23-22 "Delivering a Digital-First Public Experience" and other relevant policies.
+      - Share best practices and lessons learned to contribute to TTS’s culture of product management.
 
 # If there are any info sessions associated with this position, list them here
 # See the placeholder below for an example of how to add an info
