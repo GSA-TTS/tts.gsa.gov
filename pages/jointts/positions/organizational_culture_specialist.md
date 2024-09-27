@@ -98,33 +98,33 @@ appointment_type: "perm"
 key_objectives: 
   - title: Organizational Culture Development
     items:
-    - Develop, implement and own a culture development DEIA centered strategic plan and roadmap, sharing and collaborating with TTS leadership, employee stakeholder groups, and other stakeholders along the way.
-    - Audit organizational structures and related support structures to identify degrees to which they facilitate cultural goals and objectives and are conducive to fostering a positive culture and high levels of employee engagement. Report findings, recommend strategies, and provide consultative support to TTS leadership.
-    - Provide expertise to and act as the primary advisor for TTS senior management on a wide array of DEIA, culture, and employee engagement activities.
-    - Conduct regular surveys and assessments to measure and analyze employee engagement levels, paying special attention to culture and DEIA metrics.
-    - Develop action plans based on feedback to address areas for improvement, with a focus on creating an accessible and inclusive workplace.
-    - Oversee TTS’ DEIA-related guilds, committees, and affinity groups, providing expert advice to co-leads and committee members on appropriate programming, expected responsibilities, and cohesive planning/roadmapping of all DEIA-related activities.
-    - Develop strategies and discrete actions for embedding culture, DEIA, and employee engagement activities into the organization’s decision-making frameworks and day-to-day work.
-    - Lead efforts, where necessary, to (re)define, socialize, and live out TTS’ core values and the TTS Code of Conduct, ensuring alignment with DEIA principles.
+      - Develop, implement and own a culture development DEIA centered strategic plan and roadmap, sharing and collaborating with TTS leadership, employee stakeholder groups, and other stakeholders along the way.
+      - Audit organizational structures and related support structures to identify degrees to which they facilitate cultural goals and objectives and are conducive to fostering a positive culture and high levels of employee engagement. Report findings, recommend strategies, and provide consultative support to TTS leadership.
+      - Provide expertise to and act as the primary advisor for TTS senior management on a wide array of DEIA, culture, and employee engagement activities.
+      - Conduct regular surveys and assessments to measure and analyze employee engagement levels, paying special attention to culture and DEIA metrics.
+      - Develop action plans based on feedback to address areas for improvement, with a focus on creating an accessible and inclusive workplace.
+      - Oversee TTS’ DEIA-related guilds, committees, and affinity groups, providing expert advice to co-leads and committee members on appropriate programming, expected responsibilities, and cohesive planning/roadmapping of all DEIA-related activities.
+      - Develop strategies and discrete actions for embedding culture, DEIA, and employee engagement activities into the organization’s decision-making frameworks and day-to-day work.
+      - Lead efforts, where necessary, to (re)define, socialize, and live out TTS’ core values and the TTS Code of Conduct, ensuring alignment with DEIA principles.
   - title: Communications and Recognition
     items:
-    - Partner with the TTS Outreach Division to understand, audit, and improve the organization’s relationship and communication with staff across touchpoints and channels, focusing particularly on knowledge management, communication systems, change management, and internal networks. Use audit data to create and implement new communication strategies to reinforce organizational values, increase employee engagement, and emphasize the importance of DEIA.
-    - Review and advise on recognition programs and other existing programs that acknowledge and reward employee contributions, with a focus on fairness and inclusivity.
-    - Design and implement programs to boost employee morale, job satisfaction, and a sense of belonging for all employees.
+      - Partner with the TTS Outreach Division to understand, audit, and improve the organization’s relationship and communication with staff across touchpoints and channels, focusing particularly on knowledge management, communication systems, change management, and internal networks. Use audit data to create and implement new communication strategies to reinforce organizational values, increase employee engagement, and emphasize the importance of DEIA.
+      - Review and advise on recognition programs and other existing programs that acknowledge and reward employee contributions, with a focus on fairness and inclusivity.
+      - Design and implement programs to boost employee morale, job satisfaction, and a sense of belonging for all employees.
   - title: Team Building, Events, and Training
     items:
-    - In partnership with TTS’ guilds and committees, plan and organize team-building activities and events that promote employee recognition and engagement, foster a sense of community, and an increased understanding of DEIA principles.
-    - Identify training needs across TTS related to cultural competence, employee engagement, and diversity, equity, inclusion, and accessibility principles and practices.
-    - Develop training to educate employees and managers that can assist in meeting organizational goals, tracking progress toward these goals, and communicating progress to TTS leadership.
+      - In partnership with TTS’ guilds and committees, plan and organize team-building activities and events that promote employee recognition and engagement, foster a sense of community, and an increased understanding of DEIA principles.
+      - Identify training needs across TTS related to cultural competence, employee engagement, and diversity, equity, inclusion, and accessibility principles and practices.
+      - Develop training to educate employees and managers that can assist in meeting organizational goals, tracking progress toward these goals, and communicating progress to TTS leadership.
   - title: Talent Management
     items:
-    - Analyze talent management processes to identify and make recommendations for removing institutional barriers, mitigating bias, and assuring a fair and transparent process in recruiting, hiring, and retaining diverse talent.
-    - Partner with Talent Acquisition and People Operations to improve practices and better integrate a DEIA mindset into the complete employee lifecycle.
+      - Analyze talent management processes to identify and make recommendations for removing institutional barriers, mitigating bias, and assuring a fair and transparent process in recruiting, hiring, and retaining diverse talent.
+      - Partner with Talent Acquisition and People Operations to improve practices and better integrate a DEIA mindset into the complete employee lifecycle.
   - title: Metrics and Reporting
     items:
-    - Establish key performance indicators (KPIs) to measure the success of culture and engagement initiatives, including specific metrics related to diversity, equity, inclusion, and accessibility. Generate regular reports to share insights and progress toward objectives with leadership, highlighting the organization's commitment to DEIA. Present to TTS Leadership to ensure alignment.
-    - Develop, maintain, and analyze current and historical workforce data; and create data visualizations to showcase emerging workforce trends. Build a shared understanding of the problems we are trying to solve, where we are focusing, and what comes next.
-    - Utilize market research to stay current on trends and thinking in the civic tech, government, technology talent development, and organizational culture space.
+      - Establish key performance indicators (KPIs) to measure the success of culture and engagement initiatives, including specific metrics related to diversity, equity, inclusion, and accessibility. Generate regular reports to share insights and progress toward objectives with leadership, highlighting the organization's commitment to DEIA. Present to TTS Leadership to ensure alignment.
+      - Develop, maintain, and analyze current and historical workforce data; and create data visualizations to showcase emerging workforce trends. Build a shared understanding of the problems we are trying to solve, where we are focusing, and what comes next.
+      - Utilize market research to stay current on trends and thinking in the civic tech, government, technology talent development, and organizational culture space.
 
 # If there are any info sessions associated with this position, list them here
 # See the placeholder below for an example of how to add an info
