@@ -126,10 +126,10 @@ key_objectives:
 # IMPORTANT: The date MUST be formatted as YYYY-MM-DD, where the month and day
 # are TWO digits 
 info_sessions:
-  - link: 
-    date: 
-    headline: 
-    time: 
+  - link: https://gsa.zoomgov.com/meeting/register/vJItdOqgqD4vHGCXn9G1ijf1wVX1fXFCZW4
+    date: 2024-10-01
+    headline: Upcoming Information Sesssion for the Login.gov Data Analyst Role
+    time: 3:00pm-4:00pm EST (12:00pm - 1:00pm PT)
   - link: 
     date: 
     headline: 
