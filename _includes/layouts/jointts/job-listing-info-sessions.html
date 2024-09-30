@@ -16,8 +16,6 @@
   {% assign session_end_str = session_date | append: " " | append: session_end_time %}
 
   {% capture sessionEndTimestamp %}{% getDateTimeinSeconds session_end_str %}{% endcapture %}
-
-  {{ sessionEndTimestamp > now }}
   
   <!-- Check if session is still upcoming or ongoing -->
   {% if sessionEndTimestamp > now %}
@@ -43,8 +41,6 @@
           
           <!-- Combine the date with the start and end times -->
           {% assign session_end_str = session_date | append: " " | append: session_end_time %}
-
-          {{ session_end_str }}
 
           {% capture sessionEndTimestamp %}{% getDateTimeinSeconds session_end_str %}{% endcapture %}
 

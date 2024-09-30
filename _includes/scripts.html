@@ -49,7 +49,8 @@
 <!-- Conditionally hide past info sessions -->
 <script>
   function hidePastInfoSessions() {
-    const currentTimestamp = new Date().getTime();
+    const now = new Date().toLocaleString("en-US", { timeZone: "America/New_York" });
+    const currentTimestamp = Math.floor(new Date(now).getTime() / 1000);
 
     const infoSessionsGroup = document.querySelectorAll(".info-sessions-list");
     infoSessionsGroup.forEach(sessionGroup => {
@@ -59,7 +60,6 @@
       Array.from(sessionGroup.children).forEach(session => {
         const session_timestamp = session.getAttribute('data-session-end-timestamp');
 
-        console.log(currentTimestamp, session_timestamp);
         // Hide past sessions
         if (session_timestamp < currentTimestamp) {
           session.style.display = 'none'; // Hide past session
@@ -68,7 +68,12 @@
         }
       });
 
-      console.log('Visible sessions in this group: ', visibleSessions);
+      if (visibleSessions === 0) {
+        const asideParent = sessionGroup.closest('aside');
+        if (asideParent) {
+          asideParent.style.display = 'none';
+        }
+      }
     });
   }
 
