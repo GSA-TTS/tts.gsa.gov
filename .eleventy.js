@@ -156,7 +156,7 @@ module.exports = function (config) {
   }
 
   // Get Date and Time as Seconds
-  // Datetime format: YYYY-MM-DD HH:
+  // Datetime format: YYYY-MM-DD HH:MM
   config.addLiquidShortcode("getDateTimeinSeconds", getDateTimeinSeconds);
   function getDateTimeinSeconds(datetime) {
     // Split the datetime string into date and time parts
