@@ -49,8 +49,7 @@
 <!-- Conditionally hide past info sessions -->
 <script>
   function hidePastInfoSessions() {
-    const now = new Date().toLocaleString("en-US", { timeZone: "America/New_York" });
-    const currentTimestamp = new Date(now).getTime();
+    const currentTimestamp = new Date().getTime();
 
     const infoSessionsGroup = document.querySelectorAll(".info-sessions-list");
     infoSessionsGroup.forEach(sessionGroup => {
@@ -58,7 +57,7 @@
 
       // Convert sessionGroup.children to an array and loop over them
       Array.from(sessionGroup.children).forEach(session => {
-        const session_timestamp = parseInt(session.getAttribute('data-session-end-timestamp'), 10);
+        const session_timestamp = session.getAttribute('data-session-end-timestamp');
 
         console.log(currentTimestamp, session_timestamp);
         // Hide past sessions
