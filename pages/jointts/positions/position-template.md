@@ -36,15 +36,15 @@ tags: jobs
 # The exception to this is a TTS role, for which you can just say TTS
 title: ""
 
-# If the role is listed on a different site and you just want to link to it,
-# put that link here. You can leave the rest of the template as-is, unless you 
-# need to add info sessions.
-external_url:
-
 # Put the opening and closing dates of your posting here, if you have them
 # These dates MUST be formatted as YYYY-MM-DD, where month and day are 2-digits
 opens: 
 closes: 
+
+# If the role is listed on a different site and you just want to link to it,
+# put that link here. You can leave the rest of the template as-is, unless you 
+# need to add info sessions.
+external_url:
 
 # To show the status alert for this job, leave this set to true. To hide it, change to false
 # To show the alert keyword association message, add the keywords separated by a semi-colon
@@ -52,7 +52,7 @@ closes:
 status_alert: true
 alert_keywords:
 
-# If this listing has been updated since it was published, put the updated date below in YYYY-MM-DD   # format
+# If this listing has been updated since it was published, put the updated date below in YYYY-MM-DD format.
 updated:
 
 # BASIC INFO
@@ -90,8 +90,8 @@ appointment_type:
 # 
 # - title: Key Objective 1
 #   items 
-#   - Objective 1 Sub-Bullet
-#   - Objective 1 Sub-Bullet
+#     - Objective 1 Sub-Bullet
+#     - Objective 1 Sub-Bullet
 # - title: Key Objective 2
 #
 # The placeholder information below shows an example of how to format the key
@@ -99,13 +99,13 @@ appointment_type:
 key_objectives:
   - title: Key Objective 1
     items:
-    - Objective 1 Sub-Bullet
-    - Objective 1 Sub-Bullet
+      - Objective 1 Sub-Bullet
+      - Objective 1 Sub-Bullet
   - title: Key Objective 2
     items:
-    - Objective 2 Sub-Bullet
-    - Objective 2 Sub-Bullet
-    - Objective 2 Sub-Bullet
+      - Objective 2 Sub-Bullet
+      - Objective 2 Sub-Bullet
+      - Objective 2 Sub-Bullet
 
 # If there are any info sessions associated with this position, list them here
 # See the placeholder below for an example of how to add an info
