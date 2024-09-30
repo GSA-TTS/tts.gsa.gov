@@ -45,7 +45,7 @@ layout: layouts/default
                   Attend an information session for this position
                 </h3>
                 <div class="usa-summary-box__text" markdown="1">
-                  Attend an information session to learn more about these roles, working at TTS, and our application process. Register for a session using the Eventbrite links below.
+                  Attend an information session to learn more about these roles, working at TTS, and our application process. Register for a session using the links below.
                   <ul>
                   {% for session in sorted_info_sessions %}
                     {% assign session_date = session.date | date: "%s" %}
@@ -74,7 +74,7 @@ layout: layouts/default
           {% if key_objectives.size > 0 %}
             {% include "layouts/jointts/job/key_objectives.html" %}
           {% endif %}
-          {% if qualifications %}
+          {% if qualifications.size > 0 %}
             {% include "layouts/jointts/job/qualifications.html" %}
           {% endif %}
           {% include "layouts/jointts/job/how_to_apply.html" %}

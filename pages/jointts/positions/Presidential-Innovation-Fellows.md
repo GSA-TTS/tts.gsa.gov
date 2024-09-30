@@ -116,23 +116,15 @@ key_objectives:
 # IMPORTANT: The date MUST be formatted as YYYY-MM-DD, where the month and day
 # are TWO digits 
 info_sessions:
-  - link: https://gsa.zoomgov.com/webinar/register/WN_rh8OrGbTQGmEpmP4oz5ztg#/registration
-    date: 2024-09-12
-    headline: Thursday, September 12th, 2024
-    time: 4:00-5:00pm ET (1:00pm-2:00pm PT)
-  - link: https://gsa.zoomgov.com/webinar/register/WN_DQKvAibMQAeSDbsvD-s-RQ#/registration
-    date: 2024-09-17
-    headline: Tuesday, September 17th, 2024
-    time: 1:00-2:00pm ET (10:00am-11:00am PT)
-  - link: https://gsa.zoomgov.com/webinar/register/WN_f0vt2OvKRQ6ExmnDZ5YeJQ#/registration
-    date: 2024-09-23
-    headline: Monday, September 23rd, 2024
-    time: 4:00-5:00pm ET (1:00pm-2:00pm PT)
   - link: https://gsa.zoomgov.com/webinar/register/WN_pEhDPgcHRGKxOOlQr4S-Cw#/registration
-    date: 2024-09-25
+    date: 2024-09-26
     headline: Wednesday, September 25th, 2024
     time: 1:00-2:00pm ET (10:00am-11:00am PT)
-
+  - link: https://gsa.zoomgov.com/webinar/register/WN_UFTZZb0VRyyTDlvPcR-gWw#/registration
+    date: 2024-09-28
+    headline: Friday, September 27th, 2024
+    time: 1:00-2:00pm ET (10:00am-11:00am PT)
+    
 # Make sure to leave the | on the first line.
 role_summary: |
   
