@@ -51,19 +51,25 @@
   function hidePastInfoSessions() {
     const now = new Date().toLocaleString("en-US", { timeZone: "America/New_York" });
     const currentTimestamp = new Date(now).getTime();
-    let visibleSessions = 0;
 
-    const infoSessions = document.querySelectorAll(".info-sessions-list li");
-    infoSessions.forEach(session => {
-      const session_timestamp = parseInt(session.getAttribute('data-session-end-timestamp'), 10);
-      if (session_timestamp > currentTimestamp) {
-        visibleSessions++;
-      } else {
-        session.style.display = 'none';
-      }
+    const infoSessionsGroup = document.querySelectorAll(".info-sessions-list");
+    infoSessionsGroup.forEach(sessionGroup => {
+      let visibleSessions = 0;
+
+      // Convert sessionGroup.children to an array and loop over them
+      Array.from(sessionGroup.children).forEach(session => {
+        const session_timestamp = parseInt(session.getAttribute('data-session-end-timestamp'), 10);
+
+        // Hide past sessions
+        if (session_timestamp < currentTimestamp) {
+          session.style.display = 'none'; // Hide past session
+        } else {
+          visibleSessions++; // Count future session
+        }
+      });
+
+      console.log('Visible sessions in this group: ', visibleSessions);
     });
-
-    console.log(visibleSessions);
   }
 
   hidePastInfoSessions();
