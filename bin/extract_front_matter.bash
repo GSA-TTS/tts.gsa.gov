@@ -57,14 +57,14 @@ set -euo pipefail
 
 separators=0
 
-while read -r line && [ $separators -lt 2 ] ; do
-  if [ "$line" == "---" ] ; then
+while read -r line && [ $separators -lt 2 ]; do
+  if [ "$line" == "---" ]; then
     separators=$((separators + 1))
   fi
 
-  if [ $separators -eq 0 ] ; then
+  if [ $separators -eq 0 ]; then
     echo "#"
-  elif [ $separators -gt 0 ] ; then
+  elif [ $separators -gt 0 ]; then
     echo "$line"
   fi
 
