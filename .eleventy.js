@@ -193,36 +193,44 @@ module.exports = function (config) {
     }
   
     // Get the current date in "America/New_York" timezone
-    let now_date = new Date().toLocaleDateString("en-US", { timeZone: "America/New_York" });
-    now_date = new Date(now_date); // Convert the localized date string back to a Date object
-    
-    // Parse the 'opens' date
-    let opens_date = opens ? new Date(new Date(opens).toLocaleDateString("en-US", { timeZone: "America/New_York" })) : null;
+    let now_date = new Date(new Date().toLocaleString("en-US", { timeZone: "America/New_York" }));
   
-    // Parse the 'closes' date and set time to 11:59:59 PM
+    // Parse the 'opens' date in UTC and convert to local time
+    let opens_date = opens ? new Date(opens) : null;
+  
+    // Parse the 'closes' date in UTC and set time to 11:59:59 PM in local time
     let closes_date = null;
     if (closes) {
-      closes_date = new Date(new Date(closes).toLocaleDateString("en-US", { timeZone: "America/New_York" }));
-      closes_date.setHours(23, 59, 59, 999); // Set time to 11:59:59.999 PM
+      closes_date = new Date(closes);
+      // Set the time to 11:59:59 PM in local time
+      closes_date.setHours(23, 59, 59, 999); 
     }
   
-    // Check if it's open or closed
+    // Convert opens_date and closes_date to local time for comparison
     if (opens_date) {
+      // Adjust opens_date to local timezone
+      opens_date = new Date(opens_date.toLocaleString("en-US", { timeZone: "America/New_York" }));
+  
+      // Adjust closes_date to local timezone
+      if (closes_date) {
+        closes_date = new Date(closes_date.toLocaleString("en-US", { timeZone: "America/New_York" }));
+      }
+  
+      // Check if it's open or closed
       let isOpen = now_date >= opens_date;
       let isClosed = closes_date && now_date > closes_date;
   
       if (isOpen && !isClosed) {
         return "open";
       } else if (isClosed) {
-        return `${closes_date}`;
+        return "closed";
       } else {
         return "upcoming";
       }
     }
   
     return "unknown"; // Default fallback if no conditions are met
-  }
-  
+  }  
   
 
   config.addFilter("stateFromDates", getStateFromDates);
