@@ -57,7 +57,7 @@ updated:
 
 # BASIC INFO
 # The basic information and details of the position
-info_intro: 
+info_intro: Open to U.S. citizens or nationals (residents of American Samoa and Swains Island). Subject to background check. Full information is available on [USAJOBS](https://www.usajobs.gov/job/810717200).
 
 supervisory_status: Non-Supervisory
 
@@ -127,8 +127,7 @@ key_objectives:
 info_sessions:
   - link: https://gsa.zoomgov.com/meeting/register/vJItdOqgqD4vHGCXn9G1ijf1wVX1fXFCZW4
     date: 2024-10-01
-    headline: Tuesday, October 1, 2024
-    time: 3:00pm-4:00pm EST (12:00pm - 1:00pm PT)
+    time: 3:00pm-4:00pm ET (12:00pm - 1:00pm PT)
 
 # Make sure to leave the | on the first line. Start your content on the following line.
 role_summary: | 
