@@ -1,0 +1,59 @@
+---
+name: Bug Report
+description: Use this form to submit bug reports
+projects:
+  - GSA-TTS/54
+labels:
+  - "bug"
+
+body:
+  - type: "markdown"
+    attributes:
+      value: >
+        This form is used to submit bug reports.  A bug is when
+        something's not working the way that it should.  If a
+        page says something and needs to say something else,
+        please use the Content Update form.
+
+  - type: "input"
+    id: "url"
+    attributes:
+      label: "URL"
+      description: "Where do you see the bug?"
+      placeholder: "URL"
+    validations:
+      required: true
+
+  - type: "textarea"
+    id: "current_behavior"
+    attributes:
+      label: "Current Behavior"
+      description: "This is the current behavior"
+      placeholder: "what it's doing now"
+    validations:
+      required: true
+
+  - type: "textarea"
+    id: "expected"
+    attributes:
+      label: "Expected Behavior"
+      description: "This is what is expected"
+      placeholder: "what the it should be doing"
+    validations:
+      required: true
+
+  - type: "textarea"
+    id: "reproduction_steps"
+    attributes:
+      label: "Steps to Reproduce Behavior"
+      description: "This is what is how to reproduce the bug"
+      placeholder: "how to make the bug show up"
+    validations:
+      required: true
+
+  - type: "textarea"
+    id: "comments"
+    attributes:
+      label: "Comments"
+      description: "Another other comments, notes, thoughts, etc."
+      placeholder: "comments"
