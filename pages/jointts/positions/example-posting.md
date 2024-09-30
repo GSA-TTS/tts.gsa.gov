@@ -34,12 +34,12 @@ tags: jobs
 #   - U.S. Digital Corps, not USDC
 #   - Presidential Innovation Fellows, not PIF
 # The exception to this is a TTS role, for which you can just say TTS
-title: ""
+title: "TTS: Web Developer"
 
 # Put the opening and closing dates of your posting here, if you have them
 # These dates MUST be formatted as YYYY-MM-DD, where month and day are 2-digits
-opens: 
-closes: 
+opens: 2024-10-01
+closes: 2024-10-30
 
 # If the role is listed on a different site and you just want to link to it,
 # put that link here. You can leave the rest of the template as-is, unless you 
@@ -53,22 +53,22 @@ status_alert: true
 alert_keywords:
 
 # If this listing has been updated since it was published, put the updated date below in YYYY-MM-DD format.
-updated:
+updated: 2024-10-08
 
 # BASIC INFO
 # The basic information and details of the position
 info_intro: Open to U.S. citizens or nationals (residents of American Samoa and Swains Island). Subject to background check. Full information is available on [USAJOBS](https://www.usajobs.gov/job/810717200).
 
-supervisory_status: 
+supervisory_status: Non-Supervisory
 
 usajobs_official_title: 
 
-vacancies: "" # Put the number in quotes.
+vacancies: "3" # Put the number in quotes.
 
 location: Anywhere in the U.S. (remote)
 
 # Put the GS grade and pay range this position is being advertised at. For SES positions, set the value of gs to SES.
-gs: 
+gs: SES
 min_payrange: $
 max_payrange: $
 
@@ -97,15 +97,25 @@ appointment_type:
 # The placeholder information below shows an example of how to format the key
 # objectives
 key_objectives:
-  - title: Key Objective 1
+  - title: Develop websites
     items:
-      - Objective 1 Sub-Bullet
+      - Develop a website that is responsive
       - Objective 1 Sub-Bullet
   - title: Key Objective 2
     items:
       - Objective 2 Sub-Bullet
       - Objective 2 Sub-Bullet
       - Objective 2 Sub-Bullet
+  - title: Key Objective 2
+    items:
+      - Objective 2 Sub-Bullet
+      - Objective 2 Sub-Bullet
+      - Objective 2 Sub-Bullet
+  - title: Key Objective 2
+      items:
+        - Objective 2 Sub-Bullet
+        - Objective 2 Sub-Bullet
+        - Objective 2 Sub-Bullet
 
 # If there are any info sessions associated with this position, list them here
 # See the placeholder below for an example of how to add an info
@@ -117,8 +127,12 @@ key_objectives:
 info_sessions:
   - link: 
     date: 
+    headline: Tuesday October 1, 2024
+    time: 10AM-11AM ET (7AM-8AM PT)
+  - link: 
+    date: 
     headline: 
-    time: 
+    time:
   - link: 
     date: 
     headline: 
@@ -126,12 +140,20 @@ info_sessions:
 
 # Make sure to leave the | on the first line.
 role_summary: |
+This role is a web developer role.
+  - List item 1
+  - List item 2
+  - List item 3
+
+I can keep typing a new paragraph
   
 # Make sure to leave the | on the first line.
 qualifications: |
+You have 2 years of web development experience.
 
 # Make sure to leave the | on the first line.
 specialized_requirements: |
+You have 1 year of web development experience using PHP
 
 # This can be filled prior to the job posting going live or left blank #
 # The application button will only show after the open date            #
