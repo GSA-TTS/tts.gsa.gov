@@ -117,14 +117,14 @@ key_objectives:
 # are TWO digits 
 info_sessions:
   - link: https://gsa.zoomgov.com/webinar/register/WN_pEhDPgcHRGKxOOlQr4S-Cw#/registration
-    date: 2024-09-26
+    date: 2024-09-25
     headline: Wednesday, September 25th, 2024
     time: 1:00-2:00pm ET (10:00am-11:00am PT)
-  - link: https://gsa.zoomgov.com/webinar/register/WN_UFTZZb0VRyyTDlvPcR-gWw#/registration
-    date: 2024-09-28
+  - link: https://gsa.zoomgov.com/webinar/register/WN_UFTZZb0VRyyTDlvPcR-gWw
+    date: 2024-09-27
     headline: Friday, September 27th, 2024
     time: 1:00-2:00pm ET (10:00am-11:00am PT)
-    
+
 # Make sure to leave the | on the first line.
 role_summary: |
   

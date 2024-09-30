@@ -48,3 +48,21 @@
       });
   });
 </script>
+
+<!-- Conditionally hide past info sessions -->
+<script>
+  function hidePastInfoSessions() {
+    const now = new Date().toLocaleString("en-US", { timeZone: "America/New_York" });
+    const currentTimestamp = new Date(now).getTime();
+
+    const infoSessions = document.querySelectorAll(".info-sessions-list li");
+    infoSessions.forEach(session => {
+      const session_timestamp = parseInt(session.getAttribute('data-session-end-timestamp'), 10);
+      if (session_timestamp < currentTimestamp) {
+        session.style.display = 'none';
+      }
+    });
+  }
+
+  hidePastInfoSessions();
+</script>
