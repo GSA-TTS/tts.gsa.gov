@@ -56,10 +56,10 @@
     const infoSessions = document.querySelectorAll(".info-sessions-list li");
     infoSessions.forEach(session => {
       const session_timestamp = parseInt(session.getAttribute('data-session-end-timestamp'), 10);
-      if (session_timestamp < currentTimestamp) {
-        session.style.display = 'none';
-      } else {
+      if (session_timestamp > currentTimestamp) {
         visibleSessions++;
+      } else {
+        session.style.display = 'none';
       }
     });
 
