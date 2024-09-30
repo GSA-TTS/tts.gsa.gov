@@ -106,16 +106,6 @@ key_objectives:
       - Objective 2 Sub-Bullet
       - Objective 2 Sub-Bullet
       - Objective 2 Sub-Bullet
-  - title: Key Objective 2
-    items:
-      - Objective 2 Sub-Bullet
-      - Objective 2 Sub-Bullet
-      - Objective 2 Sub-Bullet
-  - title: Key Objective 2
-      items:
-        - Objective 2 Sub-Bullet
-        - Objective 2 Sub-Bullet
-        - Objective 2 Sub-Bullet
 
 # If there are any info sessions associated with this position, list them here
 # See the placeholder below for an example of how to add an info
