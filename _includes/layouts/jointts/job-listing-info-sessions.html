@@ -17,8 +17,7 @@
 
   {% capture sessionEndTimestamp %}{% getDateTimeinSeconds session_end_str %}{% endcapture %}
 
-  {{ sessionEndTimestamp }}
-  {{ now }}
+  {{ sessionEndTimestamp > now }}
   
   <!-- Check if session is still upcoming or ongoing -->
   {% if sessionEndTimestamp > now %}
