@@ -191,27 +191,39 @@ module.exports = function (config) {
     if (!opens && !closes) {
       return "unknown";
     }
-
-    let now_string = DateTime.now()
-      .setZone("America/New_York")
-      .toFormat("yyyy-MM-dd");
-    let opens_string = DateTime.fromJSDate(opens)
-      .setZone("America/New_York")
-      .toFormat("yyyy-MM-dd");
-    let closes_string = DateTime.fromJSDate(closes)
-      .setZone("America/New_York")
-      .toFormat("yyyy-MM-dd");
-
-    if (opens_string == "" && opens_string >= now_string) {
-      return "upcoming";
-    } else if (closes_string <= now_string) {
-      return "closed";
-    } else if (opens_string <= now_string || closes_string >= now_string) {
-      return "open";
-    } else {
-      return "unknown";
+  
+    // Get the current date in "America/New_York" timezone
+    let now_date = new Date().toLocaleDateString("en-US", { timeZone: "America/New_York" });
+    now_date = new Date(now_date); // Convert the localized date string back to a Date object
+    
+    // Parse the 'opens' date
+    let opens_date = opens ? new Date(new Date(opens).toLocaleDateString("en-US", { timeZone: "America/New_York" })) : null;
+  
+    // Parse the 'closes' date and set time to 11:59:59 PM
+    let closes_date = null;
+    if (closes) {
+      closes_date = new Date(new Date(closes).toLocaleDateString("en-US", { timeZone: "America/New_York" }));
+      closes_date.setHours(23, 59, 59, 999); // Set time to 11:59:59.999 PM
     }
+  
+    // Check if it's open or closed
+    if (opens_date) {
+      let isOpen = now_date >= opens_date;
+      let isClosed = closes_date && now_date > closes_date;
+  
+      if (isOpen && !isClosed) {
+        return "open";
+      } else if (isClosed) {
+        return "closed";
+      } else {
+        return "upcoming";
+      }
+    }
+  
+    return "unknown"; // Default fallback if no conditions are met
   }
+  
+  
 
   config.addFilter("stateFromDates", getStateFromDates);
   config.addFilter("sortByProp", sortByProp);
