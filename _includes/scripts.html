@@ -60,6 +60,7 @@
       Array.from(sessionGroup.children).forEach(session => {
         const session_timestamp = parseInt(session.getAttribute('data-session-end-timestamp'), 10);
 
+        console.log(currentTimestamp, session_timestamp);
         // Hide past sessions
         if (session_timestamp < currentTimestamp) {
           session.style.display = 'none'; // Hide past session
