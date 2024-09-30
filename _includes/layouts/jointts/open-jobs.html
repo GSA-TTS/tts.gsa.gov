@@ -2,7 +2,6 @@
     {% assign open_job_count = 0 %}
     {% for pg in collections.jobs %}
     {% capture state %}{% getStateFromDates pg.data.opens pg.data.closes %}{% endcapture %}
-    <p>{{state}} {{pg.data.opens}} {{pg.data.closes}} {{pg.data.title}}</p>
       {% if state == "open" %}
         {% unless pg.data.path contains 'template' %}
           {% unless pg.data.path contains 'performance-profiles' %}
