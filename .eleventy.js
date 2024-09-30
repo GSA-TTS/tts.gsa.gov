@@ -192,25 +192,50 @@ module.exports = function (config) {
       return "unknown";
     }
 
-    let now_string = DateTime.now()
-      .setZone("America/New_York")
-      .toFormat("yyyy-MM-dd");
-    let opens_string = DateTime.fromJSDate(opens)
-      .setZone("America/New_York")
-      .toFormat("yyyy-MM-dd");
-    let closes_string = DateTime.fromJSDate(closes)
-      .setZone("America/New_York")
-      .toFormat("yyyy-MM-dd");
+    // Get the current date in "America/New_York" timezone
+    let now_date = new Date(
+      new Date().toLocaleString("en-US", { timeZone: "America/New_York" }),
+    );
 
-    if (opens_string == "" && opens_string >= now_string) {
-      return "upcoming";
-    } else if (closes_string <= now_string) {
-      return "closed";
-    } else if (opens_string <= now_string || closes_string >= now_string) {
-      return "open";
-    } else {
-      return "unknown";
+    // Parse the 'opens' date in UTC and convert to local time
+    let opens_date = opens ? new Date(opens) : null;
+
+    // Parse the 'closes' date in UTC and set time to 11:59:59 PM in local time
+    let closes_date = null;
+    if (closes) {
+      closes_date = new Date(closes);
+      // Set the time to 11:59:59 PM in local time
+      closes_date.setHours(23, 59, 59, 999);
     }
+
+    // Convert opens_date and closes_date to local time for comparison
+    if (opens_date) {
+      // Adjust opens_date to local timezone
+      opens_date = new Date(
+        opens_date.toLocaleString("en-US", { timeZone: "America/New_York" }),
+      );
+
+      // Adjust closes_date to local timezone
+      if (closes_date) {
+        closes_date = new Date(
+          closes_date.toLocaleString("en-US", { timeZone: "America/New_York" }),
+        );
+      }
+
+      // Check if it's open or closed
+      let isOpen = now_date >= opens_date;
+      let isClosed = closes_date && now_date > closes_date;
+
+      if (isOpen && !isClosed) {
+        return "open";
+      } else if (isClosed) {
+        return "closed";
+      } else {
+        return "upcoming";
+      }
+    }
+
+    return "unknown"; // Default fallback if no conditions are met
   }
 
   config.addFilter("stateFromDates", getStateFromDates);
