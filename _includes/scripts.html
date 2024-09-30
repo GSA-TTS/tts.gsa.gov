@@ -53,12 +53,24 @@
     const currentTimestamp = new Date(now).getTime();
 
     const infoSessions = document.querySelectorAll(".info-sessions-list li");
+    let visibleSessions = 0;
+
     infoSessions.forEach(session => {
       const session_timestamp = parseInt(session.getAttribute('data-session-end-timestamp'), 10);
       if (session_timestamp < currentTimestamp) {
         session.style.display = 'none';
+      } else {
+        visibleSessions++;
       }
     });
+
+    // If no visible sessions, hide the <aside> parent
+    if (visibleSessions === 0) {
+      const asideParent = document.querySelector(".info-sessions-list").closest('aside');
+      if (asideParent) {
+        asideParent.style.display = 'none';
+      }
+    }
   }
 
   hidePastInfoSessions();
