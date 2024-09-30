@@ -56,7 +56,7 @@ jobs:
             elif [ -n "${GITHUB_HEAD_REF:-}" ] ; then
               echo "${GITHUB_HEAD_REF}/"
             else
-              echo "echo-summer20203/"
+              echo "staging/"
             fi
 
             echo -n "DELAY_SECONDS="
