@@ -51,7 +51,7 @@ layout: layouts/default
                     {% assign session_date = session.date | date: "%s" %}
                     {% if session_date > now %}
                       <li class="info-session">
-                        <p><a href="{{session.link}}">{{session.headline}}</a> at {{session.time}}</p>
+                        <p><a href="{{ session.link | url }}">{{session.headline}}</a> at {{session.time}}</p>
                       </li>
                     {% endif %}
                   {% endfor %}
