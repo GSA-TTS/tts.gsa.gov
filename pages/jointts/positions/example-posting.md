@@ -111,7 +111,6 @@ key_objectives:
 # See the placeholder below for an example of how to add an info
 # session. If the position does not have any info sessions, you can delete everything
 # except "info_sessions:"
-
 # IMPORTANT: The date MUST be formatted as YYYY-MM-DD, where the month and day
 # are TWO digits 
 info_sessions:
@@ -122,20 +121,19 @@ info_sessions:
 
 # Make sure to leave the | on the first line.
 role_summary: |
-This role is a web developer role.
-  - List item 1
-  - List item 2
-  - List item 3
-
-I can keep typing a new paragraph
+  This role is a web developer role.
+    - List item 1
+    - List item 2
+    - List item 3
+  I can keep typing a new paragraph
   
 # Make sure to leave the | on the first line.
 qualifications: |
-You have 2 years of web development experience.
+  You have 2 years of web development experience.
 
 # Make sure to leave the | on the first line.
 specialized_requirements: |
-You have 1 year of web development experience using PHP
+  You have 1 year of web development experience using PHP
 
 # This can be filled prior to the job posting going live or left blank #
 # The application button will only show after the open date            #
