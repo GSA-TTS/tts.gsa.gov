@@ -214,7 +214,7 @@ module.exports = function (config) {
       if (isOpen && !isClosed) {
         return "open";
       } else if (isClosed) {
-        return "closed";
+        return `${closes_date}`;
       } else {
         return "upcoming";
       }
