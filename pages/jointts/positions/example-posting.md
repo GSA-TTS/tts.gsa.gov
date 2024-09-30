@@ -115,18 +115,10 @@ key_objectives:
 # IMPORTANT: The date MUST be formatted as YYYY-MM-DD, where the month and day
 # are TWO digits 
 info_sessions:
-  - link: 
-    date: 
+  - link: https://google.com
+    date: 2024-10-01
     headline: Tuesday October 1, 2024
     time: 10AM-11AM ET (7AM-8AM PT)
-  - link: 
-    date: 
-    headline: 
-    time:
-  - link: 
-    date: 
-    headline: 
-    time:
 
 # Make sure to leave the | on the first line.
 role_summary: |
