@@ -5,7 +5,7 @@ if future_sessions.size > 0 -%}
 <ul>
   {% for session in future_sessions %}
   <li>
-    <a href="{{ session.link }}">{{ session.date | human_friendly }}</a
+    <a href="{{ session.link | url }}">{{ session.date | human_friendly }}</a
     ><br />at {{ session.time }}
   </li>
   {% endfor %}
