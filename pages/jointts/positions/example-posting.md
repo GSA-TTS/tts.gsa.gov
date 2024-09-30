@@ -49,7 +49,7 @@ external_url:
 # To show the status alert for this job, leave this set to true. To hide it, change to false
 # To show the alert keyword association message, add the keywords separated by a semi-colon
 # e.g. Product Management; Strategy/Consulting; and Marketing
-status_alert: true
+status_alert: false
 alert_keywords:
 
 # If this listing has been updated since it was published, put the updated date below in YYYY-MM-DD format.
@@ -63,14 +63,14 @@ supervisory_status: Non-Supervisory
 
 usajobs_official_title: 
 
-vacancies: "3" # Put the number in quotes.
+vacancies: "" # Put the number in quotes.
 
 location: Anywhere in the U.S. (remote)
 
 # Put the GS grade and pay range this position is being advertised at. For SES positions, set the value of gs to SES.
 gs: SES
-min_payrange: $
-max_payrange: $
+min_payrange: $50,000
+max_payrange: $100,000
 
 travel_requirement: Occasional travel may be required up to 10%-20% per year.
 
@@ -106,6 +106,11 @@ key_objectives:
       - Objective 2 Sub-Bullet
       - Objective 2 Sub-Bullet
       - Objective 2 Sub-Bullet
+  - title: Key Objective 2
+    items:
+      - Objective 2 Sub-Bullet
+      - Objective 2 Sub-Bullet
+      - Objective 2 Sub-Bullet
 
 # If there are any info sessions associated with this position, list them here
 # See the placeholder below for an example of how to add an info
@@ -118,10 +123,15 @@ info_sessions:
     date: 2024-10-01
     headline: Tuesday October 1, 2024
     time: 10AM-11AM ET (7AM-8AM PT)
+  - link:
+    date:
+    headline:
+    time:
 
 # Make sure to leave the | on the first line.
 role_summary: |
-  This role is a web developer role.
+  This role is a web developer role. I am a paragraph!
+    - The actual list item 1!
     - List item 1
     - List item 2
     - List item 3
