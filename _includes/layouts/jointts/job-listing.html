@@ -32,11 +32,26 @@ layout: layouts/default
           {% assign future_sessions = false %}
 
           {% for session in sorted_info_sessions %}
-            {% assign session_date = session.date | date: "%s" %}
-            {% if session_date > now %}
-              {% assign future_sessions = true %}
-              {% break %}
-            {% endif %}
+            <!-- Format the date for comparison -->
+              {% assign session_date = session.date | date: "%Y-%m-%d" %}
+
+              <!-- Extract ET time range from session.time (e.g., "1:00-2:00pm ET") -->
+              {% assign time_et = session.time | split: " ET" | first %}
+              
+              <!-- Extract start time and end time (e.g., "1:00pm" and "2:00pm") -->
+              {% assign session_end_time = time_et | split: "-" | last | strip %}
+              
+              <!-- Combine the date with the start and end times -->
+              {% assign session_end_str = session_date | append: " " | append: session_end_time %}
+
+              {% capture sessionEndTimestamp %}{% getDateTimeinSeconds session_end_str %}{% endcapture %}
+              
+              <!-- Check if session is still upcoming or ongoing -->
+              {% if sessionEndTimestamp > now %}
+                {% assign future_sessions = true %}
+                {% break %}
+              {% endif %}
+            {% endfor %}
           {% endfor %}
           {% if future_sessions %}
             <div class="usa-summary-box">
