@@ -60,7 +60,7 @@ layout: layouts/default
                 </h3>
                 <div class="usa-summary-box__text" markdown="1">
                   Attend an information session to learn more about these roles, working at TTS, and our application process. Register for a session using the links below.
-                  <ul>
+                  <ul class="info-sessions-list">
                   {% for session in sorted_info_sessions %}
                     <!-- Format the date for comparison -->
                     {% assign session_date = session.date | date: "%Y-%m-%d" %}
