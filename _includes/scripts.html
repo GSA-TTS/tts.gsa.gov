@@ -53,12 +53,16 @@
     const currentTimestamp = Math.floor(new Date(now).getTime() / 1000);
 
     const infoSessionsGroup = document.querySelectorAll(".info-sessions-list");
+
+    console.log(infoSessionsGroup)
     infoSessionsGroup.forEach(sessionGroup => {
       let visibleSessions = 0;
 
       // Convert sessionGroup.children to an array and loop over them
       Array.from(sessionGroup.children).forEach(session => {
         const session_timestamp = session.getAttribute('data-session-end-timestamp');
+
+        console.log(currentTimestamp);
 
         // Hide past sessions
         if (session_timestamp < currentTimestamp) {

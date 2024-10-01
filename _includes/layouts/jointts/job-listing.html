@@ -35,6 +35,8 @@ layout: layouts/default
             <!-- Format the date for comparison -->
               {% assign session_date = session.date | date: "%Y-%m-%d" %}
 
+              {{ session_date }}
+
               <!-- Extract ET time range from session.time (e.g., "1:00-2:00pm ET") -->
               {% assign time_et = session.time | split: " ET" | first %}
               
@@ -46,12 +48,17 @@ layout: layouts/default
 
               {% capture sessionEndTimestamp %}{% getDateTimeinSeconds session_end_str %}{% endcapture %}
               
+              {{ session_end_str }}
+              {{ sessionEndTimestamp }}
+              {{ now }}
+
               <!-- Check if session is still upcoming or ongoing -->
               {% if sessionEndTimestamp > now %}
                 {% assign future_sessions = true %}
                 {% break %}
               {% endif %}
           {% endfor %}
+
           {% if future_sessions %}
             <div class="usa-summary-box">
               <div class="usa-summary-box__body">
