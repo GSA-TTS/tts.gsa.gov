@@ -182,7 +182,7 @@ module.exports = function (config) {
     // Convert to timestamp (in seconds)
     const timestamp = Math.floor(new Date(formattedDatetime).getTime() / 1000);
 
-    return formattedDatetime;
+    return timestamp;
   }
 
   // Get State From Dates
