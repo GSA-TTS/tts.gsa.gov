@@ -125,7 +125,7 @@ key_objectives:
 # IMPORTANT: The date MUST be formatted as YYYY-MM-DD, where the month and day
 # are TWO digits 
 info_sessions:
-  - link: https://gsa.zoomgov.com/meeting/register/vJItdOqgqD4vHGCXn9G1ijf1wVX1fXFCZW4
+  - link: https://gsa.zoomgov.com/webinar/register/WN_vCL_dfX_Swqb9ZIbNatDtw
     date: 2024-10-01
     time: 3:00pm-4:00pm ET (12:00pm - 1:00pm PT)
 
@@ -138,12 +138,11 @@ role_summary: |
   This position is a tactical, collaborative, outward-facing role that will require a blend of product and data expertise, a focus on consistency and quality, and a future-focused view for how Login.gov can use data in service of its mission.
 
 # Make sure to leave the | on the first line. Start your content on the following line.
-qualifications: | 
-  To Be Updated Soon
-
-# Make sure to leave the | on the first line. Start your content on the following line.
 specialized_requirements: | 
-  To Be Updated Soon
+  - Implementing and integrating appropriate technology, architecture, and tooling to support data science activities, including artificial intelligence/machine learning capabilities.
+  - Identifying data requirements and standards to support emerging IT and IT cybersecurity initiatives (e.g. cloud computing, DevSecOps, continuous integration and continuous delivery)
+  - Developing models that can identify quality, anomalies, and concerning trends in structured/semistructured/unstructured data to provide near real time feedback.
+  - Developing tooling, models, and visualizations using general-purpose programming languages (such as Python) and/or tools optimized for statistical and data analysis (such as R).
 
 # This can be filled prior to the job posting going live or left blank
 # The application button will only show after the open date
