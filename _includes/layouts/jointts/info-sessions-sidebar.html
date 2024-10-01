@@ -1,3 +1,4 @@
+{% assign now = 'now' | date: "%s" %}
 <div class="desktop:grid-col-4 margin-top-4 desktop:margin-top-0">
     <div class="usa-summary-box">
       <div class="usa-summary-box__body">
@@ -20,7 +21,9 @@
 
               {% capture sessionEndTimestamp %}{% getDateTimeinSeconds session_end_str %}{% endcapture %}
 
-              {% assign now = 'now' | date: "%s" %}
+              {{ session_end_str }}
+              {{ sessionEndTimestamp }}
+              {{ now }}
 
               {% if sessionEndTimestamp > now %}
                 <li class="info-session" data-session-end-timestamp="{{ sessionEndTimestamp }}">
