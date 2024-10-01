@@ -127,7 +127,7 @@ key_objectives:
 info_sessions:
   - link: https://gsa.zoomgov.com/webinar/register/WN_vCL_dfX_Swqb9ZIbNatDtw
     date: 2024-10-01
-    time: 6:00pm-7:00pm ET (12:00pm - 1:00pm PT)
+    time: 3:00pm-4:00pm ET (12:00pm - 1:00pm PT)
 
 # Make sure to leave the | on the first line. Start your content on the following line.
 role_summary: | 
