@@ -177,12 +177,12 @@ module.exports = function (config) {
     }
 
     // Format the datetime string for timestamp conversion
-    const formattedDatetime = `${date} ${String(hours).padStart(2, "0")}:${minutes} EST`;
+    const formattedDatetime = `${date} ${String(hours).padStart(2, "0")}:${minutes} ET`;
 
     // Convert to timestamp (in seconds)
     const timestamp = Math.floor(new Date(formattedDatetime).getTime() / 1000);
 
-    return timestamp;
+    return formattedDatetime;
   }
 
   // Get State From Dates
