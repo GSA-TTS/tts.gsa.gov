@@ -4,7 +4,7 @@
 
 {% for session in pg.data.info_sessions %}
   <!-- Format the date for comparison -->
-  {% assign session_date = session.date | date: "%Y-%m-%d" %}
+  {% assign session_date = session.date | readableDate | date: "%Y-%m-%d" %}
 
   <!-- Extract ET time range from session.time (e.g., "1:00-2:00pm ET") -->
   {% assign time_et = session.time | split: " ET" | first %}
@@ -15,8 +15,11 @@
   <!-- Combine the date with the start and end times -->
   {% assign session_end_str = session_date | append: " " | append: session_end_time %}
 
+  {{ session_end_str }}
+
   {% capture sessionEndTimestamp %}{% getDateTimeinSeconds session_end_str %}{% endcapture %}
   
+  {{ sessionEndTimestamp }}
   <!-- Check if session is still upcoming or ongoing -->
   {% if sessionEndTimestamp > now %}
     {% assign future_sessions = true %}
@@ -31,7 +34,7 @@
       <ul class="info-sessions-list">
         {% for session in pg.data.info_sessions %}
           <!-- Format the date for comparison -->
-          {% assign session_date = session.date | date: "%Y-%m-%d" %}
+          {% assign session_date = session.date | readableDate | date: "%Y-%m-%d" %}
 
           <!-- Extract ET time range from session.time (e.g., "1:00-2:00pm ET") -->
           {% assign time_et = session.time | split: " ET" | first %}
