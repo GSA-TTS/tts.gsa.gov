@@ -158,32 +158,28 @@ module.exports = function (config) {
   // Get Date and Time as Seconds
   // Datetime format: YYYY-MM-DD HH:MM
   config.addLiquidShortcode("getDateTimeinSeconds", getDateTimeinSeconds);
-  function getDateTimeinSeconds(datetime) {
-    // Split the datetime string into date and time parts
-    const dateParts = datetime.split(" ");
-    const date = dateParts[0];
-    const time = dateParts[1];
+function getDateTimeinSeconds(datetime) {
+  // Destructure date and time directly
+  const [date, time] = datetime.split(" ");
 
-    // Extract hours, minutes, and AM/PM
-    let hours = parseInt(time.slice(0, time.length - 2).split(":")[0], 10); // Adjusted to capture full hour
-    const minutes = time.length === 6 ? time.slice(2, 4) : time.slice(3, 5);
-    const amPm = time.slice(-2).toLowerCase(); // Handle AM/PM case
+  // Use regex to extract hours, minutes, and AM/PM
+  const [, hoursStr, minutes, amPm] = time.match(/(\d+):(\d+)(am|pm)/i);
+  let hours = parseInt(hoursStr, 10);
 
-    // Convert hours to 24-hour format
-    if (amPm === "pm" && hours !== 12) {
-      hours += 12;
-    } else if (amPm === "am" && hours === 12) {
-      hours = 0;
-    }
-
-    // Format the datetime string for timestamp conversion
-    const formattedDatetime = `${date} ${String(hours).padStart(2, "0")}:${minutes} ET`;
-
-    // Convert to timestamp (in seconds)
-    const timestamp = Math.floor(new Date(formattedDatetime).getTime() / 1000);
-
-    return timestamp;
+  // Convert to 24-hour format
+  if (amPm.toLowerCase() === "pm" && hours !== 12) {
+    hours += 12;
+  } else if (amPm.toLowerCase() === "am" && hours === 12) {
+    hours = 0;
   }
+
+  // Format the datetime string for timestamp conversion
+  const formattedDatetime = `${date} ${String(hours).padStart(2, "0")}:${minutes} ET`;
+
+  // Convert to timestamp in seconds
+  return Math.floor(new Date(formattedDatetime).getTime() / 1000);
+}
+
 
   // Get State From Dates
   config.addLiquidShortcode("getStateFromDates", getStateFromDates);
