@@ -137,6 +137,14 @@ role_summary: |
 
   This position is a tactical, collaborative, outward-facing role that will require a blend of product and data expertise, a focus on consistency and quality, and a future-focused view for how Login.gov can use data in service of its mission.
 
+qualifications: |
+  Provide as much detail as possible on your resume so that we can evaluate your
+  previous experience. Follow our [guidance on creating a federal style resume](https://join.tts.gsa.gov/resume/). Failure to provide required information may result in disqualification.
+
+  For each job on your resume, provide:
+  - The exact dates you held each job (from month/year to month/year or "present")
+  - Number of hours per week you worked (if part time)
+
 # Make sure to leave the | on the first line. Start your content on the following line.
 specialized_requirements: | 
   - Implementing and integrating appropriate technology, architecture, and tooling to support data science activities, including artificial intelligence/machine learning capabilities.
