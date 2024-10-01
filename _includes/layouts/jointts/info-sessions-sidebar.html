@@ -24,7 +24,7 @@
 
               {% if sessionEndTimestamp > now %}
                 <li class="info-session" data-session-end-timestamp="{{ sessionEndTimestamp }}">
-                  <a target="_blank" href="{{ session.link }}" rel="noopener">{{ session.date | date: "%A, %B %d, %Y" }}</a>
+                  <a target="_blank" href="{{ session.link | url }}" rel="noopener">{{ session.date | date: "%A, %B %d, %Y" }}</a>
                   <p>{{ session.time-et }}</p>
                   <p>({{ session.time-pt }})</p>
                 </li>
