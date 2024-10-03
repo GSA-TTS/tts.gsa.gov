@@ -48,10 +48,55 @@
 
 <!-- Conditionally hide past info sessions -->
 <script>
-  function hidePastInfoSessions() {
-    const now = new Date().toLocaleString("en-US", { timeZone: "America/New_York" });
-    const currentTimestamp = Math.floor(new Date(now).getTime() / 1000);
+  const now = new Date();
+  const currentTimestamp = Math.floor(new Date(now).getTime() / 1000);
 
+  function formatDate(date) {
+    const year = date.getFullYear(); // Get the four-digit year
+    const month = String(date.getMonth() + 1).padStart(2, '0'); // Get the month (0-11) and add 1; pad with 0 if needed
+    const day = String(date.getDate()).padStart(2, '0'); // Get the day of the month; pad with 0 if needed
+
+    return `${year}-${month}-${day}`; // Format as 'yyyy-mm-dd'
+  }
+
+  if ( window.location.pathname === '/join/' ) {
+    const allJobs = [];
+      {% for job in collections.jobs %}
+        allJobs.push({
+          title: "{{ job.data.title }}",
+          url: "{{ job.url }}",
+          external_url: "{{ pg.data.external_url }}",
+          opens: "{{ job.data.opens }}",
+          closes: "{{ job.data.closes }}"
+        });
+      {% endfor %}
+
+    sortJobs(allJobs);
+    
+  }
+
+  function sortJobs(allJobs) {
+      const openJobs = [];
+      const upcomingJobs = [];
+      const today = formatDate(now);
+      
+      allJobs.forEach(job => {
+        const opens = job.opens !== '' ? job.opens : '';
+
+        const closes = job.closes !== ''  ? job.closes : '';
+
+        console.log(closes);
+
+        // If today is after or equal to the opens date and before the closes date, add the job to the openJobs array.
+        if ( today >= opens && closes > today ) {
+          openJobs.push(job);
+        }
+      });
+
+      console.log(openJobs)
+  }
+
+  function hidePastInfoSessions(currentTimestamp) {
     const infoSessionsGroup = document.querySelectorAll(".info-sessions-list");
 
     infoSessionsGroup.forEach(sessionGroup => {
@@ -79,6 +124,5 @@
       }
     });
   }
-
-  hidePastInfoSessions();
+  hidePastInfoSessions(currentTimestamp);
 </script>
