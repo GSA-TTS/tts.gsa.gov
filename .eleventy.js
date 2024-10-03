@@ -249,7 +249,7 @@ module.exports = function (config) {
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
   config.addFilter("htmlDateString", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: "America/New_York" }).toFormat(
+    return DateTime.fromJSDate(dateObj).toFormat(
       "yyyy-LL-dd",
     );
   });
