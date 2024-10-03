@@ -68,17 +68,17 @@ set -euo pipefail
 ## @endcode
 extract_front_matter() {
 
- separators=0
+  separators=0
 
-  while read -r && [ $separators -lt 2 ] ; do
+  while read -r && [ $separators -lt 2 ]; do
     line="$REPLY"
-    if [ "$line" == "---" ] ; then
+    if [ "$line" == "---" ]; then
       separators=$((separators + 1))
     fi
 
-    if [ $separators -eq 0 ] ; then
+    if [ $separators -eq 0 ]; then
       echo "#"
-    elif [ $separators -gt 0 ] ; then
+    elif [ $separators -gt 0 ]; then
       echo "$line"
     fi
   done

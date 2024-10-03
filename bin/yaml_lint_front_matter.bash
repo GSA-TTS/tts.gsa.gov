@@ -71,17 +71,17 @@ set -euo pipefail
 ## @endcode
 extract_front_matter() {
 
- separators=0
+  separators=0
 
-  while read -r && [ $separators -lt 2 ] ; do
+  while read -r && [ $separators -lt 2 ]; do
     line="$REPLY"
-    if [ "$line" == "---" ] ; then
+    if [ "$line" == "---" ]; then
       separators=$((separators + 1))
     fi
 
-    if [ $separators -eq 0 ] ; then
+    if [ $separators -eq 0 ]; then
       echo "#"
-    elif [ $separators -gt 0 ] ; then
+    elif [ $separators -gt 0 ]; then
       echo "$line"
     fi
   done
@@ -94,12 +94,12 @@ main() {
 
   local clean=0
 
-  for filename in "$@" ; do
+  for filename in "$@"; do
     temp_filename="$(mktemp)"
 
     extract_front_matter < "$filename" > "$temp_filename"
 
-    if ! results="$(yamllint --strict --format standard "$temp_filename")" ; then
+    if ! results="$(yamllint --strict --format standard "$temp_filename")"; then
       clean=$?
     fi
 
