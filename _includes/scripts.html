@@ -63,9 +63,7 @@
   const pathSegments = path.split('/');
   const lastPathItem = pathSegments.filter(segment => segment !== '').pop();
 
-  console.log(lastPathItem);
-
-  if ( lastPathItem === '/join/' ) {
+  if ( lastPathItem === 'join' ) {
     console.log(true)
     const allJobs = [];
       {% for job in collections.jobs %}
