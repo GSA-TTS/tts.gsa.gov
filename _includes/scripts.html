@@ -59,8 +59,11 @@
     return `${year}-${month}-${day}`; // Format as 'yyyy-mm-dd'
   }
 
-  if ( window.location.pathname === '/join/' ) {
-    console.log(true);
+  const path = window.location.pathname;
+  const pathSegments = path.split('/');
+  const lastPathItem = pathSegments[pathSegments.length - 1];
+
+  if ( lastPathItem === '/join/' ) {
     const allJobs = [];
       {% for job in collections.jobs %}
         allJobs.push({
