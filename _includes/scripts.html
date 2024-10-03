@@ -64,6 +64,7 @@
   const lastPathItem = pathSegments[pathSegments.length - 1];
 
   if ( lastPathItem === '/join/' ) {
+    console.log(true)
     const allJobs = [];
       {% for job in collections.jobs %}
         allJobs.push({
@@ -79,7 +80,7 @@
     
   }
 
-  console.log(window.location.pathname);
+  console.log(allJobs);
 
   function sortJobs(allJobs) {
       const openJobs = [];
