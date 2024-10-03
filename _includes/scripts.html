@@ -61,7 +61,7 @@
 
   const path = window.location.pathname;
   const pathSegments = path.split('/');
-  const lastPathItem = pathSegments[pathSegments.length - 1];
+  const lastPathItem = pathSegments.filter(segment => segment !== '').pop();
 
   console.log(lastPathItem);
 
