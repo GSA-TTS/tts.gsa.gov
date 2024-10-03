@@ -60,6 +60,7 @@
   }
 
   if ( window.location.pathname === '/join/' ) {
+    console.log(true);
     const allJobs = [];
       {% for job in collections.jobs %}
         allJobs.push({
@@ -74,6 +75,8 @@
     sortJobs(allJobs);
     
   }
+
+  console.log(allJobs);
 
   function sortJobs(allJobs) {
       const openJobs = [];
