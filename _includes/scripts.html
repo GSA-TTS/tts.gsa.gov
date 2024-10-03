@@ -164,7 +164,8 @@
 
     jobList.style.paddingLeft = '3ch';
 
-    upcomingJobs.forEach(job => {
+    if ( upcomingJobs.length > 0 ) {
+      upcomingJobs.forEach(job => {
         const listItem = document.createElement('li'); 
         const link = document.createElement('a');
 
@@ -189,6 +190,14 @@
     });
 
     upcomingJobsSection.appendChild(jobList);
+
+    } else {
+      const noJobsText = document.createElement('p');
+      noJobsText.innerHTML = 'No upcoming positions at this time. Sign up for <a href="/join/newsletter/">job alerts!</a>';
+      
+      openJobsSection.appendChild(noJobsText);
+    }
+
   }
 
 
