@@ -70,6 +70,20 @@
     {% endfor %}
 
     sortJobs(allJobs);
+
+
+    const globalInfoSessions = [];
+
+    {% for session in global_info_sessions %}
+      globalInfoSessions.push({
+        link: "{{ session.link }}",
+        date: "{{ session.date | htmlDateString }}",
+        time: "{{ session.time }}",
+      });
+    {% endfor %}
+
+    renderGlobalInfoSessions(globalInfoSessions);
+
   }
 
   function sortJobs(allJobs) {
@@ -185,6 +199,12 @@
         // Append the link to the list item, and the list item to the list
         listItem.appendChild(link);
         jobList.appendChild(listItem);
+
+        // Let's add the future info sessions under this item.
+        const infoSessions = job.info_sessions;
+        if ( infoSessions && infoSessions.length > 0 ) {
+          renderInfoSessions(infoSessions, listItem, job.title);
+        }
     });
 
     upcomingJobsSection.appendChild(jobList);
@@ -205,8 +225,8 @@
     
     // Iterate through all the info sessions.
     infoSessions.forEach(session => {
-      // Lets get all our variables together for converting the end time into a timestamp.
-      const sessionSimpleDate = session['date'].split('T')[0];
+      // Lets get all our variables together for converting the end time into a timestamp.      
+      const sessionSimpleDate = session['date'] ? session['date'].split('T')[0] : '';
       const sessionTime = session['time'];
       const [startTime, endTime] = sessionTime.split('-')
 
@@ -270,6 +290,66 @@
 
   }
 
+
+  function renderGlobalInfoSessions(infoSessions) {
+    const globalInfoSessionsWrapper = document.getElementById('global-info-sessions-wrapper');
+    const infoSessionsList = document.createElement('ul');
+    
+    // Iterate through all the info sessions.
+    infoSessions.forEach(session => {
+      // Lets get all our variables together for converting the end time into a timestamp.
+      const sessionSimpleDate = session['date'].split('T')[0];
+      const sessionTime = session['time'];
+      const [startTime, endTime] = sessionTime.split('-')
+
+      // Convert the end date and time into a UTC timestamp and get the current time as a UTC timestamp.
+      const sessionEndDateTime = new Date(`${sessionSimpleDate} ${endTime.replace('pm', ' PM').replace('am', ' AM')}`);
+      const sessionEndTimestamp = sessionEndDateTime.getTime();
+      const now = new Date();
+      const nowTimestamp = now.getTime();
+
+      // If the session hasn't ended, show it.
+      if ( sessionEndTimestamp > nowTimestamp ) {
+        const infoSession = document.createElement('li');
+
+        const sessionDate = new Date(sessionSimpleDate).toLocaleDateString('en-US', {
+          weekday: 'long',
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric',
+          timeZone: 'UTC',
+        });
+
+        const formattedTime = formatSessionTimes(sessionTime);
+
+        const infoSessionLink = document.createElement('a');
+        infoSessionLink.href = session.link;
+        infoSessionLink.target = '_blank';
+        infoSessionLink.rel = 'noopener noreferrer';
+        infoSessionLink.innerText = sessionDate;
+
+        const sessionText = document.createElement('p');
+        sessionText.style.marginTop = '0';
+        
+        // Add the text for the time after the link
+        sessionText.innerText = formattedTime;
+        
+        // Append the paragraph to the list item
+        infoSession.appendChild(infoSessionLink);
+        infoSession.appendChild(sessionText);
+
+        // Finally, append the list item to the infoSessionsList
+        infoSessionsList.appendChild(infoSession);
+      }
+    });
+
+    if ( infoSessionsList.childElementCount !== 0 ) {
+      globalInfoSessionsWrapper.appendChild(infoSessionsList);
+    }
+
+  }
+
+  
   // Function to format dates.
   function formatDate(date) {
     const year = date.getFullYear(); // Get the four-digit year

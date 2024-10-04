@@ -123,9 +123,6 @@ key_objectives:
 # IMPORTANT: The date MUST be formatted as YYYY-MM-DD, where the month and day
 # are TWO digits 
 info_sessions:
-  - link: 
-    date: 
-    headline: 
 
 # Make sure to leave the | on the first line.
 role_summary: |

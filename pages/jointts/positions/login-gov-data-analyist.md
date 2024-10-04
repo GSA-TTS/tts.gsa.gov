@@ -120,13 +120,13 @@ key_objectives:
 
 # If there are any info sessions associated with this position, list them here
 # See the placeholder below for an example of how to add an info
-# session. If the position does not have any info sessions, you can delete everything
+# session. If the position does not have any info sessions, you MUST delete everything
 # except "info_sessions:"
 # IMPORTANT: The date MUST be formatted as YYYY-MM-DD, where the month and day
 # are TWO digits; the time MUST be in ET.
 info_sessions:
   - link: https://gsa.zoomgov.com/webinar/register/WN_vCL_dfX_Swqb9ZIbNatDtw
-    date: 2024-10-04
+    date: 2024-10-05
     time: 10:00am-12:25pm 
 
 # Make sure to leave the | on the first line. Start your content on the following line.

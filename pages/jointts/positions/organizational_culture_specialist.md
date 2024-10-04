@@ -128,20 +128,12 @@ key_objectives:
 
 # If there are any info sessions associated with this position, list them here
 # See the placeholder below for an example of how to add an info
-# session. If the position does not have any info sessions, you can delete everything
+# session. If the position does not have any info sessions, you MUST delete everything
 # except "info_sessions:"
-
 # IMPORTANT: The date MUST be formatted as YYYY-MM-DD, where the month and day
 # are TWO digits 
 info_sessions:
-  - link: 
-    date: 
-    headline: 
-    time: 
-  - link: 
-    date: 
-    headline: 
-    time:
+
 
 # Make sure to leave the | on the first line.
 role_summary: |
