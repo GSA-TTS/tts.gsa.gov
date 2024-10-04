@@ -73,7 +73,7 @@
         external_url: "{{ pg.data.external_url }}",
         opens: "{{ job.data.opens | htmlDateString }}",
         closes: "{{ job.data.closes | htmlDateString }}",
-        info_sessions: "{{ job.data.info_sessions }}"
+        info_sessions: {{ job.data.info_sessions | jsonify }}
       });
     {% endfor %}
 
@@ -146,6 +146,12 @@
         // Append the link to the list item, and the list item to the list
         listItem.appendChild(link);
         jobList.appendChild(listItem);
+
+        // Let's add the future info sessions under this item.
+        const infoSessions = job.info_sessions;
+        if ( infoSessions.length > 0 ) {
+          renderInfoSessions(infoSessions, listItem, job.title);
+        }
       });
 
       openJobsSection.appendChild(jobList);
@@ -198,6 +204,108 @@
       openJobsSection.appendChild(noJobsText);
     }
 
+  }
+
+
+  function renderInfoSessions(infoSessions, linkItem, jobTitle) {
+    // Create the unordered list that the info sessions will be assigned to.
+    const infoSessionsList = document.createElement('ul');
+    
+    // Iterate through all the info sessions.
+    infoSessions.forEach(session => {
+      // Lets get all our variables together for converting the end time into a timestamp.
+      const sessionSimpleDate = session['date'].split('T')[0];
+      const sessionTime = session['time'];
+      const [startTime, endTime] = sessionTime.split('-')
+
+      // Convert the end date and time into a UTC timestamp and get the current time as a UTC timestamp.
+      const sessionEndDateTime = new Date(`${sessionSimpleDate} ${endTime.replace('pm', ' PM').replace('am', ' AM')}`);
+      const sessionEndTimestamp = sessionEndDateTime.getTime();
+      const now = new Date();
+      const nowTimestamp = now.getTime();
+
+      // If the session hasn't ended, show it.
+      if ( sessionEndTimestamp > nowTimestamp ) {
+        const infoSession = document.createElement('li');
+
+        const sessionDate = new Date(session['date']).toLocaleDateString('en-US', {
+          weekday: 'long',
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric'
+        });
+
+        const formattedTime = formatSessionTimes(sessionTime);
+
+        const infoSessionLink = document.createElement('a');
+        infoSessionLink.href = session.link;
+        infoSessionLink.target = '_blank';
+        infoSessionLink.rel = 'noopener noreferrer';
+        infoSessionLink.innerText = sessionDate;
+
+        const sessionText = document.createElement('p');
+        sessionText.appendChild(infoSessionLink);
+        
+        // Add the text for the time after the link
+        sessionText.appendChild(document.createTextNode(' at ' + formattedTime));
+        
+        // Append the paragraph to the list item
+        infoSession.appendChild(sessionText);
+
+        // Finally, append the list item to the infoSessionsList
+        infoSessionsList.appendChild(infoSession);
+      }
+    });
+
+    // If there are info sessions any info sessions in the list, generate the HTML to display them
+    if ( infoSessionsList.childElementCount !== 0 ) {
+      const wrapper = document.createElement('aside');
+      wrapper.classList.add('usa-alert-info');
+      wrapper.classList.add('usa-alert');
+      const innerDiv = document.createElement('div');
+      innerDiv.classList.add('usa-alert-body');
+      const headline = document.createElement('p');
+      headline.innerHTML = `Upcoming or ongoing info sessions for ${jobTitle}`;
+
+      wrapper.appendChild(innerDiv);
+      innerDiv.appendChild(headline);
+
+      innerDiv.appendChild(infoSessionsList);
+
+      linkItem.appendChild(wrapper);
+    }
+
+  }
+
+  // Function to format the session times into a readable string with Eastern and Pacific times
+  function formatSessionTimes(sessionTime) {
+    const [startTime, endTime] = sessionTime.split('-');
+
+    // Convert the start and end times to both Eastern Time (ET) and Pacific Time (PT)
+    const startET = convertTimeToZone(startTime, 'America/New_York');
+    const endET = convertTimeToZone(endTime, 'America/New_York');
+    const startPT = convertTimeToZone(startTime, 'America/Los_Angeles');
+    const endPT = convertTimeToZone(endTime, 'America/Los_Angeles');
+
+    // Format the result: ET times with PT equivalents
+    return `${startET}-${endET} ET (${startPT}-${endPT} PT)`;
+  }
+
+  // Helper function to convert the time to a specific timezone
+  function convertTimeToZone(time, timeZone) {
+      const now = new Date(); // Get today's date
+      const [hours, minutes, period] = time.match(/(\d+):(\d+)([ap]m)/i).slice(1); // Extract hours, minutes, period (am/pm)
+      
+      // Create a date object using today's date and the given time in the desired timezone (ET or PT)
+      const date = new Date(`${now.toLocaleDateString()} ${hours}:${minutes} ${period}`);
+
+      // Convert the time to the specified timezone (America/New_York for ET, America/Los_Angeles for PT)
+      return new Intl.DateTimeFormat('en-US', {
+          hour: 'numeric',
+          minute: 'numeric',
+          hour12: true,
+          timeZone: timeZone,
+      }).format(date);
   }
 
 
