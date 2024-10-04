@@ -51,11 +51,12 @@
   const now = new Date();
   const currentTimestamp = Math.floor(new Date(now).getTime() / 1000);
 
-  const path = window.location.pathname;
-  const pathSegments = path.split('/');
-  const lastPathItem = pathSegments.filter(segment => segment !== '').pop();
+  const layout = "{{layout}}";
 
-  if ( lastPathItem === 'join' ) {
+  console.log(layout)
+
+  // Initialize the functions needed for the main join page
+  if ( layout.includes('/jointts/home') ) {
     const allJobs = [];
 
     {% for job in collections.jobs %}
@@ -84,6 +85,22 @@
 
     renderGlobalInfoSessions(globalInfoSessions);
 
+  }
+
+  // Initialize the functions needed for the job listings.
+  if ( layout.includes('/jointts/job-listing') ) {
+    const infoSessions = [];
+    {% for session in info_sessions %}
+      infoSessions.push({
+        link: "{{ session.link }}",
+        date: "{{ session.date | htmlDateString }}",
+        time: "{{ session.time }}",
+      });
+    {% endfor %}
+
+    const infoSessionsWrapper = document.getElementById('job-listing-info-sessions');
+
+    renderInfoSessions(infoSessions, infoSessionsWrapper);
   }
 
   function sortJobs(allJobs) {
@@ -219,7 +236,7 @@
   }
 
 
-  function renderInfoSessions(infoSessions, linkItem, jobTitle) {
+  function renderInfoSessions(infoSessions, linkItem, title = '') {
     // Create the unordered list that the info sessions will be assigned to.
     const infoSessionsList = document.createElement('ul');
     
@@ -272,20 +289,33 @@
 
     // If there are info sessions any info sessions in the list, generate the HTML to display them
     if ( infoSessionsList.childElementCount !== 0 ) {
-      const wrapper = document.createElement('aside');
-      wrapper.classList.add('usa-alert-info');
-      wrapper.classList.add('usa-alert');
-      const innerDiv = document.createElement('div');
-      innerDiv.classList.add('usa-alert-body');
-      const headline = document.createElement('p');
-      headline.innerHTML = `Upcoming or ongoing info sessions for ${jobTitle}`;
 
-      wrapper.appendChild(innerDiv);
-      innerDiv.appendChild(headline);
+      if ( layout.includes('/home/') ) {
+        const wrapper = document.createElement('aside');
+        wrapper.classList.add('usa-alert-info');
+        wrapper.classList.add('usa-alert');
+        const innerDiv = document.createElement('div');
+        innerDiv.classList.add('usa-alert-body');
+        const headline = document.createElement('p');
+        headline.innerHTML = `Upcoming or ongoing info sessions for ${title}`;
+        wrapper.appendChild(innerDiv);
+        innerDiv.appendChild(headline);
 
-      innerDiv.appendChild(infoSessionsList);
+        innerDiv.appendChild(infoSessionsList);
 
-      linkItem.appendChild(wrapper);
+        linkItem.appendChild(wrapper);
+      } else {
+        const wrapper = document.createElement('div');
+        wrapper.classList.add('usa-summary-box');
+        const headline = document.createElement('h3');
+        headline.innerHTML = `Attend an information session for this position`;
+        const subHeadline = document.createElement('p');
+        subHeadline.innerText = `Attend an information session to learn more about these roles, working at TTS, and our application process. Register for a session using the links below.`; 
+        wrapper.appendChild(headline);
+        wrapper.appendChild(subHeadline);
+        wrapper.appendChild(infoSessionsList);
+        linkItem.appendChild(wrapper);
+      }
     }
 
   }
