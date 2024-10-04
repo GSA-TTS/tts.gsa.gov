@@ -51,14 +51,6 @@
   const now = new Date();
   const currentTimestamp = Math.floor(new Date(now).getTime() / 1000);
 
-  function formatDate(date) {
-    const year = date.getFullYear(); // Get the four-digit year
-    const month = String(date.getMonth() + 1).padStart(2, '0'); // Get the month (0-11) and add 1; pad with 0 if needed
-    const day = String(date.getDate()).padStart(2, '0'); // Get the day of the month; pad with 0 if needed
-
-    return `${year}-${month}-${day}`; // Format as 'yyyy-mm-dd'
-  }
-
   const path = window.location.pathname;
   const pathSegments = path.split('/');
   const lastPathItem = pathSegments.filter(segment => segment !== '').pop();
@@ -228,11 +220,12 @@
       if ( sessionEndTimestamp > nowTimestamp ) {
         const infoSession = document.createElement('li');
 
-        const sessionDate = new Date(session['date']).toLocaleDateString('en-US', {
+        const sessionDate = new Date(sessionSimpleDate).toLocaleDateString('en-US', {
           weekday: 'long',
           year: 'numeric',
           month: 'long',
-          day: 'numeric'
+          day: 'numeric',
+          timeZone: 'UTC',
         });
 
         const formattedTime = formatSessionTimes(sessionTime);
@@ -277,6 +270,15 @@
 
   }
 
+  // Function to format dates.
+  function formatDate(date) {
+    const year = date.getFullYear(); // Get the four-digit year
+    const month = String(date.getMonth() + 1).padStart(2, '0'); // Get the month (0-11) and add 1; pad with 0 if needed
+    const day = String(date.getDate()).padStart(2, '0'); // Get the day of the month; pad with 0 if needed
+
+    return `${year}-${month}-${day}`; // Format as 'yyyy-mm-dd'
+  }
+
   // Function to format the session times into a readable string with Eastern and Pacific times
   function formatSessionTimes(sessionTime) {
     const [startTime, endTime] = sessionTime.split('-');
@@ -308,32 +310,4 @@
       }).format(date);
   }
 
-
-  function hidePastInfoSessions(currentTimestamp) {
-    const infoSessionsGroup = document.querySelectorAll(".info-sessions-list");
-
-    infoSessionsGroup.forEach(sessionGroup => {
-      let visibleSessions = 0;
-
-      // Convert sessionGroup.children to an array and loop over them
-      Array.from(sessionGroup.children).forEach(session => {
-        const session_timestamp = session.getAttribute('data-session-end-timestamp');
-
-        // Hide past sessions
-        if (session_timestamp < currentTimestamp) {
-          session.style.display = 'none'; // Hide past session
-        } else {
-          visibleSessions++; // Count future session
-        }
-      });
-
-      if (visibleSessions === 0) {
-        const asideParent = sessionGroup.closest('aside');
-        if (asideParent) {
-          asideParent.style.display = 'none';
-        }
-      }
-    });
-  }
-  hidePastInfoSessions(currentTimestamp);
 </script>
