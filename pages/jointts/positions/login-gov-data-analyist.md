@@ -126,8 +126,8 @@ key_objectives:
 # are TWO digits; the time MUST be in ET.
 info_sessions:
   - link: https://gsa.zoomgov.com/webinar/register/WN_vCL_dfX_Swqb9ZIbNatDtw
-    date: 2024-10-05
-    time: 10:00am-11:00am 
+    date: 2024-10-04
+    time: 10:00am-12:25pm 
 
 # Make sure to leave the | on the first line. Start your content on the following line.
 role_summary: | 
