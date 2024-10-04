@@ -43,8 +43,8 @@ external_url:
 
 # Put the opening and closing dates of your posting here, if you have them
 # These dates MUST be formatted as YYYY-MM-DD, where month and day are 2-digits
-opens: 
-closes: 
+opens: 2024-10-01
+closes: 2024-10-30
 
 # To show the status alert for this job, leave this set to true. To hide it, change to false
 # To show the alert keyword association message, add the keywords separated by a semi-colon
@@ -123,11 +123,11 @@ key_objectives:
 # session. If the position does not have any info sessions, you can delete everything
 # except "info_sessions:"
 # IMPORTANT: The date MUST be formatted as YYYY-MM-DD, where the month and day
-# are TWO digits 
+# are TWO digits; the time MUST be in ET.
 info_sessions:
   - link: https://gsa.zoomgov.com/webinar/register/WN_vCL_dfX_Swqb9ZIbNatDtw
-    date: 2024-10-01
-    time: 3:00pm-4:00pm ET (12:00pm - 1:00pm PT)
+    date: 2024-10-05
+    time: 10:00am-11:00am 
 
 # Make sure to leave the | on the first line. Start your content on the following line.
 role_summary: | 
