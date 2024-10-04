@@ -284,3 +284,24 @@ li.info-session {
 h4#specialized-requirements {
   font-family: 'Source Sans Pro Web', 'Helvetica Neue', 'Helvetica', 'Roboto', 'Arial', sans-serif !important;
 }
+
+/* Survey Button */
+.tts-survey {
+  width: fit-content;
+  background: #005ea2;
+  border: 0;
+  border-radius: .25rem .25rem 0 0;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  color: white;
+  text-decoration: none;
+  letter-spacing: .5px;
+  z-index: 10;
+}
