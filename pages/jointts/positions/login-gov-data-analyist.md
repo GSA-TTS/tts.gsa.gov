@@ -43,8 +43,8 @@ external_url:
 
 # Put the opening and closing dates of your posting here, if you have them
 # These dates MUST be formatted as YYYY-MM-DD, where month and day are 2-digits
-opens: 2024-10-01
-closes: 2024-10-30
+opens: 
+closes: 
 
 # To show the status alert for this job, leave this set to true. To hide it, change to false
 # To show the alert keyword association message, add the keywords separated by a semi-colon
@@ -120,11 +120,14 @@ key_objectives:
 
 # If there are any info sessions associated with this position, list them here
 # See the placeholder below for an example of how to add an info
-# session. If the position does not have any info sessions, you MUST delete everything
+# session. If the position does not have any info sessions, you can delete everything
 # except "info_sessions:"
 # IMPORTANT: The date MUST be formatted as YYYY-MM-DD, where the month and day
-# are TWO digits; the time MUST be in ET.
+# are TWO digits 
 info_sessions:
+  - link: https://gsa.zoomgov.com/webinar/register/WN_vCL_dfX_Swqb9ZIbNatDtw
+    date: 2024-10-01
+    time: 3:00pm-4:00pm ET (12:00pm - 1:00pm PT)
 
 # Make sure to leave the | on the first line. Start your content on the following line.
 role_summary: | 
@@ -133,6 +136,14 @@ role_summary: |
   As a Data Analyst, you will work and build partnerships with senior business and technical staff within the program as well as leading cloud service providers, third party assessment organizations, tool vendors, and agencies. You will help Login.gov design, develop, and implement automated data driven approaches for measuring product performance, testing control implementations and continuous monitoring of cloud services.
 
   This position is a tactical, collaborative, outward-facing role that will require a blend of product and data expertise, a focus on consistency and quality, and a future-focused view for how Login.gov can use data in service of its mission.
+
+qualifications: |
+  Provide as much detail as possible on your resume so that we can evaluate your
+  previous experience. Follow our [guidance on creating a federal style resume](https://join.tts.gsa.gov/resume/). Failure to provide required information may result in disqualification.
+
+  For each job on your resume, provide:
+  - The exact dates you held each job (from month/year to month/year or "present")
+  - Number of hours per week you worked (if part time)
 
 # Make sure to leave the | on the first line. Start your content on the following line.
 specialized_requirements: | 
