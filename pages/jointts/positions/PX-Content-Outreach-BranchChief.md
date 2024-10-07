@@ -32,7 +32,7 @@ updated:
 
 # BASIC INFO
 # The basic information and details of the position
-info_intro: Open to U.S. citizens or nationals (residents of American Samoa and Swains Island). Subject to background check. Full information is available on [USAJOBS](https://www.usajobs.gov/job/808940800).
+info_intro: Open to U.S. citizens or nationals (residents of American Samoa and Swains Island). Subject to background check.
 
 supervisory_status: Supervisory
 
