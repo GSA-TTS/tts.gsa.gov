@@ -126,7 +126,6 @@ key_objectives:
 info_sessions:
   - link: https://gsa.zoomgov.com/meeting/register/vJItcOirqDMjGb3OT--z16iSZK_zxHHV85Y#/registration
     date: 2024-09-19
-    headline: Thursday, September 19th, 2024
     time: 1:30-2:30pm ET (10:30am -11:30am PT)
     
 
