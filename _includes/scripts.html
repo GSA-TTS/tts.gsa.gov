@@ -53,7 +53,6 @@
 
   const layout = "{{layout}}";
 
-  console.log(layout)
 
   // Initialize the functions needed for the main join page
   if ( layout.includes('/jointts/home') ) {
@@ -172,7 +171,7 @@
 
         // Let's add the future info sessions under this item.
         const infoSessions = job.info_sessions;
-        if ( infoSessions.length > 0 ) {
+        if ( infoSessions && infoSessions.length > 0 ) {
           renderInfoSessions(infoSessions, listItem, job.title);
         }
       });
