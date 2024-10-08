@@ -57,7 +57,7 @@
   // Initialize the functions needed for the main join page
   if ( layout.includes('/jointts/home') ) {
     const allJobs = [];
-
+    let test = ''
     {% for job in collections.jobs %}
       allJobs.push({
         title: "{{ job.data.title }}",
@@ -65,6 +65,7 @@
         external_url: "{{ pg.data.external_url }}",
         opens: "{{ job.data.opens | htmlDateString }}",
         closes: "{{ job.data.closes | htmlDateString }}",
+        max_applications: "{{ job.data.max_applications }}",
         info_sessions: {{ job.data.info_sessions | jsonify }}
       });
     {% endfor %}
@@ -174,11 +175,29 @@
             link.target = '_blank'; // Open in a new window
         }
 
-        // Set the text content to the job title
-        link.textContent = job.title; 
+        // Set the text content to the job title.
+        link.textContent = job.title;
+
+        // Format the job closes date
+        const closesDate = new Date(job.closes).toLocaleDateString('en-US', {
+          weekday: 'long',
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric',
+          timeZone: 'UTC',
+        });
+        
+        // Add the open until message.
+        let openUntilMessage = '';
+        if ( job.max_applications !== 0 ) {
+          openUntilMessage = ` (Open now through ${closesDate} at 11:59pm ET or until ${job.max_applications} has been received.)`;
+        } else {
+          openUntilMessage = ` (Open now through ${closesDate} at 11:59pm ET.)`;
+        }
         
         // Append the link to the list item, and the list item to the list
         listItem.appendChild(link);
+        link.insertAdjacentHTML("afterend", openUntilMessage);
         jobList.appendChild(listItem);
 
         // Let's add the future info sessions under this item.
