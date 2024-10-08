@@ -21,7 +21,13 @@
   <div class="usa-alert usa-alert-info">
     <div class="usa-alert-body">
       <h3 class="usa-alert-heading">Apply now!</h3>
-      <p class="usa-alert-text">This role is open for applications until {{ closes | date: "%A, %B %d, %Y" }} at 11:59 PM ET.</p>
+      {% if max_applications != 0 %}
+        <p class="usa-alert-text">
+          This role is open for applications until {{ closes | date: "%A, %B %d, %Y" }} at 11:59PM ET or until {{max_applications}} applications have been received.
+        </p>
+      {% else %}
+        <p class="usa-alert-text">This role is open for applications until {{ closes | date: "%A, %B %d, %Y" }}.</p>
+      {% endif %}
     </div>
   </div>
 {% endif %}

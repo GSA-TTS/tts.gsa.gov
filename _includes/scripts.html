@@ -53,12 +53,11 @@
 
   const layout = "{{layout}}";
 
-  console.log(layout)
 
   // Initialize the functions needed for the main join page
   if ( layout.includes('/jointts/home') ) {
     const allJobs = [];
-
+    let test = ''
     {% for job in collections.jobs %}
       allJobs.push({
         title: "{{ job.data.title }}",
@@ -66,6 +65,7 @@
         external_url: "{{ pg.data.external_url }}",
         opens: "{{ job.data.opens | htmlDateString }}",
         closes: "{{ job.data.closes | htmlDateString }}",
+        max_applications: "{{ job.data.max_applications }}",
         info_sessions: {{ job.data.info_sessions | jsonify }}
       });
     {% endfor %}
@@ -155,24 +155,54 @@
         link.style.color = '#005ea2';
 
         // Set the link URL
-        const linkUrl = job.external_url !== '' ? job.external_url : job.url;
+        let linkUrl = job.external_url !== '' ? job.external_url : job.url;
+        if (linkUrl === job.url) {
+            if (window.location.href.includes('pages.cloud.gov')) {
+                // Remove '/join/' from job.url if it exists and append to window.location.href
+                linkUrl = job.url.replace('/join/', '');
+                linkUrl = `${window.location.href}${linkUrl}`;
+            } else {
+                // Just return job.url if not on pages.cloud.gov
+                linkUrl = job.url;
+            }
+        }
+
         link.href = linkUrl;
+
 
         // Set the target attribute for external links to open in a new window
         if (job.external_url !== '') {
             link.target = '_blank'; // Open in a new window
         }
 
-        // Set the text content to the job title
-        link.textContent = job.title; 
+        // Set the text content to the job title.
+        link.textContent = job.title;
+
+        // Format the job closes date
+        const closesDate = new Date(job.closes).toLocaleDateString('en-US', {
+          weekday: 'long',
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric',
+          timeZone: 'UTC',
+        });
+        
+        // Add the open until message.
+        let openUntilMessage = '';
+        if ( job.max_applications !== 0 ) {
+          openUntilMessage = ` (Open now through ${closesDate} at 11:59pm ET or until ${job.max_applications} applications have been received.)`;
+        } else {
+          openUntilMessage = ` (Open now through ${closesDate} at 11:59pm ET.)`;
+        }
         
         // Append the link to the list item, and the list item to the list
         listItem.appendChild(link);
+        link.insertAdjacentHTML("afterend", openUntilMessage);
         jobList.appendChild(listItem);
 
         // Let's add the future info sessions under this item.
         const infoSessions = job.info_sessions;
-        if ( infoSessions.length > 0 ) {
+        if ( infoSessions && infoSessions.length > 0 ) {
           renderInfoSessions(infoSessions, listItem, job.title);
         }
       });
@@ -202,7 +232,18 @@
         link.style.color = '#005ea2';
 
         // Set the link URL
-        const linkUrl = job.external_url !== '' ? job.external_url : job.url;
+        let linkUrl = job.external_url !== '' ? job.external_url : job.url;
+        if (linkUrl === job.url) {
+            if (window.location.href.includes('pages.cloud.gov')) {
+                // Remove '/join/' from job.url if it exists and append to window.location.href
+                linkUrl = job.url.replace('/join/', '');
+                linkUrl = `${window.location.href}${linkUrl}`;
+            } else {
+                // Just return job.url if not on pages.cloud.gov
+                linkUrl = job.url;
+            }
+        }
+
         link.href = linkUrl;
 
         // Set the target attribute for external links to open in a new window
