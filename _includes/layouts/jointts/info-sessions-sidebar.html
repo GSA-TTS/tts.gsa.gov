@@ -2,17 +2,8 @@
     <div class="usa-summary-box">
       <div class="usa-summary-box__body">
         <h3 class="usa-summary-box__heading">Join an info session</h3>
-        <div class="usa-summary-box__text">
+        <div class="usa-summary-box__text" id="global-info-sessions-wrapper">
           <p>Join us at one of our monthly online information sessions. Come learn more about working at TTS, available positions, and our application process. Register for a session below.</p>
-          <ul>
-            {% for session in sorted_info_sessions %}
-              <li class="info-session" data-session-end-timestamp="{{ sessionEndTimestamp }}">
-                <a target="_blank" href="{{ session.link | url }}" rel="noopener">{{ session.date | date: "%A, %B %d, %Y" }}</a>
-                <p>{{ session.time-et }}</p>
-                <p>({{ session.time-pt }})</p>
-              </li>
-            {% endfor %}
-          </ul>
         </div>
       </div>
     </div>

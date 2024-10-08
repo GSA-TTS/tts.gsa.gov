@@ -249,9 +249,17 @@ module.exports = function (config) {
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
   config.addFilter("htmlDateString", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: "America/New_York" }).toFormat(
-      "yyyy-LL-dd",
-    );
+    if (dateObj !== undefined && dateObj !== null) {
+      let dateTime = DateTime.fromJSDate(dateObj);
+
+      // If working locally, add one day to the date to match what is in the actual environments.
+      if (baseUrl.includes("localhost")) {
+        dateTime = dateTime.plus({ days: 1 });
+        return dateTime.toFormat("yyyy-LL-dd");
+      } else {
+        return dateTime.toFormat("yyyy-LL-dd");
+      }
+    }
   });
 
   // Get the first `n` elements of a collection.

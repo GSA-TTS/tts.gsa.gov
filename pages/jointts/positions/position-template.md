@@ -79,8 +79,8 @@ work_schedule: Full time.
 # Set to 0 if there is no limit
 max_applications: 0
 
-# Use either "perm" or "term" to indicate a permanent or temporary position 
-appointment_type:
+# Use either "permanent" or "temporary"
+appointment_type: permanent
 
 # List key objectives here. Key objectives and sub-bullets will be displayed in
 # the order they are listed here. You do not need to include key objective
@@ -109,32 +109,31 @@ key_objectives:
 
 # If there are any info sessions associated with this position, list them here
 # See the placeholder below for an example of how to add an info
-# session. If the position does not have any info sessions, you can delete everything
+# session. If the position does not have any info sessions, you MUST delete everything
 # except "info_sessions:"
-
 # IMPORTANT: The date MUST be formatted as YYYY-MM-DD, where the month and day
-# are TWO digits 
+# are TWO digits; the time MUST be in ET.
 info_sessions:
   - link: 
     date: 
-    headline: 
     time: 
   - link: 
     date: 
-    headline: 
     time:
 
-# Make sure to leave the | on the first line.
+# Make sure to leave the | on the first line. Begin your text by returning to the next line and
+# indenting once.
 role_summary: |
   
-# Make sure to leave the | on the first line.
+# Make sure to leave the | on the first line. Begin your text by returning to the next line and
+# indenting once.
 qualifications: |
 
-# Make sure to leave the | on the first line.
+# Make sure to leave the | on the first line. Begin your text by returning to the next line and
+# indenting once.
 specialized_requirements: |
 
 # This can be filled prior to the job posting going live or left blank #
 # The application button will only show after the open date            #
 application_link:
-
 ---

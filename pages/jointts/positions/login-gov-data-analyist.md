@@ -81,8 +81,8 @@ work_schedule: Full time.
 # Set to 0 if there is no limit to the number of applications accepted
 max_applications: 150
 
-# Use either "perm" or "term" to indicate a permanent or temporary position
-appointment_type: "perm"
+# Use either "permanent" or "temporary"
+appointment_type: permanent
 
 # List key objectives here. Key objectives and sub-bullets will be displayed in
 # the order they are listed here. You do not need to include key objective
