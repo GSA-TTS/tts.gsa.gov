@@ -1,6 +1,6 @@
 ---
 title: Navigating the hiring process
-layout: layouts/page
+layout: layouts/join-page
 permalink: join/hiring-process/
 description: Learn more about the TTS hiring process, including security clearances, onboarding, and hiring authorities.
 summary: Learn more about the TTS hiring process, including security clearances, onboarding, and hiring authorities.

@@ -1,6 +1,6 @@
 ---
 title: Preparing your resume
-layout: layouts/page
+layout: layouts/join-page
 permalink: join/resume/
 description: This guide will help you to create an effective resume for positions when applying for positions at Technology Transformation Services.
 summary: This guide will help you to create an effective resume for positions when applying for positions at Technology Transformation Services.

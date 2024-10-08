@@ -1,6 +1,6 @@
 ---
 title: Get job alerts
-layout: layouts/page
+layout: layouts/join-page
 permalink: join/newsletter/
 description: Get alerts when positions that interest you are posted on the TTS website.
 summary: Get alerts when positions that interest you are posted on the TTS website.
