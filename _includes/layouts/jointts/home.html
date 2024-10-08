@@ -1,7 +1,15 @@
 ---
 layout: layouts/default
 ---
-
+<section class="usa-site-alert usa-site-alert--info usa-site-alert--slim" aria-label="Site alert">
+  <div class="usa-alert">
+    <div class="usa-alert__body">
+      <p class="usa-alert__text">
+        <a href="{{ '/join/newsletter' | url }}" class="usa-link">Sign up for job alerts</a> to get notified when TTS positions that interest you are posted on the website.
+      </p>
+    </div>
+  </div>
+</section>
 <div class="tts-title-banner">
   <h1>{{ title }}</h1>
 </div>
@@ -27,14 +35,8 @@ layout: layouts/default
     </div>
     <div class="grid-row grid-gap">
       <div class="desktop:grid-col-8 usa-prose">
-        <!-- Open Jobs -->
-        <h2 id="open-positions">Open positions</h2>
-        <p>We are hiring and will be sharing upcoming jobs and open positions as they are available.</p>
-        {% include "layouts/jointts/open-jobs.html" %}                    
-
-        <!-- Upcoming Jobs -->
-        <h2>Upcoming positions</h2>
-        {% include "layouts/jointts/upcoming-jobs.html" %}
+        <!-- Jobs -->
+        {% include "layouts/jointts/jobs.html" %}
 
         <!-- Other Opportunities -->
         <h2>Other GSA Opportunities</h2>
