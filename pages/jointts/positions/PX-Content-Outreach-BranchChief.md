@@ -14,7 +14,7 @@ title: "Public Experience: Content & Outreach Branch Chief"
 # If the role is listed on a different site and you just want to link to it,
 # put that link here. You can leave the rest of the template as-is, unless you 
 # need to add info sessions.
-external_url: https://www.usajobs.gov/job/812974600
+external_url:
 
 # Put the opening and closing dates of your posting here, if you have them
 # These dates MUST be formatted as YYYY-MM-DD, where month and day are 2-digits
@@ -146,6 +146,6 @@ specialized_requirements: |
 
 # This can be filled prior to the job posting going live or left blank #
 # The application button will only show after the open date            #
-application_link:
+application_link: https://www.usajobs.gov/job/812974600
 
 ---
