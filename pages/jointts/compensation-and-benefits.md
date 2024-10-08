@@ -1,6 +1,6 @@
 ---
 title: Understanding compensation and benefits
-layout: layouts/page
+layout: layouts/join-page
 permalink: join/compensation-and-benefits/
 description: Explore TTS employee compensation, including pay grades, raises, bonuses, benefits, and professional growth opportunities.
 summary: Explore TTS employee compensation, including pay grades, raises, bonuses, benefits, and professional growth opportunities.

@@ -1,6 +1,6 @@
 ---
 title: Reading a federal job posting
-layout: layouts/page
+layout: layouts/join-page
 permalink: join/federal-job-posting/
 description: Find out more about how to read federal job postings, including eligibility, travel, qualifications, and application tips to enhance your resume for TTS roles.
 summary: Find out more about how to read federal job postings, including eligibility, travel, qualifications, and application tips to enhance your resume for TTS roles.
