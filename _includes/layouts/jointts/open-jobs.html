@@ -12,7 +12,8 @@
                 {% else %}
                 <a href="{{ pg.url | url }}">{{ pg.data.title }}</a>
               {% endif %}
-             (Open now {% if pg.data.weeks_open %}for {% if pg.data.weeks < 52 %}{{ pg.data.weeks }}{% else %} one year or until all selections have been made{% endif %},{% endif %} through {{ pg.data.closes | date: '%A, %B %e, %Y at 11:59pm' }} ET)
+             (Open now through {{ pg.data.closes | date: '%A, %B %e, %Y at 11:59pm' }} ET 
+              {% if pg.data.max_applications != 0 %} or until {{pg.data.max_applications}} applications have been received.{% endif %})
              
              <!-- Info Sessions -->
              {% include "layouts/jointts/job-listing-info-sessions.html" %}
