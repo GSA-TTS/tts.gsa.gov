@@ -156,6 +156,7 @@
         // Set the link URL
         const linkUrl = job.external_url !== '' ? job.external_url : job.url;
         link.href = linkUrl;
+        console.log(window.location);
 
         // Set the target attribute for external links to open in a new window
         if (job.external_url !== '') {
