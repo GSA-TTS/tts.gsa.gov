@@ -5,21 +5,6 @@ permalink: join/resume/
 description: This guide will help you to create an effective resume for positions when applying for positions at Technology Transformation Services.
 summary: This guide will help you to create an effective resume for positions when applying for positions at Technology Transformation Services.
 
-sidenav:
-  - text: Hiring process
-    href: /join/hiring-process/
-  - text: Reading a federal job posting
-    href: /join/federal-job-posting/
-  - text: Preparing your resume
-    href: /join/resume/
-  - text: Compensation and benefits
-    href: /join/compensation-and-benefits/
-  - text: About the Direct Hire Authority
-    href: /join/about-the-dha/
-  - text: Sign up for job alerts
-    href: /join/newsletter/
-  - text: Frequently Asked Questions
-    href: /join/faq/
 subnav:
   - text: General recommendations
     href: "#general-recommendations"

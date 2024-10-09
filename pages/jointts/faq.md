@@ -4,22 +4,6 @@ layout: layouts/join-page
 permalink: join/faq/
 description: Discover essential information on health benefits, enrollment procedures, and resources for new GSA employees to navigate their options effectively.
 
-sidenav:
-  - text: Hiring process
-    href: /join/hiring-process/
-  - text: Reading a federal job posting
-    href: /join/federal-job-posting/
-  - text: Preparing your resume
-    href: /join/resume/
-  - text: Compensation and benefits
-    href: /join/compensation-and-benefits/
-  - text: About the Direct Hire Authority
-    href: /join/about-the-dha/
-  - text: Sign up for job alerts
-    href: /join/newsletter/    
-  - text: Frequently Asked Questions
-    href: /join/faq/
-
 subnav:
   - text: Hiring and Application FAQ
     href: "#hiring-and-application-faq"
@@ -31,6 +15,7 @@ subnav:
     href: "#benefits-faq"
   - text: Current federal employee FAQ
     href: "#current-federal-employee-faq"
+
 ---
 
 Thank you for your interest in a position with TTS! Below you will find

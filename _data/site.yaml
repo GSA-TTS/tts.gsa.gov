@@ -46,11 +46,22 @@ primary_navigation:
         url: "/services/platforms/"
       - name: People
         url: "/services/people/"
-# secondary_navigation:
-#   - name: Secondary link
-#     url: "#main-content"
-#   - name: Another secondary link
-#     url: "#main-content"
+
+join_sub_navigation:
+  - name: Hiring process
+    url: /join/hiring-process/
+  - name: Reading a federal job posting
+    url: /join/federal-job-posting/
+  - name: Preparing your resume
+    url: /join/resume/
+  - name: Compensation and benefits
+    url: /join/compensation-and-benefits/
+  - name: About the Direct Hire Authority
+    url: /join/about-the-dha/
+  - name: Sign up for job alerts
+    url: /join/newsletter/    
+  - name: Frequently Asked Questions
+    url: /join/faq/
 
 dap:
   agency: GSA

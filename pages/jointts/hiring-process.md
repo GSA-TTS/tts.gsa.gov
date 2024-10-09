@@ -5,22 +5,6 @@ permalink: join/hiring-process/
 description: Learn more about the TTS hiring process, including security clearances, onboarding, and hiring authorities.
 summary: Learn more about the TTS hiring process, including security clearances, onboarding, and hiring authorities.
 
-sidenav:
-  - text: Hiring process
-    href: /join/hiring-process/
-  - text: Reading a federal job posting
-    href: /join/federal-job-posting/
-  - text: Preparing your resume
-    href: /join/resume/
-  - text: Compensation and benefits
-    href: /join/compensation-and-benefits/
-  - text: About the Direct Hire Authority
-    href: /join/about-the-dha/
-  - text: Sign up for job alerts
-    href: /join/newsletter/
-  - text: Frequently Asked Questions
-    href: /join/faq/
-
 subnav:
   - text: Application
     href: "#application"
