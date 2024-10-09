@@ -117,7 +117,7 @@
       // If there is an opens date and;
       // If today is after or equal to the opens date and before the closes date, add the job to the openJobs array.
       // Also add it if today is after or equal to the opens date and there is no close date.
-      if ( opens !== '' && ( ( today >= opens && closes > today ) || ( today >= opens && closes === '' ) ) ) {
+      if ( opens !== '' && ( ( today >= opens && closes >= today ) || ( today >= opens && closes === '' ) ) ) {
         
         // Make sure it doesn't push the base index page.
         if ( job.title !== '' ) {
@@ -294,6 +294,8 @@
       const now = new Date();
       const nowTimestamp = now.getTime();
 
+      console.log(endTime);
+
       // If the session hasn't ended, show it.
       if ( sessionEndTimestamp > nowTimestamp ) {
         const infoSession = document.createElement('li');
@@ -328,9 +330,10 @@
       }
     });
 
+    console.log(infoSessionsList)
+
     // If there are info sessions any info sessions in the list, generate the HTML to display them
     if ( infoSessionsList.childElementCount !== 0 ) {
-
       if ( layout.includes('/home/') ) {
         const wrapper = document.createElement('aside');
         wrapper.classList.add('usa-alert-info');
