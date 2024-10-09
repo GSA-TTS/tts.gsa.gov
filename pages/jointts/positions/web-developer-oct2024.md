@@ -34,12 +34,12 @@ tags: jobs
 #   - U.S. Digital Corps, not USDC
 #   - Presidential Innovation Fellows, not PIF
 # The exception to this is a TTS role, for which you can just say TTS
-title: ""
+title: "TTS: Web Developer"
 
 # Put the opening and closing dates of your posting here, if you have them
 # These dates MUST be formatted as YYYY-MM-DD, where month and day are 2-digits
-opens: 
-closes: 
+opens: 2024-10-01
+closes: 2024-10-31
 
 # If the role is listed on a different site and you just want to link to it,
 # put that link here. You can leave the rest of the template as-is, unless you 
@@ -57,20 +57,20 @@ updated:
 
 # BASIC INFO
 # The basic information and details of the position
-info_intro: Open to U.S. citizens or nationals (residents of American Samoa and Swains Island). Subject to background check. Full information is available on [USAJOBS](https://www.usajobs.gov/job/810717200).
+info_intro: Open to U.S. citizens or nationals (residents of American Samoa and Swains Island). Subject to background check.
 
-supervisory_status: 
+supervisory_status: Non-Supervisory
 
-usajobs_official_title: 
+usajobs_official_title: Web Developer II
 
-vacancies: "" # Put the number in quotes.
+vacancies: "1" # Put the number in quotes.
 
 location: Anywhere in the U.S. (remote)
 
 # Put the GS grade and pay range this position is being advertised at. For SES positions, set the value of gs to SES.
-gs: 
-min_payrange: $
-max_payrange: $
+gs: SES
+min_payrange: $90,000
+max_payrange: $150,000
 
 travel_requirement: Occasional travel may be required up to 10%-20% per year.
 
@@ -106,6 +106,10 @@ key_objectives:
       - Objective 2 Sub-Bullet
       - Objective 2 Sub-Bullet
       - Objective 2 Sub-Bullet
+  - title: Key Objective 3
+    items:
+      - Objective 3 Sub-Bullet
+      - Objective 3 Sub-Bullet
 
 # If there are any info sessions associated with this position, list them here
 # See the placeholder below for an example of how to add an info
@@ -114,16 +118,26 @@ key_objectives:
 # IMPORTANT: The date MUST be formatted as YYYY-MM-DD, where the month and day
 # are TWO digits; the time MUST be in ET.
 info_sessions:
+  - link: https://google.com
+    date: 2024-10-07
+    time: 3:00pm-4:00pm ET
+  - link: https://google.com
+    date: 2024-10-07
+    time: 3:00pm-4:00pm ET
   - link: 
-    date: 
-    time: 
-  - link: 
-    date: 
-    time:
 
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
 role_summary: |
+  I am a new sentence!
+  I am a role summary! I have a lot to say about the role and can be multiple paragraphs long. I can keep going and write more!
+
+  Start writing my next paragraph.
+  - I am another list item.
+  - 
+  - I am a list item.
+
+  
   
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
