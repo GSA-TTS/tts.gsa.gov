@@ -5,22 +5,6 @@ permalink: join/about-the-dha/
 description: TTS uses the Direct Hiring Authority for streamlined hiring for technical positions. Learn more about eligibility and application tips.
 summary: TTS uses the Direct Hiring Authority for streamlined hiring for technical positions. Learn more about eligibility and application tips.
 
-sidenav:
-  - text: Hiring process
-    href: /join/hiring-process/
-  - text: Reading a federal job posting
-    href: /join/federal-job-posting/
-  - text: Preparing your resume
-    href: /join/resume/
-  - text: Compensation and benefits
-    href: /join/compensation-and-benefits/
-  - text: About the Direct Hire Authority
-    href: /join/about-the-dha/
-  - text: Sign up for job alerts
-    href: /join/newsletter/
-  - text: Frequently Asked Questions
-    href: /join/faq/
-
 subnav:
   - text: How the DHA works
     href: "#how-the-dha-works"

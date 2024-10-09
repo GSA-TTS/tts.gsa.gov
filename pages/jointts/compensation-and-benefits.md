@@ -5,22 +5,6 @@ permalink: join/compensation-and-benefits/
 description: Explore TTS employee compensation, including pay grades, raises, bonuses, benefits, and professional growth opportunities.
 summary: Explore TTS employee compensation, including pay grades, raises, bonuses, benefits, and professional growth opportunities.
 
-sidenav:
-  - text: Hiring process
-    href: /join/hiring-process/
-  - text: Reading a federal job posting
-    href: /join/federal-job-posting/
-  - text: Preparing your resume
-    href: /join/resume/
-  - text: Compensation and benefits
-    href: /join/compensation-and-benefits/
-  - text: About the Direct Hire Authority
-    href: /join/about-the-dha/  
-  - text: Sign up for job alerts
-    href: /join/newsletter/
-  - text: Frequently Asked Questions
-    href: /join/faq/
-
 subnav:
   - text: Government pay grades
     href: "#government-pay-grades"
