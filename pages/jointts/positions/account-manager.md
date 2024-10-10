@@ -167,9 +167,12 @@ role_summary: |
    services easy for our customers to buy and use.
 
   Account managers on our team are:
-  Collaborative: you bring empathy and curiosity into customer conversations to better understand specific technical and business requirements and describe how we can serve those needs , while leaning on the strengths and skills of team members from other disciplines.
-  Organized: you skillfully advance our customers through all stages of the intake and renewal processes more quickly and efficiently, from initial outreach through agreement and onboarding.
-  Knowledgeable: you are eager to learn about and explain our products and services, to demonstrate to  customers how Cloud.gov infrastructure, tools, and services can serve their needs, and to connect customers with the information and context they need to make smart technology choices.
+  Collaborative: you bring empathy and curiosity into customer conversations to better understand specific technical and business requirements
+  and describe how we can serve those needs , while leaning on the strengths and skills of team members from other disciplines.
+  Organized: you skillfully advance our customers through all stages of the intake and renewal processes more quickly and efficiently, 
+  from initial outreach through agreement and onboarding.
+  Knowledgeable: you are eager to learn about and explain our products and services, to demonstrate to  customers how Cloud.gov infrastructure,
+  tools, and services can serve their needs, and to connect customers with the information and context they need to make smart technology choices.
 
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
