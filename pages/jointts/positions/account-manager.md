@@ -166,6 +166,8 @@ role_summary: |
    This is an opportunity to refine and grow our business development practices, and deliver on making Cloud.gov infrastructure and 
    services easy for our customers to buy and use.
 
+   Account managers on our team are:
+
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
 qualifications: |
