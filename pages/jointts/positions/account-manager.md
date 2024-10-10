@@ -144,9 +144,7 @@ info_sessions:
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
 role_summary: |
-   This opportunity is located in the Technology Transformation Services (TTS) Solutions Division’s  Cloud.gov team. 
-   The Cloud.gov team is remote-first and is composed of experts across web application development, design, software engineering, 
-   platform engineering, cybersecurity and security engineering. 
+   This opportunity is located in the Technology Transformation Services (TTS) Solutions Division’s  Cloud.gov team. The Cloud.gov team is remote-first and is composed of experts across web application development, design, software engineering, platform engineering, cybersecurity and security engineering. 
    
    Cloud.gov helps government agencies buy, build, and secure modern cloud services by operating a managed cloud platform based on 
    AWS infrastructure that is tailored to meet government scale and security needs. Cloud.gov makes it easier and faster for federal 
