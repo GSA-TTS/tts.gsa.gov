@@ -162,12 +162,15 @@ role_summary: |
    business processes and communications, creating repeatable patterns for building customer relationships and scoping their needs, 
    and pricing our products to be competitive in the federal marketplace. You’ll also help us to establish and refine the business 
    metrics for these new offerings so that we know when we’re successful and how we need to improve. 
+   
+   This is an opportunity to refine and grow our business development practices, and deliver on making Cloud.gov infrastructure and 
+   services easy for our customers to buy and use.
 
-This is an opportunity to refine and grow our business development practices, and deliver on making Cloud.gov infrastructure and services easy for our customers to buy and use.
- 
+  Account managers on our team are:
+- Collaborative: you bring empathy and curiosity into customer conversations to better understand specific technical and business requirements and describe how we can serve those needs , while leaning on the strengths and skills of team members from other disciplines.
+- Organized: you skillfully advance our customers through all stages of the intake and renewal processes more quickly and efficiently, from initial outreach through agreement and onboarding. 
+- Knowledgeable: you are eager to learn about and explain our products and services, to demonstrate to  customers how Cloud.gov infrastructure, tools, and services can serve their needs, and to connect customers with the information and context they need to make smart technology choices.
 
-
-  
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
 qualifications: |
