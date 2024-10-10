@@ -167,6 +167,7 @@ role_summary: |
    services easy for our customers to buy and use.
 
    Account managers on our team are:
+   - Collaborative: you bring empathy and curiosity into customer conversations to better understand specific technical and business requirements and describe how we can serve those needs , while leaning on the strengths and skills of team members from other disciplines.
 
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
