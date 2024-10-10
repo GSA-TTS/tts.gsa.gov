@@ -116,6 +116,16 @@ key_objectives:
       - Collaborate with team members to coordinate messaging strategy across multiple customer communication channels, including website presence, newsletters, press releases, and direct customer calls and emails so that product and program messaging is friendly, informative, and aligned with program cadence and customer needs.
       - Build trust with customers and team members by exhibiting responsiveness, attention to detail, and follow-through.
       - Prepare for and be comfortable communicating about our services and offerings to internal and external audiences, representing Cloud.gov in a variety of environments.
+  - title: Build and mature clear and efficient customer management processes from intake to onboarding
+    items:
+      - Develop and maintain knowledge of cloud infrastructure, Infrastructure-as-a-Service or Platform-as-a-Service concepts and how they are leveraged in government.
+      - Develop an understanding of how cloud services support agency missions, and where the friction points are in delivering digital services in a government context. This may include topics such as Section508 accessibility requirements, executive orders and memos including M-23-22, M-21-31, and the changing landscape of cybersecurity and compliance policies.
+      - Understand and be able to speak to risk management frameworks and Authorization to Operate (ATO) and Authority to Use (ATU) concepts.
+      - Keep up-to-date on policies, regulations, and requirements that impact digital services, and seek ways in which Cloud.gov can reduce the burden of these requirements for ourselves and our customers.
+      - Build and maintain professional relationships across TTS and GSA with Subject Matter Experts to establish partnerships and collaboration in support of Cloud.gov’s program goals.
+      - Incorporate knowledge of technology and federal cybersecurity regulations into customer communications to help customers to level up their understanding and deliver on their missions better.
+      - Partner with team members in Customer Success to make the end–to-end customer experience across all of Cloud.gov contacts become more trustworthy, friendly, informative, and helpful.     
+ 
 
 # If there are any info sessions associated with this position, list them here
 # See the placeholder below for an example of how to add an info
