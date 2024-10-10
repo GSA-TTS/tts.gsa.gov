@@ -150,8 +150,7 @@ role_summary: |
    
    As an Account Manager in Cloud.gov, you are the first point of contact for new customers coming to learn about our services, and one of many people on the team contributing to exceptional customer experience throughout the customer relationship. You’ll enable prospective and current customers to clarify their technology needs and understand how Cloud.gov products and services can help them with those needs. You’ll collaborate with engineers, customer success, and agreements staff to respond to prospective customer inquiries, assist customers in renewing service, and tell the story of how our Cloud products and services make mission delivery easier for our customers. As we grow our product and service offerings, you’ll be part of shaping our  business processes and communications, creating repeatable patterns for building customer relationships and scoping their needs, and pricing our products to be competitive in the federal marketplace. You’ll also help us to establish and refine the business metrics for these new offerings so that we know when we’re successful and how we need to improve. 
    
-   This is an opportunity to refine and grow our business development practices, and deliver on making Cloud.gov infrastructure and 
-   services easy for our customers to buy and use.
+   This is an opportunity to refine and grow our business development practices, and deliver on making Cloud.gov infrastructure and services easy for our customers to buy and use.
 
    Account managers on our team are:
    - Collaborative: you bring empathy and curiosity into customer conversations to better understand specific technical and business requirements and describe how we can serve those needs , while leaning on the strengths and skills of team members from other disciplines.
