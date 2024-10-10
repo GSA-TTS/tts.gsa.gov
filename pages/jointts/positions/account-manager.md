@@ -166,7 +166,7 @@ role_summary: |
    This is an opportunity to refine and grow our business development practices, and deliver on making Cloud.gov infrastructure and 
    services easy for our customers to buy and use.
 
-  Account managers on our team are:
+  Account managers on our team are
   Collaborative: you bring empathy and curiosity into customer conversations to better understand specific technical and business requirements
   and describe how we can serve those needs , while leaning on the strengths and skills of team members from other disciplines.
   Organized: you skillfully advance our customers through all stages of the intake and renewal processes more quickly and efficiently, 
