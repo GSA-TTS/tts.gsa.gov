@@ -8,9 +8,10 @@
         {% assign _current = true %}
       {% endif %}
     <li class="usa-sidenav__item">
-      <a href="{% if link.external == true %}{{ link.href }}{% else %}{{ link.href | url }}{% endif %}"
+      <a href="{{ link.url | url }}"
          {% if _current %} class="usa-current" {% endif %}
-         {% if link.class %}class="{{ link.class }}" {% endif %} >
+         {% if link.class %}class="{{ link.class }}" {% endif %} 
+         >
          {{ link.name }}
       </a>
       {% if _current and subnav %}
