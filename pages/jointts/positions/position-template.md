@@ -109,10 +109,13 @@ key_objectives:
 
 # If there are any info sessions associated with this position, list them here
 # See the placeholder below for an example of how to add an info
-# session. If the position does not have any info sessions, you MUST delete everything
-# except "info_sessions:"
-# IMPORTANT: The date MUST be formatted as YYYY-MM-DD, where the month and day
+# session. 
+# 
+# The date MUST be formatted as YYYY-MM-DD, where the month and day
 # are TWO digits; the time MUST be in ET.
+#
+# IMPORTANT: If the position does not have any info sessions, you MUST delete everything
+# except "info_sessions:"
 info_sessions:
   - link: 
     date: 
