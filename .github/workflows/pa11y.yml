@@ -65,19 +65,27 @@ jobs:
             else
               echo "60"
             fi
+
+            echo -n "PALLY_OUTPUT="
+            if [ -n "${{ vars.PALLY_OUTPUT }}" ] ; then
+              echo "${{ vars.PALLY_OUTPUT }}"
+            else
+              echo "$GITHUB_WORKSPACE/pally_output.txt"
+            fi
+
           ) >> "$GITHUB_OUTPUT"
 
       - name: Delay while the preview URL is built
         run: "sleep ${{ steps.customvars.outputs.DELAY_SECONDS }}"
 
       - name: Execute Pa11y tests
-        run: curl -s "${{ steps.customvars.outputs.BASE_URL }}${{ steps.customvars.outputs.URL_PATH }}sitemap.xml" | xq -r '.urlset.url[].loc' | xargs -n50 node_modules/.bin/axe --tags=wcag2a | tee -a pally_output.txt
+        run: touch "${{ steps.customvars.outputs.PALLY_OUTPUT }}" && curl -s "${{ steps.customvars.outputs.BASE_URL }}${{ steps.customvars.outputs.URL_PATH }}sitemap.xml" | xq -r '.urlset.url[].loc' | xargs -n50 node_modules/.bin/axe --tags=wcag2a | tee -a "${{ steps.customvars.outputs.PALLY_OUTPUT }}"
 
       - name: Read pa11y_output file.
         id: pa11y_output
         uses: juliangruber/read-file-action@b549046febe0fe86f8cb4f93c24e284433f9ab58 # pin@v1.1.7
         with:
-          path: ./pa11y_output.txt
+          path: "${{ steps.customvars.outputs.PALLY_OUTPUT }}"
 
       - name: verify that pa11y successfully scanned the site
         if: contains(steps.pa11y_output.outputs.content, 'ailed to run')
