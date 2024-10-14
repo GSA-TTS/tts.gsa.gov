@@ -94,7 +94,7 @@ jobs:
           exit 1
 
       - name: Comment on pull request.
-        if: ${{ !contains(steps.pa11y_output.outputs.content, 'o issues found') }}
+        if: ${{ contains(steps.pa11y_output.outputs.content, 'Accessibility issues detected') }}
         uses: thollander/actions-comment-pull-request@fabd468d3a1a0b97feee5f6b9e499eab0dd903f6 # pin@v2.5.0
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
