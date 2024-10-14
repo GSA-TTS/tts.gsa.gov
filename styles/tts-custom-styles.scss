@@ -61,6 +61,13 @@ $tts-title-banner-h1-foreground-color: #fff;
   color: #005ea2
 }
 
+.usa-prose h2 {
+  font-size: 1.95rem;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-top: 1.5em;
+}
+
 footer {
   a {
     color: color('base-lightest');
@@ -276,4 +283,25 @@ li.info-session {
 /* Specialized Requirements */
 h4#specialized-requirements {
   font-family: 'Source Sans Pro Web', 'Helvetica Neue', 'Helvetica', 'Roboto', 'Arial', sans-serif !important;
+}
+
+/* Survey Button */
+.tts-survey {
+  width: fit-content;
+  background: #005ea2;
+  border: 0;
+  border-radius: .25rem .25rem 0 0;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  color: white;
+  text-decoration: none;
+  letter-spacing: .5px;
+  z-index: 10;
 }

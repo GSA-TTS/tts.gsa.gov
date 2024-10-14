@@ -1,5 +1,4 @@
 <h2 id="how-to-apply" tabindex="-1">How to apply<a class="direct-link" href="#how-to-apply" aria-hidden="true"></a></h2>
-
 {% if state == 'closed' %}
   <div class="usa-alert usa-alert-warning">
     <div class="usa-alert-body">
@@ -7,7 +6,7 @@
       <p class="usa-alert-text">Please see <a href="{{ '/join' | url }}">our other open positions</a>.</p>
     </div>
   </div>
-{% elsif state == 'upcoming' %}
+{% elsif state == 'upcoming' or state == 'unknown' %}
   <p>
     <a href="/join/newsletter">Get notified</a> when this position is open for applications.
     {% if alert_keywords %}
@@ -15,9 +14,15 @@
     {% endif %}
   </p>
 {% elsif state == 'open' %}
-  <p class="usa-alert-text">This role is open for applications until {{ closes | date: "%A, %B %d, %Y" }} at 11:59PM ET. 
-    Please fill out all applicable fields. <a href="{{ application_link }}" target="_blank">Click here to apply</a>.
-  </p>
+  {% if max_applications != 0 %}
+    <p class="usa-alert-text">This role is open for applications until {{ closes | date: "%A, %B %d, %Y" }} at 11:59PM ET or until {{max_applications}} applications have been received. 
+      Please fill out all applicable fields. <a href="{{ application_link }}" target="_blank">Click here to apply</a>.
+    </p>
+  {% else %}
+    <p class="usa-alert-text">This role is open for applications until {{ closes | date: "%A, %B %d, %Y" }} at 11:59PM ET. 
+      Please fill out all applicable fields. <a href="{{ application_link }}" target="_blank">Click here to apply</a>.
+    </p>
+  {% endif %}
   <p><strong>Need Assistance in applying or have questions regarding this job opportunity, please email the 
     TTS Talent Team at <a href="mailto:jointts@gsa.gov">jointts@gsa.gov</a>.</strong></p>
 {% endif %}

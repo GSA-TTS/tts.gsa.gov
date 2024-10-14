@@ -1,25 +1,9 @@
 ---
 title: Get job alerts
-layout: layouts/page
+layout: layouts/join-page
 permalink: join/newsletter/
 description: Get alerts when positions that interest you are posted on the TTS website.
 summary: Get alerts when positions that interest you are posted on the TTS website.
-
-sidenav:
-  - text: Hiring process
-    href: /join/hiring-process/
-  - text: Reading a federal job posting
-    href: /join/federal-job-posting/
-  - text: Preparing your resume
-    href: /join/resume/
-  - text: Compensation and benefits
-    href: /join/compensation-and-benefits/
-  - text: About the Direct Hire Authority
-    href: /join/about-the-dha/
-  - text: Sign up for job alerts
-    href: /join/newsletter/
-  - text: Frequently Asked Questions
-    href: /join/faq/
 
 ---
 <section class="usa-section newsletter">

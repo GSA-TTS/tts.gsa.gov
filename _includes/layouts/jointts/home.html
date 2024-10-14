@@ -1,7 +1,15 @@
 ---
 layout: layouts/default
 ---
-
+<section class="usa-site-alert usa-site-alert--info usa-site-alert--slim" aria-label="Site alert">
+  <div class="usa-alert">
+    <div class="usa-alert__body">
+      <p class="usa-alert__text">
+        <a href="{{ '/join/newsletter' | url }}" class="usa-link">Sign up for job alerts</a> to get notified when TTS positions that interest you are posted on the website.
+      </p>
+    </div>
+  </div>
+</section>
 <div class="tts-title-banner">
   <h1>{{ title }}</h1>
 </div>
@@ -27,133 +35,14 @@ layout: layouts/default
     </div>
     <div class="grid-row grid-gap">
       <div class="desktop:grid-col-8 usa-prose">
-        <h2 id="open-positions">Open positions</h2>
-        <p>We are hiring and will be sharing upcoming jobs and open positions as they are available.</p>
+        <!-- Jobs -->
+        {% include "layouts/jointts/jobs.html" %}
 
-        <ul>
-          {% assign open_job_count = 0 %}
-          {% for pg in collections.jobs %}
-          {% capture state %}{% getStateFromDates pg.data.opens pg.data.closes %}{% endcapture %}
-            {% if state == "open" %}
-              {% unless pg.data.path contains 'template' %}
-                {% unless pg.data.path contains 'performance-profiles' %}
-                  {% assign open_job_count = open_job_count | plus: 1 %}
-                  <li>
-                    {% if pg.data.external_url %}
-                    <a href="{{ pg.data.external_url }}" target="_blank">{{ pg.data.title }}</a>
-                      {% else %}
-                      <a href="{{ pg.url | url }}">{{ pg.data.title }}</a>
-                    {% endif %}
-                   (Open now {% if pg.data.weeks_open %}for {% if pg.data.weeks < 52 %}{{ pg.data.weeks }}{% else %} one year or until all selections have been made{% endif %},{% endif %} through {{ pg.data.closes | date: '%A, %B %e, %Y at 11:59pm' }} ET)
-                   <!-- Info Sessions -->
-                   {% assign now = 'now' | date: "%s" %}
-                   {% assign future_sessions = false %}
-
-                   {% for session in pg.data.info_sessions %}
-                     {% assign session_date = session.date | date: "%s" %}
-                     {% if session_date > now %}
-                       {% assign future_sessions = true %}
-                       {% break %}
-                     {% endif %}
-                   {% endfor %}
-                   {% if future_sessions %}
-                     <aside class="usa-alert usa-alert-info">
-                       <div class="usa-alert-body">
-                         <p>Upcoming info sessions for {{ pg.data.title }}</p>
-                         <ul>
-                           {% for session in pg.data.info_sessions %}
-                             {% assign session_date = session.date | date: "%s" %}
-                             {% if session_date > now %}
-                               <li>
-                                 <p><a href="{{ session.link }}" target="_blank">{{ session.headline }}</a> at {{ session.time }}</p>
-                               </li>
-                             {% endif %}
-                           {% endfor %}
-                         </ul>
-                       </div>
-                     </aside>
-                   {% endif %}
-                  </li>
-                {% endunless %}
-              {% endunless %}
-            {% endif %}
-          {% endfor %}
-        </ul>
-
-        {% if open_job_count == 0 %}
-          <p>No open positions at this time. Sign up for <a href="/join/newsletter/">job alerts!</a></p>
-        {% endif %} 
-
-        <h2>Upcoming positions</h2>
-        <ul>
-          {% assign upcoming_job_count = 0 %}
-          
-          {% for pg in collections.jobs %}
-            {% capture state %}{% getStateFromDates pg.data.opens pg.data.closes %}{% endcapture %}
-            
-            {% assign show_job = false %}
-        
-            {% if pg.data.title != "" %}
-              {% if state == "upcoming" %}
-                {% assign show_job = true %}
-              {% elsif state == "unknown" %}
-                {% assign show_job = true %}
-              {% endif %}
-            {% endif %}
-        
-            {% if show_job %}
-              {% assign upcoming_job_count = upcoming_job_count | plus: 1 %}
-              {% unless pg.data.path contains 'template' %}
-                {% unless pg.data.path contains 'performance-profiles' %}
-                  <li>
-                    {% if pg.data.external_url %}
-                      <a href="{{ pg.data.external_url }}">{{ pg.data.title }}</a>
-                    {% else %}
-                      <a href="{{ pg.url | url }}">{{ pg.data.title }}</a>
-                    {% endif %}
-        
-                    <!-- Info Sessions -->
-                    {% assign now = 'now' | date: "%s" %}
-                    {% assign future_sessions = false %}
-        
-                    {% for session in pg.data.info_sessions %}
-                      {% assign session_date = session.date | date: "%s" %}
-                      {% if session_date > now %}
-                        {% assign future_sessions = true %}
-                        {% break %}
-                      {% endif %}
-                    {% endfor %}
-                    {% if future_sessions %}
-                      <aside class="usa-alert usa-alert-info">
-                        <div class="usa-alert-body">
-                          <p>Upcoming info sessions for {{ pg.data.title }}</p>
-                          <ul>
-                            {% for session in pg.data.info_sessions %}
-                              {% assign session_date = session.date | date: "%s" %}
-                              {% if session_date > now %}
-                                <li>
-                                  <p><a href="{{ session.link }}" target="_blank">{{ session.headline }}</a> at {{ session.time }}</p>
-                                </li>
-                              {% endif %}
-                            {% endfor %}
-                          </ul>
-                        </div>
-                      </aside>
-                    {% endif %}
-                  </li>
-                {% endunless %}
-              {% endunless %}
-            {% endif %}
-          {% endfor %}
-        </ul>
-        
-        {% if upcoming_job_count == 0 %}
-          <p>No upcoming positions at this time. Sign up for <a href="/join/newsletter/">job alerts!</a></p>
-        {% endif %}                      
-
+        <!-- Other Opportunities -->
         <h2>Other GSA Opportunities</h2>
         <p>Check out <a href="https://www.gsa.gov/about-us/find-apply-for-and-land-a-job-at-gsa">careers at GSA</a> and more <a href="https://www.usajobs.gov/Search/Results?j=2210&d=GS&p=1">Information Technology opportunities.</a></p>
 
+        <!-- Application Process -->
         <h2>Application process</h2>
         <p>
           We have an amazing recruitment team who will usher you from application to interview to onboarding with TTS.
@@ -164,29 +53,11 @@ layout: layouts/default
           our Talent Team at <a href="mailto:joinTTS@gsa.gov">joinTTS@gsa.gov</a>.
         </p>
       </div>
-      <div class="desktop:grid-col-4 margin-top-4 desktop:margin-top-0">
-        <div class="usa-summary-box">
-          <div class="usa-summary-box__body">
-            <h3 class="usa-summary-box__heading">Find out more</h3>
-            <div class="usa-summary-box__text">
-              <p>Join us at one of our monthly online information sessions. Come learn more about working at TTS, available positions, and our application process. Register for a session below.</p>
-              <ul>
-                {% for session in sorted_info_sessions %}
-                  {% assign session_date = session.date | date: "%s" %}
-                  {% assign now = 'now' | date: "%s" %}
-                  {% if session_date > now %}
-                    <li class="info-session">
-                      <a target="_blank" href="{{ session.link }}" rel="noopener">{{ session.date | date: "%A, %B %d, %Y" }}</a>
-                      <p>{{ session.time-et }}</p>
-                      <p>({{ session.time-pt }})</p>
-                    </li>
-                  {% endif %}
-                {% endfor %}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+
+      <!-- General Info Sessions -->
+      {% if sorted_info_sessions.size > 0 %}
+        {% include "layouts/jointts/info-sessions-sidebar.html" %}
+      {% endif %}
     </div>
   </div>
 </section>

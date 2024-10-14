@@ -2,16 +2,17 @@
 <nav aria-label="Secondary navigation">
   <ul class="usa-sidenav">
     {% for link in links %}
-      {% assign _href = link.href %}
+      {% assign _href = link.url %}
       {% assign _current = false %}
-      {% if link.href == data.url %}
+      {% if link.url == data.url %}
         {% assign _current = true %}
       {% endif %}
     <li class="usa-sidenav__item">
-      <a href="{% if link.external == true %}{{ link.href }}{% else %}{{ link.href | url }}{% endif %}"
+      <a href="{{ link.url | url }}"
          {% if _current %} class="usa-current" {% endif %}
-         {% if link.class %}class="{{ link.class }}" {% endif %} >
-         {{ link.text }}
+         {% if link.class %}class="{{ link.class }}" {% endif %} 
+         >
+         {{ link.name }}
       </a>
       {% if _current and subnav %}
       <ul class="usa-sidenav__sublist">
