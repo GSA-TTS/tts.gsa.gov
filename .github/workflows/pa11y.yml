@@ -38,7 +38,7 @@ jobs:
           node-version: "18"
 
       - name: Install dependencies
-        run: npm install --production=false
+        run: npm install --production=false && pip install xq
 
       - name: Setup custom variables
         id: customvars
@@ -71,7 +71,7 @@ jobs:
         run: "sleep ${{ steps.customvars.outputs.DELAY_SECONDS }}"
 
       - name: Execute Pa11y tests
-        run: npx pa11y "${{ steps.customvars.outputs.BASE_URL }}/${{ steps.customvars.outputs.URL_PATH }}" --threshold 999 2>&1 | tee pa11y_output.txt
+        run: curl -s "${{ steps.customvars.outputs.BASE_URL }}/${{ steps.customvars.outputs.URL_PATH }}/sitemap.xml" | xq "\"${{ steps.customvars.outputs.BASE_URL }}/${{ steps.customvars.outputs.URL_PATH }}/  \(.urlset.url[].loc)\""  | xargs -n50 axe --tags=wcag2a | tee -a pally_output.txt
 
       - name: Read pa11y_output file.
         id: pa11y_output
