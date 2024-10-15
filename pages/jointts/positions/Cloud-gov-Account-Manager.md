@@ -69,8 +69,8 @@ location: Anywhere in the U.S. (remote)
 
 # Put the GS grade and pay range this position is being advertised at. For SES positions, set the value of gs to SES.
 gs: 14
-min_payrange: $122,198
-max_payrange: $181,216
+min_payrange: $122198
+max_payrange: $181216
 
 travel_requirement: Occasional travel may be required up to 10%-20% per year.
 
