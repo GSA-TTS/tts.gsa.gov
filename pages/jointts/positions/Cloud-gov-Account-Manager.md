@@ -98,7 +98,7 @@ appointment_type: permanent
 # objectives
 key_objectives:
   - title: Work effectively in the context of the federal government to educate current and prospective customers about changing regulatory requirements and advocate for their needs to achieve mission delivery
-    items
+    items:
       - Evaluate, own, and improve our current customer management tools and processes, including inquiry channels, marketing materials, and sales funnel success metrics. 
       - Collaborate with TTS Agreements team members to manage agreements documents and processes to ensure that the customer experience of new and renewal agreements processes are timely, clear, and smooth.
       - Collaborate with TTS Market Development and Partnerships team members to ensure lead development initiatives are aligned with program offerings and messaging.
@@ -107,7 +107,7 @@ key_objectives:
       - Build appreciation and feedback loops and learning into team practices by recognizing successes and learning from failures.
       - Create or improve on current success metrics and reporting (qualitative and quantitative) for customer satisfaction and sales funnel data.
   - title: Build strong customer relationships and advocate for customer agency success
-    items
+    items:
       - Establish and maintain trusted and collaborative relationships with customers, internal and external stakeholders, and team members. 
       - Seek to understand and center the needs of our customers and the varieties of applications, data streams, and workloads that support their missions. 
       - Identify trends across customer needs and proactively develop messages, strategies, and proposals for offerings to meet those needs.
@@ -116,8 +116,8 @@ key_objectives:
       - Collaborate with team members to coordinate messaging strategy across multiple customer communication channels, including website presence, newsletters, press releases, and direct customer calls and emails so that product and program messaging is friendly, informative, and aligned with program cadence and customer needs.
       - Build trust with customers and team members by exhibiting responsiveness, attention to detail, and follow-through.
       - Prepare for and be comfortable communicating about our services and offerings to internal and external audiences, representing Cloud.gov in a variety of environments.
-  - title: Work effectively in the context of the federal government to educate current and prospective customers about changing regulatory requirements and advocate for their needs to achieve mission delivery:
-    items
+  - title: Work effectively in the context of the federal government to educate current and prospective customers about changing regulatory requirements and advocate for their needs to achieve mission delivery
+    items:
       - Develop and maintain knowledge of cloud infrastructure, Infrastructure-as-a-Service or Platform-as-a-Service concepts and how they are leveraged in government.
       - Develop an understanding of how cloud services support agency missions, and where the friction points are in delivering digital services in a government context. This may include topics such as Section508 accessibility requirements, executive orders and memos including M-23-22, M-21-31, and the changing landscape of cybersecurity and compliance policies.
       - Understand and be able to speak to risk management frameworks and Authorization to Operate (ATO) and Authority to Use (ATU) concepts.
