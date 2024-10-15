@@ -160,9 +160,9 @@ qualifications: |
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
 specialized_requirements: |
-  - Experience managing relationships with customers or clients
-  - Experience in managing projects or business processes
-  - Experience with software and cloud infrastructure technologies and products such as: e.g., cloud infrastructure offerings like Amazon AWS, Google Cloud GCP, or Azure; OR Software-as-a-service products or web applications of any kind.
+  Experience managing relationships with customers or clients
+  Experience in managing projects or business processes
+  Experience with software and cloud infrastructure technologies and products such as: e.g., cloud infrastructure offerings like Amazon AWS, Google Cloud GCP, or Azure; OR Software-as-a-service products or web applications of any kind.
 
 
 # This can be filled prior to the job posting going live or left blank #
