@@ -50,10 +50,10 @@ external_url:
 # To show the alert keyword association message, add the keywords separated by a semi-colon
 # e.g. Product Management; Strategy/Consulting; and Marketing
 status_alert: true
-alert_keywords:
+alert_keywords: Account Management; Customer Experience (CX); Sales/Business Development
 
 # If this listing has been updated since it was published, put the updated date below in YYYY-MM-DD format.
-updated:
+updated: 2024-10-15
 
 # BASIC INFO
 # The basic information and details of the position
@@ -134,7 +134,12 @@ key_objectives:
 # IMPORTANT: The date MUST be formatted as YYYY-MM-DD, where the month and day
 # are TWO digits; the time MUST be in ET.
 info_sessions:
+  - link: https://gsa.zoomgov.com/webinar/register/WN_WZuzMobxSCeEuZXvWYo2hg
+    date: 2024-10-21
+    time: 12:30pm-1:30pm ET (9:30am-10:30am PT)
 
+
+    
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
 role_summary: |
