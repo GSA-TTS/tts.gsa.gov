@@ -134,7 +134,7 @@ key_objectives:
 # IMPORTANT: The date MUST be formatted as YYYY-MM-DD, where the month and day
 # are TWO digits; the time MUST be in ET.
 info_sessions:
-  - link: https://gsa.zoomgov.com/meeting/register/vJIsc-qhqj0jHl6nkKV8IA7TyuNDlxlHeV8
+  - link: https://gsa.zoomgov.com/webinar/register/WN_WZuzMobxSCeEuZXvWYo2hg#/registration
     date: 2024-10-21
     time: 12:30pm-1:30pm
 
