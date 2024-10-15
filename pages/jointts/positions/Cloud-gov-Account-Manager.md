@@ -97,7 +97,7 @@ appointment_type: permanent
 # The placeholder information below shows an example of how to format the key
 # objectives
 key_objectives:
-  - title: Build and mature clear and efficient customer management processes from intake to onboarding
+  - title: Work effectively in the context of the federal government to educate current and prospective customers about changing regulatory requirements and advocate for their needs to achieve mission delivery
     items:
       - Evaluate, own, and improve our current customer management tools and processes, including inquiry channels, marketing materials, and sales funnel success metrics. 
       - Collaborate with TTS Agreements team members to manage agreements documents and processes to ensure that the customer experience of new and renewal agreements processes are timely, clear, and smooth.
