@@ -133,7 +133,7 @@ key_objectives:
 # except "info_sessions:"
 # IMPORTANT: The date MUST be formatted as YYYY-MM-DD, where the month and day
 # are TWO digits; the time MUST be in ET.
-info_sessions:
+info_sessions: 2024-10-21
 
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
