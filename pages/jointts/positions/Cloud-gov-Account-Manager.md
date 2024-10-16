@@ -134,6 +134,9 @@ key_objectives:
 # IMPORTANT: The date MUST be formatted as YYYY-MM-DD, where the month and day
 # are TWO digits; the time MUST be in ET.
 info_sessions:
+  - link: https://gsa.zoomgov.com/webinar/register/WN_WZuzMobxSCeEuZXvWYo2hg#/registration
+    date: 2024-10-21
+    time: 12:30pm-1:30pm
 
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
@@ -160,10 +163,9 @@ qualifications: |
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
 specialized_requirements: |
-  - Experience managing relationships with customers or clients
-  - Experience in managing projects or business processes
-  - Experience with software and cloud infrastructure technologies and products such as: e.g., cloud infrastructure offerings like Amazon AWS, Google Cloud GCP, or Azure; OR Software-as-a-service products or web applications of any kind.
-
+  Experience managing relationships with customers or clients
+  Experience in managing projects or business processes
+  Experience with software and cloud infrastructure technologies and products such as: e.g., cloud infrastructure offerings like Amazon AWS, Google Cloud GCP, or Azure; OR Software-as-a-service products or web applications of any kind.
 
 # This can be filled prior to the job posting going live or left blank #
 # The application button will only show after the open date            #
