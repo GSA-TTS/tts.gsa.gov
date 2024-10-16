@@ -69,8 +69,8 @@ location: Anywhere in the U.S. (remote)
 
 # Put the GS grade and pay range this position is being advertised at. For SES positions, set the value of gs to SES.
 gs: 
-min_payrange: $ 122,198
-max_payrange: $ 181,216
+min_payrange: $122,198
+max_payrange: $181,216
 
 travel_requirement: Occasional travel may be required up to 10%-20% per year.
 
@@ -129,28 +129,21 @@ key_objectives:
 # IMPORTANT: If the position does not have any info sessions, you MUST delete everything
 # except "info_sessions:"
 info_sessions:
-  - link: 
-    date: 
-    time: 
-  - link: 
-    date: 
-    time:
 
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
 role_summary: |
   Login.gov is the public’s one account for government, simplifying access to government benefits and services for members of the public by enabling them to reuse one secure account across government agencies, and improving the security of government systems by enabling agencies to leverage a shared technology service to provide strong authentication and identity verification services to their customers. We focus on the complexities of digital identity authentication for the public, so agencies can focus on their mission.
 
-Login.gov is a FedRAMP authorized secure sign-in service created for the public to access participating government agency sites, products, and services. At its core, Login.gov is both an authentication and identity verification service and is now available to all levels of government: federal, state, and local. We're helping people access essential public services and benefits securely, privately, and seamlessly. 
+  Login.gov is a FedRAMP authorized secure sign-in service created for the public to access participating government agency sites, products, and services. At its core, Login.gov is both an authentication and identity verification service and is now available to all levels of government: federal, state, and local. We're helping people access essential public services and benefits securely, privately, and seamlessly. 
 
-This opportunity is located in the Technology Transformation Services (TTS) Solutions Division’s Login.gov team. The Login.gov team is a remote organization and is composed of experts across product development, software engineering, cybersecurity, and platform engineering.
+  This opportunity is located in the Technology Transformation Services (TTS) Solutions Division’s Login.gov team. The Login.gov team is a remote organization and is composed of experts across product development, software engineering, cybersecurity, and platform engineering.
 
-Login.gov is seeking 3 qualified fraud analysts to join our cybersecurity team. A qualified candidate will be able to immediately contribute to Login.gov’s anti-fraud team by, leading the design, development, and deployment of identity-fraud related, cloud-based data analytics solutions. Leading cross functional teams to improve Login.gov’s anti-fraud standard operating procedures, fraud analytics tooling, and investigative processes.Supporting fraud investigations and Login.gov program management by developing analytics products that communicate identity fraud trends and risks to the Login.gov system. Supporting meetings with engineers and executives from prospective government agency customers to determine how Login.gov can adapt to meet their user identity needs.
+  Login.gov is seeking 3 qualified fraud analysts to join our cybersecurity team. A qualified candidate will be able to immediately contribute to Login.gov’s anti-fraud team by, leading the design, development, and deployment of identity-fraud related, cloud-based data analytics solutions. Leading cross functional teams to improve Login.gov’s anti-fraud standard operating procedures, fraud analytics tooling, and investigative processes.Supporting fraud investigations and Login.gov program management by developing analytics products that communicate identity fraud trends and risks to the Login.gov system. Supporting meetings with engineers and executives from prospective government agency customers to determine how Login.gov can adapt to meet their user identity needs.
 
-The Login.gov team works in the open as a distributed, agile team. The core product is open source, hosted in modern cloud infrastructure, and built for scale. With over ten million users we aim to be the preferred entrypoint for all government digital services. Login.gov is used to access benefits, apply for government jobs, and collect funds awarded through grant programs.
+  The Login.gov team works in the open as a distributed, agile team. The core product is open source, hosted in modern cloud infrastructure, and built for scale. With over ten million users we aim to be the preferred entrypoint for all government digital services. Login.gov is used to access benefits, apply for government jobs, and collect funds awarded through grant programs.
 
-As part of the Login.gov cybersecurity team, you will make government services more secure and accessible to the public.
-
+  As part of the Login.gov cybersecurity team, you will make government services more secure and accessible to the public.
   
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
