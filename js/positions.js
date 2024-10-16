@@ -11,8 +11,6 @@ function sortJobs(allJobs) {
 
         const closes = job.closes !== ''  ? job.closes : '';
 
-        console.log('openscloses', opens === '', closes === '');
-
         // If there is an opens date and;
         // If today is after or equal to the opens date and before the closes date, add the job to the openJobs array.
         // Also add it if today is after or equal to the opens date and there is no close date.
@@ -267,60 +265,60 @@ function renderInfoSessions(infoSessions, linkItem, title = '') {
 }
 
 function renderGlobalInfoSessions(infoSessions) {
-const globalInfoSessionsWrapper = document.getElementById('global-info-sessions-wrapper');
-const infoSessionsList = document.createElement('ul');
+    const globalInfoSessionsWrapper = document.getElementById('global-info-sessions-wrapper');
+    const infoSessionsList = document.createElement('ul');
 
-// Iterate through all the info sessions.
-infoSessions.forEach(session => {
-    // Lets get all our variables together for converting the end time into a timestamp.
-    const sessionSimpleDate = session['date'].split('T')[0];
-    const sessionTime = session['time'];
-    const [startTime, endTime] = sessionTime.split('-')
+    // Iterate through all the info sessions.
+    infoSessions.forEach(session => {
+        // Lets get all our variables together for converting the end time into a timestamp.
+        const sessionSimpleDate = session['date'].split('T')[0];
+        const sessionTime = session['time'];
+        const [startTime, endTime] = sessionTime.split('-')
 
-    // Convert the end date and time into a UTC timestamp and get the current time as a UTC timestamp.
-    const sessionEndDateTime = new Date(`${sessionSimpleDate} ${endTime.replace('pm', ' PM').replace('am', ' AM')}`);
-    const sessionEndTimestamp = sessionEndDateTime.getTime();
-    const now = new Date();
-    const nowTimestamp = now.getTime();
+        // Convert the end date and time into a UTC timestamp and get the current time as a UTC timestamp.
+        const sessionEndDateTime = new Date(`${sessionSimpleDate} ${endTime.replace('pm', ' PM').replace('am', ' AM')}`);
+        const sessionEndTimestamp = sessionEndDateTime.getTime();
+        const now = new Date();
+        const nowTimestamp = now.getTime();
 
-    // If the session hasn't ended, show it.
-    if ( sessionEndTimestamp > nowTimestamp ) {
-    const infoSession = document.createElement('li');
+        // If the session hasn't ended, show it.
+        if ( sessionEndTimestamp > nowTimestamp ) {
+        const infoSession = document.createElement('li');
 
-    const sessionDate = new Date(sessionSimpleDate).toLocaleDateString('en-US', {
-        weekday: 'long',
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
-        timeZone: 'UTC',
+        const sessionDate = new Date(sessionSimpleDate).toLocaleDateString('en-US', {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            timeZone: 'UTC',
+        });
+
+        const formattedTime = formatSessionTimes(sessionTime);
+
+        const infoSessionLink = document.createElement('a');
+        infoSessionLink.href = session.link;
+        infoSessionLink.target = '_blank';
+        infoSessionLink.rel = 'noopener noreferrer';
+        infoSessionLink.innerText = sessionDate;
+
+        const sessionText = document.createElement('p');
+        sessionText.style.marginTop = '0';
+        
+        // Add the text for the time after the link
+        sessionText.innerText = formattedTime;
+        
+        // Append the paragraph to the list item
+        infoSession.appendChild(infoSessionLink);
+        infoSession.appendChild(sessionText);
+
+        // Finally, append the list item to the infoSessionsList
+        infoSessionsList.appendChild(infoSession);
+        }
     });
 
-    const formattedTime = formatSessionTimes(sessionTime);
-
-    const infoSessionLink = document.createElement('a');
-    infoSessionLink.href = session.link;
-    infoSessionLink.target = '_blank';
-    infoSessionLink.rel = 'noopener noreferrer';
-    infoSessionLink.innerText = sessionDate;
-
-    const sessionText = document.createElement('p');
-    sessionText.style.marginTop = '0';
-    
-    // Add the text for the time after the link
-    sessionText.innerText = formattedTime;
-    
-    // Append the paragraph to the list item
-    infoSession.appendChild(infoSessionLink);
-    infoSession.appendChild(sessionText);
-
-    // Finally, append the list item to the infoSessionsList
-    infoSessionsList.appendChild(infoSession);
+    if ( infoSessionsList.childElementCount !== 0 ) {
+        globalInfoSessionsWrapper.appendChild(infoSessionsList);
     }
-});
-
-if ( infoSessionsList.childElementCount !== 0 ) {
-    globalInfoSessionsWrapper.appendChild(infoSessionsList);
-}
 
 }
   
@@ -370,5 +368,9 @@ if (typeof window !== 'undefined') {
 }
 
 // Export for testing
-module.exports = { sortJobs, renderGlobalInfoSessions };
+module.exports = { 
+    sortJobs, 
+    renderGlobalInfoSessions,
+    formatDate
+};
 
