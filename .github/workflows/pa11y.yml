@@ -38,7 +38,7 @@ jobs:
           node-version: "18"
 
       - name: Install dependencies
-        run: npm install --production=false
+        run: npm install --production=false && pip install yq
 
       - name: Setup custom variables
         id: customvars
@@ -65,19 +65,27 @@ jobs:
             else
               echo "60"
             fi
+
+            echo -n "PALLY_OUTPUT="
+            if [ -n "${{ vars.PALLY_OUTPUT }}" ] ; then
+              echo "${{ vars.PALLY_OUTPUT }}"
+            else
+              echo "$GITHUB_WORKSPACE/pally_output.txt"
+            fi
+
           ) >> "$GITHUB_OUTPUT"
 
       - name: Delay while the preview URL is built
         run: "sleep ${{ steps.customvars.outputs.DELAY_SECONDS }}"
 
       - name: Execute Pa11y tests
-        run: npx pa11y "${{ steps.customvars.outputs.BASE_URL }}/${{ steps.customvars.outputs.URL_PATH }}" --threshold 999 2>&1 | tee pa11y_output.txt
+        run: touch "${{ steps.customvars.outputs.PALLY_OUTPUT }}" && curl -s "${{ steps.customvars.outputs.BASE_URL }}${{ steps.customvars.outputs.URL_PATH }}sitemap.xml" | xq -r '.urlset.url[].loc' | xargs -n50 node_modules/.bin/axe --tags=wcag2a | tee -a "${{ steps.customvars.outputs.PALLY_OUTPUT }}"
 
       - name: Read pa11y_output file.
         id: pa11y_output
         uses: juliangruber/read-file-action@b549046febe0fe86f8cb4f93c24e284433f9ab58 # pin@v1.1.7
         with:
-          path: ./pa11y_output.txt
+          path: "${{ steps.customvars.outputs.PALLY_OUTPUT }}"
 
       - name: verify that pa11y successfully scanned the site
         if: contains(steps.pa11y_output.outputs.content, 'ailed to run')
@@ -86,7 +94,7 @@ jobs:
           exit 1
 
       - name: Comment on pull request.
-        if: ${{ !contains(steps.pa11y_output.outputs.content, 'o issues found') }}
+        if: ${{ contains(steps.pa11y_output.outputs.content, 'Accessibility issues detected') }}
         uses: thollander/actions-comment-pull-request@fabd468d3a1a0b97feee5f6b9e499eab0dd903f6 # pin@v2.5.0
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
