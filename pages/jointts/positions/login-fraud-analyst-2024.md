@@ -109,16 +109,17 @@ key_objectives:
       - Collaborate with Login.gov product and platform teams to develop cloud-based analytics tooling that improves Login.gov’s anti-fraud posture while preserving user privacy.
       - Lead the design, development, and deployment of improvements to Login.gov’s fraud analytics workflow or tooling.
       - Drive long-term improvement in Login.gov’s cybersecurity posture by removing single points of failure, improving automation, reducing toil, or improving the fidelity of fraud analytics.
-   - title: Support Login.gov program management
+  - title: Support Login.gov program management
     items:
       - Design, develop, test, and deploy analytics products that efficiently report identity fraud KPIs and trends.
       - Contribute to briefing materials for internal and external reporting of Login.gov fraud KPIs and trends.
       - Identify and communicate technical, business, or program risk associated with Login.gov’s anti-fraud posture. 
-   - title: Effectively collaborate with distributed, agile teams
+  - title: Effectively collaborate with distributed, agile teams
     items:
       - Openly share knowledge and work collaboratively to integrate anti-identity fraud principles into product and engineering practices. 
       - Participate in regular retrospectives and provide feedback to help improve the way the team works.
       - Maintain a work environment of respect, diversity, equity, inclusion, accessibility, mutual support, flexibility, collaboration, continuous learning, and commitment to customer / partner needs. Ensure all perspectives are valued and included. Uphold TTS values of inclusion, integrity, and impact.
+
 
 # If there are any info sessions associated with this position, list them here
 # See the placeholder below for an example of how to add an info
