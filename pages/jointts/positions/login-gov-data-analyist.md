@@ -43,8 +43,8 @@ external_url:
 
 # Put the opening and closing dates of your posting here, if you have them
 # These dates MUST be formatted as YYYY-MM-DD, where month and day are 2-digits
-opens: 
-closes: 
+opens: 2024-10-08
+closes: 2024-10-08
 
 # To show the status alert for this job, leave this set to true. To hide it, change to false
 # To show the alert keyword association message, add the keywords separated by a semi-colon
@@ -57,11 +57,11 @@ updated:
 
 # BASIC INFO
 # The basic information and details of the position
-info_intro: Open to U.S. citizens or nationals (residents of American Samoa and Swains Island). Subject to background check. Full information is available on [USAJOBS](https://www.usajobs.gov/job/810717200).
+info_intro: Open to U.S. citizens or nationals (residents of American Samoa and Swains Island). Subject to background check.
 
 supervisory_status: Non-Supervisory
 
-usajobs_official_title: IT Specialist 
+usajobs_official_title: IT Specialist (DATAMGT/INFOSEC)
 
 # Put the number of vacancies. Wrap the number in quotes.
 vacancies: "1" 
@@ -79,10 +79,10 @@ travel_requirement: Occasional travel may be required up to 10% per year.
 work_schedule: Full time.
 
 # Set to 0 if there is no limit to the number of applications accepted
-max_applications: 0
+max_applications: 150
 
-# Use either "perm" or "term" to indicate a permanent or temporary position
-appointment_type: "perm"
+# Use either "permanent" or "temporary"
+appointment_type: permanent
 
 # List key objectives here. Key objectives and sub-bullets will be displayed in
 # the order they are listed here. You do not need to include key objective
@@ -125,7 +125,7 @@ key_objectives:
 # IMPORTANT: The date MUST be formatted as YYYY-MM-DD, where the month and day
 # are TWO digits 
 info_sessions:
-  - link: https://gsa.zoomgov.com/meeting/register/vJItdOqgqD4vHGCXn9G1ijf1wVX1fXFCZW4
+  - link: https://gsa.zoomgov.com/webinar/register/WN_vCL_dfX_Swqb9ZIbNatDtw
     date: 2024-10-01
     time: 3:00pm-4:00pm ET (12:00pm - 1:00pm PT)
 
@@ -137,16 +137,23 @@ role_summary: |
 
   This position is a tactical, collaborative, outward-facing role that will require a blend of product and data expertise, a focus on consistency and quality, and a future-focused view for how Login.gov can use data in service of its mission.
 
-# Make sure to leave the | on the first line. Start your content on the following line.
-qualifications: | 
-  To Be Updated Soon
+qualifications: |
+  Provide as much detail as possible on your resume so that we can evaluate your
+  previous experience. Follow our [guidance on creating a federal style resume](https://join.tts.gsa.gov/resume/). Failure to provide required information may result in disqualification.
+
+  For each job on your resume, provide:
+  - The exact dates you held each job (from month/year to month/year or "present")
+  - Number of hours per week you worked (if part time)
 
 # Make sure to leave the | on the first line. Start your content on the following line.
 specialized_requirements: | 
-  To Be Updated Soon
+  - Implementing and integrating appropriate technology, architecture, and tooling to support data science activities, including artificial intelligence/machine learning capabilities.
+  - Identifying data requirements and standards to support emerging IT and IT cybersecurity initiatives (e.g. cloud computing, DevSecOps, continuous integration and continuous delivery)
+  - Developing models that can identify quality, anomalies, and concerning trends in structured/semistructured/unstructured data to provide near real time feedback.
+  - Developing tooling, models, and visualizations using general-purpose programming languages (such as Python) and/or tools optimized for statistical and data analysis (such as R).
 
 # This can be filled prior to the job posting going live or left blank
 # The application button will only show after the open date
-application_link:
+application_link: https://www.usajobs.gov/job/813073500
 
 ---

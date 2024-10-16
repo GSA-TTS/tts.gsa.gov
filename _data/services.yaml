@@ -68,7 +68,7 @@ services:
     logo: _img/LOGO_votegov_2024.png
     logo_alt_text: Vote
     category: platforms
-    description: The digital authoritative, trusted source for voting information.
+    description: The trusted source for accurate, official voting information from the U.S. government to the American public. Vote.gov’s mission is to make it easy for all eligible voters to understand how to register and vote.
   - name: Centers of Excellence
     link: https://coe.gsa.gov
     link_alt_text: Link to COE homepage

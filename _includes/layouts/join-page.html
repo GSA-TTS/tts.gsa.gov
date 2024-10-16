@@ -1,0 +1,33 @@
+---
+layout: layouts/base
+---
+
+{% comment %}
+This template is for a single page that does not have a date associated with it. For example, an about page.
+{% endcomment %}
+
+<section class="usa-site-alert usa-site-alert--info usa-site-alert--slim" aria-label="Site alert">
+  <div class="usa-alert">
+    <div class="usa-alert__body">
+      <p class="usa-alert__text">
+        <a href="{{ '/join/newsletter' | url }}" class="usa-link">Sign up for job alerts</a> to get notified when TTS positions that interest you are posted on the website.
+      </p>
+    </div>
+  </div>
+</section>
+{% include "banner.html" %}
+
+<div id="main-content" class="usa-layout-docs usa-section">
+  <div class="grid-container">
+    <div class="grid-row grid-gap">
+        <main class="display-flex">
+          <div class="usa-layout-docs__sidenav desktop:grid-col-3 padding-right-4{% if page.sticky_sidenav %} usa-sticky-sidenav{% endif %}">
+            {% render "sidenav.html", links: site.join_sub_navigation, subnav: subnav, data: page %}
+          </div>
+          <div class="usa-layout-docs__main desktop:grid-col-9 usa-prose">
+              {{ content }}
+          </div>
+      </main>
+    </div>
+  </div>
+</div>

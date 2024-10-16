@@ -16,7 +16,7 @@
     "dev:assets": "npm run assets:refresh && npm run assets:watch",
     "dev:debug": "DEBUG=* npx @11ty/eleventy --serve --watch",
     "dev:serve": "npx @11ty/eleventy --serve --watch",
-    "federalist": "npm run build",
+    "federalist": "npm run build && bin/conditional_minify.bash",
     "pa11y-ci": "npx start-server-and-test start 8080 pa11y-ci:local",
     "pa11y-ci:local": "pa11y-ci http://localhost:8080",
     "serve": "npx @11ty/eleventy --serve",
@@ -32,10 +32,13 @@
     "@11ty/eleventy-plugin-rss": "^1.1.2",
     "autoprefixer": "^10.4.2",
     "chokidar-cli": "^3.0.0",
+    "clean-css": "^5.3.3",
+    "clean-css-cli": "^5.6.3",
     "dotenv": "^16.4.5",
     "eleventy-plugin-svg-sprite": "^2.4.2",
     "esbuild": "^0.14.25",
     "esbuild-sass-plugin": "^2.2.4",
+    "html-minifier-terser": "^7.2.0",
     "js-yaml": "^4.1.0",
     "luxon": "^2.5.2",
     "markdown-it": "^12.3.2",
@@ -45,7 +48,8 @@
     "postcss": "^8.4.31",
     "postcss-cli": "^9.1.0",
     "rimraf": "^3.0.2",
-    "start-server-and-test": "^2.0.3"
+    "start-server-and-test": "^2.0.3",
+    "terser": "^5.33.0"
   },
   "dependencies": {
     "@uswds/uswds": "3.8.1"

@@ -34,7 +34,7 @@ tags: jobs
 #   - U.S. Digital Corps, not USDC
 #   - Presidential Innovation Fellows, not PIF
 # The exception to this is a TTS role, for which you can just say TTS
-title: ""
+title: "Login.gov: Fraud Analyst"
 
 # Put the opening and closing dates of your posting here, if you have them
 # These dates MUST be formatted as YYYY-MM-DD, where month and day are 2-digits
@@ -59,18 +59,18 @@ updated:
 # The basic information and details of the position
 info_intro: Open to U.S. citizens or nationals (residents of American Samoa and Swains Island). Subject to background check.
 
-supervisory_status: 
+supervisory_status: non-supervisory
 
-usajobs_official_title: 
+usajobs_official_title: IT Specialist (INFOSEC)
 
-vacancies: "" # Put the number in quotes.
+vacancies: "3" # Put the number in quotes.
 
 location: Anywhere in the U.S. (remote)
 
 # Put the GS grade and pay range this position is being advertised at. For SES positions, set the value of gs to SES.
 gs: 
-min_payrange: $
-max_payrange: $
+min_payrange: $122,198
+max_payrange: $181,216
 
 travel_requirement: Occasional travel may be required up to 10%-20% per year.
 
@@ -97,15 +97,29 @@ appointment_type: permanent
 # The placeholder information below shows an example of how to format the key
 # objectives
 key_objectives:
-  - title: Key Objective 1
+  - title: Contribute to Login.gov’s anti-fraud program
     items:
-      - Objective 1 Sub-Bullet
-      - Objective 1 Sub-Bullet
-  - title: Key Objective 2
+      - Design, develop, test, and deploy cloud-based identity fraud analytics products and workflows that monitor, detect, mitigate, or prevent identity fraud. 
+      - Maintain existing workflows and tools used by Login.gov’s cybersecurity team to monitor, detect, and investigate identity fraud.
+      - Collaborate with Login.gov identity fraud investigators to develop analytics products that inform identity fraud investigations.
+      - Collaborate with Login.gov cybersecurity and platform engineers to develop identity fraud monitoring and alerting solutions.
+      - Support Login.gov incident response.
+  - title: Improve Login.gov’s anti-fraud analytics
     items:
-      - Objective 2 Sub-Bullet
-      - Objective 2 Sub-Bullet
-      - Objective 2 Sub-Bullet
+      - Collaborate with Login.gov product and platform teams to develop cloud-based analytics tooling that improves Login.gov’s anti-fraud posture while preserving user privacy.
+      - Lead the design, development, and deployment of improvements to Login.gov’s fraud analytics workflow or tooling.
+      - Drive long-term improvement in Login.gov’s cybersecurity posture by removing single points of failure, improving automation, reducing toil, or improving the fidelity of fraud analytics.
+  - title: Support Login.gov program management
+    items:
+      - Design, develop, test, and deploy analytics products that efficiently report identity fraud KPIs and trends.
+      - Contribute to briefing materials for internal and external reporting of Login.gov fraud KPIs and trends.
+      - Identify and communicate technical, business, or program risk associated with Login.gov’s anti-fraud posture. 
+  - title: Effectively collaborate with distributed, agile teams
+    items:
+      - Openly share knowledge and work collaboratively to integrate anti-identity fraud principles into product and engineering practices. 
+      - Participate in regular retrospectives and provide feedback to help improve the way the team works.
+      - Maintain a work environment of respect, diversity, equity, inclusion, accessibility, mutual support, flexibility, collaboration, continuous learning, and commitment to customer / partner needs. Ensure all perspectives are valued and included. Uphold TTS values of inclusion, integrity, and impact.
+
 
 # If there are any info sessions associated with this position, list them here
 # See the placeholder below for an example of how to add an info
@@ -117,16 +131,21 @@ key_objectives:
 # IMPORTANT: If the position does not have any info sessions, you MUST delete everything
 # except "info_sessions:"
 info_sessions:
-  - link: 
-    date: 
-    time: 
-  - link: 
-    date: 
-    time:
 
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
 role_summary: |
+  Login.gov is the public’s one account for government, simplifying access to government benefits and services for members of the public by enabling them to reuse one secure account across government agencies, and improving the security of government systems by enabling agencies to leverage a shared technology service to provide strong authentication and identity verification services to their customers. We focus on the complexities of digital identity authentication for the public, so agencies can focus on their mission.
+
+  Login.gov is a FedRAMP authorized secure sign-in service created for the public to access participating government agency sites, products, and services. At its core, Login.gov is both an authentication and identity verification service and is now available to all levels of government: federal, state, and local. We're helping people access essential public services and benefits securely, privately, and seamlessly. 
+
+  This opportunity is located in the Technology Transformation Services (TTS) Solutions Division’s Login.gov team. The Login.gov team is a remote organization and is composed of experts across product development, software engineering, cybersecurity, and platform engineering.
+
+  Login.gov is seeking 3 qualified fraud analysts to join our cybersecurity team. A qualified candidate will be able to immediately contribute to Login.gov’s anti-fraud team by, leading the design, development, and deployment of identity-fraud related, cloud-based data analytics solutions. Leading cross functional teams to improve Login.gov’s anti-fraud standard operating procedures, fraud analytics tooling, and investigative processes.Supporting fraud investigations and Login.gov program management by developing analytics products that communicate identity fraud trends and risks to the Login.gov system. Supporting meetings with engineers and executives from prospective government agency customers to determine how Login.gov can adapt to meet their user identity needs.
+
+  The Login.gov team works in the open as a distributed, agile team. The core product is open source, hosted in modern cloud infrastructure, and built for scale. With over ten million users we aim to be the preferred entrypoint for all government digital services. Login.gov is used to access benefits, apply for government jobs, and collect funds awarded through grant programs.
+
+  As part of the Login.gov cybersecurity team, you will make government services more secure and accessible to the public.
   
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
@@ -135,6 +154,7 @@ qualifications: |
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
 specialized_requirements: |
+  To Be Updated Soon
 
 # This can be filled prior to the job posting going live or left blank #
 # The application button will only show after the open date            #
