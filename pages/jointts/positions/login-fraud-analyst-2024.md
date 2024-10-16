@@ -119,6 +119,7 @@ key_objectives:
       - Openly share knowledge and work collaboratively to integrate anti-identity fraud principles into product and engineering practices. 
       - Participate in regular retrospectives and provide feedback to help improve the way the team works.
       - Maintain a work environment of respect, diversity, equity, inclusion, accessibility, mutual support, flexibility, collaboration, continuous learning, and commitment to customer / partner needs. Ensure all perspectives are valued and included. Uphold TTS values of inclusion, integrity, and impact.
+
 # If there are any info sessions associated with this position, list them here
 # See the placeholder below for an example of how to add an info
 # session. 
