@@ -1,4 +1,3 @@
 module.exports = {
-    testMatch: ['**/_tests/**/*.js?(x)'],
+  testMatch: ["**/_tests/**/*.js?(x)"],
 };
-  
