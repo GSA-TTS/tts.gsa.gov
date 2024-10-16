@@ -194,9 +194,7 @@ function renderInfoSessions(infoSessions, linkItem, title = '') {
         const sessionEndDateTime = new Date(`${sessionSimpleDate} ${endTime.replace('pm', ' PM').replace('am', ' AM')}`);
         const sessionEndTimestamp = sessionEndDateTime.getTime();
         const now = new Date();
-        const nowTimestamp = now.getTime();
-
-        console.log(endTime);
+        const nowTimestamp = now.getTime()
 
         // If the session hasn't ended, show it.
         if ( sessionEndTimestamp > nowTimestamp ) {
@@ -365,12 +363,14 @@ function convertTimeToZone(time, timeZone) {
 if (typeof window !== 'undefined') {
     window.sortJobs = sortJobs;
     window.renderGlobalInfoSessions = renderGlobalInfoSessions;
+    window.renderInfoSessions = renderInfoSessions;
 }
 
 // Export for testing
 module.exports = { 
     sortJobs, 
-    renderGlobalInfoSessions,
-    formatDate
+    formatDate,
+    formatSessionTimes,
+    convertTimeToZone
 };
 
