@@ -68,18 +68,17 @@ set -euo pipefail
 ## archive="$(slugify "$URL")"
 ## @endcode
 slugify() {
-  for string in "$@" ; do
+  for string in "$@"; do
     echo "$string" \
-    | iconv -c -t ascii//TRANSLIT \
-    | sed \
+      | iconv -c -t ascii//TRANSLIT \
+      | sed \
         -Ee 's/[~^]+//g' \
         -Ee 's/[^[:alnum:]]+/-/g' \
         -Ee 's/^-+|-+$//g' \
         -Ee 's/.//63g' \
-    | tr '[:upper:]' '[:lower:]'
+      | tr '[:upper:]' '[:lower:]'
   done
 }
-
 
 ## @fn mirror_site()
 ## @brief given a URL, create a local copy of the site or return an error
@@ -109,17 +108,17 @@ mirror_site() {
 
   ## perform some cleanup
 
-  if [ ! -d "${slugified_url}" ] ; then
+  if [ ! -d "${slugified_url}" ]; then
     echo "Creating '${slugified_url}'" 1>&2
     mkdir -p "${slugified_url}"
   fi
 
-  if [ -e "${tarball}" ] ; then
+  if [ -e "${tarball}" ]; then
     echo "Removing old tarball '${tarball}'" 1>&2
     rm -rf "${tarball}"
   fi
 
-  if [ -e "${slugified_url}" ] ; then
+  if [ -e "${slugified_url}" ]; then
     echo "Removing old directory '${slugified_url}'" 1>&2
     rm -rf "${slugified_url}"
   fi
