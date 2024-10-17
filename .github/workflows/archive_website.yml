@@ -58,7 +58,7 @@ jobs:
         run: "sleep ${{ steps.customvars.outputs.DELAY_SECONDS }}"
 
       - name: Build archive
-        run: bin/build_archive.bash "${{ steps.customvars.outputs.BASE_URL }}${{ steps.customvars.outputs.URL_PATH}}"
+        run: bin/archive_website.bash "${{ steps.customvars.outputs.BASE_URL }}${{ steps.customvars.outputs.URL_PATH}}"
 
       # Upload artifacts
       - name: Archive artifacts
