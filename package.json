@@ -21,7 +21,7 @@
     "pa11y-ci:local": "pa11y-ci http://localhost:8080",
     "serve": "npx @11ty/eleventy --serve",
     "start": "npx @11ty/eleventy --serve",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "",
   "license": "CC0-1.0",
@@ -39,6 +39,7 @@
     "eleventy-plugin-svg-sprite": "^2.4.2",
     "esbuild": "^0.14.25",
     "esbuild-sass-plugin": "^2.2.4",
+    "jest": "^29.7.0",
     "html-minifier-terser": "^7.2.0",
     "js-yaml": "^4.1.0",
     "luxon": "^2.5.2",
