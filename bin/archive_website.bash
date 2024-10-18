@@ -141,11 +141,9 @@ mirror_site() {
     "${URL}sitemap.xml" \
     --append-output="${logfile}" \
     --output-document=- \
-  | sed -Ene "/<loc>/p" \
-  | sed -Ee "s/<[^>]*>//g" \
-  > "$sitemapfile"
-
-
+    | sed -Ene "/<loc>/p" \
+    | sed -Ee "s/<[^>]*>//g" \
+      > "$sitemapfile"
 
   ## download the site
 
@@ -165,9 +163,9 @@ mirror_site() {
     --execute "robots=off" \
     --input-file="$sitemapfile" \
     "$@" \
-  || true \
-  2>&1 \
-  | tee -a "${logfile}"
+    || true \
+      2>&1 \
+    | tee -a "${logfile}"
 
   ## scan the results looking for failing HTTP responses
 
