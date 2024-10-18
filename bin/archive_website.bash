@@ -108,13 +108,6 @@ mirror_site() {
   tarball="site-archive-${slugified_url}-${now}.tar.gz"
   logfile="site-archive-${slugified_url}-${now}.log"
 
-  # make sure the destination directory exists
-
-  if [ ! -d "${slugified_url}" ]; then
-    echo "Creating '${slugified_url}'" 1>&2
-    mkdir -p "${slugified_url}"
-  fi
-
   ## perform some cleanup
 
  if [ -e "${tarball}" ]; then
@@ -126,6 +119,14 @@ mirror_site() {
     echo "Removing old directory '${slugified_url}'" 1>&2
     rm -rf "${slugified_url}"
   fi
+
+  # make sure the destination directory exists
+
+  if [ ! -d "${slugified_url}" ]; then
+    echo "Creating '${slugified_url}'" 1>&2
+    mkdir -p "${slugified_url}"
+  fi
+
 
   ## download the site
 
@@ -142,9 +143,10 @@ mirror_site() {
   ## scan the results looking for failing HTTP responses
 
   echo "Examining results..." 1>&2
-  sed -Ee '/^Loading\s*.*;\s*please ignore errors/,+5d' \
-    < "${logfile}" \
-    | grep -Eqe '^HTTP request sent.*\b[45][[:digit:]]{2}\b' \
+  # shellcheck disable=SC2002
+  cat "${logfile}" \
+  | sed -Ee '/^Loading\s*.*;\s*please ignore errors/,+5d' \
+  | grep -Eqe '^HTTP request sent.*\b[45][[:digit:]]{2}\b' \
     && return 100
 
   echo "No 400 or 500 level errors found; creating archive." 1>&2
