@@ -71,24 +71,26 @@ slugify() {
   for string in "$@"; do
     echo "$string" \
       | iconv -c -t ascii//TRANSLIT \
+      | tr '[:upper:]' '[:lower:]' \
       | sed \
         -Ee 's/[~^]+//g' \
         -Ee 's/[^[:alnum:]]+/-/g' \
         -Ee 's/^-+|-+$//g' \
-        -Ee 's/.//63g' \
-      | tr '[:upper:]' '[:lower:]'
+        -Ee 's/.//63g'
   done
 }
+
 
 ## @fn mirror_site()
 ## @brief given a URL, create a local copy of the site or return an error
 ## @details
 ## This will use wget to attempt to create a local copy -- a mirror -- of a
 ## site located at the requested URL.  The archive is gzip-compressed GNU
-## tar file whose name is written to STDOUT upon successful creation.  See
-## the detailed notes for this file for more context and detail.
+## tar file and a log file whose names are written to STDOUT upon successful
+## creation.  See the detailed notes for this file for more context and detail.
 ## @param URL the URL to download
 ## @param options[] these options are added to wget before the URL
+## @returns archive and log filenames via STDOUT
 ## @retval 0 (True) if the download and archive creation were successful
 ## @retval 100 if the download resulted in failing HTTP responses
 ## @par Examples
@@ -106,14 +108,16 @@ mirror_site() {
   tarball="site-archive-${slugified_url}-${now}.tar.gz"
   logfile="site-archive-${slugified_url}-${now}.log"
 
-  ## perform some cleanup
+  # make sure the destination directory exists
 
   if [ ! -d "${slugified_url}" ]; then
     echo "Creating '${slugified_url}'" 1>&2
     mkdir -p "${slugified_url}"
   fi
 
-  if [ -e "${tarball}" ]; then
+  ## perform some cleanup
+
+ if [ -e "${tarball}" ]; then
     echo "Removing old tarball '${tarball}'" 1>&2
     rm -rf "${tarball}"
   fi
@@ -146,7 +150,8 @@ mirror_site() {
   echo "No 400 or 500 level errors found; creating archive." 1>&2
   tar -czf "${tarball}" "${slugified_url}"
 
-  echo "${tarball}"
+  echo "Archive: ${tarball}"
+  echo "Logs: ${logfile}"
 }
 
 ## @fn main()
