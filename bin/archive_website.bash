@@ -151,9 +151,9 @@ mirror_site() {
 
   echo "Beginning download" 1>&2
   wget \
-    --wait 0 \
+    --wait 1 \
     --level=inf \
-    --limit-rate=5000K \
+    --limit-rate=500K \
     --recursive \
     --user-agent=TTSSiteArchiver \
     --no-host-directories \
