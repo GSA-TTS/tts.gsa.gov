@@ -105,13 +105,19 @@ mirror_site() {
   slugified_url="$(slugify "$URL")"
   now="$(date +%Y%m%d%H%M)"
   tarball="site-archive-${slugified_url}-${now}.tar.gz"
-  logfile="site-archive-${slugified_url}-${now}.log"
+  logfile="site-archive-${slugified_url}-${now}.log.txt"
+  sitemapfile="site-archive-${slugified_url}-${now}.sitemap.txt"
 
   ## perform some cleanup
 
   if [ -e "${tarball}" ]; then
     echo "Removing old tarball '${tarball}'" 1>&2
     rm -rf "${tarball}"
+  fi
+
+  if [ -e "${sitemapfile}" ]; then
+    echo "Removing old sitemap '${sitemapfile}'" 1>&2
+    rm -rf "${sitemapfile}"
   fi
 
   if [ -e "${slugified_url}" ]; then
@@ -126,17 +132,42 @@ mirror_site() {
     mkdir -p "${slugified_url}"
   fi
 
+  ## acquire the sitemap
+
+  touch "$logfile"
+
+  echo "Downloading sitemap" 1>&2
+  wget \
+    "${URL}sitemap.xml" \
+    --append-output="${logfile}" \
+    --output-document=- \
+  | sed -Ene "/<loc>/p" \
+  | sed -Ee "s/<[^>]*>//g" \
+  > "$sitemapfile"
+
+
+
   ## download the site
 
+  echo "Beginning download" 1>&2
   wget \
+    --wait 0 \
+    --level=inf \
+    --limit-rate=5000K \
+    --recursive \
+    --user-agent=TTSSiteArchiver \
     --no-host-directories \
     --directory-prefix="${slugified_url}" \
-    --output-file="${logfile}" \
-    --mirror \
+    --no-clobber \
+    --no-parent \
     --page-requisites \
     --convert-links \
+    --execute "robots=off" \
+    --input-file="$sitemapfile" \
     "$@" \
-    "$URL" || true
+  || true \
+  2>&1 \
+  | tee -a "${logfile}"
 
   ## scan the results looking for failing HTTP responses
 
