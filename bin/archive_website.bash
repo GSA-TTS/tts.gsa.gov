@@ -80,7 +80,6 @@ slugify() {
   done
 }
 
-
 ## @fn mirror_site()
 ## @brief given a URL, create a local copy of the site or return an error
 ## @details
@@ -110,7 +109,7 @@ mirror_site() {
 
   ## perform some cleanup
 
- if [ -e "${tarball}" ]; then
+  if [ -e "${tarball}" ]; then
     echo "Removing old tarball '${tarball}'" 1>&2
     rm -rf "${tarball}"
   fi
