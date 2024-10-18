@@ -144,8 +144,8 @@ mirror_site() {
   # shellcheck disable=SC2002
   sed -i~ -Ee '/^Loading\s*.*;\s*please ignore errors/,+5d' "${logfile}"
   grep -Eqe '^HTTP request sent.*\b[45][[:digit:]]{2}\b' \
-  < "${logfile}" \
-  && return 100
+    < "${logfile}" \
+    && return 100
 
   echo "No 400 or 500 level errors found; creating archive." 1>&2
   tar -czf "${tarball}" "${slugified_url}"
