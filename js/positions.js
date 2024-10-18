@@ -346,53 +346,51 @@ function formatDate(date) {
 
 // Function to format the session times into a readable string with Eastern and Pacific times
 function formatSessionTimes(sessionTime) {
-    const [startTime, endTime] = sessionTime.split("-");
+  const [startTime, endTime] = sessionTime.split("-");
 
-    // Convert the start and end times to both Eastern Time (ET) and Pacific Time (PT)
-    const startET = convertTimeToZone(startTime, "America/New_York");
-    const endET = convertTimeToZone(endTime, "America/New_York");
-    const startPT = convertTimeToZone(startTime, "America/Los_Angeles");
-    const endPT = convertTimeToZone(endTime, "America/Los_Angeles");
+  // Convert the start and end times to both Eastern Time (ET) and Pacific Time (PT)
+  const startET = convertTimeToZone(startTime, "America/New_York");
+  const endET = convertTimeToZone(endTime, "America/New_York");
+  const startPT = convertTimeToZone(startTime, "America/Los_Angeles");
+  const endPT = convertTimeToZone(endTime, "America/Los_Angeles");
 
-    // Format the result: ET times with PT equivalents
-    return `${startET}-${endET} ET (${startPT}-${endPT} PT)`;
+  // Format the result: ET times with PT equivalents
+  return `${startET}-${endET} ET (${startPT}-${endPT} PT)`;
 }
-  
+
 // Helper function to convert the time to a specific timezone
 function convertTimeToZone(time, timeZone) {
-    const [hours, minutes, period] = time.match(/(\d+):(\d+)([ap]m)/i).slice(1);
+  const [hours, minutes, period] = time.match(/(\d+):(\d+)([ap]m)/i).slice(1);
 
-    console.log(period);
+  console.log(period);
 
-    let hours24 = parseInt(hours, 10);
-    let timePeriod = period;
-    if (period.toLowerCase() === 'pm' && hours24 !== 12) {
-        hours24 += 12;
-    } else if (period.toLowerCase() === 'am' && hours24 === 12) {
-        hours24 = 0;
-    }
+  let hours24 = parseInt(hours, 10);
+  let timePeriod = period;
+  if (period.toLowerCase() === "pm" && hours24 !== 12) {
+    hours24 += 12;
+  } else if (period.toLowerCase() === "am" && hours24 === 12) {
+    hours24 = 0;
+  }
 
-    // Set the PT offset
-    const ptOffset = timeZone !== "America/New_York" ? 3 : 0;
-    const ptHours = hours24 - ptOffset;
+  // Set the PT offset
+  const ptOffset = timeZone !== "America/New_York" ? 3 : 0;
+  const ptHours = hours24 - ptOffset;
 
-    console.log(hours24, ptHours);
+  console.log(hours24, ptHours);
 
-    // Make sure the time period changes to AM if the Pacific Time is before noon
-    if ( timeZone === 'America/Los_Angeles' && hours24 >= 12 && ptHours < 12 ) {
-        timePeriod = 'AM';
-    }
+  // Make sure the time period changes to AM if the Pacific Time is before noon
+  if (timeZone === "America/Los_Angeles" && hours24 >= 12 && ptHours < 12) {
+    timePeriod = "AM";
+  }
 
-    hours24 = hours24 - ptOffset;
+  hours24 = hours24 - ptOffset;
 
-    if ( hours24 > 12 ) {
-        hours24 += -12;
-    }
+  if (hours24 > 12) {
+    hours24 += -12;
+  }
 
-    return `${hours24}:${minutes} ${timePeriod.toUpperCase()}`;
+  return `${hours24}:${minutes} ${timePeriod.toUpperCase()}`;
 }
-
-  
 
 if (typeof window !== "undefined") {
   window.sortJobs = sortJobs;
