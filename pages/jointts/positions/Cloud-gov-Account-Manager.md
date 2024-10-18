@@ -77,7 +77,7 @@ travel_requirement: Occasional travel may be required up to 10%-20% per year.
 work_schedule: Full time.
 
 # Set to 0 if there is no limit
-max_applications: 200
+max_applications: 150
 
 # Use either "permanent" or "temporary"
 appointment_type: permanent
@@ -136,7 +136,8 @@ key_objectives:
 info_sessions:
   - link: https://gsa.zoomgov.com/webinar/register/WN_WZuzMobxSCeEuZXvWYo2hg#/registration
     date: 2024-10-21
-    time: 12:30pm-1:30pm ET
+    time: 12:30pm-1:30pm ET (9:30am-20:30am PT)
+    
 
 
     
