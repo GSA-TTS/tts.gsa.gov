@@ -358,23 +358,38 @@ function formatSessionTimes(sessionTime) {
   return `${startET}-${endET} ET (${startPT}-${endPT} PT)`;
 }
 
-// Helper export function to convert the time to a specific timezone
+// Helper function to convert the time to a specific timezone
 function convertTimeToZone(time, timeZone) {
-  const now = new Date(); // Get today's date
-  const [hours, minutes, period] = time.match(/(\d+):(\d+)([ap]m)/i).slice(1); // Extract hours, minutes, period (am/pm)
+  const [hours, minutes, period] = time.match(/(\d+):(\d+)([ap]m)/i).slice(1);
 
-  // Create a date object using today's date and the given time in the desired timezone (ET or PT)
-  const date = new Date(
-    `${now.toLocaleDateString()} ${hours}:${minutes} ${period}`,
-  );
+  console.log(period);
 
-  // Convert the time to the specified timezone (America/New_York for ET, America/Los_Angeles for PT)
-  return new Intl.DateTimeFormat("en-US", {
-    hour: "numeric",
-    minute: "numeric",
-    hour12: true,
-    timeZone: timeZone,
-  }).format(date);
+  let hours24 = parseInt(hours, 10);
+  let timePeriod = period;
+  if (period.toLowerCase() === "pm" && hours24 !== 12) {
+    hours24 += 12;
+  } else if (period.toLowerCase() === "am" && hours24 === 12) {
+    hours24 = 0;
+  }
+
+  // Set the PT offset
+  const ptOffset = timeZone !== "America/New_York" ? 3 : 0;
+  const ptHours = hours24 - ptOffset;
+
+  console.log(hours24, ptHours);
+
+  // Make sure the time period changes to AM if the Pacific Time is before noon
+  if (timeZone === "America/Los_Angeles" && hours24 >= 12 && ptHours < 12) {
+    timePeriod = "AM";
+  }
+
+  hours24 = hours24 - ptOffset;
+
+  if (hours24 > 12) {
+    hours24 += -12;
+  }
+
+  return `${hours24}:${minutes} ${timePeriod.toUpperCase()}`;
 }
 
 if (typeof window !== "undefined") {
