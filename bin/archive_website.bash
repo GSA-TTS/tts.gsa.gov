@@ -126,7 +126,6 @@ mirror_site() {
     mkdir -p "${slugified_url}"
   fi
 
-
   ## download the site
 
   wget \
@@ -143,10 +142,7 @@ mirror_site() {
 
   echo "Examining results..." 1>&2
   # shellcheck disable=SC2002
-  cat "${logfile}" \
-
   sed -i~ -Ee '/^Loading\s*.*;\s*please ignore errors/,+5d' "${logfile}"
-
   grep -Eqe '^HTTP request sent.*\b[45][[:digit:]]{2}\b' \
   < "${logfile}" \
   && return 100
