@@ -50,7 +50,9 @@ jobs:
               echo "${{ vars.DELAY_SECONDS }}"
             else
               echo "60"
-            fi
+              fi
+
+            echo -n "BUILD_TIMESTAMP=$(date +%Y%m%d%H%M)"
 
           ) >> "$GITHUB_OUTPUT"
 
@@ -65,7 +67,8 @@ jobs:
         if: always()
         uses: actions/upload-artifact@834a144ee995460fba8ed112a2fc961b36a5ec5a # pin@v4.3.6
         with:
-          name: Build Archive
+          name: "site-archive-${{ steps.customvars.outputs.BUILD_TIMESTAMP }}"
           path: |
             site-archive-*.tar.gz
-            site-archive-*.log
+            site-archive-*.log.txt
+            site-archive-*.sitemap.txt
