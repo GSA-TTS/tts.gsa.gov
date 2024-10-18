@@ -53,7 +53,7 @@ status_alert: true
 alert_keywords: Account Management; Customer Experience (CX); Sales/Business Development
 
 # If this listing has been updated since it was published, put the updated date below in YYYY-MM-DD format.
-updated: 2024-10-15
+updated: 2024-10-17
 
 # BASIC INFO
 # The basic information and details of the position
@@ -77,7 +77,7 @@ travel_requirement: Occasional travel may be required up to 10%-20% per year.
 work_schedule: Full time.
 
 # Set to 0 if there is no limit
-max_applications: 200
+max_applications: 150
 
 # Use either "permanent" or "temporary"
 appointment_type: permanent
@@ -166,8 +166,11 @@ qualifications: |
 # indenting once.
 specialized_requirements: |
   - Experience managing relationships with customers or clients
-  - Experience in managing projects or business processes
-  - Experience with software and cloud infrastructure technologies and products such as: e.g., cloud infrastructure offerings like Amazon AWS, Google Cloud GCP, or Azure; OR Software-as-a-service products or web applications of any kind.
+  - Experience evaluating or scoping technical requirements for IT, software or cloud infrastructure systems
+  - Experience managing projects or business processes
+  - Experience utilizing software and cloud infrastructure technologies and products such as:
+    - Cloud infrastructure offerings like Amazon AWS, Google Cloud GCP, Azure; OR
+    - Software-as-a-service products or web applications of any kind.
 
 # This can be filled prior to the job posting going live or left blank #
 # The application button will only show after the open date            #
