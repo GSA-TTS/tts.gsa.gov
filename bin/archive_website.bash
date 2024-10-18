@@ -126,7 +126,6 @@ mirror_site() {
     mkdir -p "${slugified_url}"
   fi
 
-
   ## download the site
 
   wget \
@@ -144,8 +143,8 @@ mirror_site() {
   echo "Examining results..." 1>&2
   # shellcheck disable=SC2002
   cat "${logfile}" \
-  | sed -Ee '/^Loading\s*.*;\s*please ignore errors/,+5d' \
-  | grep -Eqe '^HTTP request sent.*\b[45][[:digit:]]{2}\b' \
+    | sed -Ee '/^Loading\s*.*;\s*please ignore errors/,+5d' \
+    | grep -Eqe '^HTTP request sent.*\b[45][[:digit:]]{2}\b' \
     && return 100
 
   echo "No 400 or 500 level errors found; creating archive." 1>&2
