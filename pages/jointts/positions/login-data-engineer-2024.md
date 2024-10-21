@@ -124,8 +124,12 @@ info_sessions:
 # indenting once.
 role_summary: |
   Login.gov is the public’s one account for government, simplifying access to government benefits and services for members of the public by enabling them to reuse one secure account across government agencies, and improving the security of government systems by enabling agencies to leverage a shared technology service to provide strong authentication and identity verification services to their customers. We focus on the complexities of digital identity authentication for the public, so agencies can focus on their mission.
+ 
   Login.gov is a FedRAMP authorized secure sign-in service created for the public to access participating government agency sites, products, and services. At its core, Login.gov is both an authentication and identity verification service and is now available to all levels of government: federal, state, and local. We're helping people access essential public services and benefits securely, privately, and seamlessly. 
+  
   This opportunity is located in the Technology Transformation Services (TTS) Solutions Division’s Login.gov team. The Login.gov team is a remote organization and is composed of experts across product development, software engineering, cybersecurity, and platform engineering. 
+
+  As a Data Engineer at Login.gov, you will provide technical guidance and lead implementation on a cross-functional team building out new, secure data products in support of a diverse set of stakeholders on the Login.gov program, including delivery, security, anti-fraud, and compliance functions. You will work closely with other members of the delivery team, including product, UX, and other engineers to define, implement, and maintain data tooling and infrastructure such as data warehousing solutions, ETL pipelines, data quality tools, and dashboarding and reporting tools.
   
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
