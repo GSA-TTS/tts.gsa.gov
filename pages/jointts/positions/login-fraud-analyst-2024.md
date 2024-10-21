@@ -131,6 +131,9 @@ key_objectives:
 # IMPORTANT: If the position does not have any info sessions, you MUST delete everything
 # except "info_sessions:"
 info_sessions:
+  - link: https://gsa.zoomgov.com/webinar/register/WN_CJEqbQdrTZeysv3Zu_8L6Q#/registration
+    date: 2024-11-06
+    time: 1:00pm-2:00pm
 
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
