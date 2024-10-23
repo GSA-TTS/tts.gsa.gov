@@ -59,11 +59,11 @@ updated:
 # The basic information and details of the position
 info_intro: Open to U.S. citizens or nationals (residents of American Samoa and Swains Island). Subject to background check.
 
-supervisory_status: Non-Supervisory
+supervisory_status: "Non-Supervisory"
 
 usajobs_official_title: Information Technology Specialist (APPSW)
 
-vacancies: "2" # Put the number in quotes.
+vacancies: "2"  # Put the number in quotes.
 
 location: Anywhere in the U.S. (remote)
 
@@ -148,13 +148,13 @@ info_sessions:
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
 role_summary: |
-	This opportunity is located in the Technology Transformation Services (TTS) Solutions Division’s Login.gov team. The Login.gov team is remote-first and is composed of experts across product development, software engineering, cybersecurity, and platform engineering. 
+  This opportunity is located in the Technology Transformation Services (TTS) Solutions Division’s Login.gov team. The Login.gov team is remote-first and is composed of experts across product development, software engineering, cybersecurity, and platform engineering. 
 
-Login.gov is the public’s one account for government, simplifying access to government benefits and services for members of the public by enabling them to reuse one secure account across government agencies, and improving the security of government systems by enabling agencies to leverage a shared technology service to provide strong authentication and identity verification services to their customers.This opportunity is located in the Technology Transformation Services (TTS) Solutions Division’s Login.gov.
+  Login.gov is the public’s one account for government, simplifying access to government benefits and services for members of the public by enabling them to reuse one secure account across government agencies, and improving the security of government systems by enabling agencies to leverage a shared technology service to provide strong authentication and identity verification services to their customers.This opportunity is located in the Technology Transformation Services (TTS) Solutions Division’s Login.gov.
 
-As a Technical Product Manager you’ll lead a cross-functional team to deliver products using agile methodologies and modern software development practices while building capacity for product innovation in government. 
+  As a Technical Product Manager you’ll lead a cross-functional team to deliver products using agile methodologies and modern software development practices while building capacity for product innovation in government. 
 
-Technical Product managers on our team are strategic thinkers who are comfortable defining a compelling vision and designing a measurable strategy to achieve that vision. Decisive leaders who know how to motivate cross-functional teams to build the right thing. Comfortable with the software development lifecycle, modern automated development and operation tools, and federal security and compliance standards. 
+  Technical Product managers on our team are strategic thinkers who are comfortable defining a compelling vision and designing a measurable strategy to achieve that vision. Decisive leaders who know how to motivate cross-functional teams to build the right thing. Comfortable with the software development lifecycle, modern automated development and operation tools, and federal security and compliance standards. 
 	
   
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
@@ -164,7 +164,7 @@ qualifications: |
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
 specialized_requirements: |
-	To Be Updated Soon.
+  To Be Updated Soon.
 
 # This can be filled prior to the job posting going live or left blank #
 # The application button will only show after the open date            #
