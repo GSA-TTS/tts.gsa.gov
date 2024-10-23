@@ -139,8 +139,7 @@ info_sessions:
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
 role_summary: |
-
-	The TTS Senior Advisor for Technology advises the TTS Director, Deputy Director, and Deputy Director of Operations on digital technology and IT architecture. This person helps identify cross-cutting technical challenges, evaluates possible solutions, and gets teams and stakeholders on the same page. They need to understand TTS' products, services, and operations, and bring that perspective to  discussions and negotiations with TTS teams, other GSA offices, and external partners. The Senior Advisor also works with other advisors to ensure that policy, delivery, user needs, and technical perspectives are considered in TTS' leadership decisions.
+The TTS Senior Advisor for Technology advises the TTS Director, Deputy Director, and Deputy Director of Operations on digital technology and IT architecture. This person helps identify cross-cutting technical challenges, evaluates possible solutions, and gets teams and stakeholders on the same page. They need to understand TTS' products, services, and operations, and bring that perspective to  discussions and negotiations with TTS teams, other GSA offices, and external partners. The Senior Advisor also works with other advisors to ensure that policy, delivery, user needs, and technical perspectives are considered in TTS' leadership decisions.
 
   
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
@@ -150,8 +149,7 @@ qualifications: |
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
 specialized_requirements: |
-
-	This will be updated soon. 
+This will be updated soon. 
 
 # This can be filled prior to the job posting going live or left blank #
 # The application button will only show after the open date            #
