@@ -38,11 +38,11 @@ title: "TTS Senior Advisor for Technology"
 
 # Put the opening and closing dates of your posting here, if you have them
 # These dates MUST be formatted as YYYY-MM-DD, where month and day are 2-digits
-opens: 
-closes: 
+opens:
+closes:
 
 # If the role is listed on a different site and you just want to link to it,
-# put that link here. You can leave the rest of the template as-is, unless you 
+# put that link here. You can leave the rest of the template as-is, unless you
 # need to add info sessions.
 external_url:
 
@@ -63,7 +63,7 @@ supervisory_status: non-supervisory
 
 usajobs_official_title: IT Specialist (PLCYPLN/APPSW)
 
-vacancies: "1" # Put the number in quotes.
+vacancies: "1"  # Put the number in quotes.
 
 location: Anywhere in the U.S. (remote)
 
@@ -87,9 +87,9 @@ appointment_type: temporary
 # numbers. They will be added automatically
 #
 # FORMAT EXAMPLE
-# 
+#
 # - title: Key Objective 1
-#   items 
+#   items
 #     - Objective 1 Sub-Bullet
 #     - Objective 1 Sub-Bullet
 # - title: Key Objective 2
@@ -122,24 +122,27 @@ key_objectives:
 
 # If there are any info sessions associated with this position, list them here
 # See the placeholder below for an example of how to add an info
-# session. 
-# 
+# session.
+#
 # The date MUST be formatted as YYYY-MM-DD, where the month and day
 # are TWO digits; the time MUST be in ET.
-#  - link: 
-#    date: 
-#    time: 
-#  - link: 
-#   date: 
+#  - link:
+#    date:
+#    time:
+#  - link:
+#   date:
 #   time:
 # IMPORTANT: If the position does not have any info sessions, you MUST delete everything
 # except "info_sessions:"
 info_sessions:
- 
+
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
 role_summary: |
-The TTS Senior Advisor for Technology advises the TTS Director, Deputy Director, and Deputy Director of Operations on digital technology and IT architecture. This person helps identify cross-cutting technical challenges, evaluates possible solutions, and gets teams and stakeholders on the same page. They need to understand TTS' products, services, and operations, and bring that perspective to  discussions and negotiations with TTS teams, other GSA offices, and external partners. The Senior Advisor also works with other advisors to ensure that policy, delivery, user needs, and technical perspectives are considered in TTS' leadership decisions.
+  The TTS Senior Advisor for Technology advises the TTS Director, Deputy Director, and Deputy Director of Operations on digital technology and IT architecture.
+  This person helps identify cross-cutting technical challenges, evaluates possible solutions, and gets teams and stakeholders on the same page.
+  They need to understand TTS' products, services, and operations, and bring that perspective to  discussions and negotiations with TTS teams, other GSA offices, and external partners.
+  The Senior Advisor also works with other advisors to ensure that policy, delivery, user needs, and technical perspectives are considered in TTS' leadership decisions.
 
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
@@ -148,7 +151,8 @@ qualifications: |
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
 specialized_requirements: |
-This will be updated soon. 
+
+  This will be updated soon.
 
 # This can be filled prior to the job posting going live or left blank #
 # The application button will only show after the open date            #
