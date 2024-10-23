@@ -38,11 +38,11 @@ title: "Login.gov: Technical Product Manager"
 
 # Put the opening and closing dates of your posting here, if you have them
 # These dates MUST be formatted as YYYY-MM-DD, where month and day are 2-digits
-opens: 
-closes: 
+opens:
+closes:
 
 # If the role is listed on a different site and you just want to link to it,
-# put that link here. You can leave the rest of the template as-is, unless you 
+# put that link here. You can leave the rest of the template as-is, unless you
 # need to add info sessions.
 external_url:
 
@@ -50,7 +50,7 @@ external_url:
 # To show the alert keyword association message, add the keywords separated by a semi-colon
 # e.g. Product Management; Strategy/Consulting; and Marketing
 status_alert: true
-alert_keywords: Product Management 
+alert_keywords: Product Management
 
 # If this listing has been updated since it was published, put the updated date below in YYYY-MM-DD format.
 updated:
@@ -87,9 +87,9 @@ appointment_type: temporary
 # numbers. They will be added automatically
 #
 # FORMAT EXAMPLE
-# 
+#
 # - title: Key Objective 1
-#   items 
+#   items
 #     - Objective 1 Sub-Bullet
 #     - Objective 1 Sub-Bullet
 # - title: Key Objective 2
@@ -99,7 +99,7 @@ appointment_type: temporary
 key_objectives:
   - title: "Implement the product vision and lead end-to-end product development"
     items:
-      - Lead a cross-functional team to ensure product delivery. 
+      - Lead a cross-functional team to ensure product delivery.
       - Identify and proactively monitor and address product risks.
       - Work with the team to set and meet quality standards for any product you build.
       - Use evidence (user research, analytics, and other metrics) to make product decisions.
@@ -108,33 +108,33 @@ key_objectives:
       - Develop products based on measured impact, such as time or money saved or value created.
       - Owning, developing and communicating the product vision and product roadmap.
       - Manage complex relationships, such as multiple internal partners, significant executive oversight, or multiple distinct user groups.
-      - Extensive skill at modern product development practices including agile/iterative software development, use of open source tools or techniques, and user-centered product approaches. 
-  - title: Build institutional expertise around product management 
+      - Extensive skill at modern product development practices including agile/iterative software development, use of open source tools or techniques, and user-centered product approaches.
+  - title: Build institutional expertise around product management
     items:
-      -  Share best practices and tools with your peers across the organization.
-      -  Stay on top of new technologies and how they could help solve government problems. 
-      -  Pay attention to well-supported open source product offerings that can be reused in a government context to solve common problems.
-      -  Direct and share insights and opinions with other product managers, contributing to our growing culture of product management.
-      -  Develop and maintain positive relationships at various levels within an organization and champion diversity, equity, inclusion, and accessibility.
-      -  Work across roles and organizations to build strategic relationships, achieve common goals, and to resolve sensitive issues.
-   - title: Apply Technical Expertise
+      - Share best practices and tools with your peers across the organization.
+      - Stay on top of new technologies and how they could help solve government problems.
+      - Pay attention to well-supported open source product offerings that can be reused in a government context to solve common problems.
+      - Direct and share insights and opinions with other product managers, contributing to our growing culture of product management.
+      - Develop and maintain positive relationships at various levels within an organization and champion diversity, equity, inclusion, and accessibility.
+      - Work across roles and organizations to build strategic relationships, achieve common goals, and to resolve sensitive issues.
+  - title: Apply Technical Expertise
     items:
-      -  Develop and maintain knowledge of software factory and platform concepts and how they are leveraged in government. 
-      -  Stay on top of new technologies and how they could help solve government problems.
-      -  Apply experience with cross-platform development and APIs.
-      -  Understand risk management frameworks and Authorization to Operate (ATO) concepts.
-      -  Keep up-to-date on policies, regulations, and requirements that impact digital services.
-      -  Drive and implement technology solutions that overcome significant challenges resulting from complex or bureaucratic environments or technically difficult problems.
-      -  Develop new insights into situations and question conventional approaches.
-      -  Keep up-to-date on policies and trends that affect the organization and shape stakeholders’ views.
-      -  Formulate and execute consistently against objectives and priorities.
-      -  Establish aspects of modern product development practices at the organizational level including agile/iterative software development, use of open source tools or techniques, and user-centered product approaches. 
+      - Develop and maintain knowledge of software factory and platform concepts and how they are leveraged in government.
+      - Stay on top of new technologies and how they could help solve government problems.
+      - Apply experience with cross-platform development and APIs.
+      - Understand risk management frameworks and Authorization to Operate (ATO) concepts.
+      - Keep up-to-date on policies, regulations, and requirements that impact digital services.
+      - Drive and implement technology solutions that overcome significant challenges resulting from complex or bureaucratic environments or technically difficult problems.
+      - Develop new insights into situations and question conventional approaches.
+      - Keep up-to-date on policies and trends that affect the organization and shape stakeholders’ views.
+      - Formulate and execute consistently against objectives and priorities.
+      - Establish aspects of modern product development practices at the organizational level including agile/iterative software development, use of open source tools or techniques, and user-centered product approaches.
 
 
 # If there are any info sessions associated with this position, list them here
 # See the placeholder below for an example of how to add an info
-# session. 
-# 
+# session.
+#
 # The date MUST be formatted as YYYY-MM-DD, where the month and day
 # are TWO digits; the time MUST be in ET.
 #
@@ -148,15 +148,14 @@ info_sessions:
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
 role_summary: |
-  This opportunity is located in the Technology Transformation Services (TTS) Solutions Division’s Login.gov team. The Login.gov team is remote-first and is composed of experts across product development, software engineering, cybersecurity, and platform engineering. 
+  This opportunity is located in the Technology Transformation Services (TTS) Solutions Division’s Login.gov team. The Login.gov team is remote-first and is composed of experts across product development, software engineering, cybersecurity, and platform engineering.
 
   Login.gov is the public’s one account for government, simplifying access to government benefits and services for members of the public by enabling them to reuse one secure account across government agencies, and improving the security of government systems by enabling agencies to leverage a shared technology service to provide strong authentication and identity verification services to their customers.This opportunity is located in the Technology Transformation Services (TTS) Solutions Division’s Login.gov.
 
-  As a Technical Product Manager you’ll lead a cross-functional team to deliver products using agile methodologies and modern software development practices while building capacity for product innovation in government. 
+  As a Technical Product Manager you’ll lead a cross-functional team to deliver products using agile methodologies and modern software development practices while building capacity for product innovation in government.
 
-  Technical Product managers on our team are strategic thinkers who are comfortable defining a compelling vision and designing a measurable strategy to achieve that vision. Decisive leaders who know how to motivate cross-functional teams to build the right thing. Comfortable with the software development lifecycle, modern automated development and operation tools, and federal security and compliance standards. 
-	
-  
+  Technical Product managers on our team are strategic thinkers who are comfortable defining a compelling vision and designing a measurable strategy to achieve that vision. Decisive leaders who know how to motivate cross-functional teams to build the right thing. Comfortable with the software development lifecycle, modern automated development and operation tools, and federal security and compliance standards.
+
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
 qualifications: |
