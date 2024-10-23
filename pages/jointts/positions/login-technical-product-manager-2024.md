@@ -97,7 +97,7 @@ appointment_type: temporary
 # The placeholder information below shows an example of how to format the key
 # objectives
 key_objectives:
-  - title: Implement the product vision and lead end-to-end product development 
+  - title: "Implement the product vision and lead end-to-end product development"
     items:
       - Lead a cross-functional team to ensure product delivery. 
       - Identify and proactively monitor and address product risks.
