@@ -115,7 +115,6 @@ function addOpenJobsToDOM(openJobs) {
     });
 
     openJobsSection.appendChild(jobList);
-
   } else {
     const noJobsText = document.createElement("p");
     noJobsText.innerHTML =
@@ -196,13 +195,13 @@ function renderInfoSessions(infoSessions, linkItem, title = "") {
     const sessionTime = session["time"];
     const [startTime, endTime] = sessionTime.split("-");
     const endTimeFormatted = endTime.replace("pm", " PM").replace("am", " AM");
-    const [time, modifier] = endTimeFormatted.split(' ');
-    let [hours, minutes] = time.split(':');
+    const [time, modifier] = endTimeFormatted.split(" ");
+    let [hours, minutes] = time.split(":");
 
-    if (modifier === 'PM' && hours !== '12') {
+    if (modifier === "PM" && hours !== "12") {
       hours = String(+hours + 12);
-    } else if (modifier === 'AM' && hours === '12') {
-      hours = '00';
+    } else if (modifier === "AM" && hours === "12") {
+      hours = "00";
     }
 
     const formattedDateTime = `${sessionSimpleDate}T${hours}:${minutes}:00`;
@@ -294,13 +293,13 @@ function renderGlobalInfoSessions(infoSessions) {
     const sessionTime = session["time"];
     const [startTime, endTime] = sessionTime.split("-");
     const endTimeFormatted = endTime.replace("pm", " PM").replace("am", " AM");
-    const [time, modifier] = endTimeFormatted.split(' ');
-    let [hours, minutes] = time.split(':');
+    const [time, modifier] = endTimeFormatted.split(" ");
+    let [hours, minutes] = time.split(":");
 
-    if (modifier === 'PM' && hours !== '12') {
+    if (modifier === "PM" && hours !== "12") {
       hours = String(+hours + 12);
-    } else if (modifier === 'AM' && hours === '12') {
-      hours = '00';
+    } else if (modifier === "AM" && hours === "12") {
+      hours = "00";
     }
 
     const formattedDateTime = `${sessionSimpleDate}T${hours}:${minutes}:00`;
