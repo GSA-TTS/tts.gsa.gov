@@ -21,7 +21,7 @@
     "pa11y-ci:local": "pa11y-ci http://localhost:8080",
     "serve": "npx @11ty/eleventy --serve",
     "start": "npx @11ty/eleventy --serve",
-    "test": "jest"
+    "test": "jest --json --coverage --testLocationInResults --outputFile=report.json"
   },
   "author": "",
   "license": "CC0-1.0",
