@@ -38,8 +38,8 @@ title: "Cloud.gov Account Manager/Business Lead"
 
 # Put the opening and closing dates of your posting here, if you have them
 # These dates MUST be formatted as YYYY-MM-DD, where month and day are 2-digits
-opens: 
-closes: 
+opens: 2024-10-24
+closes: 2024-10-28
 
 # If the role is listed on a different site and you just want to link to it,
 # put that link here. You can leave the rest of the template as-is, unless you 
@@ -53,7 +53,7 @@ status_alert: true
 alert_keywords: Account Management; Customer Experience (CX); Sales/Business Development
 
 # If this listing has been updated since it was published, put the updated date below in YYYY-MM-DD format.
-updated: 2024-10-17
+updated: 2024-10-23
 
 # BASIC INFO
 # The basic information and details of the position
@@ -70,14 +70,14 @@ location: Anywhere in the U.S. (remote)
 # Put the GS grade and pay range this position is being advertised at. For SES positions, set the value of gs to SES.
 gs: 14
 min_payrange: $122,198
-max_payrange: $181,216
+max_payrange: $191,900
 
 travel_requirement: Occasional travel may be required up to 10%-20% per year.
 
 work_schedule: Full time.
 
 # Set to 0 if there is no limit
-max_applications: 150
+max_applications: 200
 
 # Use either "permanent" or "temporary"
 appointment_type: permanent
@@ -174,5 +174,5 @@ specialized_requirements: |
 
 # This can be filled prior to the job posting going live or left blank #
 # The application button will only show after the open date            #
-application_link:
+application_link: https://www.usajobs.gov/job/815687000
 ---
