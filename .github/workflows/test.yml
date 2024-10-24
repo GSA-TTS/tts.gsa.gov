@@ -5,6 +5,7 @@ name: Build and Test
 on:
   pull_request:
 
+
 permissions: read-all
 
 jobs:
@@ -31,3 +32,6 @@ jobs:
         run: npm run build
       - name: Run tests
         run: npm run test
+
+      - name: report code coverage
+        run: ArtiomTr/jest-coverage-report-action@v2
