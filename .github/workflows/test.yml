@@ -14,10 +14,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      pull-requests: write
-      contents: write
-      checks: write
+    permissions: write-all
 
     steps:
       - name: Checkout repository
@@ -44,5 +41,4 @@ jobs:
       - name: report code coverage
         uses: ArtiomTr/jest-coverage-report-action@262a7bb0b20c4d1d6b6b026af0f008f78da72788 # pin@v2.3.1
         with:
-          github-token: ${{ secrets.PAT }}
           coverage-file: ./report.json
