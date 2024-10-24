@@ -1,0 +1,74 @@
+---
+name: Archive website
+
+# yamllint disable-line rule:truthy
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions: read-all
+
+concurrency:
+  group: ${{ github.ref }}-${{ github.workflow }}
+  cancel-in-progress: true
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+
+    permissions:
+      issues: write
+      pull-requests: write
+
+    steps:
+      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # pin@v4.1.7
+
+      - name: Checkout repository
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # pin@v4.1.7
+
+      - name: Setup custom variables
+        id: customvars
+        run: |
+          ( echo -n "BASE_URL="
+            if [ -n "${{ vars.BASE_URL }}" ] ; then
+              echo "${{ vars.BASE_URL }}"
+            else
+              echo "https://federalist-a2423046-fe43-4e75-a2ef-2651e5e123ca.sites.pages.cloud.gov/preview/gsa-tts/tts.gsa.gov/"
+            fi
+
+            echo -n "URL_PATH="
+            if [ -n "${{ vars.URL_PATH }}" ] ; then
+              echo "${{ vars.URL_PATH }}/"
+            elif [ -n "${GITHUB_HEAD_REF:-}" ] ; then
+              echo "${GITHUB_HEAD_REF}/"
+            else
+              echo "staging/"
+            fi
+
+            echo -n "DELAY_SECONDS="
+            if [ -n "${{ vars.DELAY_SECONDS }}" ] ; then
+              echo "${{ vars.DELAY_SECONDS }}"
+            else
+              echo "60"
+              fi
+
+            echo -n "BUILD_TIMESTAMP=$(date +%Y%m%d%H%M)"
+
+          ) >> "$GITHUB_OUTPUT"
+
+      - name: Delay while the preview URL is built
+        run: "sleep ${{ steps.customvars.outputs.DELAY_SECONDS }}"
+
+      - name: Build archive
+        run: bin/archive_website.bash "${{ steps.customvars.outputs.BASE_URL }}${{ steps.customvars.outputs.URL_PATH}}"
+
+      # Upload artifacts
+      - name: Archive artifacts
+        if: always()
+        uses: actions/upload-artifact@834a144ee995460fba8ed112a2fc961b36a5ec5a # pin@v4.3.6
+        with:
+          name: "site-archive-${{ steps.customvars.outputs.BUILD_TIMESTAMP }}-${{ github.sha }}"
+          path: |
+            site-archive-*.tar.gz
+            site-archive-*.log.txt
+            site-archive-*.sitemap.txt
