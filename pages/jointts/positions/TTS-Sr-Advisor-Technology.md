@@ -34,15 +34,15 @@ tags: jobs
 #   - U.S. Digital Corps, not USDC
 #   - Presidential Innovation Fellows, not PIF
 # The exception to this is a TTS role, for which you can just say TTS
-title: "Login.gov: Data Engineer"
+title: "TTS Senior Advisor for Technology"
 
 # Put the opening and closing dates of your posting here, if you have them
 # These dates MUST be formatted as YYYY-MM-DD, where month and day are 2-digits
-opens: 
-closes: 
+opens:
+closes:
 
 # If the role is listed on a different site and you just want to link to it,
-# put that link here. You can leave the rest of the template as-is, unless you 
+# put that link here. You can leave the rest of the template as-is, unless you
 # need to add info sessions.
 external_url:
 
@@ -50,7 +50,7 @@ external_url:
 # To show the alert keyword association message, add the keywords separated by a semi-colon
 # e.g. Product Management; Strategy/Consulting; and Marketing
 status_alert: true
-alert_keywords:
+alert_keywords: "Executive Managament; Software Engineering; Cloud Architecture; Cloud Engineering; and Cybersecurity"
 
 # If this listing has been updated since it was published, put the updated date below in YYYY-MM-DD format.
 updated:
@@ -61,9 +61,9 @@ info_intro: Open to U.S. citizens or nationals (residents of American Samoa and 
 
 supervisory_status: non-supervisory
 
-usajobs_official_title: IT Specialist (APPSW/INFOSEC)
+usajobs_official_title: IT Specialist (PLCYPLN/APPSW)
 
-vacancies: "1" # Put the number in quotes.
+vacancies: "1"  # Put the number in quotes.
 
 location: Anywhere in the U.S. (remote)
 
@@ -77,19 +77,19 @@ travel_requirement: Occasional travel may be required up to 10%-20% per year.
 work_schedule: Full time.
 
 # Set to 0 if there is no limit
-max_applications: 0
+max_applications: 400
 
 # Use either "permanent" or "temporary"
-appointment_type: permanent
+appointment_type: temporary
 
 # List key objectives here. Key objectives and sub-bullets will be displayed in
 # the order they are listed here. You do not need to include key objective
 # numbers. They will be added automatically
 #
 # FORMAT EXAMPLE
-# 
+#
 # - title: Key Objective 1
-#   items 
+#   items
 #     - Objective 1 Sub-Bullet
 #     - Objective 1 Sub-Bullet
 # - title: Key Objective 2
@@ -97,43 +97,53 @@ appointment_type: permanent
 # The placeholder information below shows an example of how to format the key
 # objectives
 key_objectives:
-  - title: Build data tooling and infrastructure
+  - title: Advise TTS technology programs, products, and services
     items:
-      - Design, build, and maintain secure infrastructure for the storage of PII and other sensitive data in support of the entire Login.gov program
-      - Collaborate and coordinate closely with stakeholders across the organization, including delivery, platform engineering, security, anti-fraud, and compliance to ensure that the tools provided support their requirements for decision making and adjudication.
-      - Ensure data quality, integrity, and security using best practices from government and the private sector.
-      - Participate in on-call rotation and incident response to ensure data tools maintain a high level of availability.
-  - title: Support and educate internal stakeholders
+      - Offer expert technical advice on key digital technology issues affecting TTS.
+      - Act as the executive sponsor for testing and early adoption of new technologies across TTS products and services, providing guidance along the way.
+      - Work with the Director of Product Management to turn complex technical ideas into practical business strategies.
+      - Review how technology is used across TTS, assess risks and opportunities, research solutions, and suggest or implement improvements to overcome challenges, with input from the Director of Product Management.
+      - Collaborate with technical leads and the Director of Technology Operations to ensure that technical initiatives align with TTS goals and standards.
+      - Establishes technical standards across TTS, working with others in leadership, including Senior Advisors, the Directors of Technology Operations and Product Management, and engineering and security leaders.
+      - Evaluate and improve security processes across TTS by developing service level agreements (SLAs) and other enhancements, in partnership with the TTS Technology Operations Division and GSA-IT.
+  - title: Support TTS strategic development and execution
     items:
-      - Provide technical support to internal stakeholders relying on the data products you develop and maintain.Objective 2 Sub-Bullet
-      - Stay abreast of industry trends and best practices in subjects such as data engineering and encryption. Evangelize consistent, iterative improvements to Login.gov’s overall data policies and posture.
-      - Develop and maintain internal-user-facing documentation such as data dictionaries, common query libraries, and design documents.
+      - Help shape high-level portfolio-level roadmaps, expectations, and milestones for TTS by defining technical outcomes that align with business goals, working with the Director of Product Management.
+      - Identify and solve technical challenges that could block priority projects.
+      - Lead cross-team efforts to improve the use of common tools, platforms, shared contracts, and processes, ensuring they support TTS’ overall goals, in partnership with the Director of Product Management and Technology Operations.
+      - Work with the TTS Senior Advisor for Technology Policy to provide input on technology-related legislation and policy, helping to advance TTS’ strategic goals in government policy.
+  - title: Represent TTS and build strategic relationships
+    items:
+      - Represent TTS and its products and services in various settings, including meetings with stakeholders, interagency bodies, the White House, and Congress, working with the TTS Senior Advisor for Technology Policy and the Director of Product Management.
+      - Work with GSA’s CIO, CISO, and CAIO, and their teams, to ensure that TTS’ needs are considered and met in GSA policies and to support a forward-thinking enterprise technology strategy for GSA.
+      - Advocate for TTS' technical priorities and policies with agency partners, end users, and governing bodies.
+      - Collaborate with other GSA divisions and government agencies to expand the reach and effectiveness of TTS’ products and services.
+      - Attend or speak at conferences and events to boost TTS’ technical leadership, support recruitment, and build connections with technology leaders in government and the civic tech community.
 
 # If there are any info sessions associated with this position, list them here
 # See the placeholder below for an example of how to add an info
-# session. 
-# 
+# session.
+#
 # The date MUST be formatted as YYYY-MM-DD, where the month and day
 # are TWO digits; the time MUST be in ET.
-#
+#  - link:
+#    date:
+#    time:
+#  - link:
+#   date:
+#   time:
 # IMPORTANT: If the position does not have any info sessions, you MUST delete everything
 # except "info_sessions:"
 info_sessions:
-  - link: https://gsa.zoomgov.com/webinar/register/WN_8cviWRD6SeaDh1DCa6cEDg#/registration
-    date: 2024-11-07
-    time: 2:00pm-3:00pm
-    
+
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
 role_summary: |
-  Login.gov is the public’s one account for government, simplifying access to government benefits and services for members of the public by enabling them to reuse one secure account across government agencies, and improving the security of government systems by enabling agencies to leverage a shared technology service to provide strong authentication and identity verification services to their customers. We focus on the complexities of digital identity authentication for the public, so agencies can focus on their mission.
- 
-  Login.gov is a FedRAMP authorized secure sign-in service created for the public to access participating government agency sites, products, and services. At its core, Login.gov is both an authentication and identity verification service and is now available to all levels of government: federal, state, and local. We're helping people access essential public services and benefits securely, privately, and seamlessly. 
-  
-  This opportunity is located in the Technology Transformation Services (TTS) Solutions Division’s Login.gov team. The Login.gov team is a remote organization and is composed of experts across product development, software engineering, cybersecurity, and platform engineering. 
+  The TTS Senior Advisor for Technology advises the TTS Director, Deputy Director, and Deputy Director of Operations on digital technology and IT architecture.
+  This person helps identify cross-cutting technical challenges, evaluates possible solutions, and gets teams and stakeholders on the same page.
+  They need to understand TTS' products, services, and operations, and bring that perspective to  discussions and negotiations with TTS teams, other GSA offices, and external partners.
+  The Senior Advisor also works with other advisors to ensure that policy, delivery, user needs, and technical perspectives are considered in TTS' leadership decisions.
 
-  As a Data Engineer at Login.gov, you will provide technical guidance and lead implementation on a cross-functional team building out new, secure data products in support of a diverse set of stakeholders on the Login.gov program, including delivery, security, anti-fraud, and compliance functions. You will work closely with other members of the delivery team, including product, UX, and other engineers to define, implement, and maintain data tooling and infrastructure such as data warehousing solutions, ETL pipelines, data quality tools, and dashboarding and reporting tools.
-  
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
 qualifications: |
@@ -141,7 +151,8 @@ qualifications: |
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
 specialized_requirements: |
-  To Be Updated Soon
+
+  This will be updated soon.
 
 # This can be filled prior to the job posting going live or left blank #
 # The application button will only show after the open date            #

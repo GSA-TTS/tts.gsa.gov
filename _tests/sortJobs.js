@@ -5,14 +5,14 @@ describe("sortJobs", () => {
     {
       title: "Job 1",
       opens: "2024-10-10",
-      closes: "2024-10-20",
+      closes: "2034-10-20",
       external_url: "",
       url: "/job1",
       max_applications: 0,
     },
     {
       title: "Job 2",
-      opens: "2024-10-20",
+      opens: "2034-10-20",
       closes: "",
       external_url: "",
       url: "/job2",
