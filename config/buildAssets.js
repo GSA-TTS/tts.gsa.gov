@@ -40,7 +40,13 @@ async function createAssetPaths() {
 
 esbuild
   .build({
-    entryPoints: ["styles/styles.scss", "js/app.js", "js/admin.js"],
+    entryPoints: [
+      "styles/styles.scss",
+      "js/app.js",
+      "js/admin.js",
+      "js/subnav.js",
+      "js/positions.js",
+    ],
     entryNames: "[dir]/[name]-[hash]",
     outdir: "_site/assets",
     format: "iife",
@@ -68,6 +74,13 @@ esbuild
   })
   .then(() => createAssetPaths())
   .then(() => {
+    console.log("Building with entry points:", [
+      "styles/styles.scss",
+      "js/app.js",
+      "js/admin.js",
+      "js/subnav.js",
+      "js/positions.js",
+    ]);
     console.log("Assets have been built!");
     process.exit();
   })
