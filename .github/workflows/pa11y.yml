@@ -99,6 +99,7 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           message: "<details><summary>Pa11y testing results</summary> ```${{ steps.pa11y_output.outputs.content }}``` </details>"
+          comment_tag: pa11y
 
       - name: Check for pa11y failures.
         if: contains(steps.pa11y_output.outputs.content, 'errno 2')
