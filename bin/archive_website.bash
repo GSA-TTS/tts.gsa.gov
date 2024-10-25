@@ -165,7 +165,6 @@ mirror_site() {
     --user-agent=TTSSiteArchiver \
     --no-host-directories \
     --directory-prefix="${slugified_url}" \
-    --no-clobber \
     --no-parent \
     --page-requisites \
     --convert-links \
