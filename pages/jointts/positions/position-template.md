@@ -116,6 +116,12 @@ key_objectives:
 #
 # IMPORTANT: If the position does not have any info sessions, you MUST delete everything
 # except "info_sessions:"
+# 
+# Use the following syntax to add info sessions 
+# info_sessions:
+# - link: 
+#   date: 
+#   time: 
 info_sessions:
   - link: 
     date: 
