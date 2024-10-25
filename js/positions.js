@@ -194,11 +194,20 @@ function renderInfoSessions(infoSessions, linkItem, title = "") {
       : "";
     const sessionTime = session["time"];
     const [startTime, endTime] = sessionTime.split("-");
+    const endTimeFormatted = endTime.replace("pm", " PM").replace("am", " AM");
+    const [time, modifier] = endTimeFormatted.split(" ");
+    let [hours, minutes] = time.split(":");
+
+    if (modifier === "PM" && hours !== "12") {
+      hours = String(+hours + 12);
+    } else if (modifier === "AM" && hours === "12") {
+      hours = "00";
+    }
+
+    const formattedDateTime = `${sessionSimpleDate}T${hours}:${minutes}:00`;
 
     // Convert the end date and time into a UTC timestamp and get the current time as a UTC timestamp.
-    const sessionEndDateTime = new Date(
-      `${sessionSimpleDate} ${endTime.replace("pm", " PM").replace("am", " AM")}`,
-    );
+    const sessionEndDateTime = new Date(formattedDateTime);
     const sessionEndTimestamp = sessionEndDateTime.getTime();
     const now = new Date();
     const nowTimestamp = now.getTime();
@@ -283,11 +292,20 @@ function renderGlobalInfoSessions(infoSessions) {
     const sessionSimpleDate = session["date"].split("T")[0];
     const sessionTime = session["time"];
     const [startTime, endTime] = sessionTime.split("-");
+    const endTimeFormatted = endTime.replace("pm", " PM").replace("am", " AM");
+    const [time, modifier] = endTimeFormatted.split(" ");
+    let [hours, minutes] = time.split(":");
+
+    if (modifier === "PM" && hours !== "12") {
+      hours = String(+hours + 12);
+    } else if (modifier === "AM" && hours === "12") {
+      hours = "00";
+    }
+
+    const formattedDateTime = `${sessionSimpleDate}T${hours}:${minutes}:00`;
 
     // Convert the end date and time into a UTC timestamp and get the current time as a UTC timestamp.
-    const sessionEndDateTime = new Date(
-      `${sessionSimpleDate} ${endTime.replace("pm", " PM").replace("am", " AM")}`,
-    );
+    const sessionEndDateTime = new Date(formattedDateTime);
     const sessionEndTimestamp = sessionEndDateTime.getTime();
     const now = new Date();
     const nowTimestamp = now.getTime();
@@ -362,8 +380,6 @@ function formatSessionTimes(sessionTime) {
 function convertTimeToZone(time, timeZone) {
   const [hours, minutes, period] = time.match(/(\d+):(\d+)([ap]m)/i).slice(1);
 
-  console.log(period);
-
   let hours24 = parseInt(hours, 10);
   let timePeriod = period;
   if (period.toLowerCase() === "pm" && hours24 !== 12) {
@@ -375,8 +391,6 @@ function convertTimeToZone(time, timeZone) {
   // Set the PT offset
   const ptOffset = timeZone !== "America/New_York" ? 3 : 0;
   const ptHours = hours24 - ptOffset;
-
-  console.log(hours24, ptHours);
 
   // Make sure the time period changes to AM if the Pacific Time is before noon
   if (timeZone === "America/Los_Angeles" && hours24 >= 12 && ptHours < 12) {
