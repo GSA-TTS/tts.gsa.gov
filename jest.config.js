@@ -1,5 +1,4 @@
 module.exports = {
   testMatch: ["**/_tests/**/*.js?(x)"],
-  coverageReporters: ['json','lcov'],
-
+  coverageReporters: ["json", "lcov"],
 };
