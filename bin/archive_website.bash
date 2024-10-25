@@ -87,6 +87,12 @@ slugify() {
 ## site located at the requested URL.  The archive is gzip-compressed GNU
 ## tar file and a log file whose names are written to STDOUT upon successful
 ## creation.  See the detailed notes for this file for more context and detail.
+##
+## Several environment variables are used:
+##
+## - WAIT_SECONDS (how long to wait between each download)
+## - RATE_LIMIT (limit maximum download limit (e.g., 500k, 2m)
+##
 ## @param URL the URL to download
 ## @param options[] these options are added to wget before the URL
 ## @returns archive and log filenames via STDOUT
@@ -101,6 +107,9 @@ mirror_site() {
 
   local URL="${1?Error: no URL passed}"
   shift
+
+  WAIT_SECONDS="${WAIT_SECONDS:-1}"
+  RATE_LIMIT="${RATE_LIMIT:-500k}"
 
   slugified_url="$(slugify "$URL")"
   now="$(date +%Y%m%d%H%M)"
@@ -149,14 +158,13 @@ mirror_site() {
 
   echo "Beginning download" 1>&2
   wget \
-    --wait 1 \
+    --wait="${WAIT_SECONDS}" \
     --level=inf \
-    --limit-rate=500K \
+    --limit-rate="${RATE_LIMIT}" \
     --recursive \
     --user-agent=TTSSiteArchiver \
     --no-host-directories \
     --directory-prefix="${slugified_url}" \
-    --no-clobber \
     --no-parent \
     --page-requisites \
     --convert-links \
