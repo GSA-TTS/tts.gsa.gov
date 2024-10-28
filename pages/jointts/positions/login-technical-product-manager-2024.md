@@ -163,8 +163,12 @@ qualifications: |
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
 specialized_requirements: |
-  To Be Updated Soon.
-
+  - Applying software design and information security principles, concepts, methods, standards, and practices.
+  - Implementing and providing authoritative advice and guidance to a wide array of management, staff, and other stakeholders to ensure the  confidentiality, integrity, and availability of digital services/platforms/products on a broad, complex spectrum impacting government entities.
+  - Estimating resource requirements, defining milestones and deliverables, monitoring activities, and evaluating and reporting on accomplishments.
+  - Collaborating across organizational/operational boundaries to build strategic relationships and resolving sensitive IT issues.
+  - Leading a development project in software analysis, design, and/or development and implementation for a new system or enhancement to an existing IT system; including applying software development methodologies. 
+  
 # This can be filled prior to the job posting going live or left blank #
 # The application button will only show after the open date            #
 application_link:
