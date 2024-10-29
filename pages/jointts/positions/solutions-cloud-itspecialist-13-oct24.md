@@ -154,11 +154,11 @@ qualifications: |
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
 specialized_requirements: |
-GS-13 LEVEL SPECIALIZED EXPERIENCE REQUIREMENTS: In addition to the Basic Requirements listed above, you must have one year of specialized experience equivalent to the GS-12 level in the Federal service.  Specialized experience is defined as experience:
-Working with the design, roadmap, or technical implementation for a project, product, platform, or services.
-Building relationships or alignment with stakeholders.
-Coordinating or implementing findings in support of a project, product, platform or service.
-Collaborating with technical teams in support of a project, product, platform or service.
+  GS-13 LEVEL SPECIALIZED EXPERIENCE REQUIREMENTS: In addition to the Basic Requirements listed above, you must have one year of specialized experience equivalent to the GS-12 level in the Federal service.  Specialized experience is defined as experience:
+  Working with the design, roadmap, or technical implementation for a project, product, platform, or services.
+  Building relationships or alignment with stakeholders.
+  Coordinating or implementing findings in support of a project, product, platform or service.
+  Collaborating with technical teams in support of a project, product, platform or service.
 
 # This can be filled prior to the job posting going live or left blank #
 # The application button will only show after the open date            #
