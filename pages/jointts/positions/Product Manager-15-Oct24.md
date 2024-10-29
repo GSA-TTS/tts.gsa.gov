@@ -146,7 +146,7 @@ qualifications: |
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
 specialized_requirements: |
-GS-15 Level Specialized Experience Requirements: You must have one year of specialized experience equivalent to the GS-14 level in the Federal service. Specialized experience is defined as and must include:
+  GS-15 Level Specialized Experience Requirements: You must have one year of specialized experience equivalent to the GS-14 level in the Federal service. Specialized experience is defined as and must include:
   Experience leading vision, direction, roadmap or leading the identification of user needs for a project, product, platform, or service.
   Experience providing project or product leadership.
   Experience with iterative or agile methodologies.
