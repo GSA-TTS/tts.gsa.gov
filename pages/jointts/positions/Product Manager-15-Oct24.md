@@ -102,7 +102,7 @@ key_objectives:
       - Leading cross-functional development teams to own and grow existing, in-market products.
       - Joining cross-functional teams to partner with other government agencies and help them deliver mission-critical software.
       - Partnering with government agencies evolve their culture and establish sustainable best practices for product development.
-  - title: These roles will be a great fit for you if are a:
+  - title: These roles will be a great fit for you if are a
     items:
       - Strategic thinker who is comfortable defining a compelling vision and designing a measurable strategy to achieve that vision.
       - Decisive leader who knows how to motivate cross-functional teams to build the right thing.
