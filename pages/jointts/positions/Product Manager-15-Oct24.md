@@ -151,7 +151,7 @@ specialized_requirements: |
   Experience collaborating with cross-functional teams to achieve organizational or project objectives.
   Experience leading stakeholders through organizational change.
 
-# This can be filled prior to the job posting going live or left blank #
-# The application button will only show after the open date            #
+# This can be filled prior to the job posting going live or left blank 
+# The application button will only show after the open date           
 application_link:
 ---
