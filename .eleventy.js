@@ -304,9 +304,9 @@ module.exports = function (config) {
   }).use(markdownItAnchor, {
     level: [1, 2, 3, 4],
     slugify: config.getFilter("slug"),
-    tabIndex: '0',
+    tabIndex: "0",
   });
-  config.setLibrary("md", markdownLibrary);  
+  config.setLibrary("md", markdownLibrary);
 
   // Create a Markdown parser instance
   const markdownLib = markdownIt({ html: true });
