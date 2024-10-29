@@ -1,3 +1,8 @@
+---
+title: Security Policy
+layout: layouts/page
+---
+
 # Security Policy
 
 As a U.S. Government agency, the General Services Administration (GSA) takes
