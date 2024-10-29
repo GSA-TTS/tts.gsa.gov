@@ -133,7 +133,7 @@ key_objectives:
 info_sessions:
   - link: https://events.zoomgov.com/ev/ApHdaoDfDk7vEPBDjo38kHFgRZVgNT1hP8JoTVG4fbRxDsQhSYOB~Ap1qv-G1U12zzM0ajvI_o0KqMp7n-4B7RQ2VljM-evCEXv81BVq5MJ4MnsipLu8ZysLQuaHyo_x7p8ZTjCo3taLVng
     date: 2024-10-29
-    time: 4:00-5:00pm
+    time: 4:00pm-5:00pm
 
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
