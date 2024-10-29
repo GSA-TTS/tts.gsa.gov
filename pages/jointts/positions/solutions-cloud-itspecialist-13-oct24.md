@@ -144,11 +144,11 @@ Several business units within TTS are hiring for this role including: Cloud.gov,
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
 qualifications: |
-BASIC REQUIREMENTS: Have IT-related experience demonstrating EACH of the four competencies listed below:
-Attention to Detail - This skill is generally demonstrated by assignments where the applicant ensures that activities, services, or products reflect organizational goals and objectives.
-Customer Service - This skill is generally demonstrated by assignments where the applicant confers with users to evaluate the effectiveness of, or identify the need for, computer programs or management systems.
-Oral Communication - This skill is generally demonstrated by assignments where the applicant participates or represents the organization or clients at briefings, meetings, or conferences.
-Problem Solving - This skill is generally demonstrated by assignments where the applicant evaluates the efficiency or effectiveness of organizational programs, projects, or operations.
+  BASIC REQUIREMENTS: Have IT-related experience demonstrating EACH of the four competencies listed below:
+  Attention to Detail - This skill is generally demonstrated by assignments where the applicant ensures that activities, services, or products reflect organizational goals and objectives.
+  Customer Service - This skill is generally demonstrated by assignments where the applicant confers with users to evaluate the effectiveness of, or identify the need for, computer programs or management systems.
+  Oral Communication - This skill is generally demonstrated by assignments where the applicant participates or represents the organization or clients at briefings, meetings, or conferences.
+  Problem Solving - This skill is generally demonstrated by assignments where the applicant evaluates the efficiency or effectiveness of organizational programs, projects, or operations.
 
 
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
