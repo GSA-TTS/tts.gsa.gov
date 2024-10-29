@@ -160,7 +160,7 @@ specialized_requirements: |
   Coordinating or implementing findings in support of a project, product, platform or service.
   Collaborating with technical teams in support of a project, product, platform or service.
 
-# This can be filled prior to the job posting going live or left blank #
-# The application button will only show after the open date            #
+# This can be filled prior to the job posting going live or left blank 
+# The application button will only show after the open date            
 application_link:
 ---
