@@ -138,12 +138,12 @@ info_sessions:
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
 role_summary: |
-Several business units within TTS are hiring for this role including: 10X, Data.gov, Login.gov, and Public Benefits Studio. Software Engineers are crucial to TTS significantly improving our products, platforms, and services. This is an opportunity to make a huge difference in the lives of the public and other federal agencies. This page contains a high-level summary of the roles we are trying to fill.
+  Several business units within TTS are hiring for this role including 10X, Data.gov, Login.gov, and Public Benefits Studio. Software Engineers are crucial to TTS significantly improving our products, platforms, and services. This is an opportunity to make a huge difference in the lives of the public and other federal agencies. This page contains a high-level summary of the roles we are trying to fill.
   
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
 qualifications: |
-BASIC REQUIREMENTS: Have IT-related experience demonstrating EACH of the four competencies listed below
+  BASIC REQUIREMENTS Have IT-related experience demonstrating EACH of the four competencies listed below
   Attention to Detail - This skill is generally demonstrated by assignments where the applicant keeps abreast of latest technology, information, research, etc., to maintain knowledge in field of expertise (for example, reads trade journals, participates in professional/technical associations, maintains credentials).
   Customer Service - This skill is generally demonstrated by assignments where the applicant promotes or develops and maintains good working relationships with key individuals or groups.
   Oral Communication - This skill is generally demonstrated by assignments where the applicant serves on panels, committees, or task forces as a representative for the organization on technical or professional issues.
@@ -152,7 +152,7 @@ BASIC REQUIREMENTS: Have IT-related experience demonstrating EACH of the four co
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
 specialized_requirements: |
-GS-15 LEVEL SPECIALIZED EXPERIENCE REQUIREMENTS: In addition to the Basic Requirements listed above, you must have one year of specialized experience equivalent to the GS-14 level in the Federal service.  Specialized experience is defined as and must include
+  GS-15 LEVEL SPECIALIZED EXPERIENCE REQUIREMENTS In addition to the Basic Requirements listed above, you must have one year of specialized experience equivalent to the GS-14 level in the Federal service.  Specialized experience is defined as and must include
   Writing software and applying software design and information security principles, concepts, methods, standards, and practices.
   Using a modern, iterative style of software development (agile), using open source software components, using cloud based services such as AWS (Amazon Web Services), Azure (Microsoft Azure), GCP (Google Cloud Platform), SaaS (Software as a Service), PaaS (Platform as a Service), IaaS (Infrastructure as a Service), or continuous integration/delivery such as CI/CD (Continuous Integration Continuous Deployment), DevOps (Development Operations), DevSecOps (Development Security Operations).
   Estimating resource requirements, defining milestones and deliverables, monitoring activities, and evaluating and reporting on accomplishments.
