@@ -107,8 +107,6 @@ key_objectives:
       - Strategic thinker who is comfortable defining a compelling vision and designing a measurable strategy to achieve that vision.
       - Decisive leader who knows how to motivate cross-functional teams to build the right thing.
       - Strong executor that is able to deliver results to agencies and the public.
-  - title: These roles will be a great fit for you if you are a:
-    items:
 
 # If there are any info sessions associated with this position, list them here
 # See the placeholder below for an example of how to add an info
