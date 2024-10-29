@@ -297,19 +297,14 @@ module.exports = function (config) {
     return filterTagList([...tagSet]);
   });
 
-  // Customize Markdown library and settings:
   let markdownLibrary = markdownIt({
     html: true,
     breaks: false,
     linkify: true,
   }).use(markdownItAnchor, {
-    permalink: markdownItAnchor.permalink.ariaHidden({
-      placement: "after",
-      class: "direct-link",
-      symbol: "",
-      level: [1, 2, 3, 4],
-    }),
+    level: [1, 2, 3, 4],
     slugify: config.getFilter("slug"),
+    tabIndex: "0",
   });
   config.setLibrary("md", markdownLibrary);
 
