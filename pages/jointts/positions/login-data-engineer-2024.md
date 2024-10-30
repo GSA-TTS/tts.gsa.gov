@@ -141,7 +141,11 @@ qualifications: |
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
 specialized_requirements: |
-  To Be Updated Soon
+  - Applying data engineering and information security principles, methods, standards, and practices to program operations.
+  - Utilizing various analytical and statistical software to prepare data for analysis and clean data to include from structured/semistructured/unstructured sources.
+  - Working with various stakeholders and clients to define and determine the appropriate data services or tools requirements for projects.
+  - Providing technical expertise on the restructuring and/or re-architecting of program data collection storage to assess potential threats, vulnerabilities, and risks.
+  - Using software and programming languages (such as R, Python, SQL) and other tools to conduct operational data engineering functions.
 
 # This can be filled prior to the job posting going live or left blank #
 # The application button will only show after the open date            #
