@@ -21,11 +21,11 @@
 {% elsif state == 'open' %}
   {% if max_applications != 0 %}
     <p class="usa-alert-text">This role is open for applications until {{ closes | date: "%A, %B %d, %Y" }} at 11:59PM ET or until {{max_applications}} applications have been received. 
-      Please fill out all applicable fields. <a href="{{ application_link }}" target="_blank">Click here to apply</a>.
+      Please fill out all applicable fields. <a href="{{ application_link }}" target="_blank" rel="noopener">Click here to apply</a>.
     </p>
   {% else %}
     <p class="usa-alert-text">This role is open for applications until {{ closes | date: "%A, %B %d, %Y" }} at 11:59PM ET. 
-      Please fill out all applicable fields. <a href="{{ application_link }}" target="_blank">Click here to apply</a>.
+      Please fill out all applicable fields. <a href="{{ application_link }}" target="_blank" rel="noopener">Click here to apply</a>.
     </p>
   {% endif %}
   <p><strong>Need Assistance in applying or have questions regarding this job opportunity, please email the 
