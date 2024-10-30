@@ -63,7 +63,7 @@ supervisory_status: non-supervisory
 
 usajobs_official_title: IT Specialist (INFOSEC)
 
-vacancies: "3" # Put the number in quotes.
+vacancies: "2" # Put the number in quotes.
 
 location: Anywhere in the U.S. (remote)
 
@@ -157,7 +157,11 @@ qualifications: |
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
 specialized_requirements: |
-  To Be Updated Soon
+  - Experience with analyzing identity fraud detection, mitigation, investigation and redress practices and procedures.
+  - Experience evaluating, utilizing, applying, and enhancing strategies for identity theft investigative and redress workflows.
+  - Experience working with product, platform, or security teams to assess or mitigate identity fraud risk.
+  - Experience working with multifunctional teams to develop innovative identity fraud related cybersecurity and cloud-based data analytics services.
+  - Experience coordinating with various stakeholders to build alignment procedures and to facilitate program, initiative, project, and/or other work progress.
 
 # This can be filled prior to the job posting going live or left blank #
 # The application button will only show after the open date            #
