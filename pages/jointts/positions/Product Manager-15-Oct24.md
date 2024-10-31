@@ -34,7 +34,7 @@ tags: jobs
 #   - U.S. Digital Corps, not USDC
 #   - Presidential Innovation Fellows, not PIF
 # The exception to this is a TTS role, for which you can just say TTS
-title: "TTS Product Manager"
+title: "TTS: Product Manager"
 
 # Put the opening and closing dates of your posting here, if you have them
 # These dates MUST be formatted as YYYY-MM-DD, where month and day are 2-digits
@@ -44,7 +44,7 @@ closes: 2024-11-06
 # If the role is listed on a different site and you just want to link to it,
 # put that link here. You can leave the rest of the template as-is, unless you 
 # need to add info sessions.
-external_url:
+external_url: 
 
 # To show the status alert for this job, leave this set to true. To hide it, change to false
 # To show the alert keyword association message, add the keywords separated by a semi-colon
@@ -153,5 +153,5 @@ specialized_requirements: |
 
 # This can be filled prior to the job posting going live or left blank 
 # The application button will only show after the open date           
-application_link:
+application_link: https://www.usajobs.gov/job/816248000
 ---
