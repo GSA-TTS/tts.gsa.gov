@@ -16,7 +16,7 @@ on:
     - cron: "43 7 * * 3"
   push:
     branches:
-      - "main"
+      - "staging"
 
 # Declare default permissions as read only.
 permissions: read-all
