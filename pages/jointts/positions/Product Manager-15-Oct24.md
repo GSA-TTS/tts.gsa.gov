@@ -147,9 +147,6 @@ specialized_requirements: |
   Experience providing project or product leadership.
   Experience with iterative or agile methodologies.
   Experience leading cross-functional teams.
-  Experience collaborating with senior or executive stakeholders.
-  Experience collaborating with cross-functional teams to achieve organizational or project objectives.
-  Experience leading stakeholders through organizational change.
 
 # This can be filled prior to the job posting going live or left blank 
 # The application button will only show after the open date           
