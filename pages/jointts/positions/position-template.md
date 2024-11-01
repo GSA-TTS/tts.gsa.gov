@@ -82,9 +82,9 @@ max_applications: 0
 # Use either "permanent" or "temporary"
 appointment_type: permanent
 
-# List key objectives here. Key objectives and sub-bullets will be displayed in
-# the order they are listed here. You do not need to include key objective
-# numbers. They will be added automatically
+# List key objectives here. Key objectives and sub-bullets will be displayed in the 
+# order they are listed here. You do not need to include key objective numbers
+# They will be added automatically
 #
 # FORMAT EXAMPLE
 # 
