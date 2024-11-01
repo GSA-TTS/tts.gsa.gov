@@ -97,7 +97,14 @@ footer {
 }
 
 .tts-title-banner {
-  background: url('../_img/Services_Background.png') center no-repeat $tts-title-banner-background-color;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    transform: scale(1.8);
+    top: -100%;
+  }
 
   h1 {
     color: $tts-title-banner-h1-foreground-color;
@@ -106,6 +113,7 @@ footer {
     padding: 4.75rem 0;
     text-align: center;
     text-transform: capitalize;
+    position: relative;
   }
 }
 

@@ -22,6 +22,9 @@ module.exports = function (config) {
   // copy files from `_img/favicon/` to `_site/`
   config.addPassthroughCopy({ "_img/favicon/": "/assets/" });
 
+  // copy files from `_img/webp/` to `_site/`
+  config.addPassthroughCopy({ "_img/webp/": "/assets/" });
+
   // Copy USWDS init JS so we can load it in HEAD to prevent banner flashing
   config.addPassthroughCopy({
     "./node_modules/@uswds/uswds/dist/js/uswds-init.js":
