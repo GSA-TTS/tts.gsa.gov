@@ -108,8 +108,7 @@ key_objectives:
       - Objective 2 Sub-Bullet
 
 # If there are any info sessions associated with this position, list them here
-# See the placeholder below for an example of how to add an info
-# session. 
+# See the placeholder below for an example of how to add an info session
 # 
 # The date MUST be formatted as YYYY-MM-DD, where the month and day
 # are TWO digits; the time MUST be in ET.
