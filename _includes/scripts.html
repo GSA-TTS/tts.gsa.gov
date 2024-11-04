@@ -1,6 +1,6 @@
 {%comment%}Pull in custom js{%endcomment%}
 <script async src="{{ assetPaths['app.js'] }}"></script>
-<script src="{{ assetPaths['subnav.js'] }}"></script>
+<script async src="{{ assetPaths['subnav.js'] }}"></script>
 <script src="{{ assetPaths['positions.js'] }}"></script>
 
 <!-- Digital Analytics Program roll-up, see https://analytics.usa.gov for data -->
@@ -39,7 +39,9 @@
       });
     {% endfor %}
 
-    sortJobs(allJobs);
+    document.addEventListener("DOMContentLoaded", function () {
+      sortJobs(allJobs);
+    });
 
     const globalInfoSessions = [];
     {% for session in global_info_sessions %}
@@ -50,7 +52,9 @@
       });
     {% endfor %}
 
-  renderGlobalInfoSessions(globalInfoSessions);
+    document.addEventListener("DOMContentLoaded", function () {
+      renderGlobalInfoSessions(globalInfoSessions);
+    });
 }
 
 // Initialize the functions needed for the job listings.
@@ -66,7 +70,9 @@ if ( layout.includes('/jointts/job-listing') ) {
 
   const infoSessionsWrapper = document.getElementById('job-listing-info-sessions');
 
-  renderInfoSessions(infoSessions, infoSessionsWrapper);
+  document.addEventListener("DOMContentLoaded", function () {
+    renderInfoSessions(infoSessions, infoSessionsWrapper);
+  });
 }
 
 </script>
