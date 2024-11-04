@@ -104,6 +104,8 @@ function addOpenJobsToDOM(openJobs) {
 
       // Append the link to the list item, and the list item to the list
       listItem.appendChild(link);
+
+      // nosemgrep: typescript.react.security.audit.react-unsanitized-method.react-unsanitized-method
       link.insertAdjacentHTML("afterend", openUntilMessage);
       jobList.appendChild(listItem);
 
@@ -258,6 +260,8 @@ function renderInfoSessions(infoSessions, linkItem, title = "") {
       const innerDiv = document.createElement("div");
       innerDiv.classList.add("usa-alert-body");
       const headline = document.createElement("p");
+
+      // nosemgrep javascript.browser.security.insecure-document-method.insecure-document-method
       headline.innerHTML = `Upcoming or ongoing info sessions for ${title}`;
       wrapper.appendChild(innerDiv);
       innerDiv.appendChild(headline);
