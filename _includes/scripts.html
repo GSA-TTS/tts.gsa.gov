@@ -5,6 +5,8 @@
 
 <!-- Digital Analytics Program roll-up, see https://analytics.usa.gov for data -->
 {% if site.dap.agency %}
+
+<!-- nosemgrep: html.security.audit.missing-integrity.missing-integrity -->
 <script
   async
   id="_fed_an_ua_tag"
@@ -17,6 +19,7 @@
     <script async>
           var usasearch_config = { siteHandle: "{{ site.searchgov.affiliate }}" };
     </script>
+    <!-- nosemgrep: html.security.audit.missing-integrity.missing-integrity -->
     <script async src="https://search.usa.gov/javascripts/remote.loader.js" type="text/javascript"></script>
   {% endif %}
 {% endif %}
