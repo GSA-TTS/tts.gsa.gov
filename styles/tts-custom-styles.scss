@@ -317,3 +317,21 @@ h4#specialized-requirements {
   letter-spacing: .5px;
   z-index: 10;
 }
+
+/* Info Session List Box */
+.info-session-summary-box {
+  background-color: #e7f6f8;
+  border: 1px #99deea solid;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  margin: .5rem 0 1rem;
+
+  p {
+    margin: 0;
+    font-weight: 600;
+  }
+
+  ul p {
+    font-weight: 400;
+  }
+}

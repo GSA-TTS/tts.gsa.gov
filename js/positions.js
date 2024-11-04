@@ -267,13 +267,10 @@ function renderInfoSessions(infoSessions, linkItem, title = "") {
       linkItem.appendChild(wrapper);
     } else {
       const wrapper = document.createElement("div");
-      wrapper.classList.add("usa-summary-box");
-      const headline = document.createElement("h3");
-      headline.innerHTML = `Attend an information session for this position`;
-      const subHeadline = document.createElement("p");
-      subHeadline.innerText = `Attend an information session to learn more about these roles, working at TTS, and our application process. Register for a session using the links below.`;
+      wrapper.classList.add("info-session-summary-box");
+      const headline = document.createElement("p");
+      headline.innerHTML = `Attend an information session for this position:`;
       wrapper.appendChild(headline);
-      wrapper.appendChild(subHeadline);
       wrapper.appendChild(infoSessionsList);
       linkItem.appendChild(wrapper);
     }
