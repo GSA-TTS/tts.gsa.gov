@@ -1,11 +1,12 @@
 {%comment%}Pull in custom js{%endcomment%}
 <script async src="{{ assetPaths['app.js'] }}"></script>
-<script src="{{ assetPaths['subnav.js'] }}"></script>
-<script src="{{ assetPaths['positions.js'] }}"></script>
+<script async src="{{ assetPaths['subnav.js'] }}"></script>
+<script async src="{{ assetPaths['positions.js'] }}"></script>
 
 <!-- Digital Analytics Program roll-up, see https://analytics.usa.gov for data -->
 {% if site.dap.agency %}
 <script
+  async
   id="_fed_an_ua_tag"
   src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency={{site.dap.agency}}{% if site.dap.subagency %}&subagency={{site.dap.subagency}}{% endif %}&pga4={{ site.ga }}"
 ></script>
@@ -13,7 +14,7 @@
 
 {% if site.searchgov %}
   {% if site.searchgov.suggestions == true %}
-    <script>
+    <script async>
           var usasearch_config = { siteHandle: "{{ site.searchgov.affiliate }}" };
     </script>
     <script async src="https://search.usa.gov/javascripts/remote.loader.js" type="text/javascript"></script>
@@ -21,7 +22,7 @@
 {% endif %}
 
 <!-- Parse through liquid data needed for positions.js -->
-<script>
+<script async>
   const layout = "{{layout}}";
 
   // Initialize the functions needed for the main join page
@@ -39,7 +40,9 @@
       });
     {% endfor %}
 
-    sortJobs(allJobs);
+    document.addEventListener("DOMContentLoaded", function () {
+      sortJobs(allJobs);
+    });
 
     const globalInfoSessions = [];
     {% for session in global_info_sessions %}
@@ -50,7 +53,9 @@
       });
     {% endfor %}
 
-  renderGlobalInfoSessions(globalInfoSessions);
+    document.addEventListener("DOMContentLoaded", function () {
+      renderGlobalInfoSessions(globalInfoSessions);
+    });
 }
 
 // Initialize the functions needed for the job listings.
@@ -66,7 +71,9 @@ if ( layout.includes('/jointts/job-listing') ) {
 
   const infoSessionsWrapper = document.getElementById('job-listing-info-sessions');
 
-  renderInfoSessions(infoSessions, infoSessionsWrapper);
+  document.addEventListener("DOMContentLoaded", function () {
+    renderInfoSessions(infoSessions, infoSessionsWrapper);
+  });
 }
 
 </script>

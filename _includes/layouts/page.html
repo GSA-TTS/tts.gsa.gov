@@ -8,23 +8,17 @@ This template is for a single page that does not have a date associated with it.
 
 {% include "banner.html" %}
 
-<div id="main-content" class="usa-layout-docs usa-section">
-  <div class="grid-container">
-    <div class="grid-row grid-gap">
-        <main{%if sidenav%} class="display-flex"{% endif %}>
-        {% if sidenav %}
-        <div class="usa-layout-docs__sidenav desktop:grid-col-3 padding-right-4{% if page.sticky_sidenav %} usa-sticky-sidenav{% endif %}">
-          {% render "sidenav.html", links: sidenav, subnav: subnav, data: page %}
-        </div>
-        <div class="usa-layout-docs__main desktop:grid-col-9 usa-prose">
-            {{ content }}
-        </div>
-        {% else %}
-        <div class="usa-layout-docs__main desktop:grid-col-12 usa-prose">
-            {{ content }}
-        </div>
-        {% endif %}
-      </main>
-    </div>
+<div class="usa-section grid-container{% if sidenav %} display-flex{% endif %}">
+  {% if sidenav %}
+  <div class="usa-layout-docs__sidenav desktop:grid-col-3 padding-right-4{% if page.sticky_sidenav %} usa-sticky-sidenav{% endif %}">
+    {% render "sidenav.html", links: sidenav, subnav: subnav, data: page %}
   </div>
+  <div class="usa-layout-docs__main desktop:grid-col-9 usa-prose">
+      {{ content }}
+  </div>
+  {% else %}
+  <div class="usa-layout-docs__main desktop:grid-col-12 usa-prose">
+      {{ content }}
+  </div>
+  {% endif %}
 </div>
