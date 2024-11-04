@@ -270,10 +270,10 @@ function renderInfoSessions(infoSessions, linkItem, title = "") {
       wrapper.classList.add("usa-summary-box");
       const headline = document.createElement("h3");
       headline.innerHTML = `Attend an information session for this position`;
-      const subHeadline = document.createElement("p");
-      subHeadline.innerText = `Attend an information session to learn more about these roles, working at TTS, and our application process. Register for a session using the links below.`;
+      const subline = document.createElement("p");
+      subline.innerHTML = `Attend an information session to learn more about these roles, working at TTS, and our application process. Register for a session using the links below.`;
       wrapper.appendChild(headline);
-      wrapper.appendChild(subHeadline);
+      wrapper.appendChild(subline);
       wrapper.appendChild(infoSessionsList);
       linkItem.appendChild(wrapper);
     }
