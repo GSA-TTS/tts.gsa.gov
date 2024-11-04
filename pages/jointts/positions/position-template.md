@@ -82,9 +82,9 @@ max_applications: 0
 # Use either "permanent" or "temporary"
 appointment_type: permanent
 
-# List key objectives here. Key objectives and sub-bullets will be displayed in
-# the order they are listed here. You do not need to include key objective
-# numbers. They will be added automatically
+# List key objectives here. Key objectives and sub-bullets will be displayed in the 
+# order they are listed here. You do not need to include key objective numbers
+# They will be added automatically
 #
 # FORMAT EXAMPLE
 # 
@@ -108,8 +108,7 @@ key_objectives:
       - Objective 2 Sub-Bullet
 
 # If there are any info sessions associated with this position, list them here
-# See the placeholder below for an example of how to add an info
-# session. 
+# See the placeholder below for an example of how to add an info session
 # 
 # The date MUST be formatted as YYYY-MM-DD, where the month and day
 # are TWO digits; the time MUST be in ET.
