@@ -19,6 +19,7 @@ async function createAssetPaths() {
   const assetsFiles = await Promise.all(
     assetDirs.map(async (dir) => {
       const files = await fs.readdir(
+        // nosemgrep: javascript.lang.security.audit.path-traversal.path-join-resolve-traversal.path-join-resolve-traversal
         path.join(__dirname, "../_site/assets", dir),
       );
       return files.map((file) => {
