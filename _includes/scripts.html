@@ -1,7 +1,7 @@
 {%comment%}Pull in custom js{%endcomment%}
 <script async src="{{ assetPaths['app.js'] }}"></script>
 <script async src="{{ assetPaths['subnav.js'] }}"></script>
-<script async src="{{ assetPaths['positions.js'] }}"></script>
+<script defer src="{{ assetPaths['positions.js'] }}"></script>
 
 <!-- Digital Analytics Program roll-up, see https://analytics.usa.gov for data -->
 {% if site.dap.agency %}
@@ -25,7 +25,7 @@
 {% endif %}
 
 <!-- Parse through liquid data needed for positions.js -->
-<script async>
+<script defer>
   const layout = "{{layout}}";
 
   // Initialize the functions needed for the main join page

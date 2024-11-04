@@ -14,8 +14,6 @@ async function imageWithClassShortcode(
   let imgHeight;
   let imgWidth;
 
-  console.log("height", height);
-
   if (process.env.BASEURL) {
     pathPrefix = process.env.BASEURL;
   }
