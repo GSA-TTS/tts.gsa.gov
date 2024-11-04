@@ -70,6 +70,10 @@ $tts-title-banner-h1-foreground-color: #fff;
   line-height: 1.2;
   font-weight: 700;
   margin-top: 1.5em;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
 }
 
 footer {
