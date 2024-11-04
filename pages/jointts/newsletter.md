@@ -11,7 +11,8 @@ summary: Get alerts when positions that interest you are posted on the TTS websi
     <div class="grid-row">
       <div class="desktop:grid-col-12 usa-prose">
         <h1>{{page.title}}</h1>
-        <script
+        <script 
+          async
           src="https://public.govdelivery.com/assets/Signup.js"
           data-account-code="USGSATTS"
           data-signup-id="11386"></script>
