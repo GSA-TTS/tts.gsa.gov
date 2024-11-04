@@ -14,7 +14,7 @@
 
 {% if site.searchgov %}
   {% if site.searchgov.suggestions == true %}
-    <script>
+    <script async>
           var usasearch_config = { siteHandle: "{{ site.searchgov.affiliate }}" };
     </script>
     <script async src="https://search.usa.gov/javascripts/remote.loader.js" type="text/javascript"></script>
@@ -22,7 +22,7 @@
 {% endif %}
 
 <!-- Parse through liquid data needed for positions.js -->
-<script>
+<script async>
   const layout = "{{layout}}";
 
   // Initialize the functions needed for the main join page
