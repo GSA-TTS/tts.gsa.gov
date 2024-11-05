@@ -105,15 +105,15 @@ key_objectives:
       - Oversee alert/case quality and production to meet/improve Service Level Agreements (SLAs).
       - Apply knowledge of software product delivery in a DevOps environment.
   - title: Provide subject matter expertise on identity fraud coPromote a work environment of respect, diversity, equity, inclusion, accessibility, mutual support, continuous learning, and commitment to customer / partner needs.
-     items:
+    items:
       - Mature privacy-preserving identity fraud detection, mitigation, investigation, and redress practices. 
       - Provide guidance on privacy-preserving device and identity verification technologies.
       - Mature identity theft investigative and redress workflows.
       - Understand how suspicious actors can steal or compromise Login.gov accounts.
       - Communicate with internal and external partners to share Login.gov’s fraud posture, priorities, risks, and operational processes.
       - Act as subject matter expert, understanding how to protect users privacy while building out identity fraud controls.
-   - title: Effectively collaborate with distributed, agile teams
-      items:
+  - title: Effectively collaborate with distributed, agile teams
+    items:
       - Share knowledge and work collaboratively to integrate anti-identity fraud principles into product and engineering practices.
       - Participate in regular retrospectives and provide feedback to help improve the way the team works.
       - Promote a work environment of respect, diversity, equity, inclusion, accessibility, mutual support, continuous learning, and commitment to customer / partner needs. 
