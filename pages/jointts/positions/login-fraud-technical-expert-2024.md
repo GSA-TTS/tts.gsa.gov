@@ -134,12 +134,7 @@ key_objectives:
 #   date: 2024-11-06
 #   time: 1:00pm-2:00pm
 info_sessions:
-  - link: 
-    date: 
-    time: 
-  - link: 
-    date: 
-    time:
+
 
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
