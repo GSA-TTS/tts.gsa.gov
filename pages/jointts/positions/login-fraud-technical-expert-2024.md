@@ -130,11 +130,13 @@ key_objectives:
 # If info session details previously removed, use the following syntax to add one.  
 # Duplicate the entire block - link, date, and time - if you need to add more than one session
 # info_sessions:
-# - link: https://gsa.zoomgov.com/webinar/register/WN_CJEqbQdrTZeysv3Zu_8L6Q#/registration
-#   date: 2024-11-06
-#   time: 1:00pm-2:00pm
+# - link: 
+#   date: 
+#   time: 
 info_sessions:
-
+  - link: https://gsa.zoomgov.com/webinar/register/WN_CJEqbQdrTZeysv3Zu_8L6Q#/registration
+    date: 2024-11-06
+    time: 1:00pm-2:00pm
 
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
