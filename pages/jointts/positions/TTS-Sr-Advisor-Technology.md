@@ -135,6 +135,13 @@ key_objectives:
 # IMPORTANT: If the position does not have any info sessions, you MUST delete everything
 # except "info_sessions:"
 info_sessions:
+  - link:
+    date: 2024-11-19
+    time: 3:00pm-4:00pm
+  - link:
+    date: 2024-11-21
+    time: 12:00pm-1:00pm
+
 
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
