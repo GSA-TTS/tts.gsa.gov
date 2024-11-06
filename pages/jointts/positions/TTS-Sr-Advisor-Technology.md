@@ -135,10 +135,10 @@ key_objectives:
 # IMPORTANT: If the position does not have any info sessions, you MUST delete everything
 # except "info_sessions:"
 info_sessions:
-  - link:
+  - link: https://gsa.zoomgov.com/webinar/register/WN_ox3cUHzJSwWVBIpBNDvafA#/registration
     date: 2024-11-19
     time: 3:00pm-4:00pm
-  - link:
+  - link: https://gsa.zoomgov.com/webinar/register/WN_v3AWBuQNTJGviDmLQG9iFg#/registration
     date: 2024-11-21
     time: 12:00pm-1:00pm
 
