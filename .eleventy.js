@@ -329,7 +329,6 @@ module.exports = function (config) {
           // Provides the 404 content without redirect.
           res.writeHead(404, { "Content-Type": "text/html; charset=UTF-8" });
           res.write(content_404);
-          const svgSprite = require("eleventy-plugin-svg-sprite");
           res.end();
         });
       },
