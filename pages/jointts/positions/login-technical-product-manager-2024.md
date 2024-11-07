@@ -39,7 +39,7 @@ title: "Login.gov: Technical Product Manager"
 # Put the opening and closing dates of your posting here, if you have them
 # These dates MUST be formatted as YYYY-MM-DD, where month and day are 2-digits
 opens: 2024-11-06
-closes: 2024-11-12
+closes: 2024-11-06
 
 # If the role is listed on a different site and you just want to link to it,
 # put that link here. You can leave the rest of the template as-is, unless you
