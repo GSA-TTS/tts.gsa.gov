@@ -105,7 +105,7 @@ key_objectives:
       - Participate in on-call rotation and incident response to ensure data tools maintain a high level of availability.
   - title: Support and educate internal stakeholders
     items:
-      - Provide technical support to internal stakeholders relying on the data products you develop and maintain.Objective 2 Sub-Bullet
+      - Provide technical support to internal stakeholders relying on the data products you develop and maintain.
       - Stay abreast of industry trends and best practices in subjects such as data engineering and encryption. Evangelize consistent, iterative improvements to Login.gov’s overall data policies and posture.
       - Develop and maintain internal-user-facing documentation such as data dictionaries, common query libraries, and design documents.
 
