@@ -1,0 +1,48 @@
+gs_salary_ranges:
+  year: 2024
+  grades:
+    GS-1:
+      min_salary: 21986  # GS-1 Step 1
+      max_salary: 27590  # GS-1 Step 10
+    GS-2:
+      min_salary: 24702  # GS-2 Step 1
+      max_salary: 30983  # GS-2 Step 10
+    GS-3:
+      min_salary: 26962  # GS-3 Step 1
+      max_salary: 35019  # GS-3 Step 10
+    GS-4:
+      min_salary: 30343  # GS-4 Step 1
+      max_salary: 39479  # GS-4 Step 10
+    GS-5:
+      min_salary: 33973  # GS-5 Step 1
+      max_salary: 44126  # GS-5 Step 10
+    GS-6:
+      min_salary: 37696  # GS-6 Step 1
+      max_salary: 48897  # GS-6 Step 10
+    GS-7:
+      min_salary: 41830  # GS-7 Step 1
+      max_salary: 54432  # GS-7 Step 10
+    GS-8:
+      min_salary: 46237  # GS-8 Step 1
+      max_salary: 60190  # GS-8 Step 10
+    GS-9:
+      min_salary: 50958  # GS-9 Step 1
+      max_salary: 67148  # GS-9 Step 10
+    GS-10:
+      min_salary: 56013  # GS-10 Step 1
+      max_salary: 73813  # GS-10 Step 10
+    GS-11:
+      min_salary: 61618  # GS-11 Step 1
+      max_salary: 80141  # GS-11 Step 10
+    GS-12:
+      min_salary: 73848  # GS-12 Step 1
+      max_salary: 95992  # GS-12 Step 10
+    GS-13:
+      min_salary: 87860  # GS-13 Step 1
+      max_salary: 114320 # GS-13 Step 10
+    GS-14:
+      min_salary: 103821 # GS-14 Step 1
+      max_salary: 134803 # GS-14 Step 10
+    GS-15:
+      min_salary: 122074 # GS-15 Step 1
+      max_salary: 159950 # GS-15 Step 10

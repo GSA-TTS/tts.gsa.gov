@@ -4,8 +4,12 @@
   {% else %}
     GS-{{ gs }}
   {% endif %}
-  {% if min_payrange.size > 0 and max_payrange.size > 0 %}
-    ({{ min_payrange }} - {{ max_payrange }})
+</p>
+<p>
+  {% if gs and gs_salaries.grades["GS-" + gs] %}
+    <strong>Base Salary Range:</strong> ${{ gs_salaries.grades["GS-" + gs].min_salary | number }} - ${{ gs_salaries.grades["GS-" + gs].max_salary | number }}
+  {% else %}
+    Salary information is not available for this grade.
   {% endif %}
 </p>
 <p>Your salary, including base and locality, will be determined upon selection, dependent on your actual duty location. 
