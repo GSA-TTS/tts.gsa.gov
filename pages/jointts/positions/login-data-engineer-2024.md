@@ -38,8 +38,8 @@ title: "Login.gov: Data Engineer"
 
 # Put the opening and closing dates of your posting here, if you have them
 # These dates MUST be formatted as YYYY-MM-DD, where month and day are 2-digits
-opens: 2024/11/13
-closes: 2024/11/18
+opens: 2024-11-13
+closes: 2024-11-18
 
 # If the role is listed on a different site and you just want to link to it,
 # put that link here. You can leave the rest of the template as-is, unless you 
