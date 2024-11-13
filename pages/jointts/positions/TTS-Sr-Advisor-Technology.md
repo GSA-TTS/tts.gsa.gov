@@ -50,7 +50,7 @@ external_url:
 # To show the alert keyword association message, add the keywords separated by a semi-colon
 # e.g. Product Management; Strategy/Consulting; and Marketing
 status_alert: true
-alert_keywords: "Executive Managament; Software Engineering; Cloud Architecture; Cloud Engineering; and Cybersecurity"
+alert_keywords: "Executive Management; Software Engineering; Cloud Architecture; Cloud Engineering; and Cybersecurity"
 
 # If this listing has been updated since it was published, put the updated date below in YYYY-MM-DD format.
 updated:

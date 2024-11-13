@@ -1,0 +1,25 @@
+---
+name: Main Branch Protection
+
+# yamllint disable-line rule:truthy
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions: read-all
+
+concurrency:
+  group: ${{ github.ref }}-${{ github.workflow }}
+  cancel-in-progress: true
+
+jobs:
+  protect-main-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check branch
+        run: |
+          if [[ ${GITHUB_HEAD_REF} != staging ]] ; then
+            echo "Error: Pull requests to 'main' must come from 'staging'"
+            exit 1
+          fi
