@@ -132,7 +132,7 @@ role_summary: |
   
   This opportunity is located in the Technology Transformation Services (TTS) Solutions Division’s Login.gov team. The Login.gov team is a remote organization and is composed of experts across product development, software engineering, cybersecurity, and platform engineering. 
 
-  As a Data Engineer at Login.gov, you will provide technical guidance and lead implementation on a cross-functional team building out new, secure data products in support of a diverse set of stakeholders on the Login.gov program, including delivery, security, anti-fraud, and compliance functions. You will work closely with other members of the delivery team, including product, UX, and other engineers to define, implement, and maintain data tooling and infrastructure such as data warehousing solutions, ETL pipelines, data quality tools, and dashboarding and reporting tools.
+  As a Data Engineer at Login.gov, you will provide technical guidance and lead implementation on a cross-functional team building out new, secure data products in support of a diverse set of stakeholders on the Login.gov program, including delivery, security, anti-fraud, and compliance functions. You will work closely with other members of the delivery team, including product, UX, and other engineers to define, implement, and maintain data tooling and infrastructure such as data warehousing solutions, ETL pipelines, data quality tools, and dashboard and reporting tools.
   
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
