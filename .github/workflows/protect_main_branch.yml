@@ -19,8 +19,7 @@ jobs:
     steps:
       - name: Check branch
         run: |
-          if [[ ${GITHUB_HEAD_REF} != staging ]] \
-          && ! [[ ${GITHUB_HEAD_REF} =~ ^hotfix/ ]] ; then
-            echo "Error: Pull requests to 'main' must come from 'staging' or a 'hotfix/' branch"
+          if [[ ${GITHUB_HEAD_REF} != staging ]] ; then
+            echo "Error: Pull requests to 'main' must come from 'staging'"
             exit 1
           fi
