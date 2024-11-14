@@ -4,10 +4,18 @@
   {% else %}
     GS-{{ gs }}
   {% endif %}
-  {% if min_payrange.size > 0 and max_payrange.size > 0 %}
-    ({{ min_payrange }} - {{ max_payrange }})
+
+  {% if gs != "SES" %}
+    {% assign gs_salary_key = "GS-" | append: gs %}
+  {% else %}
+    {% assign gs_salary_key = gs %}
+  {% endif %}
+
+  {% if gs_salaries[gs_salary_key] %}
+    (${{ gs_salaries[gs_salary_key].min_salary | numberWithCommas }} - ${{ gs_salaries[gs_salary_key].max_salary | numberWithCommas }})
   {% endif %}
 </p>
+
 <p>Your salary, including base and locality, will be determined upon selection, dependent on your actual duty location. 
   Please note the maximum salary available for the GS pay system is $191,900. For specific details on locality pay, please 
   visit <a href="https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/" target="_blank" rel="noopener">OPM's Salaries & Wages page</a> or for a salary calculator 

@@ -1,0 +1,51 @@
+# This file was created based on OPM's General Schedule pay tables using REST OF
+# UNITED STATES for the low and SAN JOSE-SAN FRANCISCO-OAKLAND, CA as the high.
+---
+GS-1:
+  min_salary: 25684
+  max_salary: 39991
+GS-2:
+  min_salary: 28880
+  max_salary: 45243
+GS-3:
+  min_salary: 31512
+  max_salary: 50989
+GS-4:
+  min_salary: 35373
+  max_salary: 57235
+GS-5:
+  min_salary: 39576
+  max_salary: 64037
+GS-6:
+  min_salary: 44117
+  max_salary: 71390
+GS-7:
+  min_salary: 49025
+  max_salary: 79331
+GS-8:
+  min_salary: 54292
+  max_salary: 87851
+GS-9:
+  min_salary: 59966
+  max_salary: 97034
+GS-10:
+  min_salary: 66036
+  max_salary: 106853
+GS-11:
+  min_salary: 72553
+  max_salary: 117400
+GS-12:
+  min_salary: 86962
+  max_salary: 140713
+GS-13:
+  min_salary: 103409
+  max_salary: 167336
+GS-14:
+  min_salary: 122198
+  max_salary: 191900
+GS-15:
+  min_salary: 143736
+  max_salary: 191900
+SES:
+  min_salary: 147649
+  max_salary: 221900

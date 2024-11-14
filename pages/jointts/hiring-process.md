@@ -43,7 +43,7 @@ culture. TTS does not conduct one-on-one conversations with candidates about
 roles to ensure an equitable hiring process. Please attend one of our public
 information sessions for these details.
 
-A list of upcoming information sessions can be found on the [Jobs](/join) page.
+A list of upcoming information sessions can be found on the [Jobs page](/join).
 
 ## Application
 
@@ -65,7 +65,7 @@ The interview process typically takes about a month, with approximately 3-4 inte
 
 If you advance past the preliminary screen, we’ll invite you to a series of formal video interviews with various TTS team members. During these longer conversations, we will discuss your past work experience and how your skills and knowledge apply to TTS. Some positions may require a technical interview such as a coding exercise or leadership and collaboration interview before moving forward to the final round of interviews.
 
-The final round of interviews always include a TTS Core Values interview which is intended to evaluate candidate alignment with [the organization’s values](https://handbook.tts.gsa.gov/about-us/tts-history/#our-values).
+The final round of interviews always include a TTS Core Values interview which is intended to evaluate candidate alignment with [TTS' values](https://handbook.tts.gsa.gov/about-us/tts-history/#our-values).
 
 We share copies of the interview guide, which includes the questions and interviewer names, in advance of your interviews. Sharing questions in advance provides you a more informed interview experience so you can better understand what we’re looking for.
 
@@ -75,7 +75,7 @@ We typically use Google Meet for our interviews. If you are not comfortable
 or familiar with using Google Meet, let your recruiter know and they will
 be happy to set up a test chat with you prior to your interviews! You can
 also test your sound and video prior to your interview using
-[these instructions](https://support.google.com/meet/answer/10409699?hl=en)
+[Google's instructions on how to use Google Meet](https://support.google.com/meet/answer/10409699?hl=en)
 .
 
 In case there are technical issues with your video call, you will also be
