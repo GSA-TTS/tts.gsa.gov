@@ -39,7 +39,7 @@ title: "Login.gov: Data Engineer"
 # Put the opening and closing dates of your posting here, if you have them
 # These dates MUST be formatted as YYYY-MM-DD, where month and day are 2-digits
 opens: 2024-11-13
-closes: 2024-11-18
+closes: 2024-11-13
 
 # If the role is listed on a different site and you just want to link to it,
 # put that link here. You can leave the rest of the template as-is, unless you 
@@ -59,7 +59,7 @@ updated:
 # The basic information and details of the position
 info_intro: Open to U.S. citizens or nationals (residents of American Samoa and Swains Island). Subject to background check.
 
-supervisory_status: non-supervisory
+supervisory_status: Non-Supervisory
 
 usajobs_official_title: IT Specialist (APPSW/INFOSEC)
 
@@ -132,7 +132,7 @@ role_summary: |
   
   This opportunity is located in the Technology Transformation Services (TTS) Solutions Division’s Login.gov team. The Login.gov team is a remote organization and is composed of experts across product development, software engineering, cybersecurity, and platform engineering. 
 
-  As a Data Engineer at Login.gov, you will provide technical guidance and lead implementation on a cross-functional team building out new, secure data products in support of a diverse set of stakeholders on the Login.gov program, including delivery, security, anti-fraud, and compliance functions. You will work closely with other members of the delivery team, including product, UX, and other engineers to define, implement, and maintain data tooling and infrastructure such as data warehousing solutions, ETL pipelines, data quality tools, and dashboarding and reporting tools.
+  As a Data Engineer at Login.gov, you will provide technical guidance and lead implementation on a cross-functional team building out new, secure data products in support of a diverse set of stakeholders on the Login.gov program, including delivery, security, anti-fraud, and compliance functions. You will work closely with other members of the delivery team, including product, UX, and other engineers to define, implement, and maintain data tooling and infrastructure such as data warehousing solutions, ETL pipelines, data quality tools, and dashboard and reporting tools.
   
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
@@ -142,7 +142,7 @@ qualifications: |
 # indenting once.
 specialized_requirements: |
   - Applying data engineering and information security principles, methods, standards, and practices to program operations.
-  - Utilizing various analytical and statistical software to prepare data for analysis and clean data to include from structured/semistructured/unstructured sources.
+  - Utilizing various analytical and statistical software to prepare data for analysis and clean data to include from structured/semi-structured/unstructured sources.
   - Working with various stakeholders and clients to define and determine the appropriate data services or tools requirements for projects.
   - Providing technical expertise on the restructuring and/or re-architecting of program data collection storage to assess potential threats, vulnerabilities, and risks.
   - Using software and programming languages (such as R, Python, SQL) and other tools to conduct operational data engineering functions.
