@@ -355,12 +355,12 @@ module.exports = function (config) {
     </svg>`;
   });
 
-  config.addFilter("numberWithCommas", function(number) {
+  config.addFilter("numberWithCommas", function (number) {
     // Ensure the input is a number
     if (typeof number !== "number") {
       return number;
     }
-    
+
     // Format the number with commas
     return number.toLocaleString();
   });

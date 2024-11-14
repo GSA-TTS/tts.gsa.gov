@@ -2,7 +2,7 @@
 # UNITED STATES for the low and SAN JOSE-SAN FRANCISCO-OAKLAND, CA as the high.
 ---
 GS-1:
-  min_salary: 25684  
+  min_salary: 25684
   max_salary: 39991
 GS-2:
   min_salary: 28880
