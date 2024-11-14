@@ -77,7 +77,7 @@ work_schedule: Full time.
 # Set to 0 if there is no limit
 max_applications: 0
 
-# Use either "permanent" or "temporary"
+# Use either "permanent" or "term-limited"
 appointment_type: permanent
 
 # List key objectives here. Key objectives and sub-bullets will be displayed in the 
