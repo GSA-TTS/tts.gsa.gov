@@ -120,7 +120,7 @@ function addOpenJobsToDOM(openJobs) {
   } else {
     const noJobsText = document.createElement("p");
     noJobsText.innerHTML =
-      'No open positions at this time. Sign up for <a href="/join/newsletter/">job alerts!</a>';
+      'No open positions at this time. <a href="/join/newsletter/">Sign up for job alerts!</a>';
 
     openJobsSection.appendChild(noJobsText);
   }

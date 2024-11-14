@@ -355,6 +355,16 @@ module.exports = function (config) {
     </svg>`;
   });
 
+  config.addFilter("numberWithCommas", function (number) {
+    // Ensure the input is a number
+    if (typeof number !== "number") {
+      return number;
+    }
+
+    // Format the number with commas
+    return number.toLocaleString();
+  });
+
   // If BASEURL env variable exists, update pathPrefix to the BASEURL
   if (process.env.BASEURL) {
     pathPrefix = process.env.BASEURL;

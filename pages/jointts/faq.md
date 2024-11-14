@@ -262,7 +262,7 @@ You can find a list of our upcoming sessions on the
 - You will sign up for health benefits using GSA’s HR Links portal.
   You will receive information and step-by-step guides during onboarding.
 - If you would like to compare health plans in advance, you can view
-  [available plans](https://www.opm.gov/healthcare-insurance/healthcare/plan-information/compare-plans/)
+  [available healthcare plans](https://www.opm.gov/healthcare-insurance/healthcare/plan-information/compare-plans/)
   at any time. There are many different options and plans available, so
   you may find it helpful to compare plans prior to your start date.
 

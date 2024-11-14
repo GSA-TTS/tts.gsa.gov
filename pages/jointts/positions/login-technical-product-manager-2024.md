@@ -80,7 +80,7 @@ work_schedule: Full time.
 max_applications: 300
 
 # Use either "permanent" or "temporary"
-appointment_type: temporary
+appointment_type: term-limited
 
 # List key objectives here. Key objectives and sub-bullets will be displayed in
 # the order they are listed here. You do not need to include key objective
