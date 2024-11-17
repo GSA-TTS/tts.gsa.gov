@@ -10,6 +10,14 @@ const yaml = require("js-yaml");
 const { sassPlugin } = require("esbuild-sass-plugin");
 const svgSprite = require("eleventy-plugin-svg-sprite");
 const { imageShortcode, imageWithClassShortcode } = require("./config");
+const {
+  isValidGitBranch,
+  isValidTwitterHandle,
+  isValidDapAgency,
+  isValidAnalyticsId,
+  isValidSearchKey,
+  isValidSearchAffiliate
+} = require('./js/global.js');
 
 require("dotenv").config();
 
@@ -66,35 +74,8 @@ module.exports = function (config) {
 
   const { hosts } = yaml.load(fs.readFileSync("./_data/site.yaml", "utf8"));
 
-  function isValidGitBranch(branch) {
-    const validGitBranch = /^[a-zA-Z0-9_\-\.\/]+$/;
-    return validGitBranch.test(branch);
-  }
 
-  function isValidTwitterHandle(handle) {
-    const validTwitterHandle = /^\w{1,15}$/;
-    return validTwitterHandle.test(handle);
-  }
-
-  function isValidDapAgency(agency) {
-    const validDapAgency = /^\w{1,15}$/;
-    return validDapAgency.test(agency);
-  }
-
-  function isValidAnalyticsId(ga) {
-    const validAnalyticsId = /^(G|UA|YT|MO)-[a-zA-Z0-9-]+$/;
-    return validAnalyticsId.test(ga);
-  }
-
-  function isValidSearchKey(accessKey) {
-    const validSearchKey = /^[0-9a-zA-Z]{1,}=*$/;
-    return validSearchKey.test(accessKey);
-  }
-
-  function isValidSearchAffiliate(affiliate) {
-    const validSearchAffiliate = /^[0-9a-z-]{1,}$/;
-    return validSearchAffiliate.test(affiliate);
-  }
+  
 
   if (process.env.BRANCH && isValidGitBranch(process.env.BRANCH)) {
     switch (process.env.BRANCH) {
@@ -348,12 +329,7 @@ module.exports = function (config) {
   });
 
   // size 3 through 9
-  config.addLiquidShortcode("uswds_icon_with_size", function (name, size) {
-    return `
-    <svg class="usa-icon usa-icon--size-${size}" aria-hidden="true" role="img">
-      <use xlink:href="#svg-${name}"></use>
-    </svg>`;
-  });
+  config.addLiquidShortcode("uswds_icon_with_size", uswdsIconWithSize);
 
   config.addFilter("numberWithCommas", function (number) {
     // Ensure the input is a number
