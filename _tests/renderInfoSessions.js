@@ -35,15 +35,20 @@ describe("renderInfoSessions", () => {
     expect(listItems[1].querySelector("a").href).toBe(mockInfoSessions[1].link);
   });
 
-  it("handles an empty infoSessions array gracefully", () => {
+  it("does not render anything if infoSessions is an empty array", () => {
     const mockInfoSessions = [];
 
     renderInfoSessions(mockInfoSessions, linkItem, "Software Engineer");
     expect(linkItem.childElementCount).toBe(0);
   });
 
-  it("handles undefined infoSessions gracefully", () => {
+  it("does not render anything if infoSessions is undefined", () => {
     renderInfoSessions(undefined, linkItem, "Software Engineer");
+    expect(linkItem.childElementCount).toBe(0);
+  });
+
+  it("does not render anything if infoSessions is null", () => {
+    renderInfoSessions(null, linkItem, "Software Engineer");
     expect(linkItem.childElementCount).toBe(0);
   });
 
