@@ -288,7 +288,7 @@ function renderGlobalInfoSessions(infoSessions) {
   const infoSessionsList = document.createElement("ul");
 
   // Iterate through all the info sessions.
-  infoSessions.forEach((session) => {
+  infoSessions && infoSessions.forEach((session) => {
     // Lets get all our variables together for converting the end time into a timestamp.
     const sessionSimpleDate = session["date"].split("T")[0];
     const sessionTime = session["time"];
@@ -419,4 +419,5 @@ module.exports = {
   formatDate,
   formatSessionTimes,
   convertTimeToZone,
+  renderGlobalInfoSessions
 };
