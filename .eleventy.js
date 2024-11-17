@@ -328,18 +328,9 @@ module.exports = function (config) {
     </svg>`;
   });
 
-  // size 3 through 9
   config.addLiquidShortcode("uswds_icon_with_size", uswdsIconWithSize);
 
-  config.addFilter("numberWithCommas", function (number) {
-    // Ensure the input is a number
-    if (typeof number !== "number") {
-      return number;
-    }
-
-    // Format the number with commas
-    return number.toLocaleString();
-  });
+  config.addFilter("numberWithCommas", numberWithCommas);
 
   // If BASEURL env variable exists, update pathPrefix to the BASEURL
   if (process.env.BASEURL) {

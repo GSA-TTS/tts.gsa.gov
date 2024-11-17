@@ -68,6 +68,27 @@ function isValidSearchAffiliate(affiliate) {
     return validSearchAffiliate.test(affiliate);
 }
 
+function numberWithCommas(number) {
+    // Ensure the input is a number
+    if (typeof number !== "number") {
+      return number;
+    }
+  
+    // Separate the integer and decimal parts
+    const [integerPart, decimalPart] = number.toString().split(".");
+  
+    // Format the integer part with commas
+    const formattedInteger = integerPart.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  
+    // If there's no decimal part, return the formatted integer part only
+    if (!decimalPart) {
+      return formattedInteger;
+    }
+  
+    // If there's a decimal part, return the formatted integer part with the decimal part
+    return `${formattedInteger}.${decimalPart}`;
+}
+  
 
 function uswdsIconWithSize (name, size) {
     return `
@@ -83,5 +104,6 @@ module.exports = {
     isValidAnalyticsId,
     isValidSearchKey,
     isValidSearchAffiliate,
+    numberWithCommas,
     uswdsIconWithSize
 };
