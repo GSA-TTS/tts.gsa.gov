@@ -184,12 +184,12 @@ function addUpcomingJobsToDOM(upcomingJobs) {
   }
 }
 
-function renderInfoSessions(infoSessions, linkItem, title = "") {
+function renderInfoSessions(infoSessions, linkItem, title = "", layout = "position") {
   // Create the unordered list that the info sessions will be assigned to.
   const infoSessionsList = document.createElement("ul");
 
   // Iterate through all the info sessions.
-  infoSessions.forEach((session) => {
+  infoSessions && infoSessions.forEach((session) => {
     // Lets get all our variables together for converting the end time into a timestamp.
     const sessionSimpleDate = session["date"]
       ? session["date"].split("T")[0]
@@ -253,7 +253,7 @@ function renderInfoSessions(infoSessions, linkItem, title = "") {
 
   // If there are info sessions any info sessions in the list, generate the HTML to display them
   if (infoSessionsList.childElementCount !== 0) {
-    if (layout.includes("/home/")) {
+    if (layout.includes("join")) {
       const wrapper = document.createElement("aside");
       wrapper.classList.add("usa-alert-info");
       wrapper.classList.add("usa-alert");
@@ -419,5 +419,6 @@ module.exports = {
   formatDate,
   formatSessionTimes,
   convertTimeToZone,
-  renderGlobalInfoSessions
+  renderGlobalInfoSessions,
+  renderInfoSessions
 };
