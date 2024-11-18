@@ -89,7 +89,7 @@ describe("renderInfoSessions", () => {
 
     expect(listItems.length).toBe(1);
     expect(listItems[0].querySelector("a").href).toBe(
-      "https://example.com/future-session"
+      "https://example.com/future-session",
     );
   });
 
@@ -107,7 +107,7 @@ describe("renderInfoSessions", () => {
 
     expect(wrapper).not.toBeNull();
     expect(wrapper.querySelector(".usa-alert-body p").innerHTML).toContain(
-      "Upcoming or ongoing info sessions for Product Manager"
+      "Upcoming or ongoing info sessions for Product Manager",
     );
   });
 
@@ -125,7 +125,7 @@ describe("renderInfoSessions", () => {
 
     expect(wrapper).not.toBeNull();
     expect(wrapper.querySelector("p").innerHTML).toContain(
-      "Attend an information session for this position"
+      "Attend an information session for this position",
     );
   });
 });

@@ -184,72 +184,82 @@ function addUpcomingJobsToDOM(upcomingJobs) {
   }
 }
 
-function renderInfoSessions(infoSessions, linkItem, title = "", layout = "position") {
+function renderInfoSessions(
+  infoSessions,
+  linkItem,
+  title = "",
+  layout = "position",
+) {
   // Create the unordered list that the info sessions will be assigned to.
   const infoSessionsList = document.createElement("ul");
 
   // Iterate through all the info sessions.
-  infoSessions && infoSessions.forEach((session) => {
-    // Lets get all our variables together for converting the end time into a timestamp.
-    const sessionSimpleDate = session["date"]
-      ? session["date"].split("T")[0]
-      : "";
-    const sessionTime = session["time"];
-    const [startTime, endTime] = sessionTime.split("-");
-    const endTimeFormatted = endTime.replace("pm", " PM").replace("am", " AM");
-    const [time, modifier] = endTimeFormatted.split(" ");
-    let [hours, minutes] = time.split(":");
+  infoSessions &&
+    infoSessions.forEach((session) => {
+      // Lets get all our variables together for converting the end time into a timestamp.
+      const sessionSimpleDate = session["date"]
+        ? session["date"].split("T")[0]
+        : "";
+      const sessionTime = session["time"];
+      const [startTime, endTime] = sessionTime.split("-");
+      const endTimeFormatted = endTime
+        .replace("pm", " PM")
+        .replace("am", " AM");
+      const [time, modifier] = endTimeFormatted.split(" ");
+      let [hours, minutes] = time.split(":");
 
-    if (modifier === "PM" && hours !== "12") {
-      hours = String(+hours + 12);
-    } else if (modifier === "AM" && hours === "12") {
-      hours = "00";
-    }
+      if (modifier === "PM" && hours !== "12") {
+        hours = String(+hours + 12);
+      } else if (modifier === "AM" && hours === "12") {
+        hours = "00";
+      }
 
-    const formattedDateTime = `${sessionSimpleDate}T${hours}:${minutes}:00`;
+      const formattedDateTime = `${sessionSimpleDate}T${hours}:${minutes}:00`;
 
-    // Convert the end date and time into a UTC timestamp and get the current time as a UTC timestamp.
-    const sessionEndDateTime = new Date(formattedDateTime);
-    const sessionEndTimestamp = sessionEndDateTime.getTime();
-    const now = new Date();
-    const nowTimestamp = now.getTime();
+      // Convert the end date and time into a UTC timestamp and get the current time as a UTC timestamp.
+      const sessionEndDateTime = new Date(formattedDateTime);
+      const sessionEndTimestamp = sessionEndDateTime.getTime();
+      const now = new Date();
+      const nowTimestamp = now.getTime();
 
-    // If the session hasn't ended, show it.
-    if (sessionEndTimestamp > nowTimestamp) {
-      const infoSession = document.createElement("li");
+      // If the session hasn't ended, show it.
+      if (sessionEndTimestamp > nowTimestamp) {
+        const infoSession = document.createElement("li");
 
-      const sessionDate = new Date(sessionSimpleDate).toLocaleDateString(
-        "en-US",
-        {
-          weekday: "long",
-          year: "numeric",
-          month: "long",
-          day: "numeric",
-          timeZone: "UTC",
-        },
-      );
+        const sessionDate = new Date(sessionSimpleDate).toLocaleDateString(
+          "en-US",
+          {
+            weekday: "long",
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+            timeZone: "UTC",
+          },
+        );
 
-      const formattedTime = formatSessionTimes(sessionTime);
+        const formattedTime = formatSessionTimes(sessionTime);
 
-      const infoSessionLink = document.createElement("a");
-      infoSessionLink.href = session.link;
-      infoSessionLink.target = "_blank";
-      infoSessionLink.rel = "noopener noreferrer";
-      infoSessionLink.innerText = sessionDate;
+        const infoSessionLink = document.createElement("a");
+        infoSessionLink.href = session.link;
+        infoSessionLink.target = "_blank";
+        infoSessionLink.rel = "noopener noreferrer";
+        infoSessionLink.innerText = sessionDate;
 
-      const sessionText = document.createElement("p");
-      sessionText.appendChild(infoSessionLink);
+        const sessionText = document.createElement("p");
+        sessionText.appendChild(infoSessionLink);
 
-      // Add the text for the time after the link
-      sessionText.appendChild(document.createTextNode(" at " + formattedTime));
+        // Add the text for the time after the link
+        sessionText.appendChild(
+          document.createTextNode(" at " + formattedTime),
+        );
 
-      // Append the paragraph to the list item
-      infoSession.appendChild(sessionText);
+        // Append the paragraph to the list item
+        infoSession.appendChild(sessionText);
 
-      // Finally, append the list item to the infoSessionsList
-      infoSessionsList.appendChild(infoSession);
-    }
-  });
+        // Finally, append the list item to the infoSessionsList
+        infoSessionsList.appendChild(infoSession);
+      }
+    });
 
   // If there are info sessions any info sessions in the list, generate the HTML to display them
   if (infoSessionsList.childElementCount !== 0) {
@@ -288,66 +298,69 @@ function renderGlobalInfoSessions(infoSessions) {
   const infoSessionsList = document.createElement("ul");
 
   // Iterate through all the info sessions.
-  infoSessions && infoSessions.forEach((session) => {
-    // Lets get all our variables together for converting the end time into a timestamp.
-    const sessionSimpleDate = session["date"].split("T")[0];
-    const sessionTime = session["time"];
-    const [startTime, endTime] = sessionTime.split("-");
-    const endTimeFormatted = endTime.replace("pm", " PM").replace("am", " AM");
-    const [time, modifier] = endTimeFormatted.split(" ");
-    let [hours, minutes] = time.split(":");
+  infoSessions &&
+    infoSessions.forEach((session) => {
+      // Lets get all our variables together for converting the end time into a timestamp.
+      const sessionSimpleDate = session["date"].split("T")[0];
+      const sessionTime = session["time"];
+      const [startTime, endTime] = sessionTime.split("-");
+      const endTimeFormatted = endTime
+        .replace("pm", " PM")
+        .replace("am", " AM");
+      const [time, modifier] = endTimeFormatted.split(" ");
+      let [hours, minutes] = time.split(":");
 
-    if (modifier === "PM" && hours !== "12") {
-      hours = String(+hours + 12);
-    } else if (modifier === "AM" && hours === "12") {
-      hours = "00";
-    }
+      if (modifier === "PM" && hours !== "12") {
+        hours = String(+hours + 12);
+      } else if (modifier === "AM" && hours === "12") {
+        hours = "00";
+      }
 
-    const formattedDateTime = `${sessionSimpleDate}T${hours}:${minutes}:00`;
+      const formattedDateTime = `${sessionSimpleDate}T${hours}:${minutes}:00`;
 
-    // Convert the end date and time into a UTC timestamp and get the current time as a UTC timestamp.
-    const sessionEndDateTime = new Date(formattedDateTime);
-    const sessionEndTimestamp = sessionEndDateTime.getTime();
-    const now = new Date();
-    const nowTimestamp = now.getTime();
+      // Convert the end date and time into a UTC timestamp and get the current time as a UTC timestamp.
+      const sessionEndDateTime = new Date(formattedDateTime);
+      const sessionEndTimestamp = sessionEndDateTime.getTime();
+      const now = new Date();
+      const nowTimestamp = now.getTime();
 
-    // If the session hasn't ended, show it.
-    if (sessionEndTimestamp > nowTimestamp) {
-      const infoSession = document.createElement("li");
+      // If the session hasn't ended, show it.
+      if (sessionEndTimestamp > nowTimestamp) {
+        const infoSession = document.createElement("li");
 
-      const sessionDate = new Date(sessionSimpleDate).toLocaleDateString(
-        "en-US",
-        {
-          weekday: "long",
-          year: "numeric",
-          month: "long",
-          day: "numeric",
-          timeZone: "UTC",
-        },
-      );
+        const sessionDate = new Date(sessionSimpleDate).toLocaleDateString(
+          "en-US",
+          {
+            weekday: "long",
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+            timeZone: "UTC",
+          },
+        );
 
-      const formattedTime = formatSessionTimes(sessionTime);
+        const formattedTime = formatSessionTimes(sessionTime);
 
-      const infoSessionLink = document.createElement("a");
-      infoSessionLink.href = session.link;
-      infoSessionLink.target = "_blank";
-      infoSessionLink.rel = "noopener noreferrer";
-      infoSessionLink.innerText = sessionDate;
+        const infoSessionLink = document.createElement("a");
+        infoSessionLink.href = session.link;
+        infoSessionLink.target = "_blank";
+        infoSessionLink.rel = "noopener noreferrer";
+        infoSessionLink.innerText = sessionDate;
 
-      const sessionText = document.createElement("p");
-      sessionText.style.marginTop = "0";
+        const sessionText = document.createElement("p");
+        sessionText.style.marginTop = "0";
 
-      // Add the text for the time after the link
-      sessionText.innerText = formattedTime;
+        // Add the text for the time after the link
+        sessionText.innerText = formattedTime;
 
-      // Append the paragraph to the list item
-      infoSession.appendChild(infoSessionLink);
-      infoSession.appendChild(sessionText);
+        // Append the paragraph to the list item
+        infoSession.appendChild(infoSessionLink);
+        infoSession.appendChild(sessionText);
 
-      // Finally, append the list item to the infoSessionsList
-      infoSessionsList.appendChild(infoSession);
-    }
-  });
+        // Finally, append the list item to the infoSessionsList
+        infoSessionsList.appendChild(infoSession);
+      }
+    });
 
   if (infoSessionsList.childElementCount !== 0) {
     globalInfoSessionsWrapper.appendChild(infoSessionsList);
@@ -420,5 +433,5 @@ module.exports = {
   formatSessionTimes,
   convertTimeToZone,
   renderGlobalInfoSessions,
-  renderInfoSessions
+  renderInfoSessions,
 };

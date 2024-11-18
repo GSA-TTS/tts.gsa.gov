@@ -18,8 +18,8 @@ const {
   isValidSearchKey,
   isValidSearchAffiliate,
   uswdsIconWithSize,
-  numberWithCommas
-} = require('./js/global.js');
+  numberWithCommas,
+} = require("./js/global.js");
 
 require("dotenv").config();
 
@@ -75,9 +75,6 @@ module.exports = function (config) {
   // absolute URLs
 
   const { hosts } = yaml.load(fs.readFileSync("./_data/site.yaml", "utf8"));
-
-
-  
 
   if (process.env.BRANCH && isValidGitBranch(process.env.BRANCH)) {
     switch (process.env.BRANCH) {

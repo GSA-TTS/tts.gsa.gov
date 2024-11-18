@@ -84,7 +84,7 @@ describe("renderGlobalInfoSessions", () => {
     const renderedSessions = globalInfoSessionsWrapper.querySelectorAll("li");
     expect(renderedSessions.length).toBe(1);
     expect(renderedSessions[0].querySelector("a").href).toBe(
-      "http://example.com/future-session"
+      "http://example.com/future-session",
     );
   });
 });
