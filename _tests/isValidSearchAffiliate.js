@@ -1,20 +1,20 @@
 const { isValidSearchAffiliate } = require("../js/global");
 
 describe("isValidSearchAffiliate", () => {
-  //   test('should return true for valid search affiliates', () => {
-  //     const validAffiliates = [
-  //       'affiliate1',     // Valid alphanumeric
-  //       'affiliate-123',  // Valid alphanumeric with hyphen
-  //       'aff123iliate',   // Valid alphanumeric with hyphen in the middle
-  //       'affiliate',      // Valid simple affiliate name
-  //       'search-key',     // Valid with a hyphen
-  //       'a',              // Valid single character
-  //     ];
+    test('should return true for valid search affiliates', () => {
+      const validAffiliates = [
+        'affiliate1',     // Valid alphanumeric
+        'affiliate-123',  // Valid alphanumeric with hyphen
+        'aff123iliate',   // Valid alphanumeric with hyphen in the middle
+        'affiliate',      // Valid simple affiliate name
+        'search-key',     // Valid with a hyphen
+        'a',              // Valid single character
+      ];
 
-  //     validAffiliates.forEach(affiliate => {
-  //       expect(isValidSearchAffiliate(affiliate)).toBe(true);
-  //     });
-  //   });
+      validAffiliates.forEach(affiliate => {
+        expect(isValidSearchAffiliate(affiliate)).toBe(true);
+      });
+    });
 
   test("should return false for invalid search affiliates", () => {
     const invalidAffiliates = [
