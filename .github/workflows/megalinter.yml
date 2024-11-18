@@ -9,7 +9,6 @@ on:
       - staging
   workflow_dispatch:
 
-
 permissions:
   contents: read
 
