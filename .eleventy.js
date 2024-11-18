@@ -16,7 +16,9 @@ const {
   isValidDapAgency,
   isValidAnalyticsId,
   isValidSearchKey,
-  isValidSearchAffiliate
+  isValidSearchAffiliate,
+  uswdsIconWithSize,
+  numberWithCommas
 } = require('./js/global.js');
 
 require("dotenv").config();
