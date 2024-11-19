@@ -67,7 +67,7 @@ module.exports = function (config) {
 
   const { hosts } = yaml.load(fs.readFileSync("./_data/site.yaml", "utf8"));
 
-  if (process.env.BRANCH && isValidGitBranch(process.env.BRANCH)) {
+  if (process.env.BRANCH && environmentValidators.isValidGitBranch(process.env.BRANCH)) {
     switch (process.env.BRANCH) {
       case "main":
         baseUrl = new URL(hosts.live).href.replace(/\/$/, "");
