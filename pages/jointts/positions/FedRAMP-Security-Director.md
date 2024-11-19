@@ -269,7 +269,7 @@ line and write your custom text in its place.
 {% endcomment --------------------------------------------------------------- %}
 {% comment %}{% include job/appointment_type.html %}{% endcomment %}
 
-Learn more about the benefits of working at [GSA](https://www.gsa.gov/portal/category/26702) and [TTS]({{ '/join/compensation-and-benefits.md' | url }}).
+Learn more about the benefits of working at {% comment %}[GSA](https://www.gsa.gov/portal/category/26702) and {% endcomment %}[TTS]({{ '/join/compensation-and-benefits.md' | url }}).
 
 ## Role summary
 
