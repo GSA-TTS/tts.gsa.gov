@@ -3,7 +3,9 @@ const environmentValidators = require("../js/environmentValidators");
 
 describe("Valid git branch", () => {
   it("should be a valid branch", () => {
-    const result = environmentValidators.isValidGitBranch("wesley-dean-was-here");
+    const result = environmentValidators.isValidGitBranch(
+      "wesley-dean-was-here",
+    );
     expect(result).toBe(true);
   });
 
@@ -13,7 +15,9 @@ describe("Valid git branch", () => {
   });
 
   it("should be invalid (invalid character)", () => {
-    const result = environmentValidators.isValidGitBranch("You Shall Not Pass!");
+    const result = environmentValidators.isValidGitBranch(
+      "You Shall Not Pass!",
+    );
     expect(result).toBe(false);
   });
 });
@@ -30,12 +34,15 @@ describe("Valid Twitter / X Handle", () => {
   });
 
   it("should be invalid (invalid characters)", () => {
-    const result = environmentValidators.isValidTwitterHandle("Wes Dean Rocks!");
+    const result =
+      environmentValidators.isValidTwitterHandle("Wes Dean Rocks!");
     expect(result).toBe(false);
   });
 
   it("should be invalid (too long)", () => {
-    const result = environmentValidators.isValidTwitterHandle("abcdefghijklmnopqrstuvwxyz");
+    const result = environmentValidators.isValidTwitterHandle(
+      "abcdefghijklmnopqrstuvwxyz",
+    );
     expect(result).toBe(false);
   });
 });
@@ -64,7 +71,9 @@ describe("Valid DAP agency", () => {
 
 describe("Google Site Verification Tokens", () => {
   it("should be a valid token", () => {
-    const result = environmentValidators.isValidVerificationToken("abcdefghij01234567890abcdefghij1234567890abc");
+    const result = environmentValidators.isValidVerificationToken(
+      "abcdefghij01234567890abcdefghij1234567890abc",
+    );
     expect(result).toBe(true);
   });
 
@@ -79,52 +88,65 @@ describe("Google Site Verification Tokens", () => {
   });
 
   it("should be invalid (too long)", () => {
-    const result = environmentValidators.isValidVerificationToken("abcdefghij01234567890abcdefghij1234567890abcdefghij");
+    const result = environmentValidators.isValidVerificationToken(
+      "abcdefghij01234567890abcdefghij1234567890abcdefghij",
+    );
     expect(result).toBe(false);
   });
 
   it("should be invalid (invalid characters)", () => {
-    const result = environmentValidators.isValidVerificationToken("abcdefghij01234567890abcdefghij01234567890!!!");
+    const result = environmentValidators.isValidVerificationToken(
+      "abcdefghij01234567890abcdefghij01234567890!!!",
+    );
     expect(result).toBe(false);
   });
 });
 
 describe("Valid search key", () => {
   it("should be a valid key (no trailing =)", () => {
-    const result = environmentValidators.isValidSearchKey("abcdefghij01234567890abcdefghij1234567890abc");
+    const result = environmentValidators.isValidSearchKey(
+      "abcdefghij01234567890abcdefghij1234567890abc",
+    );
     expect(result).toBe(true);
   });
 
   it("should be a valid key (trailing =)", () => {
-    const result = environmentValidators.isValidSearchKey("abcdefghij01234567890abcdefghij1234567890abc=");
+    const result = environmentValidators.isValidSearchKey(
+      "abcdefghij01234567890abcdefghij1234567890abc=",
+    );
     expect(result).toBe(true);
   });
 
- it("should be invalid (empty)", () => {
+  it("should be invalid (empty)", () => {
     const result = environmentValidators.isValidSearchKey("");
     expect(result).toBe(false);
   });
 
   it("should be invalid (invalid characters)", () => {
-    const result = environmentValidators.isValidSearchKey("Wes Dean is still going with these tests!!");
+    const result = environmentValidators.isValidSearchKey(
+      "Wes Dean is still going with these tests!!",
+    );
     expect(result).toBe(false);
   });
 });
 
-
 describe("Valid search affiliate", () => {
   it("should be a valid affiliate", () => {
-    const result = environmentValidators.isValidSearchAffiliate("abcdefghij01234567890abcdefghij1234567890abc");
+    const result = environmentValidators.isValidSearchAffiliate(
+      "abcdefghij01234567890abcdefghij1234567890abc",
+    );
     expect(result).toBe(true);
   });
 
- it("should be invalid (empty)", () => {
+  it("should be invalid (empty)", () => {
     const result = environmentValidators.isValidSearchAffiliate("");
     expect(result).toBe(false);
   });
 
   it("should be invalid (invalid characters)", () => {
-    const result = environmentValidators.isValidSearchAffiliate("Wes Dean is still going with these tests!!");
+    const result = environmentValidators.isValidSearchAffiliate(
+      "Wes Dean is still going with these tests!!",
+    );
     expect(result).toBe(false);
   });
 });
