@@ -39,7 +39,17 @@ jobs:
             else
               echo "staging/"
             fi
+
+            echo -n "DELAY_SECONDS="
+            if [ -n "${{ vars.DELAY_SECONDS }}" ] ; then
+              echo "${{ vars.DELAY_SECONDS }}"
+            else
+              echo "60"
+            fi
           ) >> "$GITHUB_OUTPUT"
+
+      - name: Delay while the preview URL is built
+        run: "sleep ${{ steps.customvars.outputs.DELAY_SECONDS }}"
 
       - name: Wait for site to render
         run: curl --retry-delay 10 --retry 18 --retry-all-errors -f -X HEAD -s -o /dev/null "${{ steps.customvars.outputs.BASE_URL }}${{ steps.customvars.outputs.URL_PATH }}"
@@ -50,5 +60,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           message: |
             ## Preview This Branch
-            [Preview](${{ steps.customvars.outputs.BASE_URL }}${{ steps.customvars.outputs.URL_PATH }})
+
+            You may view the preview version of the site with the following URL:
+
+            [${{ steps.customvars.outputs.BASE_URL }}${{ steps.customvars.outputs.URL_PATH }}](${{ steps.customvars.outputs.BASE_URL }}${{ steps.customvars.outputs.URL_PATH }})
+
+            It may take a minute before changes in this Pull Request (PR) show up :stopwatch:
           comment_tag: button
