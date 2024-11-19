@@ -6,7 +6,6 @@ on:
   pull_request:
   workflow_dispatch:
 
-
 permissions: read-all
 
 concurrency:
@@ -49,11 +48,8 @@ jobs:
             fi
           ) >> "$GITHUB_OUTPUT"
 
-      - name: Delete a comment
-        uses: thollander/actions-comment-pull-request@24bffb9b452ba05a4f3f77933840a6a841d1b32b # pin@v3
-        with:
-          comment-tag: button
-          mode: delete
+      - name: Delay while the preview URL is built
+        run: "sleep ${{ steps.customvars.outputs.DELAY_SECONDS }}"
 
       - name: Wait for site to render
         run: curl --retry-delay 10 --retry 18 --retry-all-errors -f -X HEAD -s -o /dev/null "${{ steps.customvars.outputs.BASE_URL }}${{ steps.customvars.outputs.URL_PATH }}"
