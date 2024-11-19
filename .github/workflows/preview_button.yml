@@ -39,17 +39,7 @@ jobs:
             else
               echo "staging/"
             fi
-
-            echo -n "DELAY_SECONDS="
-            if [ -n "${{ vars.DELAY_SECONDS }}" ] ; then
-              echo "${{ vars.DELAY_SECONDS }}"
-            else
-              echo "60"
-            fi
           ) >> "$GITHUB_OUTPUT"
-
-      - name: Delay while the preview URL is built
-        run: "sleep ${{ steps.customvars.outputs.DELAY_SECONDS }}"
 
       - name: Wait for site to render
         run: curl --retry-delay 10 --retry 18 --retry-all-errors -f -X HEAD -s -o /dev/null "${{ steps.customvars.outputs.BASE_URL }}${{ steps.customvars.outputs.URL_PATH }}"
