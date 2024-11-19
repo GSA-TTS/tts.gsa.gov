@@ -111,6 +111,7 @@ module.exports = function (config) {
     config.addGlobalData("site.ga", process.env.GA);
   }
 
+  // Search access key.
   if (
     process.env.SEARCH_ACCESS_KEY &&
     isValidSearchKey(process.env.SEARCH_ACCESS_KEY)
@@ -118,11 +119,25 @@ module.exports = function (config) {
     config.addGlobalData("site.access_key", process.env.SEARCH_ACCESS_KEY);
   }
 
+  // Search affiliate token.
   if (
     process.env.SEARCH_AFFILIATE &&
     isValidSearchAffiliate(process.env.SEARCH_AFFILIATE)
   ) {
     config.addGlobalData("site.affiliate", process.env.SEARCH_AFFILIATE);
+  }
+
+  // Google verification token.
+  if (
+    process.env.GOOGLE_VERIFICATION_TOKEN &&
+    environmentValidators.isValidVerificationToken(
+      process.env.GOOGLE_VERIFICATION_TOKEN,
+    )
+  ) {
+    config.addGlobalData(
+      "site.google_verification_token",
+      process.env.GOOGLE_VERIFICATION_TOKEN,
+    );
   }
 
   // Template function used to sort a collection by a certain property
