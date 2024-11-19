@@ -47,5 +47,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           message: |
             ## Preview This Branch
-            [Preview](${{ steps.customvars.outputs.BASE_URL }}${{ steps.customvars.URL_PATH }})
+            [Preview](${{ steps.customvars.outputs.BASE_URL }}${{ steps.customvars.outputs.URL_PATH }})
           comment_tag: button
