@@ -83,11 +83,17 @@ module.exports = function (config) {
   config.addGlobalData("baseUrl", baseUrl);
   config.addGlobalData("site.baseUrl", baseUrl);
 
-  if (process.env.TWITTER && environmentValidators.isValidTwitterHandle(process.env.TWITTER)) {
+  if (
+    process.env.TWITTER &&
+    environmentValidators.isValidTwitterHandle(process.env.TWITTER)
+  ) {
     config.addGlobalData("site.twitter", process.env.TWITTER);
   }
 
-  if (process.env.DAP_AGENCY && environmentValidators.isValidDapAgency(process.env.DAP_AGENCY)) {
+  if (
+    process.env.DAP_AGENCY &&
+    environmentValidators.isValidDapAgency(process.env.DAP_AGENCY)
+  ) {
     config.addGlobalData("site.dap.agency", process.env.DAP_AGENCY);
   }
 
@@ -98,15 +104,23 @@ module.exports = function (config) {
     config.addGlobalData("site.dap.subagency", process.env.DAP_SUBAGENCY);
   }
 
-  if (process.env.GA && environmentValidators.isValidAnalyticsId(process.env.GA)) {
+  if (
+    process.env.GA &&
+    environmentValidators.isValidAnalyticsId(process.env.GA)
+  ) {
     config.addGlobalData("site.ga", process.env.GA);
   }
 
   if (
     process.env.GOOGLE_VERIFICATION_TOKEN &&
-    environmentValidators.isValidVerificationToken (process.env.GOOGLE_VERIFICATION_TOKEN)
+    environmentValidators.isValidVerificationToken(
+      process.env.GOOGLE_VERIFICATION_TOKEN,
+    )
   ) {
-    config.addGlobalData("site.google_verification_token", process.env.GOOGLE_VERIFICATION_TOKEN)
+    config.addGlobalData(
+      "site.google_verification_token",
+      process.env.GOOGLE_VERIFICATION_TOKEN,
+    );
   }
 
   if (

@@ -40,5 +40,5 @@ module.exports = {
   isValidAnalyticsId,
   isValidVerificationToken,
   isValidSearchKey,
-  isValidSearchAffiliate
+  isValidSearchAffiliate,
 };
