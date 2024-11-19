@@ -1,0 +1,59 @@
+---
+name: Preview Button
+
+# yamllint disable-line rule:truthy
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions: read-all
+
+concurrency:
+  group: ${{ github.ref }}-${{ github.workflow }}
+  cancel-in-progress: true
+
+jobs:
+  button:
+    runs-on: ubuntu-latest
+
+    permissions:
+      issues: write
+      pull-requests: write
+
+    steps:
+      - name: Setup custom variables
+        id: customvars
+        run: |
+          ( echo -n "BASE_URL="
+            if [ -n "${{ vars.BASE_URL }}" ] ; then
+              echo "${{ vars.BASE_URL }}"
+            else
+              echo "https://federalist-a2423046-fe43-4e75-a2ef-2651e5e123ca.sites.pages.cloud.gov/preview/gsa-tts/tts.gsa.gov/"
+            fi
+
+            echo -n "URL_PATH="
+            if [ -n "${{ vars.URL_PATH }}" ] ; then
+              echo "${{ vars.URL_PATH }}/"
+            elif [ -n "${GITHUB_HEAD_REF:-}" ] ; then
+              echo "${GITHUB_HEAD_REF}/"
+            else
+              echo "staging/"
+            fi
+          ) >> "$GITHUB_OUTPUT"
+
+      - name: Wait for site to render
+        run: curl --retry-delay 10 --retry 18 --retry-all-errors -f -X HEAD -s -o /dev/null "${{ steps.customvars.outputs.BASE_URL }}${{ steps.customvars.outputs.URL_PATH }}"
+
+      - name: Comment on pull request.
+        uses: thollander/actions-comment-pull-request@fabd468d3a1a0b97feee5f6b9e499eab0dd903f6 # pin@v2.5.0
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          message: |
+            ## Preview This Branch
+
+            You may view the preview version of the site with the following URL:
+
+            [${{ steps.customvars.outputs.BASE_URL }}${{ steps.customvars.outputs.URL_PATH }}](${{ steps.customvars.outputs.BASE_URL }}${{ steps.customvars.outputs.URL_PATH }})
+
+            It may take a minute before changes in this Pull Request (PR) show up :stopwatch:
+          comment_tag: button
