@@ -28,7 +28,7 @@ jobs:
             if [ -n "${{ vars.BASE_URL }}" ] ; then
               echo "${{ vars.BASE_URL }}"
             else
-              echo "<a href='https://federalist-a2423046-fe43-4e75-a2ef-2651e5e123ca.sites.pages.cloud.gov/preview/gsa-tts/tts.gsa.gov/' target='_blank' rel='noopener' style='width: -moz-fit-content; width: fit-content; background: #005ea2; border: 0; border-radius: .25rem .25rem 0 0; cursor: pointer; display: inline-block; font-weight: 700; margin-right: .5rem; padding: .75rem 1.25rem; text-align: center; position: fixed; bottom: 0; right: 0; color: #fff; text-decoration: none; letter-spacing: .5px; z-index: 10'>Preview this branch</a>"
+              echo "https://federalist-a2423046-fe43-4e75-a2ef-2651e5e123ca.sites.pages.cloud.gov/preview/gsa-tts/tts.gsa.gov/"
             fi
 
             echo -n "URL_PATH="
@@ -45,5 +45,7 @@ jobs:
         uses: thollander/actions-comment-pull-request@fabd468d3a1a0b97feee5f6b9e499eab0dd903f6 # pin@v2.5.0
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          message: "${{ steps.customvars.outputs.BASE_URL }}${{ steps.customvars.URL_PATH }}"
+          message: |
+            ## Preview This Branch
+            [Preview](${{ steps.customvars.outputs.BASE_URL }}${{ steps.customvars.URL_PATH }})
           comment_tag: button
