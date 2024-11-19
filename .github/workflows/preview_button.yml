@@ -13,7 +13,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  pa11y:
+  button:
     runs-on: ubuntu-latest
 
     permissions:
@@ -28,7 +28,7 @@ jobs:
             if [ -n "${{ vars.BASE_URL }}" ] ; then
               echo "${{ vars.BASE_URL }}"
             else
-              echo "https://federalist-a2423046-fe43-4e75-a2ef-2651e5e123ca.sites.pages.cloud.gov/preview/gsa-tts/tts.gsa.gov/"
+              echo "<a href='https://federalist-a2423046-fe43-4e75-a2ef-2651e5e123ca.sites.pages.cloud.gov/preview/gsa-tts/tts.gsa.gov/' target='_blank' rel='noopener' style='width: -moz-fit-content; width: fit-content; background: #005ea2; border: 0; border-radius: .25rem .25rem 0 0; cursor: pointer; display: inline-block; font-weight: 700; margin-right: .5rem; padding: .75rem 1.25rem; text-align: center; position: fixed; bottom: 0; right: 0; color: #fff; text-decoration: none; letter-spacing: .5px; z-index: 10'>Preview this branch</a>"
             fi
 
             echo -n "URL_PATH="
