@@ -41,6 +41,9 @@ jobs:
             fi
           ) >> "$GITHUB_OUTPUT"
 
+      - name: Wait for site to render
+        run: curl --retry-delay 10 --retry 18 --retry-all-errors -f -X HEAD -s -o /dev/null "${{ steps.customvars.outputs.BASE_URL }}${{ steps.customvars.outputs.URL_PATH }}"
+
       - name: Comment on pull request.
         uses: thollander/actions-comment-pull-request@fabd468d3a1a0b97feee5f6b9e499eab0dd903f6 # pin@v2.5.0
         with:
