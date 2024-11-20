@@ -69,6 +69,17 @@ function isValidSearchAffiliate(affiliate) {
   return validSearchAffiliate.test(affiliate);
 }
 
+function isValidVerificationToken(token) {
+  if (token === null || token === undefined) {
+    return false;
+  }
+
+  console.log(`Testing token: "${token}" with length: ${token.length}`);
+  const validToken = /^[A-Za-z0-9_-]{43}$/;
+  return validToken.test(token);
+}
+
+
 function numberWithCommas(number) {
   // Ensure the input is a number
   if (typeof number !== "number") {
@@ -104,6 +115,7 @@ module.exports = {
   isValidAnalyticsId,
   isValidSearchKey,
   isValidSearchAffiliate,
+  isValidVerificationToken,
   numberWithCommas,
   uswdsIconWithSize,
 };

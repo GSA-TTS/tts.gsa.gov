@@ -17,6 +17,7 @@ const {
   isValidAnalyticsId,
   isValidSearchKey,
   isValidSearchAffiliate,
+  isValidVerificationToken,
   uswdsIconWithSize,
   numberWithCommas,
 } = require("./js/global.js");
@@ -129,8 +130,7 @@ module.exports = function (config) {
 
   // Google verification token.
   if (
-    process.env.GOOGLE_VERIFICATION_TOKEN &&
-    environmentValidators.isValidVerificationToken(
+    process.env.GOOGLE_VERIFICATION_TOKEN && isValidVerificationToken(
       process.env.GOOGLE_VERIFICATION_TOKEN,
     )
   ) {
