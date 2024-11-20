@@ -79,7 +79,6 @@ function isValidVerificationToken(token) {
   return validToken.test(token);
 }
 
-
 function numberWithCommas(number) {
   // Ensure the input is a number
   if (typeof number !== "number") {

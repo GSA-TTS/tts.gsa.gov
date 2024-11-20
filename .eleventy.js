@@ -130,9 +130,8 @@ module.exports = function (config) {
 
   // Google verification token.
   if (
-    process.env.GOOGLE_VERIFICATION_TOKEN && isValidVerificationToken(
-      process.env.GOOGLE_VERIFICATION_TOKEN,
-    )
+    process.env.GOOGLE_VERIFICATION_TOKEN &&
+    isValidVerificationToken(process.env.GOOGLE_VERIFICATION_TOKEN)
   ) {
     config.addGlobalData(
       "site.google_verification_token",
