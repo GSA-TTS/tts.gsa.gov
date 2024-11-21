@@ -1,4 +1,6 @@
 const { DateTime } = require("luxon");
+const path = require("path");
+const Image = require("@11ty/eleventy-img");
 
 /**
  * Validates a Git branch name based on allowed characters and structure.
@@ -319,6 +321,65 @@ function uswdsIcon(name) {
   </svg>`;
 }
 
+/**
+ * Generates an HTML `<img>` tag with optional classes, alt text, styling, and image dimensions.
+ * The function processes the image path, adds a prefix if `BASEURL` is defined in the environment, 
+ * and supports the `contain` object-fit style along with custom height and width attributes.
+ * 
+ * @param {string} src - The source path of the image (relative or absolute).
+ * @param {string} cls - The class attribute for the image element.
+ * @param {string} alt - The alt text for the image.
+ * @param {boolean} containFit - If true, applies `object-fit: contain` to the image.
+ * @param {number} [height] - The height of the image in pixels (optional).
+ * @param {number} [width] - The width of the image in pixels (optional).
+ * @returns {Promise<string>} A promise that resolves to the HTML string of the `<img>` tag.
+ * @throws {Error} If the image processing fails or invalid parameters are provided.
+ */
+async function imageWithClassShortcode(
+  src,
+  cls,
+  alt,
+  containFit,
+  height,
+  width
+) {
+  let pathPrefix = "";
+  let style = "";
+  let imgHeight = "";
+  let imgWidth = "";
+
+  if (process.env.BASEURL) {
+    pathPrefix = process.env.BASEURL;
+  }
+
+  const ext = path.extname(src);
+  const fileType = ext.replace(".", "");
+
+  const metadata = await Image(src, {
+    formats: [fileType],
+    outputDir: "./_site/img/",
+  });
+
+  const data = metadata[fileType] ? metadata[fileType][0] : metadata.jpeg[0];
+
+  if (containFit) {
+    style = 'style="object-fit:contain;"';
+  }
+
+  if (height) {
+    imgHeight = `height="${height}"`;
+  }
+
+  if (width) {
+    imgWidth = `width="${width}"`;
+  }
+
+  // Building the img tag and ensuring there's no trailing space.
+  const imgTag = `<img src="${pathPrefix}${data.url}" class="${cls}" alt="${alt}" loading="lazy" decoding="async"${style ? ` ${style}` : ''}${imgHeight ? ` ${imgHeight}` : ''}${imgWidth ? ` ${imgWidth}` : ''}>`;
+
+  return imgTag;
+}
+
 module.exports = {
   isValidGitBranch,
   isValidTwitterHandle,
@@ -335,4 +396,5 @@ module.exports = {
   htmlDateString,
   minNumber,
   uswdsIcon,
+  imageWithClassShortcode
 };

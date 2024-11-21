@@ -9,7 +9,6 @@ const markdownItAnchor = require("markdown-it-anchor");
 const yaml = require("js-yaml");
 const { sassPlugin } = require("esbuild-sass-plugin");
 const svgSprite = require("eleventy-plugin-svg-sprite");
-const { imageShortcode, imageWithClassShortcode } = require("./config");
 const {
   isValidGitBranch,
   isValidTwitterHandle,
@@ -26,6 +25,7 @@ const {
   htmlDateString,
   minNumber,
   uswdsIcon,
+  imageWithClassShortcode
 } = require("./js/global.js");
 
 require("dotenv").config();
@@ -155,7 +155,6 @@ module.exports = function (config) {
   config.addFilter("htmlDateString", htmlDateString);
   config.addFilter("min", minNumber);
   config.addFilter("numberWithCommas", numberWithCommas);
-  config.addLiquidShortcode("image", imageShortcode);
   config.addLiquidShortcode("image_with_class", imageWithClassShortcode);
   config.addLiquidShortcode("uswds_icon", uswdsIcon);
   config.addLiquidShortcode("uswds_icon_with_size", uswdsIconWithSize);
