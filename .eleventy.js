@@ -10,6 +10,17 @@ const yaml = require("js-yaml");
 const { sassPlugin } = require("esbuild-sass-plugin");
 const svgSprite = require("eleventy-plugin-svg-sprite");
 const { imageShortcode, imageWithClassShortcode } = require("./config");
+const {
+  isValidGitBranch,
+  isValidTwitterHandle,
+  isValidDapAgency,
+  isValidAnalyticsId,
+  isValidSearchKey,
+  isValidSearchAffiliate,
+  isValidVerificationToken,
+  uswdsIconWithSize,
+  numberWithCommas,
+} = require("./js/global.js");
 
 require("dotenv").config();
 
@@ -66,36 +77,6 @@ module.exports = function (config) {
 
   const { hosts } = yaml.load(fs.readFileSync("./_data/site.yaml", "utf8"));
 
-  function isValidGitBranch(branch) {
-    const validGitBranch = /^[a-zA-Z0-9_\-\.\/]+$/;
-    return validGitBranch.test(branch);
-  }
-
-  function isValidTwitterHandle(handle) {
-    const validTwitterHandle = /^\w{1,15}$/;
-    return validTwitterHandle.test(handle);
-  }
-
-  function isValidDapAgency(agency) {
-    const validDapAgency = /^\w{1,15}$/;
-    return validDapAgency.test(agency);
-  }
-
-  function isValidAnalyticsId(ga) {
-    const validAnalyticsId = /^(G|UA|YT|MO)-[a-zA-Z0-9-]+$/;
-    return validAnalyticsId.test(ga);
-  }
-
-  function isValidSearchKey(accessKey) {
-    const validSearchKey = /^[0-9a-zA-Z]{1,}=*$/;
-    return validSearchKey.test(accessKey);
-  }
-
-  function isValidSearchAffiliate(affiliate) {
-    const validSearchAffiliate = /^[0-9a-z-]{1,}$/;
-    return validSearchAffiliate.test(affiliate);
-  }
-
   if (process.env.BRANCH && isValidGitBranch(process.env.BRANCH)) {
     switch (process.env.BRANCH) {
       case "main":
@@ -131,6 +112,7 @@ module.exports = function (config) {
     config.addGlobalData("site.ga", process.env.GA);
   }
 
+  // Search access key.
   if (
     process.env.SEARCH_ACCESS_KEY &&
     isValidSearchKey(process.env.SEARCH_ACCESS_KEY)
@@ -138,11 +120,23 @@ module.exports = function (config) {
     config.addGlobalData("site.access_key", process.env.SEARCH_ACCESS_KEY);
   }
 
+  // Search affiliate token.
   if (
     process.env.SEARCH_AFFILIATE &&
     isValidSearchAffiliate(process.env.SEARCH_AFFILIATE)
   ) {
     config.addGlobalData("site.affiliate", process.env.SEARCH_AFFILIATE);
+  }
+
+  // Google verification token.
+  if (
+    process.env.GOOGLE_VERIFICATION_TOKEN &&
+    isValidVerificationToken(process.env.GOOGLE_VERIFICATION_TOKEN)
+  ) {
+    config.addGlobalData(
+      "site.google_verification_token",
+      process.env.GOOGLE_VERIFICATION_TOKEN,
+    );
   }
 
   // Template function used to sort a collection by a certain property
@@ -347,23 +341,9 @@ module.exports = function (config) {
     </svg>`;
   });
 
-  // size 3 through 9
-  config.addLiquidShortcode("uswds_icon_with_size", function (name, size) {
-    return `
-    <svg class="usa-icon usa-icon--size-${size}" aria-hidden="true" role="img">
-      <use xlink:href="#svg-${name}"></use>
-    </svg>`;
-  });
+  config.addLiquidShortcode("uswds_icon_with_size", uswdsIconWithSize);
 
-  config.addFilter("numberWithCommas", function (number) {
-    // Ensure the input is a number
-    if (typeof number !== "number") {
-      return number;
-    }
-
-    // Format the number with commas
-    return number.toLocaleString();
-  });
+  config.addFilter("numberWithCommas", numberWithCommas);
 
   // If BASEURL env variable exists, update pathPrefix to the BASEURL
   if (process.env.BASEURL) {

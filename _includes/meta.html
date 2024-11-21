@@ -57,7 +57,9 @@ to modify some of the meta-data for the site, this is the place to do it.
   <!-- tell robots to follow links in the content and index all the things -->
   <meta name="robots" content="index, follow" />
 
-  <meta name="google-site-verification" content="bpH2FtDPiSmeRUJSQWfFw_-vMHjs3mXAgGbMF3TEwxc" />
+  {%- if site.google_verification_token -%}
+  <meta name="google-site-verification" content="{{ site.google_verification_token }}" />
+  {%- endif -%}
 
   <meta property="og:title" content="{{ effective_title }}" />
   <meta name="description" content="{{ effective_description }}" />
