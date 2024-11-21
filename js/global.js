@@ -1,3 +1,5 @@
+const { DateTime } = require("luxon");
+
 function isValidGitBranch(branch) {
   // Check if the input is a valid string and not empty
   if (typeof branch !== "string" || branch.trim() === "") {
@@ -74,7 +76,6 @@ function isValidVerificationToken(token) {
     return false;
   }
 
-  console.log(`Testing token: "${token}" with length: ${token.length}`);
   const validToken = /^[A-Za-z0-9_-]{43}$/;
   return validToken.test(token);
 }
@@ -108,6 +109,106 @@ function uswdsIconWithSize(name, size) {
     </svg>`;
 }
 
+// Template function used to sort a collection by a certain property
+// Ex: {% assign sortedJobs = collection.jobs | sortByProp: "title" %}
+function sortByProp(values, prop) {
+  if (!Array.isArray(values)) {
+    throw new TypeError("Input must be an array");
+  }
+
+  let vals = [...values];
+  return vals.sort((a, b) => {
+    if (typeof a !== "object" || a === null || typeof b !== "object" || b === null) {
+      throw new TypeError("Array elements must be objects");
+    }
+
+    const aProp = a[prop] !== undefined ? a[prop] : null;
+    const bProp = b[prop] !== undefined ? b[prop] : null;
+
+    if (typeof aProp === "string" && typeof bProp === "string") {
+      return aProp.localeCompare(bProp);
+    } else if (aProp === null) {
+      return 1; // Place objects without the property at the end
+    } else if (bProp === null) {
+      return -1;
+    } else {
+      return Math.sign(aProp - bProp);
+    }
+  });
+}
+
+function readableDate(dateObj) {
+  if (!(dateObj instanceof Date) || isNaN(dateObj)) {
+    throw new Error('Invalid date object');
+  }
+  return DateTime.fromJSDate(dateObj, { zone: 'America/New_York' }).toFormat('dd LLL yyyy');
+}
+
+function getStateFromDates(opens, closes) {
+  if (!opens && !closes) {
+    return "unknown";
+  }
+
+  // Get the current date in "America/New_York" timezone
+  let now_date = new Date(
+    new Date().toLocaleString("en-US", { timeZone: "America/New_York" }),
+  );
+
+  // Parse the 'opens' date in UTC and convert to local time
+  let opens_date = opens ? new Date(opens) : null;
+
+  // Parse the 'closes' date in UTC and set time to 11:59:59 PM in local time
+  let closes_date = null;
+  if (closes) {
+    closes_date = new Date(closes);
+    // Set the time to 11:59:59 PM in local time
+    closes_date.setHours(23, 59, 59, 999);
+  }
+
+  // Convert opens_date and closes_date to local time for comparison
+  if (opens_date) {
+    // Adjust opens_date to local timezone
+    opens_date = new Date(
+      opens_date.toLocaleString("en-US", { timeZone: "America/New_York" }),
+    );
+
+    // Adjust closes_date to local timezone
+    if (closes_date) {
+      closes_date = new Date(
+        closes_date.toLocaleString("en-US", { timeZone: "America/New_York" }),
+      );
+    }
+
+    // Check if it's open or closed
+    let isOpen = now_date >= opens_date;
+    let isClosed = closes_date && now_date > closes_date;
+
+    if (isOpen && !isClosed) {
+      return "open";
+    } else if (isClosed) {
+      return "closed";
+    } else {
+      return "upcoming";
+    }
+  }
+
+  return "unknown"; // Default fallback if no conditions are met
+}
+
+function htmlDateString(dateObj) {
+  if (dateObj !== undefined && dateObj !== null) {
+    let dateTime = DateTime.fromJSDate(dateObj);
+
+    // If working locally, add one day to the date to match what is in the actual environments.
+    if (baseUrl.includes("localhost")) {
+      dateTime = dateTime.plus({ days: 1 });
+      return dateTime.toFormat("yyyy-LL-dd");
+    } else {
+      return dateTime.toFormat("yyyy-LL-dd");
+    }
+  }
+};
+
 module.exports = {
   isValidGitBranch,
   isValidTwitterHandle,
@@ -118,4 +219,8 @@ module.exports = {
   isValidVerificationToken,
   numberWithCommas,
   uswdsIconWithSize,
+  sortByProp,
+  readableDate,
+  getStateFromDates,
+  htmlDateString
 };
