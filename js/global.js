@@ -323,9 +323,9 @@ function uswdsIcon(name) {
 
 /**
  * Generates an HTML `<img>` tag with optional classes, alt text, styling, and image dimensions.
- * The function processes the image path, adds a prefix if `BASEURL` is defined in the environment, 
+ * The function processes the image path, adds a prefix if `BASEURL` is defined in the environment,
  * and supports the `contain` object-fit style along with custom height and width attributes.
- * 
+ *
  * @param {string} src - The source path of the image (relative or absolute).
  * @param {string} cls - The class attribute for the image element.
  * @param {string} alt - The alt text for the image.
@@ -341,7 +341,7 @@ async function imageWithClassShortcode(
   alt,
   containFit,
   height,
-  width
+  width,
 ) {
   let pathPrefix = "";
   let style = "";
@@ -375,7 +375,7 @@ async function imageWithClassShortcode(
   }
 
   // Building the img tag and ensuring there's no trailing space.
-  const imgTag = `<img src="${pathPrefix}${data.url}" class="${cls}" alt="${alt}" loading="lazy" decoding="async"${style ? ` ${style}` : ''}${imgHeight ? ` ${imgHeight}` : ''}${imgWidth ? ` ${imgWidth}` : ''}>`;
+  const imgTag = `<img src="${pathPrefix}${data.url}" class="${cls}" alt="${alt}" loading="lazy" decoding="async"${style ? ` ${style}` : ""}${imgHeight ? ` ${imgHeight}` : ""}${imgWidth ? ` ${imgWidth}` : ""}>`;
 
   return imgTag;
 }
@@ -396,5 +396,5 @@ module.exports = {
   htmlDateString,
   minNumber,
   uswdsIcon,
-  imageWithClassShortcode
+  imageWithClassShortcode,
 };

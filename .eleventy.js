@@ -25,7 +25,7 @@ const {
   htmlDateString,
   minNumber,
   uswdsIcon,
-  imageWithClassShortcode
+  imageWithClassShortcode,
 } = require("./js/global.js");
 
 require("dotenv").config();

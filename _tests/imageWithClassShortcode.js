@@ -22,11 +22,11 @@ describe("imageWithClassShortcode", () => {
       "Test Image",
       true,
       300,
-      500
+      500,
     );
 
     expect(result).toBe(
-      '<img src="/img/test-image.jpg" class="my-class" alt="Test Image" loading="lazy" decoding="async" style="object-fit:contain;" height="300" width="500">'
+      '<img src="/img/test-image.jpg" class="my-class" alt="Test Image" loading="lazy" decoding="async" style="object-fit:contain;" height="300" width="500">',
     );
   });
 
@@ -43,11 +43,11 @@ describe("imageWithClassShortcode", () => {
       "Test Image",
       true,
       300,
-      500
+      500,
     );
 
     expect(result).toBe(
-      '<img src="https://example.com/img/test-image.jpg" class="my-class" alt="Test Image" loading="lazy" decoding="async" style="object-fit:contain;" height="300" width="500">'
+      '<img src="https://example.com/img/test-image.jpg" class="my-class" alt="Test Image" loading="lazy" decoding="async" style="object-fit:contain;" height="300" width="500">',
     );
   });
 
@@ -61,11 +61,11 @@ describe("imageWithClassShortcode", () => {
       "test-image.jpg",
       "my-class",
       "Test Image",
-      false
+      false,
     );
 
     expect(result).toBe(
-      '<img src="/img/test-image.jpg" class="my-class" alt="Test Image" loading="lazy" decoding="async">'
+      '<img src="/img/test-image.jpg" class="my-class" alt="Test Image" loading="lazy" decoding="async">',
     );
   });
 
@@ -73,7 +73,7 @@ describe("imageWithClassShortcode", () => {
     Image.mockRejectedValue(new Error("Image processing failed"));
 
     await expect(
-      imageWithClassShortcode("test-image.jpg", "my-class", "Test Image", true)
+      imageWithClassShortcode("test-image.jpg", "my-class", "Test Image", true),
     ).rejects.toThrow("Image processing failed");
   });
 
@@ -87,11 +87,11 @@ describe("imageWithClassShortcode", () => {
       "test-image",
       "my-class",
       "Test Image",
-      false
+      false,
     );
 
     expect(result).toBe(
-      '<img src="/img/test-image.jpg" class="my-class" alt="Test Image" loading="lazy" decoding="async">'
+      '<img src="/img/test-image.jpg" class="my-class" alt="Test Image" loading="lazy" decoding="async">',
     );
   });
 });
