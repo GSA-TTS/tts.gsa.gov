@@ -23,7 +23,9 @@ const {
   sortByProp,
   readableDate,
   getStateFromDates,
-  htmlDateString
+  htmlDateString,
+  minNumber,
+  uswdsIcon
 } = require("./js/global.js");
 
 require("dotenv").config();
@@ -94,6 +96,11 @@ module.exports = function (config) {
     baseUrl = new URL(hosts.undefined).href.replace(/\/$/, "");
   }
 
+  // If BASEURL env variable exists, update pathPrefix to the BASEURL
+  if (process.env.BASEURL) {
+    pathPrefix = process.env.BASEURL;
+  }
+
   config.addGlobalData("baseUrl", baseUrl);
   config.addGlobalData("site.baseUrl", baseUrl);
 
@@ -143,50 +150,16 @@ module.exports = function (config) {
     );
   }
 
-  // Get State From Dates
-  config.addLiquidShortcode("getStateFromDates", getStateFromDates);
-
   config.addFilter("sortByProp", sortByProp);
-
   config.addFilter("readableDate", readableDate);
-
-  // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
   config.addFilter("htmlDateString", htmlDateString);
-
-  // Get the first `n` elements of a collection.
-  config.addFilter("head", (array, n) => {
-    if (!Array.isArray(array) || array.length === 0) {
-      return [];
-    }
-    if (n < 0) {
-      return array.slice(n);
-    }
-
-    return array.slice(0, n);
-  });
-
-  // Return the smallest number argument
-  config.addFilter("min", (...numbers) => {
-    return Math.min.apply(null, numbers);
-  });
-
-  function filterTagList(tags) {
-    return (tags || []).filter(
-      (tag) => ["all", "nav", "post", "posts"].indexOf(tag) === -1,
-    );
-  }
-
-  config.addFilter("filterTagList", filterTagList);
-
-  // Create an array of all tags
-  config.addCollection("tagList", function (collection) {
-    let tagSet = new Set();
-    collection.getAll().forEach((item) => {
-      (item.data.tags || []).forEach((tag) => tagSet.add(tag));
-    });
-
-    return filterTagList([...tagSet]);
-  });
+  config.addFilter("min", minNumber);
+  config.addFilter("numberWithCommas", numberWithCommas);
+  config.addLiquidShortcode("image", imageShortcode);
+  config.addLiquidShortcode("image_with_class", imageWithClassShortcode);
+  config.addLiquidShortcode("uswds_icon", uswdsIcon);
+  config.addLiquidShortcode("uswds_icon_with_size", uswdsIconWithSize);
+  config.addLiquidShortcode("getStateFromDates", getStateFromDates);
 
   let markdownLibrary = markdownIt({
     html: true,
@@ -224,25 +197,6 @@ module.exports = function (config) {
     ui: false,
     ghostMode: false,
   });
-
-  // Set image shortcodes
-  config.addLiquidShortcode("image", imageShortcode);
-  config.addLiquidShortcode("image_with_class", imageWithClassShortcode);
-  config.addLiquidShortcode("uswds_icon", function (name) {
-    return `
-    <svg class="usa-icon" aria-hidden="true" role="img">
-      <use xlink:href="#svg-${name}"></use>
-    </svg>`;
-  });
-
-  config.addLiquidShortcode("uswds_icon_with_size", uswdsIconWithSize);
-
-  config.addFilter("numberWithCommas", numberWithCommas);
-
-  // If BASEURL env variable exists, update pathPrefix to the BASEURL
-  if (process.env.BASEURL) {
-    pathPrefix = process.env.BASEURL;
-  }
 
   return {
     dataTemplateEngine: "liquid",
