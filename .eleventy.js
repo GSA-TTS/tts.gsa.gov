@@ -25,7 +25,7 @@ const {
   getStateFromDates,
   htmlDateString,
   minNumber,
-  uswdsIcon
+  uswdsIcon,
 } = require("./js/global.js");
 
 require("dotenv").config();

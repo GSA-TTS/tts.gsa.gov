@@ -155,7 +155,12 @@ function sortByProp(values, prop) {
 
   let vals = [...values];
   return vals.sort((a, b) => {
-    if (typeof a !== "object" || a === null || typeof b !== "object" || b === null) {
+    if (
+      typeof a !== "object" ||
+      a === null ||
+      typeof b !== "object" ||
+      b === null
+    ) {
       throw new TypeError("Array elements must be objects");
     }
 
@@ -176,21 +181,23 @@ function sortByProp(values, prop) {
 
 /**
  * Converts a JavaScript Date object into a readable date string in the format `dd LLL yyyy`.
- * 
+ *
  * @param {Date} dateObj - A valid JavaScript Date object.
  * @returns {string} - A formatted date string, e.g., `21 Nov 2024`.
  * @throws {Error} If the provided dateObj is not a valid Date object.
  */
 function readableDate(dateObj) {
   if (!(dateObj instanceof Date) || isNaN(dateObj)) {
-    throw new Error('Invalid date object');
+    throw new Error("Invalid date object");
   }
-  return DateTime.fromJSDate(dateObj, { zone: 'America/New_York' }).toFormat('dd LLL yyyy');
+  return DateTime.fromJSDate(dateObj, { zone: "America/New_York" }).toFormat(
+    "dd LLL yyyy",
+  );
 }
 
 /**
  * Determines the state of an entity based on opening and closing dates.
- * 
+ *
  * @param {string|null} opens - The opening date in ISO format (e.g., `2024-11-21`).
  * @param {string|null} closes - The closing date in ISO format or null if it never closes.
  * @returns {string} - The state: `open`, `closed`, `upcoming`, or `unknown`.
@@ -248,7 +255,7 @@ function getStateFromDates(opens, closes) {
 
 /**
  * Converts a JavaScript Date object into a string formatted as `yyyy-LL-dd`.
- * 
+ *
  * @param {Date} dateObj - A valid JavaScript Date object.
  * @returns {string} - A string in the format `yyyy-LL-dd` (e.g., `2024-11-21`).
  */
@@ -264,31 +271,31 @@ function htmlDateString(dateObj) {
       return dateTime.toFormat("yyyy-LL-dd");
     }
   }
-};
+}
 
 /**
  * Returns the smallest number from a list of numbers.
- * 
+ *
  * @param {...number} numbers - A list of numbers.
  * @returns {number} - The smallest number in the list.
  */
 function minNumber(...numbers) {
   return Math.min.apply(null, numbers);
-};
+}
 
 /**
  * Generates a USWDS icon with a specified size.
- * 
+ *
  * @param {string} name - The name of the icon.
  * @param {string} size - The size of the icon (e.g., `small`, `large`).
  * @returns {string} - The HTML string for the icon SVG.
  * @throws {Error} If the icon name is not a string.
  */
 function uswdsIconWithSize(name, size) {
-  if (typeof name !== 'string') {
-    throw new Error('Icon name must be a string');
+  if (typeof name !== "string") {
+    throw new Error("Icon name must be a string");
   }
-  
+
   return `
     <svg class="usa-icon usa-icon--size-${size}" aria-hidden="true" role="img">
       <use xlink:href="#svg-${name}"></use>
@@ -297,14 +304,14 @@ function uswdsIconWithSize(name, size) {
 
 /**
  * Generates a USWDS icon with default sizing.
- * 
+ *
  * @param {string} name - The name of the icon.
  * @returns {string} - The HTML string for the icon SVG.
  * @throws {Error} If the icon name is not a string.
  */
 function uswdsIcon(name) {
-  if (typeof name !== 'string') {
-    throw new Error('Icon name must be a string');
+  if (typeof name !== "string") {
+    throw new Error("Icon name must be a string");
   }
   return `
   <svg class="usa-icon" aria-hidden="true" role="img">
@@ -327,5 +334,5 @@ module.exports = {
   getStateFromDates,
   htmlDateString,
   minNumber,
-  uswdsIcon
+  uswdsIcon,
 };
