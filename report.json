@@ -1,14 +1,14 @@
 {
-  "numFailedTestSuites": 0,
-  "numFailedTests": 0,
-  "numPassedTestSuites": 15,
-  "numPassedTests": 47,
+  "numFailedTestSuites": 1,
+  "numFailedTests": 2,
+  "numPassedTestSuites": 21,
+  "numPassedTests": 81,
   "numPendingTestSuites": 0,
   "numPendingTests": 0,
   "numRuntimeErrorTestSuites": 0,
   "numTodoTests": 0,
-  "numTotalTestSuites": 15,
-  "numTotalTests": 47,
+  "numTotalTestSuites": 22,
+  "numTotalTests": 83,
   "openHandles": [],
   "snapshot": {
     "added": 0,
@@ -26,14 +26,703 @@
     "unmatched": 0,
     "updated": 0
   },
-  "startTime": 1732145994622,
-  "success": true,
+  "startTime": 1732228403293,
+  "success": false,
   "testResults": [
     {
       "assertionResults": [
         {
-          "ancestorTitles": ["isValidVerificationToken"],
+          "ancestorTitles": ["imageShortcode"],
           "duration": 4,
+          "failureDetails": [{}],
+          "failureMessages": [
+            "TypeError: imageShortcode is not a function\n    at Object.imageShortcode (/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/_tests/imageShortcode.js:14:26)\n    at Promise.then.completed (/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/node_modules/jest-circus/build/utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/node_modules/jest-circus/build/utils.js:231:10)\n    at _callCircusTest (/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/node_modules/jest-circus/build/run.js:316:40)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at _runTest (/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/node_modules/jest-circus/build/run.js:252:3)\n    at _runTestsForDescribeBlock (/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/node_modules/jest-circus/build/run.js:126:9)\n    at _runTestsForDescribeBlock (/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/node_modules/jest-circus/build/run.js:121:9)\n    at run (/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/node_modules/jest-circus/build/run.js:71:3)\n    at runAndTransformResultsToJestFormat (/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)\n    at jestAdapter (/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)\n    at runTestInternal (/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/node_modules/jest-runner/build/runTest.js:367:16)\n    at runTest (/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/node_modules/jest-runner/build/runTest.js:444:34)\n    at Object.worker (/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/node_modules/jest-runner/build/testWorker.js:106:12)"
+          ],
+          "fullName": "imageShortcode should generate an img tag with the correct src and alt, using default class",
+          "invocations": 1,
+          "location": { "column": 3, "line": 7 },
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "failed",
+          "title": "should generate an img tag with the correct src and alt, using default class"
+        },
+        {
+          "ancestorTitles": ["imageShortcode"],
+          "duration": 0,
+          "failureDetails": [{}],
+          "failureMessages": [
+            "TypeError: imageShortcode is not a function\n    at Object.imageShortcode (/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/_tests/imageShortcode.js:28:18)\n    at Promise.then.completed (/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/node_modules/jest-circus/build/utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/node_modules/jest-circus/build/utils.js:231:10)\n    at _callCircusTest (/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/node_modules/jest-circus/build/run.js:316:40)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at _runTest (/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/node_modules/jest-circus/build/run.js:252:3)\n    at _runTestsForDescribeBlock (/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/node_modules/jest-circus/build/run.js:126:9)\n    at _runTestsForDescribeBlock (/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/node_modules/jest-circus/build/run.js:121:9)\n    at run (/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/node_modules/jest-circus/build/run.js:71:3)\n    at runAndTransformResultsToJestFormat (/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)\n    at jestAdapter (/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)\n    at runTestInternal (/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/node_modules/jest-runner/build/runTest.js:367:16)\n    at runTest (/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/node_modules/jest-runner/build/runTest.js:444:34)\n    at Object.worker (/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/node_modules/jest-runner/build/testWorker.js:106:12)"
+          ],
+          "fullName": "imageShortcode should throw an error if image processing fails",
+          "invocations": 1,
+          "location": { "column": 3, "line": 23 },
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "failed",
+          "title": "should throw an error if image processing fails"
+        }
+      ],
+      "endTime": 1732228403812,
+      "message": "\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mimageShortcode › should generate an img tag with the correct src and alt, using default class\u001b[39m\u001b[22m\n\n    TypeError: imageShortcode is not a function\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 12 |\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 13 |\u001b[39m     \u001b[90m// Call imageShortcode and capture the result\u001b[39m\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 14 |\u001b[39m     \u001b[36mconst\u001b[39m result \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m imageShortcode(\u001b[32m\"test-image.jpg\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"Test Image\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 15 |\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 16 |\u001b[39m     \u001b[90m// Ensure the result matches the expected HTML string\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 17 |\u001b[39m     expect(result)\u001b[33m.\u001b[39mtoBe(mockResult)\u001b[33m;\u001b[39m \u001b[90m// Check if the result matches the mocked output\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.imageShortcode (\u001b[22m\u001b[2m\u001b[0m\u001b[36m_tests/imageShortcode.js\u001b[39m\u001b[0m\u001b[2m:14:26)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mimageShortcode › should throw an error if image processing fails\u001b[39m\u001b[22m\n\n    TypeError: imageShortcode is not a function\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 26 |\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 27 |\u001b[39m     \u001b[90m// Test that the error is thrown correctly\u001b[39m\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 28 |\u001b[39m     \u001b[36mawait\u001b[39m expect(imageShortcode(\u001b[32m\"test-image.jpg\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"Test Image\"\u001b[39m))\u001b[33m.\u001b[39mrejects\u001b[33m.\u001b[39mtoThrow(\u001b[32m\"Image processing failed\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m    |\u001b[39m                  \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 29 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 30 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 31 |\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.imageShortcode (\u001b[22m\u001b[2m\u001b[0m\u001b[36m_tests/imageShortcode.js\u001b[39m\u001b[0m\u001b[2m:28:18)\u001b[22m\u001b[2m\u001b[22m\n",
+      "name": "/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/_tests/imageShortcode.js",
+      "startTime": 1732228403441,
+      "status": "failed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["uswdsIconWithSize"],
+          "duration": 14,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "uswdsIconWithSize should return correct SVG for a small icon",
+          "invocations": 1,
+          "location": { "column": 3, "line": 4 },
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return correct SVG for a small icon"
+        },
+        {
+          "ancestorTitles": ["uswdsIconWithSize"],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "uswdsIconWithSize should return correct SVG for a medium icon",
+          "invocations": 1,
+          "location": { "column": 3, "line": 14 },
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return correct SVG for a medium icon"
+        },
+        {
+          "ancestorTitles": ["uswdsIconWithSize"],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "uswdsIconWithSize should return correct SVG for a large icon",
+          "invocations": 1,
+          "location": { "column": 3, "line": 24 },
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return correct SVG for a large icon"
+        },
+        {
+          "ancestorTitles": ["uswdsIconWithSize"],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "uswdsIconWithSize should return an empty SVG for invalid size",
+          "invocations": 1,
+          "location": { "column": 3, "line": 34 },
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return an empty SVG for invalid size"
+        },
+        {
+          "ancestorTitles": ["uswdsIconWithSize"],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "uswdsIconWithSize should handle empty icon name",
+          "invocations": 1,
+          "location": { "column": 3, "line": 44 },
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should handle empty icon name"
+        }
+      ],
+      "endTime": 1732228404264,
+      "message": "",
+      "name": "/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/_tests/uswdsIconWithSize.js",
+      "startTime": 1732228403440,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["sortByProp"],
+          "duration": 7,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "sortByProp should sort an array of objects by a numeric property (Data Analyst)",
+          "invocations": 1,
+          "location": { "column": 3, "line": 4 },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should sort an array of objects by a numeric property (Data Analyst)"
+        },
+        {
+          "ancestorTitles": ["sortByProp"],
+          "duration": 11,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "sortByProp should sort an array of objects by a string property alphabetically (Content Manager)",
+          "invocations": 1,
+          "location": { "column": 3, "line": 19 },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should sort an array of objects by a string property alphabetically (Content Manager)"
+        },
+        {
+          "ancestorTitles": ["sortByProp"],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "sortByProp should handle mixed data types (Web Developer)",
+          "invocations": 1,
+          "location": { "column": 3, "line": 34 },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should handle mixed data types (Web Developer)"
+        },
+        {
+          "ancestorTitles": ["sortByProp"],
+          "duration": 7,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "sortByProp should handle an empty array",
+          "invocations": 1,
+          "location": { "column": 3, "line": 49 },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should handle an empty array"
+        },
+        {
+          "ancestorTitles": ["sortByProp"],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "sortByProp should return a new array without modifying the original array",
+          "invocations": 1,
+          "location": { "column": 3, "line": 55 },
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return a new array without modifying the original array"
+        },
+        {
+          "ancestorTitles": ["sortByProp"],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "sortByProp should handle properties that do not exist on all objects",
+          "invocations": 1,
+          "location": { "column": 3, "line": 73 },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should handle properties that do not exist on all objects"
+        },
+        {
+          "ancestorTitles": ["sortByProp"],
+          "duration": 9,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "sortByProp should handle an array with non-object elements gracefully",
+          "invocations": 1,
+          "location": { "column": 3, "line": 88 },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should handle an array with non-object elements gracefully"
+        },
+        {
+          "ancestorTitles": ["sortByProp"],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "sortByProp should handle sorting with numeric strings correctly",
+          "invocations": 1,
+          "location": { "column": 3, "line": 98 },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should handle sorting with numeric strings correctly"
+        }
+      ],
+      "endTime": 1732228404272,
+      "message": "",
+      "name": "/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/_tests/sortByProp.js",
+      "startTime": 1732228403440,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["uswdsIcon"],
+          "duration": 3,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "uswdsIcon should return a valid SVG string for a given icon name",
+          "invocations": 1,
+          "location": { "column": 3, "line": 4 },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return a valid SVG string for a given icon name"
+        },
+        {
+          "ancestorTitles": ["uswdsIcon"],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "uswdsIcon should handle an empty string as the icon name",
+          "invocations": 1,
+          "location": { "column": 3, "line": 14 },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should handle an empty string as the icon name"
+        },
+        {
+          "ancestorTitles": ["uswdsIcon"],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "uswdsIcon should handle special characters in the icon name",
+          "invocations": 1,
+          "location": { "column": 3, "line": 24 },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should handle special characters in the icon name"
+        },
+        {
+          "ancestorTitles": ["uswdsIcon"],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "uswdsIcon should handle numeric icon names",
+          "invocations": 1,
+          "location": { "column": 3, "line": 34 },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should handle numeric icon names"
+        },
+        {
+          "ancestorTitles": ["uswdsIcon"],
+          "duration": 15,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "uswdsIcon should throw an error if the name is not a string",
+          "invocations": 1,
+          "location": { "column": 3, "line": 44 },
+          "numPassingAsserts": 5,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should throw an error if the name is not a string"
+        }
+      ],
+      "endTime": 1732228404307,
+      "message": "",
+      "name": "/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/_tests/uswdsIcon.js",
+      "startTime": 1732228403443,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["isValidGitBranch"],
+          "duration": 5,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "isValidGitBranch should return true for valid branch names",
+          "invocations": 1,
+          "location": { "column": 3, "line": 5 },
+          "numPassingAsserts": 8,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return true for valid branch names"
+        },
+        {
+          "ancestorTitles": ["isValidGitBranch"],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "isValidGitBranch should return false for invalid branch names",
+          "invocations": 1,
+          "location": { "column": 3, "line": 22 },
+          "numPassingAsserts": 7,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return false for invalid branch names"
+        },
+        {
+          "ancestorTitles": ["isValidGitBranch"],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "isValidGitBranch should return false for empty string or null input",
+          "invocations": 1,
+          "location": { "column": 3, "line": 38 },
+          "numPassingAsserts": 3,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return false for empty string or null input"
+        }
+      ],
+      "endTime": 1732228404322,
+      "message": "",
+      "name": "/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/_tests/isValidGitBranch.js",
+      "startTime": 1732228403441,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["numberWithCommas"],
+          "duration": 3,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "numberWithCommas should format numbers with commas",
+          "invocations": 1,
+          "location": { "column": 3, "line": 4 },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should format numbers with commas"
+        },
+        {
+          "ancestorTitles": ["numberWithCommas"],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "numberWithCommas should format large numbers with commas",
+          "invocations": 1,
+          "location": { "column": 3, "line": 9 },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should format large numbers with commas"
+        },
+        {
+          "ancestorTitles": ["numberWithCommas"],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "numberWithCommas should handle negative numbers correctly",
+          "invocations": 1,
+          "location": { "column": 3, "line": 14 },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should handle negative numbers correctly"
+        },
+        {
+          "ancestorTitles": ["numberWithCommas"],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "numberWithCommas should handle decimal numbers correctly",
+          "invocations": 1,
+          "location": { "column": 3, "line": 19 },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should handle decimal numbers correctly"
+        },
+        {
+          "ancestorTitles": ["numberWithCommas"],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "numberWithCommas should return non-number values unchanged",
+          "invocations": 1,
+          "location": { "column": 3, "line": 24 },
+          "numPassingAsserts": 4,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return non-number values unchanged"
+        },
+        {
+          "ancestorTitles": ["numberWithCommas"],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "numberWithCommas should return 0 as \"0\"",
+          "invocations": 1,
+          "location": { "column": 3, "line": 36 },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return 0 as \"0\""
+        },
+        {
+          "ancestorTitles": ["numberWithCommas"],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "numberWithCommas should return large decimal numbers correctly",
+          "invocations": 1,
+          "location": { "column": 3, "line": 41 },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return large decimal numbers correctly"
+        }
+      ],
+      "endTime": 1732228404335,
+      "message": "",
+      "name": "/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/_tests/numberWithCommas.js",
+      "startTime": 1732228403442,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["readableDate"],
+          "duration": 44,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "readableDate should return the formatted date in \"dd LLL yyyy\" format for valid dates",
+          "invocations": 1,
+          "location": { "column": 3, "line": 5 },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return the formatted date in \"dd LLL yyyy\" format for valid dates"
+        },
+        {
+          "ancestorTitles": ["readableDate"],
+          "duration": 2,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "readableDate should handle different time zones and return consistent output",
+          "invocations": 1,
+          "location": { "column": 3, "line": 13 },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should handle different time zones and return consistent output"
+        },
+        {
+          "ancestorTitles": ["readableDate"],
+          "duration": 10,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "readableDate should throw an error or handle gracefully when input is not a valid date",
+          "invocations": 1,
+          "location": { "column": 3, "line": 21 },
+          "numPassingAsserts": 6,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should throw an error or handle gracefully when input is not a valid date"
+        },
+        {
+          "ancestorTitles": ["readableDate"],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "readableDate should handle edge case dates correctly",
+          "invocations": 1,
+          "location": { "column": 3, "line": 28 },
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should handle edge case dates correctly"
+        }
+      ],
+      "endTime": 1732228404334,
+      "message": "",
+      "name": "/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/_tests/readableDate.js",
+      "startTime": 1732228403442,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["isValidSearchKey"],
+          "duration": 2,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "isValidSearchKey should return true for valid search keys",
+          "invocations": 1,
+          "location": { "column": 3, "line": 4 },
+          "numPassingAsserts": 4,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return true for valid search keys"
+        },
+        {
+          "ancestorTitles": ["isValidSearchKey"],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "isValidSearchKey should return false for invalid search keys",
+          "invocations": 1,
+          "location": { "column": 3, "line": 17 },
+          "numPassingAsserts": 8,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return false for invalid search keys"
+        }
+      ],
+      "endTime": 1732228404360,
+      "message": "",
+      "name": "/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/_tests/isValidSearchKey.js",
+      "startTime": 1732228404293,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["isValidAnalyticsId"],
+          "duration": 4,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "isValidAnalyticsId should return true for valid Analytics IDs",
+          "invocations": 1,
+          "location": { "column": 3, "line": 4 },
+          "numPassingAsserts": 6,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return true for valid Analytics IDs"
+        },
+        {
+          "ancestorTitles": ["isValidAnalyticsId"],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "isValidAnalyticsId should return false for invalid Analytics IDs",
+          "invocations": 1,
+          "location": { "column": 3, "line": 19 },
+          "numPassingAsserts": 8,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return false for invalid Analytics IDs"
+        }
+      ],
+      "endTime": 1732228404374,
+      "message": "",
+      "name": "/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/_tests/isValidAnalyticsId.js",
+      "startTime": 1732228404303,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["getStateFromDates"],
+          "duration": 6,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getStateFromDates should return \"unknown\" if both opens and closes are undefined",
+          "invocations": 1,
+          "location": { "column": 3, "line": 13 },
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return \"unknown\" if both opens and closes are undefined"
+        },
+        {
+          "ancestorTitles": ["getStateFromDates"],
+          "duration": 35,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getStateFromDates should return \"upcoming\" if now is before opens",
+          "invocations": 1,
+          "location": { "column": 3, "line": 18 },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return \"upcoming\" if now is before opens"
+        },
+        {
+          "ancestorTitles": ["getStateFromDates"],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getStateFromDates should return \"open\" if now is after opens and before closes",
+          "invocations": 1,
+          "location": { "column": 3, "line": 23 },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return \"open\" if now is after opens and before closes"
+        },
+        {
+          "ancestorTitles": ["getStateFromDates"],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getStateFromDates should return \"closed\" if now is after closes",
+          "invocations": 1,
+          "location": { "column": 3, "line": 29 },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return \"closed\" if now is after closes"
+        },
+        {
+          "ancestorTitles": ["getStateFromDates"],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getStateFromDates should handle cases with only opens defined",
+          "invocations": 1,
+          "location": { "column": 3, "line": 35 },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should handle cases with only opens defined"
+        },
+        {
+          "ancestorTitles": ["getStateFromDates"],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getStateFromDates should handle cases with only closes defined",
+          "invocations": 1,
+          "location": { "column": 3, "line": 40 },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should handle cases with only closes defined"
+        },
+        {
+          "ancestorTitles": ["getStateFromDates"],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getStateFromDates should handle edge cases for opens and closes on the same day",
+          "invocations": 1,
+          "location": { "column": 3, "line": 45 },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should handle edge cases for opens and closes on the same day"
+        }
+      ],
+      "endTime": 1732228404377,
+      "message": "",
+      "name": "/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/_tests/getStateFromDates.js",
+      "startTime": 1732228403441,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["isValidVerificationToken"],
+          "duration": 1,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "isValidVerificationToken should return true for valid verification tokens",
@@ -46,7 +735,7 @@
         },
         {
           "ancestorTitles": ["isValidVerificationToken"],
-          "duration": 1,
+          "duration": 0,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "isValidVerificationToken should return false for invalid verification tokens",
@@ -58,10 +747,474 @@
           "title": "should return false for invalid verification tokens"
         }
       ],
-      "endTime": 1732145994846,
+      "endTime": 1732228404377,
       "message": "",
       "name": "/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/_tests/isValidVerificationToken.js",
-      "startTime": 1732145994649,
+      "startTime": 1732228403818,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["imageWithClassShortcode"],
+          "duration": 3,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "imageWithClassShortcode should generate an img tag with all parameters",
+          "invocations": 1,
+          "location": { "column": 3, "line": 13 },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should generate an img tag with all parameters"
+        },
+        {
+          "ancestorTitles": ["imageWithClassShortcode"],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "imageWithClassShortcode should add BASEURL prefix when environment variable is set",
+          "invocations": 1,
+          "location": { "column": 3, "line": 33 },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should add BASEURL prefix when environment variable is set"
+        },
+        {
+          "ancestorTitles": ["imageWithClassShortcode"],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "imageWithClassShortcode should return an img tag without height and width if not provided",
+          "invocations": 1,
+          "location": { "column": 3, "line": 54 },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return an img tag without height and width if not provided"
+        },
+        {
+          "ancestorTitles": ["imageWithClassShortcode"],
+          "duration": 2,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "imageWithClassShortcode should throw an error if image processing fails",
+          "invocations": 1,
+          "location": { "column": 3, "line": 72 },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should throw an error if image processing fails"
+        },
+        {
+          "ancestorTitles": ["imageWithClassShortcode"],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "imageWithClassShortcode should handle missing image extension gracefully",
+          "invocations": 1,
+          "location": { "column": 3, "line": 80 },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should handle missing image extension gracefully"
+        }
+      ],
+      "endTime": 1732228404416,
+      "message": "",
+      "name": "/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/_tests/imageWithClassShortcode.js",
+      "startTime": 1732228403441,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["minNumber"],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "minNumber should return the smallest number from a list of numbers",
+          "invocations": 1,
+          "location": { "column": 3, "line": 4 },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return the smallest number from a list of numbers"
+        },
+        {
+          "ancestorTitles": ["minNumber"],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "minNumber should return the only number when a single number is provided",
+          "invocations": 1,
+          "location": { "column": 3, "line": 9 },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return the only number when a single number is provided"
+        },
+        {
+          "ancestorTitles": ["minNumber"],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "minNumber should handle negative numbers correctly",
+          "invocations": 1,
+          "location": { "column": 3, "line": 14 },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should handle negative numbers correctly"
+        },
+        {
+          "ancestorTitles": ["minNumber"],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "minNumber should handle a mix of positive and negative numbers",
+          "invocations": 1,
+          "location": { "column": 3, "line": 19 },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should handle a mix of positive and negative numbers"
+        },
+        {
+          "ancestorTitles": ["minNumber"],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "minNumber should return NaN if any of the inputs are not numbers",
+          "invocations": 1,
+          "location": { "column": 3, "line": 24 },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return NaN if any of the inputs are not numbers"
+        }
+      ],
+      "endTime": 1732228404429,
+      "message": "",
+      "name": "/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/_tests/minNumber.js",
+      "startTime": 1732228404356,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["isValidSearchAffiliate"],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "isValidSearchAffiliate should return true for valid search affiliates",
+          "invocations": 1,
+          "location": { "column": 3, "line": 4 },
+          "numPassingAsserts": 6,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return true for valid search affiliates"
+        },
+        {
+          "ancestorTitles": ["isValidSearchAffiliate"],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "isValidSearchAffiliate should return false for invalid search affiliates",
+          "invocations": 1,
+          "location": { "column": 3, "line": 19 },
+          "numPassingAsserts": 8,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return false for invalid search affiliates"
+        }
+      ],
+      "endTime": 1732228404411,
+      "message": "",
+      "name": "/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/_tests/isValidSearchAffiliate.js",
+      "startTime": 1732228404345,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["formatSessionTimes"],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "formatSessionTimes should format session times correctly for Eastern and Pacific Time",
+          "invocations": 1,
+          "location": { "column": 3, "line": 26 },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should format session times correctly for Eastern and Pacific Time"
+        },
+        {
+          "ancestorTitles": ["formatSessionTimes"],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "formatSessionTimes should handle edge cases, such as different times",
+          "invocations": 1,
+          "location": { "column": 3, "line": 32 },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should handle edge cases, such as different times"
+        },
+        {
+          "ancestorTitles": ["formatSessionTimes"],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "formatSessionTimes should handle times with AM/PM in various formats",
+          "invocations": 1,
+          "location": { "column": 3, "line": 38 },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should handle times with AM/PM in various formats"
+        }
+      ],
+      "endTime": 1732228404439,
+      "message": "",
+      "name": "/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/_tests/formatSessionTimes.js",
+      "startTime": 1732228404405,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["isValidDapAgency"],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "isValidDapAgency should return true for valid agency names",
+          "invocations": 1,
+          "location": { "column": 3, "line": 4 },
+          "numPassingAsserts": 5,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return true for valid agency names"
+        },
+        {
+          "ancestorTitles": ["isValidDapAgency"],
+          "duration": 5,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "isValidDapAgency should return false for invalid agency names",
+          "invocations": 1,
+          "location": { "column": 3, "line": 18 },
+          "numPassingAsserts": 8,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return false for invalid agency names"
+        }
+      ],
+      "endTime": 1732228404416,
+      "message": "",
+      "name": "/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/_tests/isValidDapAgency.js",
+      "startTime": 1732228404346,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["isValidTwitterHandle"],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "isValidTwitterHandle should return true for valid Twitter handles",
+          "invocations": 1,
+          "location": { "column": 3, "line": 4 },
+          "numPassingAsserts": 4,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return true for valid Twitter handles"
+        },
+        {
+          "ancestorTitles": ["isValidTwitterHandle"],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "isValidTwitterHandle should return false for invalid Twitter handles",
+          "invocations": 1,
+          "location": { "column": 3, "line": 17 },
+          "numPassingAsserts": 8,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return false for invalid Twitter handles"
+        }
+      ],
+      "endTime": 1732228404451,
+      "message": "",
+      "name": "/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/_tests/isValidTwitterHandle.js",
+      "startTime": 1732228404365,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["convertTimeToZone"],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "convertTimeToZone should convert time to Eastern Time",
+          "invocations": 1,
+          "location": { "column": 3, "line": 6 },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should convert time to Eastern Time"
+        },
+        {
+          "ancestorTitles": ["convertTimeToZone"],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "convertTimeToZone should convert time to Pacific Time",
+          "invocations": 1,
+          "location": { "column": 3, "line": 10 },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should convert time to Pacific Time"
+        }
+      ],
+      "endTime": 1732228404472,
+      "message": "",
+      "name": "/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/_tests/convertTimeToZone.js",
+      "startTime": 1732228404409,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["sortJobs"],
+          "duration": 2,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "sortJobs correctly sorts jobs into open and upcoming arrays",
+          "invocations": 1,
+          "location": { "column": 3, "line": 27 },
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "correctly sorts jobs into open and upcoming arrays"
+        }
+      ],
+      "endTime": 1732228404476,
+      "message": "",
+      "name": "/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/_tests/sortJobs.js",
+      "startTime": 1732228404434,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["formatDate"],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "formatDate should format a Date object into yyyy-mm-dd",
+          "invocations": 1,
+          "location": { "column": 3, "line": 5 },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should format a Date object into yyyy-mm-dd"
+        }
+      ],
+      "endTime": 1732228404494,
+      "message": "",
+      "name": "/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/_tests/formatDate.js",
+      "startTime": 1732228404446,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["renderGlobalInfoSessions"],
+          "duration": 4,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "renderGlobalInfoSessions does not render anything if infoSessions is undefined",
+          "invocations": 1,
+          "location": { "column": 3, "line": 22 },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "does not render anything if infoSessions is undefined"
+        },
+        {
+          "ancestorTitles": ["renderGlobalInfoSessions"],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "renderGlobalInfoSessions does not render anything if infoSessions is null",
+          "invocations": 1,
+          "location": { "column": 3, "line": 29 },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "does not render anything if infoSessions is null"
+        },
+        {
+          "ancestorTitles": ["renderGlobalInfoSessions"],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "renderGlobalInfoSessions does not render anything if infoSessions is an empty array",
+          "invocations": 1,
+          "location": { "column": 3, "line": 36 },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "does not render anything if infoSessions is an empty array"
+        },
+        {
+          "ancestorTitles": ["renderGlobalInfoSessions"],
+          "duration": 5,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "renderGlobalInfoSessions does not render anything if there are no future info sessions",
+          "invocations": 1,
+          "location": { "column": 3, "line": 43 },
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "does not render anything if there are no future info sessions"
+        },
+        {
+          "ancestorTitles": ["renderGlobalInfoSessions"],
+          "duration": 12,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "renderGlobalInfoSessions renders only future info sessions if mixed with past sessions",
+          "invocations": 1,
+          "location": { "column": 3, "line": 62 },
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "renders only future info sessions if mixed with past sessions"
+        }
+      ],
+      "endTime": 1732228404762,
+      "message": "",
+      "name": "/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/_tests/renderGlobalInfoSessions.js",
+      "startTime": 1732228404704,
       "status": "passed",
       "summary": ""
     },
@@ -69,7 +1222,7 @@
       "assertionResults": [
         {
           "ancestorTitles": ["renderInfoSessions"],
-          "duration": 34,
+          "duration": 30,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "renderInfoSessions renders valid upcoming info sessions into the link item",
@@ -121,7 +1274,7 @@
         },
         {
           "ancestorTitles": ["renderInfoSessions"],
-          "duration": 1,
+          "duration": 0,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "renderInfoSessions does not render past info sessions",
@@ -134,7 +1287,7 @@
         },
         {
           "ancestorTitles": ["renderInfoSessions"],
-          "duration": 2,
+          "duration": 1,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "renderInfoSessions renders only future info sessions when mixed with past sessions",
@@ -160,7 +1313,7 @@
         },
         {
           "ancestorTitles": ["renderInfoSessions"],
-          "duration": 1,
+          "duration": 2,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "renderInfoSessions renders a styled wrapper with correct classes for position layout",
@@ -172,621 +1325,10 @@
           "title": "renders a styled wrapper with correct classes for position layout"
         }
       ],
-      "endTime": 1732145995251,
+      "endTime": 1732228404784,
       "message": "",
       "name": "/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/_tests/renderInfoSessions.js",
-      "startTime": 1732145995172,
-      "status": "passed",
-      "summary": ""
-    },
-    {
-      "assertionResults": [
-        {
-          "ancestorTitles": ["renderGlobalInfoSessions"],
-          "duration": 1,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "renderGlobalInfoSessions does not render anything if infoSessions is undefined",
-          "invocations": 1,
-          "location": { "column": 3, "line": 22 },
-          "numPassingAsserts": 1,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "does not render anything if infoSessions is undefined"
-        },
-        {
-          "ancestorTitles": ["renderGlobalInfoSessions"],
-          "duration": 1,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "renderGlobalInfoSessions does not render anything if infoSessions is null",
-          "invocations": 1,
-          "location": { "column": 3, "line": 29 },
-          "numPassingAsserts": 1,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "does not render anything if infoSessions is null"
-        },
-        {
-          "ancestorTitles": ["renderGlobalInfoSessions"],
-          "duration": 1,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "renderGlobalInfoSessions does not render anything if infoSessions is an empty array",
-          "invocations": 1,
-          "location": { "column": 3, "line": 36 },
-          "numPassingAsserts": 1,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "does not render anything if infoSessions is an empty array"
-        },
-        {
-          "ancestorTitles": ["renderGlobalInfoSessions"],
-          "duration": 1,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "renderGlobalInfoSessions does not render anything if there are no future info sessions",
-          "invocations": 1,
-          "location": { "column": 3, "line": 43 },
-          "numPassingAsserts": 2,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "does not render anything if there are no future info sessions"
-        },
-        {
-          "ancestorTitles": ["renderGlobalInfoSessions"],
-          "duration": 2,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "renderGlobalInfoSessions renders only future info sessions if mixed with past sessions",
-          "invocations": 1,
-          "location": { "column": 3, "line": 62 },
-          "numPassingAsserts": 2,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "renders only future info sessions if mixed with past sessions"
-        }
-      ],
-      "endTime": 1732145995292,
-      "message": "",
-      "name": "/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/_tests/renderGlobalInfoSessions.js",
-      "startTime": 1732145995265,
-      "status": "passed",
-      "summary": ""
-    },
-    {
-      "assertionResults": [
-        {
-          "ancestorTitles": ["uswdsIconWithSize"],
-          "duration": 1,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "uswdsIconWithSize should return correct SVG for a small icon",
-          "invocations": 1,
-          "location": { "column": 3, "line": 4 },
-          "numPassingAsserts": 2,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "should return correct SVG for a small icon"
-        },
-        {
-          "ancestorTitles": ["uswdsIconWithSize"],
-          "duration": 0,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "uswdsIconWithSize should return correct SVG for a medium icon",
-          "invocations": 1,
-          "location": { "column": 3, "line": 14 },
-          "numPassingAsserts": 2,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "should return correct SVG for a medium icon"
-        },
-        {
-          "ancestorTitles": ["uswdsIconWithSize"],
-          "duration": 0,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "uswdsIconWithSize should return correct SVG for a large icon",
-          "invocations": 1,
-          "location": { "column": 3, "line": 24 },
-          "numPassingAsserts": 2,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "should return correct SVG for a large icon"
-        },
-        {
-          "ancestorTitles": ["uswdsIconWithSize"],
-          "duration": 1,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "uswdsIconWithSize should return an empty SVG for invalid size",
-          "invocations": 1,
-          "location": { "column": 3, "line": 34 },
-          "numPassingAsserts": 2,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "should return an empty SVG for invalid size"
-        },
-        {
-          "ancestorTitles": ["uswdsIconWithSize"],
-          "duration": 0,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "uswdsIconWithSize should handle empty icon name",
-          "invocations": 1,
-          "location": { "column": 3, "line": 44 },
-          "numPassingAsserts": 2,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "should handle empty icon name"
-        }
-      ],
-      "endTime": 1732145995320,
-      "message": "",
-      "name": "/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/_tests/uswdsIconWithSize.js",
-      "startTime": 1732145995299,
-      "status": "passed",
-      "summary": ""
-    },
-    {
-      "assertionResults": [
-        {
-          "ancestorTitles": ["isValidGitBranch"],
-          "duration": 1,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "isValidGitBranch should return true for valid branch names",
-          "invocations": 1,
-          "location": { "column": 3, "line": 5 },
-          "numPassingAsserts": 8,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "should return true for valid branch names"
-        },
-        {
-          "ancestorTitles": ["isValidGitBranch"],
-          "duration": 1,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "isValidGitBranch should return false for invalid branch names",
-          "invocations": 1,
-          "location": { "column": 3, "line": 22 },
-          "numPassingAsserts": 7,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "should return false for invalid branch names"
-        },
-        {
-          "ancestorTitles": ["isValidGitBranch"],
-          "duration": 0,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "isValidGitBranch should return false for empty string or null input",
-          "invocations": 1,
-          "location": { "column": 3, "line": 38 },
-          "numPassingAsserts": 3,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "should return false for empty string or null input"
-        }
-      ],
-      "endTime": 1732145995349,
-      "message": "",
-      "name": "/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/_tests/isValidGitBranch.js",
-      "startTime": 1732145995325,
-      "status": "passed",
-      "summary": ""
-    },
-    {
-      "assertionResults": [
-        {
-          "ancestorTitles": ["formatSessionTimes"],
-          "duration": 0,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "formatSessionTimes should format session times correctly for Eastern and Pacific Time",
-          "invocations": 1,
-          "location": { "column": 3, "line": 19 },
-          "numPassingAsserts": 1,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "should format session times correctly for Eastern and Pacific Time"
-        },
-        {
-          "ancestorTitles": ["formatSessionTimes"],
-          "duration": 0,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "formatSessionTimes should handle edge cases, such as different times",
-          "invocations": 1,
-          "location": { "column": 3, "line": 28 },
-          "numPassingAsserts": 1,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "should handle edge cases, such as different times"
-        },
-        {
-          "ancestorTitles": ["formatSessionTimes"],
-          "duration": 0,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "formatSessionTimes should handle times with AM/PM in various formats",
-          "invocations": 1,
-          "location": { "column": 3, "line": 37 },
-          "numPassingAsserts": 1,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "should handle times with AM/PM in various formats"
-        }
-      ],
-      "endTime": 1732145995373,
-      "message": "",
-      "name": "/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/_tests/formatSessionTimes.js",
-      "startTime": 1732145995352,
-      "status": "passed",
-      "summary": ""
-    },
-    {
-      "assertionResults": [
-        {
-          "ancestorTitles": ["numberWithCommas"],
-          "duration": 0,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "numberWithCommas should format numbers with commas",
-          "invocations": 1,
-          "location": { "column": 3, "line": 4 },
-          "numPassingAsserts": 1,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "should format numbers with commas"
-        },
-        {
-          "ancestorTitles": ["numberWithCommas"],
-          "duration": 0,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "numberWithCommas should format large numbers with commas",
-          "invocations": 1,
-          "location": { "column": 3, "line": 9 },
-          "numPassingAsserts": 1,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "should format large numbers with commas"
-        },
-        {
-          "ancestorTitles": ["numberWithCommas"],
-          "duration": 0,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "numberWithCommas should handle negative numbers correctly",
-          "invocations": 1,
-          "location": { "column": 3, "line": 14 },
-          "numPassingAsserts": 1,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "should handle negative numbers correctly"
-        },
-        {
-          "ancestorTitles": ["numberWithCommas"],
-          "duration": 0,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "numberWithCommas should handle decimal numbers correctly",
-          "invocations": 1,
-          "location": { "column": 3, "line": 19 },
-          "numPassingAsserts": 1,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "should handle decimal numbers correctly"
-        },
-        {
-          "ancestorTitles": ["numberWithCommas"],
-          "duration": 0,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "numberWithCommas should return non-number values unchanged",
-          "invocations": 1,
-          "location": { "column": 3, "line": 24 },
-          "numPassingAsserts": 4,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "should return non-number values unchanged"
-        },
-        {
-          "ancestorTitles": ["numberWithCommas"],
-          "duration": 0,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "numberWithCommas should return 0 as \"0\"",
-          "invocations": 1,
-          "location": { "column": 3, "line": 36 },
-          "numPassingAsserts": 1,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "should return 0 as \"0\""
-        },
-        {
-          "ancestorTitles": ["numberWithCommas"],
-          "duration": 1,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "numberWithCommas should return large decimal numbers correctly",
-          "invocations": 1,
-          "location": { "column": 3, "line": 41 },
-          "numPassingAsserts": 1,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "should return large decimal numbers correctly"
-        }
-      ],
-      "endTime": 1732145995398,
-      "message": "",
-      "name": "/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/_tests/numberWithCommas.js",
-      "startTime": 1732145995377,
-      "status": "passed",
-      "summary": ""
-    },
-    {
-      "assertionResults": [
-        {
-          "ancestorTitles": ["isValidTwitterHandle"],
-          "duration": 1,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "isValidTwitterHandle should return true for valid Twitter handles",
-          "invocations": 1,
-          "location": { "column": 3, "line": 4 },
-          "numPassingAsserts": 4,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "should return true for valid Twitter handles"
-        },
-        {
-          "ancestorTitles": ["isValidTwitterHandle"],
-          "duration": 1,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "isValidTwitterHandle should return false for invalid Twitter handles",
-          "invocations": 1,
-          "location": { "column": 3, "line": 17 },
-          "numPassingAsserts": 8,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "should return false for invalid Twitter handles"
-        }
-      ],
-      "endTime": 1732145995418,
-      "message": "",
-      "name": "/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/_tests/isValidTwitterHandle.js",
-      "startTime": 1732145995401,
-      "status": "passed",
-      "summary": ""
-    },
-    {
-      "assertionResults": [
-        {
-          "ancestorTitles": ["isValidSearchAffiliate"],
-          "duration": 0,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "isValidSearchAffiliate should return true for valid search affiliates",
-          "invocations": 1,
-          "location": { "column": 3, "line": 4 },
-          "numPassingAsserts": 6,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "should return true for valid search affiliates"
-        },
-        {
-          "ancestorTitles": ["isValidSearchAffiliate"],
-          "duration": 0,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "isValidSearchAffiliate should return false for invalid search affiliates",
-          "invocations": 1,
-          "location": { "column": 3, "line": 19 },
-          "numPassingAsserts": 8,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "should return false for invalid search affiliates"
-        }
-      ],
-      "endTime": 1732145995439,
-      "message": "",
-      "name": "/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/_tests/isValidSearchAffiliate.js",
-      "startTime": 1732145995422,
-      "status": "passed",
-      "summary": ""
-    },
-    {
-      "assertionResults": [
-        {
-          "ancestorTitles": ["isValidSearchKey"],
-          "duration": 1,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "isValidSearchKey should return true for valid search keys",
-          "invocations": 1,
-          "location": { "column": 3, "line": 4 },
-          "numPassingAsserts": 4,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "should return true for valid search keys"
-        },
-        {
-          "ancestorTitles": ["isValidSearchKey"],
-          "duration": 1,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "isValidSearchKey should return false for invalid search keys",
-          "invocations": 1,
-          "location": { "column": 3, "line": 17 },
-          "numPassingAsserts": 8,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "should return false for invalid search keys"
-        }
-      ],
-      "endTime": 1732145995461,
-      "message": "",
-      "name": "/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/_tests/isValidSearchKey.js",
-      "startTime": 1732145995442,
-      "status": "passed",
-      "summary": ""
-    },
-    {
-      "assertionResults": [
-        {
-          "ancestorTitles": ["isValidDapAgency"],
-          "duration": 1,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "isValidDapAgency should return true for valid agency names",
-          "invocations": 1,
-          "location": { "column": 3, "line": 4 },
-          "numPassingAsserts": 5,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "should return true for valid agency names"
-        },
-        {
-          "ancestorTitles": ["isValidDapAgency"],
-          "duration": 2,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "isValidDapAgency should return false for invalid agency names",
-          "invocations": 1,
-          "location": { "column": 3, "line": 18 },
-          "numPassingAsserts": 8,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "should return false for invalid agency names"
-        }
-      ],
-      "endTime": 1732145995482,
-      "message": "",
-      "name": "/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/_tests/isValidDapAgency.js",
-      "startTime": 1732145995463,
-      "status": "passed",
-      "summary": ""
-    },
-    {
-      "assertionResults": [
-        {
-          "ancestorTitles": ["isValidAnalyticsId"],
-          "duration": 1,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "isValidAnalyticsId should return true for valid Analytics IDs",
-          "invocations": 1,
-          "location": { "column": 3, "line": 4 },
-          "numPassingAsserts": 6,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "should return true for valid Analytics IDs"
-        },
-        {
-          "ancestorTitles": ["isValidAnalyticsId"],
-          "duration": 0,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "isValidAnalyticsId should return false for invalid Analytics IDs",
-          "invocations": 1,
-          "location": { "column": 3, "line": 19 },
-          "numPassingAsserts": 8,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "should return false for invalid Analytics IDs"
-        }
-      ],
-      "endTime": 1732145995503,
-      "message": "",
-      "name": "/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/_tests/isValidAnalyticsId.js",
-      "startTime": 1732145995485,
-      "status": "passed",
-      "summary": ""
-    },
-    {
-      "assertionResults": [
-        {
-          "ancestorTitles": ["formatDate"],
-          "duration": 0,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "formatDate should format a Date object into yyyy-mm-dd",
-          "invocations": 1,
-          "location": { "column": 3, "line": 4 },
-          "numPassingAsserts": 1,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "should format a Date object into yyyy-mm-dd"
-        }
-      ],
-      "endTime": 1732145995523,
-      "message": "",
-      "name": "/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/_tests/formatDate.js",
-      "startTime": 1732145995506,
-      "status": "passed",
-      "summary": ""
-    },
-    {
-      "assertionResults": [
-        {
-          "ancestorTitles": ["sortJobs"],
-          "duration": 0,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "sortJobs correctly sorts jobs into open and upcoming arrays",
-          "invocations": 1,
-          "location": { "column": 3, "line": 31 },
-          "numPassingAsserts": 2,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "correctly sorts jobs into open and upcoming arrays"
-        }
-      ],
-      "endTime": 1732145995545,
-      "message": "",
-      "name": "/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/_tests/sortJobs.js",
-      "startTime": 1732145995526,
-      "status": "passed",
-      "summary": ""
-    },
-    {
-      "assertionResults": [
-        {
-          "ancestorTitles": ["convertTimeToZone"],
-          "duration": 0,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "convertTimeToZone should convert time to Eastern Time",
-          "invocations": 1,
-          "location": { "column": 3, "line": 5 },
-          "numPassingAsserts": 1,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "should convert time to Eastern Time"
-        },
-        {
-          "ancestorTitles": ["convertTimeToZone"],
-          "duration": 1,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "convertTimeToZone should convert time to Pacific Time",
-          "invocations": 1,
-          "location": { "column": 3, "line": 10 },
-          "numPassingAsserts": 1,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "should convert time to Pacific Time"
-        }
-      ],
-      "endTime": 1732145995567,
-      "message": "",
-      "name": "/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/_tests/convertTimeToZone.js",
-      "startTime": 1732145995548,
+      "startTime": 1732228404704,
       "status": "passed",
       "summary": ""
     }
@@ -797,31 +1339,31 @@
       "path": "/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/js/global.js",
       "statementMap": {
         "0": {
-          "start": { "line": 3, "column": 2 },
-          "end": { "line": 5, "column": 3 }
+          "start": { "line": 1, "column": 21 },
+          "end": { "line": 1, "column": 37 }
         },
         "1": {
-          "start": { "line": 4, "column": 4 },
-          "end": { "line": 4, "column": 17 }
+          "start": { "line": 2, "column": 13 },
+          "end": { "line": 2, "column": 28 }
         },
         "2": {
-          "start": { "line": 8, "column": 25 },
-          "end": { "line": 8, "column": 48 }
+          "start": { "line": 3, "column": 14 },
+          "end": { "line": 3, "column": 43 }
         },
         "3": {
-          "start": { "line": 11, "column": 2 },
-          "end": { "line": 19, "column": 3 }
+          "start": { "line": 12, "column": 2 },
+          "end": { "line": 14, "column": 3 }
         },
         "4": {
-          "start": { "line": 18, "column": 4 },
-          "end": { "line": 18, "column": 17 }
+          "start": { "line": 13, "column": 4 },
+          "end": { "line": 13, "column": 17 }
         },
         "5": {
-          "start": { "line": 22, "column": 2 },
-          "end": { "line": 22, "column": 37 }
+          "start": { "line": 17, "column": 25 },
+          "end": { "line": 17, "column": 48 }
         },
         "6": {
-          "start": { "line": 26, "column": 2 },
+          "start": { "line": 20, "column": 2 },
           "end": { "line": 28, "column": 3 }
         },
         "7": {
@@ -829,593 +1371,1634 @@
           "end": { "line": 27, "column": 17 }
         },
         "8": {
-          "start": { "line": 30, "column": 29 },
-          "end": { "line": 30, "column": 41 }
+          "start": { "line": 31, "column": 2 },
+          "end": { "line": 31, "column": 37 }
         },
         "9": {
-          "start": { "line": 31, "column": 2 },
-          "end": { "line": 31, "column": 41 }
+          "start": { "line": 40, "column": 2 },
+          "end": { "line": 42, "column": 3 }
         },
         "10": {
-          "start": { "line": 35, "column": 2 },
-          "end": { "line": 37, "column": 3 }
+          "start": { "line": 41, "column": 4 },
+          "end": { "line": 41, "column": 17 }
         },
         "11": {
-          "start": { "line": 36, "column": 4 },
-          "end": { "line": 36, "column": 17 }
+          "start": { "line": 44, "column": 29 },
+          "end": { "line": 44, "column": 41 }
         },
         "12": {
-          "start": { "line": 39, "column": 25 },
-          "end": { "line": 39, "column": 37 }
+          "start": { "line": 45, "column": 2 },
+          "end": { "line": 45, "column": 41 }
         },
         "13": {
-          "start": { "line": 40, "column": 2 },
-          "end": { "line": 40, "column": 37 }
+          "start": { "line": 54, "column": 2 },
+          "end": { "line": 56, "column": 3 }
         },
         "14": {
-          "start": { "line": 44, "column": 2 },
-          "end": { "line": 46, "column": 3 }
+          "start": { "line": 55, "column": 4 },
+          "end": { "line": 55, "column": 17 }
         },
         "15": {
-          "start": { "line": 45, "column": 4 },
-          "end": { "line": 45, "column": 17 }
+          "start": { "line": 58, "column": 25 },
+          "end": { "line": 58, "column": 37 }
         },
         "16": {
-          "start": { "line": 50, "column": 4 },
-          "end": { "line": 50, "column": 82 }
+          "start": { "line": 59, "column": 2 },
+          "end": { "line": 59, "column": 37 }
         },
         "17": {
-          "start": { "line": 51, "column": 2 },
-          "end": { "line": 51, "column": 35 }
+          "start": { "line": 68, "column": 2 },
+          "end": { "line": 70, "column": 3 }
         },
         "18": {
-          "start": { "line": 55, "column": 2 },
-          "end": { "line": 57, "column": 3 }
+          "start": { "line": 69, "column": 4 },
+          "end": { "line": 69, "column": 17 }
         },
         "19": {
-          "start": { "line": 56, "column": 4 },
-          "end": { "line": 56, "column": 17 }
+          "start": { "line": 74, "column": 4 },
+          "end": { "line": 74, "column": 82 }
         },
         "20": {
-          "start": { "line": 59, "column": 25 },
-          "end": { "line": 59, "column": 57 }
+          "start": { "line": 75, "column": 2 },
+          "end": { "line": 75, "column": 35 }
         },
         "21": {
-          "start": { "line": 60, "column": 2 },
-          "end": { "line": 60, "column": 40 }
+          "start": { "line": 84, "column": 2 },
+          "end": { "line": 86, "column": 3 }
         },
         "22": {
-          "start": { "line": 64, "column": 2 },
-          "end": { "line": 66, "column": 3 }
+          "start": { "line": 85, "column": 4 },
+          "end": { "line": 85, "column": 17 }
         },
         "23": {
-          "start": { "line": 65, "column": 4 },
-          "end": { "line": 65, "column": 17 }
+          "start": { "line": 88, "column": 25 },
+          "end": { "line": 88, "column": 57 }
         },
         "24": {
-          "start": { "line": 68, "column": 31 },
-          "end": { "line": 68, "column": 61 }
+          "start": { "line": 89, "column": 2 },
+          "end": { "line": 89, "column": 40 }
         },
         "25": {
-          "start": { "line": 69, "column": 2 },
-          "end": { "line": 69, "column": 46 }
+          "start": { "line": 98, "column": 2 },
+          "end": { "line": 100, "column": 3 }
         },
         "26": {
-          "start": { "line": 73, "column": 2 },
-          "end": { "line": 75, "column": 3 }
+          "start": { "line": 99, "column": 4 },
+          "end": { "line": 99, "column": 17 }
         },
         "27": {
-          "start": { "line": 74, "column": 4 },
-          "end": { "line": 74, "column": 17 }
+          "start": { "line": 102, "column": 31 },
+          "end": { "line": 102, "column": 61 }
         },
         "28": {
-          "start": { "line": 77, "column": 2 },
-          "end": { "line": 77, "column": 72 }
+          "start": { "line": 103, "column": 2 },
+          "end": { "line": 103, "column": 46 }
         },
         "29": {
-          "start": { "line": 78, "column": 21 },
-          "end": { "line": 78, "column": 42 }
+          "start": { "line": 112, "column": 2 },
+          "end": { "line": 114, "column": 3 }
         },
         "30": {
-          "start": { "line": 79, "column": 2 },
-          "end": { "line": 79, "column": 32 }
+          "start": { "line": 113, "column": 4 },
+          "end": { "line": 113, "column": 17 }
         },
         "31": {
-          "start": { "line": 85, "column": 2 },
-          "end": { "line": 87, "column": 3 }
+          "start": { "line": 116, "column": 21 },
+          "end": { "line": 116, "column": 42 }
         },
         "32": {
-          "start": { "line": 86, "column": 4 },
-          "end": { "line": 86, "column": 18 }
+          "start": { "line": 117, "column": 2 },
+          "end": { "line": 117, "column": 32 }
         },
         "33": {
-          "start": { "line": 90, "column": 37 },
-          "end": { "line": 90, "column": 65 }
+          "start": { "line": 127, "column": 2 },
+          "end": { "line": 129, "column": 3 }
         },
         "34": {
-          "start": { "line": 93, "column": 27 },
-          "end": { "line": 93, "column": 76 }
+          "start": { "line": 128, "column": 4 },
+          "end": { "line": 128, "column": 18 }
         },
         "35": {
-          "start": { "line": 96, "column": 2 },
-          "end": { "line": 98, "column": 3 }
+          "start": { "line": 132, "column": 37 },
+          "end": { "line": 132, "column": 65 }
         },
         "36": {
-          "start": { "line": 97, "column": 4 },
-          "end": { "line": 97, "column": 28 }
+          "start": { "line": 135, "column": 27 },
+          "end": { "line": 135, "column": 76 }
         },
         "37": {
-          "start": { "line": 101, "column": 2 },
-          "end": { "line": 101, "column": 46 }
+          "start": { "line": 138, "column": 2 },
+          "end": { "line": 140, "column": 3 }
         },
         "38": {
-          "start": { "line": 105, "column": 2 },
-          "end": { "line": 108, "column": 12 }
+          "start": { "line": 139, "column": 4 },
+          "end": { "line": 139, "column": 28 }
         },
         "39": {
-          "start": { "line": 111, "column": 0 },
-          "end": { "line": 121, "column": 2 }
+          "start": { "line": 143, "column": 2 },
+          "end": { "line": 143, "column": 46 }
+        },
+        "40": {
+          "start": { "line": 154, "column": 2 },
+          "end": { "line": 156, "column": 3 }
+        },
+        "41": {
+          "start": { "line": 155, "column": 4 },
+          "end": { "line": 155, "column": 50 }
+        },
+        "42": {
+          "start": { "line": 158, "column": 13 },
+          "end": { "line": 158, "column": 24 }
+        },
+        "43": {
+          "start": { "line": 159, "column": 2 },
+          "end": { "line": 181, "column": 5 }
+        },
+        "44": {
+          "start": { "line": 160, "column": 4 },
+          "end": { "line": 167, "column": 5 }
+        },
+        "45": {
+          "start": { "line": 166, "column": 6 },
+          "end": { "line": 166, "column": 60 }
+        },
+        "46": {
+          "start": { "line": 169, "column": 18 },
+          "end": { "line": 169, "column": 56 }
+        },
+        "47": {
+          "start": { "line": 170, "column": 18 },
+          "end": { "line": 170, "column": 56 }
+        },
+        "48": {
+          "start": { "line": 172, "column": 4 },
+          "end": { "line": 180, "column": 5 }
+        },
+        "49": {
+          "start": { "line": 173, "column": 6 },
+          "end": { "line": 173, "column": 40 }
+        },
+        "50": {
+          "start": { "line": 174, "column": 11 },
+          "end": { "line": 180, "column": 5 }
+        },
+        "51": {
+          "start": { "line": 175, "column": 6 },
+          "end": { "line": 175, "column": 15 }
+        },
+        "52": {
+          "start": { "line": 176, "column": 11 },
+          "end": { "line": 180, "column": 5 }
+        },
+        "53": {
+          "start": { "line": 177, "column": 6 },
+          "end": { "line": 177, "column": 16 }
+        },
+        "54": {
+          "start": { "line": 179, "column": 6 },
+          "end": { "line": 179, "column": 38 }
+        },
+        "55": {
+          "start": { "line": 192, "column": 2 },
+          "end": { "line": 194, "column": 3 }
+        },
+        "56": {
+          "start": { "line": 193, "column": 4 },
+          "end": { "line": 193, "column": 43 }
+        },
+        "57": {
+          "start": { "line": 195, "column": 2 },
+          "end": { "line": 197, "column": 4 }
+        },
+        "58": {
+          "start": { "line": 208, "column": 2 },
+          "end": { "line": 210, "column": 3 }
+        },
+        "59": {
+          "start": { "line": 209, "column": 4 },
+          "end": { "line": 209, "column": 21 }
+        },
+        "60": {
+          "start": { "line": 213, "column": 17 },
+          "end": { "line": 215, "column": 3 }
+        },
+        "61": {
+          "start": { "line": 218, "column": 19 },
+          "end": { "line": 218, "column": 49 }
+        },
+        "62": {
+          "start": { "line": 221, "column": 20 },
+          "end": { "line": 221, "column": 24 }
+        },
+        "63": {
+          "start": { "line": 222, "column": 2 },
+          "end": { "line": 226, "column": 3 }
+        },
+        "64": {
+          "start": { "line": 223, "column": 4 },
+          "end": { "line": 223, "column": 35 }
+        },
+        "65": {
+          "start": { "line": 225, "column": 4 },
+          "end": { "line": 225, "column": 42 }
+        },
+        "66": {
+          "start": { "line": 229, "column": 2 },
+          "end": { "line": 253, "column": 3 }
+        },
+        "67": {
+          "start": { "line": 231, "column": 4 },
+          "end": { "line": 233, "column": 6 }
+        },
+        "68": {
+          "start": { "line": 236, "column": 4 },
+          "end": { "line": 240, "column": 5 }
+        },
+        "69": {
+          "start": { "line": 237, "column": 6 },
+          "end": { "line": 239, "column": 8 }
+        },
+        "70": {
+          "start": { "line": 243, "column": 17 },
+          "end": { "line": 243, "column": 39 }
+        },
+        "71": {
+          "start": { "line": 244, "column": 19 },
+          "end": { "line": 244, "column": 56 }
+        },
+        "72": {
+          "start": { "line": 246, "column": 4 },
+          "end": { "line": 252, "column": 5 }
+        },
+        "73": {
+          "start": { "line": 247, "column": 6 },
+          "end": { "line": 247, "column": 20 }
+        },
+        "74": {
+          "start": { "line": 248, "column": 11 },
+          "end": { "line": 252, "column": 5 }
+        },
+        "75": {
+          "start": { "line": 249, "column": 6 },
+          "end": { "line": 249, "column": 22 }
+        },
+        "76": {
+          "start": { "line": 251, "column": 6 },
+          "end": { "line": 251, "column": 24 }
+        },
+        "77": {
+          "start": { "line": 255, "column": 2 },
+          "end": { "line": 255, "column": 19 }
+        },
+        "78": {
+          "start": { "line": 265, "column": 2 },
+          "end": { "line": 275, "column": 3 }
+        },
+        "79": {
+          "start": { "line": 266, "column": 19 },
+          "end": { "line": 266, "column": 47 }
+        },
+        "80": {
+          "start": { "line": 269, "column": 4 },
+          "end": { "line": 274, "column": 5 }
+        },
+        "81": {
+          "start": { "line": 270, "column": 6 },
+          "end": { "line": 270, "column": 44 }
+        },
+        "82": {
+          "start": { "line": 271, "column": 6 },
+          "end": { "line": 271, "column": 45 }
+        },
+        "83": {
+          "start": { "line": 273, "column": 6 },
+          "end": { "line": 273, "column": 45 }
+        },
+        "84": {
+          "start": { "line": 285, "column": 2 },
+          "end": { "line": 285, "column": 39 }
+        },
+        "85": {
+          "start": { "line": 297, "column": 2 },
+          "end": { "line": 299, "column": 3 }
+        },
+        "86": {
+          "start": { "line": 298, "column": 4 },
+          "end": { "line": 298, "column": 50 }
+        },
+        "87": {
+          "start": { "line": 301, "column": 2 },
+          "end": { "line": 304, "column": 12 }
+        },
+        "88": {
+          "start": { "line": 315, "column": 2 },
+          "end": { "line": 317, "column": 3 }
+        },
+        "89": {
+          "start": { "line": 316, "column": 4 },
+          "end": { "line": 316, "column": 50 }
+        },
+        "90": {
+          "start": { "line": 318, "column": 2 },
+          "end": { "line": 321, "column": 10 }
+        },
+        "91": {
+          "start": { "line": 346, "column": 19 },
+          "end": { "line": 346, "column": 21 }
+        },
+        "92": {
+          "start": { "line": 347, "column": 14 },
+          "end": { "line": 347, "column": 16 }
+        },
+        "93": {
+          "start": { "line": 348, "column": 18 },
+          "end": { "line": 348, "column": 20 }
+        },
+        "94": {
+          "start": { "line": 349, "column": 17 },
+          "end": { "line": 349, "column": 19 }
+        },
+        "95": {
+          "start": { "line": 351, "column": 2 },
+          "end": { "line": 353, "column": 3 }
+        },
+        "96": {
+          "start": { "line": 352, "column": 4 },
+          "end": { "line": 352, "column": 37 }
+        },
+        "97": {
+          "start": { "line": 355, "column": 14 },
+          "end": { "line": 355, "column": 31 }
+        },
+        "98": {
+          "start": { "line": 356, "column": 19 },
+          "end": { "line": 356, "column": 39 }
+        },
+        "99": {
+          "start": { "line": 358, "column": 19 },
+          "end": { "line": 361, "column": 4 }
+        },
+        "100": {
+          "start": { "line": 363, "column": 15 },
+          "end": { "line": 363, "column": 76 }
+        },
+        "101": {
+          "start": { "line": 365, "column": 2 },
+          "end": { "line": 367, "column": 3 }
+        },
+        "102": {
+          "start": { "line": 366, "column": 4 },
+          "end": { "line": 366, "column": 42 }
+        },
+        "103": {
+          "start": { "line": 369, "column": 2 },
+          "end": { "line": 371, "column": 3 }
+        },
+        "104": {
+          "start": { "line": 370, "column": 4 },
+          "end": { "line": 370, "column": 37 }
+        },
+        "105": {
+          "start": { "line": 373, "column": 2 },
+          "end": { "line": 375, "column": 3 }
+        },
+        "106": {
+          "start": { "line": 374, "column": 4 },
+          "end": { "line": 374, "column": 34 }
+        },
+        "107": {
+          "start": { "line": 378, "column": 17 },
+          "end": { "line": 378, "column": 210 }
+        },
+        "108": {
+          "start": { "line": 380, "column": 2 },
+          "end": { "line": 380, "column": 16 }
+        },
+        "109": {
+          "start": { "line": 400, "column": 2 },
+          "end": { "line": 400, "column": 53 }
+        },
+        "110": {
+          "start": { "line": 403, "column": 0 },
+          "end": { "line": 421, "column": 2 }
         }
       },
       "fnMap": {
         "0": {
           "name": "isValidGitBranch",
           "decl": {
-            "start": { "line": 1, "column": 9 },
-            "end": { "line": 1, "column": 25 }
+            "start": { "line": 10, "column": 9 },
+            "end": { "line": 10, "column": 25 }
           },
           "loc": {
-            "start": { "line": 1, "column": 34 },
-            "end": { "line": 23, "column": 1 }
+            "start": { "line": 10, "column": 34 },
+            "end": { "line": 32, "column": 1 }
           },
-          "line": 1
+          "line": 10
         },
         "1": {
           "name": "isValidTwitterHandle",
           "decl": {
-            "start": { "line": 25, "column": 9 },
-            "end": { "line": 25, "column": 29 }
+            "start": { "line": 39, "column": 9 },
+            "end": { "line": 39, "column": 29 }
           },
           "loc": {
-            "start": { "line": 25, "column": 38 },
-            "end": { "line": 32, "column": 1 }
+            "start": { "line": 39, "column": 38 },
+            "end": { "line": 46, "column": 1 }
           },
-          "line": 25
+          "line": 39
         },
         "2": {
           "name": "isValidDapAgency",
           "decl": {
-            "start": { "line": 34, "column": 9 },
-            "end": { "line": 34, "column": 25 }
+            "start": { "line": 53, "column": 9 },
+            "end": { "line": 53, "column": 25 }
           },
           "loc": {
-            "start": { "line": 34, "column": 34 },
-            "end": { "line": 41, "column": 1 }
+            "start": { "line": 53, "column": 34 },
+            "end": { "line": 60, "column": 1 }
           },
-          "line": 34
+          "line": 53
         },
         "3": {
           "name": "isValidAnalyticsId",
           "decl": {
-            "start": { "line": 43, "column": 9 },
-            "end": { "line": 43, "column": 27 }
+            "start": { "line": 67, "column": 9 },
+            "end": { "line": 67, "column": 27 }
           },
           "loc": {
-            "start": { "line": 43, "column": 32 },
-            "end": { "line": 52, "column": 1 }
+            "start": { "line": 67, "column": 32 },
+            "end": { "line": 76, "column": 1 }
           },
-          "line": 43
+          "line": 67
         },
         "4": {
           "name": "isValidSearchKey",
-          "decl": {
-            "start": { "line": 54, "column": 9 },
-            "end": { "line": 54, "column": 25 }
-          },
-          "loc": {
-            "start": { "line": 54, "column": 37 },
-            "end": { "line": 61, "column": 1 }
-          },
-          "line": 54
-        },
-        "5": {
-          "name": "isValidSearchAffiliate",
-          "decl": {
-            "start": { "line": 63, "column": 9 },
-            "end": { "line": 63, "column": 31 }
-          },
-          "loc": {
-            "start": { "line": 63, "column": 43 },
-            "end": { "line": 70, "column": 1 }
-          },
-          "line": 63
-        },
-        "6": {
-          "name": "isValidVerificationToken",
-          "decl": {
-            "start": { "line": 72, "column": 9 },
-            "end": { "line": 72, "column": 33 }
-          },
-          "loc": {
-            "start": { "line": 72, "column": 41 },
-            "end": { "line": 80, "column": 1 }
-          },
-          "line": 72
-        },
-        "7": {
-          "name": "numberWithCommas",
           "decl": {
             "start": { "line": 83, "column": 9 },
             "end": { "line": 83, "column": 25 }
           },
           "loc": {
-            "start": { "line": 83, "column": 34 },
-            "end": { "line": 102, "column": 1 }
+            "start": { "line": 83, "column": 37 },
+            "end": { "line": 90, "column": 1 }
           },
           "line": 83
         },
-        "8": {
-          "name": "uswdsIconWithSize",
+        "5": {
+          "name": "isValidSearchAffiliate",
           "decl": {
-            "start": { "line": 104, "column": 9 },
-            "end": { "line": 104, "column": 26 }
+            "start": { "line": 97, "column": 9 },
+            "end": { "line": 97, "column": 31 }
           },
           "loc": {
-            "start": { "line": 104, "column": 39 },
-            "end": { "line": 109, "column": 1 }
+            "start": { "line": 97, "column": 43 },
+            "end": { "line": 104, "column": 1 }
           },
-          "line": 104
+          "line": 97
+        },
+        "6": {
+          "name": "isValidVerificationToken",
+          "decl": {
+            "start": { "line": 111, "column": 9 },
+            "end": { "line": 111, "column": 33 }
+          },
+          "loc": {
+            "start": { "line": 111, "column": 41 },
+            "end": { "line": 118, "column": 1 }
+          },
+          "line": 111
+        },
+        "7": {
+          "name": "numberWithCommas",
+          "decl": {
+            "start": { "line": 125, "column": 9 },
+            "end": { "line": 125, "column": 25 }
+          },
+          "loc": {
+            "start": { "line": 125, "column": 34 },
+            "end": { "line": 144, "column": 1 }
+          },
+          "line": 125
+        },
+        "8": {
+          "name": "sortByProp",
+          "decl": {
+            "start": { "line": 153, "column": 9 },
+            "end": { "line": 153, "column": 19 }
+          },
+          "loc": {
+            "start": { "line": 153, "column": 34 },
+            "end": { "line": 182, "column": 1 }
+          },
+          "line": 153
+        },
+        "9": {
+          "name": "(anonymous_9)",
+          "decl": {
+            "start": { "line": 159, "column": 19 },
+            "end": { "line": 159, "column": 20 }
+          },
+          "loc": {
+            "start": { "line": 159, "column": 29 },
+            "end": { "line": 181, "column": 3 }
+          },
+          "line": 159
+        },
+        "10": {
+          "name": "readableDate",
+          "decl": {
+            "start": { "line": 191, "column": 9 },
+            "end": { "line": 191, "column": 21 }
+          },
+          "loc": {
+            "start": { "line": 191, "column": 31 },
+            "end": { "line": 198, "column": 1 }
+          },
+          "line": 191
+        },
+        "11": {
+          "name": "getStateFromDates",
+          "decl": {
+            "start": { "line": 207, "column": 9 },
+            "end": { "line": 207, "column": 26 }
+          },
+          "loc": {
+            "start": { "line": 207, "column": 42 },
+            "end": { "line": 256, "column": 1 }
+          },
+          "line": 207
+        },
+        "12": {
+          "name": "htmlDateString",
+          "decl": {
+            "start": { "line": 264, "column": 9 },
+            "end": { "line": 264, "column": 23 }
+          },
+          "loc": {
+            "start": { "line": 264, "column": 33 },
+            "end": { "line": 276, "column": 1 }
+          },
+          "line": 264
+        },
+        "13": {
+          "name": "minNumber",
+          "decl": {
+            "start": { "line": 284, "column": 9 },
+            "end": { "line": 284, "column": 18 }
+          },
+          "loc": {
+            "start": { "line": 284, "column": 31 },
+            "end": { "line": 286, "column": 1 }
+          },
+          "line": 284
+        },
+        "14": {
+          "name": "uswdsIconWithSize",
+          "decl": {
+            "start": { "line": 296, "column": 9 },
+            "end": { "line": 296, "column": 26 }
+          },
+          "loc": {
+            "start": { "line": 296, "column": 39 },
+            "end": { "line": 305, "column": 1 }
+          },
+          "line": 296
+        },
+        "15": {
+          "name": "uswdsIcon",
+          "decl": {
+            "start": { "line": 314, "column": 9 },
+            "end": { "line": 314, "column": 18 }
+          },
+          "loc": {
+            "start": { "line": 314, "column": 25 },
+            "end": { "line": 322, "column": 1 }
+          },
+          "line": 314
+        },
+        "16": {
+          "name": "imageWithClassShortcode",
+          "decl": {
+            "start": { "line": 338, "column": 15 },
+            "end": { "line": 338, "column": 38 }
+          },
+          "loc": {
+            "start": { "line": 345, "column": 2 },
+            "end": { "line": 381, "column": 1 }
+          },
+          "line": 345
+        },
+        "17": {
+          "name": "imageShortcode",
+          "decl": {
+            "start": { "line": 399, "column": 15 },
+            "end": { "line": 399, "column": 29 }
+          },
+          "loc": {
+            "start": { "line": 399, "column": 40 },
+            "end": { "line": 401, "column": 1 }
+          },
+          "line": 399
         }
       },
       "branchMap": {
         "0": {
           "loc": {
-            "start": { "line": 3, "column": 2 },
-            "end": { "line": 5, "column": 3 }
+            "start": { "line": 12, "column": 2 },
+            "end": { "line": 14, "column": 3 }
           },
           "type": "if",
           "locations": [
             {
-              "start": { "line": 3, "column": 2 },
-              "end": { "line": 5, "column": 3 }
+              "start": { "line": 12, "column": 2 },
+              "end": { "line": 14, "column": 3 }
             },
             { "start": {}, "end": {} }
           ],
-          "line": 3
+          "line": 12
         },
         "1": {
           "loc": {
-            "start": { "line": 3, "column": 6 },
-            "end": { "line": 3, "column": 56 }
+            "start": { "line": 12, "column": 6 },
+            "end": { "line": 12, "column": 56 }
           },
           "type": "binary-expr",
           "locations": [
             {
-              "start": { "line": 3, "column": 6 },
-              "end": { "line": 3, "column": 32 }
+              "start": { "line": 12, "column": 6 },
+              "end": { "line": 12, "column": 32 }
             },
             {
-              "start": { "line": 3, "column": 36 },
-              "end": { "line": 3, "column": 56 }
-            }
-          ],
-          "line": 3
-        },
-        "2": {
-          "loc": {
-            "start": { "line": 11, "column": 2 },
-            "end": { "line": 19, "column": 3 }
-          },
-          "type": "if",
-          "locations": [
-            {
-              "start": { "line": 11, "column": 2 },
-              "end": { "line": 19, "column": 3 }
-            },
-            { "start": {}, "end": {} }
-          ],
-          "line": 11
-        },
-        "3": {
-          "loc": {
-            "start": { "line": 12, "column": 4 },
-            "end": { "line": 16, "column": 24 }
-          },
-          "type": "binary-expr",
-          "locations": [
-            {
-              "start": { "line": 12, "column": 4 },
-              "end": { "line": 12, "column": 25 }
-            },
-            {
-              "start": { "line": 13, "column": 4 },
-              "end": { "line": 13, "column": 26 }
-            },
-            {
-              "start": { "line": 14, "column": 4 },
-              "end": { "line": 14, "column": 24 }
-            },
-            {
-              "start": { "line": 15, "column": 4 },
-              "end": { "line": 15, "column": 26 }
-            },
-            {
-              "start": { "line": 16, "column": 4 },
-              "end": { "line": 16, "column": 24 }
+              "start": { "line": 12, "column": 36 },
+              "end": { "line": 12, "column": 56 }
             }
           ],
           "line": 12
         },
-        "4": {
+        "2": {
           "loc": {
-            "start": { "line": 26, "column": 2 },
+            "start": { "line": 20, "column": 2 },
             "end": { "line": 28, "column": 3 }
           },
           "type": "if",
           "locations": [
             {
-              "start": { "line": 26, "column": 2 },
+              "start": { "line": 20, "column": 2 },
               "end": { "line": 28, "column": 3 }
             },
             { "start": {}, "end": {} }
           ],
-          "line": 26
+          "line": 20
+        },
+        "3": {
+          "loc": {
+            "start": { "line": 21, "column": 4 },
+            "end": { "line": 25, "column": 24 }
+          },
+          "type": "binary-expr",
+          "locations": [
+            {
+              "start": { "line": 21, "column": 4 },
+              "end": { "line": 21, "column": 25 }
+            },
+            {
+              "start": { "line": 22, "column": 4 },
+              "end": { "line": 22, "column": 26 }
+            },
+            {
+              "start": { "line": 23, "column": 4 },
+              "end": { "line": 23, "column": 24 }
+            },
+            {
+              "start": { "line": 24, "column": 4 },
+              "end": { "line": 24, "column": 26 }
+            },
+            {
+              "start": { "line": 25, "column": 4 },
+              "end": { "line": 25, "column": 24 }
+            }
+          ],
+          "line": 21
+        },
+        "4": {
+          "loc": {
+            "start": { "line": 40, "column": 2 },
+            "end": { "line": 42, "column": 3 }
+          },
+          "type": "if",
+          "locations": [
+            {
+              "start": { "line": 40, "column": 2 },
+              "end": { "line": 42, "column": 3 }
+            },
+            { "start": {}, "end": {} }
+          ],
+          "line": 40
         },
         "5": {
           "loc": {
-            "start": { "line": 26, "column": 6 },
-            "end": { "line": 26, "column": 45 }
+            "start": { "line": 40, "column": 6 },
+            "end": { "line": 40, "column": 45 }
           },
           "type": "binary-expr",
           "locations": [
             {
-              "start": { "line": 26, "column": 6 },
-              "end": { "line": 26, "column": 21 }
+              "start": { "line": 40, "column": 6 },
+              "end": { "line": 40, "column": 21 }
             },
             {
-              "start": { "line": 26, "column": 25 },
-              "end": { "line": 26, "column": 45 }
+              "start": { "line": 40, "column": 25 },
+              "end": { "line": 40, "column": 45 }
             }
           ],
-          "line": 26
+          "line": 40
         },
         "6": {
           "loc": {
-            "start": { "line": 35, "column": 2 },
-            "end": { "line": 37, "column": 3 }
+            "start": { "line": 54, "column": 2 },
+            "end": { "line": 56, "column": 3 }
           },
           "type": "if",
           "locations": [
             {
-              "start": { "line": 35, "column": 2 },
-              "end": { "line": 37, "column": 3 }
+              "start": { "line": 54, "column": 2 },
+              "end": { "line": 56, "column": 3 }
             },
             { "start": {}, "end": {} }
           ],
-          "line": 35
+          "line": 54
         },
         "7": {
           "loc": {
-            "start": { "line": 35, "column": 6 },
-            "end": { "line": 35, "column": 45 }
+            "start": { "line": 54, "column": 6 },
+            "end": { "line": 54, "column": 45 }
           },
           "type": "binary-expr",
           "locations": [
             {
-              "start": { "line": 35, "column": 6 },
-              "end": { "line": 35, "column": 21 }
+              "start": { "line": 54, "column": 6 },
+              "end": { "line": 54, "column": 21 }
             },
             {
-              "start": { "line": 35, "column": 25 },
-              "end": { "line": 35, "column": 45 }
+              "start": { "line": 54, "column": 25 },
+              "end": { "line": 54, "column": 45 }
             }
           ],
-          "line": 35
+          "line": 54
         },
         "8": {
           "loc": {
-            "start": { "line": 44, "column": 2 },
-            "end": { "line": 46, "column": 3 }
+            "start": { "line": 68, "column": 2 },
+            "end": { "line": 70, "column": 3 }
           },
           "type": "if",
           "locations": [
             {
-              "start": { "line": 44, "column": 2 },
-              "end": { "line": 46, "column": 3 }
+              "start": { "line": 68, "column": 2 },
+              "end": { "line": 70, "column": 3 }
             },
             { "start": {}, "end": {} }
           ],
-          "line": 44
+          "line": 68
         },
         "9": {
           "loc": {
-            "start": { "line": 44, "column": 6 },
-            "end": { "line": 44, "column": 37 }
+            "start": { "line": 68, "column": 6 },
+            "end": { "line": 68, "column": 37 }
           },
           "type": "binary-expr",
           "locations": [
             {
-              "start": { "line": 44, "column": 6 },
-              "end": { "line": 44, "column": 17 }
+              "start": { "line": 68, "column": 6 },
+              "end": { "line": 68, "column": 17 }
             },
             {
-              "start": { "line": 44, "column": 21 },
-              "end": { "line": 44, "column": 37 }
+              "start": { "line": 68, "column": 21 },
+              "end": { "line": 68, "column": 37 }
             }
           ],
-          "line": 44
+          "line": 68
         },
         "10": {
           "loc": {
-            "start": { "line": 55, "column": 2 },
-            "end": { "line": 57, "column": 3 }
+            "start": { "line": 84, "column": 2 },
+            "end": { "line": 86, "column": 3 }
           },
           "type": "if",
           "locations": [
             {
-              "start": { "line": 55, "column": 2 },
-              "end": { "line": 57, "column": 3 }
+              "start": { "line": 84, "column": 2 },
+              "end": { "line": 86, "column": 3 }
             },
             { "start": {}, "end": {} }
           ],
-          "line": 55
+          "line": 84
         },
         "11": {
           "loc": {
-            "start": { "line": 55, "column": 6 },
-            "end": { "line": 55, "column": 51 }
+            "start": { "line": 84, "column": 6 },
+            "end": { "line": 84, "column": 51 }
           },
           "type": "binary-expr",
           "locations": [
             {
-              "start": { "line": 55, "column": 6 },
-              "end": { "line": 55, "column": 24 }
+              "start": { "line": 84, "column": 6 },
+              "end": { "line": 84, "column": 24 }
             },
             {
-              "start": { "line": 55, "column": 28 },
-              "end": { "line": 55, "column": 51 }
+              "start": { "line": 84, "column": 28 },
+              "end": { "line": 84, "column": 51 }
             }
           ],
-          "line": 55
+          "line": 84
         },
         "12": {
           "loc": {
-            "start": { "line": 64, "column": 2 },
-            "end": { "line": 66, "column": 3 }
+            "start": { "line": 98, "column": 2 },
+            "end": { "line": 100, "column": 3 }
           },
           "type": "if",
           "locations": [
             {
-              "start": { "line": 64, "column": 2 },
-              "end": { "line": 66, "column": 3 }
+              "start": { "line": 98, "column": 2 },
+              "end": { "line": 100, "column": 3 }
             },
             { "start": {}, "end": {} }
           ],
-          "line": 64
+          "line": 98
         },
         "13": {
           "loc": {
-            "start": { "line": 64, "column": 6 },
-            "end": { "line": 64, "column": 51 }
+            "start": { "line": 98, "column": 6 },
+            "end": { "line": 98, "column": 51 }
           },
           "type": "binary-expr",
           "locations": [
             {
-              "start": { "line": 64, "column": 6 },
-              "end": { "line": 64, "column": 24 }
+              "start": { "line": 98, "column": 6 },
+              "end": { "line": 98, "column": 24 }
             },
             {
-              "start": { "line": 64, "column": 28 },
-              "end": { "line": 64, "column": 51 }
+              "start": { "line": 98, "column": 28 },
+              "end": { "line": 98, "column": 51 }
             }
           ],
-          "line": 64
+          "line": 98
         },
         "14": {
           "loc": {
-            "start": { "line": 73, "column": 2 },
-            "end": { "line": 75, "column": 3 }
+            "start": { "line": 112, "column": 2 },
+            "end": { "line": 114, "column": 3 }
           },
           "type": "if",
           "locations": [
             {
-              "start": { "line": 73, "column": 2 },
-              "end": { "line": 75, "column": 3 }
+              "start": { "line": 112, "column": 2 },
+              "end": { "line": 114, "column": 3 }
             },
             { "start": {}, "end": {} }
           ],
-          "line": 73
+          "line": 112
         },
         "15": {
           "loc": {
-            "start": { "line": 73, "column": 6 },
-            "end": { "line": 73, "column": 43 }
+            "start": { "line": 112, "column": 6 },
+            "end": { "line": 112, "column": 43 }
           },
           "type": "binary-expr",
           "locations": [
             {
-              "start": { "line": 73, "column": 6 },
-              "end": { "line": 73, "column": 20 }
+              "start": { "line": 112, "column": 6 },
+              "end": { "line": 112, "column": 20 }
             },
             {
-              "start": { "line": 73, "column": 24 },
-              "end": { "line": 73, "column": 43 }
+              "start": { "line": 112, "column": 24 },
+              "end": { "line": 112, "column": 43 }
             }
           ],
-          "line": 73
+          "line": 112
         },
         "16": {
           "loc": {
-            "start": { "line": 85, "column": 2 },
-            "end": { "line": 87, "column": 3 }
+            "start": { "line": 127, "column": 2 },
+            "end": { "line": 129, "column": 3 }
           },
           "type": "if",
           "locations": [
             {
-              "start": { "line": 85, "column": 2 },
-              "end": { "line": 87, "column": 3 }
+              "start": { "line": 127, "column": 2 },
+              "end": { "line": 129, "column": 3 }
             },
             { "start": {}, "end": {} }
           ],
-          "line": 85
+          "line": 127
         },
         "17": {
           "loc": {
-            "start": { "line": 96, "column": 2 },
-            "end": { "line": 98, "column": 3 }
+            "start": { "line": 138, "column": 2 },
+            "end": { "line": 140, "column": 3 }
           },
           "type": "if",
           "locations": [
             {
-              "start": { "line": 96, "column": 2 },
-              "end": { "line": 98, "column": 3 }
+              "start": { "line": 138, "column": 2 },
+              "end": { "line": 140, "column": 3 }
             },
             { "start": {}, "end": {} }
           ],
-          "line": 96
+          "line": 138
+        },
+        "18": {
+          "loc": {
+            "start": { "line": 154, "column": 2 },
+            "end": { "line": 156, "column": 3 }
+          },
+          "type": "if",
+          "locations": [
+            {
+              "start": { "line": 154, "column": 2 },
+              "end": { "line": 156, "column": 3 }
+            },
+            { "start": {}, "end": {} }
+          ],
+          "line": 154
+        },
+        "19": {
+          "loc": {
+            "start": { "line": 160, "column": 4 },
+            "end": { "line": 167, "column": 5 }
+          },
+          "type": "if",
+          "locations": [
+            {
+              "start": { "line": 160, "column": 4 },
+              "end": { "line": 167, "column": 5 }
+            },
+            { "start": {}, "end": {} }
+          ],
+          "line": 160
+        },
+        "20": {
+          "loc": {
+            "start": { "line": 161, "column": 6 },
+            "end": { "line": 164, "column": 16 }
+          },
+          "type": "binary-expr",
+          "locations": [
+            {
+              "start": { "line": 161, "column": 6 },
+              "end": { "line": 161, "column": 27 }
+            },
+            {
+              "start": { "line": 162, "column": 6 },
+              "end": { "line": 162, "column": 16 }
+            },
+            {
+              "start": { "line": 163, "column": 6 },
+              "end": { "line": 163, "column": 27 }
+            },
+            {
+              "start": { "line": 164, "column": 6 },
+              "end": { "line": 164, "column": 16 }
+            }
+          ],
+          "line": 161
+        },
+        "21": {
+          "loc": {
+            "start": { "line": 169, "column": 18 },
+            "end": { "line": 169, "column": 56 }
+          },
+          "type": "cond-expr",
+          "locations": [
+            {
+              "start": { "line": 169, "column": 42 },
+              "end": { "line": 169, "column": 49 }
+            },
+            {
+              "start": { "line": 169, "column": 52 },
+              "end": { "line": 169, "column": 56 }
+            }
+          ],
+          "line": 169
+        },
+        "22": {
+          "loc": {
+            "start": { "line": 170, "column": 18 },
+            "end": { "line": 170, "column": 56 }
+          },
+          "type": "cond-expr",
+          "locations": [
+            {
+              "start": { "line": 170, "column": 42 },
+              "end": { "line": 170, "column": 49 }
+            },
+            {
+              "start": { "line": 170, "column": 52 },
+              "end": { "line": 170, "column": 56 }
+            }
+          ],
+          "line": 170
+        },
+        "23": {
+          "loc": {
+            "start": { "line": 172, "column": 4 },
+            "end": { "line": 180, "column": 5 }
+          },
+          "type": "if",
+          "locations": [
+            {
+              "start": { "line": 172, "column": 4 },
+              "end": { "line": 180, "column": 5 }
+            },
+            {
+              "start": { "line": 174, "column": 11 },
+              "end": { "line": 180, "column": 5 }
+            }
+          ],
+          "line": 172
+        },
+        "24": {
+          "loc": {
+            "start": { "line": 172, "column": 8 },
+            "end": { "line": 172, "column": 62 }
+          },
+          "type": "binary-expr",
+          "locations": [
+            {
+              "start": { "line": 172, "column": 8 },
+              "end": { "line": 172, "column": 33 }
+            },
+            {
+              "start": { "line": 172, "column": 37 },
+              "end": { "line": 172, "column": 62 }
+            }
+          ],
+          "line": 172
+        },
+        "25": {
+          "loc": {
+            "start": { "line": 174, "column": 11 },
+            "end": { "line": 180, "column": 5 }
+          },
+          "type": "if",
+          "locations": [
+            {
+              "start": { "line": 174, "column": 11 },
+              "end": { "line": 180, "column": 5 }
+            },
+            {
+              "start": { "line": 176, "column": 11 },
+              "end": { "line": 180, "column": 5 }
+            }
+          ],
+          "line": 174
+        },
+        "26": {
+          "loc": {
+            "start": { "line": 176, "column": 11 },
+            "end": { "line": 180, "column": 5 }
+          },
+          "type": "if",
+          "locations": [
+            {
+              "start": { "line": 176, "column": 11 },
+              "end": { "line": 180, "column": 5 }
+            },
+            {
+              "start": { "line": 178, "column": 11 },
+              "end": { "line": 180, "column": 5 }
+            }
+          ],
+          "line": 176
+        },
+        "27": {
+          "loc": {
+            "start": { "line": 192, "column": 2 },
+            "end": { "line": 194, "column": 3 }
+          },
+          "type": "if",
+          "locations": [
+            {
+              "start": { "line": 192, "column": 2 },
+              "end": { "line": 194, "column": 3 }
+            },
+            { "start": {}, "end": {} }
+          ],
+          "line": 192
+        },
+        "28": {
+          "loc": {
+            "start": { "line": 192, "column": 6 },
+            "end": { "line": 192, "column": 50 }
+          },
+          "type": "binary-expr",
+          "locations": [
+            {
+              "start": { "line": 192, "column": 6 },
+              "end": { "line": 192, "column": 32 }
+            },
+            {
+              "start": { "line": 192, "column": 36 },
+              "end": { "line": 192, "column": 50 }
+            }
+          ],
+          "line": 192
+        },
+        "29": {
+          "loc": {
+            "start": { "line": 208, "column": 2 },
+            "end": { "line": 210, "column": 3 }
+          },
+          "type": "if",
+          "locations": [
+            {
+              "start": { "line": 208, "column": 2 },
+              "end": { "line": 210, "column": 3 }
+            },
+            { "start": {}, "end": {} }
+          ],
+          "line": 208
+        },
+        "30": {
+          "loc": {
+            "start": { "line": 208, "column": 6 },
+            "end": { "line": 208, "column": 23 }
+          },
+          "type": "binary-expr",
+          "locations": [
+            {
+              "start": { "line": 208, "column": 6 },
+              "end": { "line": 208, "column": 12 }
+            },
+            {
+              "start": { "line": 208, "column": 16 },
+              "end": { "line": 208, "column": 23 }
+            }
+          ],
+          "line": 208
+        },
+        "31": {
+          "loc": {
+            "start": { "line": 218, "column": 19 },
+            "end": { "line": 218, "column": 49 }
+          },
+          "type": "cond-expr",
+          "locations": [
+            {
+              "start": { "line": 218, "column": 27 },
+              "end": { "line": 218, "column": 42 }
+            },
+            {
+              "start": { "line": 218, "column": 45 },
+              "end": { "line": 218, "column": 49 }
+            }
+          ],
+          "line": 218
+        },
+        "32": {
+          "loc": {
+            "start": { "line": 222, "column": 2 },
+            "end": { "line": 226, "column": 3 }
+          },
+          "type": "if",
+          "locations": [
+            {
+              "start": { "line": 222, "column": 2 },
+              "end": { "line": 226, "column": 3 }
+            },
+            { "start": {}, "end": {} }
+          ],
+          "line": 222
+        },
+        "33": {
+          "loc": {
+            "start": { "line": 229, "column": 2 },
+            "end": { "line": 253, "column": 3 }
+          },
+          "type": "if",
+          "locations": [
+            {
+              "start": { "line": 229, "column": 2 },
+              "end": { "line": 253, "column": 3 }
+            },
+            { "start": {}, "end": {} }
+          ],
+          "line": 229
+        },
+        "34": {
+          "loc": {
+            "start": { "line": 236, "column": 4 },
+            "end": { "line": 240, "column": 5 }
+          },
+          "type": "if",
+          "locations": [
+            {
+              "start": { "line": 236, "column": 4 },
+              "end": { "line": 240, "column": 5 }
+            },
+            { "start": {}, "end": {} }
+          ],
+          "line": 236
+        },
+        "35": {
+          "loc": {
+            "start": { "line": 244, "column": 19 },
+            "end": { "line": 244, "column": 56 }
+          },
+          "type": "binary-expr",
+          "locations": [
+            {
+              "start": { "line": 244, "column": 19 },
+              "end": { "line": 244, "column": 30 }
+            },
+            {
+              "start": { "line": 244, "column": 34 },
+              "end": { "line": 244, "column": 56 }
+            }
+          ],
+          "line": 244
+        },
+        "36": {
+          "loc": {
+            "start": { "line": 246, "column": 4 },
+            "end": { "line": 252, "column": 5 }
+          },
+          "type": "if",
+          "locations": [
+            {
+              "start": { "line": 246, "column": 4 },
+              "end": { "line": 252, "column": 5 }
+            },
+            {
+              "start": { "line": 248, "column": 11 },
+              "end": { "line": 252, "column": 5 }
+            }
+          ],
+          "line": 246
+        },
+        "37": {
+          "loc": {
+            "start": { "line": 246, "column": 8 },
+            "end": { "line": 246, "column": 27 }
+          },
+          "type": "binary-expr",
+          "locations": [
+            {
+              "start": { "line": 246, "column": 8 },
+              "end": { "line": 246, "column": 14 }
+            },
+            {
+              "start": { "line": 246, "column": 18 },
+              "end": { "line": 246, "column": 27 }
+            }
+          ],
+          "line": 246
+        },
+        "38": {
+          "loc": {
+            "start": { "line": 248, "column": 11 },
+            "end": { "line": 252, "column": 5 }
+          },
+          "type": "if",
+          "locations": [
+            {
+              "start": { "line": 248, "column": 11 },
+              "end": { "line": 252, "column": 5 }
+            },
+            {
+              "start": { "line": 250, "column": 11 },
+              "end": { "line": 252, "column": 5 }
+            }
+          ],
+          "line": 248
+        },
+        "39": {
+          "loc": {
+            "start": { "line": 265, "column": 2 },
+            "end": { "line": 275, "column": 3 }
+          },
+          "type": "if",
+          "locations": [
+            {
+              "start": { "line": 265, "column": 2 },
+              "end": { "line": 275, "column": 3 }
+            },
+            { "start": {}, "end": {} }
+          ],
+          "line": 265
+        },
+        "40": {
+          "loc": {
+            "start": { "line": 265, "column": 6 },
+            "end": { "line": 265, "column": 47 }
+          },
+          "type": "binary-expr",
+          "locations": [
+            {
+              "start": { "line": 265, "column": 6 },
+              "end": { "line": 265, "column": 27 }
+            },
+            {
+              "start": { "line": 265, "column": 31 },
+              "end": { "line": 265, "column": 47 }
+            }
+          ],
+          "line": 265
+        },
+        "41": {
+          "loc": {
+            "start": { "line": 269, "column": 4 },
+            "end": { "line": 274, "column": 5 }
+          },
+          "type": "if",
+          "locations": [
+            {
+              "start": { "line": 269, "column": 4 },
+              "end": { "line": 274, "column": 5 }
+            },
+            {
+              "start": { "line": 272, "column": 11 },
+              "end": { "line": 274, "column": 5 }
+            }
+          ],
+          "line": 269
+        },
+        "42": {
+          "loc": {
+            "start": { "line": 297, "column": 2 },
+            "end": { "line": 299, "column": 3 }
+          },
+          "type": "if",
+          "locations": [
+            {
+              "start": { "line": 297, "column": 2 },
+              "end": { "line": 299, "column": 3 }
+            },
+            { "start": {}, "end": {} }
+          ],
+          "line": 297
+        },
+        "43": {
+          "loc": {
+            "start": { "line": 315, "column": 2 },
+            "end": { "line": 317, "column": 3 }
+          },
+          "type": "if",
+          "locations": [
+            {
+              "start": { "line": 315, "column": 2 },
+              "end": { "line": 317, "column": 3 }
+            },
+            { "start": {}, "end": {} }
+          ],
+          "line": 315
+        },
+        "44": {
+          "loc": {
+            "start": { "line": 351, "column": 2 },
+            "end": { "line": 353, "column": 3 }
+          },
+          "type": "if",
+          "locations": [
+            {
+              "start": { "line": 351, "column": 2 },
+              "end": { "line": 353, "column": 3 }
+            },
+            { "start": {}, "end": {} }
+          ],
+          "line": 351
+        },
+        "45": {
+          "loc": {
+            "start": { "line": 363, "column": 15 },
+            "end": { "line": 363, "column": 76 }
+          },
+          "type": "cond-expr",
+          "locations": [
+            {
+              "start": { "line": 363, "column": 36 },
+              "end": { "line": 363, "column": 57 }
+            },
+            {
+              "start": { "line": 363, "column": 60 },
+              "end": { "line": 363, "column": 76 }
+            }
+          ],
+          "line": 363
+        },
+        "46": {
+          "loc": {
+            "start": { "line": 365, "column": 2 },
+            "end": { "line": 367, "column": 3 }
+          },
+          "type": "if",
+          "locations": [
+            {
+              "start": { "line": 365, "column": 2 },
+              "end": { "line": 367, "column": 3 }
+            },
+            { "start": {}, "end": {} }
+          ],
+          "line": 365
+        },
+        "47": {
+          "loc": {
+            "start": { "line": 369, "column": 2 },
+            "end": { "line": 371, "column": 3 }
+          },
+          "type": "if",
+          "locations": [
+            {
+              "start": { "line": 369, "column": 2 },
+              "end": { "line": 371, "column": 3 }
+            },
+            { "start": {}, "end": {} }
+          ],
+          "line": 369
+        },
+        "48": {
+          "loc": {
+            "start": { "line": 373, "column": 2 },
+            "end": { "line": 375, "column": 3 }
+          },
+          "type": "if",
+          "locations": [
+            {
+              "start": { "line": 373, "column": 2 },
+              "end": { "line": 375, "column": 3 }
+            },
+            { "start": {}, "end": {} }
+          ],
+          "line": 373
+        },
+        "49": {
+          "loc": {
+            "start": { "line": 378, "column": 115 },
+            "end": { "line": 378, "column": 139 }
+          },
+          "type": "cond-expr",
+          "locations": [
+            {
+              "start": { "line": 378, "column": 123 },
+              "end": { "line": 378, "column": 134 }
+            },
+            {
+              "start": { "line": 378, "column": 137 },
+              "end": { "line": 378, "column": 139 }
+            }
+          ],
+          "line": 378
+        },
+        "50": {
+          "loc": {
+            "start": { "line": 378, "column": 142 },
+            "end": { "line": 378, "column": 174 }
+          },
+          "type": "cond-expr",
+          "locations": [
+            {
+              "start": { "line": 378, "column": 154 },
+              "end": { "line": 378, "column": 169 }
+            },
+            {
+              "start": { "line": 378, "column": 172 },
+              "end": { "line": 378, "column": 174 }
+            }
+          ],
+          "line": 378
+        },
+        "51": {
+          "loc": {
+            "start": { "line": 378, "column": 177 },
+            "end": { "line": 378, "column": 207 }
+          },
+          "type": "cond-expr",
+          "locations": [
+            {
+              "start": { "line": 378, "column": 188 },
+              "end": { "line": 378, "column": 202 }
+            },
+            {
+              "start": { "line": 378, "column": 205 },
+              "end": { "line": 378, "column": 207 }
+            }
+          ],
+          "line": 378
         }
       },
       "s": {
-        "0": 18,
-        "1": 3,
+        "0": 15,
+        "1": 15,
         "2": 15,
-        "3": 15,
-        "4": 4,
-        "5": 11,
-        "6": 12,
-        "7": 2,
-        "8": 10,
-        "9": 10,
-        "10": 13,
-        "11": 2,
-        "12": 11,
-        "13": 11,
-        "14": 14,
-        "15": 2,
-        "16": 12,
-        "17": 12,
-        "18": 12,
-        "19": 2,
-        "20": 10,
-        "21": 10,
-        "22": 14,
-        "23": 2,
-        "24": 12,
-        "25": 12,
-        "26": 10,
-        "27": 2,
-        "28": 8,
-        "29": 8,
-        "30": 8,
-        "31": 10,
-        "32": 4,
-        "33": 6,
-        "34": 6,
+        "3": 18,
+        "4": 3,
+        "5": 15,
+        "6": 15,
+        "7": 4,
+        "8": 11,
+        "9": 12,
+        "10": 2,
+        "11": 10,
+        "12": 10,
+        "13": 13,
+        "14": 2,
+        "15": 11,
+        "16": 11,
+        "17": 14,
+        "18": 2,
+        "19": 12,
+        "20": 12,
+        "21": 12,
+        "22": 2,
+        "23": 10,
+        "24": 10,
+        "25": 14,
+        "26": 2,
+        "27": 12,
+        "28": 12,
+        "29": 10,
+        "30": 2,
+        "31": 8,
+        "32": 8,
+        "33": 10,
+        "34": 4,
         "35": 6,
-        "36": 4,
-        "37": 2,
-        "38": 5,
-        "39": 9
+        "36": 6,
+        "37": 6,
+        "38": 4,
+        "39": 2,
+        "40": 8,
+        "41": 0,
+        "42": 8,
+        "43": 8,
+        "44": 17,
+        "45": 1,
+        "46": 16,
+        "47": 16,
+        "48": 16,
+        "49": 6,
+        "50": 10,
+        "51": 1,
+        "52": 9,
+        "53": 2,
+        "54": 7,
+        "55": 10,
+        "56": 6,
+        "57": 4,
+        "58": 8,
+        "59": 2,
+        "60": 6,
+        "61": 6,
+        "62": 6,
+        "63": 6,
+        "64": 4,
+        "65": 4,
+        "66": 6,
+        "67": 5,
+        "68": 5,
+        "69": 3,
+        "70": 5,
+        "71": 5,
+        "72": 5,
+        "73": 3,
+        "74": 2,
+        "75": 1,
+        "76": 1,
+        "77": 1,
+        "78": 0,
+        "79": 0,
+        "80": 0,
+        "81": 0,
+        "82": 0,
+        "83": 0,
+        "84": 5,
+        "85": 5,
+        "86": 0,
+        "87": 5,
+        "88": 9,
+        "89": 5,
+        "90": 4,
+        "91": 5,
+        "92": 5,
+        "93": 5,
+        "94": 5,
+        "95": 5,
+        "96": 1,
+        "97": 5,
+        "98": 5,
+        "99": 5,
+        "100": 4,
+        "101": 4,
+        "102": 2,
+        "103": 4,
+        "104": 2,
+        "105": 4,
+        "106": 2,
+        "107": 4,
+        "108": 4,
+        "109": 0,
+        "110": 15
       },
       "f": {
         "0": 18,
@@ -1426,7 +3009,16 @@
         "5": 14,
         "6": 10,
         "7": 10,
-        "8": 5
+        "8": 8,
+        "9": 17,
+        "10": 10,
+        "11": 8,
+        "12": 0,
+        "13": 5,
+        "14": 5,
+        "15": 9,
+        "16": 5,
+        "17": 0
       },
       "b": {
         "0": [3, 15],
@@ -1446,10 +3038,44 @@
         "14": [2, 8],
         "15": [10, 9],
         "16": [4, 6],
-        "17": [4, 2]
+        "17": [4, 2],
+        "18": [0, 8],
+        "19": [1, 16],
+        "20": [17, 16, 16, 16],
+        "21": [15, 1],
+        "22": [14, 2],
+        "23": [6, 10],
+        "24": [16, 8],
+        "25": [1, 9],
+        "26": [2, 7],
+        "27": [6, 4],
+        "28": [10, 4],
+        "29": [2, 6],
+        "30": [8, 3],
+        "31": [5, 1],
+        "32": [4, 2],
+        "33": [5, 1],
+        "34": [3, 2],
+        "35": [5, 3],
+        "36": [3, 2],
+        "37": [5, 4],
+        "38": [1, 1],
+        "39": [0, 0],
+        "40": [0, 0],
+        "41": [0, 0],
+        "42": [0, 5],
+        "43": [5, 4],
+        "44": [1, 4],
+        "45": [0, 4],
+        "46": [2, 2],
+        "47": [2, 2],
+        "48": [2, 2],
+        "49": [2, 2],
+        "50": [2, 2],
+        "51": [2, 2]
       },
       "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-      "hash": "52f9cdf79f955728e3bb9a2b6249622f5e3e6290"
+      "hash": "432a954fc669aa9fbd9b86a4af51894bbf4510e0"
     },
     "/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/js/positions.js": {
       "path": "/Users/ximenakilroe/Local Sites/gsa/tts.gsa.gov/js/positions.js",

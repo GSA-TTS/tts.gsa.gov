@@ -65,19 +65,17 @@ See the [11ty docs](https://www.11ty.dev/docs/filters/url/)
 All of your images will be stored in the `_img/` directory. To reference your
 images in your templates you can use the `shortcodes` built into the template.
 
-For referencing an image without a style class, you will pass the template
-shortcode the image's source path and the alternative image name in that order, i.e.,
-
-```NJK
-{% image "_img/my-image.png" "My PNG Image Alternative Name" %}
-```
-
 For referencing an image with a style class, you will pass the template
 shortcode the image's source path, class names, and the alternative image name in
 that order, i.e.,
 
 ```NJK
 {% image_with_class "_img/my-image.png" "img-class another-class" "My PNG Image Alternative Name" %}
+```
+
+If the image does not have a style class, simply pass an empty string, i.e.,
+```NJK
+{% image_with_class "_img/my-image.png" "" "My PNG Image Alternative Name" %}
 ```
 
 ### Referencing USWDS Sprite Icons
