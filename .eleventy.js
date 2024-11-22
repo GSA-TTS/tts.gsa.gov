@@ -9,7 +9,6 @@ const markdownItAnchor = require("markdown-it-anchor");
 const yaml = require("js-yaml");
 const { sassPlugin } = require("esbuild-sass-plugin");
 const svgSprite = require("eleventy-plugin-svg-sprite");
-const { imageShortcode, imageWithClassShortcode } = require("./config");
 const {
   isValidGitBranch,
   isValidTwitterHandle,
@@ -20,6 +19,13 @@ const {
   isValidVerificationToken,
   uswdsIconWithSize,
   numberWithCommas,
+  sortByProp,
+  readableDate,
+  getStateFromDates,
+  htmlDateString,
+  minNumber,
+  uswdsIcon,
+  imageWithClassShortcode,
 } = require("./js/global.js");
 
 require("dotenv").config();
@@ -90,6 +96,11 @@ module.exports = function (config) {
     baseUrl = new URL(hosts.undefined).href.replace(/\/$/, "");
   }
 
+  // If BASEURL env variable exists, update pathPrefix to the BASEURL
+  if (process.env.BASEURL) {
+    pathPrefix = process.env.BASEURL;
+  }
+
   config.addGlobalData("baseUrl", baseUrl);
   config.addGlobalData("site.baseUrl", baseUrl);
 
@@ -139,160 +150,15 @@ module.exports = function (config) {
     );
   }
 
-  // Template function used to sort a collection by a certain property
-  // Ex: {% assign sortedJobs = collection.jobs | sortByProp: "title" %}
-  function sortByProp(values, prop) {
-    let vals = [...values];
-    return vals.sort((a, b) => {
-      if (typeof a[prop] == "string" && typeof b[prop] == "string") {
-        return a[prop].localeCompare(b[prop]);
-      } else {
-        return Math.sign(a[prop] - b[prop]);
-      }
-    });
-  }
-
-  // Get Date and Time as Seconds
-  // Datetime format: YYYY-MM-DD HH:MM
-  config.addLiquidShortcode("getDateTimeinSeconds", getDateTimeinSeconds);
-  function getDateTimeinSeconds(datetime) {
-    // Split the datetime string into date and time parts
-    const dateParts = datetime.split(" ");
-    const date = dateParts[0];
-    const time = dateParts[1];
-
-    // Extract hours, minutes, and AM/PM
-    let hours = parseInt(time.slice(0, time.length - 2).split(":")[0], 10); // Adjusted to capture full hour
-    const minutes = time.length === 6 ? time.slice(2, 4) : time.slice(3, 5);
-    const amPm = time.slice(-2).toLowerCase(); // Handle AM/PM case
-
-    // Convert hours to 24-hour format
-    if (amPm === "pm" && hours !== 12) {
-      hours += 12;
-    } else if (amPm === "am" && hours === 12) {
-      hours = 0;
-    }
-
-    // Format the datetime string for timestamp conversion
-    const formattedDatetime = `${date} ${String(hours).padStart(2, "0")}:${minutes} ET`;
-
-    // Convert to timestamp (in seconds)
-    const timestamp = Math.floor(new Date(formattedDatetime).getTime() / 1000);
-
-    return timestamp;
-  }
-
-  // Get State From Dates
-  config.addLiquidShortcode("getStateFromDates", getStateFromDates);
-  function getStateFromDates(opens, closes) {
-    if (!opens && !closes) {
-      return "unknown";
-    }
-
-    // Get the current date in "America/New_York" timezone
-    let now_date = new Date(
-      new Date().toLocaleString("en-US", { timeZone: "America/New_York" }),
-    );
-
-    // Parse the 'opens' date in UTC and convert to local time
-    let opens_date = opens ? new Date(opens) : null;
-
-    // Parse the 'closes' date in UTC and set time to 11:59:59 PM in local time
-    let closes_date = null;
-    if (closes) {
-      closes_date = new Date(closes);
-      // Set the time to 11:59:59 PM in local time
-      closes_date.setHours(23, 59, 59, 999);
-    }
-
-    // Convert opens_date and closes_date to local time for comparison
-    if (opens_date) {
-      // Adjust opens_date to local timezone
-      opens_date = new Date(
-        opens_date.toLocaleString("en-US", { timeZone: "America/New_York" }),
-      );
-
-      // Adjust closes_date to local timezone
-      if (closes_date) {
-        closes_date = new Date(
-          closes_date.toLocaleString("en-US", { timeZone: "America/New_York" }),
-        );
-      }
-
-      // Check if it's open or closed
-      let isOpen = now_date >= opens_date;
-      let isClosed = closes_date && now_date > closes_date;
-
-      if (isOpen && !isClosed) {
-        return "open";
-      } else if (isClosed) {
-        return "closed";
-      } else {
-        return "upcoming";
-      }
-    }
-
-    return "unknown"; // Default fallback if no conditions are met
-  }
-
-  config.addFilter("stateFromDates", getStateFromDates);
   config.addFilter("sortByProp", sortByProp);
-
-  config.addFilter("readableDate", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: "America/New_York" }).toFormat(
-      "dd LLL yyyy",
-    );
-  });
-
-  // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
-  config.addFilter("htmlDateString", (dateObj) => {
-    if (dateObj !== undefined && dateObj !== null) {
-      let dateTime = DateTime.fromJSDate(dateObj);
-
-      // If working locally, add one day to the date to match what is in the actual environments.
-      if (baseUrl.includes("localhost")) {
-        dateTime = dateTime.plus({ days: 1 });
-        return dateTime.toFormat("yyyy-LL-dd");
-      } else {
-        return dateTime.toFormat("yyyy-LL-dd");
-      }
-    }
-  });
-
-  // Get the first `n` elements of a collection.
-  config.addFilter("head", (array, n) => {
-    if (!Array.isArray(array) || array.length === 0) {
-      return [];
-    }
-    if (n < 0) {
-      return array.slice(n);
-    }
-
-    return array.slice(0, n);
-  });
-
-  // Return the smallest number argument
-  config.addFilter("min", (...numbers) => {
-    return Math.min.apply(null, numbers);
-  });
-
-  function filterTagList(tags) {
-    return (tags || []).filter(
-      (tag) => ["all", "nav", "post", "posts"].indexOf(tag) === -1,
-    );
-  }
-
-  config.addFilter("filterTagList", filterTagList);
-
-  // Create an array of all tags
-  config.addCollection("tagList", function (collection) {
-    let tagSet = new Set();
-    collection.getAll().forEach((item) => {
-      (item.data.tags || []).forEach((tag) => tagSet.add(tag));
-    });
-
-    return filterTagList([...tagSet]);
-  });
+  config.addFilter("readableDate", readableDate);
+  config.addFilter("htmlDateString", htmlDateString);
+  config.addFilter("min", minNumber);
+  config.addFilter("numberWithCommas", numberWithCommas);
+  config.addLiquidShortcode("image_with_class", imageWithClassShortcode);
+  config.addLiquidShortcode("uswds_icon", uswdsIcon);
+  config.addLiquidShortcode("uswds_icon_with_size", uswdsIconWithSize);
+  config.addLiquidShortcode("getStateFromDates", getStateFromDates);
 
   let markdownLibrary = markdownIt({
     html: true,
@@ -330,25 +196,6 @@ module.exports = function (config) {
     ui: false,
     ghostMode: false,
   });
-
-  // Set image shortcodes
-  config.addLiquidShortcode("image", imageShortcode);
-  config.addLiquidShortcode("image_with_class", imageWithClassShortcode);
-  config.addLiquidShortcode("uswds_icon", function (name) {
-    return `
-    <svg class="usa-icon" aria-hidden="true" role="img">
-      <use xlink:href="#svg-${name}"></use>
-    </svg>`;
-  });
-
-  config.addLiquidShortcode("uswds_icon_with_size", uswdsIconWithSize);
-
-  config.addFilter("numberWithCommas", numberWithCommas);
-
-  // If BASEURL env variable exists, update pathPrefix to the BASEURL
-  if (process.env.BASEURL) {
-    pathPrefix = process.env.BASEURL;
-  }
 
   return {
     dataTemplateEngine: "liquid",
