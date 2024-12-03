@@ -38,8 +38,8 @@ title: "Login.gov: Fraud Technical Expert"
 
 # Put the opening and closing dates of your posting here, if you have them
 # These dates MUST be formatted as YYYY-MM-DD, where month and day are 2-digits
-opens: 
-closes: 
+opens: 2024-12-04
+closes: 2024-12-09
 
 # If the role is listed on a different site and you just want to link to it,
 # put that link here. You can leave the rest of the template as-is, unless you 
@@ -77,7 +77,7 @@ travel_requirement: Occasional travel may be required up to 10%-20% per year.
 work_schedule: Full time.
 
 # Set to 0 if there is no limit
-max_applications: 0
+max_applications: 150
 
 # Use either "permanent" or "temporary"
 appointment_type: permanent
@@ -154,9 +154,13 @@ qualifications: |
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
 specialized_requirements: |
-  To Be Updated Soon.
+  - Utilizing theories, principles, concepts, standards, and practices sufficient to: develop new, privacy preserving identity fraud detection, mitigation, investigation, and redress principles and concepts.
+  - Advising other IT experts through the agency or in partners agencies on a variety of situations and issues that involve identity fraud detection, mitigation, and redress techniques as applied to Login.gov.
+  - Serving as senior expert and consultant to top agency management officials to advise on integrating anti-fraud programs with other programs of equivalent scope and complexity.
+  - Compiling fraud investigations resource requirements, fraud redress resource requirements, and fraud analytics resource requirements.
+  - Expert skill in leading, participating in or working with  high-performing engineering, security, IT or cross-functional teams in a collaborative manner to accomplish goals, developing and maintaining effective team relationships, and contributing to team’s performance and success.  
 
 # This can be filled prior to the job posting going live or left blank #
 # The application button will only show after the open date            #
-application_link:
+application_link: https://www.usajobs.gov/job/821623200
 ---
