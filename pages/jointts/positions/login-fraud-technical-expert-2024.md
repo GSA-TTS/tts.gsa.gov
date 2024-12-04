@@ -152,7 +152,7 @@ role_summary: |
 qualifications: |
 
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
-# indenting once.
+# indenting once. 
 specialized_requirements: |
   - Utilizing theories, principles, concepts, standards, and practices sufficient to: develop new, privacy preserving identity fraud detection, mitigation, investigation, and redress principles and concepts.
   - Advising other IT experts through the agency or in partners agencies on a variety of situations and issues that involve identity fraud detection, mitigation, and redress techniques as applied to Login.gov.
