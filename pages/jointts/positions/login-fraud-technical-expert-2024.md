@@ -68,7 +68,7 @@ vacancies: "1" # Put the number in quotes.
 location: Anywhere in the U.S. (remote)
 
 # Put the GS grade and pay range this position is being advertised at. For SES positions, set the value of gs to SES.
-gs: 
+gs: 15
 min_payrange: $143,736
 max_payrange: $191,900
 
