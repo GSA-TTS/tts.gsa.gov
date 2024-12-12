@@ -158,8 +158,12 @@ qualifications: |
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
 specialized_requirements: |
-
-  This will be updated soon.
+  To qualify, you must have one (1) year of specialized experience at the next lower GS-grade (or equivalent). Specialized experience is:
+  -  Partnering with senior leadership and senior stakeholders across teams or enterprises to achieve organizational goals;
+  -  Working with, or leading, teams of individuals from one or more professional disciplines devoted to digital service delivery, such as software engineers, product managers, user experience designers, content strategists, agile project managers, or other digital service delivery disciplines;
+  -  Supporting the overall planning, management, and direction of a technical program or product;
+  -  Experience developing, or leading the development of, cloud-based infrastructure and software in commercial or government cloud environments, and
+  -  Working on a digital product or service that required balancing user experience with security or privacy considerations.
 
 # This can be filled prior to the job posting going live or left blank #
 # The application button will only show after the open date            #
