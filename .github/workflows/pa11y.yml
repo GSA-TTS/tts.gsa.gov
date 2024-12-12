@@ -38,7 +38,7 @@ jobs:
           node-version: "18"
 
       - name: Install dependencies
-        run: npm install --production=false && pip install --require-hashes -r requirements.txt
+        run: npm ci --production=false && pip install --require-hashes -r requirements.txt
 
       - name: Setup custom variables
         id: customvars
