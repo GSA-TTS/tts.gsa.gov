@@ -38,8 +38,8 @@ title: "TTS: Senior Advisor for Technology"
 
 # Put the opening and closing dates of your posting here, if you have them
 # These dates MUST be formatted as YYYY-MM-DD, where month and day are 2-digits
-opens:
-closes:
+opens: 2024-12-16
+closes: 2024-12-20
 
 # If the role is listed on a different site and you just want to link to it,
 # put that link here. You can leave the rest of the template as-is, unless you
@@ -167,5 +167,5 @@ specialized_requirements: |
 
 # This can be filled prior to the job posting going live or left blank #
 # The application button will only show after the open date            #
-application_link:
+application_link: https://www.usajobs.gov/job/824096100
 ---
