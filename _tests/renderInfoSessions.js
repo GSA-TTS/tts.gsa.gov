@@ -31,7 +31,7 @@ describe("renderInfoSessions", () => {
 
     expect(listItems.length).toBe(2);
     expect(listItems[0].querySelector("a").href).toBe(mockInfoSessions[0].link);
-    expect(listItems[0].querySelector("a").innerText).toContain("Sunday");
+    expect(listItems[0].querySelector("a").innerText).toContain("Friday");
     expect(listItems[1].querySelector("a").href).toBe(mockInfoSessions[1].link);
   });
 
