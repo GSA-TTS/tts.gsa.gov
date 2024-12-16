@@ -15,12 +15,12 @@ describe("renderInfoSessions", () => {
   it("renders valid upcoming info sessions into the link item", () => {
     const mockInfoSessions = [
       {
-        date: "2024-12-15T00:00:00Z",
+        date: "2034-12-15T00:00:00Z",
         time: "2:00pm-3:00pm",
         link: "https://example.com/session1",
       },
       {
-        date: "2024-12-20T00:00:00Z",
+        date: "2034-12-20T00:00:00Z",
         time: "1:00pm-2:00pm",
         link: "https://example.com/session2",
       },
@@ -78,7 +78,7 @@ describe("renderInfoSessions", () => {
         link: "https://example.com/past-session",
       },
       {
-        date: "2024-12-15T00:00:00Z",
+        date: "2034-12-15T00:00:00Z",
         time: "2:00pm-3:00pm",
         link: "https://example.com/future-session",
       },
@@ -96,7 +96,7 @@ describe("renderInfoSessions", () => {
   it("renders a styled wrapper with correct classes for /join/ page layout", () => {
     const mockInfoSessions = [
       {
-        date: "2024-12-15T00:00:00Z",
+        date: "2034-12-15T00:00:00Z",
         time: "2:00pm-3:00pm",
         link: "https://example.com/session1",
       },
@@ -114,7 +114,7 @@ describe("renderInfoSessions", () => {
   it("renders a styled wrapper with correct classes for position layout", () => {
     const mockInfoSessions = [
       {
-        date: "2024-12-15T00:00:00Z",
+        date: "2034-12-15T00:00:00Z",
         time: "2:00pm-3:00pm",
         link: "https://example.com/session1",
       },
