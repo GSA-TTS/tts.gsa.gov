@@ -16,7 +16,7 @@ jobs:
   button:
     runs-on: ubuntu-22.04
 
-    permissions: write-all      
+    permissions: write-all
 
     steps:
       - name: Setup custom variables
