@@ -26,14 +26,14 @@ concurrency:
 jobs:
   build:
     name: MegaLinter
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     permissions: write-all
     steps:
       # Git Checkout
       - name: Checkout Code
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # pin@v4
         with:
-          token: ${{ secrets.PAT || secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PAT || secrets.GITHUB_TOKEN || github.token }}
           fetch-depth: 0
 
       - name: "Import GPG key"
@@ -51,7 +51,7 @@ jobs:
         uses: oxsecurity/megalinter/flavors/javascript@d8c95fc6f2237031fb9e9322b0f97100168afa6e # pin@v8.2.0
         env:
           VALIDATE_ALL_CODEBASE: false
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAT || secrets.GITHUB_TOKEN || github.token }}
 
       # Upload MegaLinter artifacts
       - name: Archive production artifacts
