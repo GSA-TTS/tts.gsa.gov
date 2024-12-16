@@ -41,3 +41,20 @@ repos:
         description: Detect hardcoded secrets using Gitleaks
         language: docker_image
         entry: zricethezav/gitleaks:v8.15.0 protect --verbose --redact --staged
+
+  # fail if a commit includes a file named '.env'
+  # BAD:
+  #   .env
+  #   foo/.env
+  #
+  # Good:
+  # sample.env
+  # env.sample
+  # share/examples/sample.env
+  - repo: local
+    hooks:
+      - id: no-dotenv-files
+        name: "Files named .env are not allowed."
+        entry: "Files may not be named .env"
+        language: fail
+        files: '^(.*[/])?[.]env$'
