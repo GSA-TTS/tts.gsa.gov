@@ -57,4 +57,4 @@ repos:
         name: "Files named .env are not allowed."
         entry: "Files may not be named .env"
         language: fail
-        files: '^(.*[/])?[.]env$'
+        files: "^(.*[/])?[.]env$"
