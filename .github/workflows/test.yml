@@ -30,7 +30,7 @@ jobs:
           node-version: "${{ steps.nvm.outputs.NVMRC }}"
 
       - name: Install NPM dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build site
         run: npm run build
