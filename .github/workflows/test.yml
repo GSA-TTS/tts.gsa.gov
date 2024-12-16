@@ -14,8 +14,8 @@ concurrency:
 jobs:
   test:
     name: "Run tests"
-    runs-on: ubuntu-22.04
     permissions: write-all
+    runs-on: ubuntu-22.04
 
     steps:
       - name: Checkout repository
