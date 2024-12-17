@@ -26,7 +26,8 @@ layout: layouts/base
                 <li class="update usa-card tablet:grid-col-4">
                     <div class="usa-card__container text-center display-flex">
                         {%- if update.data.featured_image -%}
-                        <img src="/assets/{{ update.data.featured_image }}" alt="{{ update.data.title }} featured image" class="featured-image"/>
+                          {% assign featured_image_path = '/assets/' | append: update.data.featured_image %}
+                          <img src="/assets/{{ update.data.featured_image }}" alt="{{ update.data.title }} featured image" class="featured-image"/>
                         {%- endif -%}
                         <h2>
                         <a href="{{ update.url }}" class="usa-link">{{ update.data.title }}</a>

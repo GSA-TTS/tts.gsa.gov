@@ -21,7 +21,8 @@ layout: layouts/base
       <div class="desktop:grid-col-12 usa-prose blog-content">
         <!-- Featured Image -->
         {%- if featured_image -%}
-        <img src="/assets/{{ featured_image }}" alt="{{ title }} featured image" class="featured-image" />
+            {% assign featured_image_path = '/assets/' | append: featured_image %}
+            <img src="{{ featured_image_path | url }}" alt="{{ title }} featured image" class="featured-image" />
         {%- endif -%}
 
         <div class="pub-info">
