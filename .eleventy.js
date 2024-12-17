@@ -26,6 +26,7 @@ const {
   minNumber,
   uswdsIcon,
   imageWithClassShortcode,
+  truncateText
 } = require("./js/global.js");
 
 require("dotenv").config();
@@ -155,6 +156,7 @@ module.exports = function (config) {
   config.addFilter("htmlDateString", htmlDateString);
   config.addFilter("min", minNumber);
   config.addFilter("numberWithCommas", numberWithCommas);
+  config.addFilter("truncateText", truncateText);
   config.addLiquidShortcode("image_with_class", imageWithClassShortcode);
   config.addLiquidShortcode("uswds_icon", uswdsIcon);
   config.addLiquidShortcode("uswds_icon_with_size", uswdsIconWithSize);

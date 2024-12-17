@@ -337,3 +337,58 @@ h4#specialized-requirements {
     font-weight: 400;
   }
 }
+
+/* Updates */
+.update.usa-card > div {
+  padding: .5rem;
+}
+
+.update.usa-card > div img {
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.update.usa-card > div h2 {
+  font-size: 1.5rem;
+  margin-bottom: .5rem;
+}
+
+.update.usa-card > div p {
+  margin-top: 0;
+}
+
+.update.usa-card > div .pub-info {
+  display: flex;
+  justify-content: center;
+}
+
+.update.usa-card > div .pub-info span {
+  margin: 0 .25rem;
+}
+
+.update.usa-card > div .pub-info p,
+.update.usa-card > div .pub-info span {
+  font-size: 14px;
+}
+
+.update.usa-card .card-footer {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.blog-content .pub-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: .5rem;
+}
+
+.blog-content .pub-info p {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+.blog-content .update-tags {
+  font-size: 14px;
+  font-weight: 600;
+}
