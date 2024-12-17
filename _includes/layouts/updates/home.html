@@ -27,10 +27,10 @@ layout: layouts/base
                     <div class="usa-card__container text-center display-flex">
                         {%- if update.data.featured_image -%}
                           {% assign featured_image_path = '/assets/' | append: update.data.featured_image %}
-                          <img src="/assets/{{ update.data.featured_image }}" alt="{{ update.data.title }} featured image" class="featured-image"/>
+                          <img src="{{ featured_image_path | url }}" alt="{{ update.data.title }} featured image" class="featured-image"/>
                         {%- endif -%}
                         <h2>
-                        <a href="{{ update.url }}" class="usa-link">{{ update.data.title }}</a>
+                        <a href="{{ update.url | url }}" class="usa-link">{{ update.data.title }}</a>
                         </h2>
                         <div class="pub-info">
                             <p>{{ update.data.publish_date | readableDate }}</p>
