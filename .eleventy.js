@@ -43,6 +43,9 @@ module.exports = function (config) {
   // copy files from `_img/webp/` to `_site/`
   config.addPassthroughCopy({ "_img/webp/": "/assets/" });
 
+  // copy files from `pages/updates/posts/images` to `_site/`
+  config.addPassthroughCopy({ "pages/updates/posts/images": "/assets/" });
+
   // Copy USWDS init JS so we can load it in HEAD to prevent banner flashing
   config.addPassthroughCopy({
     "./node_modules/@uswds/uswds/dist/js/uswds-init.js":

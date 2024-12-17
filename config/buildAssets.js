@@ -3,30 +3,6 @@ const path = require("path");
 const esbuild = require("esbuild");
 const { sassPlugin } = require("esbuild-sass-plugin");
 
-async function copyImagesToAssets() {
-  const sourceDir = path.join(__dirname, "../pages/updates/posts/images");
-  const destinationDir = path.join(__dirname, "../_site/assets");
-
-  try {
-    const files = await fs.readdir(sourceDir, { withFileTypes: true });
-
-    for (const file of files) {
-      if (file.isFile()) {
-        const ext = path.extname(file.name).toLowerCase();
-        if ([".png", ".jpg", ".jpeg", ".svg"].includes(ext)) {
-          const sourcePath = path.join(sourceDir, file.name);
-          const destinationPath = path.join(destinationDir, file.name);
-
-          await fs.copyFile(sourcePath, destinationPath);
-          console.log(`Copied: ${file.name}`);
-        }
-      }
-    }
-  } catch (err) {
-    console.error("Error copying images to assets:", err);
-  }
-}
-
 async function createAssetPaths() {
   let pathPrefix = "";
 
@@ -97,7 +73,6 @@ esbuild
       }),
     ],
   })
-  .then(() => copyImagesToAssets())
   .then(() => createAssetPaths())
   .then(() => {
     console.log("Building with entry points:", [
