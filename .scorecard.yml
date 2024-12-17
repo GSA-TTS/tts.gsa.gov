@@ -1,0 +1,42 @@
+---
+
+# This file annotates several of the scoring parameters used by Scorecard
+# and why they may or may not be applicable to this project.
+#
+# The following checks are not relevant or not applicable:
+annotations:
+  - checks:
+      - CII-Best-Practices
+    reasons:
+      - reason: not-applicable # we will not be participating in the program
+
+  - checks:
+      - Fuzzing
+    reasons:
+      - reason: not-applicable # this is a static website built from repository
+
+  - checks:
+      - License
+    reasons:
+      - reason: remediated # we are required to use CC0-1.0
+
+  - checks:
+      - Packaging
+      - Signed-Releases
+    reasons:
+      - reason: not-applicable # we do not produce packages
+
+# We use the following checks as-presented:
+#    - Binary-Artifacts
+#    - Branch-Protection
+#    - CI-Tests
+#    - Code-Review
+#    - Contributors
+#    - Dangerous-Workflow
+#    - Dependency-Update-Tool
+#    - Maintained
+#    - Pinned-Dependencies
+#    - SAST
+#    - Security-Policy
+#    - Token-Permissions
+#    - Vulnerabilities
