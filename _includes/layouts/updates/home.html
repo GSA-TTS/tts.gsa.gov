@@ -15,7 +15,7 @@ layout: layouts/base
   <h1>{{ title }}</h1>
 </div>
 
-{%- assign updates = collections.updates | reverse -%} <!-- Reverse to show the latest updates first -->
+{%- assign updates = collections.updates -%} <!-- Reverse to show the latest updates first -->
 <section class="usa-section">
   <div class="grid-container">
     <div class="grid-row grid-gap">
