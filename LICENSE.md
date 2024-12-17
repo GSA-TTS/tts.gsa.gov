@@ -1,3 +1,5 @@
+CC0-1.0 Universal
+
 # License
 
 As a work of the [United States government](https://www.usa.gov/), this project is in the public domain within the United States of America.
