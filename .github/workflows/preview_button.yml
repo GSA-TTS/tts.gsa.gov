@@ -14,11 +14,9 @@ concurrency:
 
 jobs:
   button:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
-    permissions:
-      issues: write
-      pull-requests: write
+    permissions: write-all
 
     steps:
       - name: Setup custom variables
@@ -47,7 +45,7 @@ jobs:
       - name: Comment on pull request.
         uses: thollander/actions-comment-pull-request@fabd468d3a1a0b97feee5f6b9e499eab0dd903f6 # pin@v2.5.0
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAT || secrets.GITHUB_TOKEN || github.token }}
           message: |
             ## Preview This Branch
 
