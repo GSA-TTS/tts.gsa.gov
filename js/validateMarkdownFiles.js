@@ -4,10 +4,10 @@ const { execSync } = require("child_process");
 const grayMatter = require("gray-matter");
 
 function validateMarkdownFiles() {
-    const mdFilesDir = '../pages/jointts/positions/'; // Directory with markdown files
+    const mdFilesDir = './pages/jointts/positions/'; // Directory with markdown files
     const mdFiles = fs.readdirSync(mdFilesDir).filter(file => file.endsWith('.md') && file !== 'position-template.md'); // Skip 'position-template.md'
 
-    const schemaPath = '../_schemas/job-posting.json'; // Path to schema
+    const schemaPath = './_schemas/job-posting.json'; // Path to schema
 
     mdFiles.forEach(file => {
         const filePath = path.join(mdFilesDir, file);
