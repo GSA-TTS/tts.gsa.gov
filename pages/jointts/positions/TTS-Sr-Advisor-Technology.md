@@ -59,7 +59,7 @@ updated:
 # The basic information and details of the position
 info_intro: Open to U.S. citizens or nationals (residents of American Samoa and Swains Island). Subject to background check.
 
-supervisory_status: non-supervisory
+supervisory_status: Non-Supervisory
 
 usajobs_official_title: IT Specialist (PLCYPLN/APPSW)
 
@@ -68,18 +68,16 @@ vacancies: "1"  # Put the number in quotes.
 location: Anywhere in the U.S. (remote)
 
 # Put the GS grade and pay range this position is being advertised at. For SES positions, set the value of gs to SES.
-gs: 15
-min_payrange: $143,736
-max_payrange: $191,900
+gs: "15"
 
 travel_requirement: Occasional travel may be required up to 10%-20% per year.
 
-work_schedule: Full time.
+work_schedule: Full time
 
 # Set to 0 if there is no limit
 max_applications: 400
 
-# Use either "permanent" or "temporary"
+# Use either "permanent" or "term-limited"
 appointment_type: term-limited
 
 # List key objectives here. Key objectives and sub-bullets will be displayed in
