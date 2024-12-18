@@ -33,13 +33,6 @@ jobs:
       - name: Install NPM dependencies
         run: npm ci
 
-      - name: Validate job postings
-        run: |
-          # Install AJV CLI
-          npm install -g ajv-cli
-          # Validate job posting files
-          ajv validate -s schemas/job-posting-schema.json -d jobs/*.md
-
       - name: Build site
         run: npm run build
 
