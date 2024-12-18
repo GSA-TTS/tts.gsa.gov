@@ -74,7 +74,24 @@
     },
     "gs": {
       "type": ["string", "integer", "null"],
-      "enum": ["SES", "15", "14", "13", "12", "11", "10", "9", "8", "7", "6", "5", "4", "3", "2", "1"],
+      "enum": [
+        "SES",
+        "15",
+        "14",
+        "13",
+        "12",
+        "11",
+        "10",
+        "9",
+        "8",
+        "7",
+        "6",
+        "5",
+        "4",
+        "3",
+        "2",
+        "1"
+      ],
       "description": "The GS grade or SES level."
     },
     "travel_requirement": {
@@ -117,9 +134,20 @@
       "items": {
         "type": "object",
         "properties": {
-          "link": { "type": "string", "format": "uri", "description": "Link to the info session." },
-          "date": { "type": "string", "format": "date", "description": "Date of the info session." },
-          "time": { "type": "string", "description": "Time of the info session in ET." }
+          "link": {
+            "type": "string",
+            "format": "uri",
+            "description": "Link to the info session."
+          },
+          "date": {
+            "type": "string",
+            "format": "date",
+            "description": "Date of the info session."
+          },
+          "time": {
+            "type": "string",
+            "description": "Time of the info session in ET."
+          }
         },
         "required": ["link", "date", "time"]
       },

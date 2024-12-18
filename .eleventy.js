@@ -27,7 +27,7 @@ const {
   uswdsIcon,
   imageWithClassShortcode,
 } = require("./js/global.js");
-const { validateMarkdownFiles } = require("./js/validateMarkdownFiles.js")
+const { validateMarkdownFiles } = require("./js/validateMarkdownFiles.js");
 
 require("dotenv").config();
 
@@ -183,7 +183,7 @@ module.exports = function (config) {
   });
 
   // Validate markdown files before build
-  config.on('beforeBuild', () => {
+  config.on("beforeBuild", () => {
     validateMarkdownFiles(); // Call our validation function
   });
 
