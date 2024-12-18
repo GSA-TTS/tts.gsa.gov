@@ -1,7 +1,8 @@
 ---
-layout: layouts/jointts/job-listing
+layout: layouts/redirects
 permalink: /join/{{ title | slugify }}.html
 tags: jobs
+redirectTo: /join/
 
 ################################################################################
 #                                                                              #
@@ -80,7 +81,7 @@ tags: jobs
 # headings are how the site builder knows what the data is. For the rest of the
 # frontmatter, please be careful not to delete the headings!
 #🔻🔻🔻🔻🔻
-title: "TTS Office of Solutions: FedRAMP Security Director"
+title: "TTS Fellowships Office: Presidential Innovation Fellows Director"
 
 # Put the opening and closing dates of your posting here, if you have them. The
 # values you set here will be turned into user-friendly text in other parts of
@@ -92,9 +93,8 @@ title: "TTS Office of Solutions: FedRAMP Security Director"
 # site builder automatically understands. Anything else will not be understood
 # as a date.
 #🔻🔻🔻🔻🔻
-opens: 2024-08-28
-closes: 2024-09-01
-
+opens: 2024-08-27
+closes: 2024-09-03
 # These dates are also used to determine whether a position is upcoming, open,
 # or closed. Here's how we decide:
 #
@@ -116,7 +116,7 @@ closes: 2024-09-01
 # received, include the maximum number of applications here. Remove this line
 # or set the value to 0 if the job does not have an application cap.
 #🔻🔻🔻🔻🔻
-max applications: 400
+max applications: 300
 
 # Is this a permanent or term appointment? Use either "perm" or "term". This
 # will be used to fill in the appointment type on the page with consistent
@@ -160,19 +160,29 @@ gs: 15
 # objectives. This example indents sub-bullets with two spaces:
 #🔻🔻🔻🔻🔻
 key objectives:
-  - You will set and implement FedRAMP’s security vision and priorities.
-    - Set the policies and processes that define and enforce clear security expectations across FedRAMP authorizations, and a threat-based approach to continually updating them.
-    - Protect and build on the FedRAMP brand as a meaningful and rigorous security and risk management process, whose authorizations can consistently be presumed adequate for use by any federal agency.
-    - Manage a team that is responsible for applying these security policies, and help adjudicate novel or challenging situations as they arise within the authorization and continuous monitoring process.
-  - You will keep FedRAMP operating as a security-first program, and incentivize effective security processes in cloud providers.
-    - Design and operate the FedRAMP authorization and continuous monitoring processes to consistently incentivize positive security outcomes.
-    - Orient FedRAMP around agile delivery principles, by enabling cloud providers to operate using secure agile software development practices and rapid delivery of security updates and features.
-    - Identify and track security-oriented program metrics in order to effectively calibrate FedRAMP’s security priorities, and to ensure FedRAMP remains accountable to its trust and security mission.
-    - Grow FedRAMP’s ability to conduct, internally and through external partners, expert security reviews and “red team” style assessments of novel technical implementations and other security-critical components.
-  - You will represent FedRAMP’s security vision, and build FedRAMP’s reputation and expertise.
-    - Build FedRAMP’s overall technical capacity and information security expertise, through recruitment, training, and ongoing staff development.
-    - Publicly represent FedRAMP and its security strategy to the public and to other external audiences.
-    - Act as FedRAMP’s liaison on security strategy with key government partners, including the FedRAMP Board, the Executive Office of the President, the Cybersecurity and Infrastructure Security Agency, the National Institute of Standards and Technology, and others.
+  - Establish PIF’s vision, strategic direction, objectives, and goals.
+    - Monitor and sequence the timing of key program milestones.
+    - Design, implement, and iterate on performance measures linking PIF’s operations to its broader goals and objectives.
+    - Establish a sustainable business model for PIF that ensures cost-recoverability.
+    - Develop innovative approaches and alternative solutions to sticky, strategic problems involving policy, process, and technology within the federal government.
+    - Establish individual performance goals and outline staffing needs.
+    - Lead and oversee program needs and resources.
+  - Build and maintain relationships with other federal agencies, top agency management, municipal and state agencies, and subject matter experts spanning public and private sectors.
+    - Regularly collaborate with federal agencies on projects, policies, and initiatives.
+    - Navigate complex bureaucracy, build coalitions, and lead stakeholders with disparate views through change.
+    - Brief GSA officials, top agency management, and other senior government officials regarding PIF strategies and initiatives with government-wide impact.
+    - Build program reputation through consistent voice and vision; Attend and speak at conferences and events. Contribute to articles, newsletters, and other
+      publications to highlight PIF initiatives.
+    - Provide thought leadership and expertise on innovative approaches to government modernization to federal agency officials, public and private industry
+      executives, Congressional representatives, and public media outlets.
+  - Lead, manage, and mentor PIF personnel with a focus on sustaining and developing a healthy workplace culture.
+    - Encourage teamwork and a collaborative approach to problem solving.
+    - Lead and mentor PIF’s direct report supervisors and provide coaching and mentorship to fellows.
+    - Foster employee development through empowerment, two-way communication, and facilitating cooperation and partnership.
+    - Drive recruitment efforts for PIF cohorts and further diversity by ensuring equal opportunity in recruitment, selection, training, awards, and assignments.
+    - Demonstrate a personal commitment to diversity, equity, and inclusion (DE&I) objectives and efforts.
+    - Strengthen and develop commitment from PIF staff and organizational leadership for culture-driven efforts.
+
 # If there are any info sessions associated with this position, list them here.
 # Each info session needs three pieces of information: the link, the date, and
 # the time. See the placeholder below for an example of how to add an info
@@ -185,12 +195,15 @@ key objectives:
 # nearest to furthest. Only info sessions schedule for the future will be shown.
 #🔻🔻🔻🔻🔻
 info_sessions:
+  - link: https://gsa.zoomgov.com/j/1605125183?pwd=TTtKbeOpRaqKFa1Yf8RAXoWu2DWa3Y.1
+    date: 2024-08-23
+    time: 2:00-3:00pm ET (11:00am -12:00am PT)
 
 # Put the link applicants need to use to apply for this position here. This link
 # will be used for the "Click here to apply" button at the bottom of the
 # position page.
 #🔻🔻🔻🔻🔻
-application link: https://www.usajobs.gov/job/806778600
+application link: https://www.usajobs.gov/job/806657900
 # This is the end of the frontmatter. After this line is Markdown.
 ---
 
@@ -204,13 +217,12 @@ says {% include job/status_alert.html %}
 🔻🔻🔻🔻🔻
 {% endcomment --------------------------------------------------------------- %}
 
-{% comment %}{% include job/status_alert.html %}{% endcomment %}
+{% comment %}{% include job/status_alert.html %}{% comment %}
+Please choose the following role to be alerted about this opportunity: **Executive Management**
 
 ## Basic information
 
-Open to U.S. citizens or nationals (residents of American Samoa and Swains Island). Subject to background check.
-
-{% comment %}{% include job/full_info_on_usajobs.html %}{% endcomment %}
+Open to U.S. citizens or nationals (residents of American Samoa and Swains Island). Subject to background check. {% include job/full_info_on_usajobs.html %}
 
 **Supervisory status:** Supervisory
 
@@ -222,20 +234,21 @@ To help applicants find the right jobs on USAJOBS, put the title as it appears
 on USAJOBS here.
 🔻🔻🔻🔻🔻
 {% endcomment --------------------------------------------------------------- %}
-**Official title in USAJOBS:** Supervisory IT Specialist INFOSEC
+**Official title in USAJOBS:** IT Program Manager
 
 {% comment %}🔻🔻🔻🔻🔻{% endcomment %}
 **Number of vacancies:** 1
 
 {% comment %}🔻🔻🔻🔻🔻{% endcomment %}
-**Location:** Anywhere in the U.S. (remote)
+**Location:** Washington, DC
 
 {% comment ------------------------------------------------------------------ %}
 💰💰💰
 The salary range for the job can be populated automatically based on the GS grade this posting is advertised at, based on the lowest and highest locality rates.
 
 💰💰💰
-If this position is not remote and has geographic restrictions, you can instead specify the salary min and max. For example, if the position is advertised at GS-15 and the position location is only Washington, DC, then (using 2023 pay rates):
+If this position is not remote and has geographic restrictions, you can instead specify the salary min and max. For example, if the position is advertised at GS-15 and the position location is only Washington, DC, then (using 2023 pay
+rates):
 
 Minimum:  GS-15 Step 1: $172,075
 Maximum:  GS-15 Step 10: $183,500
@@ -248,10 +261,10 @@ To use the automatic salary ranges, leave the lines as-is.
 
 🔻🔻🔻🔻🔻
 {% endcomment --------------------------------------------------------------- %}
-{%comment %}{% include job/salary_range.html min="" max="" %}{% endcomment %}
 
-Your salary, including base and locality, will be determined upon selection, dependent on your actual duty location. Please note the maximum salary available for the GS pay system is $191,900. For specific details on locality pay, please visit [OPM's Salaries & Wages page](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/) or for a salary calculator [OPM's 2024 General Schedule (GS) Salary Calculator](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/2024/general-schedule-gs-salary-calculator/). You can find more
-information in our [compensation and benefits section]({{ '/join/compensation-and-benefits.md' | url }}).
+{%comment %}{% include job/salary_range.html min="$162,964" max="$191,900" %}{% comment %}
+
+Your salary, including base and locality, will be determined upon selection, dependent on your actual duty location. Please note the maximum salary available for the GS pay system is $191,900. For specific details on locality pay, please visit [OPM's Salaries & Wages page](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/) or for a salary calculator [OPM's 2024 General Schedule (GS) Salary Calculator](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/2024/general-schedule-gs-salary-calculator/). You can find more information in our [compensation and benefits section]({{ '/join/compensation-and-benefits.md' | url }}).
 
 {% comment %}🔻🔻🔻🔻🔻{% endcomment %}
 **Travel requirement:**
@@ -267,6 +280,7 @@ appointment type for this job. If you need to use different text, delete that
 line and write your custom text in its place.
 🔻🔻🔻🔻🔻
 {% endcomment --------------------------------------------------------------- %}
+
 {% comment %}{% include job/appointment_type.html %}{% endcomment %}
 
 Learn more about the benefits of working at {% comment %}[GSA](https://www.gsa.gov/portal/category/26702) and {% endcomment %}[TTS]({{ '/join/compensation-and-benefits.md' | url }}).
@@ -274,17 +288,9 @@ Learn more about the benefits of working at {% comment %}[GSA](https://www.gsa.g
 ## Role summary
 
 {% comment %}🔻🔻🔻🔻🔻{% endcomment %}
-The Security Director leads FedRAMP’s information security program, establishing FedRAMP’s overall security priorities and vision. The role oversees the development and implementation of FedRAMP information security policies, creating a consistent, defensible and security-first approach across FedRAMP’s authorization process and its ongoing oversight over authorized cloud services. The Security Director, through their own work and their management of a team of federal employees and contractors, is responsible for maintaining and growing the trust placed in the FedRAMP marketplace.
+As the [Director of Presidential Innovation Fellows or PIF](https://presidentialinnovationfellows.gov/), you'll be at the forefront of a transformative movement within the federal government. PIF was launched by the White House in 2012, codified into law in 2017 through the [TALENT Act](https://www.congress.gov/bill/115th-congress/house-bill/39), and remains a cornerstone of GSA's Technology Transformation Services. Our fellows, embedded within government agencies as year-long senior advisors, leverage their expertise in fields like AI, data science, design, engineering, product, and systems thinking to co-create stronger public services. You will help to unite and drive the nation's most innovative minds with federal leaders to tackle complex challenges in government.
 
-The position serves as one of the primary leaders working with the White House, FedRAMP’s board, the Cybersecurity and Infrastructure Security Agency (CISA), and the National Institute of Standards and Technology (NIST) to position the program as a leader in cloud security.
-
-FedRAMP was created in 2011 to accelerate the government’s use of commercial cloud services, by creating a standardized process for security review and authorization and making security information easily available to agencies. More generally, FedRAMP operates as a bridge between the public and private sectors, to help companies that offer innovative services to ensure these services meet core federal security expectations and to bring the best of the private sector into government.
-
-Since its creation, the cloud sector has changed substantially and agency needs have focused more on software-as-a-service products. In recent years, Congress and the White House have updated the program’s mission and authorities, with a mandate to scale and modernize the program, while continuing to ensure the high bar of security that the public expects around government data and operations.
-
-To meet these goals, the Security Director will work across the government to strengthen federal cybersecurity policies and team up with federal partners on strategic initiatives that help agencies and cloud providers to stay focused on defending against contemporary threats.
-
-The position is a dynamic role that will drive FedRAMP’s overall approach to security and risk management, and will represent FedRAMP in government-wide security policy and priority deliberations. The role will require senior expertise in information security and related technology concepts, a strong ability to communicate and collaborate with different agencies and stakeholder groups, and strategic leadership to position the program as a cybersecurity leader and maintain trust in the FedRAMP brand.
+You will manage and develop the PIF program’s vision, strategic direction, objectives, and goals.  You will establish new opportunities for the PIF program with federal agency partners and in the process expand digital transformation and IT modernization across the federal government by supporting the efforts of senior-level Fellows.  You will also leverage leadership, marketing, and communication skills to establish new, collaborative partnerships with both federal and private industry partners.  This work involves not only advocating for an interactive, human-centered approach to IT modernization, but also running the cost-recoverable organization as a business.
 
 
 ## Key objectives
@@ -297,11 +303,13 @@ line below that says {% include job/key_objectives.html %} and add your custom
 content in its place.
 {% endcomment --------------------------------------------------------------- %}
 
-{% comment %}{% include job/key_objectives.html %}{% endcomment %}
+{% comment %}{% include job/key_objectives.html %}{% comment %}
 
 ## Qualifications
 
-Provide as much detail as possible on your resume so that we can evaluate your previous experience. Follow our [guidance on creating a federal style resume.](https://join.tts.gsa.gov/resume/)
+Provide as much detail as possible on your resume so that we can evaluate your
+previous experience. Follow our
+[guidance on creating a federal style resume.](https://join.tts.gsa.gov/resume/)
 
 Failure to provide required information may result in disqualification.
 
@@ -312,12 +320,16 @@ For each job on your resume, provide:
 
 **SPECIALIZED EXPERIENCE REQUIREMENTS:**
 
-To qualify, you must have one (1) year of specialized experience at the next lower GS-grade (or equivalent). Specialized experience for this role is defined as and must include:
-- Developing and deploying cloud-based infrastructure and software, and implementing information security design and architecture principles in commercial or government cloud environments.
-- Implementing software engineering and secure software architecture and operational practices, such as continuous integration and delivery.
-- Applying information security compliance frameworks, such as FedRAMP (The Federal Risk and Authorization Management Program), FISMA (Federal Information Security Modernization Act), SOC2 (System and Organization Controls 2), PCI (Payment Card Industry), ISO 27001 (International Organization for Standardization), or other relevant frameworks used in the public or private sector.
+To qualify, you must have one (1) year of specialized experience at the next
+lower GS-grade (or equivalent). Specialized experience is:
+
+- Developing and maintaining relationships with stakeholders within a digital services or digital consulting organization
+- Developing, executing, and measuring short- and long-term program success strategies including developing budget forecasting, leading cost recoverability efforts, and overseeing a budget lifecycle for a program with profit and loss statements
+- Setting vision and leading recruitment efforts for an IT modernization and innovation program within a highly-regulated environment that engages multiple enterprise-level customers as well as external industry partners
+- Supervising, managing or leading multiple direct reports within an organization and navigating ambiguous, uncertain, or sensitive personnel matters
+- Serving as the voice of an organization/brand, including public speaking engagements
 
 ## How to Apply
 
 {% comment %}{% include job/apply_button.html %}{% endcomment %}
-Choose Cybersecurity for this role. This position will open on USAJobs on Wednesday, August 28.
+This position will open for applications on Tuesday, August 27.

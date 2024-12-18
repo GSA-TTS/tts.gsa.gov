@@ -55,7 +55,9 @@
     "terser": "^5.36.0"
   },
   "dependencies": {
-    "@uswds/uswds": "3.8.1"
+    "@uswds/uswds": "3.8.1",
+    "gray-matter": "^4.0.3",
+    "v8r": "^4.2.1"
   },
   "overrides": {
     "eleventy-plugin-svg-sprite": {

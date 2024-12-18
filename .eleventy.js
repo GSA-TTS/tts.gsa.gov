@@ -27,6 +27,7 @@ const {
   uswdsIcon,
   imageWithClassShortcode,
 } = require("./js/global.js");
+const { validateMarkdownFiles } = require("./js/validateMarkdownFiles.js");
 
 require("dotenv").config();
 
@@ -47,6 +48,8 @@ module.exports = function (config) {
     "./node_modules/@uswds/uswds/dist/js/uswds-init.js":
       "assets/js/uswds-init.js",
   });
+
+  config.addPassthroughCopy("pages/jointts/positions/archive");
 
   // Add plugins
   config.addPlugin(pluginRss);
@@ -179,6 +182,11 @@ module.exports = function (config) {
     return markdownLib.render(content);
   });
 
+  // Validate markdown files before build
+  config.on("beforeBuild", () => {
+    validateMarkdownFiles(); // Call our validation function
+  });
+
   // Override Browsersync defaults (used only with --serve)
   config.setBrowserSyncConfig({
     callbacks: {
@@ -218,15 +226,8 @@ module.exports = function (config) {
     // If your site deploys to a subdirectory, change `pathPrefix`.
     // Don’t worry about leading and trailing slashes, we normalize these.
 
-    // If you don’t have a subdirectory, use "" or "/" (they do the same thing)
-    // This is only used for link URLs (it does not affect your file structure)
-    // Best paired with the `url` filter: https://www.11ty.dev/docs/filters/url/
-
-    // You can also pass this in on the command line using `--pathprefix`
-
-    // Optional (default is shown)
+    // If you don’t have a subdirectory, use "" or "/"
     pathPrefix: pathPrefix,
-    // -----------------------------------------------------------------
 
     // These are all optional (defaults are shown):
     dir: {

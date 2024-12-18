@@ -1,7 +1,8 @@
 ---
-layout: layouts/jointts/job-listing
+layout: layouts/redirects
 permalink: /join/{{ title | slugify }}.html
 tags: jobs
+redirectTo: /join/
 
 # ###############################################################################
 #                                                                              #
@@ -34,23 +35,23 @@ tags: jobs
 #   - U.S. Digital Corps, not USDC
 #   - Presidential Innovation Fellows, not PIF
 # The exception to this is a TTS role, for which you can just say TTS
-title: "U.S. Digital Corps: Fellow Experience Supervisor"
+title: "TTS: Product Manager"
 
 # Put the opening and closing dates of your posting here, if you have them
 # These dates MUST be formatted as YYYY-MM-DD, where month and day are 2-digits
 opens: 2024-10-31
-closes: 2024-11-05
+closes: 2024-11-03
 
 # If the role is listed on a different site and you just want to link to it,
 # put that link here. You can leave the rest of the template as-is, unless you 
 # need to add info sessions.
-external_url:
+external_url: 
 
 # To show the status alert for this job, leave this set to true. To hide it, change to false
 # To show the alert keyword association message, add the keywords separated by a semi-colon
 # e.g. Product Management; Strategy/Consulting; and Marketing
 status_alert: true
-alert_keywords: Product Management; Strategy/Consulting; Executive Management; Software Engineering; Data Analytics
+alert_keywords:
 
 # If this listing has been updated since it was published, put the updated date below in YYYY-MM-DD format.
 updated:
@@ -59,25 +60,25 @@ updated:
 # The basic information and details of the position
 info_intro: Open to U.S. citizens or nationals (residents of American Samoa and Swains Island). Subject to background check.
 
-supervisory_status: Supervisor
+supervisory_status: Non-Supervisory
 
-usajobs_official_title: Supervisory Data Scientist
+usajobs_official_title: IT Specialist (SYSANALYSIS)
 
 vacancies: "Multiple" # Put the number in quotes.
 
 location: Anywhere in the U.S. (remote)
 
 # Put the GS grade and pay range this position is being advertised at. For SES positions, set the value of gs to SES.
-gs: 14
-min_payrange: $122,198
-max_payrange: $181,216
+gs: 15
+min_payrange: $143,736
+max_payrange: $191,900
 
 travel_requirement: Occasional travel may be required up to 10%-20% per year.
 
 work_schedule: Full time.
 
 # Set to 0 if there is no limit
-max_applications: 250
+max_applications: 500
 
 # Use either "permanent" or "temporary"
 appointment_type: term-limited
@@ -97,12 +98,16 @@ appointment_type: term-limited
 # The placeholder information below shows an example of how to format the key
 # objectives
 key_objectives:
-  - title: Fellow Management, Support & Development
+  - title: Product managers in both client services and product development roles
     items:
-      - The USDC program places Fellows for 90% of their time on a high priority project at a placement agency. The remaining 10% of time is spent with the USDC Corps and is focused on coaching, learning and development, and participation in the USDC Community. Because of this structure, day to day management of Fellow’s work is done by the placement agency and each USDC Supervisor manages 15-20 Fellows within their technical area of expertise, with support structures that vary depending on the needs of the fellows. As such, the majority of time between Supervisor and Fellow is focused on Fellow coaching, growth, and support and not activities like tasking or reviewing project work.
-      - This U.S. Digital Corps Supervisor is a skilled Data Science and Analytics technologist in their own right and uses their discipline specific knowledge, excellence in coaching & management, and ongoing engagements with USDC Fellows to inform the design and execute the delivery of the Data Science and Analytics Fellow learning & development curriculum throughout the two year cohort experience. This USDC Supervisor takes the lead on USDC Data Track specific programming within their domain of expertise.
-      - A USDC Supervisor also works closely with Agency partners to ensure that Fellows receive the structures and support to be successful while on placement with their Agency, starting before the Fellow begins work, through the fellowship period, and until the final permanent offboarding transfer to the Agency occurs. 
- 
+      - Leading cross-functional development teams to own and grow existing, in-market products.
+      - Joining cross-functional teams to partner with other government agencies and help them deliver mission-critical software.
+      - Partnering with government agencies evolve their culture and establish sustainable best practices for product development.
+  - title: These roles will be a great fit for you if are a
+    items:
+      - Strategic thinker who is comfortable defining a compelling vision and designing a measurable strategy to achieve that vision.
+      - Decisive leader who knows how to motivate cross-functional teams to build the right thing.
+      - Strong executor that is able to deliver results to agencies and the public.
 
 # If there are any info sessions associated with this position, list them here
 # See the placeholder below for an example of how to add an info
@@ -120,7 +125,7 @@ key_objectives:
 # - link: 
 #   date: 
 #   time: 
-info_sessions: 
+info_sessions:
   - link: https://events.zoomgov.com/ev/ApHdaoDfDk7vEPBDjo38kHFgRZVgNT1hP8JoTVG4fbRxDsQhSYOB~Ap1qv-G1U12zzM0ajvI_o0KqMp7n-4B7RQ2VljM-evCEXv81BVq5MJ4MnsipLu8ZysLQuaHyo_x7p8ZTjCo3taLVng
     date: 2024-10-29
     time: 4:00pm-5:00pm
@@ -128,22 +133,23 @@ info_sessions:
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
 role_summary: |
-  The U.S. Digital Corps (USDC) is a new two-year fellowship for early-career technologists to launch impactful careers in public service and create a more effective, equitable government. USDC pairs early-career and highly-skilled, mission-driven software engineers, data scientists, product managers, designers, and cybersecurity specialists with top technology change-makers in the federal government to build human-centered solutions to some of our nation’s toughest challenges. Our Fellows are the engines on projects that create change in the areas of climate, healthcare, racial equity, immigration, economic recovery, and open innovation. The Digital Corps was launched in August 2021 by GSA in partnership with the White House, CISA, and OPM. 
+  TTS is hiring for the role of Product Managers/Project Managers. Several business units within TTS are hiring for this role including 10X, 18F, FedRAMP, Login.gov, and Web Tools. Product Managers/Project Managers are crucial to TTS significantly improving our products, platforms, and services. This is an opportunity to make a huge difference in the lives of the public and other federal agencies. This page contains a high-level summary of the roles we are trying to fill. 
+  Our ideal candidates will be equally excited about sticky technical issues and intricate human ones. The strongest candidates will have a background working on cross-functional, multidisciplinary teams that deliver digital products and services in an incremental, user-focused environment. If you are interested in any or all of these roles, you should apply. You may be matched with multiple teams across TTS during the interview process based on your skills, experience, and interests.
+  TTS is looking for talented product managers/project managers who will help deliver better digital services to the public. You’ll lead cross-functional teams to solve large, complex problems and deliver user-centered products using agile methodologies and modern software development practices.
+
   
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
 qualifications: |
 
-# Make sure to leave the | on the first line. Begin your text by returning to the next line and
-# indenting once.
 specialized_requirements: |
-  GS-14 Level Specialized Experience Requirements: You must have one year of specialized experience equivalent to the GS-13 level in the Federal service. Specialized experience is defined as and must include:
-  Experience managing staff that provide or support delivery of modern IT product(s), platform(s), or service(s).
-  Experience leading the overall planning, management, and direction of a program or of projects.
-  Experience in one, or more, of the following technology disciplines: artificial intelligence, data science, and/or data analytics.
-  Experience with agile or iterative development methodologies.
+  GS-15 Level Specialized Experience Requirements You must have one year of specialized experience equivalent to the GS-14 level in the Federal service. Specialized experience is defined as and must include
+  Experience leading vision, direction, roadmap or leading the identification of user needs for a project, product, platform, or service.
+  Experience providing project or product leadership.
+  Experience with iterative or agile methodologies.
+  Experience leading cross-functional teams.
 
-# This can be filled prior to the job posting going live or left blank #
-# The application button will only show after the open date            #
-application_link: https://www.usajobs.gov/job/816248400
+# This can be filled prior to the job posting going live or left blank 
+# The application button will only show after the open date           
+application_link: https://www.usajobs.gov/job/816248000
 ---
