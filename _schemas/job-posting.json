@@ -1,161 +1,160 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "title": "Job Posting Schema",
-    "type": "object",
-    "properties": {
-      "layout": {
-        "type": "string",
-        "enum": ["layouts/jointts/job-listing"],
-        "description": "The layout used for the job posting."
-      },
-      "permalink": {
-        "type": "string",
-        "pattern": "^/join/[a-z0-9-]+\\.html$",
-        "description": "The permalink for the job posting."
-      },
-      "tags": {
-        "type": "array",
-        "items": { "type": "string" },
-        "description": "Tags associated with the job posting."
-      },
-      "title": {
-        "type": "string",
-        "description": "The title of the job, including the organization name."
-      },
-      "opens": {
-        "type": "string",
-        "format": "date",
-        "description": "The opening date of the job posting (YYYY-MM-DD)."
-      },
-      "closes": {
-        "type": "string",
-        "format": "date",
-        "description": "The closing date of the job posting (YYYY-MM-DD)."
-      },
-      "external_url": {
-        "type": ["string", "null"],
-        "format": "uri",
-        "description": "An external URL for the job listing, if applicable."
-      },
-      "status_alert": {
-        "type": "boolean",
-        "description": "Whether to display a status alert for the job."
-      },
-      "alert_keywords": {
-        "type": "string",
-        "description": "Keywords for the alert, separated by semicolons."
-      },
-      "updated": {
-        "type": ["string", "null"],
-        "format": "date",
-        "description": "The date the job posting was last updated (YYYY-MM-DD)."
-      },
-      "info_intro": {
-        "type": "string",
-        "description": "Basic information and eligibility requirements."
-      },
-      "supervisory_status": {
-        "type": "string",
-        "enum": ["Supervisory", "Non-Supervisory"],
-        "description": "The supervisory status of the job."
-      },
-      "usajobs_official_title": {
-        "type": "string",
-        "description": "The official USAJobs title for the position."
-      },
-      "vacancies": {
-        "type": "string",
-        "pattern": "^[0-9]+$",
-        "description": "Number of vacancies, as a string."
-      },
-      "location": {
-        "type": "string",
-        "description": "Location details for the job."
-      },
-      "gs": {
-        "type": ["string", "null"],
-        "enum": ["SES", "15", "14", "13", "12", "11", "10", "9", "8", "7", "6", "5", "4", "3", "2", "1"],
-        "description": "The GS grade or SES level."
-      },
-      "travel_requirement": {
-        "type": "string",
-        "description": "Details on travel requirements."
-      },
-      "work_schedule": {
-        "type": "string",
-        "enum": ["Full time", "Part time", "Other"],
-        "description": "Work schedule type."
-      },
-      "max_applications": {
-        "type": "integer",
-        "minimum": 0,
-        "description": "Maximum number of applications allowed."
-      },
-      "appointment_type": {
-        "type": "string",
-        "enum": ["permanent", "term"],
-        "description": "Type of appointment."
-      },
-      "key_objectives": {
-        "type": "array",
-        "items": {
-          "type": "object",
-          "properties": {
-            "title": { "type": "string", "description": "Objective title." },
-            "items": {
-              "type": "array",
-              "items": { "type": "string" },
-              "description": "Sub-objectives under the main objective."
-            }
-          },
-          "required": ["title", "items"]
-        },
-        "description": "Key objectives for the job."
-      },
-      "info_sessions": {
-        "type": "array",
-        "items": {
-          "type": "object",
-          "properties": {
-            "link": { "type": "string", "format": "uri", "description": "Link to the info session." },
-            "date": { "type": "string", "format": "date", "description": "Date of the info session." },
-            "time": { "type": "string", "description": "Time of the info session in ET." }
-          },
-          "required": ["link", "date", "time"]
-        },
-        "description": "List of info sessions."
-      },
-      "role_summary": {
-        "type": "string",
-        "description": "Summary of the role."
-      },
-      "qualifications": {
-        "type": "string",
-        "description": "Qualifications required for the position."
-      },
-      "specialized_requirements": {
-        "type": "string",
-        "description": "Specialized requirements for the job."
-      },
-      "application_link": {
-        "type": "string",
-        "format": "uri",
-        "description": "Link to the application page."
-      }
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Job Posting Schema",
+  "type": "object",
+  "properties": {
+    "layout": {
+      "type": "string",
+      "enum": ["layouts/jointts/job-listing"],
+      "description": "The layout used for the job posting."
     },
-    "required": [
-      "layout",
-      "permalink",
-      "tags",
-      "title",
-      "opens",
-      "closes",
-      "info_intro",
-      "location",
-      "key_objectives",
-      "role_summary",
-      "application_link"
-    ],
-    "additionalProperties": false
-  }
-  
+    "permalink": {
+      "type": "string",
+      "pattern": "^/join/[a-z0-9-]+\\.html$",
+      "description": "The permalink for the job posting."
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Tags associated with the job posting."
+    },
+    "title": {
+      "type": "string",
+      "description": "The title of the job, including the organization name."
+    },
+    "opens": {
+      "type": "string",
+      "format": "date",
+      "description": "The opening date of the job posting (YYYY-MM-DD)."
+    },
+    "closes": {
+      "type": "string",
+      "format": "date",
+      "description": "The closing date of the job posting (YYYY-MM-DD)."
+    },
+    "external_url": {
+      "type": ["string", "null"],
+      "format": "uri",
+      "description": "An external URL for the job listing, if applicable."
+    },
+    "status_alert": {
+      "type": "boolean",
+      "description": "Whether to display a status alert for the job."
+    },
+    "alert_keywords": {
+      "type": "string",
+      "description": "Keywords for the alert, separated by semicolons."
+    },
+    "updated": {
+      "type": ["string", "null"],
+      "format": "date",
+      "description": "The date the job posting was last updated (YYYY-MM-DD)."
+    },
+    "info_intro": {
+      "type": "string",
+      "description": "Basic information and eligibility requirements."
+    },
+    "supervisory_status": {
+      "type": "string",
+      "enum": ["Supervisory", "Non-Supervisory"],
+      "description": "The supervisory status of the job."
+    },
+    "usajobs_official_title": {
+      "type": "string",
+      "description": "The official USAJobs title for the position."
+    },
+    "vacancies": {
+      "type": "string",
+      "pattern": "^[0-9]+$",
+      "description": "Number of vacancies, as a string."
+    },
+    "location": {
+      "type": "string",
+      "description": "Location details for the job."
+    },
+    "gs": {
+      "type": ["string", "null"],
+      "enum": ["SES", "15", "14", "13", "12", "11", "10", "9", "8", "7", "6", "5", "4", "3", "2", "1"],
+      "description": "The GS grade or SES level."
+    },
+    "travel_requirement": {
+      "type": "string",
+      "description": "Details on travel requirements."
+    },
+    "work_schedule": {
+      "type": "string",
+      "enum": ["Full time", "Part time", "Other"],
+      "description": "Work schedule type."
+    },
+    "max_applications": {
+      "type": ["integer", "string"],
+      "minimum": 0,
+      "description": "Maximum number of applications allowed."
+    },
+    "appointment_type": {
+      "type": "string",
+      "enum": ["permanent", "term", "term-limited"],
+      "description": "Type of appointment."
+    },
+    "key_objectives": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": { "type": "string", "description": "Objective title." },
+          "items": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Sub-objectives under the main objective."
+          }
+        },
+        "required": ["title", "items"]
+      },
+      "description": "Key objectives for the job."
+    },
+    "info_sessions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "link": { "type": "string", "format": "uri", "description": "Link to the info session." },
+          "date": { "type": "string", "format": "date", "description": "Date of the info session." },
+          "time": { "type": "string", "description": "Time of the info session in ET." }
+        },
+        "required": ["link", "date", "time"]
+      },
+      "description": "List of info sessions."
+    },
+    "role_summary": {
+      "type": "string",
+      "description": "Summary of the role."
+    },
+    "qualifications": {
+      "type": "string",
+      "description": "Qualifications required for the position."
+    },
+    "specialized_requirements": {
+      "type": "string",
+      "description": "Specialized requirements for the job."
+    },
+    "application_link": {
+      "type": "string",
+      "format": "uri",
+      "description": "Link to the application page."
+    }
+  },
+  "required": [
+    "layout",
+    "permalink",
+    "tags",
+    "title",
+    "opens",
+    "closes",
+    "info_intro",
+    "location",
+    "key_objectives",
+    "role_summary",
+    "application_link"
+  ],
+  "additionalProperties": false
+}

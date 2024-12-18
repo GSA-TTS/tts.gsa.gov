@@ -28,6 +28,41 @@ const {
   imageWithClassShortcode,
 } = require("./js/global.js");
 
+const { execSync } = require("child_process");
+const grayMatter = require('gray-matter');
+
+function validateMarkdownFiles() {
+  const mdFilesDir = '../tts.gsa.gov/pages/jointts/positions/'; // Directory with markdown files
+  const mdFiles = fs.readdirSync(mdFilesDir).filter(file => file.endsWith('.md'));
+
+  const schemaPath = '../tts.gsa.gov/_schemas/job-posting.json'; // Path to schema
+
+  mdFiles.forEach(file => {
+    const filePath = path.join(mdFilesDir, file);
+    console.log(`Validating ${filePath}...`);
+
+    try {
+      // Read and parse the markdown file's front matter and content
+      const fileContent = fs.readFileSync(filePath, 'utf8');
+      const parsed = grayMatter(fileContent);
+      
+      // Convert the front matter into a JSON object
+      const dataToValidate = parsed.data;
+
+      // Validate the extracted JSON against the schema using v8r
+      const tempJsonPath = '../tts.gsa.gov/temp.json';
+      fs.writeFileSync(tempJsonPath, JSON.stringify(dataToValidate, null, 2));
+
+      execSync(`npx v8r --schema ${schemaPath} ${tempJsonPath}`, { stdio: 'inherit' });
+
+      // Clean up temporary JSON file after validation
+      fs.unlinkSync(tempJsonPath);
+    } catch (error) {
+      console.error(`Validation failed for ${filePath}: ${error.message}`);
+    }
+  });
+}
+
 require("dotenv").config();
 
 module.exports = function (config) {
@@ -179,6 +214,11 @@ module.exports = function (config) {
     return markdownLib.render(content);
   });
 
+  // Validate markdown files before build
+  config.on('beforeBuild', () => {
+    validateMarkdownFiles(); // Call our validation function
+  });
+
   // Override Browsersync defaults (used only with --serve)
   config.setBrowserSyncConfig({
     callbacks: {
@@ -218,15 +258,8 @@ module.exports = function (config) {
     // If your site deploys to a subdirectory, change `pathPrefix`.
     // Don’t worry about leading and trailing slashes, we normalize these.
 
-    // If you don’t have a subdirectory, use "" or "/" (they do the same thing)
-    // This is only used for link URLs (it does not affect your file structure)
-    // Best paired with the `url` filter: https://www.11ty.dev/docs/filters/url/
-
-    // You can also pass this in on the command line using `--pathprefix`
-
-    // Optional (default is shown)
+    // If you don’t have a subdirectory, use "" or "/"
     pathPrefix: pathPrefix,
-    // -----------------------------------------------------------------
 
     // These are all optional (defaults are shown):
     dir: {
