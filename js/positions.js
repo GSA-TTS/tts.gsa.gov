@@ -176,11 +176,7 @@ function addUpcomingJobsToDOM(upcomingJobs) {
 
     upcomingJobsSection.appendChild(jobList);
   } else {
-    const noJobsText = document.createElement("p");
-    noJobsText.innerHTML =
-      'No upcoming positions at this time. Sign up for <a href="/join/newsletter/">job alerts!</a>';
-
-    openJobsSection.appendChild(noJobsText);
+    upcomingJobsSection.remove();
   }
 }
 
