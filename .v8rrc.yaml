@@ -4,7 +4,8 @@ customCatalog:
     - name: "Job Postings"
       fileMatch: ["pages/jointts/positions/*.md"]
       location: "_schemas/job-posting.json"
-      parser: "md"
+        #      parser: "md"
 
-  plugins:
-    - "file:./plugins/v8r-plugin-markdown-parser.js"
+plugins:
+  #  - "file:./plugins/v8r-plugin-markdown-parser.mjs"
+  - "file:./plugins/v8r-plugin-ndjson.mjs"

@@ -56,7 +56,8 @@
   },
   "dependencies": {
     "@uswds/uswds": "3.8.1",
-    "brainmatter": "^0.1.0"
+    "brainmatter": "^0.1.0",
+    "v8r": "^4.2.1"
   },
   "overrides": {
     "eleventy-plugin-svg-sprite": {

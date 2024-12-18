@@ -1,6 +1,6 @@
-import { BasePlugin, Document } from "v8r";
 import yaml from "js-yaml";
 import brainmatter from "brainmatter";
+import { BasePlugin, Document } from "v8r";
 
 class MarkdownParser extends BasePlugin {
   static name = "v8r-plugin-markdown-parser";
@@ -20,7 +20,7 @@ class MarkdownParser extends BasePlugin {
       console.log("parser===md");
       return yaml.loadAll(data).map((doc) => new Document(doc));
     } else if (parser == null) {
-      if (fileLocation.endsWith(".md") {
+      if (fileLocation.endsWith(".md")) {
         console.log("endsWith .md");
         return yaml.loadAll(data).map((doc) => new Document(doc));
       }
