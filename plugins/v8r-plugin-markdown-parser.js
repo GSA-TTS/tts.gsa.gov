@@ -22,7 +22,7 @@ class MarkdownParser extends BasePlugin {
     } else if (parser == null) {
       if (fileLocation.endsWith(".md") {
         console.log("endsWith .md");
-        return yaml.loadAll(contents).map((doc) => new Document(doc));
+        return yaml.loadAll(data).map((doc) => new Document(doc));
       }
     }
     console.log("fell through tests");
