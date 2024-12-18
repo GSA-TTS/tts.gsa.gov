@@ -1,0 +1,10 @@
+---
+customCatalog:
+  schemas:
+    - name: "Job Postings"
+      fileMatch: ["pages/jointts/positions/*.md"]
+      location: "_schemas/job-posting.json"
+      parser: "md"
+
+  plugins:
+    - "file:./plugins/v8r-plugin-markdown-parser.js"
