@@ -1,5 +1,5 @@
 ---
-layout: layouts/jointts/job-listing
+layout: layouts/jointts/redirect
 permalink: /join/{{ title | slugify }}.html
 tags: jobs
 
