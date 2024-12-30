@@ -252,6 +252,14 @@ h5 {
 section.newsletter {
   width: calc(100vw);
   max-width: 1024px;
+  padding-top: 0;
+  margin-top: -30px;
+}
+
+@media only screen and (max-width: 1024px) {
+  section.newsletter .usa-prose iframe {
+    margin-left: -40px;
+  }
 }
 
 /* SVG Fixes */

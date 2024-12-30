@@ -9,8 +9,7 @@ summary: Get alerts when positions that interest you are posted on the TTS websi
 <section class="usa-section newsletter">
   <div class="grid-container">
     <div class="grid-row">
-      <div class="desktop:grid-col-12 usa-prose">
-        <h1>{{page.title}}</h1>
+      <div class="desktop:grid-col-10 usa-prose">
         <script 
           async
           src="https://public.govdelivery.com/assets/Signup.js"
