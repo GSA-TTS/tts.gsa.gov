@@ -85,6 +85,12 @@ footer {
   a:hover {
     text-decoration: underline;
   }
+
+  + div {
+    .usa-identifier__usagov-description + a {
+      margin-left: 8px;
+    }
+  }
 }
 
 .usa-social-link img {
