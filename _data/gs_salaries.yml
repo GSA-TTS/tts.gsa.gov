@@ -2,50 +2,50 @@
 # UNITED STATES for the low and SAN JOSE-SAN FRANCISCO-OAKLAND, CA as the high.
 ---
 GS-1:
-  min_salary: 25684
-  max_salary: 39991
+  min_salary: 26175
+  max_salary: 40931
 GS-2:
-  min_salary: 28880
-  max_salary: 45243
+  min_salary: 29431
+  max_salary: 46299
 GS-3:
-  min_salary: 31512
-  max_salary: 50989
+  min_salary: 32114
+  max_salary: 52185
 GS-4:
-  min_salary: 35373
-  max_salary: 57235
+  min_salary: 36049
+  max_salary: 58592
 GS-5:
-  min_salary: 39576
-  max_salary: 64037
+  min_salary: 40332
+  max_salary: 65540
 GS-6:
-  min_salary: 44117
-  max_salary: 71390
+  min_salary: 44959
+  max_salary: 73063
 GS-7:
-  min_salary: 49025
-  max_salary: 79331
+  min_salary: 49960
+  max_salary: 81198
 GS-8:
-  min_salary: 54292
-  max_salary: 87851
+  min_salary: 55328
+  max_salary: 89924
 GS-9:
-  min_salary: 59966
-  max_salary: 97034
+  min_salary: 61111
+  max_salary: 99314
 GS-10:
-  min_salary: 66036
-  max_salary: 106853
+  min_salary: 67297
+  max_salary: 109364
 GS-11:
-  min_salary: 72553
-  max_salary: 117400
+  min_salary: 73939
+  max_salary: 120157
 GS-12:
-  min_salary: 86962
-  max_salary: 140713
+  min_salary: 88621
+  max_salary: 144031
 GS-13:
-  min_salary: 103409
-  max_salary: 167336
+  min_salary: 105383
+  max_salary: 171268
 GS-14:
-  min_salary: 122198
-  max_salary: 191900
+  min_salary: 124531
+  max_salary: 195200
 GS-15:
-  min_salary: 143736
-  max_salary: 191900
+  min_salary: 146481
+  max_salary: 195200
 SES:
-  min_salary: 147649
-  max_salary: 221900
+  min_salary: 150160
+  max_salary: 225700
