@@ -45,9 +45,9 @@ based on a
 
 
 Use this
-[OPM General Schedule (GS) Salary Calculator](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/2024/general-schedule-gs-salary-calculator/)
+[OPM General Schedule (GS) Salary Calculator](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/2025/general-schedule-gs-salary-calculator/)
 to help you understand how GS level, step and locality affect compensation.
-The 2024 salary cap for all GS employees is $191,900 per year. You cannot be
+The 2025 salary cap for all GS employees is $195,200 per year. You cannot be
 offered more than this under any circumstance.
 
 ## Raises and Bonuses
