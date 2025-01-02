@@ -173,9 +173,7 @@ services:
     logo: _img/digitalcorps_logo-alt.svg
     logo_alt_text: Digital Corps
     category: people
-    description: Fellowship program for early-career technologists to launch
-      impactful careers in public service and create a more effective, equitable
-      government.
+    description: Fellowship program for early-career technologists to launch impactful careers in public service and create a more efficient, trustworthy government.
   - name: Federal Audit Clearinghouse (FAC)
     link: https://www.fac.gov/
     link_alt_text: link to FAC homepage
