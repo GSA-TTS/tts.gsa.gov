@@ -28,10 +28,7 @@ and new hires.
 
 - Although we cannot set up 1:1 calls with prospective candidates, we do host
 monthly information sessions that include plenty of time to answer questions.
-You can find a list of our upcoming sessions on the
-<!-- markdownlint-disable MD033 -->
-<a href="{{ '/join' | url }}" class="usa-link">Join TTS</a>.
-<!-- markdownlint-enable MD033 -->
+You can find a list of our upcoming sessions on the<!-- markdownlint-disable MD033 --> <a href="{{ '/join' | url }}" class="usa-link">Join TTS</a>.<!-- markdownlint-enable MD033 -->
 
 - You can also find info on
   [Working at TTS](https://handbook.tts.gsa.gov/about-us/tts-history/)
