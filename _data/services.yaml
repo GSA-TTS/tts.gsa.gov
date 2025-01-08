@@ -243,3 +243,10 @@ services:
     logo_alt_text: Notify.gov
     category: products
     description: The Public Benefits Studio is piloting Notify.gov, a text messaging service built by and for government. Benefits program staff can set up custom text messages in as little as 10 minutes — without a technical integration required — and at minimal cost.
+  - name: Site Scanning
+    link: https://digital.gov/guides/site-scanning/
+    link_alt_text: Link to digital.gov's page on site scanning
+    logo: _img/site-scanning.png
+    logo_alt_text: Site Scanning
+    category: products
+    description: Automating a wide range of scans of public federal websites and generates data about website health, policy compliance, and best practices.
