@@ -140,12 +140,6 @@ key_objectives:
 #   date: 
 #   time: 
 info_sessions:
-  - link: 
-    date: 
-    time: 
-  - link: 
-    date: 
-    time:
 
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
