@@ -70,6 +70,10 @@ location: Anywhere in the U.S. (remote)
 # Put the GS grade this position is being advertised at. For SES positions, set the value of gs to SES.
 gs: 
 
+# If the position is limited to a particuar region, set the salary range here to override the default salary range shown.
+# Format should be: $48,000 - $56,000
+salary_range: 
+
 travel_requirement: Occasional travel may be required up to 10%-20% per year.
 
 work_schedule: Full time.
