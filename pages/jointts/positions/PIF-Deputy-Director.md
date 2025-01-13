@@ -70,6 +70,10 @@ location: Washington D.C.
 # Put the GS grade this position is being advertised at. For SES positions, set the value of gs to SES.
 gs: 15
 
+# If the position is limited to a particuar region, set the salary range here to override the default salary range shown.
+# Format should be: $48,000 - $56,000
+salary_range: $167,603 - $195,200 
+
 travel_requirement: Occasional travel may be required up to 10%-20% per year.
 
 work_schedule: Full time.
