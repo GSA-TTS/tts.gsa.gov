@@ -11,7 +11,9 @@
     {% assign gs_salary_key = gs %}
   {% endif %}
 
-  {% if gs_salaries[gs_salary_key] %}
+  {% if salary_range %}
+    ({{ salary_range }})
+  {% elsif gs_salaries[gs_salary_key] %}
     (${{ gs_salaries[gs_salary_key].min_salary | numberWithCommas }} - ${{ gs_salaries[gs_salary_key].max_salary | numberWithCommas }})
   {% endif %}
 </p>
