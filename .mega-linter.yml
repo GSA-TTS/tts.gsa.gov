@@ -9,7 +9,7 @@ FILTER_REGEX_EXCLUDE: (.venv/|/test/|\.test\.|_test\.|/docs/|/index.html|.github
 # don't scan files listed in .gitignore (e.g., node_modules)
 IGNORE_GITIGNORED_FILES: true
 
-# Disable devskim as it's reporting an error with no log message
+# Disable devskim and other, non-helpful linters
 DISABLE_LINTERS:
   [
     REPOSITORY_DEVSKIM,
