@@ -34,12 +34,12 @@ tags: jobs
 #   - U.S. Digital Corps, not USDC
 #   - Presidential Innovation Fellows, not PIF
 # The exception to this is a TTS role, for which you can just say TTS
-title: "U.S. Digital Corps: Fellow Experience Supervisor"
+title: "Presidential Innovation Fellows Deputy Director"
 
 # Put the opening and closing dates of your posting here, if you have them
 # These dates MUST be formatted as YYYY-MM-DD, where month and day are 2-digits
-opens: 2024-10-31
-closes: 2024-11-05
+opens: 
+closes: 
 
 # If the role is listed on a different site and you just want to link to it,
 # put that link here. You can leave the rest of the template as-is, unless you 
@@ -50,7 +50,7 @@ external_url:
 # To show the alert keyword association message, add the keywords separated by a semi-colon
 # e.g. Product Management; Strategy/Consulting; and Marketing
 status_alert: true
-alert_keywords: Product Management; Strategy/Consulting; Executive Management; Software Engineering; Data Analytics
+alert_keywords: Executive Management; Product Management
 
 # If this listing has been updated since it was published, put the updated date below in YYYY-MM-DD format.
 updated:
@@ -59,32 +59,34 @@ updated:
 # The basic information and details of the position
 info_intro: Open to U.S. citizens or nationals (residents of American Samoa and Swains Island). Subject to background check.
 
-supervisory_status: Supervisor
+supervisory_status: Supervisory
 
-usajobs_official_title: Supervisory Data Scientist
+usajobs_official_title: IT Program Manager
 
-vacancies: "Multiple" # Put the number in quotes.
+vacancies: "1" # Put the number in quotes.
 
-location: Anywhere in the U.S. (remote)
+location: Washington D.C. 
 
-# Put the GS grade and pay range this position is being advertised at. For SES positions, set the value of gs to SES.
-gs: 14
-min_payrange: $122,198
-max_payrange: $181,216
+# Put the GS grade this position is being advertised at. For SES positions, set the value of gs to SES.
+gs: 15
+
+# If the position is limited to a particular region, set the salary range here to override the default salary range shown.
+# Format should be: $48,000 - $56,000
+salary_range: $167,603 - $195,200 
 
 travel_requirement: Occasional travel may be required up to 10%-20% per year.
 
 work_schedule: Full time.
 
 # Set to 0 if there is no limit
-max_applications: 250
+max_applications: 0
 
-# Use either "permanent" or "temporary"
+# Use either "permanent" or "term-limited"
 appointment_type: term-limited
 
-# List key objectives here. Key objectives and sub-bullets will be displayed in
-# the order they are listed here. You do not need to include key objective
-# numbers. They will be added automatically
+# List key objectives here. Key objectives and sub-bullets will be displayed in the 
+# order they are listed here. You do not need to include key objective numbers
+# They will be added automatically
 #
 # FORMAT EXAMPLE
 # 
@@ -97,16 +99,34 @@ appointment_type: term-limited
 # The placeholder information below shows an example of how to format the key
 # objectives
 key_objectives:
-  - title: Fellow Management, Support & Development
+  - title: Enable PIF program delivery
     items:
-      - The USDC program places Fellows for 90% of their time on a high priority project at a placement agency. The remaining 10% of time is spent with the USDC Corps and is focused on coaching, learning and development, and participation in the USDC Community. Because of this structure, day to day management of Fellow’s work is done by the placement agency and each USDC Supervisor manages 15-20 Fellows within their technical area of expertise, with support structures that vary depending on the needs of the fellows. As such, the majority of time between Supervisor and Fellow is focused on Fellow coaching, growth, and support and not activities like tasking or reviewing project work.
-      - This U.S. Digital Corps Supervisor is a skilled Data Science and Analytics technologist in their own right and uses their discipline specific knowledge, excellence in coaching & management, and ongoing engagements with USDC Fellows to inform the design and execute the delivery of the Data Science and Analytics Fellow learning & development curriculum throughout the two year cohort experience. This USDC Supervisor takes the lead on USDC Data Track specific programming within their domain of expertise.
-      - A USDC Supervisor also works closely with Agency partners to ensure that Fellows receive the structures and support to be successful while on placement with their Agency, starting before the Fellow begins work, through the fellowship period, and until the final permanent offboarding transfer to the Agency occurs. 
- 
+      - Designs, develops and oversees the infrastructure and modernization of the PIF operation to promote a data driven approach to decision making and define continuous improvement practices on the program business model.
+      - Identifies and removes barriers to achieving the desired change, developing an operational roadmap, and maintaining high-quality, strong program delivery. 
+      - Develops, designs, and oversees operational practices in the interest of supporting consistent quality and ensuring successful fellow and agency experiences.
+      - Develops and executes against policies, plans, and initiatives to ensure effective impact and the continual development of the PIF program.
+  - title: PIF strategic efforts 
+    items:
+      - Manages high-level expectations, milestones, and strategies to ensure the success and excellence of the PIF program and operations. 
+      - Develops innovative approaches and alternative solutions to strategic problems involving policy, process, and technology within the federal government.
+      - Oversees the design and development of the PIF Fellowship and Agency experience.
+      - Builds and nurtures a data driven culture within the PIF team to effectively deliver against program needs.
+      - Assists in the design and development of a robust program impact assessment roadmap.
+  - title: Relationship building and program management 
+    items:
+      - Builds and maintains relationships with other federal agencies, top agency leadership, and subject matter experts spanning public and private sectors to ensure successful delivery of the PIF program.
+      - Promotes PIF value proposition and builds understanding and relationships with federal agencies for external partnerships within civic tech and beyond.
+      - Collaborates with other parts of TTS and government agencies to expand the impact, potential, and strategic leverage of the PIF program.
+  - title: Values, practices, and operational health
+    items:
+      - Works efficiently and effectively within PIF and TTS to build relationships and uphold the PIF values of Servant Leadership, User-Centered Innovation, and Collaborative Community.
+      - Leads, manages, and mentors PIF personnel with a focus on supporting their ability to be successful within the PIF program.
+      - Contributes to PIF and TTS resources and materials.
+      - Celebrates PIF leadership successes and program fellows skills and successes.
+      - Builds a strong culture within the workplace to ensure employees of all backgrounds are valued and supported.
 
 # If there are any info sessions associated with this position, list them here
-# See the placeholder below for an example of how to add an info
-# session. 
+# See the placeholder below for an example of how to add an info session
 # 
 # The date MUST be formatted as YYYY-MM-DD, where the month and day
 # are TWO digits; the time MUST be in ET.
@@ -120,15 +140,15 @@ key_objectives:
 # - link: 
 #   date: 
 #   time: 
-info_sessions: 
-  - link: https://events.zoomgov.com/ev/ApHdaoDfDk7vEPBDjo38kHFgRZVgNT1hP8JoTVG4fbRxDsQhSYOB~Ap1qv-G1U12zzM0ajvI_o0KqMp7n-4B7RQ2VljM-evCEXv81BVq5MJ4MnsipLu8ZysLQuaHyo_x7p8ZTjCo3taLVng
-    date: 2024-10-29
-    time: 4:00pm-5:00pm
+info_sessions:
+ 
+ 
 
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
 role_summary: |
-  The U.S. Digital Corps (USDC) is a new two-year fellowship for early-career technologists to launch impactful careers in public service and create a more effective, equitable government. USDC pairs early-career and highly-skilled, mission-driven software engineers, data scientists, product managers, designers, and cybersecurity specialists with top technology change-makers in the federal government to build human-centered solutions to some of our nation’s toughest challenges. Our Fellows are the engines on projects that create change in the areas of climate, healthcare, racial equity, immigration, economic recovery, and open innovation. The Digital Corps was launched in August 2021 by GSA in partnership with the White House, CISA, and OPM. 
+  The PIF Deputy Director is a primary advisor to the PIF Director  on all matters pertaining to the PIF program. Advises and assists the Director in program planning, impact assessment, management, and policy development for the PIFs, agency engagement, interagency collaboration, human resources, budget, and other program areas. The Deputy also advises and supports the execution of the PIF program strategy including program development and implementation of operating procedures, practices, and management controls. The Deputy represents and speaks on behalf of the PIF Director on program initiatives. The PIF Deputy Director is a second line supervisor.
+
   
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
@@ -137,13 +157,8 @@ qualifications: |
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
 specialized_requirements: |
-  GS-14 Level Specialized Experience Requirements: You must have one year of specialized experience equivalent to the GS-13 level in the Federal service. Specialized experience is defined as and must include:
-  Experience managing staff that provide or support delivery of modern IT product(s), platform(s), or service(s).
-  Experience leading the overall planning, management, and direction of a program or of projects.
-  Experience in one, or more, of the following technology disciplines: artificial intelligence, data science, and/or data analytics.
-  Experience with agile or iterative development methodologies.
 
 # This can be filled prior to the job posting going live or left blank #
 # The application button will only show after the open date            #
-application_link: https://www.usajobs.gov/job/816248400
+application_link:
 ---

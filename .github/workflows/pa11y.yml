@@ -14,7 +14,7 @@ concurrency:
 
 jobs:
   pa11y:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     permissions:
       issues: write
@@ -35,7 +35,7 @@ jobs:
       - name: Use Node
         uses: actions/setup-node@1a4442cacd436585916779262731d5b162bc6ec7 # pin@v3
         with:
-          node-version: "18"
+          node-version: "20"
 
       - name: Install dependencies
         run: npm ci --production=false && pip install --require-hashes -r requirements.txt
@@ -97,7 +97,7 @@ jobs:
         if: ${{ contains(steps.pa11y_output.outputs.content, 'Accessibility issues detected') }}
         uses: thollander/actions-comment-pull-request@fabd468d3a1a0b97feee5f6b9e499eab0dd903f6 # pin@v2.5.0
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAT || secrets.GITHUB_TOKEN || github.token }}
           message: "<details><summary>Pa11y testing results</summary> ```${{ steps.pa11y_output.outputs.content }}``` </details>"
           comment_tag: pa11y
 

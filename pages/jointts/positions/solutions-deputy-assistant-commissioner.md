@@ -34,7 +34,7 @@ tags: jobs
 #   - U.S. Digital Corps, not USDC
 #   - Presidential Innovation Fellows, not PIF
 # The exception to this is a TTS role, for which you can just say TTS
-title: ""
+title: "TTS Solutions: Deputy Assistant Commissioner"
 
 # Put the opening and closing dates of your posting here, if you have them
 # These dates MUST be formatted as YYYY-MM-DD, where month and day are 2-digits
@@ -50,7 +50,7 @@ external_url:
 # To show the alert keyword association message, add the keywords separated by a semi-colon
 # e.g. Product Management; Strategy/Consulting; and Marketing
 status_alert: true
-alert_keywords:
+alert_keywords: Executive Management; Cybersecurity; Product Management; Software Engineering
 
 # If this listing has been updated since it was published, put the updated date below in YYYY-MM-DD format.
 updated:
@@ -59,27 +59,23 @@ updated:
 # The basic information and details of the position
 info_intro: Open to U.S. citizens or nationals (residents of American Samoa and Swains Island). Subject to background check.
 
-supervisory_status: 
+supervisory_status: Supervisory
 
-usajobs_official_title: 
+usajobs_official_title: IT Program Manager
 
-vacancies: "" # Put the number in quotes.
+vacancies: "1" # Put the number in quotes.
 
 location: Anywhere in the U.S. (remote)
 
 # Put the GS grade this position is being advertised at. For SES positions, set the value of gs to SES.
-gs: 
-
-# If the position is limited to a particuar region, set the salary range here to override the default salary range shown.
-# Format should be: $48,000 - $56,000
-salary_range: 
+gs: 15
 
 travel_requirement: Occasional travel may be required up to 10%-20% per year.
 
 work_schedule: Full time.
 
 # Set to 0 if there is no limit
-max_applications: 0
+max_applications: 400
 
 # Use either "permanent" or "term-limited"
 appointment_type: permanent
@@ -99,15 +95,34 @@ appointment_type: permanent
 # The placeholder information below shows an example of how to format the key
 # objectives
 key_objectives:
-  - title: Key Objective 1
+  - title: Deliver high-quality product and services. 
     items:
-      - Objective 1 Sub-Bullet
-      - Objective 1 Sub-Bullet
-  - title: Key Objective 2
+      - Formally supervise delegated Solutions division managers, overseeing the delivery of critical federal products.
+      - Identify opportunities for improved economies of scale, efficiency and customer impact across the portfolio. Design and implement interventions to realize these opportunities.
+      - Contribute expert-level IT expertise to software product development and IT programs serving the American public, the federal enterprise, and state, local, tribal and territorial governments.
+      - Cultivate relationships with key stakeholders across GSA, OMB and customer organizations. Troubleshoot and remove barriers for Solutions division managers.
+      - Support product and program teams in strategic customer communications and incident response.
+      - Contribute to the development of portfolio performance goals and lead the development of measurement protocols.
+  - title: Improve program management and governance.
     items:
-      - Objective 2 Sub-Bullet
-      - Objective 2 Sub-Bullet
-      - Objective 2 Sub-Bullet
+      - Ideate, plan and execute high-level strategic efforts for the Office of Solutions to improve program management and governance. Lead communications and change management for strategic efforts.
+      - Effectively align stakeholders, staff, and customer needs across programs.
+      - Develops and executes against policies, plans, and initiatives to ensure effective impact and continual development of the Solutions programs.
+      - Contribute to the development of and adhere to GSA and TTS standard operating procedures.
+  - title: Improve organizational health and culture.
+    items:
+      - Steward a culture of accountability, ownership and recognition.
+      - Model effective management and leadership practices, and conflict-resolution skills.
+      - Identify opportunities for professional growth and learning for Solutions leaders.
+      - Introduce and foster effective, inclusive practices for a geographically-distributed  remote workforce.
+  - title: Support and advise the Solutions Assistant Commissioner
+    items:
+      - Represent and speak on behalf of the AC on Solutions with senior GSA officials, other top-level executives from public and private industry, federal agencies, Congressional representatives, the media and other public outlets.
+      - Advise TTS and GSA on implementation, impact of policy, and other operational needs.
+      - Collaborate with other TTS Delivery offices to further delivery goals and identify business opportunities.
+      - Work directly with stakeholders internal and external to Solutions, TTS, and GSA to further objectives of the Office of Solutions and TTS.
+      - Serve as Acting Assistant Commissioner in the AC’s absence.
+  
 
 # If there are any info sessions associated with this position, list them here
 # See the placeholder below for an example of how to add an info session
@@ -125,16 +140,13 @@ key_objectives:
 #   date: 
 #   time: 
 info_sessions:
-  - link: 
-    date: 
-    time: 
-  - link: 
-    date: 
-    time:
 
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
 role_summary: |
+  The Deputy Assistant Commissioner is the primary advisor to the Assistant Commissioner, Solutions on all matters pertaining to the TTS Solutions portfolio. The Deputy advises and assists the Assistant Commissioner in program planning, impact assessment, management, and policy development, human resources, budget, and other program areas. The Deputy drives the execution of the Solutions program strategy, and advises and assists the Assistant Commissioner in program planning, impact assessment, management, policy development, human resources, budget and other program areas.
+
+  
   
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.

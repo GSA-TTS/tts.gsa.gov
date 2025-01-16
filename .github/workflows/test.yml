@@ -1,5 +1,5 @@
 ---
-name: Build and Test
+name: Run Tests
 
 # yamllint disable-line rule:truthy
 on:
@@ -12,9 +12,10 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  test:
+    name: "Run tests"
     permissions: write-all
+    runs-on: ubuntu-22.04
 
     steps:
       - name: Checkout repository
@@ -35,10 +36,10 @@ jobs:
       - name: Build site
         run: npm run build
 
-      - name: Run tests
-        run: npm run test
-
       - name: report code coverage
         uses: ArtiomTr/jest-coverage-report-action@262a7bb0b20c4d1d6b6b026af0f008f78da72788 # pin@v2.3.1
         with:
+          skip-step: install
+          annotations: none
           coverage-file: ./report.json
+          github-token: ${{ secrets.PAT || secrets.GITHUB_TOKEN || github.token }}
