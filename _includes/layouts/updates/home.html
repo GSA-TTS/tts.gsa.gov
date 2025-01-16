@@ -34,8 +34,10 @@ layout: layouts/base
                         </h2>
                         <div class="pub-info">
                             <p>{{ update.data.publish_date | readableDate }}</p>
-                            <span>|</span> 
-                            <p>{{ update.data.author }}</p>
+                            {% if update.data.author %}
+                              <span>|</span> 
+                              <p>{{ update.data.author }}</p>
+                            {% endif %}
                         </div>
                         <p>
                         {{ update.data.post_content | truncateText }}

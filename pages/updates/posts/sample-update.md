@@ -25,20 +25,20 @@ tags: updates
 title: "Sample Update"
 
 # This is the update author.
-author: "TTS Author"
+author:
 
 # This is the update publish date, formatted as YYYY-MM-DD.
-publish_date: 2024-12-01
+publish_date: 2025-01-16
 
 # If this update has been modified since it was published, put the updated date below in YYYY-MM-DD format.
 updated_date:
 
 # The comma-separated tags for the update
 # e.g. Product Management, Strategy/Consulting, Marketing
-update_tags: Product Management, Strategy/Consulting, Data Analytics
+update_tags: TTS
 
 # The slug for the featured image, including the file type (e.g. .png, .jpg).
-featured_image: sample-featured-image.png
+featured_image: fallback-featured-image.png
 
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
