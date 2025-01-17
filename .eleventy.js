@@ -26,7 +26,7 @@ const {
   minNumber,
   uswdsIcon,
   imageWithClassShortcode,
-  truncateText
+  truncateText,
 } = require("./js/global.js");
 
 require("dotenv").config();

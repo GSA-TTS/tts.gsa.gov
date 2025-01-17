@@ -383,7 +383,7 @@ async function imageWithClassShortcode(
 function truncateText(post) {
   const content = post.replace(/(<([^>]+)>)/gi, "");
   return content.substr(0, content.lastIndexOf(" ", 200)) + "...";
-};
+}
 
 module.exports = {
   isValidGitBranch,
@@ -402,5 +402,5 @@ module.exports = {
   minNumber,
   uswdsIcon,
   imageWithClassShortcode,
-  truncateText
+  truncateText,
 };
