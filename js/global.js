@@ -195,9 +195,7 @@ function readableDate(dateObj) {
 
   let dateTime = DateTime.fromJSDate(dateObj);
 
-  return dateTime.toFormat(
-    "LLL dd yyyy",
-  );
+  return dateTime.toFormat("LLL dd yyyy");
 }
 
 /**
