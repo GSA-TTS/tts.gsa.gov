@@ -40,7 +40,7 @@ layout: layouts/base
                             {% endif %}
                         </div>
                         <p>
-                        {{ update.data.post_content | truncateText }}
+                        {{ update.data.post_content | truncateText | markdown }}
                         </p>
                         <p class="card-footer">
                             Tags: {{ update.data.update_tags }}
