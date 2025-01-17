@@ -114,6 +114,12 @@ footer {
     position: absolute;
   }
 
+  &.updates-banner {
+    img {
+      height: 100%;
+    }
+  }
+
   h1 {
     color: $tts-title-banner-h1-foreground-color;
     font-size: 3.25rem;
