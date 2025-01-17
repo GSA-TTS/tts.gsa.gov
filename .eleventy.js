@@ -26,6 +26,7 @@ const {
   minNumber,
   uswdsIcon,
   imageWithClassShortcode,
+  truncateText,
 } = require("./js/global.js");
 
 require("dotenv").config();
@@ -41,6 +42,9 @@ module.exports = function (config) {
 
   // copy files from `_img/webp/` to `_site/`
   config.addPassthroughCopy({ "_img/webp/": "/assets/" });
+
+  // copy files from `pages/updates/posts/images` to `_site/`
+  config.addPassthroughCopy({ "pages/updates/posts/images": "/assets/" });
 
   // Copy USWDS init JS so we can load it in HEAD to prevent banner flashing
   config.addPassthroughCopy({
@@ -155,6 +159,7 @@ module.exports = function (config) {
   config.addFilter("htmlDateString", htmlDateString);
   config.addFilter("min", minNumber);
   config.addFilter("numberWithCommas", numberWithCommas);
+  config.addFilter("truncateText", truncateText);
   config.addLiquidShortcode("image_with_class", imageWithClassShortcode);
   config.addLiquidShortcode("uswds_icon", uswdsIcon);
   config.addLiquidShortcode("uswds_icon_with_size", uswdsIconWithSize);

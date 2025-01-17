@@ -192,9 +192,10 @@ function readableDate(dateObj) {
   if (!(dateObj instanceof Date) || isNaN(dateObj)) {
     throw new Error("Invalid date object");
   }
-  return DateTime.fromJSDate(dateObj, { zone: "America/New_York" }).toFormat(
-    "dd LLL yyyy",
-  );
+
+  let dateTime = DateTime.fromJSDate(dateObj);
+
+  return dateTime.toFormat("LLL dd yyyy");
 }
 
 /**
@@ -380,6 +381,11 @@ async function imageWithClassShortcode(
   return imgTag;
 }
 
+function truncateText(post) {
+  const content = post.replace(/(<([^>]+)>)/gi, "");
+  return content.substr(0, content.lastIndexOf(" ", 200)) + "...";
+}
+
 module.exports = {
   isValidGitBranch,
   isValidTwitterHandle,
@@ -397,4 +403,5 @@ module.exports = {
   minNumber,
   uswdsIcon,
   imageWithClassShortcode,
+  truncateText,
 };
