@@ -35,12 +35,14 @@ layout: layouts/base
             </p>
             
             <!-- Author -->
-            <p class="author-info">By {{ author }}</p>
+            {%- if author -%}
+              <p class="author-info">By {{ author }}</p>
+            {% endif %}
         </div>
 
         <!-- Content -->
         <article class="update-content">
-          {{ post_content }}
+          {{ post_content | markdown }}
         </article>
 
         <!-- Tags -->
