@@ -43,7 +43,7 @@ featured_image: fallback-featured-image.png
 # Make sure to leave the | on the first line. Begin your text by returning to the next line and
 # indenting once.
 post_content: |
-  Hi, from TTS! Whether you’re a first time visitor or you’ve been following us for the last 10+ years, we’re excited to tell you more about [what we do](https://tts.gsa.gov/services/) and how we do it. As an organization focused on government innovation, from building platforms and websites to providing products and people through modern methodologies and technologies, TTS is delivering effective and efficient government services.
+  Hi, from TTS! Whether you’re a first-time visitor or you’ve been following us for the last 10+ years, we’re excited to tell you more about [what we do](https://tts.gsa.gov/services/) and how we do it. As an organization focused on government innovation, from building platforms and websites to providing products and people through modern methodologies and technologies, TTS is delivering effective and efficient government services.
 
   This space will provide you with insight into the impactful work of the collaboration with our agency partners and updates on happenings across the more than 30 products and programs housed within TTS. We hope the information is helpful for everyone from federal digital managers and CIOs to industry partners and interested [technologists looking to be a part of public service](https://tts.gsa.gov/join/).
 
