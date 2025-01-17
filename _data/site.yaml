@@ -46,6 +46,8 @@ primary_navigation:
         url: "/services/platforms/"
       - name: People
         url: "/services/people/"
+  - name: Updates
+    url: /updates/
 
 join_sub_navigation:
   - name: Hiring process

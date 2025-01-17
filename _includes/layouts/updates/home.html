@@ -1,0 +1,55 @@
+---
+layout: layouts/base
+---
+<section class="usa-site-alert usa-site-alert--info usa-site-alert--slim" aria-label="Site alert">
+  <div class="usa-alert">
+    <div class="usa-alert__body">
+      <p class="usa-alert__text">
+        <a href="{{ '/join/newsletter' | url }}" class="usa-link">Sign up for job alerts</a> to get notified when TTS positions that interest you are posted on the website.
+      </p>
+    </div>
+  </div>
+</section>
+<div class="tts-title-banner">
+  <img class="tts-banner-bg" src="{{ '/assets/services-bg.webp' | url }}" alt="TTS banner background image" height="200px" width="100%"/>
+  <h1>{{ title }}</h1>
+</div>
+
+{%- assign updates = collections.updates -%} <!-- Reverse to show the latest updates first -->
+<section class="usa-section">
+  <div class="grid-container">
+    <div class="grid-row grid-gap">
+        <div class="usa-layout-docs__main desktop:grid-col-12 usa-prose">
+            <!-- Updates Section -->
+            <ul class="usa-card-group">
+                {%- for update in updates -%}
+                <li class="update usa-card tablet:grid-col-4">
+                    <div class="usa-card__container text-center display-flex">
+                        {%- if update.data.featured_image -%}
+                          {% assign featured_image_path = '/assets/' | append: update.data.featured_image %}
+                          <img src="{{ featured_image_path | url }}" alt="{{ update.data.title }} featured image" class="featured-image"/>
+                        {%- endif -%}
+                        <h2>
+                        <a href="{{ update.url | url }}" class="usa-link">{{ update.data.title }}</a>
+                        </h2>
+                        <div class="pub-info">
+                            <p>{{ update.data.publish_date | readableDate }}</p>
+                            {% if update.data.author %}
+                              <span>|</span> 
+                              <p>{{ update.data.author }}</p>
+                            {% endif %}
+                        </div>
+                        <p>
+                        {{ update.data.post_content | truncateText | markdown }}
+                        </p>
+                        <p class="card-footer">
+                            Tags: {{ update.data.update_tags }}
+                        </p>
+                    </div>
+                </li>
+                {%- endfor -%}
+            </ul>
+        </div>
+    </div>
+  </div>
+</section>

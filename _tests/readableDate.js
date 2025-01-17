@@ -2,26 +2,22 @@ const { DateTime } = require("luxon");
 const { readableDate } = require("../js/global");
 
 describe("readableDate", () => {
-  test('should return the formatted date in "dd LLL yyyy" format for valid dates', () => {
+  test('should return the formatted date in "LLL dd yyyy" format for valid dates', () => {
     const date = new Date("2024-11-21T15:30:00Z"); // Example date
-    const expected = DateTime.fromJSDate(date, {
-      zone: "America/New_York",
-    }).toFormat("dd LLL yyyy");
+    const expected = DateTime.fromJSDate(date).toFormat("LLL dd yyyy");
     expect(readableDate(date)).toBe(expected);
   });
 
-  test("should handle different time zones and return consistent output", () => {
+  test("should return consistent output regardless of input time zone", () => {
     const date = new Date("2024-07-04T12:00:00Z");
-    const expected = DateTime.fromJSDate(date, {
-      zone: "America/New_York",
-    }).toFormat("dd LLL yyyy");
+    const expected = DateTime.fromJSDate(date).toFormat("LLL dd yyyy");
     expect(readableDate(date)).toBe(expected);
   });
 
-  test("should throw an error or handle gracefully when input is not a valid date", () => {
+  test("should throw an error when input is not a valid date", () => {
     const invalidInputs = [null, undefined, "invalid date", {}, [], 12345];
     invalidInputs.forEach((input) => {
-      expect(() => readableDate(input)).toThrow(); // Adjust this if your function handles invalid input differently
+      expect(() => readableDate(input)).toThrow("Invalid date object");
     });
   });
 
@@ -32,9 +28,7 @@ describe("readableDate", () => {
     ];
 
     edgeDates.forEach((date) => {
-      const expected = DateTime.fromJSDate(date, {
-        zone: "America/New_York",
-      }).toFormat("dd LLL yyyy");
+      const expected = DateTime.fromJSDate(date).toFormat("LLL dd yyyy");
       expect(readableDate(date)).toBe(expected);
     });
   });
